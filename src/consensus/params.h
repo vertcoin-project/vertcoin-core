@@ -61,6 +61,7 @@ struct Params {
     int64_t nPowTargetSpacing;
     int64_t nPowTargetTimespan;
     int64_t nChainStartTime;
+    int64_t nKGWInterval;
     unsigned char nMinNFactor;
     unsigned char nMaxNFactor;
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacing; }

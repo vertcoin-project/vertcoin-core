@@ -1112,7 +1112,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     nSubsidy >>= halvings;
 
     if (nSubsidy <= 0)
-	nSubsody = 0;
+	nSubsidy = 0;
     return nSubsidy;
 }
 
