@@ -68,4 +68,4 @@ after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG
 notifications:
-  irc: "chat.freenode.net#vertcoin-dev"
+  irc: "chat.freenode.net#multicoin-co"
