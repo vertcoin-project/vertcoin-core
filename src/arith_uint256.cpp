@@ -19,6 +19,14 @@ base_uint<BITS>::base_uint(const std::string& str)
 }
 
 template <unsigned int BITS>
+base_uint<BITS>::base_uint(const std::vector<unsigned char>& vch)
+{
+    if (vch.size() != sizeof(pn))
+        throw uint_error("Converting vector of wrong size to base_uint");
+    memcpy(pn, &vch[0], sizeof(pn));
+}
+
+template <unsigned int BITS>
 base_uint<BITS>& base_uint<BITS>::operator<<=(unsigned int shift)
 {
     base_uint<BITS> a(*this);
