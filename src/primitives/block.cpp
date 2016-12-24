@@ -9,6 +9,35 @@
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "crypto/common.h"
+#include "chainparams.h"
+
+unsigned char GetNfactor(int64_t nTimestamp) {
+    int l = 0;
+
+    if (nTimestamp <= Params().GetConsensus().nChainStartTime)
+        return Params().GetConsensus().nMinNFactor;
+
+    int64_t s = nTimestamp - Params().GetConsensus().nChainStartTime;
+    while ((s >> 1) > 3) {
+      l += 1;
+      s >>= 1;
+    }
+
+    s &= 3;
+
+    int n = (l * 158 + s * 28 - 2670) / 100;
+
+    if (n < 0) n = 0;
+
+    if (n > 255)
+        printf( "GetNfactor(%lld) - something wrong(n == %d)\n", nTimestamp, n );
+
+    unsigned char N = (unsigned char) n;
+    //printf("GetNfactor: %d -> %d %d : %d / %d\n", nTimestamp - nChainStartTime, l, s, n, min(max(N, minNfactor), maxNfactor));
+
+    return std::min(std::max(N, Params().GetConsensus().nMinNFactor), Params().GetConsensus().nMaxNFactor);
+}
+
 
 uint256 CBlockHeader::GetHash() const
 {
@@ -18,11 +47,11 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash(int nHeight) const
 {
    uint256 thash;
-   if((fTestNet && height >= 0) || height >= 347000) // New Lyra2re2 Testnet
+   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= 0) || nHeight >= 347000) // New Lyra2re2 Testnet
    {
    	lyra2re2_hash(BEGIN(nVersion), BEGIN(thash));
    }
-   else if(height >= 208301)
+   else if(nHeight >= 208301)
    {
    	lyra2re_hash(BEGIN(nVersion), BEGIN(thash));
    }

@@ -254,7 +254,26 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.cpp \
   crypto/sha512.h \
   crypto/scrypt.cpp \
-  crypto/scrypt.h
+  crypto/scrypt.h \
+  crypto/Lyra2RE/Lyra2RE.c \
+  crypto/Lyra2RE/Lyra2RE.h \
+  crypto/Lyra2RE/Lyra2.c \
+  crypto/Lyra2RE/Lyra2.h \
+  crypto/Lyra2RE/Sponge.c \
+  crypto/Lyra2RE/Sponge.h \
+  crypto/Lyra2RE/blake.c \
+  crypto/Lyra2RE/blake.h \
+  crypto/Lyra2RE/groestl.c \
+  crypto/Lyra2RE/groestl.h \
+  crypto/Lyra2RE/keccak.c \
+  crypto/Lyra2RE/keccak.h \
+  crypto/Lyra2RE/skein.c \
+  crypto/Lyra2RE/skein.h \
+  crypto/Lyra2RE/cubehash.c \
+  crypto/Lyra2RE/cubehash.h \
+  crypto/Lyra2RE/bmw.c \
+  crypto/Lyra2RE/bmw.h
+
 
 # consensus: shared between all executables that validate any consensus rules.
 libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
