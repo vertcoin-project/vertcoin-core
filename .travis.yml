@@ -45,7 +45,7 @@ install:
 - if [ -n "$PPA" ]; then travis_retry sudo add-apt-repository "$PPA" -y; fi
 - if [ -n "$DPKG_ADD_ARCH" ]; then sudo dpkg --add-architecture "$DPKG_ADD_ARCH" ;
   fi
-- travis_retry sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler; fi
+- travis_retry sudo apt-get install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler; fi
 - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get update; fi
 - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get install --no-install-recommends
   --no-upgrade -qq $PACKAGES; fi
