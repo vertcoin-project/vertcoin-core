@@ -58,20 +58,13 @@ after_script:
 - echo $TRAVIS_COMMIT_LOG
 notifications:
   irc: chat.freenode.net#multicoin-co
-before_deploy:
+before_deploy: cd ${OUTDIR} && tar -zcvf vertcoin-$HOST.tar.gz ${OUTDIR}
 deploy:
   skip_cleanup: true
   provider: releases
   api_key:
     secure: qIy6+q/eTBobBUuA/Mat9n86cDBwaGn7FgQYzBUjNVGJLyT5k3DRyH8ZcKCHkI+Xbnhnc6sZxlFfyFyz/XMAGD6fubT0tOlPmmXaWhjf/g8KGiFS/n6hj6hzL2XGgIrbw1vb89q8ORuNmcG6i1ks9Ev/LhVQ1X9zhnRctyo6BUovpYO5HuG7rtlkDdg/fMBLISXmFFkD/3y37Te+oyTq+FR/gMepxg75zW4kkVsA5jP816OVlctLEDs84K9N0Aqe60vY4oCCKzYSkLqxsN1SVI7B+skeP/dFoBakqmjxL/3JOK2HVv7HyXXkSW8NjmIDAIBNW1OFiVUVk5h0a/iGPjN58b2EIUWvM75F18KelLAzif+Ovu510PyoF6aDxF16RymlokP3j2l3QeQTc7NiLCqzzGAgR+HNSziKdBZPZfpGzLNk/1Kk5l/uUjVM2x4ehq0nvddKz9v/nEiRbvPYu0lZyL61QcGmf0ZYGMOkLczs5R2ddNfUaUKknw2Oy5ZydBfWaP+SPLmz/OpTDHKaDkYuCUJ9caO7srQYCN6qkUfRGTq+UJ67IrXbVQpdSe0rwKQKpXUtlTG3YBwlToasvDbzagrF/UJha2cGLq90y44BaHr6bQjgokw8NXSKrrHkh0mPoBW8MWpKqm2n356YDLktPyvTq6CsEiZsfZxT7vg=
   file:
-    - if [ "$HOST" == "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-cli.exe; fi
-    - if [ "$HOST" != "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-cli; fi
-    - if [ "$HOST" == "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoind.exe; fi
-    - if [ "$HOST" != "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoind; fi
-    - if [ "$HOST" == "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-tx.exe; fi
-    - if [ "$HOST" != "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-tx; fi
-    - if [ "$HOST" == "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-qt.exe; fi
-    - if [ "$HOST" != "x86_64-w64-mingw32"]; then ${OUTDIR}/bin/vertcoin-qt; fi
+    - ${OUTDIR}/vertcoin-$HOST.tar.gz
   on:
     repo: ahmedbodi/vertcoin
