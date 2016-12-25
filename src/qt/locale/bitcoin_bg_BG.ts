@@ -73,7 +73,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подпиши съобщение...</translation>
@@ -227,9 +227,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Vertcoin Core</source>
         <translation>Биткойн ядро</translation>
     </message>
     </context>
