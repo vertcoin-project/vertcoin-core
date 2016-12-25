@@ -1543,7 +1543,10 @@ bool CWalletTx::RelayWalletTransaction(CConnman* connman)
     assert(pwallet->GetBroadcastTransactions());
     if (!IsCoinBase() && !isAbandoned() && GetDepthInMainChain() == 0)
     {
+	LogPrintf("Inside IF Test \n");
         CValidationState state;
+	LogPrintf("Transaction in memory pool: %u, Accepted To MemoryPool: %u", InMempool(), AcceptToMemoryPool(maxTxFee, state));
+
         /* GetDepthInMainChain already catches known conflicts. */
         if (InMempool() || AcceptToMemoryPool(maxTxFee, state)) {
             LogPrintf("Relaying wtx %s\n", GetHash().ToString());
@@ -1811,6 +1814,7 @@ void CWallet::ResendWalletTransactions(int64_t nBestBlockTime, CConnman* connman
     // that these are our transactions.
     if (GetTime() < nNextResend || !fBroadcastTransactions)
         return;
+
     bool fFirst = (nNextResend == 0);
     nNextResend = GetTime() + GetRand(30 * 60);
     if (fFirst)
@@ -1819,8 +1823,8 @@ void CWallet::ResendWalletTransactions(int64_t nBestBlockTime, CConnman* connman
     // Only do it if there's been a new block since last time
     if (nBestBlockTime < nLastResend)
         return;
-    nLastResend = GetTime();
 
+    nLastResend = GetTime();
     // Rebroadcast unconfirmed txes older than 5 minutes before the last
     // block was found:
     std::vector<uint256> relayed = ResendWalletTransactionsBefore(nBestBlockTime-5*60, connman);
@@ -2470,9 +2474,13 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
                 // to avoid conflicting with other possible uses of nSequence,
                 // and in the spirit of "smallest posible change from prior
                 // behavior."
-                BOOST_FOREACH(const PAIRTYPE(const CWalletTx*,unsigned int)& coin, setCoins)
+                BOOST_FOREACH(const PAIRTYPE(const CWalletTx*,unsigned int)& coin, setCoins) {
+		    int nTransactionSequence = std::numeric_limits<unsigned int>::max();
+		    if (Params().GetConsensus().EnableRBF())
+			nTransactionSequence = std::numeric_limits<unsigned int>::max() - (fWalletRbf ? 2 : 1);
                     txNew.vin.push_back(CTxIn(coin.first->GetHash(),coin.second,CScript(),
-                                              std::numeric_limits<unsigned int>::max() - (fWalletRbf ? 2 : 1)));
+                                             nTransactionSequence));
+		}
 
                 // Sign
                 int nIn = 0;
