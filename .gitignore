@@ -5,6 +5,10 @@ src/bitcoin
 src/bitcoind
 src/bitcoin-cli
 src/bitcoin-tx
+src/vertcoin
+src/vertcoind
+src/vertcoin-cli
+src/vertcoin-tx
 src/test/test_bitcoin
 src/test/test_bitcoin_fuzzy
 src/qt/test/test_bitcoin-qt
@@ -74,8 +78,10 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
+vertcoin-qt
 bitcoin-qt
 Bitcoin-Qt.app
+Vertcoin-Qt.app
 
 # Unit-tests
 Makefile.test
