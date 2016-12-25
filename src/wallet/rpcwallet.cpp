@@ -1020,7 +1020,7 @@ UniValue addmultisigaddress(const JSONRPCRequest& request)
     pwalletMain->AddCScript(inner);
 
     pwalletMain->SetAddressBook(innerID, strAccount, "send");
-    return CBitcoincoinAddress(innerID).ToString();
+    return CBitcoinAddress(innerID).ToString();
 }
 
 class Witnessifier : public boost::static_visitor<bool>
