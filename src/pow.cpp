@@ -28,7 +28,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	int nHeight = pindexLast->nHeight + 1;
 	if (Params().NetworkIDString() == CBaseChainParams::TESTNET)
 	{
-	    LogPrintf("Running On Testnet \n");
 	    if  (nHeight < 2116) {
 	    	return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
 	    }
@@ -40,12 +39,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
                 LogPrintf("Getting diff at %i. Diff = 0\n", pindexLast->nHeight+1);
                 return 0x1e0ffff0;
             }
+
       	    // testnet to 12 block difficulty adjustment interval
 	    if ((pindexLast->nHeight+1) % params.nKGWInterval != 0)
 	    {
 		CBigNum bnNew;
 		bnNew.SetCompact(pindexLast->nBits);
 		if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+	    	LogPrintf("Testnet Difficulty Retarget - Kimoto Gravity Well\n");
 		return bnNew.GetCompact();
 	    }
             //return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax);

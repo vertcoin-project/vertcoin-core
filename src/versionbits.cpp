@@ -3,8 +3,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "versionbits.h"
-
 #include "consensus/params.h"
+#include <iostream>
 
 const struct BIP9DeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION_BITS_DEPLOYMENTS] = {
     {
@@ -17,7 +17,7 @@ const struct BIP9DeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION
     },
     {
         /*.name =*/ "segwit",
-        /*.gbt_force =*/ false,
+        /*.gbt_force =*/ true,
     }
 };
 
@@ -32,6 +32,8 @@ ThresholdState AbstractThresholdConditionChecker::GetStateFor(const CBlockIndex*
     if (pindexPrev != NULL) {
         pindexPrev = pindexPrev->GetAncestor(pindexPrev->nHeight - ((pindexPrev->nHeight + 1) % nPeriod));
     }
+    //printf("Using Block Height %d For VersionBits Check \n", pindexPrev->nHeight);
+    //printf("Last block was at %u \n", pindexPrev->GetMedianTimePast());
 
     // Walk backwards in steps of nPeriod to find a pindexPrev whose information is known
     std::vector<const CBlockIndex*> vToCompute;
