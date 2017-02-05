@@ -178,7 +178,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
                 if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
                 PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
                 }
-                EventHorizonDeviation                        = 1 + (0.7084 * pow((double(PastBlocksMass)/double(144)), -1.228));
+                EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
                 EventHorizonDeviationFast                = EventHorizonDeviation;
                 EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
 
