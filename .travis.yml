@@ -51,9 +51,10 @@ script:
 - mkdir build && cd build
 - "../configure $BITCOIN_CONFIG_ALL $BITCOIN_CONFIG || ( cat config.log && false)"
 - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
-- ls -la ${OUTDIR}/bin
-- ls -la ${OUTDIR}
-- ls -la .
+- if [ -n "$OSX_SDK" ]; then  mkdir${OUTDIR}/bin; fi
+- if [ -n "$OSX_SDK" ]; then  cp Vertcoin-Qt.app ${OUTDIR}/bin; fi
+- if [ -n "$OSX_SDK" ]; then  cp Vertcoin-Core.dmg ${OUTDIR}/bin; fi
+- la -la ${OUTDIR}/bin
 - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
 after_script:
 - echo $TRAVIS_COMMIT_RANGE
