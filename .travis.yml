@@ -54,7 +54,7 @@ script:
 - if [ -n "$OSX_SDK" ]; then  mkdir${OUTDIR}/bin; fi
 - if [ -n "$OSX_SDK" ]; then  cp Vertcoin-Qt.app ${OUTDIR}/bin; fi
 - if [ -n "$OSX_SDK" ]; then  cp Vertcoin-Core.dmg ${OUTDIR}/bin; fi
-- la -la ${OUTDIR}/bin
+- ls -la ${OUTDIR}/bin
 - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
 after_script:
 - echo $TRAVIS_COMMIT_RANGE
