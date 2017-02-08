@@ -94,3 +94,4 @@ deploy:
   file: "${OUTDIR}/..//vertcoin-$HOST.zip"
   on:
     repo: vertcoin/vertcoin-1
+    tags: true
