@@ -85,7 +85,7 @@ public:
 	    consensus.nKGWInterval = 12;
 	    consensus.fRbfEnabled = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 750; // 95% of 1000
+        consensus.nRuleChangeActivationThreshold = 750; // 75% of 1000
         consensus.nMinerConfirmationWindow = 1000;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime =  9999999999; //1199145601; // January 1, 2008
