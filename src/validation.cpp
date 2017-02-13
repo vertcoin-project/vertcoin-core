@@ -2889,12 +2889,14 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (block.GetBlockTime() > nAdjustedTime + 2 * 60 * 60)
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "block timestamp too far in the future");
 
-    // Reject outdated version blocks when 75% (75% on testnet) of the network has upgraded:
-    // check for version 5
-    if(block.nVersion <= 1)
+    /*
+        Vertcoin <= 0.10.0.2 has a bug left behind from years ago where it never rejected old nVersion numbers
+        so we shouldn't reject nVersion < VERSIONBITS_TOP_BITS blocks until SegWit has been enabled
+    */  
+    if(block.nVersion < VERSIONBITS_TOP_BITS && IsWitnessEnabled(pindexPrev, consensusParams))
     {
-            return state.Invalid(false, REJECT_OBSOLETE, strprintf("bad-version(0x%08x)", block.nVersion),
-                                 strprintf("rejected nVersion=0x%08x block", block.nVersion));
+         return state.Invalid(false, REJECT_OBSOLETE, strprintf("bad-version(0x%08x)", block.nVersion),
+                              strprintf("rejected nVersion=0x%08x block", block.nVersion));
     }
 
     return true;
