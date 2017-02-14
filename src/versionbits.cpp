@@ -12,16 +12,16 @@ const struct BIP9DeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION
         /*.gbt_force =*/ true,
     },
     {
-        /*.name =*/ "nversionbips",
-        /*.gbt_force =*/ true,
-    },
-    {
         /*.name =*/ "csv",
         /*.gbt_force =*/ true,
     },
     {
         /*.name =*/ "segwit",
         /*.gbt_force =*/ false,
+    },
+    {
+        /*.name =*/ "nversionbips",
+        /*.gbt_force =*/ true,
     }
 };
 
