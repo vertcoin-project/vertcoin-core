@@ -103,7 +103,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1519862400;     // Mar 1st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000002cb971dd56d1c583c20f90");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000a87058cbe368be6");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -180,7 +180,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.nMinNFactor = 10;
         consensus.nMaxNFactor = 30;
-        consensus.nChainStartTime = 1389306217;
+        consensus.nChainStartTime = 1481291250;
         consensus.nKGWInterval = 12;
         consensus.fRbfEnabled = false;
         consensus.fPowNoRetargeting = false;
@@ -207,7 +207,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000198b4def2baa9338d6");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100010");
 
         pchMessageStart[0] = 'v';
         pchMessageStart[1] = 'e';
