@@ -498,7 +498,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/ahmedbodi/vertcoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/vertcoin/vertcoin>";
     const std::string URL_WEBSITE = "<https://vertcoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +

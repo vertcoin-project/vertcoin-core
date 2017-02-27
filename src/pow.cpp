@@ -142,7 +142,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
         bnNew = bnPowLimit;
 
     /// debug print (commented out due to spamming logs when the loop above breaks)
-    LogPrintf("Difficulty Retarget - Bitcoin l\n");
+    LogPrintf("Difficulty Retarget - Vertcoin l\n");
     LogPrintf("Before: %08x %s\n", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
     LogPrintf("After: %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
     return bnNew.GetCompact();
