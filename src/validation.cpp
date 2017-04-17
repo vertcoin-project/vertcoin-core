@@ -2909,7 +2909,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     
     // BIP148 mandatory segwit signalling.
     int64_t nMedianTimePast = pindexPrev->GetMedianTimePast();
-    if ( (nMedianTimePast >= 1492298086) &&  // Sat 13 May 2017 00:00:00 UTC
+    if ( (nMedianTimePast >= 1494633600) &&  // Sat 13 May 2017 00:00:00 UTC
          (nMedianTimePast <= 1519862400) &&  // Thu 1 March 2018 00:00:00 UTC
          (!IsWitnessLockedIn(pindexPrev, consensusParams) &&  // Segwit is not locked in
           !IsWitnessEnabled(pindexPrev, consensusParams)) )   // and is not active.
