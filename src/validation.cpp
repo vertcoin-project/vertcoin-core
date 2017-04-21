@@ -2820,6 +2820,14 @@ bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& pa
     return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_ACTIVE);
 }
 
+// Check if Segregated Witness is Locked In
+bool IsWitnessLockedIn(const CBlockIndex* pindexPrev, const Consensus::Params& params)
+{
+    LOCK(cs_main);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_LOCKED_IN);
+}
+
+
 // Compute at which vout of the block's coinbase transaction the witness
 // commitment occurs, or -1 if not found.
 static int GetWitnessCommitmentIndex(const CBlock& block)
@@ -2897,6 +2905,20 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     {
          return state.Invalid(false, REJECT_OBSOLETE, strprintf("bad-version(0x%08x)", block.nVersion),
                               strprintf("rejected nVersion=0x%08x block", block.nVersion));
+    }
+    
+    // BIP148 mandatory segwit signalling.
+    int64_t nMedianTimePast = pindexPrev->GetMedianTimePast();
+    if ( (nMedianTimePast >= 1496188800) &&  // Wed 31 May 2017 00:00:00 GMT
+         (nMedianTimePast <= 1519862400) &&  // Thu 1 March 2018 00:00:00 GMT
+         (!IsWitnessLockedIn(pindexPrev, consensusParams) &&  // Segwit is not locked in
+          !IsWitnessEnabled(pindexPrev, consensusParams)) )   // and is not active.
+    {
+        bool fVersionBits = (block.nVersion & VERSIONBITS_TOP_MASK) == VERSIONBITS_TOP_BITS;
+        bool fSegbit = (block.nVersion & VersionBitsMask(consensusParams, Consensus::DEPLOYMENT_SEGWIT)) != 0;
+        if (!(fVersionBits && fSegbit)) {
+            return state.DoS(0, error("relayed block must signal for segwit, please upgrade"), REJECT_INVALID, "bad-no-segwit");
+        }
     }
 
     return true;
