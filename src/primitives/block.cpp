@@ -29,7 +29,7 @@ uint256 CBlockHeader::GetPoWHash(int nHeight) const
    }
    else
    {
-   	    scrypt_N_1_1_256(BEGIN(nVersion), BEGIN(thash), 2048);
+   	    scrypt_N_1_1_256(BEGIN(nVersion), BEGIN(thash), 10);
    }
    return thash;
 }
