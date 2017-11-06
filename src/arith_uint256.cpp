@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2014-2017 The Vertcoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,6 +19,14 @@ base_uint<BITS>::base_uint(const std::string& str)
     static_assert(BITS/32 > 0 && BITS%32 == 0, "Template parameter BITS must be a positive multiple of 32.");
 
     SetHex(str);
+}
+
+template <unsigned int BITS>
+base_uint<BITS>::base_uint(const std::vector<unsigned char>& vch)
+{
+    if (vch.size() != sizeof(pn))
+         throw uint_error("Converting vector of wrong size to base_uint");
+    memcpy(pn, &vch[0], sizeof(pn));
 }
 
 template <unsigned int BITS>

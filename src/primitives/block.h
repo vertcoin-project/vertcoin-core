@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copytight (c) 2014-2017 The Vertcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,6 +10,9 @@
 #include "primitives/transaction.h"
 #include "serialize.h"
 #include "uint256.h"
+
+#include "crypto/scrypt.h"
+#include "crypto/Lyra2RE/Lyra2RE.h"
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -61,6 +65,8 @@ public:
     }
 
     uint256 GetHash() const;
+    
+    uint256 GetPoWHash(int nHeight) const;
 
     int64_t GetBlockTime() const
     {
