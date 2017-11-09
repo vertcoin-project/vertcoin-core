@@ -93,7 +93,9 @@ class CompactBlocksTest(BitcoinTestFramework):
         self.setup_clean_chain = True
         # Node0 = pre-segwit, node1 = segwit-aware
         self.num_nodes = 2
-        self.extra_args = [["-vbparams=segwit:0:0"], ["-txindex"]]
+        # This test was written assuming SegWit is activated using BIP9 at height 432 (3x confirmation window).
+        # TODO: Rewrite this test to support SegWit being always active.
+        self.extra_args = [["-vbparams=segwit:0:0"], ["-vbparams=segwit:0:999999999999", "-txindex"]]
         self.utxos = []
 
     def build_block_on_tip(self, node, segwit=False):
@@ -786,23 +788,12 @@ class CompactBlocksTest(BitcoinTestFramework):
 
     def run_test(self):
         # Setup the p2p connections and start up the network thread.
-        self.test_node = TestNode()
-        self.segwit_node = TestNode()
-        self.old_node = TestNode()  # version 1 peer <--> segwit node
-
-        connections = []
-        connections.append(NodeConn('127.0.0.1', p2p_port(0), self.nodes[0], self.test_node))
-        connections.append(NodeConn('127.0.0.1', p2p_port(1), self.nodes[1],
-                    self.segwit_node, services=NODE_NETWORK|NODE_WITNESS))
-        connections.append(NodeConn('127.0.0.1', p2p_port(1), self.nodes[1],
-                    self.old_node, services=NODE_NETWORK))
-        self.test_node.add_connection(connections[0])
-        self.segwit_node.add_connection(connections[1])
-        self.old_node.add_connection(connections[2])
+        self.test_node = self.nodes[0].add_p2p_connection(TestNode())
+        self.segwit_node = self.nodes[1].add_p2p_connection(TestNode(), services=NODE_NETWORK|NODE_WITNESS)
+        self.old_node = self.nodes[1].add_p2p_connection(TestNode(), services=NODE_NETWORK)
 
         NetworkThread().start()  # Start up network handling in another thread
 
-        # Test logic begins here
         self.test_node.wait_for_verack()
 
         # We will need UTXOs to construct transactions in later tests.
