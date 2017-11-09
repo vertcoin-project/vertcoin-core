@@ -137,7 +137,7 @@ public:
 };
 
 /**
- * Bitcoin RPC command dispatcher.
+ * Vertcoin RPC command dispatcher.
  */
 class CRPCTable
 {
