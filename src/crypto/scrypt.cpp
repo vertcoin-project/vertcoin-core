@@ -60,7 +60,6 @@ void
 PBKDF2_SHA256(const uint8_t *passwd, size_t passwdlen, const uint8_t *salt,
     size_t saltlen, uint64_t c, uint8_t *buf, size_t dkLen)
 {
-	//HMAC_SHA256_CTX PShctx, hctx;
 	size_t i;
 	uint8_t ivec[4];
 	uint8_t U[32];
@@ -70,9 +69,7 @@ PBKDF2_SHA256(const uint8_t *passwd, size_t passwdlen, const uint8_t *salt,
 	size_t clen;
 
 	/* Compute HMAC state after processing P and S. */
-	//HMAC_SHA256_Init(&PShctx, passwd, passwdlen);
-	//HMAC_SHA256_Update(&PShctx, salt, saltlen);
-	
+
 	CHMAC_SHA256 PShctx(passwd, passwdlen);
 	CHMAC_SHA256 hctx(passwd, passwdlen);
 	PShctx.Write(salt, saltlen);
@@ -84,8 +81,6 @@ PBKDF2_SHA256(const uint8_t *passwd, size_t passwdlen, const uint8_t *salt,
 
 		/* Compute U_1 = PRF(P, S || INT(i)). */
 		memcpy(&hctx, &PShctx, sizeof(CHMAC_SHA256));
-		//HMAC_SHA256_Update(&hctx, ivec, 4);
-		//HMAC_SHA256_Final(U, &hctx);
         hctx.Write(ivec, 4);
         hctx.Finalize(U);
 
@@ -97,9 +92,6 @@ PBKDF2_SHA256(const uint8_t *passwd, size_t passwdlen, const uint8_t *salt,
 			CHMAC_SHA256 hctxi(passwd, passwdlen);
 			hctxi.Write(U, 32);
 			hctxi.Finalize(U);
-			//HMAC_SHA256_Init(&hctx, passwd, passwdlen);
-			//HMAC_SHA256_Update(&hctx, U, 32);
-			//HMAC_SHA256_Final(U, &hctx);
 
 			/* ... xor U_j ... */
 			for (k = 0; k < 32; k++)
