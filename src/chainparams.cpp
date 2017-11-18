@@ -128,6 +128,7 @@ public:
         vSeeds.emplace_back("vtc.gertjaap.org", true); // Gert-Jaap Glasbergen
         vSeeds.emplace_back("seed.vtc.bryangoodson.org", true); // Bryan Goodson
         vSeeds.emplace_back("dnsseed.pknight.ca", true); // pknight
+        vSeeds.emplace_back("seed.orderofthetaco.org", true); // Eric (etang600)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
