@@ -130,6 +130,7 @@ public:
         vSeeds.emplace_back("dnsseed.pknight.ca", true); // pknight
         vSeeds.emplace_back("seed.orderofthetaco.org", true); // Eric (etang600)
         vSeeds.emplace_back("seed.alexturek.org", true); // Alex Turek
+        vSeeds.emplace_back("vertcoin.mbl.cash", true); // jk_14
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
