@@ -16,15 +16,17 @@
 
 static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
 
+#define BlocksTargetSpacing     (2.5 * 60) // 2.5 minutes
+#define TimeDaySeconds          (60 * 60 * 24)
+#define PastSecondsMin          (TimeDaySeconds * 0.25)
+#define PastSecondsMax          (TimeDaySeconds * 7)
+#define PastBlocksMin           (PastSecondsMin / BlocksTargetSpacing)
+#define PastBlocksMax           (PastSecondsMax / BlocksTargetSpacing)
+
+double                          KGWs[(int)PastBlocksMax];
+
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
-    static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
-    unsigned int                TimeDaySeconds       = 60 * 60 * 24;
-    int64_t                     PastSecondsMin       = TimeDaySeconds * 0.25;
-    int64_t                     PastSecondsMax       = TimeDaySeconds * 7;
-    uint64_t                    PastBlocksMin        = PastSecondsMin / BlocksTargetSpacing;
-    uint64_t                    PastBlocksMax        = PastSecondsMax / BlocksTargetSpacing;
-    
     const int nHeight = pindexLast->nHeight + 1;
 
     if(params.testnet) {
@@ -48,7 +50,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	    }
     }
     
-    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);
+    return KimotoGravityWell(pindexLast, pblock, params);
 }
 
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -93,7 +95,7 @@ unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CB
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
-unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, uint64_t TargetBlocksSpacingSeconds, uint64_t PastBlocksMin, uint64_t PastBlocksMax, const Consensus::Params& params) {
+unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params) {
     /* current difficulty formula - kimoto gravity well */
     const CBlockIndex *BlockLastSolved                                = pindexLast;
     const CBlockIndex *BlockReading                                = pindexLast;
@@ -118,13 +120,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
             PastDifficultyAveragePrev = PastDifficultyAverage;
 
             PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
-            PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
+            PastRateTargetSeconds                        = BlocksTargetSpacing * PastBlocksMass;
             PastRateAdjustmentRatio                        = double(1);
             if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
             if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
                 PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
             }
-            EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
+            EventHorizonDeviation                        = KGWs[PastBlocksMass-1];
             EventHorizonDeviationFast                = EventHorizonDeviation;
             EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
 
