@@ -109,6 +109,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
     double                                EventHorizonDeviationFast;
     double                                EventHorizonDeviationSlow;
 
+    // Init the KGW array and block array
+    if(KGWs[0] <= 0){
+        for(unsigned int i = 0; i < PastBlocksMax; i++){
+            KGWs[i] = 1 + (0.7084 * std::pow((double(i+1)/double(144)), -1.228));
+        }
+    }
+
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
         for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
