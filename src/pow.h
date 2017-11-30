@@ -7,12 +7,15 @@
 #define BITCOIN_POW_H
 
 #include "consensus/params.h"
-
+#include "util.h"
 #include <stdint.h>
+#include <vector>
 
 class CBlockHeader;
 class CBlockIndex;
 class uint256;
+
+std::vector<CBlockIndex*> KGWChain;
 
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params&);
 unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params);

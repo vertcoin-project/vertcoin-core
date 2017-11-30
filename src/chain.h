@@ -442,6 +442,12 @@ private:
     std::vector<CBlockIndex*> vChain;
 
 public:
+    CBlockIndex *Get(int nHeight) const {
+        if (nHeight < 0 || nHeight >= (int)vChain.size())
+            return nullptr;
+        return vChain[nHeight];
+    }
+
     /** Returns the index entry for the genesis block of this chain, or nullptr if none. */
     CBlockIndex *Genesis() const {
         return vChain.size() > 0 ? vChain[0] : nullptr;
