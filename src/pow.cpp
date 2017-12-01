@@ -23,12 +23,16 @@ static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
 #define PastBlocksMin           (PastSecondsMin / BlocksTargetSpacing)
 #define PastBlocksMax           (PastSecondsMax / BlocksTargetSpacing)
 
+// Stores KGW calculates in a LUT
 double                          KGWs[(int)PastBlocksMax];
 
+// In-memory chain for KGW. Is only as long as PastBlocksMax
 std::vector<CBlockIndex*>       KGWChain;
 
+// Stores the oldest block height that exists in the KGWChain to calculate the current index
 unsigned int                    KGWOldestBlock;
 
+// Thread safety
 CCriticalSection                KGW_Locker;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -125,11 +129,16 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
     // cachePosition is zero-based index
     // KGWChain.size() is one-based count
     // PastBlocksMax is one-based count
+
+    // If we haven't set KGWOldestBlock, set it now to the first block that will be placed in the cache
     if (KGWOldestBlock == 0) KGWOldestBlock = BlockReading->nHeight;
+    // cachePosition is the index in the cache of the current block. It is calculated as the 
+    // distance between the height of the current block and the earliest block in the cache
     int cachePosition = BlockReading->nHeight - KGWOldestBlock;
 
     LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
+    // Expand the cache vector if we don't currently have enough room, or if the cache is new
     if(((int)KGWChain.size() - 1 < cachePosition && KGWChain.size() <= PastBlocksMax) || KGWChain.size() == 0) {
         LogPrintf("%s: Resizing KGWChain...\n", __func__);
         KGWChain.resize(KGWChain.size() + 1);
@@ -137,8 +146,10 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
 
     LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
+    // Shift the cache such that the zero index item is popped off the chain. This is shifting LEFT to make room for the current block.
     if (cachePosition >= (int)PastBlocksMax && KGWChain[KGWChain.size()-1] == nullptr) {
         LogPrintf("%s: Shifting KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
+        // Store the oldest height BEFORE we shift the cache because it is used to calc the index
         KGWOldestBlock = KGWChain[0]->nHeight;
         for(int i = 0; i < KGWChain.size() - 1; i++){
             // 30785-26753, 30785-26754
@@ -147,6 +158,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
         LogPrintf("%s: Shifted KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
     }
  
+    // Set the latest position in the cache to the current block
     KGWChain[cachePosition] = (CBlockIndex *)BlockReading;
 
     // Init the KGW array 
@@ -181,10 +193,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
                     if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
             }
             
+            // If we don't have a previous cached block to read
             if (cachePosition - 1 < 0) { 
                 if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
                 BlockReading = BlockReading->pprev;
                 if (cachePosition >= PastBlocksMax) LogPrintf("%s: Cache Miss! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
+            // Else, fall back to the old method of getting previous block.
+            // This will occur many times until the cache has been built
             } else {
                 BlockReading = KGWChain[cachePosition - 1]; 
                 cachePosition--;
