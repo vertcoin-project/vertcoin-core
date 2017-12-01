@@ -23,7 +23,7 @@ static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
 #define PastBlocksMin           (PastSecondsMin / BlocksTargetSpacing)
 #define PastBlocksMax           (PastSecondsMax / BlocksTargetSpacing)
 
-#define KGWCacheLogging         true 
+#define KGWCacheLogging         false 
 
 // Stores KGW calculates in a LUT
 double                          KGWs[(int)PastBlocksMax];
