@@ -23,6 +23,8 @@ static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
 #define PastBlocksMin           (PastSecondsMin / BlocksTargetSpacing)
 #define PastBlocksMax           (PastSecondsMax / BlocksTargetSpacing)
 
+#define KGWCacheLogging         false
+
 // Stores KGW calculates in a LUT
 double                          KGWs[(int)PastBlocksMax];
 
@@ -121,7 +123,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
 
     LOCK(KGW_Locker);
 
-    LogPrintf("%s: cache tip=%s height=%d version=0x%08x log2_work=%.8g tx=%lu date='%s'\n", __func__,
+    if(KGWCacheLogging) LogPrintf("%s: cache tip=%s height=%d version=0x%08x log2_work=%.8g tx=%lu date='%s'\n", __func__,
       BlockReading->GetBlockHash().ToString(), BlockReading->nHeight, BlockReading->nVersion,
       log(BlockReading->nChainWork.getdouble())/log(2.0), (unsigned long)BlockReading->nChainTx,
       DateTimeStrFormat("%Y-%m-%d %H:%M:%S", BlockReading->GetBlockTime()));
@@ -136,26 +138,24 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
     // distance between the height of the current block and the earliest block in the cache
     int cachePosition = BlockReading->nHeight - KGWOldestBlock;
 
-    LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
+    if(KGWCacheLogging) LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
     // Expand the cache vector if we don't currently have enough room, or if the cache is new
-    if(((int)KGWChain.size() - 1 < cachePosition && KGWChain.size() <= PastBlocksMax) || KGWChain.size() == 0) {
-        LogPrintf("%s: Resizing KGWChain...\n", __func__);
+    if(((int)KGWChain.size() <= cachePosition && KGWChain.size() < PastBlocksMax) || KGWChain.size() == 0) {
+        if(KGWCacheLogging) LogPrintf("%s: Resizing KGWChain...\n", __func__);
         KGWChain.resize(KGWChain.size() + 1);
     }
 
-    LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
+    if(KGWCacheLogging) LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
     // Shift the cache such that the zero index item is popped off the chain. This is shifting LEFT to make room for the current block.
-    if (cachePosition >= (int)PastBlocksMax && KGWChain[KGWChain.size()-1] == nullptr) {
-        LogPrintf("%s: Shifting KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
-        // Store the oldest height BEFORE we shift the cache because it is used to calc the index
+    if (cachePosition >= (int)PastBlocksMax && KGWChain[KGWChain.size()-1] != BlockReading) {
+        if(KGWCacheLogging) LogPrintf("%s: Shifting KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
+        // rotate the cache to the left by one element
+        std::rotate(KGWChain.begin(), KGWChain.begin()+1, KGWChain.end());
         KGWOldestBlock = KGWChain[0]->nHeight;
-        for(int i = 0; i < KGWChain.size() - 1; i++){
-            // 30785-26753, 30785-26754
-            KGWChain[i] = KGWChain[i+1];
-        }
-        LogPrintf("%s: Shifted KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
+	cachePosition = BlockReading->nHeight - KGWOldestBlock;
+        if(KGWCacheLogging) LogPrintf("%s: Shifted KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
     }
  
     // Set the latest position in the cache to the current block
@@ -197,13 +197,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
             if (cachePosition - 1 < 0) { 
                 if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
                 BlockReading = BlockReading->pprev;
-                if (cachePosition >= PastBlocksMax) LogPrintf("%s: Cache Miss! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
+                if (cachePosition >= PastBlocksMax && KGWCacheLogging) LogPrintf("%s: Cache Miss! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
             // Else, fall back to the old method of getting previous block.
             // This will occur many times until the cache has been built
             } else {
                 BlockReading = KGWChain[cachePosition - 1]; 
                 cachePosition--;
-	        if (cachePosition >= PastBlocksMax) LogPrintf("%s: Cache Hit! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
+	        if (cachePosition >= PastBlocksMax && KGWCacheLogging) LogPrintf("%s: Cache Hit! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
             }
         }
 
