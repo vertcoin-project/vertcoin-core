@@ -141,7 +141,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
     if(KGWCacheLogging) LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
     // Expand the cache vector if we don't currently have enough room, or if the cache is new
-    if(((int)KGWChain.size() <= cachePosition && KGWChain.size() < PastBlocksMax) || KGWChain.size() == 0) {
+    if(((int)KGWChain.size() <= cachePosition && KGWChain.size() <= PastBlocksMax) || KGWChain.size() == 0) {
         if(KGWCacheLogging) LogPrintf("%s: Resizing KGWChain...\n", __func__);
         KGWChain.resize(KGWChain.size() + 1);
     }
@@ -149,7 +149,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
     if(KGWCacheLogging) LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
 
     // Shift the cache such that the zero index item is popped off the chain. This is shifting LEFT to make room for the current block.
-    if (cachePosition >= (int)PastBlocksMax && KGWChain[KGWChain.size()-1] != BlockReading) {
+    if (cachePosition > (int)PastBlocksMax && KGWChain[KGWChain.size()-1] != BlockReading) {
         if(KGWCacheLogging) LogPrintf("%s: Shifting KGWChain... height=%d, cachePosition=%d, KGWChain.size()=%d, KGWOldestBlock=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size(), KGWOldestBlock);
         // rotate the cache to the left by one element
         std::rotate(KGWChain.begin(), KGWChain.begin()+1, KGWChain.end());
@@ -198,8 +198,6 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
                 if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
                 BlockReading = BlockReading->pprev;
                 if (cachePosition >= PastBlocksMax && KGWCacheLogging) LogPrintf("%s: Cache Miss! height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
-            // Else, fall back to the old method of getting previous block.
-            // This will occur many times until the cache has been built
             } else {
                 BlockReading = KGWChain[cachePosition - 1]; 
                 cachePosition--;
