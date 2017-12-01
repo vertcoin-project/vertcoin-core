@@ -25,6 +25,8 @@ static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
 
 double                          KGWs[(int)PastBlocksMax];
 
+std::vector<CBlockIndex*>       KGWChain;
+
 CCriticalSection                KGW_Locker;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -120,21 +122,29 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
 
     LogPrintf("%s: height=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, KGWChain.size());
 
+    // cachePosition is zero-based index
+    // KGWChain.size() is one-based count
+    // PastBlocksMax is one-based count
     int cachePosition = KGWChain.size() > 0 ? BlockReading->nHeight - KGWChain[0]->nHeight : 0;
 
     LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
 
-    if(KGWChain.size() - 1 < cachePosition && KGWChain.size() < PastBlocksMax) KGWChain.resize(KGWChain.size() + 1);
+    if(((int)KGWChain.size() - 1 < cachePosition && KGWChain.size() <= PastBlocksMax) || KGWChain.size() == 0) {
+        LogPrintf("%s: Resizing KGWChain...\n", __func__);
+        KGWChain.resize(KGWChain.size() + 1);
+    }
 
     LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
 
-    if (cachePosition > (int)PastBlocksMax) {
-        for(int i = KGWChain.size()-1; i >= 1; i--){
-            KGWChain[i-1] = KGWChain[i];
-        }    
+    if (cachePosition >= (int)PastBlocksMax) {
+	LogPrintf("%s: Shifting KGWChain... cachePosition:%d, PastBlocksMax:%d\n", __func__, cachePosition, PastBlocksMax);
+        for(int i = 0; i < KGWChain.size() - 1; i++){
+            // 30785-26753, 30765-26754
+            KGWChain[i] = KGWChain[i+1];
+        }
     }
  
-    KGWChain[cachePosition] = (CBlockIndex *)&BlockReading;
+    KGWChain[cachePosition] = (CBlockIndex *)BlockReading;
 
     // Init the KGW array 
     if(KGWs[0] <= 0){
@@ -168,12 +178,15 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
                     if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
             }
 
-            if (KGWChain[KGWChain.size()-2] != nullptr){
-            	BlockReading = KGWChain[KGWChain.size()-2]; 
+            if(KGWChain.size() >= PastBlocksMax) LogPrintf("%s: height=%d, cachePosition=%d, KGWChain.size()=%d\n", __func__, BlockReading->nHeight, cachePosition, KGWChain.size());
+            
+            if (cachePosition - 1 >= 0){
+            	BlockReading = KGWChain[cachePosition - 1]; 
             } else {
                 if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
                 BlockReading = BlockReading->pprev;
             }
+            cachePosition--;
         }
 
         CBigNum bnNew(PastDifficultyAverage);
