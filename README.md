@@ -19,7 +19,7 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/vertcoin/vertcoin/tags) are created
-regularly to indicate new official, stable release versions of Vertcoin Core.
+regularly to indicate new official, stable release versions of Verticalcoin Core.
 
 Developers work on their own forks and submit pull requests in order to merge
 changes with `master`. Due to the relatively small size of the development team,
@@ -34,10 +34,10 @@ before working on a patch set.
 Testing
 -------
 
-Vertcoin currently relies on Bitcoin Core for its testcases, and few of them are
+Verticalcoin currently relies on Bitcoin Core for its testcases, and few of them are
 known to work, though the software is based on fully test conforming upstream 
 Bitcoin Core versions. We would be grateful to those who can help port the existing
-Bitcoin Core test cases to Vertcoin such that they can be used to assure correctness.
+Bitcoin Core test cases to Verticalcoin such that they can be used to assure correctness.
 
 Translations
 ------------
