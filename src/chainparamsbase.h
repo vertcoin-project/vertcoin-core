@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between vertcoin-cli and bitcoind)
- * of a given instance of the Vertcoin system.
+ * of a given instance of the Verticalcoin system.
  */
 class CBaseChainParams
 {

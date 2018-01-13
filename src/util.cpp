@@ -522,13 +522,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Vertcoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Vertcoin
-    // Mac: ~/Library/Application Support/Vertcoin
-    // Unix: ~/.vertcoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Verticalcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Verticalcoin
+    // Mac: ~/Library/Application Support/Verticalcoin
+    // Unix: ~/.verticalcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Vertcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Verticalcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -538,10 +538,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Vertcoin";
+    return pathRet / "Library/Application Support/Verticalcoin";
 #else
     // Unix
-    return pathRet / ".vertcoin";
+    return pathRet / ".verticalcoin";
 #endif
 #endif
 }
@@ -886,8 +886,8 @@ std::string CopyrightHolders(const std::string& strPrefix)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
 
-    // Check for untranslated substitution to make sure Vertcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Vertcoin Core") == std::string::npos) {
+    // Check for untranslated substitution to make sure Verticalcoin Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Verticalcoin Core") == std::string::npos) {
         strCopyrightHolders += "\n" + strPrefix + "The Bitcoin Core developers";
     }
     return strCopyrightHolders;
