@@ -158,16 +158,16 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Pošalji novčiće na Vertcoin adresu</translation>
+        <source>Send coins to a Verticalcoin address</source>
+        <translation>Pošalji novčiće na Verticalcoin adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Verticalcoin</source>
+        <translation>Verticalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -406,8 +406,8 @@
 <context>
     <name>vertcoin-core</name>
     <message>
-        <source>Vertcoin Core</source>
-        <translation>Vertcoin Core</translation>
+        <source>Verticalcoin Core</source>
+        <translation>Verticalcoin Core</translation>
     </message>
     <message>
         <source>Information</source>

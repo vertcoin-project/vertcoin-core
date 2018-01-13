@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Verticalcoin</source>
+        <translation>Verticalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -484,8 +484,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Vertcoin Core</source>
-        <translation>Craidd Vertcoin</translation>
+        <source>Verticalcoin Core</source>
+        <translation>Craidd Verticalcoin</translation>
     </message>
     <message>
         <source>Information</source>

@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Verticalcoin</source>
+        <translation>Verticalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -760,8 +760,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Vertcoin Core</source>
-        <translation>Vertcoin Core</translation>
+        <source>Verticalcoin Core</source>
+        <translation>Verticalcoin Core</translation>
     </message>
     <message>
         <source>Information</source>

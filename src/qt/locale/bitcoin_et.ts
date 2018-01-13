@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Vertcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Verticalcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Verticalcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Vertcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Verticalcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Verticalcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -290,7 +290,7 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
+        <source>Send coins to a Verticalcoin address</source>
         <translation>Saada münte Vertcoini aadressile</translation>
     </message>
     <message>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Verticalcoin</source>
+        <translation>Verticalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,11 +342,11 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>Sign messages with your Verticalcoin addresses to prove you own them</source>
         <translation>Omandi tõestamiseks allkirjasta sõnumid oma Vertcoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Verticalcoin addresses</source>
         <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Vertcoini aadressiga</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network</source>
+        <source>%n active connection(s) to Verticalcoin network</source>
         <translation><numerusform>%n aktiivne ühendus Vertcoini võrku</numerusform><numerusform>%n aktiivset ühendust Vertcoini võrku</numerusform></translation>
     </message>
     <message>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Vertcoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Verticalcoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Verticalcoin aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,7 +756,7 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Verticalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Vertcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Verticalcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation>Hoiatus: Ebakorrektne Vertcoin aadress</translation>
+        <source>Warning: Invalid Verticalcoin address</source>
+        <translation>Hoiatus: Ebakorrektne Verticalcoin aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation>Vertcoin aadress millega sõnum allkirjastada</translation>
+        <source>The Verticalcoin address to sign the message with</source>
+        <translation>Verticalcoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,7 +1449,7 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Verticalcoin address</source>
         <translation>Allkirjasta sõnum Vertcoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
@@ -1469,11 +1469,11 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation>Vertcoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Verticalcoin address the message was signed with</source>
+        <translation>Verticalcoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Verticalcoin address</source>
         <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Vertcoini aadressiga.</translation>
     </message>
     <message>
@@ -1758,7 +1758,7 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Vertcoin Core</source>
+        <source>Verticalcoin Core</source>
         <translation>Vertcoini tuumik</translation>
     </message>
     <message>

@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Vertcoin"
+#define QAPP_ORG_NAME "Verticalcoin"
 #define QAPP_ORG_DOMAIN "vertcoin.org"
-#define QAPP_APP_NAME_DEFAULT "Vertcoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Vertcoin-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Verticalcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Verticalcoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

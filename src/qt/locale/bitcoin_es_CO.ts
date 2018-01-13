@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Enviando monedas a una dirección de Vertcoin</translation>
+        <source>Send coins to a Verticalcoin address</source>
+        <translation>Enviando monedas a una dirección de Verticalcoin</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Verticalcoin</source>
+        <translation>Verticalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -296,8 +296,8 @@
 <context>
     <name>vertcoin-core</name>
     <message>
-        <source>Vertcoin Core</source>
-        <translation>Vertcoin Core</translation>
+        <source>Verticalcoin Core</source>
+        <translation>Verticalcoin Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
