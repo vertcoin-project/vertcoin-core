@@ -29,7 +29,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Vertcoin Qt UI.
+/** Utility functions used by the Verticalcoin Qt UI.
  */
 namespace GUIUtil
 {

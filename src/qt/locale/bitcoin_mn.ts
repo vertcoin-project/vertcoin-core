@@ -126,7 +126,7 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
+        <source>Verticalcoin</source>
         <translation>Биткойн</translation>
     </message>
     <message>

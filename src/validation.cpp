@@ -50,7 +50,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Vertcoin cannot be compiled without assertions."
+# error "Verticalcoin cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -96,7 +96,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Vertcoin Signed Message:\n";
+const std::string strMessageMagic = "Verticalcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -2989,7 +2989,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "block timestamp too far in the future");
 
     /*
-         Vertcoin <= 0.10.0.2 has a bug left behind from years ago where it never rejected old nVersion numbers
+         Verticalcoin <= 0.10.0.2 has a bug left behind from years ago where it never rejected old nVersion numbers
          so we shouldn't reject nVersion < VERSIONBITS_TOP_BITS blocks until SegWit has been enabled
     */  
     if(block.nVersion < VERSIONBITS_TOP_BITS && IsWitnessEnabled(pindexPrev, params.GetConsensus())) {

@@ -170,7 +170,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-/** Class encapsulating Vertcoin Core startup and shutdown.
+/** Class encapsulating Verticalcoin Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore: public QObject
@@ -200,7 +200,7 @@ private:
     void handleRunawayException(const std::exception *e);
 };
 
-/** Main Vertcoin application object */
+/** Main Verticalcoin application object */
 class BitcoinApplication: public QApplication
 {
     Q_OBJECT
@@ -531,7 +531,7 @@ void BitcoinApplication::shutdownResult()
 
 void BitcoinApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Vertcoin can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Verticalcoin can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 

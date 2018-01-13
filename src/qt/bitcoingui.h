@@ -38,7 +38,7 @@ class QProgressDialog;
 QT_END_NAMESPACE
 
 /**
-  Vertcoin GUI main class. This class represents the main window of the Vertcoin UI. It communicates with both the client and
+  Verticalcoin GUI main class. This class represents the main window of the Verticalcoin UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class BitcoinGUI : public QMainWindow

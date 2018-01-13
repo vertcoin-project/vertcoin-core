@@ -94,7 +94,7 @@ public:
     }
 };
 
-/** Interface to Vertcoin wallet from Qt view code. */
+/** Interface to Verticalcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

@@ -130,7 +130,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
+        <source>Send coins to a Verticalcoin address</source>
         <translation>Пошаљите новац на vertcoin адресу</translation>
     </message>
     <message>

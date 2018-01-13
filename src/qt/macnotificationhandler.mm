@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.vertcoin.Vertcoin-Qt";
+        return @"org.vertcoin.Verticalcoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

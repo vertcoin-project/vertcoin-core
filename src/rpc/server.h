@@ -137,7 +137,7 @@ public:
 };
 
 /**
- * Vertcoin RPC command dispatcher.
+ * Verticalcoin RPC command dispatcher.
  */
 class CRPCTable
 {
