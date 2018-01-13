@@ -1,27 +1,17 @@
-Vertcoin Core integration/staging tree
+Verticalcoin Core integration/staging tree
 =====================================
 
-https://vertcoin.org
+https://www.vrticalcrypto.com
 
-What is Vertcoin?
+What is Verticalcoin?
 ----------------
 
-Vertcoin is a fork of Bitcoin that is designed to resist the monopolisation of
-mining power.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
- - 50 coins per block (25 after block 840,000)
- - Difficulty retargeting every block to recover from large hashrate swings
- - Lyra2REv2 proof of work algorithm for ASIC resistance
-
-For more information, as well as an immediately useable, binary version of
-the Vertcoin client sofware, see http://www.vertcoin.org.
+Verticalcoin is a fork of Vertcoin.
 
 License
 -------
 
-Vertcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Verticalcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -37,7 +27,7 @@ developers also commit directly to the repo often. Anyone is allowed to contribu
 though and useful pull requests will almost always be accepted given various
 obvious stipulations regarding stability etc. 
 
-The Vertcoin [discord](https://discord.gg/Yb6EHNy) or [subreddit](https://reddit.com/r/vertcoin)
+The Verticalcoin [discord](https://discord.gg/Htm3qa3) or [subreddit](https://reddit.com/r/vrticalcrypto)
 should be used to discuss complicated or controversial changes with the developers 
 before working on a patch set.
 
