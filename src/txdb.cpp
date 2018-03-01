@@ -263,6 +263,8 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
 {
     std::unique_ptr<CDBIterator> pcursor(NewIterator());
 
+    const bool skipChainVerification = gArgs.GetBoolArg("-skip-startup-verify", DEFAULT_SKIPSTARTUPVERIFY);
+
     pcursor->Seek(std::make_pair(DB_BLOCK_INDEX, uint256()));
 
     // Load mapBlockIndex
@@ -287,8 +289,9 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
-                    return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
+                if (!skipChainVerification)
+                    if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
+                        return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
 
                 pcursor->Next();
             } else {

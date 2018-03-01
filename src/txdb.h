@@ -38,6 +38,8 @@ static const int64_t nMaxBlockDBAndTxIndexCache = 1024;
 //! Max memory allocated to coin DB specific cache (MiB)
 static const int64_t nMaxCoinsDBCache = 8;
 
+static const bool DEFAULT_SKIPSTARTUPVERIFY = false;
+
 struct CDiskTxPos : public CDiskBlockPos
 {
     unsigned int nTxOffset; // after header
