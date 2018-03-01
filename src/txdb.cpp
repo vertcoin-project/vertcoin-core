@@ -264,6 +264,11 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
     std::unique_ptr<CDBIterator> pcursor(NewIterator());
 
     const bool skipChainVerification = gArgs.GetBoolArg("-skip-startup-verify", DEFAULT_SKIPSTARTUPVERIFY);
+    const bool fullChainVerification = gArgs.GetBoolArg("-full-startup-verify", DEFAULT_FULLSTARTUPVERIFY);
+
+    const CChainParams& chainparams = Params();
+    MapCheckpoints checkPoints = chainparams.Checkpoints().mapCheckpoints;
+    int highestCheckpointHeight = checkPoints.rbegin()->first;
 
     pcursor->Seek(std::make_pair(DB_BLOCK_INDEX, uint256()));
 
@@ -289,10 +294,22 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                if (!skipChainVerification)
-                    if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
-                        return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
+                MapCheckpoints::iterator it = checkPoints.find(pindexNew->nHeight);
+                if(it != checkPoints.end()) 
+                {
+                    LogPrintf("Verifying checkpoint at height %i\n", pindexNew->nHeight);
+                    if(pindexNew->GetBlockHash() != it->second)
+                        return error("%s: Block hash mismatches checkpoint: %s\n", __func__, pindexNew->ToString());
+                }
 
+
+                if (!skipChainVerification)
+                    if(fullChainVerification || pindexNew->nHeight > highestCheckpointHeight)
+                    {
+                        if(pindexNew->nHeight % 10000 == 0) LogPrintf("Checking PoW for block %i\n", pindexNew->nHeight);
+                        if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
+                            return error("%s: CheckProofOfWork failed: %s\n", __func__, pindexNew->ToString());
+                    }
                 pcursor->Next();
             } else {
                 return error("%s: failed to read value", __func__);

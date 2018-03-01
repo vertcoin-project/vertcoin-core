@@ -39,7 +39,7 @@ static const int64_t nMaxBlockDBAndTxIndexCache = 1024;
 static const int64_t nMaxCoinsDBCache = 8;
 
 static const bool DEFAULT_SKIPSTARTUPVERIFY = false;
-
+static const bool DEFAULT_FULLSTARTUPVERIFY = false;
 struct CDiskTxPos : public CDiskBlockPos
 {
     unsigned int nTxOffset; // after header
