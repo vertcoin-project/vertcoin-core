@@ -27,6 +27,8 @@
  * online backup system.
  */
 
+#ifdef USE_SSE2
+
 #include "scrypt.h"
 #include <stdlib.h>
 #include <stdint.h>
@@ -137,3 +139,5 @@ void scrypt_N_1_1_256_sp_sse2(const char *input, char *output, char *scratchpad,
 
 	PBKDF2_SHA256((const uint8_t *)input, 80, B, 128, 1, (uint8_t *)output, 32);
 }
+
+#endif
