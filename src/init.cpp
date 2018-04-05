@@ -373,7 +373,8 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
 #endif
     strUsage += HelpMessageOpt("-txindex", strprintf(_("Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)"), DEFAULT_TXINDEX));
-
+    strUsage += HelpMessageOpt("-skip-startup-verify", strprintf(_("Skip checking the complete chain of work on startup (default: %u)"), DEFAULT_SKIPSTARTUPVERIFY));
+    strUsage += HelpMessageOpt("-full-startup-verify", strprintf(_("Check the complete chain of work on startup from the Genesis block - otherwise check from the last checkpoint (default: %u)"), DEFAULT_FULLSTARTUPVERIFY));
     strUsage += HelpMessageGroup(_("Connection options:"));
     strUsage += HelpMessageOpt("-addnode=<ip>", _("Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info)"));
     strUsage += HelpMessageOpt("-banscore=<n>", strprintf(_("Threshold for disconnecting misbehaving peers (default: %u)"), DEFAULT_BANSCORE_THRESHOLD));
