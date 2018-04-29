@@ -28,7 +28,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/vertcoin/vertcoin/tags) are created
+completely stable. [Tags](https://github.com/vertcoin-project/vertcoin-core/tags) are created
 regularly to indicate new official, stable release versions of Vertcoin Core.
 
 Developers work on their own forks and submit pull requests in order to merge
@@ -37,7 +37,7 @@ developers also commit directly to the repo often. Anyone is allowed to contribu
 though and useful pull requests will almost always be accepted given various
 obvious stipulations regarding stability etc. 
 
-The Vertcoin [discord](https://discord.gg/Yb6EHNy) or [subreddit](https://reddit.com/r/vertcoin)
+The Vertcoin [discord](https://discord.gg/vertcoin) or [subreddit](https://reddit.com/r/vertcoin)
 should be used to discuss complicated or controversial changes with the developers 
 before working on a patch set.
 
