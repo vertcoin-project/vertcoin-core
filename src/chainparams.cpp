@@ -125,13 +125,13 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4"));
         assert(genesis.hashMerkleRoot == uint256S("0x4af38ca0e323c0a5226208a73b7589a52c030f234810cf51e13e3249fc0123e7"));
 
-        vSeeds.emplace_back("useast1.vtconline.org", true); // James Lovejoy
-        vSeeds.emplace_back("vtc.gertjaap.org", true); // Gert-Jaap Glasbergen
-        vSeeds.emplace_back("seed.vtc.bryangoodson.org", true); // Bryan Goodson
-        vSeeds.emplace_back("dnsseed.pknight.ca", true); // pknight
-        vSeeds.emplace_back("seed.orderofthetaco.org", true); // Eric (etang600)
-        vSeeds.emplace_back("seed.alexturek.org", true); // Alex Turek
-        vSeeds.emplace_back("vertcoin.mbl.cash", true); // jk_14
+        vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
+        vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen
+        vSeeds.emplace_back("seed.vtc.bryangoodson.org"); // Bryan Goodson
+        vSeeds.emplace_back("dnsseed.pknight.ca"); // pknight
+        vSeeds.emplace_back("seed.orderofthetaco.org"); // Eric (etang600)
+        vSeeds.emplace_back("seed.alexturek.org"); // Alex Turek
+        vSeeds.emplace_back("vertcoin.mbl.cash"); // jk_14
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -225,10 +225,10 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("jlovejoy.mit.edu", false);
-        vSeeds.emplace_back("gertjaap.ddns.net", false);
-        vSeeds.emplace_back("fr1.vtconline.org", false);
-        vSeeds.emplace_back("tvtc.vertcoin.org", false);
+        vSeeds.emplace_back("jlovejoy.mit.edu");
+        vSeeds.emplace_back("gertjaap.ddns.net");
+        vSeeds.emplace_back("fr1.vtconline.org");
+        vSeeds.emplace_back("tvtc.vertcoin.org");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,74);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
