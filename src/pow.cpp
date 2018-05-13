@@ -12,7 +12,7 @@
 #include <primitives/block.h>
 #include <uint256.h>
 
-static CBigNum bnProofOfWorkLimit(~uint256_old(0) >> 20);
+static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
