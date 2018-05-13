@@ -10,7 +10,7 @@ NSEEDS=512
 
 MAX_SEEDS_PER_ASN=2
 
-MIN_BLOCKS = 337600
+MIN_BLOCKS = 927382
 
 # These are hosts that have been observed to be behaving strangely (e.g.
 # aggressively connecting to every node).
@@ -30,7 +30,7 @@ import collections
 PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$")
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
-PATTERN_AGENT = re.compile(r"^(/Satoshi:0.13.(1|2|99)/|/Satoshi:0.14.(0|1|2|99)/|/Satoshi:0.15.(0|1|2|99)/)$")
+PATTERN_AGENT = re.compile(r"^(/Satoshi:0.11.(0|0.1|0.2|1)/|/Satoshi:0.12.0/|/Satoshi:0.13.0/)$")
 
 def parseline(line):
     sline = line.split()
@@ -149,8 +149,8 @@ def main():
     ips = [ip for ip in ips if ip['blocks'] >= MIN_BLOCKS]
     # Require service bit 1.
     ips = [ip for ip in ips if (ip['service'] & 1) == 1]
-    # Require at least 50% 30-day uptime.
-    ips = [ip for ip in ips if ip['uptime'] > 50]
+    # Require at least 15% 30-day uptime.
+    ips = [ip for ip in ips if ip['uptime'] > 15]
     # Require a known and recent user agent.
     ips = [ip for ip in ips if PATTERN_AGENT.match(ip['agent'])]
     # Sort by availability (and use last success as tie breaker)
