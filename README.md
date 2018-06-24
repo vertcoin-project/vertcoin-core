@@ -16,7 +16,7 @@ mining power.
  - Lyra2REv2 proof of work algorithm for ASIC resistance
 
 For more information, as well as an immediately useable, binary version of
-the Vertcoin client sofware, see http://www.vertcoin.org.
+the Vertcoin client software, see http://www.vertcoin.org.
 
 License
 -------
