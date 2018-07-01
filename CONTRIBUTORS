@@ -1,0 +1,20 @@
+# This is the official list of team members who can contribute
+# (and typically have contributed) code to the Vertcoin Core repository.
+# This file lists the copyright holders, too.
+#
+# Names should be added if the person is a team member.
+#
+# Names should be added to this file like so:
+#     Individual's name <submission email address> [GitHub / Twitter user name] (website)
+#     Individual's name <submission email address> <email2> <emailN> [GitHub / Twitter user name] (website)
+#
+# An entry with multiple email addresses specifies that the
+# first address should be used in the submit logs and
+# that the other addresses should be recognized as the
+# same person when interacting with GitHub.
+
+# Please keep the list in alphabetical order sorted.
+
+Gert-Jaap Glasbergen <gertjaap@gertjaap.org> [@gertjaap] (https://gertjaap.org/)
+James Lovejoy <jameslovejoy1@gmail.com> [@metalicjames]
+Suriyaa Sundararuban <vertcoin@suriyaa.tk> <isc.suriyaa@gmail.com> <suriyaasundararuban@gmail.com> [@SuriyaaKudoIsc] (https://about.suriyaa.tk/)
