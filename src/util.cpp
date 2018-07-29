@@ -741,7 +741,7 @@ void FileCommit(FILE *file)
 #else
     #if defined(__linux__) || defined(__NetBSD__)
     fdatasync(fileno(file));
-    #elif defined(__APPLE__) && defined(F_FULLFSYNC)
+    #elif defined(MAC_OSX) && defined(F_FULLFSYNC)
     fcntl(fileno(file), F_FULLFSYNC, 0);
     #else
     fsync(fileno(file));
