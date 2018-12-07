@@ -87,7 +87,7 @@ Ubuntu Trusty 14.04:
 Ubuntu Xenial 16.04 and Windows Subsystem for Linux <sup>[1](#footnote1),[2](#footnote2)</sup>:
 
     sudo apt install software-properties-common
-    sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu zesty universe"
+    sudo add-apt-repository "deb http://old-releases.ubuntu.com/ubuntu zesty universe"
     sudo apt update
     sudo apt upgrade
     sudo update-alternatives --config x86_64-w64-mingw32-g++ # Set the default mingw32 g++ compiler option to posix.
