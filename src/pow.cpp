@@ -41,6 +41,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         } else if(nHeight == 208301) {
             return 0x1e0ffff0;
+        } else if(nHeight >= 1080000 && nHeight <= 1080010) {
+            return 0x1b0ffff0;
         }
     }
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
@@ -130,7 +132,12 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
             if (PastBlocksMass >= PastBlocksMin) {
                     if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
             }
-            if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
+            if (BlockReading->pprev == NULL || 
+                (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
+            { 
+                    assert(BlockReading); 
+                    break; 
+            }
             BlockReading = BlockReading->pprev;
         }
 
