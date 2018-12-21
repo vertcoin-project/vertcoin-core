@@ -128,7 +128,6 @@ public:
 
         vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
         vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen
-        vSeeds.emplace_back("seed.vtc.bryangoodson.org"); // Bryan Goodson
         vSeeds.emplace_back("dnsseed.pknight.ca"); // pknight
         vSeeds.emplace_back("seed.orderofthetaco.org"); // Eric (etang600)
         vSeeds.emplace_back("seed.alexturek.org"); // Alex Turek
