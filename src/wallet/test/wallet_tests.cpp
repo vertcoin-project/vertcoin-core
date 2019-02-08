@@ -116,9 +116,10 @@ BOOST_FIXTURE_TEST_CASE(rescan, TestChain100Setup)
 // than or equal to key birthday.
 BOOST_FIXTURE_TEST_CASE(importwallet_rescan, TestChain100Setup)
 {
+/*  These were removed from other parts of this file in previous edits. Marge may have left these two in by mistake
     g_address_type = OUTPUT_TYPE_DEFAULT;
     g_change_type = OUTPUT_TYPE_DEFAULT;
-
+*/
     // Create two blocks with same timestamp to verify that importwallet rescan
     // will pick up both blocks, not just the first.
     const int64_t BLOCK_TIME = chainActive.Tip()->GetBlockTimeMax() + 5;

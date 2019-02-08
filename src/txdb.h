@@ -40,6 +40,9 @@ static const int64_t nMaxTxIndexCache = 1024;
 //! Max memory allocated to coin DB specific cache (MiB)
 static const int64_t nMaxCoinsDBCache = 8;
 
+static const bool DEFAULT_SKIPSTARTUPVERIFY = false;
+static const bool DEFAULT_FULLSTARTUPVERIFY = false;
+
 /** CCoinsView backed by the coin database (chainstate/) */
 class CCoinsViewDB final : public CCoinsView
 {

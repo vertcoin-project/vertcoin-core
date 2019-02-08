@@ -26,6 +26,7 @@ void SetupChainParamsBaseOptions()
  * Main network
  */
 // this class left from vertcoin code
+/*
 class CBaseMainParams : public CBaseChainParams
 {
 public:
@@ -34,11 +35,13 @@ public:
         nRPCPort = 5888;
     }
 };
+*/
 
 /**
  * Testnet (v3)
  */
 // this class left from vertcoin code
+/*
 class CBaseTestNetParams : public CBaseChainParams
 {
 public:
@@ -48,11 +51,12 @@ public:
         strDataDir = "testnet3";
     }
 };
-
+*/
 /*
  * Regression test
  */
 // this class left from vertcoin code
+/*
 class CBaseRegTestParams : public CBaseChainParams
 {
 public:
@@ -62,6 +66,7 @@ public:
         strDataDir = "regtest";
     }
 };
+*/
 
 static std::unique_ptr<CBaseChainParams> globalChainBaseParams;
 

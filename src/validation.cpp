@@ -1769,7 +1769,7 @@ static unsigned int GetBlockScriptFlags(const CBlockIndex* pindex, const Consens
     // Start enforcing the DERSIG (BIP66) rule
     // Start enforcing CHECKLOCKTIMEVERIFY (BIP65) rule
 
-    if(VersionBitsState(pindex->pprev, consensusparams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == THRESHOLD_ACTIVE) {
+    if(VersionBitsState(pindex->pprev, consensusparams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == ThresholdState::ACTIVE) {
         flags |= SCRIPT_VERIFY_DERSIG;
         flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
     }
@@ -3298,7 +3298,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     }
 
     // Enforce rule that the coinbase starts with serialized block height
-    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == THRESHOLD_ACTIVE) 
+    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == ThresholdState::ACTIVE) 
     {
         CScript expect = CScript() << nHeight;
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
