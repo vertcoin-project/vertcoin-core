@@ -1,8 +1,8 @@
 package=zeromq
-$(package)_version=4.2.2
+$(package)_version=4.3.1
 $(package)_download_path=https://github.com/zeromq/libzmq/releases/download/v$($(package)_version)/
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
-$(package)_sha256_hash=5b23f4ca9ef545d5bd3af55d305765e3ee06b986263b31967435d285a3e6df6b
+$(package)_sha256_hash=bcbabe1e2c7d0eec4ed612e10b94b112dd5f06fcefa994a0c79a45d835cd21eb
 $(package)_patches=0001-fix-build-with-older-mingw64.patch
 
 define $(package)_set_vars
