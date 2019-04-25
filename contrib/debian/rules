@@ -17,7 +17,6 @@ QT=qt5
 # Yea, autogen should be run on the source archive, but I like doing git archive
 override_dh_auto_configure:
 	./autogen.sh
-	./configure --with-gui=$(QT) --with-incompatible-bdb
+	./configure --with-gui=$(QT) --with-incompatible-bdb --without-tests --without-bench
 
 override_dh_auto_test:
-	make check
