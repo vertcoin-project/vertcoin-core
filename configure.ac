@@ -893,10 +893,12 @@ AX_BOOST_BASE([MINIMUM_REQUIRED_BOOST])
 if test x$want_boost = xno; then
     AC_MSG_ERROR([[only libbitcoinconsensus can be built without boost]])
 fi
-AX_BOOST_SYSTEM
+
+dnl move BOOST_SYSTEM to be last to work around weird compile bug
 AX_BOOST_FILESYSTEM
 AX_BOOST_THREAD
 AX_BOOST_CHRONO
+AX_BOOST_SYSTEM
 
 dnl Boost 1.56 through 1.62 allow using std::atomic instead of its own atomic
 dnl counter implementations. In 1.63 and later the std::atomic approach is default.
