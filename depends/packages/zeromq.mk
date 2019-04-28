@@ -14,7 +14,6 @@ endef
 
 define $(package)_preprocess_cmds
    patch -p1 < $($(package)_patch_dir)/0001-fix-build-with-older-mingw64.patch && \
-   patch -p1 < $($(package)_patch_dir)/0002-disable-pthread_set_name_np.patch && \
    cp -f $(BASEDIR)/config.guess $(BASEDIR)/config.sub config
 endef
 
