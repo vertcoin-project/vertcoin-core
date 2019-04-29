@@ -2,13 +2,15 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Bitcoin
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#bitcoin@freenode.net
-Source: https://github.com/bitcoin/bitcoin
+Source: https://github.com/vertcoin-project/vertcoin-core
 
 Files: *
-Copyright: 2009-2018, Bitcoin Core Developers
+Copyright:  2014-2019, Vertcoin Core Developers
+            2009-2018, Bitcoin Core Developers
 License: Expat
 Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
-         as well as the numerous contributors to the project.
+         as well as the numerous contributors to the project. This version has 
+         also been modified by the Vertcoin developers listed on vertcoin.org.
 
 Files: debian/*
 Copyright: 2010-2011, Jonas Smedegaard <dr@jones.dk>
@@ -76,8 +78,8 @@ Comment:
 
 Files: src/qt/res/icons/clock*.png
        src/qt/res/icons/eye_*.png
-       src/qt/res/icons/tx_in*.png
        src/qt/res/icons/verify.png
+       src/qt/res/icons/tx_in*.png
        src/qt/res/src/clock_*.svg
        src/qt/res/src/tx_*.svg
        src/qt/res/src/verify.svg
@@ -86,18 +88,16 @@ License: Expat
 Comment: Modifications of Stephan Hutchings Typicons
 
 Files: src/qt/res/icons/about.png
-       src/qt/res/icons/bitcoin.*
-       share/pixmaps/bitcoin*
        src/qt/res/src/bitcoin.svg
 Copyright: Bitboy, Jonas Schnelli
 License: public-domain
 Comment: Site: https://bitcointalk.org/?topic=1756.0
 
-Files: src/qt/res/icons/proxy.png
-       src/qt/res/src/proxy.svg
-Copyright: Cristian Mircea Messel
-Licese: public-domain
-
+Files: src/qt/res/icons/vertcoin.*
+       share/pixmaps/vertcoin*
+Copyright: Vertcoin Project
+License: public-domain
+Comment: Site: https://vertcoin.org
 
 License: Expat
  Permission is hereby granted, free of charge, to any person obtaining a
