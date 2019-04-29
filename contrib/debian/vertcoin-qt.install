@@ -1,0 +1,6 @@
+usr/local/bin/vertcoin-qt usr/bin
+share/pixmaps/vertcoin32.xpm usr/share/pixmaps
+share/pixmaps/vertcoin16.xpm usr/share/pixmaps
+share/pixmaps/vertcoin128.png usr/share/pixmaps
+debian/vertcoin-qt.desktop usr/share/applications
+debian/vertcoin-qt.protocol usr/share/kde4/services/
