@@ -12,10 +12,12 @@
 #include <primitives/block.h>
 #include <uint256.h>
 
-static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
+arith_uint256 preVerthashPoWLimit(~arith_uint256(0) >> 20);
+CBigNum bnPreVerthashPoWLimit(preVerthashPoWLimit);
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
+    CBigNum bnProofOfWorkLimit(params.powLimit);
     static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
     unsigned int                TimeDaySeconds       = 60 * 60 * 24;
     int64_t                     PastSecondsMin       = TimeDaySeconds * 0.25;
@@ -28,12 +30,15 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if(params.testnet) {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
+        } else if(nHeight >= 208044 && nHeight < 208054) { // Set diff to mindiff on testnet Verthash fork
+            return bnProofOfWorkLimit.GetCompact();
         }
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
 	        bnNew.SetCompact(pindexLast->nBits);
-	        if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+            if (nHeight < 208044 && bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+            if (nHeight >= 208044 && bnNew > bnPreVerthashPoWLimit) { bnNew = bnPreVerthashPoWLimit; }
             return bnNew.GetCompact();
         }
     } else {
@@ -45,13 +50,13 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return 0x1b0ffff0;
         }
     }
-    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
+    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);
 }
 
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     assert(pindexLast != nullptr);
-    unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
+    unsigned int nProofOfWorkLimit = bnPreVerthashPoWLimit.GetCompact();
 
     // Only change once per difficulty adjustment interval
     if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)
@@ -89,10 +94,10 @@ unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CB
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
-unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, 
-                               const CBlockHeader *pblock, 
-                               uint64_t TargetBlocksSpacingSeconds, 
-                               uint64_t PastBlocksMin, 
+unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
+                               const CBlockHeader *pblock,
+                               uint64_t TargetBlocksSpacingSeconds,
+                               uint64_t PastBlocksMin,
                                uint64_t PastBlocksMax,
                                const Consensus::Params& params) {
     /* current difficulty formula - kimoto gravity well */
@@ -108,47 +113,57 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     double                                EventHorizonDeviationFast;
     double                                EventHorizonDeviationSlow;
 
-    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
+    CBigNum bnProofOfWorkLimit(params.powLimit);
 
-        for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
-            if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
-            PastBlocksMass++;
-
-            if (i == 1)        { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-            else                { PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; }
-            PastDifficultyAveragePrev = PastDifficultyAverage;
-
-            PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
-            PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
-            PastRateAdjustmentRatio                        = double(1);
-            if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
-            if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-                PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
-            }
-            EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
-            EventHorizonDeviationFast                = EventHorizonDeviation;
-            EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
-
-            if (PastBlocksMass >= PastBlocksMin) {
-                    if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
-            }
-            if (BlockReading->pprev == NULL || 
-                (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
-            { 
-                    assert(BlockReading); 
-                    break; 
-            }
-            BlockReading = BlockReading->pprev;
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) {
+        if(params.testnet && (uint64_t)BlockLastSolved->nHeight+1 >= 206442) {
+            return bnProofOfWorkLimit.GetCompact();
         }
+        return bnPreVerthashPoWLimit.GetCompact();
+    }
 
-        CBigNum bnNew(PastDifficultyAverage);
+    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
+        if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
+        PastBlocksMass++;
+
+        if (i == 1)        { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
+        else                { PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; }
+        PastDifficultyAveragePrev = PastDifficultyAverage;
+
+        PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
+        PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
+        PastRateAdjustmentRatio                        = double(1);
+        if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
         if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-                bnNew *= PastRateActualSeconds;
-                bnNew /= PastRateTargetSeconds;
+            PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
         }
+        EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
+        EventHorizonDeviationFast                = EventHorizonDeviation;
+        EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
 
-        if (bnNew > bnProofOfWorkLimit) {
-	    bnNew = bnProofOfWorkLimit;
+        if (PastBlocksMass >= PastBlocksMin) {
+                if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
+        }
+        if (BlockReading->pprev == NULL ||
+            (!params.testnet && BlockReading->nHeight == 1080000) || // Don't calculate past fork block on mainnet
+            (!params.testnet && BlockReading->nHeight == 206442)) // Don't calculate past fork block on testnet
+        {
+                assert(BlockReading);
+                break;
+        }
+        BlockReading = BlockReading->pprev;
+    }
+
+    CBigNum bnNew(PastDifficultyAverage);
+    if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
+            bnNew *= PastRateActualSeconds;
+            bnNew /= PastRateTargetSeconds;
+    }
+
+    if(params.testnet && (uint64_t)BlockLastSolved->nHeight+1 >= 206442 && (bnNew > bnProofOfWorkLimit)) {
+        return bnProofOfWorkLimit.GetCompact();
+    } else if (bnNew > bnPreVerthashPoWLimit) {
+        bnNew = bnPreVerthashPoWLimit;
 	}
 
     return bnNew.GetCompact();
@@ -179,9 +194,8 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     if (fShift)
         bnNew <<= 1;
 
-    const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
-    if (bnNew > bnPowLimit)
-        bnNew = bnPowLimit;
+    if (bnNew > preVerthashPoWLimit)
+        bnNew = preVerthashPoWLimit;
 
     return bnNew.GetCompact();
 }

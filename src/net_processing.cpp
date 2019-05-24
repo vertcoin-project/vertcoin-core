@@ -30,6 +30,8 @@
 #include <utilmoneystr.h>
 #include <utilstrencodings.h>
 
+#include <crypto/verthash.h>
+
 #if defined(NDEBUG)
 # error "Vertcoin cannot be compiled without assertions."
 #endif

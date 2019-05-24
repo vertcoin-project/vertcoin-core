@@ -195,6 +195,8 @@ libbitcoin_server_a_SOURCES = \
   chain.cpp \
   checkpoints.cpp \
   consensus/tx_verify.cpp \
+  crypto/verthash_datfile.cpp \
+  crypto/verthash_datfile.h \
   httprpc.cpp \
   httpserver.cpp \
   init.cpp \
@@ -296,7 +298,11 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/Lyra2RE/cubehash.c \
   crypto/Lyra2RE/cubehash.h \
   crypto/Lyra2RE/bmw.c \
-  crypto/Lyra2RE/bmw.h
+  crypto/Lyra2RE/bmw.h \
+  crypto/sha3.c \
+  crypto/sha3.h \
+  crypto/verthash.cpp \
+  crypto/verthash.h  
 
 if USE_ASM
 crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp

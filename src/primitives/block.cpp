@@ -9,7 +9,9 @@
 #include <tinyformat.h>
 #include <utilstrencodings.h>
 #include <crypto/common.h>
+#include <crypto/verthash.h>
 #include <chainparams.h>
+#include <validation.h>
 
 uint256 CBlockHeader::GetHash() const
 {
@@ -19,7 +21,12 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
    uint256 thash;
-   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
+
+   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= 208044)) // New Verthash Testnet
+   {
+       Verthash::Hash(BEGIN(nVersion), BEGIN(thash), nHeight);
+   }
+   else if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
    {
         lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
    }

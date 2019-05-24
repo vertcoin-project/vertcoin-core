@@ -10,6 +10,7 @@
 #include <consensus/consensus.h>
 #include <consensus/params.h>
 #include <consensus/validation.h>
+#include <crypto/verthash_datfile.h>
 #include <core_io.h>
 #include <init.h>
 #include <validation.h>
@@ -28,6 +29,7 @@
 
 #include <memory>
 #include <stdint.h>
+#include <fstream>
 
 unsigned int ParseConfirmTarget(const UniValue& value)
 {
@@ -444,8 +446,9 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Vertcoin is not connected!");
 
+    /*Disabled temporarily for Verthash. Re-enable this check in release.
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Vertcoin is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Vertcoin is downloading blocks...");*/
 
     static unsigned int nTransactionsUpdatedLast;
 
@@ -974,6 +977,8 @@ UniValue estimaterawfee(const JSONRPCRequest& request)
     return result;
 }
 
+
+
 static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         argNames
   //  --------------------- ------------------------  -----------------------  ----------
@@ -982,7 +987,7 @@ static const CRPCCommand commands[] =
     { "mining",             "prioritisetransaction",  &prioritisetransaction,  {"txid","dummy","fee_delta"} },
     { "mining",             "getblocktemplate",       &getblocktemplate,       {"template_request"} },
     { "mining",             "submitblock",            &submitblock,            {"hexdata","dummy"} },
-
+    
 
     { "generating",         "generatetoaddress",      &generatetoaddress,      {"nblocks","address","maxtries"} },
 

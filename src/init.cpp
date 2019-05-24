@@ -63,6 +63,8 @@
 #include <boost/thread.hpp>
 #include <openssl/crypto.h>
 
+#include <crypto/verthash_datfile.h>
+
 #if ENABLE_ZMQ
 #include <zmq/zmqnotificationinterface.h>
 #endif
@@ -1740,6 +1742,10 @@ bool AppInitMain()
     if (!connman.Start(scheduler, connOptions)) {
         return false;
     }
+
+
+    // Update the mining datafile if desired (will just return true if disabled)
+    VerthashDatFile::UpdateMiningDataFile();
 
     // ********************************************************* Step 12: finished
 
