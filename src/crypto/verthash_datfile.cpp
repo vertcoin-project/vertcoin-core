@@ -16,7 +16,6 @@ uint32_t VerthashDatFile::Fnv1a(uint32_t a, uint32_t b)
 
 bool VerthashDatFile::UpdateMiningDataFile() {
     fs::path targetFile = GetDataDir() / "verthash.dat";
-    LogPrintf("Updating mining datafile %s\n", targetFile);
 
     // Default to writing the whole file
     CBlockIndex* startIndex = chainActive.Genesis();
@@ -25,17 +24,13 @@ bool VerthashDatFile::UpdateMiningDataFile() {
     uint256 prevBlockHash;
 
     if(boost::filesystem::exists(targetFile)) {
-        LogPrintf("Opening existing mining datafile %s\n", targetFile);
-        blockFile = fopen(targetFile.c_str(),"r+b");
+        blockFile = fsbridge::fopen(targetFile.c_str(),"rb+");
     } else {
-        LogPrintf("Creating new mining datafile %s\n", targetFile);
-        blockFile = fopen(targetFile.c_str(),"w+b");
+        blockFile = fsbridge::fopen(targetFile.c_str(),"wb+");
     }
 
     CAutoFile filein(blockFile, SER_DISK, CLIENT_VERSION);
     fseek(blockFile, 0, SEEK_END);
-
-
 
     // Find common ancestor
     while(ftell(blockFile) >= VERTHASH_MULTIPLICATION*32){
@@ -49,7 +44,7 @@ bool VerthashDatFile::UpdateMiningDataFile() {
         // Now find this in our blockchain
         bool found = false;
 
-        CBlockIndex *idx = chainActive.Tip();
+        CBlockIndex *idx = pindexBestHeader;
         while(idx) {
             if(idx->pprev != NULL && idx->pprev->GetBlockHash() == prevBlockHash) {
                 found = true;
@@ -60,9 +55,26 @@ bool VerthashDatFile::UpdateMiningDataFile() {
 
         if(found) {
             startIndex = idx;
+            // startIndex is now equal to the last block we have in the file.
+            // The file pointer is before that block, because we need to read
+            // in the last row.
             break;
         }
     }
+
+    // Start at the tip and go back to startIndex
+    CBlockIndex* idx = pindexBestHeader;
+    std::stack<CBlockIndex*> blocksToWrite;
+    while(idx) {
+        if(idx->GetBlockHash() == startIndex->GetBlockHash()) {
+            // We found startIndex - we already have that in the file
+            break;
+        }
+        blocksToWrite.push(idx);
+        idx = idx->pprev;
+    }
+
+    if(blocksToWrite.size() == 0) return true;
 
     unsigned char prev_row[VERTHASH_MULTIPLICATION][32], curr_row[VERTHASH_MULTIPLICATION][32], double_buf[64];
 
@@ -72,16 +84,6 @@ bool VerthashDatFile::UpdateMiningDataFile() {
     } else {
         // Read the last expanded block into prev_row
         fread(&prev_row, 32, VERTHASH_MULTIPLICATION, blockFile);
-    }
-
-    CBlockIndex* idx = chainActive.Tip();
-    std::stack<CBlockIndex*> blocksToWrite;
-    while(idx) {
-        blocksToWrite.push(idx);
-        idx = idx->pprev;
-        if(startIndex->pprev != NULL && idx->GetBlockHash() == startIndex->pprev->GetBlockHash()) {
-            break;
-        }
     }
 
     LogPrintf("Appending %d blocks to mining datafile\n", blocksToWrite.size());
@@ -109,10 +111,9 @@ bool VerthashDatFile::UpdateMiningDataFile() {
         blocksToWrite.pop();
     }
 
-    ftruncate(fileno(blockFile), ftell(blockFile));
+
+    TruncateFile(blockFile, ftell(blockFile));
     FileCommit(blockFile);
     // Done.
-
-    LogPrintf("Finished updating mining datafile");
     return true;
 }

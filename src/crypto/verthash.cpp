@@ -20,8 +20,8 @@ void Verthash::Hash(const char* input, char* output, const int height)
     memcpy(header, input, 80);
 
     int i;
-    for(i=1;i<=31;i++) if(height * 32 * 32 < 1U<<i) break;
-    int bitmask = (0xffffffff >> (33-i)) & ~0xff;
+    for(i=1;i<23;i++) if((height-1) < 1U<<i) break;
+    uint32_t bitmask = (0xffffffff >> (23-i)) & 0xfffffff0;
 
     fs::path dataFile = GetDataDir() / "verthash.dat";
     if(!boost::filesystem::exists(dataFile)) {
@@ -38,7 +38,7 @@ void Verthash::Hash(const char* input, char* output, const int height)
         memcpy(header+68, &ntime, 4);
     }
 
-    FILE* VerthashDatFile = fopen(dataFile.c_str(),"rb");
+    FILE* VerthashDatFile = fsbridge::fopen(dataFile.c_str(),"rb");
     h_n = Fnv1a(nonce, 2166136261);
     for(int i = 0;i < 128;i++)
     {

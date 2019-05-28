@@ -357,7 +357,7 @@ bool CheckSequenceLocks(const CTransaction &tx, int flags, LockPoints* lp, bool 
 
     CBlockIndex* tip = chainActive.Tip();
     assert(tip != nullptr);
-    
+
     CBlockIndex index;
     index.pprev = tip;
     // CheckSequenceLocks() uses chainActive.Height()+1 to evaluate
@@ -1127,14 +1127,14 @@ bool ReadRawBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
     return true;
 }
 
-int ReadRawBlockBytesFromDisk(char *buffer, int bufferOffset, int blockOffset, int size, const CDiskBlockPos& pos, const CChainParams& chainparams) 
+int ReadRawBlockBytesFromDisk(char *buffer, int bufferOffset, int blockOffset, int size, const CDiskBlockPos& pos, const CChainParams& chainparams)
 {
     CDiskBlockPos hpos = pos;
     hpos.nPos -= 4; // Seek back 4 bytes for block size
     CAutoFile filein(OpenBlockFile(hpos, true), SER_DISK, CLIENT_VERSION);
     if (filein.IsNull())
         return error("ReadBlockFromDisk: OpenBlockFile failed for %s", pos.ToString());
-        
+
     unsigned int blk_size;
     filein >> blk_size;
 
@@ -1168,7 +1168,7 @@ unsigned int ReadBlockSizeFromDisk(const CDiskBlockPos& pos)
         return error("ReadBlockFromDisk: OpenBlockFile failed for %s", pos.ToString());
 
     unsigned int blk_size;
-    filein >> blk_size;   
+    filein >> blk_size;
     return blk_size;
 }
 
@@ -3203,7 +3203,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     }
 
     // Enforce rule that the coinbase starts with serialized block height
-    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == THRESHOLD_ACTIVE) 
+    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == THRESHOLD_ACTIVE)
     {
         CScript expect = CScript() << nHeight;
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
@@ -3439,12 +3439,6 @@ bool CChainState::AcceptBlock(const std::shared_ptr<const CBlock>& pblock, CVali
     if (fCheckForPruning)
         FlushStateToDisk(chainparams, state, FLUSH_STATE_NONE); // we just allocated more disk space for block files
 
-    
-    if (chainActive.Tip()) {
-        // Now that the block is accepted, generate the verthash datafile. 
-        // It will return quickly since its incremental.
-        VerthashDatFile::UpdateMiningDataFile();
-    }
 
     CheckBlockIndex(chainparams.GetConsensus());
 

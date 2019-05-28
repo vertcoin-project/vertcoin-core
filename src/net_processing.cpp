@@ -30,7 +30,7 @@
 #include <utilmoneystr.h>
 #include <utilstrencodings.h>
 
-#include <crypto/verthash.h>
+#include <crypto/verthash_datfile.h>
 
 #if defined(NDEBUG)
 # error "Vertcoin cannot be compiled without assertions."
@@ -1382,6 +1382,9 @@ bool static ProcessHeadersMessage(CNode *pfrom, CConnman *connman, const std::ve
 
     {
         LOCK(cs_main);
+
+        VerthashDatFile::UpdateMiningDataFile();
+
         CNodeState *nodestate = State(pfrom->GetId());
         if (nodestate->nUnconnectingHeaders > 0) {
             LogPrint(BCLog::NET, "peer=%d: resetting nUnconnectingHeaders (%d -> 0)\n", pfrom->GetId(), nodestate->nUnconnectingHeaders);
