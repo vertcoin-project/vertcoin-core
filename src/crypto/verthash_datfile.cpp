@@ -14,7 +14,15 @@ uint32_t VerthashDatFile::Fnv1a(uint32_t a, uint32_t b)
     return (a ^ b) * 0x1000193;
 }
 
-bool VerthashDatFile::UpdateMiningDataFile() {
+CCriticalSection VerthashDatFile::cs_Datfile;
+void VerthashDatFile::UpdateMiningDataFile() {
+    TRY_LOCK(cs_Datfile, lockDatfile);
+    if (!lockDatfile)
+    {
+        LogPrintf("Skipping Verthash data update because one is already running");
+        return;
+    }
+
     fs::path targetFile = GetDataDir() / "verthash.dat";
 
     // Default to writing the whole file
@@ -45,28 +53,33 @@ bool VerthashDatFile::UpdateMiningDataFile() {
         bool found = false;
 
         CBlockIndex *idx = pindexBestHeader;
+        CBlockIndex *next = pindexBestHeader;
         while(idx) {
-            if(idx->pprev != NULL && idx->pprev->GetBlockHash() == prevBlockHash) {
+            if((idx->pprev != NULL && idx->pprev->GetBlockHash() == prevBlockHash) || (idx->pprev == NULL && prevBlockHash.IsNull())) {
                 found = true;
                 break;
             }
+            next = idx;
             idx = idx->pprev;
         }
 
         if(found) {
-            startIndex = idx;
-            // startIndex is now equal to the last block we have in the file.
-            // The file pointer is before that block, because we need to read
+
+            startIndex = next;
+            // startIndex is now equal to the first block we have to write.
+            // The file pointer is before the last block in the file, because we need to read
             // in the last row.
             break;
         }
     }
 
+
+
     // Start at the tip and go back to startIndex
     CBlockIndex* idx = pindexBestHeader;
     std::stack<CBlockIndex*> blocksToWrite;
     while(idx) {
-        if(idx->GetBlockHash() == startIndex->GetBlockHash()) {
+        if(startIndex->pprev != NULL && idx->GetBlockHash() == startIndex->pprev->GetBlockHash()) {
             // We found startIndex - we already have that in the file
             break;
         }
@@ -74,7 +87,10 @@ bool VerthashDatFile::UpdateMiningDataFile() {
         idx = idx->pprev;
     }
 
-    if(blocksToWrite.size() == 0) return true;
+    if(blocksToWrite.size() == 0) {
+        return;
+    }
+
 
     unsigned char prev_row[VERTHASH_MULTIPLICATION][32], curr_row[VERTHASH_MULTIPLICATION][32], double_buf[64];
 
@@ -83,7 +99,7 @@ bool VerthashDatFile::UpdateMiningDataFile() {
         memset(prev_row, 0, sizeof(prev_row));
     } else {
         // Read the last expanded block into prev_row
-        fread(&prev_row, 32, VERTHASH_MULTIPLICATION, blockFile);
+        filein >> FLATDATA(prev_row);
     }
 
     LogPrintf("Appending %d blocks to mining datafile\n", blocksToWrite.size());
@@ -105,7 +121,7 @@ bool VerthashDatFile::UpdateMiningDataFile() {
                 sha3(double_buf, 64, curr_row[j], 32);
         }
 
-        fwrite(curr_row, VERTHASH_MULTIPLICATION , 32, blockFile);
+        filein << FLATDATA(curr_row);
         memcpy(prev_row, curr_row, VERTHASH_MULTIPLICATION*32);
 
         blocksToWrite.pop();
@@ -115,5 +131,4 @@ bool VerthashDatFile::UpdateMiningDataFile() {
     TruncateFile(blockFile, ftell(blockFile));
     FileCommit(blockFile);
     // Done.
-    return true;
 }

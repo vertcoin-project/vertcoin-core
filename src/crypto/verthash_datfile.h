@@ -22,9 +22,10 @@
 class VerthashDatFile
 {
 public:
-    static bool UpdateMiningDataFile();
+    static void UpdateMiningDataFile();
 private:
     static uint32_t Fnv1a(uint32_t a, uint32_t b);
+    static CCriticalSection cs_Datfile;
 };
 
 #endif // VERTCOIN_CRYPTO_VERTHASH_DATFILE_H
