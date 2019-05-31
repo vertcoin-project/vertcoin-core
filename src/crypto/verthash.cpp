@@ -20,7 +20,7 @@ void Verthash::Hash(const char* input, char* output, const int height)
     memcpy(header, input, 80);
 
     int i;
-    for(i=1;i<23;i++) if((height-1) < 1U<<i) break;
+    for(i=1;i<23;i++) if(height < 1U<<i) break;
     uint32_t bitmask = (0xffffffff >> (23-i)) & 0xfffffff0;
 
     fs::path dataFile = GetDataDir() / "verthash.dat";
