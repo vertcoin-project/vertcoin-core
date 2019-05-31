@@ -56,7 +56,7 @@ void VerthashDatFile::UpdateMiningDataFile() {
             bool found = false;
 
             CBlockIndex *idx = pindexBestHeader;
-            CBlockIndex *next = pindexBestHeader;
+            CBlockIndex *next = NULL;
             while(idx) {
                 if((idx->pprev != NULL && idx->pprev->GetBlockHash() == prevBlockHash) || (idx->pprev == NULL && prevBlockHash.IsNull())) {
                     found = true;
@@ -79,6 +79,10 @@ void VerthashDatFile::UpdateMiningDataFile() {
         }
         filein.fclose();
 
+    }
+
+    if(startIndex == NULL) {
+        return;
     }
 
     // Start at the tip and go back to startIndex
