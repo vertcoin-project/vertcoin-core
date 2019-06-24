@@ -480,7 +480,7 @@ public:
 
     unsigned int GetSerializeSize(int nType=0, int nVersion=PROTOCOL_VERSION) const
     {
-        return ::GetSerializeSize(getvch(), nType, nVersion);
+        return ::GetSerializeSize(getvch(), nVersion);
     }
 
     template<typename Stream>
