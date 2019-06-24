@@ -72,6 +72,11 @@ public:
     {
         return (int64_t)nTime;
     }
+
+    char* begin() const
+    {
+        return ((char*)&(nVersion));
+    }
 };
 
 
