@@ -15,7 +15,7 @@
 #include <vector>
 
 #include <openssl/bn.h>
-#include <utilstrencodings.h>
+#include <util/strencodings.h>
 
 /** Errors thrown by the bignum class */
 class bignum_error : public std::runtime_error
@@ -480,7 +480,7 @@ public:
 
     unsigned int GetSerializeSize(int nType=0, int nVersion=PROTOCOL_VERSION) const
     {
-        return ::GetSerializeSize(getvch(), nType, nVersion);
+        return ::GetSerializeSize(getvch(), nVersion);
     }
 
     template<typename Stream>

@@ -19,21 +19,23 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
    uint256 thash;
+   char *out = ((char *)(thash.begin()));
+
    if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
    {
-        lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
+        lyra2re3_hash(this->begin(), out);
    }
    else if(Params().NetworkIDString() == CBaseChainParams::TESTNET || nHeight >= 347000) // New Lyra2re2 Testnet
    {
-        lyra2re2_hash(BEGIN(nVersion), BEGIN(thash));
+        lyra2re2_hash(this->begin(), out);
    }
    else if(nHeight >= 208301)
    {
-   	    lyra2re_hash(BEGIN(nVersion), BEGIN(thash));
+   	    lyra2re_hash(this->begin(), out);
    }
    else
    {
-   	    scrypt_N_1_1_256(BEGIN(nVersion), BEGIN(thash), 10);
+   	    scrypt_N_1_1_256(this->begin(), out, 10);
    }
    return thash;
 }
