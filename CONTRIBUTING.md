@@ -20,6 +20,13 @@ Communication Channels
 Most communication about Vertcoin Core development happens onthe #development channel
 on [Discord](https://discord.gg/vertcoin).
 
+
+
+Issues List
+--------------------
+
+Open issues can be found on github in the [issues list](https://github.com/vertcoin-project/vertcoin-core/issues).
+
 Contributor Workflow
 --------------------
 
