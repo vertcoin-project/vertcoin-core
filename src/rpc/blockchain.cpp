@@ -127,6 +127,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* tip, const CBlockIn
     result.pushKV("weight", (int)::GetBlockWeight(block));
     result.pushKV("height", blockindex->nHeight);
     result.pushKV("version", block.nVersion);
+    result.pushKV("powhash", block.GetPoWHash(blockindex->nHeight).GetHex());
     result.pushKV("versionHex", strprintf("%08x", block.nVersion));
     result.pushKV("merkleroot", block.hashMerkleRoot.GetHex());
     UniValue txs(UniValue::VARR);
@@ -840,6 +841,7 @@ static UniValue getblock(const JSONRPCRequest& request)
                     RPCResult{"for verbosity = 1",
             "{\n"
             "  \"hash\" : \"hash\",     (string) the block hash (same as provided)\n"
+            "  \"powhash\" : \"hash\",  (string) the proof of work hash of the block\n"
             "  \"confirmations\" : n,   (numeric) The number of confirmations, or -1 if the block is not on the main chain\n"
             "  \"size\" : n,            (numeric) The block size\n"
             "  \"strippedsize\" : n,    (numeric) The block size excluding witness data\n"

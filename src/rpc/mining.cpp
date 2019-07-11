@@ -9,6 +9,7 @@
 #include <consensus/consensus.h>
 #include <consensus/params.h>
 #include <consensus/validation.h>
+#include <crypto/verthash_datfile.h>
 #include <core_io.h>
 #include <key_io.h>
 #include <miner.h>
@@ -30,6 +31,7 @@
 
 #include <memory>
 #include <stdint.h>
+#include <fstream>
 
 /**
  * Return average network hashes per second based on the last 'lookup' blocks,
@@ -446,8 +448,9 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Vertcoin is not connected!");
 
+    /*Disabled temporarily for Verthash. Re-enable this check in release.
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Vertcoin is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Vertcoin is downloading blocks...");*/
 
     static unsigned int nTransactionsUpdatedLast;
 
