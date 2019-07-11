@@ -11,6 +11,7 @@
 #include <chain.h>
 #include <primitives/block.h>
 #include <uint256.h>
+#include <crypto/verthash.h>
 
 arith_uint256 preVerthashPoWLimit(~arith_uint256(0) >> 20);
 CBigNum bnPreVerthashPoWLimit(preVerthashPoWLimit);
@@ -30,15 +31,15 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if(params.testnet) {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight >= 208044 && nHeight < 208054) { // Set diff to mindiff on testnet Verthash fork
+        } else if(nHeight >= VERTHASH_FORKBLOCK && nHeight < 208054) { // Set diff to mindiff on testnet Verthash fork
             return bnProofOfWorkLimit.GetCompact();
         }
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
 	        bnNew.SetCompact(pindexLast->nBits);
-            if (nHeight < 208044 && bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
-            if (nHeight >= 208044 && bnNew > bnPreVerthashPoWLimit) { bnNew = bnPreVerthashPoWLimit; }
+            if (nHeight < VERTHASH_FORKBLOCK && bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+            if (nHeight >= VERTHASH_FORKBLOCK && bnNew > bnPreVerthashPoWLimit) { bnNew = bnPreVerthashPoWLimit; }
             return bnNew.GetCompact();
         }
     } else {

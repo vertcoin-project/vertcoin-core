@@ -395,8 +395,6 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const int nHeigh
 bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus::Params& consensusParams);
 bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CDiskBlockPos& pos, const CMessageHeader::MessageStartChars& message_start);
 bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex, const CMessageHeader::MessageStartChars& message_start);
-unsigned int ReadBlockSizeFromDisk(const CDiskBlockPos& pos);
-int ReadRawBlockBytesFromDisk(char *buffer, int bufferOffset, int blockOffset, int size, const CDiskBlockPos& pos, const CChainParams& chainparams);
 
 /** Functions for validating blocks and updating the block tree */
 

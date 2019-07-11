@@ -1074,18 +1074,6 @@ static bool WriteBlockToDisk(const CBlock& block, CDiskBlockPos& pos, const CMes
 
 bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const int nHeight, const Consensus::Params& consensusParams)
 {
-    // Added extra method to just read it without PoW check
-    ReadRawBlockFromDisk(block, pos);
-
-    // Check the header
-    if (!CheckProofOfWork(block.GetPoWHash(nHeight), block.nBits, consensusParams))
-        return error("ReadBlockFromDisk: Errors in block header at %s, %d", pos.ToString(), nHeight);
-
-    return true;
-}
-
-bool ReadRawBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
-{
     block.SetNull();
 
     // Open history file to read
@@ -1101,52 +1089,11 @@ bool ReadRawBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
         return error("%s: Deserialize or I/O error - %s at %s", __func__, e.what(), pos.ToString());
     }
 
+    // Check the header
+    if (!CheckProofOfWork(block.GetPoWHash(nHeight), block.nBits, consensusParams))
+        return error("ReadBlockFromDisk: Errors in block header at %s, %d", pos.ToString(), nHeight);
+
     return true;
-}
-
-int ReadRawBlockBytesFromDisk(char *buffer, int bufferOffset, int blockOffset, int size, const CDiskBlockPos& pos, const CChainParams& chainparams)
-{
-    CDiskBlockPos hpos = pos;
-    hpos.nPos -= 4; // Seek back 4 bytes for block size
-    CAutoFile filein(OpenBlockFile(hpos, true), SER_DISK, CLIENT_VERSION);
-    if (filein.IsNull())
-        return error("ReadBlockFromDisk: OpenBlockFile failed for %s", pos.ToString());
-
-    unsigned int blk_size;
-    filein >> blk_size;
-
-    if((int(blk_size)-blockOffset) < size) {
-        size = int(blk_size)-blockOffset;
-    }
-
-    // It can be the case that we're trying to read at a position starting after this block
-    // but before the next (somewhere in the 4 magic bytes that separate the two). In that
-    // case we don't do anything here, just return the offset as a negative value. The caller
-    // will take care of handling this.
-    if(size <= 0) {
-        return size;
-    }
-
-    if(blockOffset > 0) {
-        filein.ignore(blockOffset);
-    }
-
-    filein.read(buffer+bufferOffset, size);
-    return size;
-}
-
-unsigned int ReadBlockSizeFromDisk(const CDiskBlockPos& pos)
-{
-    CDiskBlockPos hpos = pos;
-    hpos.nPos -= 4; // Seek back 4 bytes for block size
-    // Open history file to read
-    CAutoFile filein(OpenBlockFile(hpos, true), SER_DISK, CLIENT_VERSION);
-    if (filein.IsNull())
-        return error("ReadBlockFromDisk: OpenBlockFile failed for %s", pos.ToString());
-
-    unsigned int blk_size;
-    filein >> blk_size;
-    return blk_size;
 }
 
 bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus::Params& consensusParams)
@@ -1210,6 +1157,7 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
     return ReadRawBlockFromDisk(block, block_pos, message_start);
 }
+
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -3368,7 +3316,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     }
 
     // Enforce rule that the coinbase starts with serialized block height
-    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == THRESHOLD_ACTIVE)
+    if(VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_NVERSIONBIPS, versionbitscache) == ThresholdState::ACTIVE)
     {
         CScript expect = CScript() << nHeight;
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||

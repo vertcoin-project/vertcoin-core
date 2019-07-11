@@ -991,4 +991,47 @@ size_t GetSerializeSizeMany(int nVersion, const T&... t)
     return sc.size();
 }
 
+#define FLATDATA(obj) REF(CFlatData((char*)&(obj), (char*)&(obj) + sizeof(obj)))
+
+/** 
+ * Wrapper for serializing arrays and POD.
+ */
+class CFlatData
+{
+protected:
+    char* pbegin;
+    char* pend;
+public:
+    CFlatData(void* pbeginIn, void* pendIn) : pbegin((char*)pbeginIn), pend((char*)pendIn) { }
+    template <class T, class TAl>
+    explicit CFlatData(std::vector<T,TAl> &v)
+    {
+        pbegin = (char*)v.data();
+        pend = (char*)(v.data() + v.size());
+    }
+    template <unsigned int N, typename T, typename S, typename D>
+    explicit CFlatData(prevector<N, T, S, D> &v)
+    {
+        pbegin = (char*)v.data();
+        pend = (char*)(v.data() + v.size());
+    }
+    char* begin() { return pbegin; }
+    const char* begin() const { return pbegin; }
+    char* end() { return pend; }
+    const char* end() const { return pend; }
+
+    template<typename Stream>
+    void Serialize(Stream& s) const
+    {
+        s.write(pbegin, pend - pbegin);
+    }
+
+    template<typename Stream>
+    void Unserialize(Stream& s)
+    {
+        s.read(pbegin, pend - pbegin);
+    }
+};
+
+
 #endif // BITCOIN_SERIALIZE_H

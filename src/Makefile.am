@@ -375,7 +375,7 @@ crypto_libbitcoin_crypto_base_a_SOURCES = \
   crypto/Lyra2RE/bmw.c \
   crypto/Lyra2RE/bmw.h \
   crypto/siphash.cpp \
-  crypto/siphash.h
+  crypto/siphash.h \
   crypto/sha3.c \
   crypto/sha3.h \
   crypto/verthash.cpp \
