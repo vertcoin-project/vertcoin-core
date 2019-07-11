@@ -31,7 +31,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if(params.testnet) {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight >= VERTHASH_FORKBLOCK && nHeight < 208054) { // Set diff to mindiff on testnet Verthash fork
+        } else if(nHeight >= VERTHASH_FORKBLOCK && nHeight < VERTHASH_FORKBLOCK+10) { // Set diff to mindiff on testnet Verthash fork
             return bnProofOfWorkLimit.GetCompact();
         }
 
