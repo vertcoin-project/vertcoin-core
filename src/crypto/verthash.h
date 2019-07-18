@@ -10,12 +10,13 @@
 #include <validation.h>
 #include <string>
 #include <uint256.h>
-#include <util.h>
+#include <util/system.h>
 #include <chainparams.h>
 #include <streams.h>
 #include <fs.h>
 #include <crypto/sha3.h>
 
+#define VERTHASH_FORKBLOCK 208044
 
 /** Default for -blockmaxweight, which controls the range of block weights the mining code will create **/
 

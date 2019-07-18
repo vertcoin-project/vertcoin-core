@@ -134,10 +134,6 @@
         <translation>Vertcoin</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Rahakott</translation>
-    </message>
-    <message>
         <source>&amp;Send</source>
         <translation>&amp;Saada</translation>
     </message>
@@ -257,15 +253,7 @@
         <source>Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Kasutus:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>käsurea valikud</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -292,10 +280,6 @@
     <message>
         <source>Options</source>
         <translation>Valikud</translation>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation>MB</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -507,6 +491,10 @@
     <message>
         <source>Message</source>
         <translation>Sõnum</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Rahakott</translation>
     </message>
     </context>
 <context>
@@ -741,6 +729,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -763,10 +754,6 @@
     </context>
 <context>
     <name>vertcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>Valikud:</translation>
-    </message>
     <message>
         <source>Vertcoin Core</source>
         <translation>Vertcoin Core</translation>

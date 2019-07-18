@@ -180,10 +180,6 @@
         <translation>Novčanik je šifrovan</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 će se ugasiti da bi dovršio proces enkriptovanja. Imajte u vidu da enkripcija novčanika ne garantuje potpunu zaštitu vertcoina od krađe od strane nekog virusa koji bi zarazio vaš kompjuter.</translation>
-    </message>
-    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>VAŽNO: Ranije rezervne kopije wallet datoteke trebate zameniti sa novo-kreiranom, enkriptovanom wallet datotekom. Iz sigurnosnih razloga, ranije ne-enkriptovane wallet datoteke će postati neupotrebljive čim počnete koristiti novi, enkriptovani novčanik.</translation>
     </message>
@@ -246,10 +242,6 @@
         <translation>&amp;Pregled</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Čvor</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Prikaži opšti pregled novčanika</translation>
     </message>
@@ -306,14 +298,6 @@
         <translation>&amp;Izmeni pristupnu frazu...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Slanje adresa...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Primanje adresa...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Otvori &amp;URI...</translation>
     </message>
@@ -364,10 +348,6 @@
     <message>
         <source>Vertcoin</source>
         <translation>Vertcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Novčanik</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -582,6 +562,10 @@
         <source>Label</source>
         <translation>Oznaka</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Novčanik</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -611,6 +595,10 @@
     <message>
         <source>After Fee:</source>
         <translation>Nakon Naknade:</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Taksa transakcije</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -673,6 +661,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

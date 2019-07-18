@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 
 #include <hash.h>
 #include <tinyformat.h>
-#include <utilstrencodings.h>
+#include <util/strencodings.h>
 #include <crypto/common.h>
 #include <crypto/verthash.h>
 #include <chainparams.h>
@@ -21,26 +21,27 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
    uint256 thash;
+   char *out = ((char *)(thash.begin()));
 
-   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= 208044)) // New Verthash Testnet
+   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= VERTHASH_FORKBLOCK)) // New Verthash Testnet
    {
-       Verthash::Hash(BEGIN(nVersion), BEGIN(thash), nHeight);
+       Verthash::Hash(this->begin(), out, nHeight);
    }
    else if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
    {
-        lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
+        lyra2re3_hash(this->begin(), out);
    }
    else if(Params().NetworkIDString() == CBaseChainParams::TESTNET || nHeight >= 347000) // New Lyra2re2 Testnet
    {
-        lyra2re2_hash(BEGIN(nVersion), BEGIN(thash));
+        lyra2re2_hash(this->begin(), out);
    }
    else if(nHeight >= 208301)
    {
-   	    lyra2re_hash(BEGIN(nVersion), BEGIN(thash));
+   	    lyra2re_hash(this->begin(), out);
    }
    else
    {
-   	    scrypt_N_1_1_256(BEGIN(nVersion), BEGIN(thash), 10);
+   	    scrypt_N_1_1_256(this->begin(), out, 10);
    }
    return thash;
 }

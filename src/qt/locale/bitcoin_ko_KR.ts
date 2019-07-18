@@ -3,11 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>지갑 주소나 라벨을 수정하시려면 우클릭하세요.</translation>
+        <translation>지갑 주소나 라벨을 수정/변경하려면 우클릭을 하십시오.</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>새 주소 만들기</translation>
+        <translation>새로운 지갑 주소 생성하기.</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -28,6 +28,10 @@
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>현재 목록에 선택한 주소 삭제</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>검색하려는 주소 또는 라벨 입력</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -59,7 +63,7 @@
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>받은 주소들</translation>
+        <translation>받는 주소들</translation>
     </message>
     <message>
         <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
@@ -71,7 +75,7 @@
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>계좌 복사(&amp;C)</translation>
+        <translation>주소 복사(&amp;C)</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -129,15 +133,15 @@
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>새로운 암호 재확인</translation>
+        <translation>새로운 암호 재입력</translation>
     </message>
     <message>
         <source>Show password</source>
-        <translation>비밀번호를 입력하세요</translation>
+        <translation>암호 보이기</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>지갑에 새로운 비밀문구를 입력하세요.&lt;br/&gt;비밀문구를 &lt;b&gt;열 개 이상의 무작위 글자&lt;/b&gt; 혹은 &lt;b&gt;여덟개 이상의 단어로&lt;b&gt; 정하세요.</translation>
+        <translation>지갑에 새로운 암호를 입력하세요.&lt;br/&gt;암호를 &lt;b&gt;열 개 이상의 무작위 글자&lt;/b&gt; 혹은 &lt;b&gt;여덟개 이상의 단어로&lt;b&gt; 정하세요.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -145,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>이 작업을 실행하려면 사용자 지갑의 암호가 필요합니다.</translation>
+        <translation>이 작업은 지갑 잠금해제를 위해 사용자 지갑의 암호가 필요합니다.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -153,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>이 작업은 지갑을 해독하기 위해 사용자 지갑의 암호가 필요합니다.</translation>
+        <translation>이 작업은 지갑을 복호화하기 위해 사용자 지갑의 암호가 필요합니다.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -184,12 +188,12 @@
         <translation>지갑 암호화 완료</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation>암호화 처리 과정을 끝내기 위해 %1을 종료합니다. 지갑 암호화는 컴퓨터로의 멀웨어 감염으로 인한 비트코인 도난을 완전히 방지할 수 없음을 기억하세요.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>이제 지갑이 암호화되었습니다. 지갑을 암호화한다고 해서 당신의 컴퓨터를 감염시키는 멀웨어로부터 비트코인을 완전히 보호할 수는 없다는 점을 유념하세요.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>중요: 본인 지갑 파일에서 만든 예전 백업들은 새로 생성한 암호화된 지갑 파일로 교체됩니다. 보안상 이유로 이전에 암호화하지 않은 지갑 파일 백업은 사용할 수 없게 되니 이른 시일 내로 새로 암호화된 지갑을 사용하시기 바랍니다.</translation>
+        <translation>중요: 본인 지갑 파일에서 만든 예전 백업들은 새로 생성한 암호화된 지갑 파일로 교체해야 합니다. 보안상 이유로, 새 암호화된 지갑을 사용하게 되면 이전에 암호화하지 않은 지갑 파일의 백업은 사용할 수 없게 됩니다.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -197,7 +201,7 @@
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>지갑 암호화는 내부 에러로 인해 실패했습니다.  당신의 지갑은 암호화 되지 않았습니다.</translation>
+        <translation>지갑 암호화가 내부 오류로 인해 실패했습니다.  당신의 지갑은 암호화 되지 않았습니다.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -209,7 +213,7 @@
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>지갑 해독을 위한 암호가 틀렸습니다.</translation>
+        <translation>지갑 복호화를 위한 암호가 틀렸습니다.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -217,7 +221,7 @@
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>지갑 비밀번호가 성공적으로 변경되었습니다.</translation>
+        <translation>지갑 암호가 성공적으로 변경되었습니다.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -232,7 +236,7 @@
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>다음과 같은 상황이 될 때까지 계정 정지됩니다.</translation>
+        <translation>해당 일정까지 밴됨.</translation>
     </message>
 </context>
 <context>
@@ -250,12 +254,8 @@
         <translation>개요(&amp;O)</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>노드</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
-        <translation>지갑의 일반적 개요를 보여줍니다.</translation>
+        <translation>지갑의 일반적 개요를 보여줍니다</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -263,7 +263,7 @@
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>거래내역을 검색합니다.</translation>
+        <translation>거래내역을 검색합니다</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>옵션(&amp;O)</translation>
+        <translation>옵션(&amp;O)...</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -307,23 +307,19 @@
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>암호문 변경(&amp;C)...</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>보내는 주소(&amp;S)</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>받는 주소(&amp;R)</translation>
+        <translation>암호 변경(&amp;C)...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
         <translation>&amp;URI 열기...</translation>
     </message>
     <message>
+        <source>Wallet:</source>
+        <translation>지갑:</translation>
+    </message>
+    <message>
         <source>Click to disable network activity.</source>
-        <translation>네트워크 활동을 중지하려면 클릭.</translation>
+        <translation>네트워크 활동을 중지하려면 클릭하세요.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
@@ -331,7 +327,7 @@
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation>네트워크 활동을 다시 시작하려면 클릭.</translation>
+        <translation>네트워크 활동을 다시 시작하려면 클릭하세요.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
@@ -342,12 +338,16 @@
         <translation>디스크에서 블록 다시 색인중...</translation>
     </message>
     <message>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>프록시가 &lt;b&gt;활성화&lt;/b&gt; 되었습니다: %1</translation>
+    </message>
+    <message>
         <source>Send coins to a Vertcoin address</source>
         <translation>비트코인 주소로 코인 전송</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>지갑을 다른장소에 백업</translation>
+        <translation>지갑을 다른장소에 백업합니다</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -363,15 +363,11 @@
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>메시지 확인(&amp;V)...</translation>
+        <translation>메시지 검증(&amp;V)...</translation>
     </message>
     <message>
         <source>Vertcoin</source>
         <translation>비트코인</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>지갑</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -423,11 +419,11 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>한번 이상 사용된 보내는 주소와 주소 제목의 목록을 보여줍니다.</translation>
+        <translation>한번 이상 사용된 보내는 주소와 라벨의 목록을 보여줍니다</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>한번 이상 사용된 받는 주소와 주소 제목의 목록을 보여줍니다.</translation>
+        <translation>한번 이상 사용된 받는 주소와 라벨의 목록을 보여줍니다</translation>
     </message>
     <message>
         <source>Open a vertcoin: URI or payment request</source>
@@ -455,7 +451,7 @@
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>%1 뒤에</translation>
+        <translation>%1 뒷처짐</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -479,11 +475,67 @@
     </message>
     <message>
         <source>Up to date</source>
-        <translation>현재까지</translation>
+        <translation>최신의</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses</source>
+        <translation>보내는 주소(&amp;S)</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>받는 주소(&amp;R)</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <translation>지갑 열기</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>지갑 하나 열기</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>지갑 닫기...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>지갑 닫기</translation>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation>사용할 수 있는 비트코인 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
+        <translation>사용할 수 있는 비트코인 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>기본 지갑</translation>
+    </message>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>지갑 &lt;b&gt;%1&lt;/b&gt; 여는중...</translation>
+    </message>
+    <message>
+        <source>Open Wallet Failed</source>
+        <translation>지갑 열기 실패</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>창(&amp;W)</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>최소화</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>최대화</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>복원</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation>메인창</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -510,6 +562,12 @@
 </translation>
     </message>
     <message>
+        <source>Wallet: %1
+</source>
+        <translation>지갑: %1
+</translation>
+    </message>
+    <message>
         <source>Type: %1
 </source>
         <translation>종류: %1
@@ -529,7 +587,7 @@
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>거래 보내기</translation>
+        <translation>발송된 거래</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
@@ -542,6 +600,10 @@
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>HD 키 생성이 &lt;b&gt;비활성화되었습니다&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>개인키 &lt;b&gt;비활성화됨&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -636,7 +698,7 @@
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>거래액 복사</translation>
+        <translation>금액 복사</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
@@ -692,7 +754,7 @@
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>입력마다 +/- %1 사토시(s)가 변할 수 있습니다.</translation>
+        <translation>입력마다 +/- %1 사토시가 변할 수 있습니다.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -730,10 +792,6 @@
         <translation>주소(&amp;A)</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>새 받는 주소</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>새 보내는 주소</translation>
     </message>
@@ -750,8 +808,12 @@
         <translation>입력한 "%1" 주소는 올바른 비트코인 주소가 아닙니다.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>입력된 주소는"%1" 이미 주소록에 있습니다.</translation>
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation>주소 "%1"은 이미 라벨 "%2"로 받는 주소에 존재하여 보내는 주소로 추가될 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>입력된 주소 "%1"은 라벨 "%2"로 이미 주소록에 있습니다.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -782,7 +844,7 @@
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>데이터 폴더를 여기 생성할 수 없습니다.</translation>
+        <translation>데이터 폴더를 여기에 생성할 수 없습니다.</translation>
     </message>
 </context>
 <context>
@@ -797,47 +859,11 @@
     </message>
     <message>
         <source>About %1</source>
-        <translation>%1 정보(&amp;A)</translation>
+        <translation>%1 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
         <translation>명령줄 옵션</translation>
-    </message>
-    <message>
-        <source>Usage:</source>
-        <translation>사용법:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>명령줄 옵션</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>UI 옵션:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>실행시 데이터 폴더 선택하기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>"ko_KR"와 같이 언어를 설정하십시오 (기본값: 시스템 로캘)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>최소화된 상태에서 시작</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>지불 요청을 위한 SSL 루트 인증서 설정 (기본값: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>실행시 시작화면 보기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>GUI를 통해 수정된 모든 설정을 초기화</translation>
     </message>
 </context>
 <context>
@@ -880,11 +906,11 @@
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>최소 %1GB의 데이터가 이 디렉토리에 저장되며 시간이 지남에 따라 증가 할 것입니다.</translation>
+        <translation>최소 %1 GB의 데이터가 이 디렉토리에 저장되며 시간이 지남에 따라 증가할 것입니다.</translation>
     </message>
     <message>
         <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>약 %1GB의 데이터가 이 디렉토리에 저장됩니다.</translation>
+        <translation>약 %1 GB의 데이터가 이 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Vertcoin block chain.</source>
@@ -896,7 +922,7 @@
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>오류: "%1" 지정한 데이터 디렉토리를 생성할 수 없습니다.</translation>
+        <translation>오류: 지정한 데이터 디렉토리 "%1" 를 생성할 수 없습니다.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -958,8 +984,8 @@
         <translation>숨기기</translation>
     </message>
     <message>
-        <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>알수없음. 헤더 동기화중 (%1)...</translation>
+        <source>Unknown. Syncing Headers (%1, %2%)...</source>
+        <translation>알 수 없음. 헤더 동기화 중(%1,%2%)...</translation>
     </message>
 </context>
 <context>
@@ -970,7 +996,7 @@
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>지급 요청 URI 또는 파일 열기</translation>
+        <translation>지불 요청 URI 또는 파일 열기</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1008,10 +1034,6 @@
         <translation>데이터베이스 캐시 크기(&amp;D)</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>메가바이트</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>스크립트 인증 쓰레드의 개수(&amp;V)</translation>
     </message>
@@ -1033,7 +1055,7 @@
     </message>
     <message>
         <source>&amp;Hide tray icon</source>
-        <translation>&amp;트레이 아이콘 숨기기</translation>
+        <translation>트레이 아이콘 숨기기(&amp;H)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -1044,12 +1066,8 @@
         <translation>서드-파티 URLs (예. 블록 탐색기)는 거래 탭의 컨텍스트 메뉴에 나타납니다. URL의 %s는 거래 해시값으로 대체됩니다. 여러 URLs는 수직 바 | 에서 나누어 집니다.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>명령줄 옵션 활성화는 위의 옵션들을 대체합니다:</translation>
-    </message>
-    <message>
         <source>Open the %1 configuration file from the working directory.</source>
-        <translation>작업 디렉토리에서 %1 구성 파일을 엽니다.</translation>
+        <translation>작업 디렉토리에서 %1 설정 파일을 엽니다.</translation>
     </message>
     <message>
         <source>Open Configuration File</source>
@@ -1057,7 +1075,7 @@
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>모든 클라이언트 옵션을 기본값으로 재설정</translation>
+        <translation>모든 클라이언트 옵션을 기본값으로 재설정합니다.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
@@ -1066,6 +1084,26 @@
     <message>
         <source>&amp;Network</source>
         <translation>네트워크(&amp;N)</translation>
+    </message>
+    <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>일부분의 고급 기능을 취소 하지만 모든 블록들은 검증될 것입니다. 이 설정을 되돌리려면 처음부터 블록체인을 다시 다운로드 받아야 합니다. 실제 디스크 사용량은 더 많을수도 있습니다.</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation>블록 데이터를 지정된 크기로 축소합니다: </translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation>이 설정을 되돌리려면 처음주터 블록체인을 다시 다운로드 받아야 합니다.</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1097,7 +1135,7 @@
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>사용중인 &amp;UPnP 포트 매핑</translation>
+        <translation>&amp;UPnP를 이용해 포트 매핑</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -1105,7 +1143,7 @@
     </message>
     <message>
         <source>Allow incomin&amp;g connections</source>
-        <translation>연결 요청을 허용합니다.</translation>
+        <translation>연결 요청을 허용 (&amp;G)</translation>
     </message>
     <message>
         <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
@@ -1125,7 +1163,7 @@
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>프록시의 포트번호입니다 (예: 9050)</translation>
+        <translation>프록시의 포트번호 (예: 9050)</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
@@ -1177,7 +1215,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>거래액을 표시할 단위(&amp;U):</translation>
+        <translation>금액을 표시할 단위(&amp;U):</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1189,7 +1227,11 @@
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
-        <translation>&amp;제 3자 거래 URL들</translation>
+        <translation>제 3자 거래 URL들 (&amp;T)</translation>
+    </message>
+    <message>
+        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
+        <translation>이 다이얼로그에서 설정한 옵션은 커맨드라인이나 설정파일에 의해 바뀔수 있습니다:</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1225,7 +1267,7 @@
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>구성 파일은 GUI 설정을 무시하는 고급 사용자 옵션을 지정하는 데 사용됩니다. 또한 모든 명령 줄 옵션이 구성 파일보다 우선합니다.</translation>
+        <translation>설정 파일은 GUI 설정을 우선하는 고급 사용자 옵션을 지정하는 데 사용됩니다. 또한 모든 명령 줄 옵션이 설정 파일보다 우선합니다.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1233,7 +1275,7 @@
     </message>
     <message>
         <source>The configuration file could not be opened.</source>
-        <translation>구성 파일을 열 수 없습니다.</translation>
+        <translation>설정 파일을 열 수 없습니다.</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1260,7 +1302,7 @@
     </message>
     <message>
         <source>Available:</source>
-        <translation>사용 가능</translation>
+        <translation>사용 가능:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1268,11 +1310,11 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>미확정</translation>
+        <translation>미확정:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>전체 거래들은 아직 확인되지 않았고, 그리고 현재 잔액에 아직 반영되지 않았습니다.</translation>
+        <translation>아직 확인되지 않아 사용가능한 잔액에 반영되지 않은 거래 총액</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1312,7 +1354,7 @@
     </message>
     <message>
         <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>조회전용 주소의 채굴된 잔액 중 숙성되지 않은 것</translation>
+        <translation>조회전용 주소의 채굴된 잔액 중 사용가능하지 않은 금액</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -1334,12 +1376,24 @@
         <translation>URI 핸들링</translation>
     </message>
     <message>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation>'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
+        <translation>지금 사용하고 있는 BIP70 URL은 나중에 지원되지 않을 수 있습니다.</translation>
+    </message>
+    <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>지불 요청의 URL이 올바르지 않습니다: %1</translation>
     </message>
     <message>
+        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
+        <translation>BIP70 기능이 포함되지 않아서 지불 요청을 처리할 수 없습니다.</translation>
+    </message>
+    <message>
         <source>Invalid payment address %1</source>
-        <translation>잘못된 지불 주소입니다 %1</translation>
+        <translation>잘못된 지불 주소 %1</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
@@ -1347,7 +1401,7 @@
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation>지불이 파일 처리를 요청합니다</translation>
+        <translation>지불 요청 파일 처리중</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1359,11 +1413,11 @@
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>지급 요청 네트워크가 클라이언트 네트워크와 일치되지 않습니다.</translation>
+        <translation>지불 요청 네트워크가 클라이언트 네트워크와 일치하지 않습니다.</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>지불 요청이 만료됨.</translation>
+        <translation>지불 요청이 만료되었습니다.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
@@ -1375,11 +1429,11 @@
     </message>
     <message>
         <source>Invalid payment request.</source>
-        <translation>잘못된 지불 요청.</translation>
+        <translation>잘못된 지불 요청입니다.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>요청한 금액 %1의 양이 너무 적습니다. (스팸성 거래로 간주)</translation>
+        <translation>요청한 금액 %1의 양이 너무 적습니다. (더스트로 간주)</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1391,7 +1445,7 @@
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation>%1과 소통하는데 에러: %2</translation>
+        <translation>%1과의 통신 오류: %2</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
@@ -1399,11 +1453,11 @@
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>서버로 부터 잘못된 반응 %1</translation>
+        <translation>서버 %1로 부터 잘못된 반응</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>네트워크 요청 에러</translation>
+        <translation>네트워크 요청 오류</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
@@ -1441,7 +1495,7 @@
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>거래액</translation>
+        <translation>금액</translation>
     </message>
     <message>
         <source>Enter a Vertcoin address (e.g. %1)</source>
@@ -1531,16 +1585,20 @@
 <context>
     <name>QObject::QObject</name>
     <message>
-        <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>에러: 지정한 데이터 폴더 "%1"은 존재하지 않습니다.</translation>
+        <source>Error parsing command line arguments: %1.</source>
+        <translation>명령줄 인자 파싱 오류: %1.</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>에러: 설정파일을 파싱할수 없습니다: %1. key=value syntax만 사용가능합니다.</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>오류: 지정한 데이터 폴더 "%1"은 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Error: Cannot parse configuration file: %1.</source>
+        <translation>오류: 설성 파일 %1을 파싱할 수 없습니다</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>에러: %1</translation>
+        <translation>오류: %1</translation>
     </message>
 </context>
 <context>
@@ -1566,7 +1624,7 @@
     <name>RPCConsole</name>
     <message>
         <source>N/A</source>
-        <translation>없음</translation>
+        <translation>N/A</translation>
     </message>
     <message>
         <source>Client version</source>
@@ -1591,6 +1649,18 @@
     <message>
         <source>Datadir</source>
         <translation>데이터 폴더</translation>
+    </message>
+    <message>
+        <source>To specify a non-default location of the data directory use the '%1' option.</source>
+        <translation>기본 위치가 아닌 곳으로 데이타 폴더를 지정하려면 '%1' 옵션을 사용하세요.</translation>
+    </message>
+    <message>
+        <source>Blocksdir</source>
+        <translation>Blocksdir</translation>
+    </message>
+    <message>
+        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
+        <translation>기본 위치가 아닌 곳으로 블럭 폴더를 지정하려면 '%1' 옵션을 사용하세요.</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -1627,6 +1697,14 @@
     <message>
         <source>Memory usage</source>
         <translation>메모리 사용량</translation>
+    </message>
+    <message>
+        <source>Wallet: </source>
+        <translation>지갑:</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(없음)</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
@@ -1790,15 +1868,15 @@
     </message>
     <message>
         <source>Ban for</source>
-        <translation>추방</translation>
+        <translation>차단사유:</translation>
     </message>
     <message>
         <source>&amp;Unban</source>
-        <translation>노드 추방 취소(&amp;U)</translation>
+        <translation>노드 차단 취소(&amp;U)</translation>
     </message>
     <message>
         <source>Welcome to the %1 RPC console.</source>
-        <translation>%1 RPC 콘솔에 오신걸 환영합니다</translation>
+        <translation>%1 RPC 콘솔에 오신걸 환영합니다.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -1819,6 +1897,14 @@
     <message>
         <source>Network activity disabled</source>
         <translation>네트워크 활동이 정지됨.</translation>
+    </message>
+    <message>
+        <source>Executing command without any wallet</source>
+        <translation>지갑 없이 명령 실행</translation>
+    </message>
+    <message>
+        <source>Executing command using "%1" wallet</source>
+        <translation>"%1" 지갑을 사용하여 명령 실행</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -1873,7 +1959,7 @@
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>임의의 라벨이 새로운 받기 주소와 결합</translation>
+        <translation>새로운 받기 주소와 결합될 부가적인 라벨.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1885,27 +1971,27 @@
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>양식의 모든 필드를 지웁니다</translation>
+        <translation>양식의 모든 필드를 지웁니다.</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>지우기</translation>
     </message>
     <message>
+        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</source>
+        <translation>세그윗 주소(Bech32 또는 BIP-173)는 거래 수수료를 줄여주고 오입력을 방지하지만 구버전 지갑은 이를 지원하지 않습니다. 체크하지 않으면 구버전 지갑과 호환되는 주소가 생성됩니다.</translation>
+    </message>
+    <message>
+        <source>Generate native segwit (Bech32) address</source>
+        <translation>Bech32 세그윗 주소 생성</translation>
+    </message>
+    <message>
         <source>Requested payments history</source>
-        <translation>지출기록 확인</translation>
+        <translation>지불 요청 이력</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
         <translation>지불 요청(&amp;R)</translation>
-    </message>
-    <message>
-        <source>Bech32 addresses (BIP-173) are cheaper to spend from and offer better protection against typos. When unchecked a P2SH wrapped SegWit address will be created, compatible with older wallets.</source>
-        <translation>Bech32 주소 (BIP-173)는 더 적은 수수료와 오입금으로부터 방지해 줍니다. Bech32가 비활성화 되어있으면 P2SH 기반의 세그윗 주소가 대신 생성됩니다.</translation>
-    </message>
-    <message>
-        <source>Generate Bech32 address</source>
-        <translation>Bech32 주소 생성</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -1987,8 +2073,12 @@
         <translation>메시지</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>지갑</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI 결과가 너무 길음, 라벨/메세지의 글을 줄이도록 하세요.</translation>
+        <translation>URI 결과가 너무 깁니다. 라벨 / 메세지를 줄이세요.</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
@@ -2030,7 +2120,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>코인들 보내기</translation>
+        <translation>코인 전송내기</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2042,11 +2132,11 @@
     </message>
     <message>
         <source>automatically selected</source>
-        <translation>자동 선택</translation>
+        <translation>자동 선택됨</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>자금이 부족합니다!</translation>
+        <translation>잔액이 부족합니다!</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2101,24 +2191,20 @@
         <translation>수수료 설정 접기</translation>
     </message>
     <message>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation>거래 가상 크기의 kB (1,000 바이트)당 수수료을 지정하십시오.
+
+참고 : 수수료는 바이트 단위로 계산되므로 거래 크기가 500 바이트 (1kB의 절반)일때에 수수료가 "100 satoshis / kB"이면 궁극적으로 50사토시의 수수료만 발생합니다.</translation>
+    </message>
+    <message>
         <source>per kilobyte</source>
         <translation>킬로바이트 당</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>사용자 정의 수수료가 1000사토시로 지정된 경우 거래의 크기가 250바이트 일 경우 1킬로바이트당 250사토시만 지불되지만 "최소 수수료"에선 1000사토시가 지불됩니다. 1킬로바이트가 넘는 거래인 경우 어떠한 경우에든 1킬로바이트 기준으로 지불됩니다.</translation>
-    </message>
-    <message>
         <source>Hide</source>
         <translation>숨기기</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
-        <translation>블록의 용량보다 거래의 용량이 작은 경우에는 최소한의 수수료만으로도 충분합니다. 그러나 비트코인 네트워크의 처리량보다 더 많은 거래 요구는 영원히 검증이 안 될 수도 있습니다.</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(툴팁을 꼭 읽어보세요)</translation>
     </message>
     <message>
         <source>Recommended:</source>
@@ -2142,11 +2228,19 @@
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>양식의 모든 필드를 지웁니다</translation>
+        <translation>양식의 모든 필드를 지웁니다.</translation>
     </message>
     <message>
         <source>Dust:</source>
         <translation>더스트:</translation>
+    </message>
+    <message>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation>거래량이 블록에 남은 공간보다 적은 경우에는 채굴자나 중계 노드들이 최소 수수료를 허용할 수 있습니다. 최소 수수료만 지불하는건 괜찮지만, 네트워크가 처리할 수 있는 용량을 넘는 비트코인 거래가 있을 경우에는 이 거래가 승인이 안될 수 있다는 점을 유의하세요.</translation>
+    </message>
+    <message>
+        <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
+        <translation>너무 적은 수수료로는 거래 승인이 안될 수도 있습니다 (툴팁을 참고하세요)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2158,8 +2252,7 @@
     </message>
     <message>
         <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
-        <translation>Replace-By-Fee (BIP-125) 옵션은 보낸 거래의 수수료 상향을 지원해 줍니다.
-이 옵션이 없을 경우 거래 지연을 방지하기 위해 더 높은 수수료가 요구됩니다.</translation>
+        <translation>Replace-By-Fee (BIP-125) 옵션은 보낸 거래의 수수료 상향을 지원해 줍니다. 이 옵션이 없을 경우 거래 지연을 방지하기 위해 더 높은 수수료가 권장됩니다.</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -2207,7 +2300,7 @@
     </message>
     <message>
         <source>%1 (%2 blocks)</source>
-        <translation>%1(%2 블록스)</translation>
+        <translation>%1(%2 블록)</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2218,14 +2311,6 @@
         <translation>정말로 보내시겠습니까?</translation>
     </message>
     <message>
-        <source>added as transaction fee</source>
-        <translation>거래 수수료로 추가됨</translation>
-    </message>
-    <message>
-        <source>Total Amount %1</source>
-        <translation>총 액수 %1</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>또는</translation>
     </message>
@@ -2234,8 +2319,24 @@
         <translation>추후에 거래 수수료를 올릴 수 있습니다 (Replace-By-Fee, BIP-125 지원)</translation>
     </message>
     <message>
+        <source>from wallet %1</source>
+        <translation>%1 지갑에서</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction.</source>
+        <translation>거래를 재검토 하십시오</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>거래 수수료</translation>
+    </message>
+    <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
         <translation>Replace-By-Fee, BIP-125 지원 안함</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>총액</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2259,11 +2360,11 @@
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>중복된 주소 발견: 한번에 하나의 주소에만 작업할 수 있습니다.</translation>
+        <translation>중복된 주소 발견: 주소는 한번만 사용되어야 합니다.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
-        <translation>거래를 생성하는 것을 실패하였습니다!</translation>
+        <translation>거래 생성에 실패했습니다!</translation>
     </message>
     <message>
         <source>The transaction was rejected with the following reason: %1</source>
@@ -2271,15 +2372,11 @@
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation>%1 보다 높은 수수료는 너무 높은 수수료 입니다.</translation>
+        <translation>%1 보다 큰 수수료는 지나치게 높은 수수료 입니다.</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>지불 요청이 만료됨.</translation>
-    </message>
-    <message>
-        <source>Pay only the required fee of %1</source>
-        <translation>오직 %1 만의 수수료를 지불하기</translation>
+        <translation>지불 요청이 만료되었습니다.</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
@@ -2299,7 +2396,7 @@
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation>변경하기 위해 선택한 주소는 이 지갑의 일부가 아닙니다. 지갑에 있는 일부 또는 모든 금액을 이 주소로 보낼 수 있습니다. 확실합니까?</translation>
+        <translation>거스름돈을 위해 선택한 주소는 이 지갑의 일부가 아닙니다. 지갑에 있는 일부 또는 모든 금액을 이 주소로 보낼 수 있습니다. 확실합니까?</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2322,7 +2419,7 @@
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소를 선택하십시오</translation>
+        <translation>이전에 사용한 주소를 선택하기</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
@@ -2346,7 +2443,7 @@
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation>항목을 지웁니다</translation>
+        <translation>입력된 항목 삭제</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2358,7 +2455,7 @@
     </message>
     <message>
         <source>Use available balance</source>
-        <translation>사용 가능한 잔고 사용</translation>
+        <translation>잔액 전부 사용하기</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -2366,15 +2463,15 @@
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
-        <translation>인증 되지 않은 지급 요청입니다.</translation>
+        <translation>인증 되지 않은 지불 요청입니다.</translation>
     </message>
     <message>
         <source>This is an authenticated payment request.</source>
-        <translation>인증 된 지급 요청 입니다.</translation>
+        <translation>인증 된 지불 요청 입니다.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>사용된 주소 목록에 새 주소를 추가하기 위해 라벨 이름을 입력해 주세요. </translation>
+        <translation>이 주소에 라벨을 입력하면 사용된 주소 목록에 라벨이 표시됩니다</translation>
     </message>
     <message>
         <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
@@ -2382,7 +2479,7 @@
     </message>
     <message>
         <source>Pay To:</source>
-        <translation>송금할 대상:</translation>
+        <translation>보낼 주소:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2415,7 +2512,7 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>서명 - 싸인 / 메시지 확인</translation>
+        <translation>서명 - 싸인 / 메시지 검증</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
@@ -2431,7 +2528,7 @@
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소를 선택하십시오</translation>
+        <translation>이전에 사용한 주소 선택</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2439,7 +2536,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>클립보드로 부터 주소를 복사하기</translation>
+        <translation>클립보드에서 주소 복사</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2447,7 +2544,7 @@
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>여기에 서명하려는 메시지를 입력하십시오</translation>
+        <translation>여기에 서명할 메시지를 입력하세요</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2455,7 +2552,7 @@
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>현재 서명을 시스템 클립보드에 복사</translation>
+        <translation>이 서명을 시스템 클립보드로 복사</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Vertcoin address</source>
@@ -2463,11 +2560,11 @@
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>메시지에 서명(&amp;M)</translation>
+        <translation>메시지 서명(&amp;M)</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
-        <translation>메시지 필드의 모든 서명 재설정</translation>
+        <translation>모든 입력항목을 초기화합니다</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -2479,7 +2576,7 @@
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>메시지를 검증하기 위해 아래 칸에 각각 지갑 주소와 메시지, 전자서명을 입력하세요. (메시지 원본의 띄어쓰기, 들여쓰기, 행 나눔 등이 정확하게 입력되어야 하므로 원본을 복사해서 입력하세요) 이 기능은 메시지 검증이 주 목적이며, 네트워크 침입자에 의해 변조되지 않도록 전자서명 해독에 불필요한 시간을 소모하지 마세요. </translation>
+        <translation>메시지를 검증하기 위해 아래 칸에 각각 지갑 주소와 메시지, 서명을 입력하세요 (메시지 원본의 띄어쓰기, 들여쓰기, 행 나눔 등이 정확하게 입력되어야 하므로 원본을 복사해서 입력하세요). 네트워크 침입자의 속임수에 넘어가지 않도록 서명된 메시지 내용 이외의 내용은 참고하지 않도록 유의하세요. 이 기능은 단순히 서명한 쪽에서 해당 주소로 송금을 받을 수 있다는 것을 증명하는 것 뿐이며 그 이상은 어떤 것도 보증하지 않습니다.</translation>
     </message>
     <message>
         <source>The Vertcoin address the message was signed with</source>
@@ -2495,11 +2592,11 @@
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>모든 검증 메시지 필드 재설정</translation>
+        <translation>모든 입력 항목을 초기화합니다</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>서명을 만들려면 "메시지 서명"을 누르십시오</translation>
+        <translation>서명을 만들려면 "메시지 서명"을 클릭하세요</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2511,7 +2608,7 @@
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>입력한 주소는 키에서 참조하지 않습니다.</translation>
+        <translation>입력한 주소는 지갑내 키를 참조하지 않습니다.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -2547,7 +2644,7 @@
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>메시지를 검증했습니다.</translation>
+        <translation>메시지가 검증됐습니다.</translation>
     </message>
 </context>
 <context>
@@ -2576,11 +2673,7 @@
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
-        <translation>%1 승인이 있는 거래와 충돌 함</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/오프라인</translation>
+        <translation>%1 승인이 있는 거래와 충돌함</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
@@ -2611,14 +2704,6 @@
         <translation>상태</translation>
     </message>
     <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>. 아직 성공적으로 통보하지 않음</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, %n개 노드를 통해 전파</numerusform></translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>날짜</translation>
     </message>
@@ -2632,7 +2717,7 @@
     </message>
     <message>
         <source>From</source>
-        <translation>으로부터</translation>
+        <translation>보낸 주소</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -2640,7 +2725,7 @@
     </message>
     <message>
         <source>To</source>
-        <translation>에게</translation>
+        <translation>받는 주소</translation>
     </message>
     <message>
         <source>own address</source>
@@ -2660,11 +2745,11 @@
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>%n개의 더 많은 블록을 숙성</numerusform></translation>
+        <translation><numerusform>%n개의 블록검증이 더 필요함</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
-        <translation>허용되지 않음</translation>
+        <translation>승인되지 않음</translation>
     </message>
     <message>
         <source>Debit</source>
@@ -2703,12 +2788,16 @@
         <translation>거래 총 크기</translation>
     </message>
     <message>
+        <source>Transaction virtual size</source>
+        <translation>가상 거래 사이즈</translation>
+    </message>
+    <message>
         <source>Output index</source>
         <translation>출력 인덱스</translation>
     </message>
     <message>
         <source>Merchant</source>
-        <translation>상인</translation>
+        <translation>상점</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
@@ -2773,10 +2862,6 @@
         <translation>%1 까지 열림</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>오프라인</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>미확인</translation>
     </message>
@@ -2801,24 +2886,20 @@
         <translation>충분히 숙성되지 않은 상태 (%1 승인, %2 후에 사용 가능합니다)</translation>
     </message>
     <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>이 블록은 다른 노드로부터 받지 않아 허용되지 않을 것임!</translation>
-    </message>
-    <message>
         <source>Generated but not accepted</source>
         <translation>생성되었으나 거절됨</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>받은 주소</translation>
+        <translation>받음(받은 주소)</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>보낸 주소</translation>
+        <translation>받음(보낸 주소)</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>보낸 주소</translation>
+        <translation>보냄(받는 주소)</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -2858,11 +2939,11 @@
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
-        <translation>거래에 대한 사용자 정의 intent/purpose</translation>
+        <translation>거래에 대해 사용자가 정의한 의도나 목적.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>변경된 잔고.</translation>
+        <translation>늘어나거나 줄어든 액수.</translation>
     </message>
 </context>
 <context>
@@ -2949,7 +3030,7 @@
     </message>
     <message>
         <source>Copy raw transaction</source>
-        <translation>원시 거래 복사</translation>
+        <translation>거래 원본(raw transaction) 복사</translation>
     </message>
     <message>
         <source>Copy full transaction details</source>
@@ -3032,6 +3113,21 @@
     </message>
 </context>
 <context>
+    <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>지갑 닫기</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>정말로 지갑 &lt;i&gt;%1&lt;/i&gt;을 닫겠습니까?</translation>
+    </message>
+    <message>
+        <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
+        <translation>블록축소를 하고 지갑을 너무 오랫동안 닫으면 체인 전체를 다시 동기화해야 할 수도 있습니다.</translation>
+    </message>
+</context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -3078,7 +3174,11 @@
     </message>
     <message>
         <source>Could not commit transaction</source>
-        <translation>트랜잭션을 커밋 할 수 없습니다.</translation>
+        <translation>거래를 커밋 할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>기본 지갑</translation>
     </message>
 </context>
 <context>
@@ -3115,44 +3215,24 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>지갑 정보가 %1에 성공적으로 저장되었습니다.</translation>
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
 </context>
 <context>
     <name>vertcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>옵션:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>데이터 폴더 지정</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>피어 주소를 받기 위해 노드에 연결하고, 받은 후에 연결을 끊습니다</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>공인 주소를 지정하십시오</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>명령줄과 JSON-RPC 명령 수락</translation>
-    </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포 됨, 첨부 파일 %s 또는 %s을 참조하십시오.</translation>
     </message>
     <message>
-        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation>&lt;category&gt;가 제공되지 않거나 &lt;category&gt; = 1 인 경우, 모든 디버깅 정보를 출력</translation>
-    </message>
-    <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>블록 축소가 최소치의 %d MiB 밑으로 설정되어 있습니다. 더 높은 값을 사용해 보세요.</translation>
+        <translation>블록 축소가 최소치인 %d MiB 밑으로 설정되어 있습니다. 더 높은 값을 사용해 주세요.</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>블록 축소: 마지막 지갑 동기화 지점이 축소된 데이터보다 과거의 것 입니다. -reindex가 필요합니다 (정지된 노드의 경우 모든 블록체인을 재다운로드합니다)</translation>
+        <translation>블록 축소: 마지막 지갑 동기화 지점이 축소된 데이터보다 과거의 것 입니다. -reindex가 필요합니다 (축소된 노드의 경우 모든 블록체인을 재다운로드합니다)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
@@ -3160,19 +3240,11 @@
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>에러: 치명적인 내부 오류가 발생했습니다, 자세한 내용은 debug.log 를 확인해주세요.</translation>
-    </message>
-    <message>
-        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>송금 거래시 추가되는 수수료 (%s/kB) (기본값: %s)</translation>
+        <translation>오류: 치명적인 내부 오류가 발생했습니다, 자세한 내용은 debug.log 를 확인해주세요.</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
         <translation>블록 데이터를 축소 중입니다..</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>데몬으로 백그라운드에서 실행하고 명령을 허용</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
@@ -3187,20 +3259,8 @@
         <translation>%s 개발자</translation>
     </message>
     <message>
-        <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
-        <translation>충분한 데이터가 축적되지 않은 상태에서의 수수료 추정 기능이 사용하는 수수료 비율(%s/kB) (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
-        <translation>거래의 중계를 하지 않더라도 화이트 리스트에 포함된 피어에서 받은 트랜잭션은 중계하기 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info)</source>
-        <translation>노드를 추가하여 연결을 지속합니다 ('addnode' RPC 명령어 도움말을 참고하세요)</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>선택된 주소로 고정하며 항상 리슨(Listen)합니다. IPv6 프로토콜인 경우  [host]:port 방식의 명령어 표기법을 사용합니다.</translation>
+        <source>Can't generate a change-address key. No keys in the internal keypool and can't generate any keys.</source>
+        <translation>거스름돈 주소 생성 불가. 내장 지갑 열쇠 보관함에 열쇠가 없으면 새로운 열쇠를 생성할 수 없습니다.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3211,36 +3271,8 @@
         <translation>특정 연결을 제공 할 수없고 addrman이 나가는 연결을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Connect only to the specified node(s); -connect=0 disables automatic connections (the rules for this peer are the same as for -addnode)</source>
-        <translation>지정된 노드에만 연결하십시오. -connect = 0은 자동 연결을 비활성화합니다 (이 피어의 규칙은 -addnode의 규칙과 동일합니다)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>시작시 모든 지갑 거래를 삭제하고 -rescan을 통하여 블록체인만 복구합니다.</translation>
-    </message>
-    <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>%s 불러오기 오류: 주소 키는 모두 정확하게 로드되었으나 거래 데이터와 주소록 필드에서 누락이나 오류가 존재할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation>카테고리에 대한 디버깅 정보를 제외하십시오. -debug = 1과 함께 사용하여 하나 이상의 지정된 범주를 제외한 모든 범주의 디버그 로그를 출력 할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>지갑 거래가 바뀌면 명령을 실행합니다.(%s 안의 명령어가 TxID로 바뀝니다)</translation>
-    </message>
-    <message>
-        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>압축 블록 재구성을 위해 메모리에 보관해야하는 추가 거래 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation>이 블록이 체인에 있으면 해당 블록과 그 조상이 유효하며 잠재적으로 스크립트 확인을 건너 뜁니다 (0은 모두 확인, 기본값: %s, testnet: %s)</translation>
-    </message>
-    <message>
-        <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
-        <translation>허용 된 최대 중간 피어 시간 오프셋 조정. 시간에 대한 지역적 전망치는 전방 또는 후방의 피어에 의해 영향을 받을 수 있습니다. (기본값: %u 초)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3251,28 +3283,16 @@
         <translation>%s가 유용하다고 생각한다면 프로젝트에 공헌해주세요. 이 소프트웨어에 대한 보다 자세한 정보는 %s를 방문해주십시오.</translation>
     </message>
     <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used)</source>
-        <translation>DNS lookup를 통해 피어 주소에 대한 쿼리 보내기 (기본값: 1 -connect 예외)</translation>
-    </message>
-    <message>
-        <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
-        <translation>블록 생성시 거래가 포함되도록 최저 수수료율을 설정하십시오 (%s/kB 단위). (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>스크립트 인증 스레드의 갯수 설정 (%u-%d, 0 = 자동, &lt;0 = 지정된 코어 개수만큼 사용 안함, 기본값: %d)</translation>
-    </message>
-    <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>블록 데이터베이스에 미래의 블록이 포함되어 있습니다. 이것은 사용자의 컴퓨터의 날짜와 시간이 올바르게 설정되어 있지 않을때 나타날 수 있습니다. 만약 사용자의 컴퓨터의 날짜와 시간이 올바르다고 확신할 때에만 블록 데이터 베이스의 재구성을 하십시오</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>출시 전의 테스트 빌드 입니다. - 스스로의 책임하에 사용하십시오 - 채굴이나 상업적 용도로 프로그램으로 사용하지 마십시오</translation>
+        <translation>출시 전의 테스트 빌드 입니다. 스스로의 책임하에 사용하십시오. 채굴이나 상업적 용도로 사용하지 마십시오.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>이것은 수수료 견적을 이용할 수 없을 때 지불 할 수 있는 거래 수수료입니다.</translation>
+        <translation>이것은 거스름돈이 현재 레벨의 더스트보다 적은 경우 버릴 수 있는 수수료입니다.</translation>
     </message>
     <message>
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
@@ -3283,28 +3303,12 @@
         <translation>데이터베이스를 포크 전 상태로 돌리지 못했습니다. 블록체인을 다시 다운로드 해주십시오.</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
-        <translation>리슨(Listen) 포트를 할당하기 위해 UPnP 사용 (기본값: 열려있거나 -proxy 옵션을 사용하지 않을 시 1)</translation>
-    </message>
-    <message>
-        <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-        <translation>클라이언트JSON-RPC 연결시 사용자 이름과 해시화된 암호문. &lt;userpw&gt; 필드는 &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt; 포멧으로 구성되어 있습니다. 전형적 파이썬 스크립트에선 share/rpcuser가 포함되어 있습니다. 그런 다음 클라이언트는 rpcuser=&lt;USERNAME&gt;/ rpcpassword=&lt;PASSWORD&gt; 쌍의 인수를 사용하여 정상적으로 연결합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
-        <translation>지갑은 mempool chain limit (기본값: %u) 을 위반하는 거래를 생성하지 않습니다.</translation>
-    </message>
-    <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>경고 : 모든 네트워크가 동의해야 하나, 일부 채굴자들에게 문제가 있는 것으로 보입니다. </translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>경고: 현재 비트코인 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 당신 또는 다른 참여자들이 동일한 비트코인 버전으로 업그레이드 할 필요가 있습니다.</translation>
-    </message>
-    <message>
-        <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
-        <translation>종료시 mempool 저장과 재시작시 로드 여부 (기본 : %u)</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
@@ -3316,43 +3320,19 @@
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
-        <translation>-maxmempool은 최소한 %d MB가 필요합니다</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; 지정 가능:</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>외부 접속을 승인합니다</translation>
-    </message>
-    <message>
-        <source>Append comment to the user agent string</source>
-        <translation>사용자 에이전트 문자열에 코멘트 첨부</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation>시작시 망가진 wallet.dat에서 개인키 복원을 시도합니다</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>블록 생성 옵션:</translation>
+        <translation>-maxmempool은 최소한 %d MB 이어야 합니다</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>%s 주소를 확인할 수 없습니다: '%s'</translation>
     </message>
     <message>
-        <source>Chain selection options:</source>
-        <translation>체인 선택 옵션:</translation>
-    </message>
-    <message>
         <source>Change index out of range</source>
         <translation>범위 밖의 인덱스 변경</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>연결 설정 : </translation>
+        <source>Config setting for %s only applied on %s network when in [%s] section.</source>
+        <translation>%s의 설정은 [%s] 항목에 있을 때 %s 네트워크에만 적용됩니다.</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
@@ -3363,36 +3343,8 @@
         <translation>손상된 블록 데이터베이스가 감지되었습니다</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>디버그 및 테스트 설정</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>지갑 불러오기를 하지마시오 또한 지갑 RPC 연결을 차단하십시오</translation>
-    </message>
-    <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>블록 데이터베이스를 다시 생성하시겠습니까?</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에 대한 해시 블록 공개 활성화</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에 대한 해시 거래 공개 활성화</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에 대한 원시 블록 공개 활성화</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에 대한 원시 거래 공개 활성화</translation>
-    </message>
-    <message>
-        <source>Enable transaction replacement in the memory pool (default: %u)</source>
-        <translation>메모리 풀(pool) 내의 거래 치환(replacement) 활성화 (기본값: %u)</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -3407,8 +3359,12 @@
         <translation>%s 불러오기 오류</translation>
     </message>
     <message>
+        <source>Error loading %s: Private keys can only be disabled during creation</source>
+        <translation>%s 로딩 실패: 개인키는 생성할때만 비활성화 할 수 있습니다</translation>
+    </message>
+    <message>
         <source>Error loading %s: Wallet corrupted</source>
-        <translation>%s 불러오기 오류: 지갑 오류</translation>
+        <translation>%s 불러오기 오류: 지갑이 손상됨</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet requires newer version of %s</source>
@@ -3428,7 +3384,7 @@
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>어떤 포트도 반응하지 않습니다. 사용자 반응=0 만약 원한다면</translation>
+        <translation>어떤 포트도 열지 못했습니다. 필요하다면 -listen=0 옵션을 사용하세요.</translation>
     </message>
     <message>
         <source>Failed to rescan the wallet during initialization</source>
@@ -3436,11 +3392,11 @@
     </message>
     <message>
         <source>Importing...</source>
-        <translation>들여오기 중...</translation>
+        <translation>불러오는 중...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>올바르지 않거나 생성된 블록을 찾을 수 없습니다. 잘못된 네트워크 자료 디렉토리?</translation>
+        <translation>제네시스 블록이 없거나 잘못됐습니다. 네트워크의 datadir이 잘못됐을수도 있습니다.</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
@@ -3452,15 +3408,23 @@
     </message>
     <message>
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
-        <translation>-discardfee=&lt;amount&gt;에 대한 양이 잘못되었습니다: '%s'</translation>
+        <translation>유효하지 않은 금액 -discardfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>유효하지 않은 금액 -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation>거래 메모리 풀의 용량을 &lt;n&gt;메가바이트 아래로 유지하기 (기본값: %u)</translation>
+        <source>Specified blocks directory "%s" does not exist.</source>
+        <translation>지정한 블록 디렉토리 "%s" 가 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to create the PID file '%s': %s</source>
+        <translation>PID 파일 생성 실패 '%s': %s</translation>
+    </message>
+    <message>
+        <source>Upgrading txindex database</source>
+        <translation>txindex 데이터베이스 업테이트중</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
@@ -3471,24 +3435,8 @@
         <translation>추방리스트를 불러오는 중...</translation>
     </message>
     <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>인증 쿠키의 위치 (기본값: data dir)</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
-        <translation>사용 가능한 파일 디스크립터-File Descriptor-가 부족합니다. </translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>오직 &lt;net&gt; 네트워크로 로만 접속 (IPv4, IPv6 혹은 onion)</translation>
-    </message>
-    <message>
-        <source>Print this help message and exit</source>
-        <translation>도움말 메시지 출력 후 종료</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>버전 출력후 종료</translation>
+        <translation>파일 디스크립터가 부족합니다. </translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
@@ -3499,32 +3447,12 @@
         <translation>블록 축소 모드는 -txindex와 호환되지 않습니다.</translation>
     </message>
     <message>
-        <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation>현재의 blk*.dat 파일들로부터 블록체인 색인을 재구성합니다.</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state from the currently indexed blocks</source>
-        <translation>현재 색인 된 블록들로부터 블록체인을 재구성합니다.</translation>
-    </message>
-    <message>
         <source>Replaying blocks...</source>
         <translation>블록 재생중...</translation>
     </message>
     <message>
         <source>Rewinding blocks...</source>
         <translation>블록 되감는중...</translation>
-    </message>
-    <message>
-        <source>Send transactions with full-RBF opt-in enabled (RPC only, default: %u)</source>
-        <translation>full-RBF opt-in이 활성화 된 거래을 전송합니다. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>데이터베이스 케시 크기를 메가바이트로 설정(%d 부터 %d, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>데이터 폴더 안에 지갑 파일을 선택하세요.</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
@@ -3539,16 +3467,8 @@
         <translation>이 컴퓨터의 %s에 바인딩 할 수 없습니다. 아마도 %s이 실행중인 것 같습니다.</translation>
     </message>
     <message>
-        <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>지원하지 않는 인수 -benchmark 은 무시됩니다, -debug=bench 형태로 사용하세요.</translation>
-    </message>
-    <message>
-        <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>지원하지 않는 인수 -debugnet 은 무시됩니다, -debug=net 형태로 사용하세요.</translation>
-    </message>
-    <message>
-        <source>Unsupported argument -tor found, use -onion.</source>
-        <translation>지원하지 않는 인수 -tor를 찾았습니다. -onion를 사용해주세요.</translation>
+        <source>Unable to generate keys</source>
+        <translation>키 생성 불가</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
@@ -3559,14 +3479,6 @@
         <translation>UTXO 데이터베이스 업그레이드</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>리슨(Listen) 포트를 할당하기 위해 UPnP 사용 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test chain</source>
-        <translation>테스트 체인 사용</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>사용자 정의 코멘트 (%s)에 안전하지 못한 글자가 포함되어 있습니다.</translation>
     </message>
@@ -3575,92 +3487,24 @@
         <translation>블록 검증중...</translation>
     </message>
     <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>지갑 디버깅/테스트 옵션:</translation>
-    </message>
-    <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation>지갑을 새로 써야 합니다:  완성하기 위하여 %s을 다시 시작하십시오.</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>지갑 옵션:</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>특정 소스에서의 JSON-RPC 연결 허가. 유효한 &lt;ip&gt; 같은 하나의 IP주소 (예 1.2.3.4), 네트워크/넷마스크 (예 1.2.3.4/255.255.255.0) 혹은 네트워크/CIDR (예 1.2.3.4/24). 이 옵션은 복수로 설정 할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>선택된 주소로 고정하여 화이트리스트에 포함된 피어에 접속합니다. IPv6 프로토콜인 경우 [host]:port 방식의 명령어 표기법을 사용합니다.</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>umask 077 대신 시스템 기본 퍼미션으로 새 파일을 만듭니다 (지갑 기능이 비활성화 상태에서만 유효합니다)</translation>
-    </message>
-    <message>
-        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>자신의 주소를 탐색 (기본값: 열려있거나 -externalip 나 -proxy 옵션이 없으면 1)</translation>
+        <translation>지갑을 새로 써야 합니다:  진행을 위해 %s 를 다시 시작하세요.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>오류: 들어오는 연결을 리슨(Listen)하는데 실패했습니다 (오류 리턴 %s)</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>이 사항과 관련있는 경고가 발생하거나 아주 긴 포크가 발생했을 때 명령어를 실행해 주세요. (cmd 명령어 목록에서 %s는 메시지로 대체됩니다) </translation>
-    </message>
-    <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation>해당 금액(%s/kB) 보다 적은 수수료는 중계, 채굴, 거래 생성에서 수수료 면제로 간주됩니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>paytxfee가 설정되어 있지 않다면 평균 n 블록안에 승인이 이루어지도록 충분한 수수료가 포함됩니다 (기본값: %u)</translation>
+        <translation>오류: 들어오는 연결을 허용하는데 실패했습니다 (listen returned error %s)</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>유효하지 않은 금액 -maxtxfee=&lt;amount&gt;: '%s' (거래가 막히는 상황을 방지하게 위해 적어도 %s 의 중계 수수료를 지정해야 합니다)</translation>
     </message>
     <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>중계 및 채굴을 할 때 데이터 운송 거래에서 데이터의 최대 크기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>인증정보를 프록시 연결마다 무작위로 합니다. 이는 Tor 스트림을 격리시킬 수 있습니다 (기본값: %u)</translation>
-    </message>
-    <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>거래액이 수수료를 지불하기엔 너무 작습니다</translation>
     </message>
     <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>화이트리스트에 포함된 피어는 이미 메모리풀에 포함되어 있어도 DoS 추방이 되지 않으며 그들의 거래가 항상 중계됩니다, 이는 예를 들면 게이트웨이에서 유용합니다.</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
-        <translation>축소 모드를 해제하고 데이터베이스를 재구성 하기 위해 -reindex를 사용해야 합니다. 이 명령은 모든 블록체인을 다시 다운로드 할 것 입니다.</translation>
-    </message>
-    <message>
-        <source>(default: %u)</source>
-        <translation>(기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>공개 REST 요청을 허가 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Tor서비스를 자동적으로 생성 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>SOCK5 프록시를 통해 연결</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
-        <translation>%s 불러오기 오류: 이미 HD 지갑이 존재하는 상태에서 HD 지갑을 비활성화 할 수 없습니다</translation>
+        <translation>블록 축소 모드를 해제하려면 데이터베이스를 재구성하기 위해 -reindex를 사용해야 합니다. 이 명령은 전체 블록체인을 다시 다운로드합니다.</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3671,8 +3515,8 @@
         <translation>체인 상태 데이터베이스 업그레이드 중 오류가 발생했습니다.</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation>외부 blk000??.dat 파일에서 블록을 가져오기</translation>
+        <source>Error: Disk space is low for %s</source>
+        <translation>오류: %s 하기엔 저장공간이 부족합니다</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3695,56 +3539,38 @@
         <translation>유효하지 않은 넷마스크가 -whitelist: '%s" 를 통해 지정됨</translation>
     </message>
     <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>최대 &lt;n&gt;개의 연결할 수 없는 거래를 메모리에 저장 (기본값: %u)</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>-whitebind를 이용하여 포트를 지정해야 합니다: '%s"</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Node 중계 옵션:</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC 서버 설정</translation>
+        <translation>-whitebind: '%s' 를 이용하여 포트를 지정해야 합니다</translation>
     </message>
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>시스템 한계로 인하여 -maxconnections를 %d 에서 %d로 줄였습니다.</translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation>시작시 누락된 지갑 거래에 대해 블록 체인을 다시 검색 합니다</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>추적오류 정보를 degug.log 자료로 보내는 대신 콘솔로 보내기</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>모든 디버그 설정 보기(설정: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>클라이언트 시작시 debug.log 파일 비우기(기본값: 디버그 안할때 1)</translation>
+        <source>Section [%s] is not recognized.</source>
+        <translation>[%s] 항목은 인정되지 않습니다.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>거래를 서명하는것을 실패하였습니다.</translation>
+        <translation>거래 서명에 실패했습니다</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" does not exist</source>
-        <translation>애러: 지정한 지갑 폴더 "%s"은 존재하지 않습니다.</translation>
+        <translation>지정한 -walletdir "%s"은 존재하지 않습니다</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" is a relative path</source>
-        <translation>애러: 지정한 지갑 폴더 "%s"은 상대 경로입니다.</translation>
+        <translation>지정한 -walletdir "%s"은 상대 경로입니다</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" is not a directory</source>
-        <translation>애러: 지정한 지갑 폴더 "%s"은 디렉토리가 아닙니다.</translation>
+        <translation>지정한 -walletdir "%s"은 디렉토리가 아닙니다</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist
+</source>
+        <translation>지정한 설정 파일 "%s"는 존재하지 않습니다
+</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3753,14 +3579,6 @@
     <message>
         <source>This is experimental software.</source>
         <translation>이 소프트웨어는 시험적입니다.</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor 관리 포트 암호 (기본값: 공란)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>onion 열림이 활성화시 Tor 관리 포트 사용 (기본값: %s)</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3772,27 +3590,19 @@
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>너무 큰 거래</translation>
+        <translation>거래가 너무 큽니다</translation>
     </message>
     <message>
         <source>Unable to generate initial keys</source>
         <translation>초기 키값 생성 불가</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>시작시 지갑 포멧을 최신으로 업그레이드 합니다</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결에 사용할 사용자 이름</translation>
-    </message>
-    <message>
         <source>Verifying wallet(s)...</source>
-        <translation>지갑(들) 검증중...</translation>
+        <translation>지갑 검증중...</translation>
     </message>
     <message>
         <source>Wallet %s resides outside wallet directory %s</source>
-        <translation>지갑 %s는 데이터 디렉토리 %s 밖에 위치합니다.</translation>
+        <translation>지갑 %s는 지갑 디렉토리 %s 밖에 위치합니다</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3803,244 +3613,40 @@
         <translation>경고: 알려지지 않은 새로운 규칙이 활성화되었습니다. (버전비트 %i)</translation>
     </message>
     <message>
-        <source>Whether to operate in a blocks only mode (default: %u)</source>
-        <translation>블록 전용 모드로 동작할지 여부 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>-txindex를 바꾸기 위해서는 -reindex를 사용해서 데이터베이스를 재구성해야 합니다. </translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>지갑의 모든거래내역 건너뛰기...</translation>
     </message>
     <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ 알림 옵션:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결에 사용할 암호</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>최고의 블록이 변하면 명령을 실행 (cmd 에 있는 %s 는 블록 해시에 의해 대체되어 짐)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>-addnode, -seednode, -connect 옵션에 대해 DNS 탐색 허용</translation>
-    </message>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = 거래의 메타 데이터를 유지함 예. 계좌정보 와 지불 요구 정보, 2 = 거래 메타 데이터 파기)</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>-maxtxfee값이 너무 큽니다!  하나의 거래에 너무 큰 수수료가 지불 됩니다.</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
-        <translation>주어진 주소에 바인드하여 JSON-RPC 연결을 기다립니다. 이 옵션은 -rpcallowip도 전달되지 않으면 무시됩니다. 포트는 옵션이며 -rpcport를 대체합니다. IPv6의 경우 [host]:port 표기법을 사용하십시오. 이 옵션은 여러 번 지정 할 수 있습니다 (기본값 : 127.0.0.1 및 ::1 즉, localhost 또는 -rpcallowip이 지정되면 0.0.0.0 및 모든 주소).</translation>
-    </message>
-    <message>
-        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation>메모리 풀에 있는 거래 기록을 &lt;n&gt;시간 후 부터는 유지하지 않기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Equivalent bytes per sigop in transactions for relay and mining (default: %u)</source>
-        <translation>릴레이 및 마이닝 거래의 sigop 당 동등한 바이트 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
-        <translation>%s 불러오기 오류: 비-HD 지갑이 존재하는 상태에서 HD 지갑을 활성화 할 수 없습니다</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. -wallet parameter must only specify a filename (not a path).</source>
-        <translation>지갑 %s 로딩 에러, -wallet 매개변수는 파일 이름만 지정 해야 합니다 (경로가 아님).</translation>
-    </message>
-    <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>해당 금액(%s/kB) 보다 적은 수수료는 수수료 면제로 간주됩니다.(기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
-        <translation>피어들이 로컬 중계 정책을 위반하더라도 화이트 리스트에 포함된 피어인경우 강제로 중계하기 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>-checkblocks을 통한 블록 점검 (0-4, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>getrawtransaction를 RPC CALL를 통해 완전한 거래 인덱스 유지 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>이상행동을 하는 네트워크 참여자들을 다시 연결시키는데 걸리는 시간 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>디버그 정보 출력 (기본값: %u, &lt;category&gt; 제공은 선택입니다)</translation>
-    </message>
-    <message>
-        <source>Set maximum BIP141 block weight to this * 4. Deprecated, use blockmaxweight</source>
-        <translation>최대 BIP141 블록 무게: 설정값 *4. 현재 미 지원 옵션입니다. -blockmaxweight 를 대신 쓰세요.</translation>
-    </message>
-    <message>
-        <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
-        <translation>non-segwit(0) 또는 segwit(1) (기본값: %d) 가 아닌 자세한 정보 표시 모드로 반환 된 원시 거래 또는 블록 hex의 직렬화를 설정합니다.</translation>
-    </message>
-    <message>
-        <source>Specify directory to hold wallets (default: &lt;datadir&gt;/wallets if it exists, otherwise &lt;datadir&gt;)</source>
-        <translation>지갑 파일을 저장하기 위한 폴더를 설정하세요 (기본값: &lt;datadir&gt;/wallets 또는  &lt;datadir&gt;)</translation>
-    </message>
-    <message>
-        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation>디버그 로그 파일의 저장 위치를 지정하세요: 이것은 별도의 위치나 블록체인 저장위치와 동일할 수 있습니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>블룸필터를 통해 블록과 거래 필터링 지원 (기본값: %u)</translation>
+        <translation>-maxtxfee 값이 너무 큽니다!  하나의 거래에 너무 큰 수수료가 지불 됩니다.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>이것은 수수료 견적을 이용할 수 없을 때 지불 할 수 있는 거래 수수료입니다.</translation>
+        <translation>이것은 수수료 추정을 이용할 수 없을 때 사용되는 거래 수수료입니다.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>이 제품에는 OpenSSL Project에서 OpenSSL Toolkit %s으로 사용하기 위해 개발 한 소프트웨어와 Eric Young이 작성한 암호화 소프트웨어 및 Thomas Bernard가 작성한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
+        <translation>이 제품에는 OpenSSL 프로젝트에서 OpenSSL Toolkit %s으로 사용하기 위해 개발 한 소프트웨어와 에릭 영이 작성한 암호화 소프트웨어 및 토머스 버나드가 작성한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>네트워크 버전 문자 (%i)의 길이가 최대길이 (%i)를 초과합니다. UA코멘트의 갯수나 길이를 줄이세요.</translation>
-    </message>
-    <message>
-        <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>아웃바운드 트래픽을 설정된 목표치 이하로 유지하기 (24시간당 MiB기준), 0 = 무제한 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>지원하지 않는 인수 -socks를 찾았습니다. 설정된 SOCKS의 버전은 더이상 사용할 수 없으며, SOCK5 프록시만을 지원합니다.</translation>
-    </message>
-    <message>
-        <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
-        <translation>지원하지 않는 인수 -whitelistalwaysrelay 는 무시됩니다,  -whitelistrelay 나 -whitelistforcerelay 를 사용해 주세요.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Tor 서비스를 이용하여 피어에게 연결하기 위해 분리된 SOCKS5 프록시를 사용 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
-        <translation>경고: 알려지지 않은 버전의 블록이 채굴되었습니다. 알려지지 않은 규칙이 적용되었을 가능성이 있습니다.</translation>
+        <translation>네트워크 버전 문자 (%i)의 길이가 최대길이 (%i)를 초과합니다. uacomments의 갯수나 길이를 줄이세요.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>경고 : 지갑파일이 손상되어 데이터가 복구되었습니다. 원래의 %s 파일은 %s 후에 %s 이름으로 저장됩니다. 잔액과 거래 내역이 정확하지 않다면 백업 파일로 부터 복원해야 합니다. </translation>
     </message>
     <message>
-        <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation>설정된 IP주소 (보기 1.2.3.4) 혹은 CIDR로 작성된 네트워크 (보기 1.2.3.0/24)로 화이트리스트에 포함된 피어에 접속합니다. 이 설정은 복수로 지정 할 수 있습니다.</translation>
-    </message>
-    <message>
         <source>%s is set very high!</source>
         <translation>%s가 매우 높게 설정되었습니다!</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>DNS lookup을 통해 항상 피어주소에 대한 쿼리 보내기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
-        <translation>지갑 %s 로딩 에러, -wallet 파일 이름은 일반 파일이어야합니다.</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
         <translation>지갑 %s 로딩 에러,  중복된 -wallet 파일이름을 입력했습니다.</translation>
     </message>
     <message>
-        <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
-        <translation>지갑 %s 로딩 에러,  -wallet 파일이름에 잘못된 문자가 있습니다.</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>시작시 점검할 블록 갯수 (기본값: %u, 0 = 모두)</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>디버그 출력에 IP주소 포함하기 (기본값: %u)</translation>
-    </message>
-    <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
-        <translation>Keypool이 종료되었습니다. 먼저 keypoolrefill을 호출하십시오.</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>JSON-RPC 연결을 &lt;port&gt;포트로 받기 (기본값: %u 혹은 테스트넷: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt;포트로 연결 받기 (기본값: %u 혹은 테스트넷: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>피어 연결수를 &lt;n&gt;개로 유지 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>지갑 브로드캐스트 거래를 만들기</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>접속별 최대 수신 버퍼. &lt;n&gt; × 1000바이트 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>접속별 최대 전송 버퍼. &lt;n&gt; × 1000바이트 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>디버그 출력에 타임 스탬프 포함하기 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>데이터 운송 거래를 중계 및 채굴 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>비 P2SH 다중서명을 중계 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>키 풀 사이즈를 &lt;n&gt; 로 설정 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum BIP141 block weight (default: %d)</source>
-        <translation>최대 BIP141 블록 무게 설정 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>원격 프로시져 호출 서비스를 위한 쓰레드 개수를 설정 (기본값 : %d)</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>설정파일 지정 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>밀리초 단위로 연결 제한시간을 설정 (최소값: 1, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>pid 파일 지정 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>거래를 보낼 때 검증되지 않은 잔돈 쓰기 (기본값: %u)</translation>
+        <translation>Keypool 이 소진되었습니다. 먼저 keypoolrefill 을 호출하십시오.</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
@@ -4059,12 +3665,8 @@
         <translation>이것은 거래를 보낼 경우 지불 할 거래 수수료입니다.</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>비정상적인 피어의 연결을 차단시키기 위한 임계값 (기본값: %u)</translation>
-    </message>
-    <message>
         <source>Transaction amounts must not be negative</source>
-        <translation>거래액은 반드시 정수여야합니다.</translation>
+        <translation>거래액은 반드시 0보다 큰 값이어야 합니다.</translation>
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
@@ -4076,11 +3678,27 @@
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet에 지정한 네트워크를 알 수 없습니다: '%s'</translation>
+        <translation>-onlynet: '%s' 에 알수없는 네트워크가 지정되었습니다</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>자금이 부족합니다!</translation>
+        <translation>잔액이 부족합니다</translation>
+    </message>
+    <message>
+        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
+        <translation>HD split을 하지 않은 지갑은 pre split keypool로 업그레이드 하지 않은 이상 업그레이드가 불가능합니다. -upgradewallet=169900 이나 -upgradewallet (버전을 정하지 않고) 명령을 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
+        <translation>수수료 추정이 실패했습니다. Fallbackfee가 비활성화 상태입니다. 몇 블록을 기다리거나 -fallbackfee를 활성화 하세요.</translation>
+    </message>
+    <message>
+        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
+        <translation>경고: 비활성화된 개인키 지갑 {%s} 에서 개인키들이 발견되었습니다</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>"%s" 데이터 폴더에 기록하지 못했습니다. 접근권한을 확인하세요.</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4096,7 +3714,7 @@
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>재검색 중...</translation>
+        <translation>재스캔 중...</translation>
     </message>
     <message>
         <source>Done loading</source>

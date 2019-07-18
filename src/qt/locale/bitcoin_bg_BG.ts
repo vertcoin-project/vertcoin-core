@@ -202,10 +202,6 @@
         <translation>Преглед</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Възел</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Покажи общ преглед на портфейла</translation>
     </message>
@@ -262,24 +258,12 @@
         <translation>Промени паролата...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Адреси за пращане...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Адреси за получаване...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Отвори URI</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>портфейл</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -440,10 +424,6 @@
     <message>
         <source>Edit Address</source>
         <translation>Редактирайте адреса</translation>
-    </message>
-    <message>
-        <source>New receiving address</source>
-        <translation>Нов адрес за получаване</translation>
     </message>
     <message>
         <source>New sending address</source>
@@ -678,6 +658,10 @@
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>портфейл</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -873,6 +857,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

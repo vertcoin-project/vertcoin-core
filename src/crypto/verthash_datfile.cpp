@@ -7,6 +7,7 @@
 #include <sstream>
 #include <validation.h>
 
+
 #include "verthash_constants.h"
 
 uint32_t VerthashDatFile::Fnv1a(uint32_t a, uint32_t b)

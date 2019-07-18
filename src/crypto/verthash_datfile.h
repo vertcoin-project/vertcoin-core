@@ -10,7 +10,7 @@
 #include <validation.h>
 #include <string>
 #include <uint256.h>
-#include <util.h>
+#include <util/system.h>
 #include <chainparams.h>
 #include <streams.h>
 #include <fs.h>
