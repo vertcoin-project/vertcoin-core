@@ -27,8 +27,7 @@ void Verthash::Hash(const char* input, char* output, const int height)
     if(!boost::filesystem::exists(dataFile)) {
         throw std::runtime_error("Verthash datafile not found");
     }
-    uint32_t nonce, ntime, h_n, h_na, i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
-    memcpy(&nonce, header+76, 4);
+    uint32_t ntime, i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
     memcpy(&ntime, header+68, 4);
 
     for(int i = 0;i < 8;i++)				//8X SHA3-512
@@ -39,13 +38,10 @@ void Verthash::Hash(const char* input, char* output, const int height)
     }
 
     FILE* VerthashDatFile = fsbridge::fopen(dataFile.c_str(),"rb");
-    h_n = Fnv1a(nonce, 2166136261);
     for(int i = 0;i < 128;i++)
     {
         fseek(VerthashDatFile, (address[i]&bitmask), SEEK_SET);
         fread((void *)i_base, sizeof(uint32_t), HASH_CHUNK_SIZE/4, VerthashDatFile);
-
-	    h_na = Fnv1a(h_n, Fnv1a(address[i], 2166136261));
 
         for(int j = 0;j < 8;j++)
         {
