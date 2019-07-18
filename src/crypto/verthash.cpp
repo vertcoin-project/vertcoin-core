@@ -49,7 +49,7 @@ void Verthash::Hash(const char* input, char* output, const int height)
 
         for(int j = 0;j < 8;j++)
         {
-            i_shrink[j] = Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(h_na, i_base[8*j]), i_base[8*j+1]), i_base[8*j+2]), i_base[8*j+3]), i_base[8*j+4]), i_base[8*j+5]), i_base[8*j+6]), i_base[8*j+7]);
+            i_shrink[j] = Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(address[127-i], i_base[8*j]), i_base[8*j+1]), i_base[8*j+2]), i_base[8*j+3]), i_base[8*j+4]), i_base[8*j+5]), i_base[8*j+6]), i_base[8*j+7]);
 
             if(i==0) i_final[j] = i_shrink[j];
             else i_final[j] = Fnv1a(i_final[j], i_shrink[j]);
