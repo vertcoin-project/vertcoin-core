@@ -16,34 +16,38 @@ uint32_t Verthash::Fnv1a(uint32_t a, uint32_t b)
 
 void Verthash::Hash(const char* input, char* output, const int height)
 {
+    int i, j;
     unsigned char header[80];
+    uint32_t ntime, i_merkle[8], i_mix[8], i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
+
     memcpy(header, input, 80);
 
-    int i;
-    for(i=1;i<23;i++) if(height < 1U<<i) break;
+    for(i=1; i<23; i++) if(height < 1U<<i) break;
     uint32_t bitmask = (0xffffffff >> (23-i)) & 0xfffffff0;
 
     fs::path dataFile = GetDataDir() / "verthash.dat";
     if(!boost::filesystem::exists(dataFile)) {
         throw std::runtime_error("Verthash datafile not found");
     }
-    uint32_t ntime, i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
+    
+    memcpy(i_merkle, header+36, 32);    
     memcpy(&ntime, header+68, 4);
 
-    for(int i = 0;i < 8;i++)				//8X SHA3-512
+    for(i=0; i<8; i++)				//8X SHA3-512
     {
+        i_mix[i]=(i_merkle[i] ^ ntime);
+        memcpy(header+68, &i_mix[i], 4);
         sha3(header, (size_t)80, &address[i*16], 64);
-        ntime++;
-        memcpy(header+68, &ntime, 4);
     }
 
     FILE* VerthashDatFile = fsbridge::fopen(dataFile.c_str(),"rb");
-    for(int i = 0;i < 128;i++)
+    
+    for(i=0; i<128; i++)
     {
         fseek(VerthashDatFile, (address[i]&bitmask), SEEK_SET);
         fread((void *)i_base, sizeof(uint32_t), HASH_CHUNK_SIZE/4, VerthashDatFile);
 
-        for(int j = 0;j < 8;j++)
+        for(j=0; j<8; j++)
         {
             i_shrink[j] = Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(Fnv1a(address[127-i], i_base[8*j]), i_base[8*j+1]), i_base[8*j+2]), i_base[8*j+3]), i_base[8*j+4]), i_base[8*j+5]), i_base[8*j+6]), i_base[8*j+7]);
 
@@ -56,5 +60,4 @@ void Verthash::Hash(const char* input, char* output, const int height)
     memcpy(output, (unsigned char *)i_final, 32);
 
     fclose(VerthashDatFile);
-
 }
