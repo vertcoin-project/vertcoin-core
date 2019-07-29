@@ -1,5 +1,0 @@
-vertcoin-core (0.14.0-xenial) xenial; urgency=medium
-
-  * Hark fork to the hash function Lyra2REv3 for mining.
-
- -- James Lovejoy <jameslovejoy1@gmail.com>  Wed, 24 Apr 2019 18:33:00 -0400

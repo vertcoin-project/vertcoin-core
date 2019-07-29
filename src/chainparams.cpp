@@ -96,7 +96,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000001796891f689605736");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x4b151d928c0aae106c9d69347df59e0088cbd33dd659deab126506865a8b0060"); //898726
+        consensus.defaultAssumeValid = uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147"); //1172000
 
 /* These are values from Bitcoin. Above are values from vertcoin but probably need to be updated at release time
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000051dc8b82f450202ecb3d471");
@@ -156,6 +156,7 @@ public:
                 {  430000, uint256S("0x2f5703cf7b6f956b84fd49948cbf49dc164cfcb5a7b55903b1c4f53bc7851611")},
                 {  516999, uint256S("0x572ed47da461743bcae526542053e7bc532de299345e4f51d77786f2870b7b28")},
 	            {  627610, uint256S("0x6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc")},
+	            {  1172000, uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147")},
             }
         };
 
