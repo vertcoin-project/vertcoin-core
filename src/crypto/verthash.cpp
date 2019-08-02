@@ -18,12 +18,12 @@ void Verthash::Hash(const char* input, char* output, const int height)
 {
     int i, j;
     unsigned char header[80];
-    uint32_t ntime, i_merkle[8], i_mix[8], i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
+    uint32_t bitmask, ntime, i_merkle[8], i_mix, i_base[HASH_CHUNK_SIZE/4], i_shrink[8], i_final[8], address[129];
 
     memcpy(header, input, 80);
 
     for(i=1; i<23; i++) if(height < 1U<<i) break;
-    uint32_t bitmask = (0xffffffff >> (23-i)) & 0xfffffff0;
+    bitmask = (0xffffffff >> (23-i)) & 0xfffffff0;
 
     fs::path dataFile = GetDataDir() / "verthash.dat";
     if(!boost::filesystem::exists(dataFile)) {
@@ -35,8 +35,8 @@ void Verthash::Hash(const char* input, char* output, const int height)
 
     for(i=0; i<8; i++)				//8X SHA3-512
     {
-        i_mix[i]=(i_merkle[i] ^ ntime);
-        memcpy(header+68, &i_mix[i], 4);
+        i_mix=(i_merkle[i] ^ ntime);
+        memcpy(header+68, &i_mix, 4);
         sha3(header, (size_t)80, &address[i*16], 64);
     }
 
