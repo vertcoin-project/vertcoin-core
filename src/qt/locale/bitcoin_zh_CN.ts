@@ -434,7 +434,7 @@
         <translation>命令行选项(&amp;C)</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Vertcoin network</source>
         <translation><numerusform>%n 条到比特币网络的活动连接</numerusform></translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
     </message>
     <message>
         <source>Received with label</source>
-        <translation>按标签收款</translation>
+        <translation>收款标签</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>按地址收款</translation>
+        <translation>收款地址</translation>
     </message>
     <message>
         <source>Date</source>
@@ -1042,7 +1042,7 @@
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>通过Tor隐藏服务连接节点时使用不同的SOCKS&amp;5代理：</translation>
+        <translation>连接Tor隐藏服务节点时使用另一个SOCKS&amp;5代理：</translation>
     </message>
     <message>
         <source>Hide the icon from the system tray.</source>
@@ -1178,7 +1178,7 @@
     </message>
     <message>
         <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>在 Tor 匿名网络下通过不同的 SOCKS5 代理连接比特币网络</translation>
+        <translation>访问 Tor 隐藏服务上的比特币网络时使用另一个 SOCKS5 代理。</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1700,7 +1700,7 @@
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation>&amp;重启</translation>
+        <translation>&amp;重置</translation>
     </message>
     <message>
         <source>Received</source>
@@ -2223,7 +2223,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>粉尘：</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>当交易量小于可用区块空间时，矿工和中继节点可能会执行最低手续费率限制。按照这个最低费率来支付手续费也是可以的，但请注意，一旦交易需求超出比特币网络能处理的限度，你的交易可能永远也无法确认。</translation>
     </message>
     <message>

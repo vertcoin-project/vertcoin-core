@@ -188,8 +188,8 @@
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Din tegnebog er nu krypteret. Husk at kryptering af din tegnebog ikke kan fuldt ud beskytte dine bitcoins imod tyveri fra malware der inficerer din computer.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Din tegnebog er nu krypteret. Husk at kryptering af din tegnebog ikke kan fuldt ud beskytte dine vertcoins imod tyveri fra malware der inficerer din computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -486,12 +486,36 @@
         <translation>&amp;Modtageradresser</translation>
     </message>
     <message>
+        <source>Open Wallet</source>
+        <translation>Åben Tegnebog</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>Åben en tegnebog</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>Luk Tegnebog...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>Luk tegnebog</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Vis %1 hjælpebesked for at få en liste over mulige tilvalg for Vertcoin kommandolinje</translation>
     </message>
     <message>
         <source>default wallet</source>
         <translation>Standard tegnebog</translation>
+    </message>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>Åbner Tegnebog &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
+        <source>Open Wallet Failed</source>
+        <translation>Åben Tegnebog Fejlede</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -959,7 +983,11 @@
         <source>Hide</source>
         <translation>Skjul</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1, %2%)...</source>
+        <translation>Ukendt. Synkroniserer Hoveder (%1, %2%)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -2207,8 +2235,8 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
         <translation>Støv:</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>På tidspunkter, hvor der er færre transaktioner, end der er plads til i nye blokke, kan minere og videresendende knuder gennemtvinge et minimumsgebyr. Du kan vælge kun at betale dette minimumsgebyr, men vær opmærksom på, at det kan resultere i en transaktion, der aldrig bliver bekræftet, hvis mængden af nye bitcoin-transaktioner stiger til mere, end hvad netværket kan behandle ad gangen.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>På tidspunkter, hvor der er færre transaktioner, end der er plads til i nye blokke, kan minere og videresendende knuder gennemtvinge et minimumsgebyr. Du kan vælge kun at betale dette minimumsgebyr, men vær opmærksom på, at det kan resultere i en transaktion, der aldrig bliver bekræftet, hvis mængden af nye vertcoin-transaktioner stiger til mere, end hvad netværket kan behandle ad gangen.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3086,7 +3114,19 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
 </context>
 <context>
     <name>WalletController</name>
-    </context>
+    <message>
+        <source>Close wallet</source>
+        <translation>Luk tegnebog</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Er du sikker på, at du ønsker at lukke tegnebog &lt;i&gt;%1&lt;/i&gt;?</translation>
+    </message>
+    <message>
+        <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
+        <translation>Lukning af tegnebog i for lang tid kan resultere i at synkronisere hele kæden forfra, hvis beskæring er aktiveret.</translation>
+    </message>
+</context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -3217,6 +3257,10 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
     <message>
         <source>The %s developers</source>
         <translation>Udviklerne af %s</translation>
+    </message>
+    <message>
+        <source>Can't generate a change-address key. No keys in the internal keypool and can't generate any keys.</source>
+        <translation>Kan ikke generere en bytte-adresse nøgle. Ingen nøgler i den interne nøglepulje og kan ikke generere nogle nøgler. </translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3377,6 +3421,10 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
         <translation>Angivet blokmappe “%s” eksisterer ikke.</translation>
+    </message>
+    <message>
+        <source>Unable to create the PID file '%s': %s</source>
+        <translation>Ikke i stand til at oprette PID fil '%s': %s</translation>
     </message>
     <message>
         <source>Upgrading txindex database</source>

@@ -112,7 +112,7 @@
         <translation>వాలెట్ అన్లాక్</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOIN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>హెచ్చరిక: మీ జోలెని సంకేతపరిచి మీ సంకేతపదము కోల్పోతే, &lt;b&gt;మీ బిట్‌కాయిన్లు అన్నీ కోల్పోతారు&lt;/b&gt;</translation>
     </message>
     <message>
@@ -140,10 +140,6 @@
     <message>
         <source>Vertcoin</source>
         <translation>బిట్కోయిన్</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>వాలెట్</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -260,6 +256,10 @@
         <source>Message</source>
         <translation>సందేశం</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>వాలెట్</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -371,6 +371,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
