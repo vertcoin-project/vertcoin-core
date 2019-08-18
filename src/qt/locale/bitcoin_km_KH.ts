@@ -30,12 +30,29 @@
         <translation>លុប​អាសយដ្ឋានដែល​បាន​រើស​ពី​បញ្ជី</translation>
     </message>
     <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>នាំចេញទិន្នន័យនៃថេបបច្ចុប្បន្នទៅជាឯកសារ</translation>
+    </message>
+    <message>
         <source>&amp;Export</source>
         <translation>&amp;នាំចេញ</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
         <translation>&amp;លុប</translation>
+    </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>ជ្រើសរើសអាស្រយដើម្បីផ្ញើរកាកជាមួយ</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>ជ្រើសរើសអាស្រយដើម្បីទទួលកាក់ជាមួយ
+</translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation>&amp;ជ្រើសរើស</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -45,14 +62,38 @@
         <source>Receiving addresses</source>
         <translation>អាសយដ្ឋានទទួួល</translation>
     </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;ចម្លង​អាស្រយដ្ឋាន</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>ចម្លង&amp;ឡាបែល</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;កែ</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>បរាជ័យ​ការបញ្ជូនចេញ</translation>
+    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+        <source>Label</source>
+        <translation>ឡាបែល</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>អាសយដ្ឋាន</translation>
     </message>
-    </context>
+    <message>
+        <source>(no label)</source>
+        <translation>(គ្មាន​ឡាបែល)</translation>
+    </message>
+</context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -68,12 +109,32 @@
         <translation>វាយពាក្យសម្ងាត់ម្ដងទៀត</translation>
     </message>
     <message>
+        <source>Show password</source>
+        <translation>បង្ហាញ​​​លេខសម្ងាត់</translation>
+    </message>
+    <message>
+        <source>Encrypt wallet</source>
+        <translation>កាបូប​អែនក្រីព</translation>
+    </message>
+    <message>
         <source>Unlock wallet</source>
         <translation>ដោះសោរកាបូបលុយ</translation>
     </message>
     <message>
+        <source>Decrypt wallet</source>
+        <translation>កាបូប​​ ឌីក្រីព </translation>
+    </message>
+    <message>
         <source>Change passphrase</source>
         <translation>ប្ដូរពាក្យសម្ងាត់</translation>
+    </message>
+    <message>
+        <source>Confirm wallet encryption</source>
+        <translation>បញ្ជាក់ការសំរេចចិត្ត​​កាបូប​​ការ​អែនក្រីព</translation>
+    </message>
+    <message>
+        <source>Wallet encrypted</source>
+        <translation>កាបូប ដែលអែនក្រីព</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -93,13 +154,13 @@
         <source>Send coins to a Vertcoin address</source>
         <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Vertcoin មួយ</translation>
     </message>
-    <message>
-        <source>Wallet</source>
-        <translation>កាបូប</translation>
-    </message>
     </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>(no label)</source>
+        <translation>(គ្មាន​ឡាបែល)</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -152,13 +213,33 @@
         <source>Address</source>
         <translation>អាសយដ្ឋាន</translation>
     </message>
+    <message>
+        <source>Label</source>
+        <translation>ឡាបែល</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>កាបូប</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>ឡាបែល</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(គ្មាន​ឡាបែល)</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
-    </context>
+    <message>
+        <source>(no label)</source>
+        <translation>(គ្មាន​ឡាបែល)</translation>
+    </message>
+</context>
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -185,16 +266,35 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>ឡាបែល</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(គ្មាន​ឡាបែល)</translation>
+    </message>
     </context>
 <context>
     <name>TransactionView</name>
     <message>
+        <source>Label</source>
+        <translation>ឡាបែល</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>អាសយដ្ឋាន</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>បរាជ័យការបញ្ជូនចេញ</translation>
     </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
@@ -207,6 +307,10 @@
     <message>
         <source>&amp;Export</source>
         <translation>&amp;នាំចេញ</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>នាំចេញទិន្នន័យនៃថេបបច្ចុប្បន្នទៅជាឯកសារ</translation>
     </message>
     </context>
 <context>

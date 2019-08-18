@@ -1,127 +1,143 @@
-<TS language="zh-Hans" version="2.1">
+<TS language="nl_BE" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>右击编辑地址或标签</translation>
+        <translation>Rechtermuisklik om het adres of label te wijzigen</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>创建一个新的地址</translation>
+        <translation>créer une nouvelle adresse | maak een nieuw adres</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>新建</translation>
+        <translation>&amp;Nieuw</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>复制选定的地址到系统剪切板</translation>
+        <translation>Kopieer het geselecteerd adres naar het klembord</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>复制</translation>
+        <translation>&amp;Kopieer</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>关闭</translation>
+        <translation>S&amp;luit</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>从列表删除选定的地址</translation>
+        <translation>Verwijder het geselecteerd adres van de lijst</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>vul het adress of label in om te zoeken</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>导出当前数据到文件</translation>
+        <translation>Exporteer de gegevens in het huidige venster naar een folder</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>导出</translation>
+        <translation>&amp;Exporteer</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>删除</translation>
+        <translation>&amp;Verwijder</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送比特币地址</translation>
+        <translation>Kies het adres naar waar u coins wilt versturen</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收比特币地址</translation>
+        <translation>Kies het adres waarmee u coins wilt ontvangen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>选择</translation>
+        <translation>K&amp;ies</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>发送地址</translation>
+        <translation>Adressen aan het verzenden</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>接收地址</translation>
+        <translation>Adressen verkrijgen</translation>
     </message>
     <message>
-        <source>These are your vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是你的比特币发币地址。发送前请确认发送数量和接收地址</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Bitcoin adressen om betalingen te verzenden. Controleer altijd het bedrag en het ontvang adres voordat u Bitcoins verstuurd.</translation>
     </message>
     <message>
-        <source>These are your vertcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是你的比特币接收地址。建议每次交易都使用新地址</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Bitcoin adressen om betalingen te verzenden. Het is aangeraden om een nieuw ontvang adres te gebruiken voor iedere transactie.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>复制地址</translation>
+        <translation>&amp;Kopieer Adres</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>复制标签</translation>
+        <translation>Kopieer &amp;Stempel</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>编辑</translation>
+        <translation>&amp;Wijzig</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>导出地址列表</translation>
+        <translation>Exporteer Adres Lijst</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>逗号分隔文件(*.csv)</translation>
+        <translation>Komma, gescheiden bestand (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>导出失败</translation>
+        <translation>Exporteren mislukt</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>保存地址列表至%1时发生错误，请重试。</translation>
+        <translation>Er is een fout opgetreden tijdens het opslaan van de adres lijst naar %1. Gelieve opnieuw te proberen.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>标签</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(无标签)</translation>
+        <translation>(geen label)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
-        <source>Show password</source>
-        <translation>保存密码</translation>
+        <source>Passphrase Dialog</source>
+        <translation>Wachtwoordzin</translation>
     </message>
     <message>
-        <source>Encrypt wallet</source>
-        <translation>加密钱包</translation>
+        <source>Enter passphrase</source>
+        <translation>vul de wachtwoordzin in</translation>
+    </message>
+    <message>
+        <source>New passphrase</source>
+        <translation>Nieuwe wachtwoordzin</translation>
+    </message>
+    <message>
+        <source>Repeat new passphrase</source>
+        <translation>herhaal een nieuwe wachtwoordzin</translation>
+    </message>
+    <message>
+        <source>Show password</source>
+        <translation>Toon wachtwoord</translation>
     </message>
     </context>
 <context>
@@ -129,12 +145,16 @@
     </context>
 <context>
     <name>BitcoinGUI</name>
+    <message>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
     </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>(no label)</source>
-        <translation>(无标签)</translation>
+        <translation>(geen label)</translation>
     </message>
     </context>
 <context>
@@ -148,6 +168,10 @@
     </context>
 <context>
     <name>Intro</name>
+    <message>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -186,29 +210,33 @@
     <name>ReceiveRequestDialog</name>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>标签</translation>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portefeuille</translation>
     </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Label</source>
-        <translation>标签</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(无标签)</translation>
+        <translation>(geen label)</translation>
     </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>(no label)</source>
-        <translation>(无标签)</translation>
+        <translation>(geen label)</translation>
     </message>
 </context>
 <context>
@@ -239,30 +267,30 @@
     <name>TransactionTableModel</name>
     <message>
         <source>Label</source>
-        <translation>标签</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(无标签)</translation>
+        <translation>(geen label)</translation>
     </message>
     </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>逗号分隔文件(*.csv)</translation>
+        <translation>Komma, gescheiden bestand (*.csv)</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>标签</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>导出失败</translation>
+        <translation>Exporteren mislukt</translation>
     </message>
     </context>
 <context>
@@ -281,14 +309,14 @@
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>导出</translation>
+        <translation>&amp;Exporteer</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>导出当前数据到文件</translation>
+        <translation>Exporteer de gegevens in het huidige venster naar een folder</translation>
     </message>
     </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>
