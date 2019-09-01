@@ -31,7 +31,7 @@
  */
 
 #include "scrypt.h"
-#include "util.h"
+#include "util/system.h"
 #include "hmac_sha256.h"
 #include <stdlib.h>
 #include <stdint.h>

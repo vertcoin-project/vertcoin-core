@@ -10,6 +10,10 @@
         <translation>새로운 주소 발급받기</translation>
     </message>
     <message>
+        <source>&amp;New</source>
+        <translation>&amp;발급받기</translation>
+    </message>
+    <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>선택된 주소 클립보드에 붙여넣기</translation>
     </message>
@@ -18,8 +22,16 @@
         <translation>&amp;복사</translation>
     </message>
     <message>
+        <source>C&amp;lose</source>
+        <translation>&amp;닫기</translation>
+    </message>
+    <message>
         <source>Delete the currently selected address from the list</source>
         <translation>선택한 주소 리스트에서 삭제</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>검색할 주소나 라벨을 입력하세요</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -42,6 +54,10 @@
         <translation>코인을 받을 주소를 선택하세요</translation>
     </message>
     <message>
+        <source>C&amp;hoose</source>
+        <translation>&amp;선택하기</translation>
+    </message>
+    <message>
         <source>Sending addresses</source>
         <translation>보낼 주소</translation>
     </message>
@@ -60,6 +76,10 @@
     <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;주소 복사</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>&amp;라벨 복사</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -90,6 +110,10 @@
     <message>
         <source>New passphrase</source>
         <translation>새 암호문</translation>
+    </message>
+    <message>
+        <source>Repeat new passphrase</source>
+        <translation>새 암호문 다시 입력</translation>
     </message>
     <message>
         <source>Show password</source>
@@ -132,7 +156,7 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOIN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>경고: 지갑이 암호화된 상태로 당신의 암호문을 잃어버리셨다면, 당신은 &lt;b&gt;모든 비트코인을 잃게됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -142,10 +166,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>지갑 암호화</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 이(가) 암호화 작업을 위해 종료됩니다. 이 암호화 작업이 바이러스로부터 비트코인을 완전히 지키지 못한다는 점을 기억하십시요.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -190,9 +210,17 @@
         <source>IP/Netmask</source>
         <translation>IP/Netmask</translation>
     </message>
-    </context>
+    <message>
+        <source>Banned Until</source>
+        <translation>특정 시점까지 차단</translation>
+    </message>
+</context>
 <context>
     <name>BitcoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>&amp;메시지에 서명하기...</translation>
+    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>네트워크와 동기화중...</translation>
@@ -200,10 +228,6 @@
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;개요</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>노드</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -216,6 +240,10 @@
     <message>
         <source>Browse transaction history</source>
         <translation>거래 기록 보기</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>&amp;나가기</translation>
     </message>
     <message>
         <source>Quit application</source>
@@ -258,12 +286,12 @@
         <translation>&amp;암호문 변경...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;보낼 주소...</translation>
+        <source>Open &amp;URI...</source>
+        <translation>&amp;URL 열기</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;받을 주소...</translation>
+        <source>Wallet:</source>
+        <translation>지갑:</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -292,6 +320,14 @@
     <message>
         <source>Backup wallet to another location</source>
         <translation>이 지갑을 다른 곳으로 백업</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>지갑 암호화에 사용될 암호문 바꾸기</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>기본 지갑</translation>
     </message>
     </context>
 <context>
@@ -389,11 +425,18 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>기본 지갑</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>

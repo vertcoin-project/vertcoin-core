@@ -45,7 +45,7 @@ Testing
 -------
 
 Vertcoin currently relies on Bitcoin Core for its testcases, and few of them are
-known to work, though the software is based on fully test conforming upstream 
+known to work, though the software is based on fully tested conforming upstream 
 Bitcoin Core versions. We would be grateful to those who can help port the existing
 Bitcoin Core test cases to Vertcoin such that they can be used to assure correctness.
 

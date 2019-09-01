@@ -149,6 +149,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -160,20 +163,8 @@
 <context>
     <name>vertcoin-core</name>
     <message>
-        <source>Block creation options:</source>
-        <translation>ব্লক তৈরির অপশনগুলো:</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>ডিবাগিং/টেস্টিং অপশন:</translation>
-    </message>
-    <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>আপনি কি পুনরায় ব্লক ডাটাবেইজ এখনই তৈরি করতে চান?</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>আরপিসি সার্ভার অপশন:</translation>
     </message>
     <message>
         <source>This is experimental software.</source>

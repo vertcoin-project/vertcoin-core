@@ -30,6 +30,10 @@
         <translation>Slett den valgte adressen fra listen</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Oppgi adresse, eller stikkord, for å søke</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksporter data i den valgte fliken til en fil</translation>
     </message>
@@ -66,7 +70,7 @@
         <translation>Dette er dine Vertcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your BVertcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine Vertcoin adresse for å motta betalinger. Det er anbefalt å bruke en ny mottager adresse for hver transaksjon.</translation>
     </message>
     <message>
@@ -132,6 +136,10 @@
         <translation>Repeter passorsetningen</translation>
     </message>
     <message>
+        <source>Show password</source>
+        <translation>Vis passord</translation>
+    </message>
+    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Oppgi passordsetningen for lommeboken. &lt;br/&gt;Vennligst bruk en passordsetninge med &lt;b&gt;ti, eller flere tilfeldige tegn &lt;/b&gt;, eller &lt;b&gt;åtte, eller flere ord&lt;/b&gt;.</translation>
     </message>
@@ -168,7 +176,7 @@
         <translation>Bekreft kryptering av lommeboken</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOIN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Advarsel: Dersom du krypterer lommeboken og mister passordsetningen vil du &lt;b&gt;MISTE ALLE DINE VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -180,8 +188,8 @@
         <translation>Lommeboken er kryptert</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at å kryptere lommeboken ikke kan beskytte dine vertcoin fullstendig fra å bli stjålet av skadelig programvare som har infisert datamaskinen din.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Lommeboken din er nå kryptert. Husk at kryptering ikke er tilstrekkelig for å beskytte dine vertcoin i lommeboken fra å bli stjålet av skadelig programvare som har infisert maskinen din.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -246,10 +254,6 @@
         <translation>&amp;Oversikt</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Vis generell oversikt over lommeboken</translation>
     </message>
@@ -306,16 +310,12 @@
         <translation>&amp;Endre passordsetning</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Avsender adresser</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Mottager adresser</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Åpne &amp;URI</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Lommebok:</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -336,6 +336,10 @@
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Reindekserer blokker på disken</translation>
+    </message>
+    <message>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Proxy er &lt;b&gt;slått på&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>Send coins to a Vertcoin address</source>
@@ -364,10 +368,6 @@
     <message>
         <source>Vertcoin</source>
         <translation>Vertcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Lommebok</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -433,9 +433,21 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinjealternativer</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Vertcoin network</source>
+        <translation><numerusform>%n aktiv tilkobling til Vertcoin nettverket</numerusform><numerusform>%n aktive tilkoblinger til Vertcoin nettverket</numerusform></translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>Indekserer blokker på disken...</translation>
+    </message>
     <message>
         <source>Processing blocks on disk...</source>
         <translation>Behandler blokker på disken…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>Har prosessert %n blokk av transaksjonshistorien</numerusform><numerusform>Har prosessert %n blokker av transaksjonshistorien</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -466,12 +478,44 @@
         <translation>Oppdatert</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Avsender adresser</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Mottaker adresser</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Vis %1-hjelpemeldingen for å få en liste over mulige Vertcoin-kommandolinjealternativer</translation>
     </message>
     <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Vindu</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimer</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>Zoom</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>Gjenopprett</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation>Hovedvindu</translation>
+    </message>
+    <message>
         <source>%1 client</source>
         <translation>%1-klient</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>Kobler til peers...</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -487,6 +531,12 @@
         <source>Amount: %1
 </source>
         <translation>Mengde: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Lommeboik: %1
 </translation>
     </message>
     <message>
@@ -514,6 +564,14 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Innkommende transaksjon</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>HD nøkkel generering er &lt;b&gt;slått på&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>HD nøkkel generering er &lt;b&gt;slått av&lt;/b&gt;</translation>
     </message>
     </context>
 <context>
@@ -552,6 +610,10 @@
 <context>
     <name>OptionsDialog</name>
     <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Vindu</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Feilmelding</translation>
     </message>
@@ -589,6 +651,10 @@
     <message>
         <source>Label</source>
         <translation>Beskrivelse</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Lommebok</translation>
     </message>
     </context>
 <context>
@@ -665,6 +731,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

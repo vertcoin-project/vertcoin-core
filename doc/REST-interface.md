@@ -6,6 +6,12 @@ The REST API can be enabled with the `-rest` option.
 The interface runs on the same port as the JSON-RPC interface, by default port 8332 for mainnet, port 18332 for testnet,
 and port 18443 for regtest.
 
+REST Interface consistency guarantees
+-------------------------------------
+
+The [same guarantees as for the RPC Interface](/doc/JSON-RPC-interface.md#rpc-consistency-guarantees)
+apply.
+
 Supported API
 -------------
 
@@ -14,13 +20,15 @@ Supported API
 
 Given a transaction hash: returns a transaction in binary, hex-encoded binary, or JSON formats.
 
-For full TX query capability, one must enable the transaction index via "txindex=1" command line / configuration option.
+By default, this endpoint will only search the mempool.
+To query for a confirmed transaction, enable the transaction index via "txindex=1" command line / configuration option.
 
 #### Blocks
 `GET /rest/block/<BLOCK-HASH>.<bin|hex|json>`
 `GET /rest/block/notxdetails/<BLOCK-HASH>.<bin|hex|json>`
 
 Given a block hash: returns a block, in binary, hex-encoded binary or JSON formats.
+Responds with 404 if the block doesn't exist.
 
 The HTTP request and response are both handled entirely in-memory, thus making maximum memory usage at least 2.66MB (1 MB max block, plus hex encoding) per request.
 
@@ -30,6 +38,12 @@ With the /notxdetails/ option JSON response will only contain the transaction ha
 `GET /rest/headers/<COUNT>/<BLOCK-HASH>.<bin|hex|json>`
 
 Given a block hash: returns <COUNT> amount of blockheaders in upward direction.
+Returns empty if the block doesn't exist or it isn't in the active chain.
+
+#### Blockhash by height
+`GET /rest/blockhashbyheight/<HEIGHT>.<bin|hex|json>`
+
+Given a height: returns hash of block in best-block-chain at height provided.
 
 #### Chaininfos
 `GET /rest/chaininfo.json`
@@ -45,7 +59,7 @@ Only supports JSON as output format.
 * verificationprogress : (numeric) estimate of verification progress [0..1]
 * chainwork : (string) total amount of work in active chain, in hexadecimal
 * pruned : (boolean) if the blocks are subject to pruning
-* pruneheight : (numeric) heighest block available
+* pruneheight : (numeric) highest block available
 * softforks : (array) status of softforks in progress
 * bip9_softforks : (object) status of BIP9 softforks in progress
 

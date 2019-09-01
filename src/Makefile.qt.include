@@ -12,25 +12,27 @@ QT_TS = \
   qt/locale/bitcoin_am.ts \
   qt/locale/bitcoin_ar.ts \
   qt/locale/bitcoin_be_BY.ts \
-  qt/locale/bitcoin_bg_BG.ts \
   qt/locale/bitcoin_bg.ts \
+  qt/locale/bitcoin_bg_BG.ts \
   qt/locale/bitcoin_bn.ts \
   qt/locale/bitcoin_bs.ts \
-  qt/locale/bitcoin_ca_ES.ts \
   qt/locale/bitcoin_ca.ts \
   qt/locale/bitcoin_ca@valencia.ts \
-  qt/locale/bitcoin_cs_CZ.ts \
+  qt/locale/bitcoin_ca_ES.ts \
   qt/locale/bitcoin_cs.ts \
+  qt/locale/bitcoin_cs_CZ.ts \
   qt/locale/bitcoin_cy.ts \
   qt/locale/bitcoin_da.ts \
   qt/locale/bitcoin_de_DE.ts \
   qt/locale/bitcoin_de.ts \
-  qt/locale/bitcoin_el_GR.ts \
+  qt/locale/bitcoin_de_DE.ts \
   qt/locale/bitcoin_el.ts \
+  qt/locale/bitcoin_el_GR.ts \
+  qt/locale/bitcoin_en.ts \
   qt/locale/bitcoin_en_AU.ts \
   qt/locale/bitcoin_en_GB.ts \
-  qt/locale/bitcoin_en.ts \
   qt/locale/bitcoin_eo.ts \
+  qt/locale/bitcoin_es.ts \
   qt/locale/bitcoin_es_419.ts \
   qt/locale/bitcoin_es_AR.ts \
   qt/locale/bitcoin_es_CL.ts \
@@ -38,35 +40,38 @@ QT_TS = \
   qt/locale/bitcoin_es_DO.ts \
   qt/locale/bitcoin_es_ES.ts \
   qt/locale/bitcoin_es_MX.ts \
-  qt/locale/bitcoin_es.ts \
   qt/locale/bitcoin_es_UY.ts \
   qt/locale/bitcoin_es_VE.ts \
-  qt/locale/bitcoin_et_EE.ts \
   qt/locale/bitcoin_et.ts \
+  qt/locale/bitcoin_et_EE.ts \
   qt/locale/bitcoin_eu_ES.ts \
-  qt/locale/bitcoin_fa_IR.ts \
   qt/locale/bitcoin_fa.ts \
+  qt/locale/bitcoin_fa_IR.ts \
   qt/locale/bitcoin_fi.ts \
+  qt/locale/bitcoin_fil.ts \
+  qt/locale/bitcoin_fr.ts \
   qt/locale/bitcoin_fr_CA.ts \
   qt/locale/bitcoin_fr_FR.ts \
-  qt/locale/bitcoin_fr.ts \
   qt/locale/bitcoin_gl.ts \
   qt/locale/bitcoin_he_IL.ts \
   qt/locale/bitcoin_he.ts \
+  qt/locale/bitcoin_he_IL.ts \
+  qt/locale/bitcoin_hi.ts \
   qt/locale/bitcoin_hi_IN.ts \
   qt/locale/bitcoin_hr.ts \
   qt/locale/bitcoin_hu_HU.ts \
   qt/locale/bitcoin_hu.ts \
-  qt/locale/bitcoin_id_ID.ts \
+  qt/locale/bitcoin_hu_HU.ts \
   qt/locale/bitcoin_id.ts \
+  qt/locale/bitcoin_id_ID.ts \
   qt/locale/bitcoin_is.ts \
-  qt/locale/bitcoin_it_IT.ts \
   qt/locale/bitcoin_it.ts \
-  qt/locale/bitcoin_ja_JP.ts \
+  qt/locale/bitcoin_it_IT.ts \
   qt/locale/bitcoin_ja.ts \
   qt/locale/bitcoin_ka.ts \
   qt/locale/bitcoin_kk_KZ.ts \
   qt/locale/bitcoin_km_KH.ts \
+  qt/locale/bitcoin_ko.ts \
   qt/locale/bitcoin_ko_KR.ts \
   qt/locale/bitcoin_ko.ts \
   qt/locale/bitcoin_ku_IQ.ts \
@@ -78,48 +83,55 @@ QT_TS = \
   qt/locale/bitcoin_ml.ts \
   qt/locale/bitcoin_mn.ts \
   qt/locale/bitcoin_mr_IN.ts \
-  qt/locale/bitcoin_ms_MY.ts \
   qt/locale/bitcoin_ms.ts \
+  qt/locale/bitcoin_ms_MY.ts \
   qt/locale/bitcoin_my.ts \
-  qt/locale/bitcoin_nb_NO.ts \
   qt/locale/bitcoin_nb.ts \
+  qt/locale/bitcoin_nb_NO.ts \
   qt/locale/bitcoin_ne.ts \
   qt/locale/bitcoin_nl_NL.ts \
   qt/locale/bitcoin_nl.ts \
+  qt/locale/bitcoin_nl_BE.ts \
+  qt/locale/bitcoin_nl_NL.ts \
   qt/locale/bitcoin_pam.ts \
   qt/locale/bitcoin_pl_PL.ts \
   qt/locale/bitcoin_pl.ts \
+  qt/locale/bitcoin_pl_PL.ts \
+  qt/locale/bitcoin_pt.ts \
   qt/locale/bitcoin_pt_BR.ts \
   qt/locale/bitcoin_pt_PT.ts \
-  qt/locale/bitcoin_pt.ts \
-  qt/locale/bitcoin_ro_RO.ts \
   qt/locale/bitcoin_ro.ts \
-  qt/locale/bitcoin_ru_RU.ts \
+  qt/locale/bitcoin_ro_RO.ts \
   qt/locale/bitcoin_ru.ts \
+  qt/locale/bitcoin_ru_RU.ts \
   qt/locale/bitcoin_si.ts \
   qt/locale/bitcoin_sk.ts \
+  qt/locale/bitcoin_sk_SK.ts \
   qt/locale/bitcoin_sl_SI.ts \
   qt/locale/bitcoin_sn.ts \
   qt/locale/bitcoin_sq.ts \
-  qt/locale/bitcoin_sr@latin.ts \
   qt/locale/bitcoin_sr.ts \
+  qt/locale/bitcoin_sr@latin.ts \
   qt/locale/bitcoin_sv.ts \
-  qt/locale/bitcoin_ta_IN.ts \
+  qt/locale/bitcoin_szl.ts \
   qt/locale/bitcoin_ta.ts \
+  qt/locale/bitcoin_ta_IN.ts \
   qt/locale/bitcoin_te.ts \
-  qt/locale/bitcoin_th_TH.ts \
   qt/locale/bitcoin_th.ts \
-  qt/locale/bitcoin_tr_TR.ts \
+  qt/locale/bitcoin_th_TH.ts \
   qt/locale/bitcoin_tr.ts \
+  qt/locale/bitcoin_tr_TR.ts \
   qt/locale/bitcoin_uk.ts \
+  qt/locale/bitcoin_uk_UA.ts \
   qt/locale/bitcoin_ur_PK.ts \
   qt/locale/bitcoin_uz@Cyrl.ts \
   qt/locale/bitcoin_vi.ts \
   qt/locale/bitcoin_vi_VN.ts \
+  qt/locale/bitcoin_zh-Hans.ts \
+  qt/locale/bitcoin_zh.ts \
   qt/locale/bitcoin_zh_CN.ts \
   qt/locale/bitcoin_zh-Hans.ts \
   qt/locale/bitcoin_zh_HK.ts \
-  qt/locale/bitcoin_zh.ts \
   qt/locale/bitcoin_zh_TW.ts
 
 QT_FORMS_UI = \
@@ -148,9 +160,9 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
+  qt/moc_bitcoin.cpp \
   qt/moc_bitcoingui.cpp \
   qt/moc_bitcoinunits.cpp \
-  qt/moc_callback.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -185,18 +197,18 @@ QT_MOC_CPP = \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_transactionview.cpp \
   qt/moc_utilitydialog.cpp \
+  qt/moc_walletcontroller.cpp \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
-  qt/macnotificationhandler.mm
+  qt/macnotificationhandler.mm \
+  qt/macos_appnap.mm
 
 QT_MOC = \
-  qt/bitcoin.moc \
   qt/bitcoinamountfield.moc \
-  qt/callback.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
@@ -206,9 +218,15 @@ QT_QRC = qt/bitcoin.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
 QT_QRC_LOCALE = qt/bitcoin_locale.qrc
 
+if ENABLE_BIP70
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
 PROTOBUF_PROTO = qt/paymentrequest.proto
+else
+PROTOBUF_CC =
+PROTOBUF_H =
+PROTOBUF_PROTO =
+endif
 
 BITCOIN_QT_H = \
   qt/addressbookpage.h \
@@ -217,9 +235,9 @@ BITCOIN_QT_H = \
   qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
+  qt/bitcoin.h \
   qt/bitcoingui.h \
   qt/bitcoinunits.h \
-  qt/callback.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -230,6 +248,7 @@ BITCOIN_QT_H = \
   qt/intro.h \
   qt/macdockiconhandler.h \
   qt/macnotificationhandler.h \
+  qt/macos_appnap.h \
   qt/modaloverlay.h \
   qt/networkstyle.h \
   qt/notificator.h \
@@ -259,6 +278,7 @@ BITCOIN_QT_H = \
   qt/transactiontablemodel.h \
   qt/transactionview.h \
   qt/utilitydialog.h \
+  qt/walletcontroller.h \
   qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
@@ -306,6 +326,7 @@ RES_ICONS = \
   qt/res/icons/network_disabled.png \
   qt/res/icons/open.png \
   qt/res/icons/overview.png \
+  qt/res/icons/proxy.png \
   qt/res/icons/quit.png \
   qt/res/icons/receive.png \
   qt/res/icons/remove.png \
@@ -324,6 +345,7 @@ RES_ICONS = \
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
+  qt/bitcoin.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
   qt/bitcoingui.cpp \
@@ -357,7 +379,6 @@ BITCOIN_QT_WALLET_CPP = \
   qt/editaddressdialog.cpp \
   qt/openuridialog.cpp \
   qt/overviewpage.cpp \
-  qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
   qt/receivecoinsdialog.cpp \
   qt/receiverequestdialog.cpp \
@@ -371,10 +392,14 @@ BITCOIN_QT_WALLET_CPP = \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
   qt/transactionview.cpp \
+  qt/walletcontroller.cpp \
   qt/walletframe.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp
+
+BITCOIN_QT_WALLET_BIP70_CPP = \
+  qt/paymentrequestplus.cpp
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
 if TARGET_WINDOWS
@@ -382,9 +407,12 @@ BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
 endif
 if ENABLE_WALLET
 BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
-endif
+if ENABLE_BIP70
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_BIP70_CPP)
+endif # ENABLE_BIP70
+endif # ENABLE_WALLET
 
-RES_IMAGES = 
+RES_IMAGES =
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
@@ -399,6 +427,9 @@ qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
+if TARGET_DARWIN
+  qt_libbitcoinqt_a_SOURCES += $(BITCOIN_MM)
+endif
 
 nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
@@ -421,25 +452,36 @@ qt_vertcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUD
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 qt_vertcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_vertcoin_qt_SOURCES = qt/bitcoin.cpp
+# next line was "bitcoin.cpp" but was "main.cpp" in bitcoin tree
+qt_vertcoin_qt_SOURCES = qt/main.cpp
 if TARGET_DARWIN
   qt_vertcoin_qt_SOURCES += $(BITCOIN_MM)
 endif
+
 if TARGET_WINDOWS
   qt_vertcoin_qt_SOURCES += $(BITCOIN_RC)
 endif
 qt_vertcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_vertcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_vertcoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
 qt_vertcoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
+
 qt_vertcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+if ENABLE_BIP70
+qt_vertcoin_qt_LDADD += $(SSL_LIBS)
+else
+if TARGET_WINDOWS
+qt_vertcoin_qt_LDADD += $(SSL_LIBS)
+endif
+endif
+qt_vertcoin_qt_LDADD += $(CRYPTO_LIBS)
 qt_vertcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_vertcoin_qt_LIBTOOLFLAGS = --tag CXX
+qt_vertcoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
