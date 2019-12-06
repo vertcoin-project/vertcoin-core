@@ -521,7 +521,7 @@ std::string LicenseInfo()
     const std::string URL_SOURCE_CODE = "<https://github.com/vertcoin-project/vertcoin-core>";
     const std::string URL_WEBSITE = "<https://vertcoin.org>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2014, COPYRIGHT_YEAR) + " ", 
+    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2014, COPYRIGHT_YEAR) + " ",
            strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
            strprintf(_("Please contribute if you find %s useful. "
@@ -1156,6 +1156,19 @@ bool AppInitParameterInteraction()
             }
         }
     }
+
+    // Set Mining Algorithm
+    std::string strAlgo = gArgs.GetArg("-algo", "lyra2rev3");
+    transform(strAlgo.begin(),strAlgo.end(),strAlgo.begin(),::tolower);
+    if (strAlgo == "lyra2rev3" || strAlgo == "lyra2re3" || strAlgo == "lyra2re")
+        miningAlgo = ALGO_LYRA2REV3;
+    else if (strAlgo == "newalgo1")
+        miningAlgo = ALGO_NEWALGO1;
+    else if (strAlgo == "newalgo1")
+        miningAlgo = ALGO_NEWALGO2;
+    else
+        miningAlgo = ALGO_LYRA2REV3;
+
     return true;
 }
 
