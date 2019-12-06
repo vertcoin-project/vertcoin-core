@@ -13,6 +13,31 @@
 #include <crypto/scrypt.h>
 #include <crypto/Lyra2RE/Lyra2RE.h>
 
+/** Multi-Algo definitions used to encode algorithm in nVersion */
+
+enum {
+    ALGO_LYRA2REV3 = 0,
+    ALGO_NEWALGO1 = 1,
+    ALGO_NEWALGO2 = 2,
+    NUM_ALGOS_IMPL
+};
+
+const int NUM_ALGOS = 3;
+
+enum {
+    // primary version
+    BLOCK_VERSION_DEFAULT        = 4,
+    // algo
+    BLOCK_VERSION_ALGO      = (15 << 9),
+    BLOCK_VERSION_NEWALGO1  = (1 << 9),
+    BLOCK_VERSION_NEWALGO2  = (2 << 9),
+};
+
+/** extract algo from nVersion */
+int GetAlgo(int nVersion);
+
+/** return algorithm name */
+std::string GetAlgoName(int algo);
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -71,6 +96,30 @@ public:
     int64_t GetBlockTime() const
     {
         return (int64_t)nTime;
+    }
+
+    /** Extract algo from blockheader */
+    inline int GetAlgo() const
+    {
+        return ::GetAlgo(nVersion);
+    }
+
+    /** Encode the algorithm into nVersion */
+    inline void SetAlgo(int algo)
+    {
+        switch(algo)
+        {
+            case ALGO_LYRA2REV3:
+                break;
+            case ALGO_NEWALGO1:
+                nVersion |= BLOCK_VERSION_NEWALGO1;
+                break;
+            case ALGO_NEWALGO2:
+                nVersion |= BLOCK_VERSION_NEWALGO2;
+                break;
+            default:
+                break;
+        }
     }
 };
 

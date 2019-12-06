@@ -19,7 +19,22 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
    uint256 thash;
-   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
+   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 250000) || nHeight > 2000000)
+   {
+       switch (GetAlgo())
+       {
+            case ALGO_LYRA2REV3:
+                lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
+                break;
+            case ALGO_NEWALGO1:
+                lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
+                break;
+            case ALGO_NEWALGO2:
+                lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
+                break;
+       }
+   }
+   else if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
    {
         lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
    }
@@ -41,9 +56,10 @@ uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 std::string CBlock::ToString() const
 {
     std::stringstream s;
-    s << strprintf("CBlock(hash=%s, ver=0x%08x, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
+    s << strprintf("CBlock(hash=%s, ver=0x%08x, pow_algo=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
         GetHash().ToString(),
         nVersion,
+        GetAlgo(),
         hashPrevBlock.ToString(),
         hashMerkleRoot.ToString(),
         nTime, nBits, nNonce,
@@ -52,4 +68,38 @@ std::string CBlock::ToString() const
         s << "  " << tx->ToString() << "\n";
     }
     return s.str();
+}
+
+int GetAlgo(int nVersion)
+{
+    switch (nVersion & BLOCK_VERSION_ALGO)
+    {
+        case 0:
+            return ALGO_LYRA2REV3;
+            break;
+        case BLOCK_VERSION_NEWALGO1:
+            return ALGO_NEWALGO1;
+            break;
+        case BLOCK_VERSION_NEWALGO2:
+            return ALGO_NEWALGO2;
+            break;
+    }
+    return ALGO_LYRA2REV3;
+}
+
+std::string GetAlgoName(int algo)
+{
+    switch (algo)
+    {
+            case ALGO_LYRA2REV3:
+                return std::string("lyra2re3");
+                break;
+            case ALGO_NEWALGO1:
+                return std::string("newalgo1");
+                break;
+            case ALGO_NEWALGO2:
+                return std::string("newalgo2");
+                break;
+    }
+    return std::string("unknown");
 }
