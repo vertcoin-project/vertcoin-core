@@ -82,7 +82,7 @@ unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, cons
     return bnNew.GetCompact();
 }
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
     static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
     unsigned int                TimeDaySeconds       = 60 * 60 * 24;
@@ -97,6 +97,9 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
+
+        if(nHeight >= 250000)
+            return GetNextWorkRequired_MultiShield(pindexLast, params, algo);
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
