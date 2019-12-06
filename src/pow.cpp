@@ -14,6 +14,74 @@
 
 static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
 
+unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, const Consensus::Params& params, int algo)
+{
+    // static defined constants - move to chainparams
+    const int nAveragingInterval = 10; // 10 blocks
+    const int nMaxAdjustDown = 16; // 16% adjustment down
+    const int nMaxAdjustUp = 8; // 8% adjustment up
+    const int multiAlgoTargetSpacing = NUM_ALGOS*params.nPowTargetSpacing; //3*150 = 450 seconds per algo
+    const int nAveragingTargetTimespan = nAveragingInterval * multiAlgoTargetSpacing; // 10*3*150
+    const int nMinActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustUp) / 100;
+    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustDown) / 100;
+    const int nLocalTargetAdjustment = 4; //target adjustment per algo
+
+    // find first block in averaging interval
+    // Go back by what we want to be nAveragingInterval blocks per algo
+    const CBlockIndex* pindexFirst = pindexLast;
+    for (int i = 0; pindexFirst && i < NUM_ALGOS*nAveragingInterval; i++)
+    {
+        pindexFirst = pindexFirst->pprev;
+    }
+
+    const CBlockIndex* pindexPrevAlgo = GetLastBlockIndexForAlgo(pindexLast, algo);
+    if (pindexPrevAlgo == nullptr || pindexFirst == nullptr)
+    {
+        return UintToArith256(params.powLimit).GetCompact();
+    }
+
+    // Limit adjustment step
+    // Use medians to prevent time-warp attacks
+    int64_t nActualTimespan = pindexLast-> GetMedianTimePast() - pindexFirst->GetMedianTimePast();
+    nActualTimespan = nAveragingTargetTimespan + (nActualTimespan - nAveragingTargetTimespan)/4;
+
+    if (nActualTimespan < nMinActualTimespan)
+        nActualTimespan = nMinActualTimespan;
+    if (nActualTimespan > nMaxActualTimespan)
+        nActualTimespan = nMaxActualTimespan;
+
+    //Global retarget
+    arith_uint256 bnNew;
+    bnNew.SetCompact(pindexPrevAlgo->nBits);
+
+    bnNew *= nActualTimespan;
+    bnNew /= nAveragingTargetTimespan;
+
+    //Per-algo retarget
+    int nAdjustments = pindexPrevAlgo->nHeight + NUM_ALGOS - 1 - pindexLast->nHeight;
+    if (nAdjustments > 0)
+    {
+        for (int i = 0; i < nAdjustments; i++)
+        {
+            bnNew *= 100;
+            bnNew /= (100 + nLocalTargetAdjustment);
+        }
+    }
+    else if (nAdjustments < 0)//make it easier
+    {
+        for (int i = 0; i < -nAdjustments; i++)
+        {
+            bnNew *= (100 + nLocalTargetAdjustment);
+            bnNew /= 100;
+        }
+    }
+
+    if (bnNew > UintToArith256(params.powLimit))
+        bnNew = UintToArith256(params.powLimit);
+
+    return bnNew.GetCompact();
+}
+
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
@@ -45,7 +113,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return 0x1b0ffff0;
         }
     }
-    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
+    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);
 }
 
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -89,10 +157,10 @@ unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CB
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
-unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, 
-                               const CBlockHeader *pblock, 
-                               uint64_t TargetBlocksSpacingSeconds, 
-                               uint64_t PastBlocksMin, 
+unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
+                               const CBlockHeader *pblock,
+                               uint64_t TargetBlocksSpacingSeconds,
+                               uint64_t PastBlocksMin,
                                uint64_t PastBlocksMax,
                                const Consensus::Params& params) {
     /* current difficulty formula - kimoto gravity well */
@@ -132,11 +200,11 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
             if (PastBlocksMass >= PastBlocksMin) {
                     if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
             }
-            if (BlockReading->pprev == NULL || 
+            if (BlockReading->pprev == NULL ||
                 (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
-            { 
-                    assert(BlockReading); 
-                    break; 
+            {
+                    assert(BlockReading);
+                    break;
             }
             BlockReading = BlockReading->pprev;
         }
