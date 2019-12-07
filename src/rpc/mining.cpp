@@ -196,7 +196,12 @@ UniValue getmininginfo(const JSONRPCRequest& request)
             "  \"blocks\": nnn,             (numeric) The current block\n"
             "  \"currentblockweight\": nnn, (numeric) The last block weight\n"
             "  \"currentblocktx\": nnn,     (numeric) The last block transaction\n"
+            "  \"pow_algo_id\": n           (numeric) The active mining algorithm id\n"
+            "  \"pow_algo\": \"name\"       (string) The active mining algorithm name\n"
             "  \"difficulty\": xxx.xxxxx    (numeric) The current difficulty\n"
+            "  \"difficulty_lyra2rev3\": xxxxxx,  (numeric) the current lyra2rev3 difficulty\n"
+            "  \"difficulty_newalgo1\": xxxxxx,   (numeric) the current newalgo1 difficulty\n"
+            "  \"difficulty_newalgo2\": xxxxxx,   (numeric) the current newalgo2 difficulty\n"
             "  \"networkhashps\": nnn,      (numeric) The network hashes per second\n"
             "  \"pooledtx\": n              (numeric) The size of the mempool\n"
             "  \"chain\": \"xxxx\",           (string) current network name as defined in BIP70 (main, test, regtest)\n"
@@ -215,7 +220,12 @@ UniValue getmininginfo(const JSONRPCRequest& request)
     obj.push_back(Pair("blocks",           (int)chainActive.Height()));
     obj.push_back(Pair("currentblockweight", (uint64_t)nLastBlockWeight));
     obj.push_back(Pair("currentblocktx",   (uint64_t)nLastBlockTx));
-    obj.push_back(Pair("difficulty",       (double)GetDifficulty()));
+    obj.push_back(Pair("pow_algo_id",      (int)miningAlgo));
+    obj.push_back(Pair("pow_algo",         GetAlgoName(chainActive.Height(), miningAlgo, Params().GetConsensus())));
+    obj.push_back(Pair("difficulty",       (double)GetDifficulty(miningAlgo)));
+    obj.push_back(Pair("difficulty_lyra2rev3",       (double)GetDifficulty(ALGO_LYRA2REV3)));
+    obj.push_back(Pair("difficulty_newalgo1",       (double)GetDifficulty(ALGO_NEWALGO1)));
+    obj.push_back(Pair("difficulty_newalgo2",       (double)GetDifficulty(ALGO_NEWALGO2)));
     obj.push_back(Pair("networkhashps",    getnetworkhashps(request)));
     obj.push_back(Pair("pooledtx",         (uint64_t)mempool.size()));
     obj.push_back(Pair("chain",            Params().NetworkIDString()));
