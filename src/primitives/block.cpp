@@ -11,15 +11,18 @@
 #include <crypto/common.h>
 #include <chainparams.h>
 
+#include <crypto/scrypt.h>
+#include <crypto/Lyra2RE/Lyra2RE.h>
+
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
 }
 
-uint256 CBlockHeader::GetPoWHash(const int nHeight) const
+uint256 CBlockHeader::GetPoWHash(const int nHeight, const Consensus::Params& params) const
 {
    uint256 thash;
-   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 250000) || nHeight > 2000000)
+   if(nHeight > params.nStartMultiAlgoHash)
    {
        switch (GetAlgo())
        {
@@ -34,15 +37,15 @@ uint256 CBlockHeader::GetPoWHash(const int nHeight) const
                 break;
        }
    }
-   else if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
+   else if(nHeight > params.nStartLyra2re3Hash)
    {
         lyra2re3_hash(BEGIN(nVersion), BEGIN(thash));
    }
-   else if(Params().NetworkIDString() == CBaseChainParams::TESTNET || nHeight >= 347000) // New Lyra2re2 Testnet
+   else if (nHeight >= params.nStartLyra2re2Hash)
    {
         lyra2re2_hash(BEGIN(nVersion), BEGIN(thash));
    }
-   else if(nHeight >= 208301)
+   else if(nHeight >= params.nStartLyra2reHash)
    {
    	    lyra2re_hash(BEGIN(nVersion), BEGIN(thash));
    }
@@ -87,12 +90,19 @@ int GetAlgo(int nVersion)
     return ALGO_LYRA2REV3;
 }
 
-std::string GetAlgoName(int algo)
+std::string GetAlgoName(int nHeight, int algo, const Consensus::Params& params)
 {
     switch (algo)
     {
             case ALGO_LYRA2REV3:
-                return std::string("lyra2re3");
+                if(nHeight > params.nStartLyra2re3Hash)
+                    return std::string("lyra2rev3");
+                else if (nHeight >= params.nStartLyra2re2Hash)
+                    return std::string("lyra2rev2");
+                else if (nHeight >= params.nStartLyra2reHash)
+                    return std::string("lyra2re");
+                else
+                    return std::string("scrypt-n");
                 break;
             case ALGO_NEWALGO1:
                 return std::string("newalgo1");

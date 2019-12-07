@@ -54,7 +54,7 @@ struct CoinEntry {
 
 }
 
-CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe, true) 
+CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe, true)
 {
 }
 
@@ -295,7 +295,7 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nTx            = diskindex.nTx;
 
                 MapCheckpoints::iterator it = checkPoints.find(pindexNew->nHeight);
-                if(it != checkPoints.end()) 
+                if(it != checkPoints.end())
                 {
                     LogPrintf("Verifying checkpoint at height %i\n", pindexNew->nHeight);
                     if(pindexNew->GetBlockHash() != it->second)
@@ -307,7 +307,7 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                     if(fullChainVerification || pindexNew->nHeight > highestCheckpointHeight)
                     {
                         if(pindexNew->nHeight % 10000 == 0) LogPrintf("Checking PoW for block %i\n", pindexNew->nHeight);
-                        if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
+                        if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(consensusParams), pindexNew->nBits, consensusParams))
                             return error("%s: CheckProofOfWork failed: %s\n", __func__, pindexNew->ToString());
                     }
 

@@ -16,20 +16,15 @@ static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
 
 unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, const Consensus::Params& params, int algo)
 {
-    // static defined constants - move to chainparams
-    const int nAveragingInterval = 10; // 10 blocks
-    const int nMaxAdjustDown = 16; // 16% adjustment down
-    const int nMaxAdjustUp = 8; // 8% adjustment up
     const int multiAlgoTargetSpacing = NUM_ALGOS*params.nPowTargetSpacing; //3*150 = 450 seconds per algo
-    const int nAveragingTargetTimespan = nAveragingInterval * multiAlgoTargetSpacing; // 10*3*150
-    const int nMinActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustUp) / 100;
-    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustDown) / 100;
-    const int nLocalTargetAdjustment = 4; //target adjustment per algo
+    const int nAveragingTargetTimespan = params.nAveragingInterval * multiAlgoTargetSpacing; // 10*3*150
+    const int nMinActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
+    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustDown) / 100;
 
     // find first block in averaging interval
     // Go back by what we want to be nAveragingInterval blocks per algo
     const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < NUM_ALGOS*nAveragingInterval; i++)
+    for (int i = 0; pindexFirst && i < NUM_ALGOS*params.nAveragingInterval; i++)
     {
         pindexFirst = pindexFirst->pprev;
     }
@@ -64,14 +59,14 @@ unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, cons
         for (int i = 0; i < nAdjustments; i++)
         {
             bnNew *= 100;
-            bnNew /= (100 + nLocalTargetAdjustment);
+            bnNew /= (100 + params.nLocalTargetAdjustment);
         }
     }
     else if (nAdjustments < 0)//make it easier
     {
         for (int i = 0; i < -nAdjustments; i++)
         {
-            bnNew *= (100 + nLocalTargetAdjustment);
+            bnNew *= (100 + params.nLocalTargetAdjustment);
             bnNew /= 100;
         }
     }
@@ -94,11 +89,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     const int nHeight = pindexLast->nHeight + 1;
 
     if(params.testnet) {
-        if(nHeight < 2116) {
+        if(nHeight < params.nStartKGWWorkCalc) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
 
-        if(nHeight >= 250000)
+        if(nHeight > params.nStartMultiAlgoHash)
             return GetNextWorkRequired_MultiShield(pindexLast, params, algo);
 
         if(nHeight % 12 != 0) {
@@ -108,13 +103,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return bnNew.GetCompact();
         }
     } else {
-        if(nHeight < 26754) {
+        if(nHeight < params.nStartKGWWorkCalc) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight == 208301) {
+        } else if(nHeight == params.nStartLyra2reHash) {
             return 0x1e0ffff0;
-        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
+        } else if(nHeight >= params.nStartLyra2re3Hash && nHeight < (params.nStartLyra2re3Hash + 10)) { // Force difficulty for 10 blocks
             return 0x1b0ffff0;
-        }
+        } else if(nHeight > params.nStartMultiAlgoHash)
+            return GetNextWorkRequired_MultiShield(pindexLast, params, algo);
     }
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);
 }

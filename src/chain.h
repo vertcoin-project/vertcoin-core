@@ -294,9 +294,9 @@ public:
         return *phashBlock;
     }
 
-    uint256 GetBlockPoWHash() const
+    uint256 GetBlockPoWHash(const Consensus::Params& params) const
     {
-        return GetBlockHeader().GetPoWHash(nHeight);
+        return GetBlockHeader().GetPoWHash(nHeight, params);
     }
 
     int GetAlgo() const

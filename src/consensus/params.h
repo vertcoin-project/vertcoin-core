@@ -70,6 +70,16 @@ struct Params {
     uint256 nMinimumChainWork;
     uint256 defaultAssumeValid;
     bool testnet;
+
+    int nStartLyra2reHash;
+    int nStartLyra2re2Hash;
+    int nStartLyra2re3Hash;
+    int nStartMultiAlgoHash;
+    int nStartKGWWorkCalc;
+    int nAveragingInterval;
+    int nMaxAdjustDown;
+    int nMaxAdjustUp;
+    int nLocalTargetAdjustment;
 };
 } // namespace Consensus
 
