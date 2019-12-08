@@ -19,7 +19,7 @@ unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, cons
     const int multiAlgoTargetSpacing = NUM_ALGOS*params.nPowTargetSpacing; //3*150 = 450 seconds per algo
     const int nAveragingTargetTimespan = params.nAveragingInterval * multiAlgoTargetSpacing; // 10*3*150
     const int nMinActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
-    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustDown) / 100;
+    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 + params.nMaxAdjustDown) / 100;
 
     // find first block in averaging interval
     // Go back by what we want to be nAveragingInterval blocks per algo

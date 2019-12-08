@@ -1164,7 +1164,7 @@ bool AppInitParameterInteraction()
         miningAlgo = ALGO_LYRA2REV3;
     else if (strAlgo == "newalgo1")
         miningAlgo = ALGO_NEWALGO1;
-    else if (strAlgo == "newalgo1")
+    else if (strAlgo == "newalgo2")
         miningAlgo = ALGO_NEWALGO2;
     else
         miningAlgo = ALGO_LYRA2REV3;
