@@ -2143,7 +2143,8 @@ void static UpdateTip(const CBlockIndex *pindexNew, const CChainParams& chainPar
         for (int i = 0; i < 100 && pindex != nullptr; i++)
         {
             int32_t nExpectedVersion = ComputeBlockVersion(pindex->pprev, chainParams.GetConsensus());
-            if (pindex->nVersion > VERSIONBITS_LAST_OLD_BLOCK_VERSION && (pindex->nVersion & ~nExpectedVersion) != 0)
+            // multi-algo uses nVersion bits 9 thru 12 for encoding the algorithm. mask this from the version bits check
+            if (pindex->nVersion > VERSIONBITS_LAST_OLD_BLOCK_VERSION && ((pindex->nVersion & ~nExpectedVersion) & 0xFFFFE1FF) != 0)
                 ++nUpgraded;
             pindex = pindex->pprev;
         }
@@ -3089,6 +3090,11 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
     // Ensure Multi-Algo isn't allowed before nStartMultiAlgoHash
     if (nHeight <= consensusParams.nStartMultiAlgoHash && algo!=ALGO_LYRA2REV3)
         return state.DoS(100, false, REJECT_INVALID, "early-multi-algo", false, "multi-algo blocks are not allowed at this height");
+
+    // Ensure a valid algo id has been used
+    if (algo >= NUM_ALGOS_IMPL)
+        return state.Invalid(false, REJECT_INVALID, "invalid-algo", "invalid algo id");
+
     // Check proof of work
     if (block.nBits != GetNextWorkRequired(pindexPrev, &block, consensusParams, algo))
         return state.DoS(100, false, REJECT_INVALID, "bad-diffbits", false, "incorrect proof of work");

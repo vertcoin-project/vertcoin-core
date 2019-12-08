@@ -264,12 +264,10 @@ arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block)
 
 arith_uint256 GetBlockProof(const CBlockIndex& block)
 {
-    /** set changeover time to geometric mean work calculation in chainparams later */
-    // Consensus::Params params = Params().GetConsensus();
-    // int nHeight = block.nHeight;
+    Consensus::Params params = Params().GetConsensus();
+    int nHeight = block.nHeight;
 
-    // if(nHeight >= params.nMultiAlgoStart)
-    if(false)
+    if(nHeight > params.nStartMultiAlgoHash)
     {
         return GetGeometricMeanPrevWork(block);
     }
