@@ -294,9 +294,14 @@ public:
         return *phashBlock;
     }
 
-    uint256 GetBlockPoWHash() const 
+    uint256 GetBlockPoWHash(const Consensus::Params& params) const
     {
-        return GetBlockHeader().GetPoWHash(nHeight);
+        return GetBlockHeader().GetPoWHash(nHeight, params);
+    }
+
+    int GetAlgo() const
+    {
+        return ::GetAlgo(nVersion);
     }
 
     int64_t GetBlockTime() const
@@ -369,7 +374,8 @@ arith_uint256 GetBlockProof(const CBlockIndex& block);
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params&);
 /** Find the forking point between two chain tips. */
 const CBlockIndex* LastCommonAncestor(const CBlockIndex* pa, const CBlockIndex* pb);
-
+/** Return the index to the last block of algo */
+const CBlockIndex* GetLastBlockIndexForAlgo(const CBlockIndex* pindex, int algo);
 
 /** Used to marshal pointers into hashes for db storage. */
 class CDiskBlockIndex : public CBlockIndex

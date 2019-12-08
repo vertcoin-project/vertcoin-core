@@ -109,6 +109,18 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x4b151d928c0aae106c9d69347df59e0088cbd33dd659deab126506865a8b0060"); //898726
 
+        consensus.nStartLyra2reHash = 208301; // height where lyra2re replaced scrypt-n
+        consensus.nStartLyra2re2Hash = 347000; // height where lyra2re2 replaced lyra2re
+        consensus.nStartLyra2re3Hash = 1080000; // height where lyra2re3 replaced lyra2re2
+        consensus.nStartMultiAlgoHash = 10000000; // height where multi-algorithm is active - UPDATE
+
+        consensus.nStartKGWWorkCalc = 26754; // height where KimotoGravityWell replaces bitcoin's difficulty algorithm
+
+        // multishield parameters
+        consensus.nAveragingInterval = 10; // 10 blocks
+        consensus.nMaxAdjustDown = 16; // 16% adjustment down
+        consensus.nMaxAdjustUp = 8; // 8% adjustment up
+
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -181,7 +193,7 @@ public:
         strNetworkID = "test";
         consensus.testnet = true;
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP16Height = 0; 
+        consensus.BIP16Height = 0;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -193,23 +205,36 @@ public:
          // Deployment of BIP65, BIP66, and BIP34.
         consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nStartTime = 1486865123;
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1517356801;    
+        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1517356801;
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1486865123; 
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1486865123;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801;
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1486865123;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100010");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x69ab56f74d75afa90b65b1fe10df8adaf2769e2ba64df1e1dc99c4d6717e1a2a"); //9000
+
+        consensus.nStartLyra2reHash = 0; // height where lyra2re replaced scrypt-n
+        consensus.nStartLyra2re2Hash = 0; // height where lyra2re2 replaced lyra2re
+        consensus.nStartLyra2re3Hash = 158220; // height where lyra2re3 replaced lyra2re2
+        consensus.nStartMultiAlgoHash = 210000; // height where multi-algorithm is active - UPDATE
+
+        consensus.nStartKGWWorkCalc = 2116; // height where KimotoGravityWell replaces bitcoin's difficulty algorithm
+
+        // multishield parameters
+        consensus.nAveragingInterval = 10; // 10 blocks
+        consensus.nMaxAdjustDown = 16; // 16% adjustment down
+        consensus.nMaxAdjustUp = 8; // 8% adjustment up
+        consensus.nLocalTargetAdjustment = 4; //target adjustment per algo
 
         pchMessageStart[0] = 'v';
         pchMessageStart[1] = 'e';

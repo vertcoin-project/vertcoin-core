@@ -14,7 +14,70 @@
 
 static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+unsigned int GetNextWorkRequired_MultiShield(const CBlockIndex* pindexLast, const Consensus::Params& params, int algo)
+{
+    const int multiAlgoTargetSpacing = NUM_ALGOS*params.nPowTargetSpacing; //3*150 = 450 seconds per algo
+    const int nAveragingTargetTimespan = params.nAveragingInterval * multiAlgoTargetSpacing; // 10*3*150
+    const int nMinActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
+    const int nMaxActualTimespan = nAveragingTargetTimespan * (100 + params.nMaxAdjustDown) / 100;
+
+    // find first block in averaging interval
+    // Go back by what we want to be nAveragingInterval blocks per algo
+    const CBlockIndex* pindexFirst = pindexLast;
+    for (int i = 0; pindexFirst && i < NUM_ALGOS*params.nAveragingInterval; i++)
+    {
+        pindexFirst = pindexFirst->pprev;
+    }
+
+    const CBlockIndex* pindexPrevAlgo = GetLastBlockIndexForAlgo(pindexLast, algo);
+    if (pindexPrevAlgo == nullptr || pindexFirst == nullptr)
+    {
+        return UintToArith256(params.powLimit).GetCompact();
+    }
+
+    // Limit adjustment step
+    // Use medians to prevent time-warp attacks
+    int64_t nActualTimespan = pindexLast-> GetMedianTimePast() - pindexFirst->GetMedianTimePast();
+    nActualTimespan = nAveragingTargetTimespan + (nActualTimespan - nAveragingTargetTimespan)/4;
+
+    if (nActualTimespan < nMinActualTimespan)
+        nActualTimespan = nMinActualTimespan;
+    if (nActualTimespan > nMaxActualTimespan)
+        nActualTimespan = nMaxActualTimespan;
+
+    //Global retarget
+    arith_uint256 bnNew;
+    bnNew.SetCompact(pindexPrevAlgo->nBits);
+
+    bnNew *= nActualTimespan;
+    bnNew /= nAveragingTargetTimespan;
+
+    //Per-algo retarget
+    int nAdjustments = pindexPrevAlgo->nHeight + NUM_ALGOS - 1 - pindexLast->nHeight;
+    if (nAdjustments > 0)
+    {
+        for (int i = 0; i < nAdjustments; i++)
+        {
+            bnNew *= 100;
+            bnNew /= (100 + params.nLocalTargetAdjustment);
+        }
+    }
+    else if (nAdjustments < 0)//make it easier
+    {
+        for (int i = 0; i < -nAdjustments; i++)
+        {
+            bnNew *= (100 + params.nLocalTargetAdjustment);
+            bnNew /= 100;
+        }
+    }
+
+    if (bnNew > UintToArith256(params.powLimit))
+        bnNew = UintToArith256(params.powLimit);
+
+    return bnNew.GetCompact();
+}
+
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
     static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
     unsigned int                TimeDaySeconds       = 60 * 60 * 24;
@@ -26,9 +89,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     const int nHeight = pindexLast->nHeight + 1;
 
     if(params.testnet) {
-        if(nHeight < 2116) {
+        if(nHeight < params.nStartKGWWorkCalc) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
+
+        if(nHeight > params.nStartMultiAlgoHash)
+            return GetNextWorkRequired_MultiShield(pindexLast, params, algo);
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
@@ -37,15 +103,16 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return bnNew.GetCompact();
         }
     } else {
-        if(nHeight < 26754) {
+        if(nHeight < params.nStartKGWWorkCalc) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight == 208301) {
+        } else if(nHeight == params.nStartLyra2reHash) {
             return 0x1e0ffff0;
-        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
+        } else if(nHeight >= params.nStartLyra2re3Hash && nHeight < (params.nStartLyra2re3Hash + 10)) { // Force difficulty for 10 blocks
             return 0x1b0ffff0;
-        }
+        } else if(nHeight > params.nStartMultiAlgoHash)
+            return GetNextWorkRequired_MultiShield(pindexLast, params, algo);
     }
-    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
+    return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);
 }
 
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -89,10 +156,10 @@ unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CB
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
-unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, 
-                               const CBlockHeader *pblock, 
-                               uint64_t TargetBlocksSpacingSeconds, 
-                               uint64_t PastBlocksMin, 
+unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
+                               const CBlockHeader *pblock,
+                               uint64_t TargetBlocksSpacingSeconds,
+                               uint64_t PastBlocksMin,
                                uint64_t PastBlocksMax,
                                const Consensus::Params& params) {
     /* current difficulty formula - kimoto gravity well */
@@ -132,11 +199,11 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
             if (PastBlocksMass >= PastBlocksMin) {
                     if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
             }
-            if (BlockReading->pprev == NULL || 
+            if (BlockReading->pprev == NULL ||
                 (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
-            { 
-                    assert(BlockReading); 
-                    break; 
+            {
+                    assert(BlockReading);
+                    break;
             }
             BlockReading = BlockReading->pprev;
         }
