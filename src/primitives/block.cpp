@@ -10,6 +10,7 @@
 #include <util/strencodings.h>
 #include <crypto/common.h>
 #include <chainparams.h>
+#include <crypto/verthash.h>
 
 uint256 CBlockHeader::GetHash() const
 {
@@ -21,7 +22,11 @@ uint256 CBlockHeader::GetPoWHash(const int nHeight) const
    uint256 thash;
    char *out = ((char *)(thash.begin()));
 
-   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
+   if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= VERTHASH_FORKBLOCK_TESTNET)) // New Verthash Testnet
+   {
+       Verthash::Hash(this->begin(), out);
+   }
+   else if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight > 158220) || nHeight > 1080000)
    {
         lyra2re3_hash(this->begin(), out);
    }

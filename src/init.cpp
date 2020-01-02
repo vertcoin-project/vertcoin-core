@@ -65,6 +65,8 @@
 #include <boost/thread.hpp>
 #include <openssl/crypto.h>
 
+#include <crypto/verthash_datfile.h>
+
 #if ENABLE_ZMQ
 #include <zmq/zmqabstractnotifier.h>
 #include <zmq/zmqnotificationinterface.h>
@@ -1718,6 +1720,13 @@ bool AppInitMain(InitInterfaces& interfaces)
     if (ShutdownRequested()) {
         return false;
     }
+
+
+
+    // Create the datafile if desired (will just return if it already exists)
+    uiInterface.InitMessage(_("Creating Verthash Datafile"));
+    VerthashDatFile::CreateMiningDataFile();
+
 
     // ********************************************************* Step 12: start node
 
