@@ -78,19 +78,14 @@ void Verthash::Hash(const char* input, char* output)
         }
     }
 
-    unsigned char read_byte[1];
     uint32_t* p1_32 = (uint32_t*)p1;
     uint32_t value_accumulator = 0;
+    const uint32_t mdiv = ((datfile_sz - HASH_OUT_SIZE)/BYTE_ALIGNMENT) + 1;
     for(size_t i = 0; i < N_INDEXES; i++) {
-        const uint32_t index = (fnv1a(seek_indexes[i], value_accumulator) + BYTE_ALIGNMENT - 1) & -BYTE_ALIGNMENT;
-        uint32_t blob_bytes_32 = 0;
-        const long offset = (index % (datfile_sz-HASH_OUT_SIZE));
+	const long offset = (fnv1a(seek_indexes[i], value_accumulator) % mdiv) * BYTE_ALIGNMENT;
         fseek(VerthashDatFile, offset, SEEK_SET);
-        fread(&blob_bytes_32, sizeof(uint32_t), 1, VerthashDatFile);
-
         for(size_t i2 = 0; i2 < HASH_OUT_SIZE/sizeof(uint32_t); i2++) {
             uint32_t value = 0;
-            fseek(VerthashDatFile, offset + i2, SEEK_SET);
             fread(&value, sizeof(uint32_t), 1, VerthashDatFile);
             uint32_t* p1_ptr = p1_32 + i2;
             *p1_ptr = fnv1a(*p1_ptr, value);
