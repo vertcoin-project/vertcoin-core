@@ -22,7 +22,6 @@ struct Graph
     int64_t pow2;
     uint8_t *pk;
     int64_t index;
-    const char *fileName;
 };
 
 int64_t Log2(int64_t x)
@@ -455,17 +454,17 @@ void XiGraphIter(struct Graph *g, int64_t index)
     free(graphStack);
 }
 
-struct Graph *NewGraph(int64_t index, const char *fileName, uint8_t *pk)
+struct Graph *NewGraph(int64_t index, const fs::path& targetFile, uint8_t *pk)
 {
     uint8_t exists = 0;
     FILE *db;
-    if ((db = fopen(fileName, "r")) != NULL)
+    if ((db = fsbridge::fopen(targetFile, "r")) != NULL)
     {
         fclose(db);
         exists = 1;
     }
 
-    db = fopen(fileName, "wb+");
+    db = fsbridge::fopen(targetFile, "wb+");
     int64_t size = numXi(index);
     int64_t log2 = Log2(size) + 1;
     int64_t pow2 = 1 << ((uint64_t)log2);
@@ -476,7 +475,6 @@ struct Graph *NewGraph(int64_t index, const char *fileName, uint8_t *pk)
     g->pow2 = pow2;
     g->pk = pk;
     g->index = index;
-    g->fileName = fileName;
 
     if (exists == 0)
     {
@@ -496,7 +494,7 @@ void VerthashDatFile::CreateMiningDataFile() {
         return;
     }
 
-    fs::path targetFile = GetDataDir() / "verthash.dat";
+    const fs::path targetFile = GetDataDir() / "verthash.dat";
     if(!boost::filesystem::exists(targetFile)) {
         LogPrintf("Starting Proof-of-Space datafile generation at %s\n", targetFile.c_str());
         
@@ -505,7 +503,7 @@ void VerthashDatFile::CreateMiningDataFile() {
         sha3(hashInput, 16, pk, NODE_SIZE);
 
         int64_t index = 16;
-        NewGraph(index, targetFile.c_str(), pk);
+        NewGraph(index, targetFile, pk);
 
         LogPrintf("Finished Proof-of-Space datafile generation.\n");
     }
