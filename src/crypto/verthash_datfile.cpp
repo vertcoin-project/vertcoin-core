@@ -496,7 +496,7 @@ void VerthashDatFile::CreateMiningDataFile() {
 
     const fs::path targetFile = GetDataDir() / "verthash.dat";
     if(!boost::filesystem::exists(targetFile)) {
-        LogPrintf("Starting Proof-of-Space datafile generation at %s\n", targetFile.c_str());
+        LogPrintf("Starting Proof-of-Space datafile generation at %s.\n", targetFile.string());
         
         const char *hashInput = "Vertcoin PoS PoC";
         uint8_t *pk = (uint8_t *)malloc(NODE_SIZE);
