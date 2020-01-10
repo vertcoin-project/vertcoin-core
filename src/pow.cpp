@@ -149,7 +149,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
         }
         if (BlockReading->pprev == NULL ||
             (!params.testnet && BlockReading->nHeight == 1080000) || // Don't calculate past fork block on mainnet
-            (!params.testnet && BlockReading->nHeight == VERTHASH_FORKBLOCK_TESTNET)) // Don't calculate past fork block on testnet
+            (params.testnet && BlockReading->nHeight == VERTHASH_FORKBLOCK_TESTNET)) // Don't calculate past fork block on testnet
         {
                 assert(BlockReading); 
                 break; 
