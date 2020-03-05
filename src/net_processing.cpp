@@ -2257,13 +2257,21 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
         // and over. So if we're sending MAX_HEADERS_RESULTS headers of which 
         // the last one we already sent, we're treating it as a duplicate request. 
         // A node should get 3 strikes and then the ban score gets increased
-        if (pindex == nodestate->pindexBestHeaderSent && nLimit <= 0) {
+        bool bDuplicate = false;
+        if(nLimit <= 0) {
+            if (pindex == nodestate->pindexBestHeaderSent) {
+                bDuplicate = true;
+            } else {
+                if (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex) {
+                    bDuplicate = true;
+                }
+            }
+        }
+        if (bDuplicate) {
             nodestate->nDuplicateHeaderRequests++;
             LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom->GetId(), nodestate->nDuplicateHeaderRequests);
             if(nodestate->nDuplicateHeaderRequests >= 3) {
                 Misbehaving(pfrom->GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
-                // Don't send a reply on and after the third duplicate request
-                return true;
             }
         } 
         else 
