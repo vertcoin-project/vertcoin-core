@@ -2261,8 +2261,8 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
         if(nLimit <= 0) {
             if (pindex == nodestate->pindexBestHeaderSent) {
                 bDuplicate = true;
-            } else {
-                if (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex) {
+            } else if (nodestate->pindexBestHeaderSent) {
+                if (pindex && nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex) {
                     bDuplicate = true;
                 }
             }
