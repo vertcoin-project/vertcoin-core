@@ -2260,9 +2260,11 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
         bool bDuplicate = false;
         if(nLimit <= 0) {
             if (pindex == nodestate->pindexBestHeaderSent) {
+                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom->GetId());
                 bDuplicate = true;
             } else if (nodestate->pindexBestHeaderSent) {
-                if (pindex && nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex) {
+                if (pindex && (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex)) {
+                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom->GetId());
                     bDuplicate = true;
                 }
             }
@@ -2273,11 +2275,6 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             if(nodestate->nDuplicateHeaderRequests >= 3) {
                 Misbehaving(pfrom->GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
             }
-        } 
-        else 
-        {
-            // Reset the duplicate header request count to zero when it's not duplicate.
-            nodestate->nDuplicateHeaderRequests = 0;
         }
 
 
