@@ -272,6 +272,8 @@ struct CNodeState {
         bool m_protect;
     };
 
+    int8_t nDuplicateHeaderRequests;
+
     ChainSyncTimeoutState m_chain_sync;
 
     //! Time of last new block announcement
@@ -299,6 +301,7 @@ struct CNodeState {
         fHaveWitness = false;
         fWantsCmpctWitness = false;
         fSupportsDesiredCmpctVersion = false;
+        nDuplicateHeaderRequests = 0;
         m_chain_sync = { 0, nullptr, false, false };
         m_last_block_announcement = 0;
     }
@@ -2246,6 +2249,35 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             if (--nLimit <= 0 || pindex->GetBlockHash() == hashStop)
                 break;
         }
+
+        // Pre-Lyra2REv3 nodes are still active and keep requesting blocks
+        // that do have a common ancestor to our chain - and thus we keep
+        // sending them leading to huge amounts of data being transfered
+        // in vain. We should prevent sending duplicate header chunks over
+        // and over. So if we're sending MAX_HEADERS_RESULTS headers of which 
+        // the last one we already sent, we're treating it as a duplicate request. 
+        // A node should get 3 strikes and then the ban score gets increased
+        bool bDuplicate = false;
+        if(nLimit <= 0) {
+            if (pindex == nodestate->pindexBestHeaderSent) {
+                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom->GetId());
+                bDuplicate = true;
+            } else if (nodestate->pindexBestHeaderSent) {
+                if (pindex && (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex)) {
+                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom->GetId());
+                    bDuplicate = true;
+                }
+            }
+        }
+        if (bDuplicate) {
+            nodestate->nDuplicateHeaderRequests++;
+            LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom->GetId(), nodestate->nDuplicateHeaderRequests);
+            if(nodestate->nDuplicateHeaderRequests >= 3) {
+                Misbehaving(pfrom->GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
+            }
+        }
+
+
         // pindex can be nullptr either if we sent chainActive.Tip() OR
         // if our peer has chainActive.Tip() (and thus we are sending an empty
         // headers message). In both cases it's safe to update
