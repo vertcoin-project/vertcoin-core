@@ -349,7 +349,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "rvct";
+        bech32_hrp = "rvtc";
 
         /* enable fallback fee on regtest */
         m_fallback_fee_enabled = true;
