@@ -157,8 +157,6 @@ BITCOIN_QT_H = \
 RES_ICONS = \
   qt/res/icons/add.png \
   qt/res/icons/address-book.png \
-  qt/res/icons/about.png \
-  qt/res/icons/about_qt.png \
   qt/res/icons/vertcoin.ico \
   qt/res/icons/vertcoin_testnet.ico \
   qt/res/icons/vertcoin.png \

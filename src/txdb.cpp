@@ -13,7 +13,7 @@
 #include <util/system.h>
 #include <util/translation.h>
 #include <util/vector.h>
-
+#include <chainparams.h>
 #include <stdint.h>
 
 #include <boost/thread.hpp>

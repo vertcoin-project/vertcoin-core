@@ -77,8 +77,7 @@ Copyright: Stephen Hutchings, Jonas Schnelli
 License: Expat
 Comment: Modifications of Stephen Hutchings' Typicons
 
-Files: src/qt/res/icons/about.png
-       src/qt/res/icons/bitcoin.*
+Files: src/qt/res/icons/bitcoin.*
        share/pixmaps/bitcoin*
        src/qt/res/src/bitcoin.svg
 Copyright: Bitboy, Jonas Schnelli

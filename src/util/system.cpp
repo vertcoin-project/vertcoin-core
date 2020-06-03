@@ -1127,7 +1127,7 @@ int GetNumCores()
 
 std::string CopyrightHolders(const std::string& strPrefix1, const std::string& strPrefix2)
 {
-    std::string strCopyrightHolders = strPrefix1 + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION)) + "\n" + strPrefix2 + " The Bitcoin Core developers";
+    std::string strCopyrightHolders = strPrefix1 + strprintf(_(COPYRIGHT_HOLDERS).translated, _(COPYRIGHT_HOLDERS_SUBSTITUTION).translated) + "\n" + strPrefix2 + " The Bitcoin Core developers";
 
     return strCopyrightHolders;
 }
