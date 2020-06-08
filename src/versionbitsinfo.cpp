@@ -10,18 +10,5 @@ const struct VBDeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION_B
     {
         /*.name =*/ "testdummy",
         /*.gbt_force =*/ true,
-    },
-    {
-        /*.name =*/ "csv",
-        /*.gbt_force =*/ true,
-    },
-    {
-        /*.name =*/ "segwit",
-        /*.gbt_force =*/ true,
-    },
-    // This entry is unique to Vertcoin. it handles BIPs differently than in bitcoin.
-    {
-    /*.name =*/ "nversionbips",
-    /*.gbt_force =*/ true,
     }
 };

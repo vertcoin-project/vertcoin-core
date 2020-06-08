@@ -1255,12 +1255,13 @@ UniValue getblockchaininfo(const JSONRPCRequest& request)
 
     const Consensus::Params& consensusParams = Params().GetConsensus();
     UniValue softforks(UniValue::VARR);
-    UniValue bip9_softforks(UniValue::VOBJ);
-    BIP9SoftForkDescPushBack(bip9_softforks, "csv", consensusParams, Consensus::DEPLOYMENT_CSV);
-    BIP9SoftForkDescPushBack(bip9_softforks, "segwit", consensusParams, Consensus::DEPLOYMENT_SEGWIT);
-    BIP9SoftForkDescPushBack(bip9_softforks, "testdummy", consensusParams, Consensus::DEPLOYMENT_TESTDUMMY);
+    BuriedForkDescPushBack(softforks, "bip34", consensusParams.BIP34Height);
+    BuriedForkDescPushBack(softforks, "bip66", consensusParams.BIP66Height);
+    BuriedForkDescPushBack(softforks, "bip65", consensusParams.BIP65Height);
+    BuriedForkDescPushBack(softforks, "csv", consensusParams.CSVHeight);
+    BuriedForkDescPushBack(softforks, "segwit", consensusParams.SegwitHeight);
     // remove to match vertcoin    obj.pushKV("softforks",             softforks);
-    obj.pushKV("bip9_softforks", bip9_softforks);
+    obj.pushKV("bip9_softforks", softforks);
 
     obj.pushKV("warnings", GetWarnings(false));
     return obj;

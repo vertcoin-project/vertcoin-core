@@ -63,9 +63,15 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = CBaseChainParams::MAIN;
-        consensus.testnet = false;
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.BIP16Height = 0;
+        consensus.BIP34Height = 691488;
+        consensus.BIP34Hash = uint256S("0x1d0446fe48fdebf4780f544f1de81c2527099da2d09465873475cefe96ab84a1");
+        consensus.BIP65Height = 691488;
+        consensus.BIP66Height = 691488;
+        consensus.CSVHeight = 691488;
+        consensus.SegwitHeight = 713664;
+        consensus.MinBIP9WarningHeight = 715680; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -75,7 +81,7 @@ public:
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         /*consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008*/
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
@@ -89,8 +95,8 @@ public:
 
         // Deployment of BIP65, BIP66, and BIP34.
         consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nStartTime = 1488326400;   // Mar 1st, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1519862400;    // Mar 1st, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nStartTime = 1488326400;   // Mar 1st, 2017 -test
+        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1519862400;    // Mar 1st, 2018*/
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000001796891f689605736");
@@ -188,7 +194,14 @@ public:
         strNetworkID = CBaseChainParams::TESTNET;
         consensus.testnet = true;
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP16Height = 0; 
+        consensus.BIP16Height = 0;
+        consensus.BIP34Height = 300;
+        consensus.BIP34Hash = uint256S("0xd6be7cfec4fb1d6a8a94f0a423520a78c97fbdc766cd25f9512adc9249282c2a");
+        consensus.BIP65Height = 300;
+        consensus.BIP66Height = 300;
+        consensus.CSVHeight = 300;
+        consensus.SegwitHeight = 300;
+        consensus.MinBIP9WarningHeight = 350; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -196,21 +209,6 @@ public:
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 26; // 75% for testchains
         consensus.nMinerConfirmationWindow = 50; // nPowTargetTimespan / nPowTargetSpacing
-
-         // Deployment of BIP65, BIP66, and BIP34.
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nStartTime = 1486865123;
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1517356801;    
-
-        // Deployment of BIP68, BIP112, and BIP113.
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1486865123; 
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801; 
-
-        // Deployment of SegWit (BIP141, BIP143, and BIP147)
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1486865123;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; 
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100010");
@@ -280,6 +278,12 @@ public:
     	consensus.testnet = false;
         consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP16Height = 0; // always enforce P2SH BIP16 on regtest
+        consensus.BIP34Height = 100;
+        consensus.BIP65Height = 100;
+        consensus.BIP66Height = 100;
+        consensus.CSVHeight = 100;
+        consensus.SegwitHeight = 100;
+        consensus.MinBIP9WarningHeight = 244; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
