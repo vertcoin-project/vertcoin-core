@@ -79,24 +79,6 @@ public:
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        /*consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
-
-        // Deployment of BIP68, BIP112, and BIP113.
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1488326400;  // Mar 1st, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1519862400;// Mar 1st, 2018
-
-        // Deployment of SegWit (BIP141, BIP143, and BIP147)
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1488326400;  // Mar 1st, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1519862400; // Mar 1st, 2018
-
-        // Deployment of BIP65, BIP66, and BIP34.
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nStartTime = 1488326400;   // Mar 1st, 2017 -test
-        consensus.vDeployments[Consensus::DEPLOYMENT_NVERSIONBIPS].nTimeout = 1519862400;    // Mar 1st, 2018*/
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000001796891f689605736");
@@ -104,12 +86,6 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147"); //1172000
 
-/* These are values from Bitcoin. Above are values from vertcoin but probably need to be updated at release time
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000051dc8b82f450202ecb3d471");
-
-        // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000000000000000f1c54590ee18d15ec70e68c8cd4cfbadb1b4f11697eee"); //563378
-*/
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
