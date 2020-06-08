@@ -27,7 +27,15 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     const int nHeight = pindexLast->nHeight + 1;
 
-    if(Params().NetworkIDString() == CBaseChainParams::TESTNET) {
+    if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
+        if(nHeight < 26754) {
+            return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
+        } else if(nHeight == 208301) {
+            return 0x1e0ffff0;
+        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
+            return 0x1b0ffff0;
+        }
+    } else {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
@@ -37,14 +45,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	        bnNew.SetCompact(pindexLast->nBits);
 	        if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
             return bnNew.GetCompact();
-        }
-    } else {
-        if(nHeight < 26754) {
-            return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight == 208301) {
-            return 0x1e0ffff0;
-        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
-            return 0x1b0ffff0;
         }
     }
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
