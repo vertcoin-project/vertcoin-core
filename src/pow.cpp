@@ -8,6 +8,7 @@
 
 #include <arith_uint256.h>
 #include <chain.h>
+#include <chainparams.h>
 #include <primitives/block.h>
 #include <uint256.h>
 #include <bignum.h>
@@ -26,7 +27,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     const int nHeight = pindexLast->nHeight + 1;
 
-    if(params.testnet) {
+    if(Params().NetworkIDString() == CBaseChainParams::TESTNET) {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
@@ -137,7 +138,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
                 if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
         }
         if (BlockReading->pprev == NULL || 
-            (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
+            (Params().NetworkIDString() == CBaseChainParams::MAIN && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
         { 
                 assert(BlockReading); 
                 break; 
