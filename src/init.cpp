@@ -17,6 +17,8 @@
 #include <chainparams.h>
 #include <compat/sanity.h>
 #include <consensus/validation.h>
+#include <crypto/verthash_datfile.h>
+#include <crypto/verthash.h>
 #include <fs.h>
 #include <httprpc.h>
 #include <httpserver.h>
@@ -470,6 +472,10 @@ void SetupServerArgs()
     gArgs.AddArg("-whitelist=<[permissions@]IP address or network>", "Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or "
         "CIDR notated network(e.g. 1.2.3.0/24). Uses same permissions as "
         "-whitebind. Can be specified multiple times." , ArgsManager::ALLOW_ANY, OptionsCategory::CONNECTION);
+
+
+    gArgs.AddArg("-verthash-diskonly", "Don't load Verthash's datafile into RAM. Will slow down validation significantly, but might be needed on low-memory systems.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
+
 
     g_wallet_init_interface.AddWalletOptions();
 
@@ -1479,6 +1485,36 @@ bool AppInitMain(NodeContext& node)
     if (gArgs.IsArgSet("-maxuploadtarget")) {
         nMaxOutboundLimit = gArgs.GetArg("-maxuploadtarget", DEFAULT_MAX_UPLOAD_TARGET)*1024*1024;
     }
+
+
+    // ********************************************************* Step 6b: generate verthash file and verify if it's valid
+
+    int cycle = 0;
+    while(cycle <= 1) {
+        uiInterface.InitMessage(_("Creating Verthash Datafile").translated);
+        VerthashDatFile::CreateMiningDataFile();
+
+        bool fVerthashDiskOnly = gArgs.GetBoolArg("-verthash-diskonly", false);
+        if(!fVerthashDiskOnly) {
+            uiInterface.InitMessage(_("Loading Verthash Datafile into RAM").translated);
+            Verthash::LoadInRam();
+        }
+
+        uiInterface.InitMessage(_("Verifying Verthash Datafile").translated);
+        if(!Verthash::VerifyDatFile()) {
+            if(cycle == 0) {
+                VerthashDatFile::DeleteMiningDataFile();
+            } else {
+                return InitError("Generated Verthash datafile mismatch");
+            }
+        } else {
+            break;
+        }
+        cycle++;
+    }
+
+
+    
 
     // ********************************************************* Step 7: load block chain
 

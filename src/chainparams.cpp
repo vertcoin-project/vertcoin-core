@@ -72,7 +72,13 @@ public:
         consensus.CSVHeight = 691488;
         consensus.SegwitHeight = 713664;
         consensus.MinBIP9WarningHeight = 715680; // segwit activation height + miner confirmation window
-        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        
+        // TODO Determine correct value based on average miner performance / expected nethash
+        // powLimit should not be too high to produce blocks 2.5 mins apart.
+        consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        // Value for previous forks
+        consensus.preVerthashPowLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -177,7 +183,12 @@ public:
         consensus.CSVHeight = 300;
         consensus.SegwitHeight = 300;
         consensus.MinBIP9WarningHeight = 350; // segwit activation height + miner confirmation window
-        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        
+        // TODO Determine correct value based on average miner performance / expected nethash
+        // powLimit should not be too high to produce blocks 2.5 mins apart.
+        consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        // Value for previous forks
+        consensus.preVerthashPowLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 2.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
@@ -259,6 +270,7 @@ public:
         consensus.SegwitHeight = 100;
         consensus.MinBIP9WarningHeight = 244; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.preVerthashPowLimit = consensus.powLimit;
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
