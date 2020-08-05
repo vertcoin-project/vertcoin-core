@@ -13,11 +13,12 @@
 #include <uint256.h>
 #include <bignum.h>
 #include <logging.h>
-
-static CBigNum bnProofOfWorkLimit(ArithToUint256(~arith_uint256(0) >> 20));
+#include <crypto/verthash.h>
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
+    static CBigNum              bnProofOfWorkLimit(params.powLimit);
+    static CBigNum              bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
     static const int64_t        BlocksTargetSpacing  = 2.5 * 60; // 2.5 minutes
     unsigned int                TimeDaySeconds       = 60 * 60 * 24;
     int64_t                     PastSecondsMin       = TimeDaySeconds * 0.25;
@@ -32,13 +33,20 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         } else if(nHeight == 208301) {
             return 0x1e0ffff0;
-        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
+        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks - Lyra2REv3 hardfork
             return 0x1b0ffff0;
-        }
+        } 
+        /* 
+            else if(nHeight >= VERTHASH_FORKBLOCK_MAINNET && nHeight < VERTHASH_FORKBLOCK_MAINNET+10) { // Force difficulty for 10 blocks - Verthash hardfork
+                return 0x1b0ffff0;
+            }
+        */
     } else {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        }
+        } else if(nHeight >= VERTHASH_FORKBLOCK_TESTNET && nHeight < VERTHASH_FORKBLOCK_TESTNET+10) { // Set diff to mindiff on testnet Verthash fork
+            return bnProofOfWorkLimit.GetCompact();
+        }	        
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
@@ -53,7 +61,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     assert(pindexLast != nullptr);
-    unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
+    unsigned int nProofOfWorkLimit = UintToArith256(params.preVerthashPowLimit).GetCompact();
 
     // Only change once per difficulty adjustment interval
     if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)
@@ -109,7 +117,9 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     double                                EventHorizonDeviation;
     double                                EventHorizonDeviationFast;
     double                                EventHorizonDeviationSlow;
-
+    static CBigNum                          bnProofOfWorkLimit(params.powLimit);
+    static CBigNum                          bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
+    
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
@@ -138,7 +148,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
                 if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
         }
         if (BlockReading->pprev == NULL || 
-            (Params().NetworkIDString() == CBaseChainParams::MAIN && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
+            (Params().NetworkIDString() == CBaseChainParams::MAIN && (BlockReading->nHeight == 1080000 /*|| BlockReading->nHeight == VERTHASH_FORKBLOCK_MAINNET*/ ))) // Don't calculate past fork block on mainnet
         { 
                 assert(BlockReading); 
                 break; 
@@ -151,9 +161,28 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
             bnNew *= PastRateActualSeconds;
             bnNew /= PastRateTargetSeconds;
     }
-    if (bnNew > bnProofOfWorkLimit) {
+
+    if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
+        // Code to activate mainnet fork
+        /*if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_MAINNET) {
+            if (bnNew > bnProofOfWorkLimit) {
+                return bnProofOfWorkLimit.GetCompact();
+            }
+        } else */ if (bnNew > bnPreVerthashProofOfWorkLimit) {
+            return bnPreVerthashProofOfWorkLimit.GetCompact();
+        }
+    } else if(Params().NetworkIDString() == CBaseChainParams::TESTNET) {
+        if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_TESTNET) {
+            if (bnNew > bnProofOfWorkLimit) {
+                return bnProofOfWorkLimit.GetCompact();
+            }
+        } else if (bnNew > bnPreVerthashProofOfWorkLimit) {
+            return bnPreVerthashProofOfWorkLimit.GetCompact();
+        }
+    } else if (bnNew > bnProofOfWorkLimit) { // REGTEST
         bnNew = bnProofOfWorkLimit;
 	}
+
     return bnNew.GetCompact();
 }
 
@@ -182,7 +211,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     if (fShift)
         bnNew <<= 1;
 
-    const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
+    const arith_uint256 bnPowLimit = UintToArith256(params.preVerthashPowLimit);
     if (bnNew > bnPowLimit)
         bnNew = bnPowLimit;
 
