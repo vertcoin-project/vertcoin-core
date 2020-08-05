@@ -20,8 +20,6 @@ Communication Channels
 Most communication about Vertcoin Core development happens onthe #development channel
 on [Discord](https://discord.gg/vertcoin).
 
-
-
 Issues List
 --------------------
 
@@ -36,15 +34,15 @@ facilitates social contribution, easy testing and peer review.
 
 To contribute a patch, the workflow is as follows:
 
-  1. Fork repository
+  1. Fork repository ([only for the first time](https://help.github.com/en/articles/fork-a-repo))
   1. Create topic branch
   1. Commit patches
 
 The project coding conventions in the [developer notes](doc/developer-notes.md)
-must be adhered to.
+must be followed.
 
-In general [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)
-and diffs should be easy to read. For this reason do not mix any formatting
+In general, [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)
+and diffs should be easy to read. For this reason, do not mix any formatting
 fixes or code moves with actual code changes.
 
 Commit messages should be verbose by default consisting of a short subject line
@@ -52,7 +50,7 @@ Commit messages should be verbose by default consisting of a short subject line
 paragraph(s), unless the title alone is self-explanatory (like "Corrected typo
 in init.cpp") in which case a single title line is sufficient. Commit messages should be
 helpful to people reading your code in the future, so explain the reasoning for
-your decisions. Further explanation [here](http://chris.beams.io/posts/git-commit/).
+your decisions. Further explanation [here](https://chris.beams.io/posts/git-commit/).
 
 If a particular commit references another issue, please add the reference. For
 example: `refs #1234` or `fixes #4321`. Using the `fixes` or `closes` keywords
@@ -89,8 +87,8 @@ before it will be merged. The basic squashing workflow is shown below.
     # Save and quit.
     git push -f # (force push to GitHub)
 
-Please update the resulting commit message if needed, it should read as a
-coherent message. In most cases this means that you should not just list the
+Please update the resulting commit message if needed. It should read as a
+coherent message. In most cases, this means that you should not just list the
 interim commits.
 
 If you have problems with squashing (or other workflows with `git`), you can
@@ -113,7 +111,7 @@ The project leader is the release manager for each Vertcoin Core release.
 Copyright
 ---------
 
-By contributing to this repository, you agree to license your work under the 
-MIT license unless specified otherwise in `contrib/debian/copyright` or at 
-the top of the file itself. Any work contributed where you are not the original 
+By contributing to this repository, you agree to license your work under the
+MIT license unless specified otherwise in `contrib/debian/copyright` or at
+the top of the file itself. Any work contributed where you are not the original
 author must contain its license header with the original author(s) and source.

@@ -7,12 +7,14 @@
 #include <pow.h>
 
 #include <arith_uint256.h>
-#include <bignum.h>
 #include <chain.h>
+#include <chainparams.h>
 #include <primitives/block.h>
 #include <uint256.h>
+#include <bignum.h>
+#include <logging.h>
 
-static CBigNum bnProofOfWorkLimit(~arith_uint256(0) >> 20);
+static CBigNum bnProofOfWorkLimit(ArithToUint256(~arith_uint256(0) >> 20));
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
@@ -25,7 +27,15 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     const int nHeight = pindexLast->nHeight + 1;
 
-    if(params.testnet) {
+    if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
+        if(nHeight < 26754) {
+            return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
+        } else if(nHeight == 208301) {
+            return 0x1e0ffff0;
+        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
+            return 0x1b0ffff0;
+        }
+    } else {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
         }
@@ -35,14 +45,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	        bnNew.SetCompact(pindexLast->nBits);
 	        if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
             return bnNew.GetCompact();
-        }
-    } else {
-        if(nHeight < 26754) {
-            return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
-        } else if(nHeight == 208301) {
-            return 0x1e0ffff0;
-        } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks
-            return 0x1b0ffff0;
         }
     }
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax, params);    
@@ -110,47 +112,48 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
-        for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
-            if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
-            PastBlocksMass++;
+    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
+        if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
+        PastBlocksMass++;
 
-            if (i == 1)        { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-            else                { PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; }
-            PastDifficultyAveragePrev = PastDifficultyAverage;
-
-            PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
-            PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
-            PastRateAdjustmentRatio                        = double(1);
-            if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
-            if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-                PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
-            }
-            EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
-            EventHorizonDeviationFast                = EventHorizonDeviation;
-            EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
-
-            if (PastBlocksMass >= PastBlocksMin) {
-                    if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
-            }
-            if (BlockReading->pprev == NULL || 
-                (!params.testnet && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
-            { 
-                    assert(BlockReading); 
-                    break; 
-            }
-            BlockReading = BlockReading->pprev;
+        if (i == 1) { 
+            PastDifficultyAverage.SetCompact(BlockReading->nBits); 
+        } else { 
+            PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; 
         }
+        PastDifficultyAveragePrev = PastDifficultyAverage;
 
-        CBigNum bnNew(PastDifficultyAverage);
+        PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
+        PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
+        PastRateAdjustmentRatio                        = double(1);
+        if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
         if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-                bnNew *= PastRateActualSeconds;
-                bnNew /= PastRateTargetSeconds;
+            PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
         }
+        EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
+        EventHorizonDeviationFast                = EventHorizonDeviation;
+        EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
 
-        if (bnNew > bnProofOfWorkLimit) {
-	    bnNew = bnProofOfWorkLimit;
+        if (PastBlocksMass >= PastBlocksMin) {
+                if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
+        }
+        if (BlockReading->pprev == NULL || 
+            (Params().NetworkIDString() == CBaseChainParams::MAIN && BlockReading->nHeight == 1080000)) // Don't calculate past fork block on mainnet
+        { 
+                assert(BlockReading); 
+                break; 
+        }
+        BlockReading = BlockReading->pprev;
+    }
+    
+    CBigNum bnNew(PastDifficultyAverage);
+    if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
+            bnNew *= PastRateActualSeconds;
+            bnNew /= PastRateTargetSeconds;
+    }
+    if (bnNew > bnProofOfWorkLimit) {
+        bnNew = bnProofOfWorkLimit;
 	}
-
     return bnNew.GetCompact();
 }
 
