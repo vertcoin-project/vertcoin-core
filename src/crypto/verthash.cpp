@@ -20,7 +20,7 @@
 unsigned char *Verthash::datFile;
 size_t Verthash::datFileSize;
 bool Verthash::datFileInRam;
-const uint256 verthashDatFileHash = uint256S("0x326896ef87bfa05cf732833769a421daad723cc71d523167757a38488483158b");
+const uint256 verthashDatFileHash = uint256S("0x48aa21d7afededb63976d48a8ff8ec29d5b02563af4a1110b056cd43e83155a5");
 inline uint32_t fnv1a(const uint32_t a, const uint32_t b) {
     return (a ^ b) * 0x1000193;
 }
