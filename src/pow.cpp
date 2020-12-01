@@ -35,12 +35,9 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             return 0x1e0ffff0;
         } else if(nHeight >= 1080000 && nHeight < 1080010) { // Force difficulty for 10 blocks - Lyra2REv3 hardfork
             return 0x1b0ffff0;
-        } 
-        /* 
-            else if(nHeight >= VERTHASH_FORKBLOCK_MAINNET && nHeight < VERTHASH_FORKBLOCK_MAINNET+10) { // Force difficulty for 10 blocks - Verthash hardfork
-                return 0x1b0ffff0;
-            }
-        */
+        } else if(nHeight >= VERTHASH_FORKBLOCK_MAINNET && nHeight < VERTHASH_FORKBLOCK_MAINNET+10) { // Force difficulty for 10 blocks - Verthash hardfork
+            return 0x1c07fff8;
+        }
     } else {
         if(nHeight < 2116) {
             return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
@@ -148,7 +145,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
                 if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
         }
         if (BlockReading->pprev == NULL || 
-            (Params().NetworkIDString() == CBaseChainParams::MAIN && (BlockReading->nHeight == 1080000 /*|| BlockReading->nHeight == VERTHASH_FORKBLOCK_MAINNET*/ ))) // Don't calculate past fork block on mainnet
+            (Params().NetworkIDString() == CBaseChainParams::MAIN && (BlockReading->nHeight == 1080000 || BlockReading->nHeight == VERTHASH_FORKBLOCK_MAINNET))) // Don't calculate past fork block on mainnet
         { 
                 assert(BlockReading); 
                 break; 
@@ -163,12 +160,11 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     }
 
     if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
-        // Code to activate mainnet fork
-        /*if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_MAINNET) {
+        if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_MAINNET) {
             if (bnNew > bnProofOfWorkLimit) {
                 return bnProofOfWorkLimit.GetCompact();
             }
-        } else */ if (bnNew > bnPreVerthashProofOfWorkLimit) {
+        } else if (bnNew > bnPreVerthashProofOfWorkLimit) {
             return bnPreVerthashProofOfWorkLimit.GetCompact();
         }
     } else if(Params().NetworkIDString() == CBaseChainParams::TESTNET) {

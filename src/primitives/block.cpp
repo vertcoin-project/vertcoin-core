@@ -23,7 +23,7 @@ uint256 CBlockHeader::GetPoWHash(const int nHeight) const
    char *out = ((char *)(thash.begin()));
 
    if((Params().NetworkIDString() == CBaseChainParams::TESTNET && nHeight >= VERTHASH_FORKBLOCK_TESTNET) ||
-//       (Params().NetworkIDString() == CBaseChainParams::MAIN && nHeight >= VERTHASH_FORKBLOCK_MAINNET) || 
+       (Params().NetworkIDString() == CBaseChainParams::MAIN && nHeight >= VERTHASH_FORKBLOCK_MAINNET) || 
        (Params().NetworkIDString() == CBaseChainParams::REGTEST))
    {
        Verthash::Hash(this->begin(), out);

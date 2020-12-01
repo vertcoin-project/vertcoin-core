@@ -75,7 +75,7 @@ public:
         
         // TODO Determine correct value based on average miner performance / expected nethash
         // powLimit should not be too high to produce blocks 2.5 mins apart.
-        consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80");
         // Value for previous forks
         consensus.preVerthashPowLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
