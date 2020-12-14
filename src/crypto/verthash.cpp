@@ -120,12 +120,14 @@ void Verthash::Hash(const char* input, char* output)
     const uint32_t mdiv = ((datfile_sz - HASH_OUT_SIZE)/BYTE_ALIGNMENT) + 1;
     
     if(!datFileInRam) {
+        size_t read_len = -1;
         for(size_t i = 0; i < N_INDEXES; i++) {
             const long offset = (fnv1a(seek_indexes[i], value_accumulator) % mdiv) * BYTE_ALIGNMENT;
             fseek(VerthashDatFile, offset, SEEK_SET);
             for(size_t i2 = 0; i2 < HASH_OUT_SIZE/sizeof(uint32_t); i2++) {
                 uint32_t value = 0;
-                fread(&value, sizeof(uint32_t), 1, VerthashDatFile);
+                read_len = fread(&value, sizeof(uint32_t), 1, VerthashDatFile);
+                assert(read_len == 1);
                 uint32_t* p1_ptr = p1_32 + i2;
                 *p1_ptr = fnv1a(*p1_ptr, value);
 
