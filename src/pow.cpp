@@ -117,7 +117,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     static CBigNum                          bnProofOfWorkLimit(params.powLimit);
     static CBigNum                          bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
     
-    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || static_cast<uint64_t>(BlockLastSolved->nHeight) < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
         if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
@@ -160,7 +160,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     }
 
     if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
-        if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_MAINNET) {
+        if(static_cast<uint64_t>(BlockLastSolved->nHeight)+1 >= VERTHASH_FORKBLOCK_MAINNET) {
             if (bnNew > bnProofOfWorkLimit) {
                 return bnProofOfWorkLimit.GetCompact();
             }
@@ -168,7 +168,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
             return bnPreVerthashProofOfWorkLimit.GetCompact();
         }
     } else if(Params().NetworkIDString() == CBaseChainParams::TESTNET) {
-        if((uint64_t)BlockLastSolved->nHeight+1 >= VERTHASH_FORKBLOCK_TESTNET) {
+        if(static_cast<uint64_t>(BlockLastSolved->nHeight)+1 >= VERTHASH_FORKBLOCK_TESTNET) {
             if (bnNew > bnProofOfWorkLimit) {
                 return bnProofOfWorkLimit.GetCompact();
             }
