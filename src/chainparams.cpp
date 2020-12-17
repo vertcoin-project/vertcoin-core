@@ -113,10 +113,8 @@ public:
 
         vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
         vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen
-        vSeeds.emplace_back("dnsseed.pknight.ca"); // pknight
-        vSeeds.emplace_back("seed.orderofthetaco.org"); // Eric (etang600)
-        vSeeds.emplace_back("seed.alexturek.org"); // Alex Turek
-        vSeeds.emplace_back("vert.idzstad.pl"); // jk_14
+        //vSeeds.emplace_back("seed.orderofthetaco.org"); Eric (etang600) 
+        vSeeds.emplace_back("vert.idzstad.pl"); // Jaroslaw (jk_14)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
