@@ -125,7 +125,8 @@ void Verthash::Hash(const char* input, char* output)
             fseek(VerthashDatFile, offset, SEEK_SET);
             for(size_t i2 = 0; i2 < HASH_OUT_SIZE/sizeof(uint32_t); i2++) {
                 uint32_t value = 0;
-                fread(&value, sizeof(uint32_t), 1, VerthashDatFile);
+                size_t read_len = fread(&value, sizeof(uint32_t), 1, VerthashDatFile);
+                assert(read_len == 1);
                 uint32_t* p1_ptr = p1_32 + i2;
                 *p1_ptr = fnv1a(*p1_ptr, value);
 
