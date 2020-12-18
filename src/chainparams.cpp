@@ -112,11 +112,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x4af38ca0e323c0a5226208a73b7589a52c030f234810cf51e13e3249fc0123e7"));
 
         vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
-        vSeeds.emplace_back("tvtc.blkidx.org"); // Gert-Jaap Glasbergen
-        vSeeds.emplace_back("dnsseed.pknight.ca"); // pknight
-        vSeeds.emplace_back("seed.orderofthetaco.org"); // Eric (etang600)
-        vSeeds.emplace_back("seed.alexturek.org"); // Alex Turek
-        vSeeds.emplace_back("vertcoin.mbl.cash"); // jk_14
+        vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen 
+        vSeeds.emplace_back("vert.idzstad.pl"); // Jaroslaw (jk_14)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
