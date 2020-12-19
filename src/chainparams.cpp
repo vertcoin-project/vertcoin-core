@@ -111,11 +111,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x4af38ca0e323c0a5226208a73b7589a52c030f234810cf51e13e3249fc0123e7"));
 
         vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
-        vSeeds.emplace_back("tvtc.blkidx.org"); // Gert-Jaap Glasbergen
-        vSeeds.emplace_back("dnsseed.pknight.ca"); // pknight
-        vSeeds.emplace_back("seed.orderofthetaco.org"); // Eric (etang600)
-        vSeeds.emplace_back("seed.alexturek.org"); // Alex Turek
-        vSeeds.emplace_back("vertcoin.mbl.cash"); // jk_14
+        vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen 
+        vSeeds.emplace_back("vert.idzstad.pl"); // Jaroslaw (jk_14)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -143,8 +140,9 @@ public:
                 {  347269, uint256S("0xfa1e592b7ea2aa97c5f20ccd7c40f3aaaeb31d1232c978847a79f28f83b6c22a")},
                 {  430000, uint256S("0x2f5703cf7b6f956b84fd49948cbf49dc164cfcb5a7b55903b1c4f53bc7851611")},
                 {  516999, uint256S("0x572ed47da461743bcae526542053e7bc532de299345e4f51d77786f2870b7b28")},
-	            {  627610, uint256S("0x6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc")},
-	            {  1172000, uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147")},
+	        {  627610, uint256S("0x6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc")},
+	        {  1172000, uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147")},
+		{  1474747, uint256S("0xedf23a98cc196888635a01ba4672680df0b7c16eb48146e706b6f2e669974934")},
             }
         };
 
