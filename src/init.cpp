@@ -1491,7 +1491,7 @@ bool AppInitMain(NodeContext& node)
 
     int cycle = 0;
     while(cycle <= 1) {
-        uiInterface.InitMessage(_("Creating Verthash Datafile").translated);
+        uiInterface.InitMessage(_("Creating Verthash Datafile - may take several minutes").translated);
         VerthashDatFile::CreateMiningDataFile();
 
         bool fVerthashDiskOnly = gArgs.GetBoolArg("-verthash-diskonly", false);
