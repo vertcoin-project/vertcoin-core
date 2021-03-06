@@ -13,7 +13,7 @@ mining power.
  - ~84 million total coins
  - 50 coins per block (25 after block 840,000)
  - Difficulty retargeting every block to recover from large hashrate swings
- - Lyra2REv3 proof of work algorithm for ASIC resistance
+ - Verthash proof of work algorithm for ASIC resistance
 
 For more information, as well as an immediately useable, binary version of
 the Vertcoin client software, see http://www.vertcoin.org.
