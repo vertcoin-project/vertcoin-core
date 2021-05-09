@@ -46,6 +46,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 #define QAPP_ORG_DOMAIN "vertcoin.org"
 #define QAPP_APP_NAME_DEFAULT "Vertcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Vertcoin-Qt-testnet"
+#define QAPP_APP_NAME_SIGNET "Vertcoin-Qt-signet"
 #define QAPP_APP_NAME_REGTEST "Vertcoin-Qt-regtest"
 
 /* One gigabyte (GB) in bytes */

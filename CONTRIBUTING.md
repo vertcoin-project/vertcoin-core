@@ -6,13 +6,14 @@ welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
 
-Firstly in terms of structure, there is no particular concept of "Core
+First, in terms of structure, there is no particular concept of "Bitcoin Core
 developers" in the sense of privileged people. Open source often naturally
-revolves around meritocracy where longer term contributors gain more trust from
-the developer community. However, some hierarchy is necessary for practical
-purposes. As such there are repository "maintainers" who are responsible for
-merging pull requests as well as a "lead maintainer" who is responsible for the
-release cycle, overall merging, moderation and appointment of maintainers.
+revolves around a meritocracy where contributors earn trust from the developer
+community over time. Nevertheless, some hierarchy is necessary for practical
+purposes. As such, there are repository "maintainers" who are responsible for
+merging pull requests, as well as a "lead maintainer" who is responsible for the
+release cycle as well as overall merging, moderation and appointment of
+maintainers.
 
 Communication Channels
 ----------------------
@@ -29,7 +30,7 @@ Contributor Workflow
 --------------------
 
 The codebase is maintained using the "contributor workflow" where everyone
-without exception contributes patch proposals using "pull requests". This
+without exception contributes patch proposals using "pull requests" (PRs). This
 facilitates social contribution, easy testing and peer review.
 
 To contribute a patch, the workflow is as follows:
@@ -38,12 +39,37 @@ To contribute a patch, the workflow is as follows:
   1. Create topic branch
   1. Commit patches
 
+For GUI-related issues or pull requests, the https://github.com/bitcoin-core/gui repository should be used.
+For all other issues and pull requests, the https://github.com/bitcoin/bitcoin node repository should be used.
+
+The master branch for all monotree repositories is identical.
+
+As a rule of thumb, everything that only modifies `src/qt` is a GUI-only pull
+request. However:
+
+* For global refactoring or other transversal changes the node repository
+  should be used.
+* For GUI-related build system changes, the node repository should be used
+  because the change needs review by the build systems reviewers.
+* Changes in `src/interfaces` need to go to the node repository because they
+  might affect other components like the wallet.
+
+For large GUI changes that include build system and interface changes, it is
+recommended to first open a pull request against the GUI repository. When there
+is agreement to proceed with the changes, a pull request with the build system
+and interfaces changes can be submitted to the node repository.
+
 The project coding conventions in the [developer notes](doc/developer-notes.md)
 must be followed.
+
+### Committing Patches
 
 In general, [commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention)
 and diffs should be easy to read. For this reason, do not mix any formatting
 fixes or code moves with actual code changes.
+
+Make sure each individual commit is hygienic: that it builds successfully on its
+own without warnings, errors, regressions, or test failures.
 
 Commit messages should be verbose by default consisting of a short subject line
 (50 chars max), a blank line and detailed explanatory text as separate
@@ -56,7 +82,7 @@ If a particular commit references another issue, please add the reference. For
 example: `refs #1234` or `fixes #4321`. Using the `fixes` or `closes` keywords
 will cause the corresponding issue to be closed when the pull request is merged.
 
-Commit messages should never contain any `@` mentions.
+Commit messages should never contain any `@` mentions (usernames prefixed with "@").
 
 Please refer to the [Git manual](https://git-scm.com/doc) for more information
 about Git.
@@ -68,10 +94,7 @@ If a pull request is not to be considered for merging (yet), please
 prefix the title with [WIP] or use [Tasks Lists](https://help.github.com/articles/basic-writing-and-formatting-syntax/#task-lists)
 in the body of the pull request to indicate tasks are pending.
 
-The body of the pull request should contain enough description about what the
-patch does together with any justification/reasoning. You should include
-references to any discussions (for example other tickets or mailing list
-discussions).
+### Address Feedback
 
 Squashing Commits
 ---------------------------
@@ -87,13 +110,13 @@ before it will be merged. The basic squashing workflow is shown below.
     # Save and quit.
     git push -f # (force push to GitHub)
 
-Please update the resulting commit message if needed. It should read as a
-coherent message. In most cases, this means that you should not just list the
-interim commits.
+Please update the resulting commit message, if needed. It should read as a
+coherent message. In most cases, this means not just listing the interim
+commits.
 
-If you have problems with squashing (or other workflows with `git`), you can
-alternatively enable "Allow edits from maintainers" in the right GitHub
-sidebar and ask for help in the pull request.
+If you have problems with squashing or other git workflows, you can enable
+"Allow edits from maintainers" in the right-hand sidebar of the GitHub web
+interface and ask for help in the pull request.
 
 Please refrain from creating several pull requests for the same change.
 Use the pull request that is already open (or was created earlier) to amend

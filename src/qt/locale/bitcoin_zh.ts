@@ -617,11 +617,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>钱包是&lt;b&gt;加密的&lt;/b&gt;，目前&lt;b&gt;已锁定&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Vertcoin can no longer continue safely and will quit.</source>
-        <translation>发生了致命错误。比特币无法继续安全运行，将退出。</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -1083,6 +1079,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request expired.</source>
@@ -1155,20 +1154,20 @@
         <source>Copy amount</source>
         <translation>复制金额</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>不能解锁钱包</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>地址</translation>
+        <source>Amount:</source>
+        <translation>总计：</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>总计</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>标签</translation>
+        <source>Wallet:</source>
+        <translation>钱包：</translation>
     </message>
     </context>
 <context>
@@ -1496,7 +1495,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>创建一个新的钱包</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1513,6 +1516,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>将当前选项卡中的数据导出到文件</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>错误</translation>
     </message>
     </context>
 <context>
