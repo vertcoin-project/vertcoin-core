@@ -3341,11 +3341,9 @@ static bool FindUndoPos(BlockValidationState &state, int nFile, FlatFilePos &pos
 static bool CheckBlockHeader(const CBlockHeader& block, BlockValidationState& state, const Consensus::Params& consensusParams, bool fCheckPOW = true)
 {
     // Get prev block index
-    CBlockIndex* pindexPrev = NULL;
+    CBlockIndex* pindexPrev = LookupBlockIndex(block.hashPrevBlock);
     int nHeight = 0;
-    BlockMap::iterator mi = ::BlockIndex().find(block.hashPrevBlock);
-    if (mi != ::BlockIndex().end()) {
-        pindexPrev = mi->second;
+    if (pindexPrev) {
         nHeight = pindexPrev->nHeight + 1;
     }
 
@@ -4769,7 +4767,11 @@ void LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, FlatFi
                     while (range.first != range.second) {
                         std::multimap<uint256, FlatFilePos>::iterator it = range.first;
                         std::shared_ptr<CBlock> pblockrecursive = std::make_shared<CBlock>();
-                        const int nHeight = ::BlockIndex()[it->first]->nHeight;
+                        CBlockIndex* idx = LookupBlockIndex(it->first);
+                        int nHeight = 0;
+                        if(idx) {
+                            nHeight = idx->nHeight;
+                        }
                         if (ReadBlockFromDisk(*pblockrecursive, it->second, nHeight, chainparams.GetConsensus()))
                         {
                             LogPrint(BCLog::REINDEX, "%s: Processing out of order child %s of %s\n", __func__, pblockrecursive->GetHash().ToString(),

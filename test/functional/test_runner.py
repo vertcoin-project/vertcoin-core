@@ -177,10 +177,7 @@ BASE_SCRIPTS = [
     'wallet_disable.py',
     'wallet_disable.py --descriptors',
     'p2p_addr_relay.py',
-<<<<<<< HEAD
-=======
     'p2p_getaddr_caching.py',
->>>>>>> bitcoin-0.21.1
     'p2p_getdata.py',
     'rpc_net.py',
     'wallet_keypool.py',

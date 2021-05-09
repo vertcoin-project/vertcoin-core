@@ -2936,20 +2936,20 @@ void PeerManager::ProcessMessage(CNode& pfrom, const std::string& msg_type, CDat
         bool bDuplicate = false;
         if(nLimit <= 0) {
             if (pindex == nodestate->pindexBestHeaderSent) {
-                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom->GetId());
+                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom.GetId());
                 bDuplicate = true;
             } else if (nodestate->pindexBestHeaderSent) {
                 if (pindex && (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex)) {
-                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom->GetId());
+                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom.GetId());
                     bDuplicate = true;
                 }
             }
         }
         if (bDuplicate) {
             nodestate->nDuplicateHeaderRequests++;
-            LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom->GetId(), nodestate->nDuplicateHeaderRequests);
+            LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom.GetId(), nodestate->nDuplicateHeaderRequests);
             if(nodestate->nDuplicateHeaderRequests >= 3) {
-                Misbehaving(pfrom->GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
+                Misbehaving(pfrom.GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
             }
         }
 

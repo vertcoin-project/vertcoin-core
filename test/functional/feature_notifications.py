@@ -9,12 +9,6 @@ from test_framework.address import ADDRESS_BCRT1_UNSPENDABLE, keyhash_to_p2pkh
 from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (
     assert_equal,
-<<<<<<< HEAD
-    wait_until,
-    connect_nodes,
-    disconnect_nodes,
-=======
->>>>>>> bitcoin-0.21.1
     hex_str_to_bytes,
 )
 
@@ -100,10 +94,7 @@ class NotificationsTest(BitcoinTestFramework):
             self.nodes[0].sethdseed(seed=self.nodes[1].dumpprivkey(keyhash_to_p2pkh(hex_str_to_bytes(self.nodes[1].getwalletinfo()['hdseedid'])[::-1])))
             self.nodes[0].rescanblockchain()
             self.nodes[0].generatetoaddress(100, ADDRESS_BCRT1_UNSPENDABLE)
-<<<<<<< HEAD
-=======
             self.sync_blocks()
->>>>>>> bitcoin-0.21.1
 
             # Generate transaction on node 0, sync mempools, and check for
             # notification on node 1.
@@ -137,20 +128,12 @@ class NotificationsTest(BitcoinTestFramework):
             # Bump tx2 as bump2 and generate a block on node 0 while
             # disconnected, then reconnect and check for notifications on node 1
             # about newly confirmed bump2 and newly conflicted tx2.
-<<<<<<< HEAD
-            disconnect_nodes(self.nodes[0], 1)
-=======
             self.disconnect_nodes(0, 1)
->>>>>>> bitcoin-0.21.1
             bump2 = self.nodes[0].bumpfee(tx2)["txid"]
             self.nodes[0].generatetoaddress(1, ADDRESS_BCRT1_UNSPENDABLE)
             assert_equal(self.nodes[0].gettransaction(bump2)["confirmations"], 1)
             assert_equal(tx2 in self.nodes[1].getrawmempool(), True)
-<<<<<<< HEAD
-            connect_nodes(self.nodes[0], 1)
-=======
             self.connect_nodes(0, 1)
->>>>>>> bitcoin-0.21.1
             self.sync_blocks()
             self.expect_wallet_notify([bump2, tx2])
             assert_equal(self.nodes[1].gettransaction(bump2)["confirmations"], 1)
@@ -158,11 +141,7 @@ class NotificationsTest(BitcoinTestFramework):
         # TODO: add test for `-alertnotify` large fork notifications
 
     def expect_wallet_notify(self, tx_ids):
-<<<<<<< HEAD
-        wait_until(lambda: len(os.listdir(self.walletnotify_dir)) >= len(tx_ids), timeout=10)
-=======
         self.wait_until(lambda: len(os.listdir(self.walletnotify_dir)) >= len(tx_ids), timeout=10)
->>>>>>> bitcoin-0.21.1
         assert_equal(sorted(notify_outputname(self.wallet, tx_id) for tx_id in tx_ids), sorted(os.listdir(self.walletnotify_dir)))
         for tx_file in os.listdir(self.walletnotify_dir):
             os.remove(os.path.join(self.walletnotify_dir, tx_file))

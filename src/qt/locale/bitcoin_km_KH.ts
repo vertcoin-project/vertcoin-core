@@ -149,7 +149,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>Send coins to a Vertcoin address</source>
         <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Vertcoin មួយ</translation>

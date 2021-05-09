@@ -9,23 +9,7 @@ from test_framework.blocktools import create_block, create_coinbase
 from test_framework.messages import ToHex
 from test_framework.p2p import P2PTxInvStore
 from test_framework.test_framework import BitcoinTestFramework
-<<<<<<< HEAD
-from test_framework.util import assert_equal, wait_until
-
-class P2PStoreTxInvs(P2PInterface):
-    def __init__(self):
-        super().__init__()
-        self.tx_invs_received = defaultdict(int)
-
-    def on_inv(self, message):
-        # Store how many times invs have been received for each tx.
-        for i in message.inv:
-            if i.type == 1:
-                # save txid
-                self.tx_invs_received[i.hash] += 1
-=======
 from test_framework.util import assert_equal
->>>>>>> bitcoin-0.21.1
 
 class ResendWalletTransactionsTest(BitcoinTestFramework):
     def set_test_params(self):

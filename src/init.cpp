@@ -1558,7 +1558,7 @@ bool AppInitMain(const util::Ref& context, NodeContext& node, interfaces::BlockA
             if(cycle == 0) {
                 VerthashDatFile::DeleteMiningDataFile();
             } else {
-                return InitError("Generated Verthash datafile mismatch");
+                return InitError(_("Generated Verthash datafile mismatch"));
             }
         } else {
             break;

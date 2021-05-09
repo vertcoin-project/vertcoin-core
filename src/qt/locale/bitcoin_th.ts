@@ -204,7 +204,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;เซ็นข้อความ...</translation>
@@ -306,8 +306,8 @@
         <translation>กำลังทำดัชนี ที่เก็บบล็อก ใหม่ ในดิสก์...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>ส่งเหรียญไปยังที่อยู่ Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>ส่งเหรียญไปยังที่อยู่ Vertcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -470,8 +470,8 @@
         <translation>ปิดกระเป๋าสตางค์ทั้งหมด</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Bitcoin command-line</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Vertcoin command-line</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -1544,7 +1544,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     <message>
         <source>Importing...</source>
         <translation>กำลังนำเข้า...</translation>
