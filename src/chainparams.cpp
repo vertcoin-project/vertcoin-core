@@ -88,11 +88,11 @@ public:
         consensus.nRuleChangeActivationThreshold = 1512; // 75% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
 
-        // Deployment of Taproot (BIPs 340-342) // TODO: Set parameters here
+        // Deployment of Taproot (BIPs 340-342) 
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1619222400; // April 24th, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628640000; // August 11th, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 709632; // Approximately November 12th, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1625097600; // July 1, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628899200; // August 14, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 1623304; // Approximately September 1, 2021
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000001796891f689605736");
@@ -207,8 +207,8 @@ public:
 
         // Deployment of Taproot (BIPs 340-342) TODO: Set parameters
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1619222400; // April 24th, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628640000; // August 11th, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1621296000; // May 18, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1630713600; // September 4, 2021
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 0; // No activation delay
 
         // The best chain should have at least this much work.
