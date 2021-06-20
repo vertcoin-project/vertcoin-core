@@ -4,10 +4,11 @@
 
 DIST_SUBDIRS = secp256k1 univalue
 
-AM_LDFLAGS = $(PTHREAD_CFLAGS) $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS) $(GPROF_LDFLAGS) $(SANITIZER_LDFLAGS)
+AM_LDFLAGS = $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS) $(GPROF_LDFLAGS) $(SANITIZER_LDFLAGS)
 AM_CXXFLAGS = $(DEBUG_CXXFLAGS) $(HARDENED_CXXFLAGS) $(WARN_CXXFLAGS) $(NOWARN_CXXFLAGS) $(ERROR_CXXFLAGS) $(GPROF_CXXFLAGS) $(SANITIZER_CXXFLAGS)
 AM_CPPFLAGS = $(DEBUG_CPPFLAGS) $(HARDENED_CPPFLAGS)
 AM_LIBTOOLFLAGS = --preserve-dup-deps
+PTHREAD_FLAGS = $(PTHREAD_CFLAGS) $(PTHREAD_LIBS)
 EXTRA_LIBRARIES =
 
 if EMBEDDED_UNIVALUE
@@ -19,9 +20,8 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS)
+BITCOIN_INCLUDES=-I$(builddir) -I$(srcdir)/secp256k1/include $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS)
 
-BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
 LIBBITCOIN_SERVER=libbitcoin_server.a
@@ -85,6 +85,10 @@ if BUILD_BITCOIND
   bin_PROGRAMS += vertcoind
 endif
 
+if BUILD_BITCOIN_NODE
+  bin_PROGRAMS += vertcoin-node
+endif
+
 if BUILD_BITCOIN_CLI
   bin_PROGRAMS += vertcoin-cli
 endif
@@ -107,9 +111,9 @@ BITCOIN_CORE_H = \
   base58.h \
   bech32.h \
   bignum.h \
-  bloom.h \
   blockencodings.h \
   blockfilter.h \
+  bloom.h \
   chain.h \
   chainparams.h \
   chainparamsbase.h \
@@ -130,12 +134,14 @@ BITCOIN_CORE_H = \
   core_io.h \
   core_memusage.h \
   cuckoocache.h \
+  dbwrapper.h \
   flatfile.h \
   fs.h \
   httprpc.h \
   httpserver.h \
   index/base.h \
   index/blockfilterindex.h \
+  index/disktxpos.h \
   index/txindex.h \
   indirectmap.h \
   init.h \
@@ -145,8 +151,6 @@ BITCOIN_CORE_H = \
   interfaces/wallet.h \
   key.h \
   key_io.h \
-  dbwrapper.h \
-  limitedmap.h \
   logging.h \
   logging/timer.h \
   memusage.h \
@@ -164,6 +168,7 @@ BITCOIN_CORE_H = \
   node/context.h \
   node/psbt.h \
   node/transaction.h \
+  node/ui_interface.h \
   node/utxo_snapshot.h \
   noui.h \
   optional.h \
@@ -181,6 +186,7 @@ BITCOIN_CORE_H = \
   reverse_iterator.h \
   rpc/blockchain.h \
   rpc/client.h \
+  rpc/mining.h \
   rpc/protocol.h \
   rpc/rawtransaction_util.h \
   rpc/register.h \
@@ -195,6 +201,7 @@ BITCOIN_CORE_H = \
   script/signingprovider.h \
   script/standard.h \
   shutdown.h \
+  signet.h \
   streams.h \
   support/allocators/secure.h \
   support/allocators/zeroafterfree.h \
@@ -202,13 +209,13 @@ BITCOIN_CORE_H = \
   support/events.h \
   support/lockedpool.h \
   sync.h \
-  threadsafety.h \
   threadinterrupt.h \
+  threadsafety.h \
   timedata.h \
   torcontrol.h \
   txdb.h \
+  txrequest.h \
   txmempool.h \
-  ui_interface.h \
   undo.h \
   util/asmap.h \
   util/bip32.h \
@@ -216,26 +223,31 @@ BITCOIN_CORE_H = \
   util/check.h \
   util/error.h \
   util/fees.h \
-  util/spanparsing.h \
-  util/system.h \
+  util/golombrice.h \
   util/macros.h \
   util/memory.h \
   util/message.h \
   util/moneystr.h \
   util/rbf.h \
+  util/ref.h \
   util/settings.h \
+  util/spanparsing.h \
   util/string.h \
+  util/system.h \
   util/threadnames.h \
   util/time.h \
   util/translation.h \
+  util/ui_change_type.h \
   util/url.h \
   util/vector.h \
   validation.h \
   validationinterface.h \
   versionbits.h \
   versionbitsinfo.h \
-  walletinitinterface.h \
+  wallet/bdb.h \
   wallet/coincontrol.h \
+  wallet/coinselection.h \
+  wallet/context.h \
   wallet/crypter.h \
   wallet/db.h \
   wallet/feebumper.h \
@@ -243,18 +255,20 @@ BITCOIN_CORE_H = \
   wallet/ismine.h \
   wallet/load.h \
   wallet/rpcwallet.h \
+  wallet/salvage.h \
   wallet/scriptpubkeyman.h \
+  wallet/sqlite.h \
   wallet/wallet.h \
   wallet/walletdb.h \
   wallet/wallettool.h \
   wallet/walletutil.h \
-  wallet/coinselection.h \
+  walletinitinterface.h \
   warnings.h \
   zmq/zmqabstractnotifier.h \
-  zmq/zmqconfig.h\
   zmq/zmqnotificationinterface.h \
   zmq/zmqpublishnotifier.h \
-  zmq/zmqrpc.h
+  zmq/zmqrpc.h \
+  zmq/zmqutil.h
 
 
 obj/build.h: FORCE
@@ -277,16 +291,16 @@ libbitcoin_server_a_SOURCES = \
   blockfilter.cpp \
   chain.cpp \
   consensus/tx_verify.cpp \
+  dbwrapper.cpp \
   flatfile.cpp \
   httprpc.cpp \
   httpserver.cpp \
   index/base.cpp \
   index/blockfilterindex.cpp \
   index/txindex.cpp \
+  init.cpp \
   interfaces/chain.cpp \
   interfaces/node.cpp \
-  init.cpp \
-  dbwrapper.cpp \
   miner.cpp \
   net.cpp \
   net_processing.cpp \
@@ -295,6 +309,7 @@ libbitcoin_server_a_SOURCES = \
   node/context.cpp \
   node/psbt.cpp \
   node/transaction.cpp \
+  node/ui_interface.cpp \
   noui.cpp \
   policy/fees.cpp \
   policy/rbf.cpp \
@@ -309,11 +324,12 @@ libbitcoin_server_a_SOURCES = \
   rpc/server.cpp \
   script/sigcache.cpp \
   shutdown.cpp \
+  signet.cpp \
   timedata.cpp \
   torcontrol.cpp \
   txdb.cpp \
+  txrequest.cpp \
   txmempool.cpp \
-  ui_interface.cpp \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
@@ -333,17 +349,20 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp \
-  zmq/zmqrpc.cpp
+  zmq/zmqrpc.cpp \
+  zmq/zmqutil.cpp
 endif
 
 
 # wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled
-libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(SQLITE_CFLAGS)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_wallet_a_SOURCES = \
   interfaces/wallet.cpp \
+  wallet/bdb.cpp \
   wallet/coincontrol.cpp \
+  wallet/context.cpp \
   wallet/crypter.cpp \
   wallet/db.cpp \
   wallet/feebumper.cpp \
@@ -351,12 +370,17 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/load.cpp \
   wallet/rpcdump.cpp \
   wallet/rpcwallet.cpp \
+  wallet/salvage.cpp \
   wallet/scriptpubkeyman.cpp \
   wallet/wallet.cpp \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
   wallet/coinselection.cpp \
   $(BITCOIN_CORE_H)
+
+if USE_SQLITE
+libbitcoin_wallet_a_SOURCES += wallet/sqlite.cpp
+endif
 
 libbitcoin_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -389,6 +413,8 @@ crypto_libbitcoin_crypto_base_a_SOURCES = \
   crypto/sha1.h \
   crypto/sha256.cpp \
   crypto/sha256.h \
+  crypto/sha3.cpp \
+  crypto/sha3.h \
   crypto/sha512.cpp \
   crypto/sha512.h \
   crypto/scrypt.cpp \
@@ -523,7 +549,6 @@ libbitcoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
-  compat/glibc_sanity_fdelt.cpp \
   compat/glibc_sanity.cpp \
   compat/glibcxx_sanity.cpp \
   compat/strnlen.cpp \
@@ -551,8 +576,11 @@ libbitcoin_util_a_SOURCES = \
   util/strencodings.cpp \
   util/string.cpp \
   util/time.cpp \
-  util/url.cpp \
   $(BITCOIN_CORE_H)
+
+if USE_LIBEVENT
+libbitcoin_util_a_SOURCES += util/url.cpp
+endif
 
 if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
@@ -571,22 +599,21 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# bitcoind binary #
-vertcoind_SOURCES = bitcoind.cpp
-vertcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-vertcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-vertcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# vertcoind & bitcoin-node binaries #
+vertcoin_daemon_sources = bitcoind.cpp
+vertcoin_bin_cppflags = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+vertcoin_bin_cxxflags = $(AM_CXXFLAGS) $(PIE_FLAGS)
+vertcoin_bin_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-vertcoind_SOURCES += bitcoind-res.rc
+vertcoin_daemon_sources += bitcoind-res.rc
 endif
 
-vertcoind_LDADD = \
-  $(LIBBITCOIN_SERVER) \
+vertcoin_bin_ldadd = \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
-  $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
+  $(LIBUNIVALUE) \
   $(LIBBITCOIN_ZMQ) \
   $(LIBBITCOIN_CONSENSUS) \
   $(LIBBITCOIN_CRYPTO) \
@@ -595,13 +622,25 @@ vertcoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-vertcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+vertcoin_bin_ldadd += $(BOOST_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(SQLITE_LIBS)
 
-# bitcoin-cli binary #
+vertcoind_SOURCES = $(vertcoin_daemon_sources)
+vertcoind_CPPFLAGS = $(vertcoin_bin_cppflags)
+vertcoind_CXXFLAGS = $(vertcoin_bin_cxxflags)
+vertcoind_LDFLAGS = $(vertcoin_bin_ldflags)
+vertcoind_LDADD = $(LIBBITCOIN_SERVER) $(vertcoin_bin_ldadd)
+
+vertcoin_node_SOURCES = $(vertcoin_daemon_sources)
+vertcoin_node_CPPFLAGS = $(vertcoin_bin_cppflags)
+vertcoin_node_CXXFLAGS = $(vertcoin_bin_cxxflags)
+vertcoin_node_LDFLAGS = $(vertcoin_bin_ldflags)
+vertcoin_node_LDADD = $(LIBBITCOIN_SERVER) $(vertcoin_bin_ldadd)
+
+# vertcoin-cli binary #
 vertcoin_cli_SOURCES = bitcoin-cli.cpp
 vertcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 vertcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-vertcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vertcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
 vertcoin_cli_SOURCES += bitcoin-cli-res.rc
@@ -613,14 +652,14 @@ vertcoin_cli_LDADD = \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-vertcoin_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+vertcoin_cli_LDADD += $(BOOST_LIBS) $(EVENT_LIBS)
 #
 
-# bitcoin-tx binary #
+# vertcoin-tx binary #
 vertcoin_tx_SOURCES = bitcoin-tx.cpp
 vertcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 vertcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-vertcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vertcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
 vertcoin_tx_SOURCES += bitcoin-tx-res.rc
@@ -634,34 +673,19 @@ vertcoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-vertcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+vertcoin_tx_LDADD += $(BOOST_LIBS)
 #
 
 # bitcoin-wallet binary #
 vertcoin_wallet_SOURCES = bitcoin-wallet.cpp
-vertcoin_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-vertcoin_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-vertcoin_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vertcoin_wallet_CPPFLAGS = $(vertcoin_bin_cppflags)
+vertcoin_wallet_CXXFLAGS = $(vertcoin_bin_cxxflags)
+vertcoin_wallet_LDFLAGS = $(vertcoin_bin_ldflags)
+vertcoin_wallet_LDADD = $(LIBBITCOIN_WALLET_TOOL) $(vertcoin_bin_ldadd)
 
 if TARGET_WINDOWS
 vertcoin_wallet_SOURCES += bitcoin-wallet-res.rc
 endif
-
-vertcoin_wallet_LDADD = \
-  $(LIBBITCOIN_WALLET_TOOL) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ZMQ) \
-  $(LIBLEVELDB) \
-  $(LIBLEVELDB_SSE42) \
-  $(LIBMEMENV) \
-  $(LIBSECP256K1) \
-  $(LIBUNIVALUE)
-
-vertcoin_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(MINIUPNPC_LIBS) $(ZMQ_LIBS) $(CRYPTO_LIBS) 
 #
 
 # bitcoinconsensus library #
@@ -692,12 +716,18 @@ CLEANFILES = $(EXTRA_LIBRARIES)
 CLEANFILES += *.gcda *.gcno
 CLEANFILES += compat/*.gcda compat/*.gcno
 CLEANFILES += consensus/*.gcda consensus/*.gcno
+CLEANFILES += crc32c/src/*.gcda crc32c/src/*.gcno
 CLEANFILES += crypto/*.gcda crypto/*.gcno
+CLEANFILES += index/*.gcda index/*.gcno
+CLEANFILES += interfaces/*.gcda interfaces/*.gcno
+CLEANFILES += node/*.gcda node/*.gcno
 CLEANFILES += policy/*.gcda policy/*.gcno
 CLEANFILES += primitives/*.gcda primitives/*.gcno
+CLEANFILES += rpc/*.gcda rpc/*.gcno
 CLEANFILES += script/*.gcda script/*.gcno
 CLEANFILES += support/*.gcda support/*.gcno
 CLEANFILES += univalue/*.gcda univalue/*.gcno
+CLEANFILES += util/*.gcda util/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno

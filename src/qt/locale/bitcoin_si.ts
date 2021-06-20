@@ -42,6 +42,10 @@
         <translation>කාසි ලැබිය යුතු ලිපිනය තෝරන්න</translation>
     </message>
     <message>
+        <source>C&amp;hoose</source>
+        <translation>තෝරන්න</translation>
+    </message>
+    <message>
         <source>Sending addresses</source>
         <translation>යවන ලිපින</translation>
     </message>
@@ -52,10 +56,6 @@
     <message>
         <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>මේවා ඔබගේ ගෙවීම් යැවීම සඳහා වන බිට්කොයින් ලිපින වේ. කාසි යැවීමට පෙර සෑම විටම මුදල සහ ලැබීමේ ලිපිනය පරීක්ෂා කරන්න.</translation>
-    </message>
-    <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation> මේවා ඔබගේ ගෙවීම් ලැබීම සඳහා වන බිට්කොයින් ලිපින වේ. නව ලිපින සෑදීම සඳහා ලැබීම් ටැබ් එකෙහි ඇති 'නව ලැබීමේ ලිපිනයක් සාදන්න' බොත්තම භාවිතා කරන්න.</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -132,7 +132,7 @@
         <translation>පසුම්බි සංකේතනය තහවුරු කරන්න</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>අවවාදයයි: ඔබ ඔබේ මුදල් පසුම්බිය සංකේතනය කල පසු ඔබගේ මුරපදය නැති වුවහොත්, ඔබේ  &lt;b&gt;බිට්කොයින් සියල්ලම ඔබට අහිමි වනු ඇත&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -212,7 +212,11 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation>ජාලය සමග සමමුහුර්ත ව‌ෙමින්...</translation>
+    </message>
     <message>
         <source>Browse transaction history</source>
         <translation>ගනුදෙනු ඉතිහාසය පිරික්සන්න</translation>
@@ -331,6 +335,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -355,16 +362,8 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>ලිපිනය</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>අගය</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ලේබලය</translation>
+        <source>Amount:</source>
+        <translation>අගය:</translation>
     </message>
     </context>
 <context>

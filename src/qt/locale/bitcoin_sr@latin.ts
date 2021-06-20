@@ -244,7 +244,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Potpišite &amp;poruka...</translation>
@@ -549,6 +549,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -577,26 +580,14 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>Adresa</translation>
+        <source>Amount:</source>
+        <translation>Iznos:</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Kolicina</translation>
+        <source>Wallet:</source>
+        <translation>Novčanik:</translation>
     </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Poruka</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Novčanik</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -880,6 +871,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Izvoz podataka iz trenutne kartice u datoteku</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Greska</translation>
     </message>
     </context>
 <context>

@@ -140,7 +140,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Übersicht</translation>

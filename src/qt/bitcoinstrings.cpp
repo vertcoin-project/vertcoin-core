@@ -18,14 +18,20 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Can't generate a change-address key. No keys in the internal keypool and "
 "can't generate any keys."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring "
+"a backup."),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"-maxtxfee is set very high! Fees this large could be paid on a single "
+"transaction."),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Cannot obtain a lock on data directory %s. %s is probably already running."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Cannot provide specific connections and have addrman find outgoing "
 "connections at the same."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Cannot upgrade a non HD split wallet without upgrading to support pre split "
-"keypool. Please use -upgradewallet=169900 or -upgradewallet with no version "
-"specified."),
+"keypool. Please use version 169900 or no version specified."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Distributed under the MIT software license, see the accompanying file %s or "
 "%s"),
@@ -41,6 +47,9 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Invalid amount for -maxtxfee=<amount>: '%s' (must be at least the minrelay "
 "fee of %s to prevent stuck transactions)"),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
+"More than one onion bind address is provided. Using %s for the automatically "
+"created Tor onion service."),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Please check that your computer's date and time are correct! If your clock "
 "is wrong, %s will not work properly."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
@@ -52,6 +61,15 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Prune: last wallet synchronisation goes beyond pruned data. You need to -"
 "reindex (download the whole blockchain again in case of pruned node)"),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
+"SQLiteDatabase: Failed to prepare the statement to fetch sqlite wallet "
+"schema version: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"SQLiteDatabase: Failed to prepare the statement to fetch the application id: "
+"%s"),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"SQLiteDatabase: Unknown sqlite wallet schema version %d. Only version %d is "
+"supported"),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
 "The block database contains a block which appears to be from the future. "
 "This may be due to your computer's date and time being set incorrectly. Only "
 "rebuild the block database if you are sure that your computer's date and "
@@ -62,6 +80,16 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "mining or merchant applications"),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
+"This error could occur if this wallet was not shutdown cleanly and was last "
+"loaded using a build with a newer version of Berkeley DB. If so, please use "
+"the software that last loaded this wallet"),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"This is a pre-release test build - use at your own risk - do not use for "
+"mining or merchant applications"),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"This is the maximum transaction fee you pay (in addition to the normal fee) "
+"to prioritize partial spend avoidance over regular coin selection."),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
 "This is the transaction fee you may discard if change is smaller than dust "
 "at this level"),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
@@ -69,6 +97,9 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Total length of network version string (%i) exceeds maximum length (%i). "
 "Reduce the number or size of uacomments."),
+QT_TRANSLATE_NOOP("vertcoin-core", ""
+"Transaction needs a change address, but we can't generate it. Please call "
+"keypoolrefill first."),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "Unable to replay blocks. You will need to rebuild the database using -"
 "reindex-chainstate."),
@@ -90,12 +121,12 @@ QT_TRANSLATE_NOOP("vertcoin-core", ""
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "You need to rebuild the database using -reindex to go back to unpruned "
 "mode.  This will redownload the entire blockchain"),
-QT_TRANSLATE_NOOP("vertcoin-core", "%d of last 100 blocks have unexpected version"),
-QT_TRANSLATE_NOOP("vertcoin-core", "%s corrupt, salvage failed"),
 QT_TRANSLATE_NOOP("vertcoin-core", "%s is set very high!"),
 QT_TRANSLATE_NOOP("vertcoin-core", "-maxmempool must be at least %d MB"),
+QT_TRANSLATE_NOOP("vertcoin-core", "A fatal internal error occurred, see debug.log for details"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Cannot downgrade wallet"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Cannot resolve -%s address: '%s'"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Cannot set -peerblockfilters without -blockfilterindex."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Cannot write to data directory '%s'; check permissions."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Change index out of range"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Config setting for %s only applied on %s network when in [%s] section."),
@@ -103,6 +134,7 @@ QT_TRANSLATE_NOOP("vertcoin-core", "Copyright (C) %i-%i"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Could not find asmap file %s"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Could not parse asmap file %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Disk space is too low!"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Done loading"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error initializing block database"),
@@ -112,15 +144,16 @@ QT_TRANSLATE_NOOP("vertcoin-core", "Error loading %s: Private keys can only be d
 QT_TRANSLATE_NOOP("vertcoin-core", "Error loading %s: Wallet corrupted"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error loading %s: Wallet requires newer version of %s"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error loading block database"),
-QT_TRANSLATE_NOOP("vertcoin-core", "Error loading wallet %s. Duplicate -wallet filename specified."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error upgrading chainstate database"),
-QT_TRANSLATE_NOOP("vertcoin-core", "Error: A fatal internal error occurred, see debug.log for details"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Error: Disk space is low for %s"),
-QT_TRANSLATE_NOOP("vertcoin-core", "Error: Disk space is too low!"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Error: Keypool ran out, please call keypoolrefill first"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Failed to listen on any port. Use -listen=0 if you want this."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Failed to rescan the wallet during initialization"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Failed to verify database"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Fee rate (%s) is lower than the minimum fee rate setting (%s)"),
+QT_TRANSLATE_NOOP("vertcoin-core", "Ignoring duplicate -wallet %s."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Importing..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Initialization sanity check failed. %s is shutting down."),
@@ -138,6 +171,7 @@ QT_TRANSLATE_NOOP("vertcoin-core", "Loading banlist..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Loading block index..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Loading wallet..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Need to specify a port with -whitebind: '%s'"),
+QT_TRANSLATE_NOOP("vertcoin-core", "No proxy server specified. Use -proxy=<ip> or -proxy=<ip:port>."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Not enough file descriptors available."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Prune cannot be configured with a negative value."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Prune mode is incompatible with -blockfilterindex."),
@@ -147,6 +181,12 @@ QT_TRANSLATE_NOOP("vertcoin-core", "Reducing -maxconnections from %d to %d, beca
 QT_TRANSLATE_NOOP("vertcoin-core", "Replaying blocks..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Rescanning..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Rewinding blocks..."),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Failed to execute statement to verify database: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Failed to fetch sqlite wallet schema version: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Failed to fetch the application id: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Failed to prepare statement to verify database: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Failed to read database verification error: %s"),
+QT_TRANSLATE_NOOP("vertcoin-core", "SQLiteDatabase: Unexpected application id. Expected %u, got %u"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Section [%s] is not recognized."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Signing transaction failed"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Specified -walletdir \"%s\" does not exist"),
@@ -185,5 +225,4 @@ QT_TRANSLATE_NOOP("vertcoin-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Verifying wallet(s)..."),
 QT_TRANSLATE_NOOP("vertcoin-core", "Wallet needed to be rewritten: restart %s to complete"),
 QT_TRANSLATE_NOOP("vertcoin-core", "Warning: unknown new rules activated (versionbit %i)"),
-QT_TRANSLATE_NOOP("vertcoin-core", "Zapping all transactions from wallet..."),
 };
