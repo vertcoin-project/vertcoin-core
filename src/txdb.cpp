@@ -247,8 +247,8 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
 {
     std::unique_ptr<CDBIterator> pcursor(NewIterator());
 
-    const bool skipChainVerification = gArgs.GetBoolArg("-skip-startup-verify", DEFAULT_SKIPSTARTUPVERIFY);
-    const bool fullChainVerification = gArgs.GetBoolArg("-full-startup-verify", DEFAULT_FULLSTARTUPVERIFY);
+    const bool skipChainVerification = gArgs.GetBoolArg("-skip-startup-verify", false);
+    const bool fullChainVerification = gArgs.GetBoolArg("-full-startup-verify", false);
 
     const CChainParams& chainparams = Params();
     MapCheckpoints checkPoints = chainparams.Checkpoints().mapCheckpoints;
@@ -285,8 +285,6 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                     if(pindexNew->GetBlockHash() != it->second)
                         return error("%s: Block hash mismatches checkpoint: %s\n", __func__, pindexNew->ToString());
                 }
-
-
                 if (!skipChainVerification)
                     if(fullChainVerification || pindexNew->nHeight > highestCheckpointHeight)
                     {
@@ -294,7 +292,6 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                         if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
                             return error("%s: CheckProofOfWork failed: %s\n", __func__, pindexNew->ToString());
                     }
-
                 pcursor->Next();
             } else {
                 return error("%s: failed to read value", __func__);

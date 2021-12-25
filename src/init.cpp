@@ -492,6 +492,8 @@ void SetupServerArgs(NodeContext& node)
 
     argsman.AddArg("-verthash-diskonly", "Don't load Verthash's datafile into RAM. Will slow down validation significantly, but might be needed on low-memory systems.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
 
+    argsman.AddArg("-skip-startup-verify", "Skip checking the chain of work on startup from the last checkpoint", ArgsManager::ALLOW_BOOL, OptionsCategory::OPTIONS);
+    argsman.AddArg("-full-startup-verify", "Check the complete chain of work on startup from the Genesis block", ArgsManager::ALLOW_BOOL, OptionsCategory::OPTIONS);
 
     g_wallet_init_interface.AddWalletOptions(argsman);
 

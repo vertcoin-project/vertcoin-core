@@ -39,8 +39,6 @@ static const int64_t max_filter_index_cache = 1024;
 //! Max memory allocated to coin DB specific cache (MiB)
 static const int64_t nMaxCoinsDBCache = 8;
 
-static const bool DEFAULT_SKIPSTARTUPVERIFY = false;
-static const bool DEFAULT_FULLSTARTUPVERIFY = false;
 // Actually declared in validation.cpp; can't include because of circular dependency.
 extern RecursiveMutex cs_main;
 
