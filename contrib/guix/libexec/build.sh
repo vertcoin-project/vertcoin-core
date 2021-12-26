@@ -174,7 +174,7 @@ esac
 # CFLAGS
 HOST_CFLAGS="-O2 -g"
 case "$HOST" in
-    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=." ;;
+    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=. -fPIC" ;;
     *mingw*)  HOST_CFLAGS+=" -fno-ident" ;;
 esac
 
