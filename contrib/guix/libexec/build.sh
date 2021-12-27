@@ -169,6 +169,7 @@ fi
 CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-tests"
 case "$HOST" in
     *linux*) CONFIGFLAGS+=" --enable-glibc-back-compat" ;;
+    *mingw*) CONFIGFLAGS+=" --disable-shared" ;;
 esac
 
 # CFLAGS
