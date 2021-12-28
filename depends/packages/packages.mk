@@ -1,5 +1,7 @@
 packages:=boost libevent gmp
 
+sse2_packages = openssl
+
 qt_packages = zlib
 
 qrencode_packages = qrencode
