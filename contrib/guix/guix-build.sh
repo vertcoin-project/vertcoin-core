@@ -38,7 +38,7 @@ and untracked files and directories will be wiped, allowing you to start anew.
 EOF
 }
 
-# Deterministically build Bitcoin Core for HOSTs (overridable by environment)
+# Deterministically build Vertcoin Core for HOSTs (overridable by environment)
 # shellcheck disable=SC2153
 for host in ${HOSTS=x86_64-linux-gnu arm-linux-gnueabihf aarch64-linux-gnu riscv64-linux-gnu x86_64-w64-mingw32}; do
 
@@ -104,7 +104,7 @@ for host in ${HOSTS=x86_64-linux-gnu arm-linux-gnueabihf aarch64-linux-gnu riscv
                                  --container \
                                  --pure \
                                  --no-cwd \
-                                 --share="$PWD"=/bitcoin \
+                                 --share="$PWD"=/vertcoin \
                                  --expose="$(git rev-parse --git-common-dir)" \
                                  ${SOURCES_PATH:+--share="$SOURCES_PATH"} \
                                  ${ADDITIONAL_GUIX_ENVIRONMENT_FLAGS} \
@@ -113,7 +113,7 @@ for host in ${HOSTS=x86_64-linux-gnu arm-linux-gnueabihf aarch64-linux-gnu riscv
                                         SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:?unable to determine value}" \
                                         ${V:+V=1} \
                                         ${SOURCES_PATH:+SOURCES_PATH="$SOURCES_PATH"} \
-                                      bash -c "cd /bitcoin && bash contrib/guix/libexec/build.sh"
+                                      bash -c "cd /vertcoin && bash contrib/guix/libexec/build.sh"
     )
 
 done

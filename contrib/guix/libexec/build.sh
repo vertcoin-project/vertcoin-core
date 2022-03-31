@@ -27,7 +27,7 @@ BASEPREFIX="${PWD}/depends"
 OUTDIR="${OUTDIR:-${PWD}/output}"
 [ -e "$OUTDIR" ] || mkdir -p "$OUTDIR"
 
-# Setup the directory where our Bitcoin Core build for HOST will occur
+# Setup the directory where our Vertcoin Core build for HOST will occur
 DISTSRC="${DISTSRC:-${PWD}/distsrc-${HOST}}"
 if [ -e "$DISTSRC" ]; then
     echo "DISTSRC directory '${DISTSRC}' exists, probably because of previous builds... Aborting..."
@@ -166,15 +166,16 @@ fi
 ###########################
 
 # CONFIGFLAGS
-CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests"
+CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-tests"
 case "$HOST" in
     *linux*) CONFIGFLAGS+=" --enable-glibc-back-compat" ;;
+    *mingw*) CONFIGFLAGS+=" --disable-shared" ;;
 esac
 
 # CFLAGS
 HOST_CFLAGS="-O2 -g"
 case "$HOST" in
-    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=." ;;
+    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=. -fPIC" ;;
     *mingw*)  HOST_CFLAGS+=" -fno-ident" ;;
 esac
 
@@ -211,7 +212,7 @@ export PATH="${BASEPREFIX}/${HOST}/native/bin:${PATH}"
 
     sed -i.old 's/-lstdc++ //g' config.status libtool src/univalue/config.status src/univalue/libtool
 
-    # Build Bitcoin Core
+    # Build Vertcoin Core
     make --jobs="$MAX_JOBS" ${V:+V=1}
 
     # Perform basic ELF security checks on a series of executables.
@@ -232,22 +233,22 @@ export PATH="${BASEPREFIX}/${HOST}/native/bin:${PATH}"
             ;;
     esac
 
-    # Setup the directory where our Bitcoin Core build for HOST will be
+    # Setup the directory where our Vertcoin Core build for HOST will be
     # installed. This directory will also later serve as the input for our
     # binary tarballs.
     INSTALLPATH="${PWD}/installed/${DISTNAME}"
     mkdir -p "${INSTALLPATH}"
-    # Install built Bitcoin Core to $INSTALLPATH
+    # Install built Vertcoin Core to $INSTALLPATH
     make install DESTDIR="${INSTALLPATH}" ${V:+V=1}
 
     (
         cd installed
 
-        case "$HOST" in
-            *mingw*)
-                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
-                ;;
-        esac
+#        case "$HOST" in
+#            *mingw*)
+#                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
+#                ;;
+#        esac
 
         # Prune libtool and object archives
         find . -name "lib*.la" -delete
