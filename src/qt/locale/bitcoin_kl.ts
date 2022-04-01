@@ -84,7 +84,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>Wallet:</source>
         <translation>Aningaasivik:</translation>
@@ -100,7 +100,7 @@
     <message>
         <source>Amount: %1
 </source>
-        <translation>Bitcoin amerlassusaa: %1
+        <translation>Vertcoin amerlassusaa: %1
 </translation>
     </message>
     </context>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Amount</source>
-        <translation>Bitcoin amerlassusaa</translation>
+        <translation>Vertcoin amerlassusaa</translation>
     </message>
     <message>
         <source>Date</source>
@@ -165,8 +165,8 @@
         <translation>Tikilluarit uunga %1</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Vertcoin</source>
+        <translation>Vertcoin</translation>
     </message>
     </context>
 <context>
@@ -342,6 +342,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     </context>
 </TS>

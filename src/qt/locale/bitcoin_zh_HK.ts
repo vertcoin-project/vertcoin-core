@@ -184,8 +184,8 @@
         <translation>請輸入舊密碼和新密碼至錢包。</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>請記得將錢包加密不能完全防止你的 Bitcoins 經被入侵電腦的惡意程式偷取。</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>請記得將錢包加密不能完全防止你的 Vertcoins 經被入侵電腦的惡意程式偷取。</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

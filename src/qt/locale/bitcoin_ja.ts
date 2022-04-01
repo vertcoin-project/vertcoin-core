@@ -2582,7 +2582,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>手数料は後から上乗せ可能です(Replace-By-Fee(手数料の上乗せ: BIP-125)機能が有効)。</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation>トランザクション提案を確認してください。これにより、部分的に署名されたビットコイン・トランザクション（PSBT）が作成されます。これを保存するかコピーして例えばオフラインの %1 ウォレットやPSBTを扱えるハードウェアウォレットで残りの署名が出来ます。</translation>
     </message>
     <message>
@@ -3860,8 +3860,8 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation>エラー: 内向きの接続をリッスンするのに失敗しました（%s エラーが返却されました）</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation>%sが破損しています。ウォレットのツールbitcoin-walletを使って復旧するか、バックアップから復元してみてください。</translation>
+        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
+        <translation>%sが破損しています。ウォレットのツールvertcoin-walletを使って復旧するか、バックアップから復元してみてください。</translation>
     </message>
     <message>
         <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use version 169900 or no version specified.</source>

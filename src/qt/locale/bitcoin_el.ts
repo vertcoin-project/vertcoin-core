@@ -70,9 +70,9 @@
         <translation>Αυτές είναι οι Vertcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Αυτές είναι οι Bitcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης.
+        <translation>Αυτές είναι οι Vertcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης.
 Η υπογραφή είναι διαθέσιμη μόνο σε διευθύνσεις 'παλαιού τύπου'.</translation>
     </message>
     <message>
@@ -488,16 +488,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;Φόρτωση PSBT από αρχείο...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation>Φόρτωση συναλλαγής Partially Signed Bitcoin</translation>
+        <source>Load Partially Signed Vertcoin Transaction</source>
+        <translation>Φόρτωση συναλλαγής Partially Signed Vertcoin</translation>
     </message>
     <message>
         <source>Load PSBT from clipboard...</source>
         <translation>Φόρτωση PSBT από το πρόχειρο...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation>Φόρτωση συναλλαγής Partially Signed Bitcoin από το πρόχειρο</translation>
+        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
+        <translation>Φόρτωση συναλλαγής Partially Signed Vertcoin από το πρόχειρο</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -1361,8 +1361,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Επιλογή κατά πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Συνδεθείτε στο δίκτυο Bitcoin μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Συνδεθείτε στο δίκτυο Vertcoin μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -2538,8 +2538,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation> Μπορείτε να αυξήσετε αργότερα την αμοιβή (σήματα Αντικατάσταση-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή Bitcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή Vertcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>

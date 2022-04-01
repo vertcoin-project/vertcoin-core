@@ -354,7 +354,7 @@
         <translation>డిస్క్‌లో బ్లాక్‌లను రీఇన్డెక్సింగ్ చేస్తుంది...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>బిట్‌కాయిన్ చిరునామాకు నాణేలను పంపండి</translation>
     </message>
     <message>

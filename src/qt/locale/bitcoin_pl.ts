@@ -3851,8 +3851,8 @@ Przejdź do Plik &gt; Otwórz Portfel aby wgrać portfel.
         <translation>Błąd: Nasłuchiwanie połączeń przychodzących nie powiodło się (nasłuch zwrócił błąd %s)</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation>%s jest uszkodzony. Spróbuj użyć narzędzia bitcoin-portfel, aby uratować portfel lub przywrócić kopię zapasową.</translation>
+        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
+        <translation>%s jest uszkodzony. Spróbuj użyć narzędzia vertcoin-portfel, aby uratować portfel lub przywrócić kopię zapasową.</translation>
     </message>
     <message>
         <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use version 169900 or no version specified.</source>
