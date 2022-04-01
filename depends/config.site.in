@@ -40,6 +40,10 @@ if test -z $with_gui && test -n "@no_qt@"; then
   with_gui=no
 fi
 
+if test -z "$enable_sse2" && test -n "@no_sse2@"; then
+  enable_sse2=no
+fi
+
 if test -z $enable_zmq && test -n "@no_zmq@"; then
   enable_zmq=no
 fi
