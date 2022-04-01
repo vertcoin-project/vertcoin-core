@@ -67,13 +67,13 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Recibiendo dirección</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones de Vertcoin para enviar pagos. Siempre verifique el monto y la dirección de recepción antes de enviar monedas.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones de Bitcoin para enviar pagos. Siempre verifique el monto y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Estas son sus direcciones de Vertcoin para recibir los pagos.
+        <translation>Estas son sus direcciones de Bitcoin para recibir los pagos.
 Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir para crear una nueva direccion.  Firmar es posible solo con la direccion del tipo "legado"</translation>
     </message>
     <message>
@@ -171,8 +171,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Confirmar el cifrado de la billetera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation>Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS VERTCOINS &lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS BITCOINS &lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -191,8 +191,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Introducir la vieja contraseña y la nueva contraseña para la billetera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation>Recuerda que codificando tu billetera no garantiza mantener a salvo tus vertcoins en caso de tener virus en el computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recuerda que codificando tu billetera no garantiza mantener a salvo tus bitcoins en caso de tener virus en el computador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -255,7 +255,7 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firma y mensaje ...</translation>
@@ -365,8 +365,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Proxy &lt;b&gt;habilitado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Enviando monedas a una dirección de Vertcoin</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Enviando monedas a una dirección de Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -401,12 +401,12 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Encripta las claves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Firme mensajes con sus direcciones de Vertcoin para demostrar que los posee</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Firme mensajes con sus direcciones de Bitcoin para demostrar que los posee</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Verifique los mensajes para asegurarse de que fueron firmados con las direcciones de Vertcoin especificadas</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verifique los mensajes para asegurarse de que fueron firmados con las direcciones de Bitcoin especificadas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -425,8 +425,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Barra de herramientas de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation>Solicitar pagos (genera códigos QR y vertcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Solicitar pagos (genera códigos QR y bitcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -441,8 +441,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Y opciones de línea de comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Vertcoin</numerusform><numerusform>%n conexiones activas hacia la red Vertcoin</numerusform></translation>
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red Bitcoin</numerusform><numerusform>%n conexiones activas hacia la red Bitcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -489,12 +489,32 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>&amp;Load PSBT desde el archivo...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation>Cargar transacción de Vertcoin parcialmente firmada</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>Cargar transacción de Bitcoin parcialmente firmada</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation>Muestre el mensaje de ayuda %1 para obtener una lista con posibles opciones de línea de comandos de Vertcoin</translation>
+        <source>Open Wallet</source>
+        <translation>Abrir billetera</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>Abrir una billetera</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>Cerrar billetera...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Muestre el mensaje de ayuda %1 para obtener una lista con posibles opciones de línea de comandos de Bitcoin</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -507,11 +527,6 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     <message>
         <source>Main Window</source>
         <translation>Ventana principal</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>y windows
-</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -747,9 +762,29 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
 </context>
 <context>
     <name>CreateWalletActivity</name>
-    </context>
+    <message>
+        <source>Create wallet failed</source>
+        <translation>Crear billetera falló</translation>
+    </message>
+    <message>
+        <source>Create wallet warning</source>
+        <translation>Advertencia de crear billetera</translation>
+    </message>
+</context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Create Wallet</source>
+        <translation>Crear Billetera</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Billetera</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation>Crear</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -786,8 +821,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation>La dirección ingresada "%1" no es una dirección válida de Vertcoin.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>La dirección ingresada "%1" no es una dirección válida de Bitcoin.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -871,8 +906,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Use un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -883,8 +918,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Aproximadamente %1 GB de datos se almacenarán en este directorio.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation>%1 descargará y almacenará una copia de la cadena de bloques de Vertcoin.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation>%1 descargará y almacenará una copia de la cadena de bloques de Bitcoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -914,12 +949,12 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Formar</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation>Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su billetera podría ser incorrecto. Esta información será correcta una vez que su billetera haya terminado de sincronizarse con la red vertcoin, como se detalla a continuación.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su billetera podría ser incorrecto. Esta información será correcta una vez que su billetera haya terminado de sincronizarse con la red bitcoin, como se detalla a continuación.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará intentar gastar vertcoins que se vean afectados por transacciones aún no mostradas</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>La red no aceptará intentar gastar bitcoins que se vean afectados por transacciones aún no mostradas</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -967,6 +1002,10 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
 </context>
 <context>
     <name>OpenWalletActivity</name>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
     </context>
 <context>
     <name>OptionsDialog</name>
@@ -1063,8 +1102,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>&amp; Gastar cambio no confirmado</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abra automáticamente el puerto cliente de Vertcoin en el enrutador. Esto solo funciona cuando su enrutador admite UPnP y está habilitado.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abra automáticamente el puerto cliente de Bitcoin en el enrutador. Esto solo funciona cuando su enrutador admite UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1079,8 +1118,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation>Conéctese a la red de Vertcoin a través de un proxy SOCKS5.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>Conéctese a la red de Bitcoin a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1218,8 +1257,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Configurar</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su billetera se sincroniza automáticamente con la red de Vertcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su billetera se sincroniza automáticamente con la red de Bitcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1293,6 +1332,14 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Cambiar contraseña</translation>
     </message>
     <message>
+        <source>Close</source>
+        <translation>Cerrar</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation>o</translation>
     </message>
@@ -1304,8 +1351,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Error de solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation>No se puede iniciar Vertcoin: controlador de clic para pagar</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>No se puede iniciar Bitcoin: controlador de clic para pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1316,8 +1363,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation>¡URI no puede ser analizado! Esto puede deberse a una dirección de Vertcoin no válida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>¡URI no puede ser analizado! Esto puede deberse a una dirección de Bitcoin no válida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1358,8 +1405,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation>Ingrese una dirección de Vertcoin (por ejemplo, %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Ingrese una dirección de Bitcoin (por ejemplo, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1751,8 +1798,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se mostrará cuando se abra la solicitud. Nota: El mensaje no se enviará con el pago a través de la red de Vertcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se mostrará cuando se abra la solicitud. Nota: El mensaje no se enviará con el pago a través de la red de Bitcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1765,6 +1812,10 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Un monto opcional para solicitar. Deje esto vacío o en cero para no solicitar una cantidad específica.</translation>
+    </message>
+    <message>
+        <source>&amp;Create new receiving address</source>
+        <translation>&amp;Crear una nueva dirección de recibo</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -2049,6 +2100,10 @@ Tarifa de copia</translation>
         <translation>Comisión de transacción</translation>
     </message>
     <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
+    </message>
+    <message>
         <source>Confirm send coins</source>
         <translation>Confirmar el envió de monedas</translation>
     </message>
@@ -2081,8 +2136,8 @@ Tarifa de copia</translation>
         <translation>Solicitud de pago caducada.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation>Peligro: Dirección de Vertcoin inválida</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Peligro: Dirección de Bitcoin inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2120,8 +2175,8 @@ Tarifa de copia</translation>
         <translation>Seleccionar dirección usada anteriormente</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation>Dirección Vertcoin a enviar el pago</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation>Dirección Bitcoin a enviar el pago</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2190,8 +2245,8 @@ Tarifa de copia</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation>Dirección Vertcoin con la que firmar el mensaje</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation>Dirección Bitcoin con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2222,7 +2277,7 @@ Tarifa de copia</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -2242,12 +2297,12 @@ Tarifa de copia</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation>La dirección Vertcoin con la que se firmó el mensaje</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation>La dirección Bitcoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Vertcoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Bitcoin especificada.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2734,6 +2789,10 @@ Tarifa de copia</translation>
 </context>
 <context>
     <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
@@ -2784,7 +2843,11 @@ Tarifa de copia</translation>
         <source>Could not commit transaction</source>
         <translation>No se pudo confirmar la transacción</translation>
     </message>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2826,7 +2889,7 @@ Exportar los datos en la pestaña actual a un archivo</translation>
     </message>
     </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuido bajo la licencia de software MIT, vea el archivo adjunto %s o %s</translation>

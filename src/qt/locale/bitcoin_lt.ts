@@ -66,8 +66,8 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai yra jūsų Vertcoin adresai išeinantiems mokėjimams. Visada pasitikrinkite sumą ir gavėjo adresą prieš siunčiant lėšas.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai yra jūsų Bitcoin adresai išeinantiems mokėjimams. Visada pasitikrinkite sumą ir gavėjo adresą prieš siunčiant lėšas.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,8 +164,8 @@
         <translation>Patvirtinkite piniginės užšifravimą</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO VERTCOINUS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO BITCOINUS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -228,7 +228,7 @@
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Pasirašyti ži&amp;nutę...</translation>
@@ -338,8 +338,8 @@
         <translation>Tarpinis serveris yra &lt;b&gt;įgalintas&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Siųsti monetas Vertcoin adresui</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Siųsti monetas Bitcoin adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -374,12 +374,12 @@
         <translation>Užšifruoti privačius raktus, kurie priklauso jūsų piniginei</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Pasirašydami žinutes su savo Vertcoin adresais įrodysite jog esate jų savininkas</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Pasirašydami žinutes su savo Bitcoin adresais įrodysite jog esate jų savininkas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Vertcoin adresas</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bitcoin adresas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -398,8 +398,8 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation>Reikalauti mokėjimų (sukuria QR kodus ir vertcoin: URI)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Reikalauti mokėjimų (sukuria QR kodus ir bitcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -414,8 +414,8 @@
         <translation>Komandinės eilutės parametrai</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network</source>
-        <translation><numerusform>%n Vertcoin tinklo aktyvus ryšys</numerusform><numerusform>%n Vertcoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Vertcoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Vertcoin tinklo aktyvūs ryšiai</numerusform></translation>
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n Bitcoin tinklo aktyvus ryšys</numerusform><numerusform>%n Bitcoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Bitcoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Bitcoin tinklo aktyvūs ryšiai</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -482,8 +482,12 @@
         <translation>Uždaryti Piniginę</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation>Rodyti %1 pagalbos žinutę su Vertcoin pasirinkimo komandomis</translation>
+        <source>Close all wallets</source>
+        <translation>Uždaryti visas pinigines</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Rodyti %1 pagalbos žinutę su Bitcoin pasirinkimo komandomis</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -592,6 +596,10 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Piniginė &lt;b&gt;užšifruota&lt;/b&gt; ir šiuo metu &lt;b&gt;užrakinta&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Original message:</source>
+        <translation>Orginali žinutė:</translation>
     </message>
     </context>
 <context>
@@ -767,6 +775,10 @@
         <translation>Sukurti Piniginę</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Piniginė</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Piniginės Pavadinimas</translation>
     </message>
@@ -777,6 +789,10 @@
     <message>
         <source>Encrypt Wallet</source>
         <translation>Užkoduoti Piniginę</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Išplėstiniai nustatymai</translation>
     </message>
     <message>
         <source>Disable Private Keys</source>
@@ -826,8 +842,8 @@
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Vertcoin adresas.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis Bitcoin adresas.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -919,8 +935,8 @@
         <translation>Naudoti kitą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Discard blocks after verification, except most recent %1 GB (prune)</source>
@@ -935,8 +951,8 @@
         <translation>Šiame kataloge bus saugoma maždaug apie %1 GB duomenų.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation>%1 bus atsisiųsta ir išsaugota Vertcoin blokų grandinės kopiją.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation>%1 bus atsisiųsta ir išsaugota Bitcoin blokų grandinės kopiją.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -966,12 +982,12 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation>Naujausi sandoriai gali būti dar nematomi, todėl jūsų piniginės likutis gali būti neteisingas. Ši informacija bus teisinga, kai jūsų piniginė bus baigta sinchronizuoti su vertcoin tinklu, kaip nurodyta žemiau.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Naujausi sandoriai gali būti dar nematomi, todėl jūsų piniginės likutis gali būti neteisingas. Ši informacija bus teisinga, kai jūsų piniginė bus baigta sinchronizuoti su bitcoin tinklu, kaip nurodyta žemiau.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Tinklas nepriims bandymų išleisti vertcoinus, kurie yra vis dar nematomi.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Tinklas nepriims bandymų išleisti bitcoinus, kurie yra vis dar nematomi.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1151,8 +1167,8 @@
         <translation>&amp;Išleiskite nepatvirtintus pakeitimus</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Vertcoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Bitcoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1167,8 +1183,8 @@
         <translation>Leisti gaunamu&amp;s ryšius</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation>Prisijunkite prie „Vertcoin“ tinklo per SOCKS5 proxy.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>Prisijunkite prie „Bitcoin“ tinklo per SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1287,18 +1303,6 @@
         <translation>Konfigūracijos failas naudojamas patobulintoms naudotojo parinktims, kurios ignoruoja GUI nustatymus. Be to, visos komandų eilutės parinktys nepaisys šio konfigūracijos failo.</translation>
     </message>
     <message>
-        <source>Client will be shut down. Do you want to proceed?</source>
-        <translation>Klientas bus uždarytas. Ar norite testi?</translation>
-    </message>
-    <message>
-        <source>Configuration options</source>
-        <translation>Konfigūravimo parinktys</translation>
-    </message>
-    <message>
-        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Konfigūracijos failas naudojamas patobulintoms naudotojo parinktims, kurios ignoruoja GUI nustatymus. Be to, visos komandų eilutės parinktys nepaisys šio konfigūracijos failo.</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -1322,8 +1326,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Piniginė automatiškai sinchronizuojasi su „Vertcoin“ tinklu po ryšio užmezgimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Piniginė automatiškai sinchronizuojasi su „Bitcoin“ tinklu po ryšio užmezgimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1397,6 +1401,10 @@
         <translation>Dialogas</translation>
     </message>
     <message>
+        <source>Close</source>
+        <translation>Uždaryti</translation>
+    </message>
+    <message>
         <source>Total Amount</source>
         <translation>Visas kiekis</translation>
     </message>
@@ -1412,24 +1420,24 @@
         <translation>Mokėjimo užklausos klaida</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation>Negalima paleisti vertcoin: paspauskite sumokėti tvarkytojui</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>Negalima paleisti bitcoin: paspauskite sumokėti tvarkytojui</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>URI tvarkymas</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation>„vertcoin: //“ nėra galiojantis URI. Vietoj to naudokite „vertcoin:“.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation>„bitcoin: //“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
         <translation>Neteisingas mokėjimo adresas %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation>URI negalima perskaityti! Tai gali sukelti negaliojantys „Vertcoin“ adresas arba netinkami URI parametrai.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>URI negalima perskaityti! Tai gali sukelti negaliojantys „Bitcoin“ adresas arba netinkami URI parametrai.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1470,8 +1478,8 @@
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation>Įveskite Vertcoin adresą (pvz., %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Įveskite Bitcoin adresą (pvz., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1636,26 +1644,6 @@
         <translation>Jei norite nurodyti blokų katalogo vietą, naudokite parinktį "%1".</translation>
     </message>
     <message>
-        <source>General</source>
-        <translation>Bendras</translation>
-    </message>
-    <message>
-        <source>Using BerkeleyDB version</source>
-        <translation>Naudojama BerkeleyDB versija</translation>
-    </message>
-    <message>
-        <source>Datadir</source>
-        <translation>Datadir</translation>
-    </message>
-    <message>
-        <source>Blocksdir</source>
-        <translation>Blocksdir</translation>
-    </message>
-    <message>
-        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
-        <translation>Jei norite nurodyti blokų katalogo vietą, naudokite parinktį „%1“.</translation>
-    </message>
-    <message>
         <source>Startup time</source>
         <translation>Paleidimo laikas</translation>
     </message>
@@ -1754,6 +1742,10 @@
     <message>
         <source>Increase font size</source>
         <translation>Padidinti šrifto dydį</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Leidimai</translation>
     </message>
     <message>
         <source>Services</source>
@@ -1927,8 +1919,8 @@
         <translation>Žinutė:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation>Neprivalomas pranešimas, pridedamas prie mokėjimo prašymo, kuris bus rodomas atidarius užklausą. Pastaba: pranešimas nebus išsiųstas su mokėjimu per „Vertcoin“ tinklą.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation>Neprivalomas pranešimas, pridedamas prie mokėjimo prašymo, kuris bus rodomas atidarius užklausą. Pastaba: pranešimas nebus išsiųstas su mokėjimu per „Bitcoin“ tinklą.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2184,8 +2176,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Dulkės:</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
-        <translation>Kai sandorių apimtis yra mažesnė nei erdvės blokuose, kasėjai ir perduodantys mazgai gali užtikrinti minimalų mokestį. Mokėti tik šį minimalų mokestį yra galima, tačiau atkreipkite dėmesį, kad dėl to gali atsirasti niekada nepatvirtinamas sandoris, kai bus daugiau paklausos vertcoin operacijoms, nei tinklas gali apdoroti.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation>Kai sandorių apimtis yra mažesnė nei erdvės blokuose, kasėjai ir perduodantys mazgai gali užtikrinti minimalų mokestį. Mokėti tik šį minimalų mokestį yra galima, tačiau atkreipkite dėmesį, kad dėl to gali atsirasti niekada nepatvirtinamas sandoris, kai bus daugiau paklausos bitcoin operacijoms, nei tinklas gali apdoroti.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2268,6 +2260,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Ar tikrai norite siųsti?</translation>
     </message>
     <message>
+        <source>Create Unsigned</source>
+        <translation>Sukurti nepasirašytą</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation>ar</translation>
     </message>
@@ -2328,8 +2324,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation><numerusform>Apskaičiuota, kad bus pradėtas patvirtinimas per %n bloką.</numerusform><numerusform>Apskaičiuota, kad bus pradėtas patvirtinimas per %n blokus.</numerusform><numerusform>Apskaičiuota, kad bus pradėtas patvirtinimas per %n blokus.</numerusform><numerusform>Apskaičiuota, kad bus pradėtas patvirtinimas per %n blokus.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation>Įspėjimas: neteisingas Vertcoin adresas</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Įspėjimas: neteisingas Bitcoin adresas</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2367,8 +2363,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Pasirinkite anksčiau naudojamą adresą</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation>Vertcoin adresas, į kurį siunčiamas mokėjimas</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation>Bitcoin adresas, į kurį siunčiamas mokėjimas</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2387,8 +2383,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Pašalinti šį įrašą</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Mokestis bus atimamas iš siunčiamos sumos. Gavėjas gaus mažiau vertcoinų nei įvesite sumos lauke. Jei pasirenkami keli gavėjai, mokestis padalijamas lygiai.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Mokestis bus atimamas iš siunčiamos sumos. Gavėjas gaus mažiau bitcoinų nei įvesite sumos lauke. Jei pasirenkami keli gavėjai, mokestis padalijamas lygiai.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2415,8 +2411,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Įveskite šio adreso etiketę, kad ją pridėtumėte prie naudojamų adresų sąrašo</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation>Pranešimas, kuris buvo pridėtas prie vertcoin: URI, kuris bus saugomas kartu su sandoriu jūsų nuoroda. Pastaba: šis pranešimas nebus išsiųstas per „Vertcoin“ tinklą.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation>Pranešimas, kuris buvo pridėtas prie bitcoin: URI, kuris bus saugomas kartu su sandoriu jūsų nuoroda. Pastaba: šis pranešimas nebus išsiųstas per „Bitcoin“ tinklą.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2449,8 +2445,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>&amp;Pasirašyti žinutę</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation>Vertcoin adresas, kuriuo bus pasirašytas pranešimas su</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation>Bitcoin adresas, kuriuo bus pasirašytas pranešimas su</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2481,7 +2477,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Nukopijuokite dabartinį parašą į sistemos iškarpinę</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -2501,12 +2497,12 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation>Vertcoin adresas, kuriuo buvo pasirašytas pranešimas</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation>Bitcoin adresas, kuriuo buvo pasirašytas pranešimas</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Vertcoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bitcoin adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2983,16 +2979,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Exporting Successful</source>
         <translation>Eksportavimas sėkmingas</translation>
     </message>
-</context>
-<context>
-    <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>Sandorio istorija buvo sėkmingai išsaugota %1.</translation>
     </message>
-</context>
-<context>
-    <name>WalletController</name>
     <message>
         <source>Range:</source>
         <translation>Diapazonas:</translation>
@@ -3018,6 +3008,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     <message>
         <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>Ar tikrai norite uždaryti piniginę &lt;i&gt;%1&lt;/i&gt;?</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Uždaryti visas pinigines</translation>
     </message>
     </context>
 <context>
@@ -3065,9 +3059,6 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Can't sign transaction.</source>
         <translation>Nepavyko pasirašyti sandorio.</translation>
     </message>
-</context>
-<context>
-    <name>WalletView</name>
     <message>
         <source>Could not commit transaction</source>
         <translation>Nepavyko įvykdyti sandorio</translation>
@@ -3111,9 +3102,6 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Backup Successful</source>
         <translation>Atsarginė kopija sėkminga</translation>
     </message>
-</context>
-<context>
-    <name>vertcoin-core</name>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Piniginės duomenys sėkmingai išsaugoti %1.</translation>
@@ -3124,7 +3112,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation>%s kūrėjai</translation>

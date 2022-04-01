@@ -556,6 +556,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Billetera</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>

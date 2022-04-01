@@ -66,8 +66,14 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son tus direcciones de Vertcoin para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son tus direcciones de Bitcoin para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Estas son tus direcciones Bitcoin para recibir pagos. Usa el botón 'Crear una nueva dirección para recibir' en la pestaña 'Recibir' para crear nuevas direcciones.
+Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -132,6 +138,10 @@
         <translation>Repite nueva contraseña</translation>
     </message>
     <message>
+        <source>Show passphrase</source>
+        <translation>Mostrar la frase de contraseña</translation>
+    </message>
+    <message>
         <source>Encrypt wallet</source>
         <translation>Codificar billetera</translation>
     </message>
@@ -160,8 +170,8 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS VERTCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS BITCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -170,6 +180,30 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Billetera codificada</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Introduce la contraseña nueva para la billetera. &lt;br/&gt;Por favor utiliza una contraseña de &lt;b&gt;diez o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation>Ingresa la antigua frase de contraseña y la nueva frase de contraseña para la billetera.</translation>
+    </message>
+    <message>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recuerda que cifrar tu billetera no garantiza total protección de robo de tus bitcoins si tu ordenador es infectado con malware.</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation>Billetera a cifrar</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation>Tu billetera esta a punto de ser encriptada.</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation>Tu billetera ha sido cifrada.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -220,7 +254,7 @@
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -294,6 +328,14 @@
         <translation>Abrir y url...</translation>
     </message>
     <message>
+        <source>Create Wallet...</source>
+        <translation>Crear billetera...</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Crear una nueva billetera</translation>
+    </message>
+    <message>
         <source>Wallet:</source>
         <translation>Billetera:</translation>
     </message>
@@ -322,8 +364,8 @@
         <translation>Proxy &lt;b&gt;habilitado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Enviar monedas a una dirección vertcoin</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Enviar monedas a una dirección bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -358,12 +400,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Vertcoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Bitcoin concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -382,8 +424,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and vertcoin: URls)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and bitcoin: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -398,8 +440,8 @@
         <translation>&amp;Opciones de linea de comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Vertcoin</numerusform><numerusform>%n conexiones activas hacia la red Vertcoin</numerusform></translation>
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red Bitcoin</numerusform><numerusform>%n conexiones activas hacia la red Bitcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -442,8 +484,64 @@
         <translation>Actualizado</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de Vertcoin</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>Cargar una transacción de Bitcoin parcialmente firmada desde el Portapapeles</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Ventana del nodo</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Abrir la consola de depuración y diagnóstico del nodo</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Direcciones de envío</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Direcciones de entrega</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Abrir un bitcoin: URI</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <translation>Abrir billetera</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>Abrir una billetera</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>Cerrar billetera...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
+    <message>
+        <source>Close All Wallets...</source>
+        <translation>Cerrar todas las billeteras...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Cerrar todas las billeteras</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de Bitcoin</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
+    <message>
+        <source>No wallets available</source>
+        <translation>No hay billeteras disponibles</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -454,16 +552,16 @@
         <translation>Minimizar</translation>
     </message>
     <message>
+        <source>Zoom</source>
+        <translation>Acercar</translation>
+    </message>
+    <message>
         <source>Main Window</source>
         <translation>Ventana principal</translation>
     </message>
     <message>
         <source>%1 client</source>
         <translation>%1 cliente</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>Ventana</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
@@ -476,6 +574,10 @@
     <message>
         <source>Error: %1</source>
         <translation>Error: %1</translation>
+    </message>
+    <message>
+        <source>Warning: %1</source>
+        <translation>Advertencia: %1</translation>
     </message>
     <message>
         <source>Date: %1
@@ -540,6 +642,10 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>La billetera esta &lt;b&gt;codificada&lt;/b&gt; y actualmente &lt;b&gt;bloqueda&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Original message:</source>
+        <translation>Mensaje original:</translation>
     </message>
     </context>
 <context>
@@ -696,12 +802,68 @@
 </context>
 <context>
     <name>CreateWalletActivity</name>
-    </context>
+    <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>Creando billetera &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
+        <source>Create wallet failed</source>
+        <translation>Fallo al crear la billetera</translation>
+    </message>
+    <message>
+        <source>Create wallet warning</source>
+        <translation>Advertencia al crear la billetera</translation>
+    </message>
+</context>
 <context>
     <name>CreateWalletDialog</name>
     <message>
+        <source>Create Wallet</source>
+        <translation>Crear Billetera</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Cartera</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <translation>Nombre de la billetera </translation>
+    </message>
+    <message>
+        <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
+        <translation>Encriptar la billetera. La billetera será encriptada con una contraseña de tu elección.</translation>
+    </message>
+    <message>
+        <source>Encrypt Wallet</source>
+        <translation>Encriptar la billetera</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Opciones avanzadas</translation>
+    </message>
+    <message>
+        <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
+        <translation>Desactivar las claves privadas para esta billetera. Las billeteras con claves privadas desactivadas no tendrán claves privadas y no podrán tener ninguna semilla HD o claves privadas importadas. Esto es ideal para billeteras de solo lectura.</translation>
+    </message>
+    <message>
+        <source>Disable Private Keys</source>
+        <translation>Desactivar las claves privadas</translation>
+    </message>
+    <message>
         <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
         <translation>Crea una billetera en blanco. Las billeteras en blanco inicialmente no tienen llaves privadas o texto. Las llaves privadas y las direcciones pueden ser importadas, o se puede establecer una semilla HD, más tarde.</translation>
+    </message>
+    <message>
+        <source>Make Blank Wallet</source>
+        <translation>Crear billetera vacía</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>Descriptor de la billetera</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation>Crear</translation>
     </message>
     </context>
 <context>
@@ -739,8 +901,8 @@
         <translation>Editar dirección de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Vertcoin valida.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Bitcoin valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -828,8 +990,8 @@
         <translation>usar un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Vertcoin</source>
-        <translation>Vertcoin</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -840,8 +1002,8 @@
         <translation>Aproximadamente %1 GB de información será almacenado en este directorio.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation>%1 descargará y almacenará una copia del blockchain de Vertcoin.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation>%1 descargará y almacenará una copia del blockchain de Bitcoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -871,12 +1033,12 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de vertcoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de bitcoin, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará el intentar gastar vertcoins que están afectados por transacciones aún no mostradas.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>La red no aceptará el intentar gastar bitcoins que están afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -911,6 +1073,10 @@
         <translation>Ocultar</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>Desconocido. Sincronizando cabeceras (%1, %2%)...</translation>
     </message>
@@ -924,6 +1090,10 @@
 </context>
 <context>
     <name>OpenWalletActivity</name>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
     </context>
 <context>
     <name>OptionsDialog</name>
@@ -1020,8 +1190,8 @@
         <translation>Gastar cambio sin confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Vertcoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Bitcoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1036,8 +1206,8 @@
         <translation>Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation>Conectar a la red de Vertcoin a través de un proxy SOCKS5</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>Conectar a la red de Bitcoin a través de un proxy SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1176,8 +1346,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de Vertcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de Bitcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1247,10 +1417,34 @@
 <context>
     <name>PSBTOperationsDialog</name>
     <message>
+        <source>Dialog</source>
+        <translation>Dialogo</translation>
+    </message>
+    <message>
+        <source>Save...</source>
+        <translation>Guardar...</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Cerrar</translation>
+    </message>
+    <message>
+        <source>Save Transaction Data</source>
+        <translation>Guardar datos de la transacción</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation>o</translation>
     </message>
-    </context>
+    <message>
+        <source>Transaction status is unknown.</source>
+        <translation>El estado de la transacción es desconocido.</translation>
+    </message>
+</context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1258,8 +1452,8 @@
         <translation>Error en la solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation>No se puede iniciar Vertcoin: controlador de clic para pagar</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>No se puede iniciar Bitcoin: controlador de clic para pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1270,8 +1464,8 @@
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation>¡URI no puede ser analizado! Esto puede deberse a una dirección de Vertcoin no válida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>¡URI no puede ser analizado! Esto puede deberse a una dirección de Bitcoin no válida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1312,8 +1506,8 @@
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation>Ingresa una dirección de Vertcoin (Ejemplo: %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Ingresa una dirección de Bitcoin (Ejemplo: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1486,6 +1680,14 @@
         <translation>Memoria utilizada</translation>
     </message>
     <message>
+        <source>Wallet: </source>
+        <translation>Billetera:</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(ninguno)</translation>
+    </message>
+    <message>
         <source>&amp;Reset</source>
         <translation>&amp;Reestablecer</translation>
     </message>
@@ -1535,12 +1737,24 @@
         <translation>User Agent</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Ventana del nodo</translation>
+    </message>
+    <message>
+        <source>Current block height</source>
+        <translation>Altura del bloque actual</translation>
+    </message>
+    <message>
         <source>Decrease font size</source>
         <translation>Disminuir tamaño de fuente</translation>
     </message>
     <message>
         <source>Increase font size</source>
         <translation>Aumentar tamaño de fuente</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisos</translation>
     </message>
     <message>
         <source>Services</source>
@@ -1706,8 +1920,8 @@
         <translation>&amp;mensaje</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation>Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red Vertcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation>Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red Bitcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1773,8 +1987,16 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Address:</source>
+        <translation>Dirección:</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>Cantidad:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Etiqueta:</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -1932,6 +2154,10 @@
         <translation>Polvo:</translation>
     </message>
     <message>
+        <source>Hide transaction fee settings</source>
+        <translation>Esconder ajustes de la tarifa de transacción</translation>
+    </message>
+    <message>
         <source>Confirmation time target:</source>
         <translation>Objetivo de tiempo de confirmación</translation>
     </message>
@@ -1984,6 +2210,10 @@
         <translation>%1 (%2 bloques)</translation>
     </message>
     <message>
+        <source> from wallet '%1'</source>
+        <translation>desde la billetera '%1'</translation>
+    </message>
+    <message>
         <source>%1 to %2</source>
         <translation>%1 a %2</translation>
     </message>
@@ -1992,16 +2222,36 @@
         <translation>¿Seguro que quiere enviar?</translation>
     </message>
     <message>
+        <source>Save Transaction Data</source>
+        <translation>Guardar datos de la transacción</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation>o</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction.</source>
+        <translation>Por favor, revise su transacción.</translation>
     </message>
     <message>
         <source>Transaction fee</source>
         <translation>Comisión de transacción</translation>
     </message>
     <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
+    </message>
+    <message>
         <source>Confirm send coins</source>
         <translation>Confirmar el envió de monedas</translation>
+    </message>
+    <message>
+        <source>Confirm transaction proposal</source>
+        <translation>Confirmar la propuesta de transacción</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Enviar</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2020,6 +2270,10 @@
         <translation>El total sobrepasa tu saldo cuando se incluyen %1 como comisión de envió.</translation>
     </message>
     <message>
+        <source>Duplicate address found: addresses should only be used once each.</source>
+        <translation>Dirección duplicada encontrada: las direcciones sólo deben ser utilizadas una vez.</translation>
+    </message>
+    <message>
         <source>Transaction creation failed!</source>
         <translation>¡Fallo al crear la transacción!</translation>
     </message>
@@ -2032,8 +2286,8 @@
         <translation>Solicitud de pago expirada</translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation>Peligro: Dirección de Vertcoin inválida</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Peligro: Dirección de Bitcoin inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2071,8 +2325,8 @@
         <translation>Seleccionar dirección usada anteriormente</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation>Dirección Vertcoin a enviar el pago</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation>Dirección Bitcoin a enviar el pago</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2093,6 +2347,10 @@
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Restar comisiones del monto.</translation>
+    </message>
+    <message>
+        <source>Use available balance</source>
+        <translation>Usar el saldo disponible</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -2141,8 +2399,8 @@
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation>Dirección Vertcoin con la que firmar el mensaje</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation>Dirección Bitcoin con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2173,7 +2431,7 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -2193,12 +2451,12 @@
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation>La dirección Vertcoin con la que se firmó el mensaje</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation>La dirección Bitcoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Vertcoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Bitcoin especificada.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2227,6 +2485,10 @@
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>El desbloqueo del monedero fue cancelado.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>No hay error</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -2685,13 +2947,26 @@
 </context>
 <context>
     <name>WalletController</name>
-    </context>
-<context>
-    <name>WalletController</name>
-    </context>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Cerrar todas las billeteras</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close all wallets?</source>
+        <translation>¿Está seguro de que desea cerrar todas las billeteras?</translation>
+    </message>
+</context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Crear una nueva billetera</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -2734,7 +3009,11 @@
         <source>Could not commit transaction</source>
         <translation>No se pudo confirmar la transacción</translation>
     </message>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2748,6 +3027,10 @@
     <message>
         <source>Error</source>
         <translation>Error</translation>
+    </message>
+    <message>
+        <source>Load Transaction Data</source>
+        <translation>Cargar datos de la transacción</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -2775,7 +3058,7 @@
     </message>
     </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuido bajo la licencia de software MIT, vea el archivo adjunto %s o %s</translation>
