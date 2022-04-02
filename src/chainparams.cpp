@@ -95,10 +95,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 1623304; // Approximately September 1, 2021
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000001796891f689605736");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000ea23677f4c4103d3e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147"); //1172000
+        consensus.defaultAssumeValid = uint256S("0x3a9d0a6b19f4c20959caef1bad1a7aa18e492c049327ccaf3b3fcf7c3815f4e0"); //1740000
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -111,7 +111,7 @@ public:
         pchMessageStart[3] = 0xda;
         nDefaultPort = 5889;
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 5;
+        m_assumed_blockchain_size = 7;
         m_assumed_chain_state_size = 1;
 
         genesis = CreateGenesisBlock(1389311371, 5749262, 0x1e0ffff0, 1, 50 * COIN);
@@ -140,7 +140,7 @@ public:
         m_is_mockable_chain = false;
 
         checkpointData = {
-              {
+            {
                 {      0, uint256S("0x4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4")},
                 {  24200, uint256S("0xd7ed819858011474c8b0cae4ad0b9bdbb745becc4c386bc22d1220cc5a4d1787")},
                 {  65000, uint256S("0x9e673a69c35a423f736ab66f9a195d7c42f979847a729c0f3cef2c0b8b9d0289")},
@@ -150,19 +150,18 @@ public:
                 {  347269, uint256S("0xfa1e592b7ea2aa97c5f20ccd7c40f3aaaeb31d1232c978847a79f28f83b6c22a")},
                 {  430000, uint256S("0x2f5703cf7b6f956b84fd49948cbf49dc164cfcb5a7b55903b1c4f53bc7851611")},
                 {  516999, uint256S("0x572ed47da461743bcae526542053e7bc532de299345e4f51d77786f2870b7b28")},
-	        {  627610, uint256S("0x6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc")},
-	        {  1172000, uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147")},
-		{  1474747, uint256S("0xedf23a98cc196888635a01ba4672680df0b7c16eb48146e706b6f2e669974934")},
+                {  627610, uint256S("0x6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc")},
+                {  1172000, uint256S("0x13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147")},
+                {  1474747, uint256S("0xedf23a98cc196888635a01ba4672680df0b7c16eb48146e706b6f2e669974934")},
+                {  1740000, uint256S("0x3a9d0a6b19f4c20959caef1bad1a7aa18e492c049327ccaf3b3fcf7c3815f4e0")},
             }
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 0000000000000000002d6cca6761c99b3c2e936f9a0e304b7c7651a993f461de (height 506081).
-            1521857289, // * UNIX timestamp of last known number of transactions
-            3071361,  // * total number of transactions between genesis and that timestamp
-                        //   (the tx=... number in the SetBestChain debug.log lines)
-            0.3         // * estimated number of transactions per second after that timestamp
- 
+            // Data from rpc: getchaintxstats 16384 3a9d0a6b19f4c20959caef1bad1a7aa18e492c049327ccaf3b3fcf7c3815f4e0
+            1648016191, // nTime
+            4991331,  // nTxCount
+            0.01460440502969592 // dTxRate
         };
 
  /* data from merge with bitcoin. above data is from vertcoin. this block is from bitcoin
