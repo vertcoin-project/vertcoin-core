@@ -482,6 +482,10 @@
         <translation>Uždaryti Piniginę</translation>
     </message>
     <message>
+        <source>Close all wallets</source>
+        <translation>Uždaryti visas pinigines</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Rodyti %1 pagalbos žinutę su Vertcoin pasirinkimo komandomis</translation>
     </message>
@@ -592,6 +596,10 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Piniginė &lt;b&gt;užšifruota&lt;/b&gt; ir šiuo metu &lt;b&gt;užrakinta&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Original message:</source>
+        <translation>Orginali žinutė:</translation>
     </message>
     </context>
 <context>
@@ -767,6 +775,10 @@
         <translation>Sukurti Piniginę</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Piniginė</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Piniginės Pavadinimas</translation>
     </message>
@@ -777,6 +789,10 @@
     <message>
         <source>Encrypt Wallet</source>
         <translation>Užkoduoti Piniginę</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Išplėstiniai nustatymai</translation>
     </message>
     <message>
         <source>Disable Private Keys</source>
@@ -1287,18 +1303,6 @@
         <translation>Konfigūracijos failas naudojamas patobulintoms naudotojo parinktims, kurios ignoruoja GUI nustatymus. Be to, visos komandų eilutės parinktys nepaisys šio konfigūracijos failo.</translation>
     </message>
     <message>
-        <source>Client will be shut down. Do you want to proceed?</source>
-        <translation>Klientas bus uždarytas. Ar norite testi?</translation>
-    </message>
-    <message>
-        <source>Configuration options</source>
-        <translation>Konfigūravimo parinktys</translation>
-    </message>
-    <message>
-        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Konfigūracijos failas naudojamas patobulintoms naudotojo parinktims, kurios ignoruoja GUI nustatymus. Be to, visos komandų eilutės parinktys nepaisys šio konfigūracijos failo.</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -1395,6 +1399,10 @@
     <message>
         <source>Dialog</source>
         <translation>Dialogas</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Uždaryti</translation>
     </message>
     <message>
         <source>Total Amount</source>
@@ -1636,26 +1644,6 @@
         <translation>Jei norite nurodyti blokų katalogo vietą, naudokite parinktį "%1".</translation>
     </message>
     <message>
-        <source>General</source>
-        <translation>Bendras</translation>
-    </message>
-    <message>
-        <source>Using BerkeleyDB version</source>
-        <translation>Naudojama BerkeleyDB versija</translation>
-    </message>
-    <message>
-        <source>Datadir</source>
-        <translation>Datadir</translation>
-    </message>
-    <message>
-        <source>Blocksdir</source>
-        <translation>Blocksdir</translation>
-    </message>
-    <message>
-        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
-        <translation>Jei norite nurodyti blokų katalogo vietą, naudokite parinktį „%1“.</translation>
-    </message>
-    <message>
         <source>Startup time</source>
         <translation>Paleidimo laikas</translation>
     </message>
@@ -1754,6 +1742,10 @@
     <message>
         <source>Increase font size</source>
         <translation>Padidinti šrifto dydį</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Leidimai</translation>
     </message>
     <message>
         <source>Services</source>
@@ -2266,6 +2258,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     <message>
         <source>Are you sure you want to send?</source>
         <translation>Ar tikrai norite siųsti?</translation>
+    </message>
+    <message>
+        <source>Create Unsigned</source>
+        <translation>Sukurti nepasirašytą</translation>
     </message>
     <message>
         <source>or</source>
@@ -2983,16 +2979,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Exporting Successful</source>
         <translation>Eksportavimas sėkmingas</translation>
     </message>
-</context>
-<context>
-    <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>Sandorio istorija buvo sėkmingai išsaugota %1.</translation>
     </message>
-</context>
-<context>
-    <name>WalletController</name>
     <message>
         <source>Range:</source>
         <translation>Diapazonas:</translation>
@@ -3018,6 +3008,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     <message>
         <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>Ar tikrai norite uždaryti piniginę &lt;i&gt;%1&lt;/i&gt;?</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Uždaryti visas pinigines</translation>
     </message>
     </context>
 <context>
@@ -3065,9 +3059,6 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Can't sign transaction.</source>
         <translation>Nepavyko pasirašyti sandorio.</translation>
     </message>
-</context>
-<context>
-    <name>WalletView</name>
     <message>
         <source>Could not commit transaction</source>
         <translation>Nepavyko įvykdyti sandorio</translation>
@@ -3111,9 +3102,6 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <source>Backup Successful</source>
         <translation>Atsarginė kopija sėkminga</translation>
     </message>
-</context>
-<context>
-    <name>vertcoin-core</name>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Piniginės duomenys sėkmingai išsaugoti %1.</translation>

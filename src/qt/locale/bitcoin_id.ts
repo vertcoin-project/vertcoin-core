@@ -427,10 +427,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Permintaan pembayaran (membuat kode QR dan vertcoin: URIs)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation>Meminta pembayaran (generate kode QR dan vertcoin: URIs)</translation>
-    </message>
-    <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Tampilkan daftar alamat dan label yang terkirim</translation>
     </message>
@@ -469,46 +465,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Transactions after this will not yet be visible.</source>
         <translation>Transaksi setelah ini belum akan terlihat.</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Perlihatkan daftar address penerima dan labelnya</translation>
-    </message>
-    <message>
-        <source>Open a vertcoin: URI or payment request</source>
-        <translation>Buka vertcoin: URI atau permintaan pembayaran</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>opsi &amp;Command-line</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network</source>
-        <translation><numerusform>%n koneksi aktif pada jaringan Vertcoin</numerusform></translation>
-    </message>
-    <message>
-        <source>Indexing blocks on disk...</source>
-        <translation>Proses index block pada disk...</translation>
-    </message>
-    <message>
-        <source>Processing blocks on disk...</source>
-        <translation>Memproses block pada disk...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>Memproses %n block dari riwayat transaksi.</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 kebelakang</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Block terakhir yang diterima telah digenerate %1 lalu.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaksi setelah ini msih belum terlihat.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -617,38 +573,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Zoom</source>
         <translation>Zoom</translation>
-    </message>
-    <message>
-        <source>Main Window</source>
-        <translation>Jendela Utama</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses</source>
-        <translation>Address &amp;Pengirim</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses</source>
-        <translation>Address &amp;Penerima</translation>
-    </message>
-    <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation>Perlihatkan %1 pesan yang didapat dari daftar dengan opsi command-line Vertcoin yang memungkinkan</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Jendela</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Minimalkan</translation>
-    </message>
-    <message>
-        <source>Zoom</source>
-        <translation>Zoom</translation>
-    </message>
-    <message>
-        <source>Restore</source>
-        <translation>Pulihkan</translation>
     </message>
     <message>
         <source>Main Window</source>
@@ -920,6 +844,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Bikin dompet</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Dompet</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Nama Dompet</translation>
     </message>
@@ -930,6 +858,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Encrypt Wallet</source>
         <translation>Enkripsi Dompet</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Opsi Lanjutan</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -1113,7 +1045,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan Vertcoin block chain.</translation>
+        <translation>%1 akan mengunduh dan menyimpan salinan Vertcoin blockchain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1719,10 +1651,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
         <translation>'vertcoin://' bukanlah alamat URI yang valid. Silakan gunakan 'vertcoin:'.</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 is not supported.</source>
-        <translation>Tidak dapat memproses pembayaran karena dukungan BIP70 tidak disertakan.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.</source>
@@ -3605,66 +3533,6 @@ Pergi ke File &gt; Open Wallet untuk memuat dompet.
         <translation>Pemangkasan: sinkronisasi dompet terakhir melampaui data yang sudah dipangkas. Anda perlu -reindex (unduh seluruh blockchain lagi jika terjadi node pemangkasan)</translation>
     </message>
     <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: Kesalahan internal fatal terjadi, lihat debug.log untuk detailnya</translation>
-    </message>
-    <message>
-        <source>Pruning blockstore...</source>
-        <translation>Memangkas blockstore...</translation>
-    </message>
-    <message>
-        <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Tidak dapat memulai server HTTP. Lihat log debug untuk detailnya.</translation>
-    </message>
-    <message>
-        <source>The %s developers</source>
-        <translation>Pengembang %s</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
-        <translation>Tidak dapat memperoleh kunci pada direktori data %s. %s mungkin sudah berjalan.</translation>
-    </message>
-    <message>
-        <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Kesalahan membaca %s! Semua kunci dibaca dengan benar, tetapi data transaksi atau entri buku alamat mungkin hilang atau salah.</translation>
-    </message>
-    <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
-        <translation>Periksa apakah tanggal dan waktu komputer anda benar! Jika jam anda salah, %s tidak akan berfungsi dengan baik.</translation>
-    </message>
-    <message>
-        <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
-        <translation>Silakan berkontribusi jika %s berguna. Kunjungi %s untuk informasi lebih lanjut tentang perangkat lunak.</translation>
-    </message>
-    <message>
-        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>Blok basis data berisi blok yang tampaknya berasal dari masa depan. Ini mungkin karena tanggal dan waktu komputer anda diatur secara tidak benar. Bangun kembali blok basis data jika anda yakin tanggal dan waktu komputer anda benar</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Ini adalah uji coba pra-rilis - gunakan dengan risiko anda sendiri - jangan digunakan untuk aplikasi penambangan atau penjual</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Peringatan: Jaringan tampaknya tidak sepenuhnya setuju! Beberapa penambang tampaknya mengalami masalah.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Peringatan: Kami tampaknya tidak sepenuhnya setuju dengan peers kami! Anda mungkin perlu memutakhirkan, atau nodes lain mungkin perlu dimutakhirkan.</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>Didistribusikan di bawah lisensi perangkat lunak MIT, lihat berkas terlampir %s atau %s</translation>
-    </message>
-    <message>
-        <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>Pemangkasan dikonfigurasikan di bawah minimum dari %d MiB. Harap gunakan angka yang lebih tinggi.</translation>
-    </message>
-    <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Pemangkasan: sinkronisasi dompet terakhir melampaui data yang sudah dipangkas. Anda perlu -reindex (unduh seluruh blockchain lagi jika terjadi node pemangkasan)</translation>
-    </message>
-    <message>
         <source>Pruning blockstore...</source>
         <translation>Memangkas blockstore...</translation>
     </message>
@@ -3891,10 +3759,6 @@ Pergi ke File &gt; Open Wallet untuk memuat dompet.
     <message>
         <source>Loading P2P addresses...</source>
         <translation>Memuat alamat P2P....</translation>
-    </message>
-    <message>
-        <source>Loading banlist...</source>
-        <translation>Memuat banlist...</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
@@ -4133,34 +3997,6 @@ Pergi ke File &gt; Open Wallet untuk memuat dompet.
     <message>
         <source>Starting network threads...</source>
         <translation>Memulai rangkaian jaringan ...</translation>
-    </message>
-    <message>
-        <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation>Dompet akan menghindari pembayaran kurang dari biaya minimum ongkos relay.</translation>
-    </message>
-    <message>
-        <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Ini adalah ongkos transaksi minimum yang anda bayarkan untuk setiap transaksi.</translation>
-    </message>
-    <message>
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Ini adalah ongkos transaksi yang akan anda bayarkan jika anda mengirim transaksi.</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must not be negative</source>
-        <translation>Jumlah transaksi tidak boleh negatif</translation>
-    </message>
-    <message>
-        <source>Transaction has too long of a mempool chain</source>
-        <translation>Transaksi mempunyai rantai mempool yang terlalu panjang</translation>
-    </message>
-    <message>
-        <source>Transaction must have at least one recipient</source>
-        <translation>Transaksi harus mempunyai paling tidak satu penerima</translation>
-    </message>
-    <message>
-        <source>%s is set very high!</source>
-        <translation>%s diset sangat tinggi!</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
