@@ -36,6 +36,7 @@ NO_QT ?=
 NO_QR ?=
 NO_WALLET ?=
 NO_ZMQ ?=
+NO_SSE2 ?=
 NO_UPNP ?=
 MULTIPROCESS ?=
 FALLBACK_DOWNLOAD_PATH ?= https://bitcoincore.org/depends-sources
@@ -142,6 +143,8 @@ upnp_packages_$(NO_UPNP) = $(upnp_packages)
 zmq_packages_$(NO_ZMQ) = $(zmq_packages)
 multiprocess_packages_$(MULTIPROCESS) = $(multiprocess_packages)
 
+sse2_packages_$(NO_SSE2) = $(sse2_packages)
+
 packages += $($(host_arch)_$(host_os)_packages) $($(host_os)_packages) $(qt_packages_) $(wallet_packages_) $(upnp_packages_)
 native_packages += $($(host_arch)_$(host_os)_native_packages) $($(host_os)_native_packages)
 
@@ -152,6 +155,10 @@ endif
 ifeq ($(multiprocess_packages_),)
 packages += $(multiprocess_packages)
 native_packages += $(multiprocess_native_packages)
+endif
+
+ifneq ($(sse2_packages_),)
+packages += $(sse2_packages)
 endif
 
 all_packages = $(packages) $(native_packages)
@@ -197,6 +204,7 @@ $(host_prefix)/share/config.site : config.site.in $(host_prefix)/.stamp_$(final_
             -e 's|@allow_host_packages@|$(ALLOW_HOST_PACKAGES)|' \
             -e 's|@no_qt@|$(NO_QT)|' \
             -e 's|@no_qr@|$(NO_QR)|' \
+            -e 's|@no_sse2@|$(NO_SSE2)|' \
             -e 's|@no_zmq@|$(NO_ZMQ)|' \
             -e 's|@no_wallet@|$(NO_WALLET)|' \
             -e 's|@no_upnp@|$(NO_UPNP)|' \

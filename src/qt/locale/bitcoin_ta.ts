@@ -18,10 +18,6 @@
         <translation>தற்போது தேர்ந்தெடுக்கப்பட்ட முகவரியை கணினி கிளிப்போர்டுக்கு காபி செய்யவும்.</translation>
     </message>
     <message>
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>தற்போது தேர்ந்தெடுக்கப்பட்ட முகவரியை கணினி கிளிப்போர்டுக்கு நகலெடுக்கவும்.</translation>
-    </message>
-    <message>
         <source>&amp;Copy</source>
         <translation>&amp;காபி</translation>
     </message>
@@ -59,7 +55,7 @@
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>தே&amp;ர்வுசெய் </translation>
+        <translation>தே&amp;ர்வுசெய்</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -72,6 +68,12 @@
     <message>
         <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>இவை பணம் அனுப்புவதற்கு உங்களின் பிட்காயின் முகவரிகள். பிட்காயின்களை அனுப்புவதற்கு முன் எப்பொழுதும் தொகையும் பெறுதலையும் சரிபார்க்கவும்.</translation>
+    </message>
+    <message>
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>பிட்காயின் பெறுவதற்காக உங்கள் முகவரி இவை. புதிய முகவரிகளை உருவாக்க 'புதிய முகவரியை உருவாக்கு' என்ற பட்டனை கிளிக் செய்யவும்.
+கையொப்பமிடுவது 'மரபு' வகையின் முகவரிகளால் மட்டுமே சாத்தியமாகும்.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -491,6 +493,10 @@
 </translation>
     </message>
     <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>கிளிப்போர்டிலிருந்து PSBT ஐ ஏற்றவும் ...</translation>
+    </message>
+    <message>
         <source>Node window</source>
         <translation>நோட் விண்டோ</translation>
     </message>
@@ -527,8 +533,24 @@
         <translation>வாலட்டை மூடு</translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>அனைத்து பணப்பைகள் மூடு...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>அனைத்து பணப்பைகள் மூடு</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>சாத்தியமான Vertcoin கட்டளை-வரி விருப்பங்களைக் கொண்ட பட்டியலைப் பெற %1 உதவிச் செய்தியைக் காட்டு</translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp;மதிப்புகளை மறைக்கவும்</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>கண்ணோட்டம் தாவலில் மதிப்புகளை மறைக்கவும்</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -812,6 +834,10 @@
         <translation>வாலட்டை உருவாக்கு</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>பணப்பை</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>வாலட் பெயர்</translation>
     </message>
@@ -940,8 +966,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Copy label</source>
-        <translation>லேபிளை நகலெடு</translation>
+        <source>Welcome</source>
+        <translation>நல்வரவு</translation>
     </message>
     <message>
         <source>Welcome to %1.</source>
@@ -1015,9 +1041,12 @@
         <source>(of %n GB needed)</source>
         <translation><numerusform>(%n ஜிபி தேவை)</numerusform><numerusform>(%n ஜிபி தேவை)</numerusform></translation>
     </message>
+    </context>
+<context>
+    <name>ModalOverlay</name>
     <message>
-        <source>Lock unspent</source>
-        <translation>விலக்கு இல்லை</translation>
+        <source>Form</source>
+        <translation>படிவம்</translation>
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
@@ -1067,8 +1096,8 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Copy fee</source>
-        <translation>நகல் கட்டணம்</translation>
+        <source>URI:</source>
+        <translation>URI:</translation>
     </message>
 </context>
 <context>
@@ -1093,12 +1122,12 @@
 <context>
     <name>OptionsDialog</name>
     <message>
-        <source>Copy after fee</source>
-        <translation>நகல் கட்டணம்</translation>
+        <source>Options</source>
+        <translation>விருப்பத்தேர்வு</translation>
     </message>
     <message>
-        <source>Copy bytes</source>
-        <translation>பைட்டுகள் நகலெடுக்கவும்</translation>
+        <source>&amp;Main</source>
+        <translation>&amp;தலைமை</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1157,8 +1186,8 @@
         <translation>&amp; மீட்டமை விருப்பங்கள்</translation>
     </message>
     <message>
-        <source>Copy change</source>
-        <translation>மாற்றத்தை நகலெடுக்கவும்</translation>
+        <source>&amp;Network</source>
+        <translation>&amp;பிணையம்</translation>
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
@@ -3050,6 +3079,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
         <translation>வாலட்டை அதிக நேரம் மூடுவதாலும் ப்ரூனிங் இயக்கப்பட்டாலோ முழு செயினை ரீசிங்க் செய்வதற்கு இது வழிவகுக்கும்.</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>அனைத்து பணப்பைகள் மூடு</translation>
     </message>
     </context>
 <context>

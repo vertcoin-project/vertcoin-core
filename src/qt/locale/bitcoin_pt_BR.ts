@@ -3,7 +3,8 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Clique com o botão direito para editar endereço ou rótulo</translation>
+        <translation>Botão direito para editar endereço ou rótulo
+</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -31,7 +32,7 @@
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation>Procure um endereço ou rótulo</translation>
+        <translation>Insira um endereço ou rótulo para pesquisar</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -47,11 +48,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Escolha o endereço para enviar moedas</translation>
+        <translation>Escolha o endereço para enviar Vertcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Escolha o endereço para receber moedas</translation>
+        <translation>Escolha o endereço para receber Vertcoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,7 +68,7 @@
     </message>
     <message>
         <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes são os seus endereços para enviar pagamentos. Sempre cheque a quantia e o endereço do destinatário antes de enviar moedas.</translation>
+        <translation>Estes são os seus endereços para enviar pagamentos. Sempre cheque a quantia e o endereço do destinatário antes de enviar Vertcoins.</translation>
     </message>
     <message>
         <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
@@ -211,7 +212,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Falha ao criptografar carteira</translation>
+        <translation>Falha ao criptografar a carteira</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -365,7 +366,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Send coins to a Vertcoin address</source>
-        <translation>Enviar moedas para um endereço Vertcoin</translation>
+        <translation>Enviar moedas para um endereço vertcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -845,6 +846,10 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
         <translation>Criar Carteira</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Carteira</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Nome da Carteira</translation>
     </message>
@@ -855,6 +860,10 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     <message>
         <source>Encrypt Wallet</source>
         <translation>Criptografar Carteira</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Opções Avançadas</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -1076,8 +1085,8 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
         <translation>Transações recentes podem não estar visíveis ainda, portanto o seu saldo pode estar incorreto. Esta informação será corrigida assim que sua carteira for sincronizada com a rede, como detalhado abaixo.</translation>
     </message>
     <message>
-        <source>Attempting to spend Vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Tentar gastar Vertcoins que estão em transações ainda não exibidas, não vão ser aceitos pela rede.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Tentar gastar vertcoins que estão em transações ainda não exibidas, não vão ser aceitos pela rede.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1117,7 +1126,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
-        <translation>%1 esta sincronizando. irá baixar e validar uma cópia dos Cabeçalhos e Blocos dos Pares até que alcance o final do block chain.</translation>
+        <translation>%1 esta sincronizando. Os cabeçalhos e blocos serão baixados dos nós e validados até que alcance o final do block chain.</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
@@ -1306,7 +1315,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation>Usado para alcançar pares via:</translation>
+        <translation>Usado para alcançar nós via:</translation>
     </message>
     <message>
         <source>IPv4</source>
@@ -1366,7 +1375,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
-        <translation>Use um proxy SOCKS&amp;5 separado para alcançar pares via serviços Tor onion:</translation>
+        <translation>Use um proxy SOCKS&amp;5 separado para alcançar os nós via serviços Tor:</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
@@ -1662,10 +1671,6 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
         <translation>Se você está recebendo este erro você deve requisitar ao comerciante oferecer uma URI compatível com o BIP21.</translation>
     </message>
     <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>O pagamento não pode ser processado porque o suporte ao BIP70 foi desativado.</translation>
-    </message>
-    <message>
         <source>Invalid payment address %1</source>
         <translation>Endereço de pagamento %1 inválido</translation>
     </message>
@@ -1875,7 +1880,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Blocksdir</source>
-        <translation>Blocksdir</translation>
+        <translation>Pasta dos blocos</translation>
     </message>
     <message>
         <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
@@ -1935,7 +1940,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Pares</translation>
+        <translation>&amp;Nós</translation>
     </message>
     <message>
         <source>Banned peers</source>
@@ -1967,7 +1972,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>The mapped Autonomous System used for diversifying peer selection.</source>
-        <translation>O sistema autônomo delineado usado para a diversificação da seleção de pares.</translation>
+        <translation>O sistema autônomo delineado usado para a diversificação de seleção de nós.</translation>
     </message>
     <message>
         <source>Mapped AS</source>
@@ -3627,7 +3632,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Atenção: Nós não parecemos concordar plenamente com nossos pares! Você pode precisar atualizar ou outros pares podem precisar atualizar.</translation>
+        <translation>Atenção: Nós não parecemos concordar plenamente com nossos nós! Você pode precisar atualizar ou outros nós podem precisar atualizar.</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -3767,8 +3772,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
-        <translation>
-Diretório de blocos especificados "%s" não existe.</translation>
+        <translation>Diretório de blocos especificado "%s" não existe.</translation>
     </message>
     <message>
         <source>Unknown address type '%s'</source>
@@ -3848,7 +3852,7 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Erro: Escutar conexões de entrada falhou (vincular retornou erro %s)</translation>
+        <translation>Erro: A escuta de conexões de entrada falhou (vincular retornou erro %s)</translation>
     </message>
     <message>
         <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
@@ -3892,7 +3896,7 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>Disk space is too low!</source>
-        <translation>Espaço em disco muito baixo!</translation>
+        <translation>Espaço em disco insuficiente!</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -4022,7 +4026,7 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>O tamanho total da string de versão da rede (%i) excede o tamanho máximo (%i). Reduza o número ou tamanho de uacomments.</translation>
+        <translation>O tamanho total da string de versão da rede (%i) excede o tamanho máximo (%i). Reduza o número ou o tamanho dos comentários.</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
@@ -4038,7 +4042,7 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Esta é a taxa mínima que você paga em todas as transação.</translation>
+        <translation>Esta é a taxa mínima que você paga em todas as transações.</translation>
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
@@ -4074,7 +4078,7 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation>Não foi possível escrever no diretório de dados '%s': verifique as permissões.</translation>
+        <translation>Não foi possível escrever no diretório '%s': verifique as permissões.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

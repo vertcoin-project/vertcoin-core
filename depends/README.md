@@ -95,6 +95,8 @@ The following can be set when running make: `make FOO=bar`
 <dd>Don't download/build/cache qt and its dependencies</dd>
 <dt>NO_QR</dt>
 <dd>Don't download/build/cache packages needed for enabling qrencode</dd>
+<dt>NO_SSE2</dt>
+<dd>Don't download/build/cache packages needed for enabling SSE2</dd>
 <dt>NO_ZMQ</dt>
 <dd>Don't download/build/cache packages needed for enabling zeromq</dd>
 <dt>NO_WALLET</dt>

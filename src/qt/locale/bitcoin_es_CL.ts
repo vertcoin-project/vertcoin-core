@@ -493,8 +493,28 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Cargar transacción de Vertcoin parcialmente firmada</translation>
     </message>
     <message>
+        <source>Open Wallet</source>
+        <translation>Abrir billetera</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>Abrir una billetera</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>Cerrar billetera...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Muestre el mensaje de ayuda %1 para obtener una lista con posibles opciones de línea de comandos de Vertcoin</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -507,11 +527,6 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     <message>
         <source>Main Window</source>
         <translation>Ventana principal</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>y windows
-</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -747,9 +762,29 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
 </context>
 <context>
     <name>CreateWalletActivity</name>
-    </context>
+    <message>
+        <source>Create wallet failed</source>
+        <translation>Crear billetera falló</translation>
+    </message>
+    <message>
+        <source>Create wallet warning</source>
+        <translation>Advertencia de crear billetera</translation>
+    </message>
+</context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Create Wallet</source>
+        <translation>Crear Billetera</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Billetera</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation>Crear</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -967,6 +1002,10 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
 </context>
 <context>
     <name>OpenWalletActivity</name>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
     </context>
 <context>
     <name>OptionsDialog</name>
@@ -1291,6 +1330,14 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     <message>
         <source>Dialog</source>
         <translation>Cambiar contraseña</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Cerrar</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
     </message>
     <message>
         <source>or</source>
@@ -1767,6 +1814,10 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation>Un monto opcional para solicitar. Deje esto vacío o en cero para no solicitar una cantidad específica.</translation>
     </message>
     <message>
+        <source>&amp;Create new receiving address</source>
+        <translation>&amp;Crear una nueva dirección de recibo</translation>
+    </message>
+    <message>
         <source>Clear all fields of the form.</source>
         <translation>Borre todos los campos del formulario.</translation>
     </message>
@@ -2047,6 +2098,10 @@ Tarifa de copia</translation>
     <message>
         <source>Transaction fee</source>
         <translation>Comisión de transacción</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Monto total</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2734,6 +2789,10 @@ Tarifa de copia</translation>
 </context>
 <context>
     <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>Cerrar billetera</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
@@ -2784,7 +2843,11 @@ Tarifa de copia</translation>
         <source>Could not commit transaction</source>
         <translation>No se pudo confirmar la transacción</translation>
     </message>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>billetera predeterminada</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
