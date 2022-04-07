@@ -122,6 +122,7 @@ public:
         vSeeds.emplace_back("useast1.vtconline.org"); // James Lovejoy
         vSeeds.emplace_back("vtc.gertjaap.org"); // Gert-Jaap Glasbergen 
         vSeeds.emplace_back("vert.idzstad.pl"); // Jaroslaw (jk_14)
+        vSeeds.emplace_back("vtcseed.javerity.com"); // Matt C. (cruelnovo)
         vSeeds.emplace_back("dnsseed.vertcoin.cc"); // DB Keys
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
@@ -233,10 +234,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("jlovejoy.mit.edu");
-        vSeeds.emplace_back("gertjaap.ddns.net");
-        vSeeds.emplace_back("fr1.vtconline.org");
-        vSeeds.emplace_back("tvtc.vertcoin.org");
+        vSeeds.emplace_back("tvtcseed.javerity.com");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,74);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
