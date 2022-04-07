@@ -284,7 +284,7 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                     if(pindexNew->GetBlockHash() != it->second)
                         return error("%s: Block hash mismatches checkpoint: %s\n", __func__, pindexNew->ToString());
                 }
-                if(fullChainVerification || pindexNew->nHeight > highestCheckpointHeight)
+                if(fullChainVerification)
                 {
                     if(pindexNew->nHeight % 10000 == 0) LogPrintf("Checking PoW for block %i\n", pindexNew->nHeight);
                     if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams))
