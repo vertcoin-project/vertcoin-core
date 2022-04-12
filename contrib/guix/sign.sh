@@ -1,6 +1,10 @@
 #!/bin/bash
 
-VERSION="$(git rev-parse --short=12 HEAD)"
+if RECENT_TAG="$(git describe --exact-match HEAD)"; then
+    VERSION="${RECENT_TAG#v}"
+else
+    VERSION="$(git rev-parse --short=12 HEAD)"
+fi
 
 cd output
 
