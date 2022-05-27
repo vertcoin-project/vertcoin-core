@@ -128,6 +128,8 @@ static const bool DEFAULT_REST_ENABLE = false;
 
 static const char* DEFAULT_ASMAP_FILENAME="ip_asn.map";
 
+ChainstateManager* g_chainman = nullptr;
+
 /**
  * The PID file facilities.
  */
@@ -1274,6 +1276,7 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
     assert(!node.chainman);
     node.chainman = std::make_unique<ChainstateManager>();
     ChainstateManager& chainman = *node.chainman;
+    g_chainman = &chainman;
 
     assert(!node.peerman);
     node.peerman = PeerManager::make(chainparams, *node.connman, *node.addrman, node.banman.get(),
