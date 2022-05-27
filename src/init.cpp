@@ -480,6 +480,8 @@ void SetupServerArgs(ArgsManager& argsman)
 
     argsman.AddArg("-verthash-diskonly", "Don't load Verthash's datafile into RAM. Will slow down validation significantly, but might be needed on low-memory systems.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
 
+    argsman.AddArg("-full-startup-verify", "Check the complete chain of work on startup from the Genesis block", ArgsManager::ALLOW_BOOL, OptionsCategory::OPTIONS);
+
     g_wallet_init_interface.AddWalletOptions(argsman);
 
 #if ENABLE_ZMQ
