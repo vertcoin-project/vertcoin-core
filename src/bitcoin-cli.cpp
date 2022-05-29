@@ -123,10 +123,10 @@ static int AppInitRPC(int argc, char* argv[])
         std::string strUsage = PACKAGE_NAME " RPC client version " + FormatFullVersion() + "\n";
         if (!gArgs.IsArgSet("-version")) {
             strUsage += "\n"
-                "Usage:  bitcoin-cli [options] <command> [params]  Send command to " PACKAGE_NAME "\n"
-                "or:     bitcoin-cli [options] -named <command> [name=value]...  Send command to " PACKAGE_NAME " (with named arguments)\n"
-                "or:     bitcoin-cli [options] help                List commands\n"
-                "or:     bitcoin-cli [options] help <command>      Get help for a command\n";
+                "Usage:  vertcoin-cli [options] <command> [params]  Send command to " PACKAGE_NAME "\n"
+                "or:     vertcoin-cli [options] -named <command> [name=value]...  Send command to " PACKAGE_NAME " (with named arguments)\n"
+                "or:     vertcoin-cli [options] help                List commands\n"
+                "or:     vertcoin-cli [options] help <command>      Get help for a command\n";
             strUsage += "\n" + gArgs.GetHelpMessage();
         }
 

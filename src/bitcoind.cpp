@@ -125,7 +125,7 @@ static bool AppInit(NodeContext& node, int argc, char* argv[])
 
         if (!args.IsArgSet("-version")) {
             strUsage += FormatParagraph(LicenseInfo()) + "\n"
-                "\nUsage:  bitcoind [options]                     Start " PACKAGE_NAME "\n"
+                "\nUsage:  vertcoind [options]                     Start " PACKAGE_NAME "\n"
                 "\n";
             strUsage += args.GetHelpMessage();
         }

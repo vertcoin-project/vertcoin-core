@@ -2,14 +2,14 @@
 
 *.exe
 *.pdb
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-gui
-src/bitcoin-node
-src/bitcoin-tx
-src/bitcoin-util
-src/bitcoin-wallet
+src/vertcoin
+src/vertcoind
+src/vertcoin-cli
+src/vertcoin-gui
+src/vertcoin-node
+src/vertcoin-tx
+src/vertcoin-util
+src/vertcoin-wallet
 src/test/fuzz/fuzz
 src/test/test_bitcoin
 src/qt/test/test_bitcoin-qt
