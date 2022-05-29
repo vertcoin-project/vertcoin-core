@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+#  vertcoind The vertcoin core server.
+#
+#
+# chkconfig: 345 80 20
+# description: vertcoind
+# processname: vertcoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/vertcoind, see below
+if [ -f /etc/sysconfig/vertcoind ]; then
+        . /etc/sysconfig/vertcoind
+fi
+
+RETVAL=0
+
+prog=vertcoind
+# you can override the lockfile via VERTCOIND_LOCKFILE in /etc/sysconfig/vertcoind
+lockfile=${VERTCOIND_LOCKFILE-/var/lock/subsys/vertcoind}
+
+# vertcoind defaults to /usr/bin/vertcoind, override with VERTCOIND_BIN
+vertcoind=${VERTCOIND_BIN-/usr/bin/vertcoind}
+
+# vertcoind opts default to -disablewallet, override with VERTCOIND_OPTS
+vertcoind_opts=${VERTCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $vertcoind $vertcoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog -t600
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
