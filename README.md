@@ -1,82 +1,56 @@
-Bitcoin Core integration/staging tree
+Vertcoin Core integration/staging tree
 =====================================
 
-https://bitcoincore.org
+https://vertcoin.org
 
-For an immediately usable, binary version of the Bitcoin Core software, see
-https://bitcoincore.org/en/download/.
-
-Further information about Bitcoin Core is available in the [doc folder](/doc).
-
-What is Bitcoin?
+What is Vertcoin?
 ----------------
 
-Bitcoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Bitcoin Core is the name of open source
-software which enables the use of this currency.
+Vertcoin is a fork of Bitcoin that is designed to resist the monopolisation of
+mining power.
+ - 2.5 minute block targets
+ - Subsidy halves in 840k blocks (~4 years)
+ - 84 million total coins
+ - 25 coins per block 
+ - Difficulty retargeting every block to recover from large hashrate swings
+ - Verthash proof of work algorithm for ASIC resistance
 
-For more information read the original Bitcoin whitepaper.
+For more information, as well as an immediately useable, binary version of
+the Vertcoin client software, see http://www.vertcoin.org.
 
 License
 -------
 
-Bitcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Vertcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
-The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly from release branches to indicate new official, stable release versions of Bitcoin Core.
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/vertcoin-project/vertcoin-core/tags) are created
+regularly to indicate new official, stable release versions of Vertcoin Core.
 
-The https://github.com/bitcoin-core/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
+Developers work on their own forks and submit pull requests in order to merge
+changes with `master`. Due to the relatively small size of the development team,
+developers also commit directly to the repo often. Anyone is allowed to contribute
+though and useful pull requests will almost always be accepted given various
+obvious stipulations regarding stability etc. 
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
-and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
+The Vertcoin [discord](https://discord.gg/vertcoin) or [subreddit](https://reddit.com/r/vertcoin)
+should be used to discuss complicated or controversial changes with the developers 
+before working on a patch set.
 
 Testing
 -------
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/test), written
-in Python.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
-
-The CI (Continuous Integration) systems make sure that every pull request is built for Windows, Linux, and macOS,
-and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+Vertcoin currently relies on Bitcoin Core for its testcases, and few of them are
+known to work, though the software is based on fully tested conforming upstream 
+Bitcoin Core versions. We would be grateful to those who can help port the existing
+Bitcoin Core test cases to Vertcoin such that they can be used to assure correctness.
 
 Translations
 ------------
 
-Changes to translations as well as new translations can be submitted to
-[Bitcoin Core's Transifex page](https://www.transifex.com/bitcoin/bitcoin/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+Changes to translations as well as new translations can be submitted to as pull
+requests to this repo or to upstream Bitcoin Core.
