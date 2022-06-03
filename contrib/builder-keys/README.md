@@ -24,4 +24,4 @@ while read fingerprint keyholder_name; do gpg --keyserver hkp://subset.pool.sks-
 ```
 
 Add your key to the list if you provided Guix attestations for two major or
-minor releases of Bitcoin Core.
+minor releases of Vertcoin Core.
