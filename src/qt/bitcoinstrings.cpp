@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *vertcoin_strings[] = {
+static const char UNUSED *bitcoin_strings[] = {
 QT_TRANSLATE_NOOP("vertcoin-core", "The %s developers"),
 QT_TRANSLATE_NOOP("vertcoin-core", ""
 "%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring "
