@@ -697,7 +697,7 @@ vertcoin_node_SOURCES = $(vertcoin_daemon_sources) init/bitcoin-node.cpp
 vertcoin_node_CPPFLAGS = $(vertcoin_bin_cppflags)
 vertcoin_node_CXXFLAGS = $(vertcoin_bin_cxxflags)
 vertcoin_node_LDFLAGS = $(vertcoin_bin_ldflags)
-vertcoin_node_LDADD = $(LIBBITCOIN_SERVER) $(bitcoin_bin_ldadd) $(LIBBITCOIN_IPC) $(LIBMULTIPROCESS_LIBS)
+vertcoin_node_LDADD = $(LIBBITCOIN_SERVER) $(vertcoin_bin_ldadd) $(LIBBITCOIN_IPC) $(LIBMULTIPROCESS_LIBS)
 
 # vertcoin-cli binary #
 vertcoin_cli_SOURCES = bitcoin-cli.cpp
