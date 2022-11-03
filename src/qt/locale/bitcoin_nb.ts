@@ -66,13 +66,13 @@
         <translation type="unfinished">Mottager adresser</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dette er dine Vertcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Dette er dine Bitcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Dette er dine Vertcoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
+        <translation type="unfinished">Dette er dine Bitcoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -84,7 +84,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation type="unfinished">R&amp;ediger</translation>
+        <translation type="unfinished">&amp;Rediger</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -98,11 +98,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation type="unfinished">Fet oppstod en feil ved lagring av adresselisten til %1. Vennligst prøv igjen.</translation>
+        <translation type="unfinished">Det oppstod en feil ved lagring av adresselisten til %1. Vennligst prøv igjen.</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation type="unfinished">Eksporten feilet</translation>
+        <translation type="unfinished">Eksportering feilet</translation>
     </message>
 </context>
 <context>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Bekreft kryptering av lommeboken</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advarsel: Dersom du krypterer lommeboken og mister passordfrasen vil du &lt;b&gt;MISTE ALLE DINE VERTCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advarsel: Dersom du krypterer lommeboken og mister passordfrasen vil du &lt;b&gt;MISTE ALLE DINE BITCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -176,15 +176,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished">Angi den nye passordfrasen for lommeboken.&lt;br/&gt; Vennglist du bruker en passordfrase &lt;b&gt; ti eller tilfeldige tegn &lt;/b&gt;, eller &lt;b&gt; åtte eller flere ord.</translation>
+        <translation type="unfinished">Angi den nye passordfrasen for lommeboken.&lt;br/&gt; Vennglist bruk en passordfrase med &lt;b&gt; ti eller flere tilfeldige tegn &lt;/b&gt;, eller &lt;b&gt; åtte eller flere ord.</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
         <translation type="unfinished">Skriv inn den gamle passordfrasen og den nye passordfrasen for lommeboken.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Husk at å kryptere lommeboken ikke vil beskytte dine vertcoins fullstendig fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Husk at å kryptere lommeboken ikke vil beskytte dine bitcoins fullstendig fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -243,7 +243,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">Løpsk unntak</translation>
+    </message>
     <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">En fatal feil har skjedd. %1 kan ikke lenger trygt fortsette og kommer til å avslutte.</translation>
@@ -252,7 +256,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Internal error</source>
         <translation type="unfinished">Intern feil</translation>
     </message>
-    </context>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">En intern feil har oppstått. %1 vil forsøke å fortsette trygt. Dette er en uventet feil som kan bli rapportert som forklart nedenfor.</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -280,8 +288,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Beløp</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation type="unfinished">Oppgi en Vertcoin-adresse (f.eks. %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation type="unfinished">Oppgi en Bitcoin-adresse (f.eks. %1)</translation>
+    </message>
+    <message>
+        <source>Unroutable</source>
+        <translation type="unfinished">Ikke-rutbar</translation>
     </message>
     <message>
         <source>Internal</source>
@@ -294,6 +306,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Outbound</source>
         <translation type="unfinished">Utgående</translation>
+    </message>
+    <message>
+        <source>Full Relay</source>
+        <translation type="unfinished">Fullrelé</translation>
+    </message>
+    <message>
+        <source>Block Relay</source>
+        <translation type="unfinished">Blokkrelé</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="unfinished">Håndbok</translation>
+    </message>
+    <message>
+        <source>Feeler</source>
+        <translation type="unfinished">Føler</translation>
+    </message>
+    <message>
+        <source>Address Fetch</source>
+        <translation type="unfinished">Adressehenting</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -355,7 +387,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Oversikt</translation>
@@ -418,8 +450,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy er &lt;b&gt;slått på&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Send mynter til en Vertcoin adresse</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Send mynter til en Bitcoin adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -470,16 +502,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Signer &amp;melding...</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Signer meldingene med Vertcoin adresse for å bevise at diu eier dem</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Signer meldingene med Bitcoin adresse for å bevise at diu eier dem</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Vertcoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Bitcoin adresse</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -546,8 +578,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kobler til likemannsnettverket...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Be om betalinger (genererer QR-koder og vertcoin-URIer)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Be om betalinger (genererer QR-koder og bitcoin-URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -601,12 +633,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Oppdatert</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation type="unfinished">Last delvis signert Vertcoin transaksjon</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Last delvis signert Bitcoin transaksjon</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
-        <translation type="unfinished">Last Delvis Signert Vertcoin Transaksjon fra utklippstavle</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Last Delvis Signert Bitcoin Transaksjon fra utklippstavle</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -625,8 +657,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Mottaker adresser</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">Åpne en vertcoin: URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Åpne en bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -645,8 +677,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Lukk alle lommebøker</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation type="unfinished">Vis %1-hjelpemeldingen for å få en liste over mulige Vertcoin-kommandolinjealternativer</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Vis %1-hjelpemeldingen for å få en liste over mulige Bitcoin-kommandolinjealternativer</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -681,11 +713,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1-klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform> %n aktiv tilkobling til Vertcoin-nettverket.</numerusform>
-            <numerusform>%n aktive tilkoblinger til Vertcoin-nettverket.</numerusform>
+            <numerusform> %n aktiv tilkobling til Bitcoin-nettverket.</numerusform>
+            <numerusform>%n aktive tilkoblinger til Bitcoin-nettverket.</numerusform>
         </translation>
     </message>
     <message>
@@ -869,6 +901,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kopier &amp;beløp</translation>
     </message>
     <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Kopier transaksjons&amp;ID</translation>
+    </message>
+    <message>
         <source>L&amp;ock unspent</source>
         <translation type="unfinished">Lås ubrukte</translation>
     </message>
@@ -947,7 +983,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Create wallet warning</source>
         <translation type="unfinished">Lag lommebokvarsel</translation>
     </message>
-    </context>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">Kan ikke vise liste over undertegnere</translation>
+    </message>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1037,6 +1077,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Deskriptor lommebok</translation>
     </message>
     <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Bruk en ekstern undertegningsenhet, som en fysisk lommebok. Konfigurer det eksterne undertegningskriptet i lommebokinnstillingene først.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">Ekstern undertegner</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation type="unfinished">Opprett</translation>
     </message>
@@ -1044,7 +1092,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
         <translation type="unfinished">Kompilert uten sqlite støtte (kreves for deskriptor lommebok)</translation>
     </message>
-    </context>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Kompilert uten støtte for ekstern undertegning (kreves for ekstern undertegning)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1080,8 +1133,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Rediger utsendingsadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">Den angitte adressen "%1" er ikke en gyldig Vertcoin-adresse.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Den angitte adressen "%1" er ikke en gyldig Bitcoin-adresse.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1154,8 +1207,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation type="unfinished">%1 vil laste ned og lagre en kopi av Vertcoin blokkjeden.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">%1 vil laste ned og lagre en kopi av Bitcoin blokkjeden.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1247,12 +1300,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Skjema</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation type="unfinished">Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot vertcoin-nettverket er fullført, som anvist nedenfor.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot bitcoin-nettverket er fullført, som anvist nedenfor.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Forsøk på å bruke vertcoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Forsøk på å bruke bitcoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1294,8 +1347,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
-        <translation type="unfinished">Åpne vertcoin URI</translation>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Åpne bitcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1393,8 +1446,20 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Vertcoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">Ekstern undertegner (f.eks. fysisk lommebok)</translation>
+    </message>
+    <message>
+        <source>&amp;External signer script path</source>
+        <translation type="unfinished">&amp;Ekstern undertegner skriptsti</translation>
+    </message>
+    <message>
+        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Fullstendig sti til et Bitcoin Core-kompatibelt skript (f.eks. C:\Downloads\hwi.exe eller /Users/you/Downloads/hwi.py). Advarsel: skadevare kan stjele myntene dine!</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Bitcoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1409,8 +1474,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tillatt innkommend&amp;e tilkoblinger</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Koble til Vertcoin-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Koble til Bitcoin-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1466,15 +1531,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av vertcoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av bitcoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation type="unfinished">Skal myntkontroll funksjoner vises eller ikke.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Kobl til Vertcoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Kobl til Bitcoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1489,12 +1554,21 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Innebygd "%1"</translation>
     </message>
     <message>
+        <source>closest matching "%1"</source>
+        <translation type="unfinished">nærmeste treff "%1"</translation>
+    </message>
+    <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
         <translation type="unfinished">Alternativer som er satt i denne dialogboksen overstyres av kommandolinjen eller i konfigurasjonsfilen:</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
         <translation>&amp;Avbryt</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Kompilert uten støtte for ekstern undertegning (kreves for ekstern undertegning)</translation>
     </message>
     <message>
         <source>default</source>
@@ -1548,8 +1622,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Vertcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Bitcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1747,16 +1821,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Feil ved betalingsforespørsel</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation type="unfinished">Kan ikke starte vertcoin: Klikk-og-betal håndterer</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished">Kan ikke starte bitcoin: Klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI-håndtering</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">'vertcoin: //' er ikke en gyldig URI. Bruk 'vertcoin:' i stedet.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">'bitcoin: //' er ikke en gyldig URI. Bruk 'bitcoin:' i stedet.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1767,8 +1841,8 @@ Grunnet utbredte sikkerhetshull i BIP70 er det sterkt anbefalt å ignorere instr
 Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 kompatibel URI.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig vertcoin-adresse eller feilformede URI-parametre.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation type="unfinished">URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig bitcoin-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2004,12 +2078,20 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Hvorvidt likemannen ba oss om å videresende transaksjoner.</translation>
     </message>
     <message>
+        <source>Wants Tx Relay</source>
+        <translation type="unfinished">Ønsker Tx Relé</translation>
+    </message>
+    <message>
         <source>High Bandwidth</source>
         <translation type="unfinished">Høy Båndbredde</translation>
     </message>
     <message>
         <source>Connection Time</source>
         <translation type="unfinished">Tilkoblingstid</translation>
+    </message>
+    <message>
+        <source>Elapsed time since a novel block passing initial validity checks was received from this peer.</source>
+        <translation type="unfinished">Forløpt tid siden en ny blokk som passerte de initielle validitetskontrollene ble mottatt fra denne likemannen.</translation>
     </message>
     <message>
         <source>Last Block</source>
@@ -2092,6 +2174,34 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Innkommende: initiert av likemann</translation>
     </message>
     <message>
+        <source>Outbound Full Relay: default</source>
+        <translation type="unfinished">Utgående Fullrelé: standard</translation>
+    </message>
+    <message>
+        <source>Outbound Block Relay: does not relay transactions or addresses</source>
+        <translation type="unfinished">Utgående Blokkrelé: videresender ikke transaksjoner eller adresser</translation>
+    </message>
+    <message>
+        <source>Outbound Feeler: short-lived, for testing addresses</source>
+        <translation type="unfinished">Utgående Føler: kortlevd, til testing av adresser</translation>
+    </message>
+    <message>
+        <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
+        <translation type="unfinished">Utgående Adressehenting: kortlevd, for å hente adresser</translation>
+    </message>
+    <message>
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation type="unfinished">vi valgte likemannen for høy båndbredderelé</translation>
+    </message>
+    <message>
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation type="unfinished">likemannen valgte oss for høy båndbredderelé</translation>
+    </message>
+    <message>
+        <source>no high bandwidth relay selected</source>
+        <translation type="unfinished">intet høy båndbredderelé valgt</translation>
+    </message>
+    <message>
         <source>Ctrl+=</source>
         <extracomment>Secondary shortcut to increase the RPC console font size.</extracomment>
         <translation type="unfinished">Cltr+=</translation>
@@ -2103,6 +2213,10 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <message>
         <source>1 &amp;hour</source>
         <translation type="unfinished">1 &amp;time</translation>
+    </message>
+    <message>
+        <source>1 d&amp;ay</source>
+        <translation type="unfinished">1 &amp;dag</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
@@ -2127,6 +2241,11 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <message>
         <source>Executing command using "%1" wallet</source>
         <translation type="unfinished">Utfør kommando med lommebok "%1"</translation>
+    </message>
+    <message>
+        <source>Executing…</source>
+        <extracomment>A console message indicating an entered command is currently being executed.</extracomment>
+        <translation type="unfinished">Utfører...</translation>
     </message>
     <message>
         <source>(peer: %1)</source>
@@ -2176,8 +2295,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">&amp;Melding:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation type="unfinished">En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Vertcoin-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation type="unfinished">En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Bitcoin-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2307,6 +2426,10 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">&amp;Verifiser</translation>
     </message>
     <message>
+        <source>Verify this address on e.g. a hardware wallet screen</source>
+        <translation type="unfinished">Verifiser denne adressen på f.eks. en fysisk lommebokskjerm</translation>
+    </message>
+    <message>
         <source>&amp;Save Image…</source>
         <translation type="unfinished">&amp;Lagre Bilde...</translation>
     </message>
@@ -2354,7 +2477,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Vertcoins</translation>
+        <translation>Send Bitcoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2433,6 +2556,10 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Fjern alle felter fra skjemaet.</translation>
     </message>
     <message>
+        <source>Inputs…</source>
+        <translation type="unfinished">Inputs...</translation>
+    </message>
+    <message>
         <source>Dust:</source>
         <translation type="unfinished">Støv:</translation>
     </message>
@@ -2445,12 +2572,16 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skjul innstillinger for transaksjonsgebyr</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
-        <translation type="unfinished">Når det er mindre transaksjonsvolum enn plass i blokkene, kan minere så vel som noder håndheve et minimumsgebyr for videresending. Å kun betale minsteavgiften er helt greit, men vær klar over at dette kan skape en transaksjon som aldri blir bekreftet hvis det blir større etterspørsel etter vertcoin-transaksjoner enn nettverket kan behandle.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation type="unfinished">Når det er mindre transaksjonsvolum enn plass i blokkene, kan minere så vel som noder håndheve et minimumsgebyr for videresending. Å kun betale minsteavgiften er helt greit, men vær klar over at dette kan skape en transaksjon som aldri blir bekreftet hvis det blir større etterspørsel etter bitcoin-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
         <translation type="unfinished">For lavt gebyr kan føre til en transaksjon som aldri bekreftes (les verktøytips)</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks…)</source>
+        <translation type="unfinished">(Smartgebyr er ikke initialisert ennå. Dette tar vanligvis noen få blokker...)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2546,6 +2677,16 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Signering feilet</translation>
     </message>
     <message>
+        <source>External signer not found</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Ekstern undertegner ikke funnet</translation>
+    </message>
+    <message>
+        <source>External signer failure</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Ekstern undertegnerfeil</translation>
+    </message>
+    <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">Lagre Transaksjonsdata</translation>
     </message>
@@ -2559,6 +2700,10 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">PSBT lagret</translation>
     </message>
     <message>
+        <source>External balance:</source>
+        <translation type="unfinished">Ekstern saldo:</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation type="unfinished">eller</translation>
     </message>
@@ -2567,8 +2712,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Du kan øke gebyret senere (signaliserer Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Se over ditt transaksjonsforslag. Dette kommer til å produsere en Delvis Signert Vertcoin Transaksjon (PSBT) som du kan lagre eller kopiere og så signere med f.eks. en offline %1 lommebok, eller en PSBT kompatibel hardware lommebok.</translation>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Se over ditt transaksjonsforslag. Dette kommer til å produsere en Delvis Signert Bitcoin Transaksjon (PSBT) som du kan lagre eller kopiere og så signere med f.eks. en offline %1 lommebok, eller en PSBT kompatibel hardware lommebok.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -2633,13 +2778,13 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation>
-            <numerusform />
-            <numerusform />
+            <numerusform>Estimert å begynne bekreftelse innen %n blokk.</numerusform>
+            <numerusform>Estimert å begynne bekreftelse innen %n blokker.</numerusform>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation type="unfinished">Advarsel Ugyldig vertcoin-adresse</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation type="unfinished">Advarsel Ugyldig bitcoin-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2677,8 +2822,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Velg tidligere brukt adresse</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation type="unfinished">Vertcoin-adressen betalingen skal sendes til</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation type="unfinished">Bitcoin-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2693,8 +2838,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">beløpet som skal sendes inn den valgte enheten.</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre vertcoins enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre bitcoins enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2721,8 +2866,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">En melding som var tilknyttet vertcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Vertcoin-nettverket.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Bitcoin-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2740,12 +2885,12 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>&amp;Signer Melding</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta vertcoins sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta bitcoins sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation type="unfinished">Vertcoin-adressen meldingen skal signeres med</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation type="unfinished">Bitcoin-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2768,8 +2913,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Vertcoin-adressen</translation>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Bitcoin-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2792,8 +2937,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skriv inn mottakerens adresse, melding (forsikre deg om at du kopier linjeskift, mellomrom, faner osv. nøyaktig) og underskrift nedenfor for å bekrefte meldingen. Vær forsiktig så du ikke leser mer ut av signaturen enn hva som er i den signerte meldingen i seg selv, for å unngå å bli lurt av et man-in-the-middle-angrep. Merk at dette bare beviser at den som signerer kan motta med adressen, dette beviser ikke hvem som har sendt transaksjoner!</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation type="unfinished">Vertcoin-adressen meldingen ble signert med</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation type="unfinished">Bitcoin-adressen meldingen ble signert med</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -2804,8 +2949,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">signaturen som ble gitt da meldingen ble signert</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Vertcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Bitcoin-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3006,7 +3151,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Output index</source>
-        <translation type="unfinished">Utdatainndeks</translation>
+        <translation type="unfinished">Outputindeks</translation>
     </message>
     <message>
         <source> (Certificate was not verified)</source>
@@ -3018,7 +3163,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished">Genererte vertcoins må modne %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert", og vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk innen noen sekunder av din.</translation>
+        <translation type="unfinished">Genererte bitcoins må modne %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert", og vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk innen noen sekunder av din.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3027,10 +3172,6 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <message>
         <source>Transaction</source>
         <translation type="unfinished">Transaksjon</translation>
-    </message>
-    <message>
-        <source>Inputs</source>
-        <translation type="unfinished">Inndata</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3130,10 +3271,6 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">kun oppsyn</translation>
     </message>
     <message>
-        <source>(n/a)</source>
-        <translation type="unfinished">(i/t)</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation type="unfinished">(ingen beskrivelse)</translation>
     </message>
@@ -3217,6 +3354,10 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Minimumsbeløp</translation>
     </message>
     <message>
+        <source>Range…</source>
+        <translation type="unfinished">Intervall...</translation>
+    </message>
+    <message>
         <source>&amp;Copy address</source>
         <translation type="unfinished">&amp;Kopier adresse</translation>
     </message>
@@ -3229,8 +3370,24 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Kopier &amp;beløp</translation>
     </message>
     <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Kopier transaksjons&amp;ID</translation>
+    </message>
+    <message>
         <source>Copy full transaction &amp;details</source>
         <translation type="unfinished">Kopier komplette transaksjons&amp;detaljer</translation>
+    </message>
+    <message>
+        <source>&amp;Show transaction details</source>
+        <translation type="unfinished">&amp;Vis transaksjonsdetaljer</translation>
+    </message>
+    <message>
+        <source>Increase transaction &amp;fee</source>
+        <translation type="unfinished">Øk transaksjons&amp;gebyr</translation>
+    </message>
+    <message>
+        <source>&amp;Edit address label</source>
+        <translation type="unfinished">&amp;Rediger merkelapp</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
@@ -3305,7 +3462,7 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send Vertcoins</translation>
+        <translation type="unfinished">Send Bitcoins</translation>
     </message>
     <message>
         <source>Fee bump error</source>
@@ -3334,6 +3491,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     <message>
         <source>New fee:</source>
         <translation type="unfinished">Nytt gebyr:</translation>
+    </message>
+    <message>
+        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
+        <translation type="unfinished">Advarsel: Dette kan betale tilleggsgebyret ved å redusere endringsoutput eller legge til input, ved behov. Det kan legge til en ny endringsoutput hvis en ikke allerede eksisterer. Disse endringene kan potensielt lekke privatinformasjon.</translation>
     </message>
     <message>
         <source>Confirm fee bump</source>
@@ -3429,14 +3590,14 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s-utviklerne</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s korrupt. Prøv å bruk lommebokverktøyet vertcoin-wallet til å fikse det eller laste en backup.</translation>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s korrupt. Prøv å bruk lommebokverktøyet bitcoin-wallet til å fikse det eller laste en backup.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -3467,12 +3628,28 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Feil under lesing av %s! Alle nøkler har blitt lest rett, men transaksjonsdata eller adressebokoppføringer kan mangle eller være uriktige.</translation>
     </message>
     <message>
+        <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
+        <translation type="unfinished">Feil: Dumpfil formatoppføring stemmer ikke. Fikk "%s", forventet "format".</translation>
+    </message>
+    <message>
+        <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
+        <translation type="unfinished">Feil: Dumpfil identifiseringsoppføring stemmer ikke. Fikk "%s", forventet "%s".</translation>
+    </message>
+    <message>
+        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Feil: Dumpfil versjon er ikke støttet. Denne versjonen av bitcoin-lommebok støtter kun versjon 1 dumpfiler. Fikk dumpfil med versjon %s</translation>
+    </message>
+    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation type="unfinished">Feil: Lytting etter innkommende tilkoblinger feilet (lytting returnerte feil %s)</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
         <translation type="unfinished">Avgiftsberegning mislyktes. Fallbackfee er deaktivert. Vent et par blokker eller aktiver -fallbackfee.</translation>
+    </message>
+    <message>
+        <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
+        <translation type="unfinished">Filen %s eksisterer allerede. Hvis du er sikker på at det er dette du vil, flytt den vekk først.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
@@ -3497,6 +3674,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation type="unfinished">Beskjæring: siste lommeboksynkronisering går utenfor beskjærte data. Du må bruke -reindex (laster ned hele blokkjeden igjen for beskjærte noder)</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unknown sqlite wallet schema version %d. Only version %d is supported</source>
+        <translation type="unfinished">SQLiteDatabase: Ukjent sqlite lommebok skjema versjon %d. Kun versjon %d er støttet</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -3533,6 +3714,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     <message>
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
         <translation type="unfinished">Kan ikke spille av blokker igjen. Du må bygge opp igjen databasen ved bruk av -reindex-chainstate.</translation>
+    </message>
+    <message>
+        <source>Warning: Dumpfile wallet format "%s" does not match command line specified format "%s".</source>
+        <translation type="unfinished">Advarsel: Dumpfil lommebokformat "%s" stemmer ikke med format "%s" spesifisert i kommandolinje.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
@@ -3595,6 +3780,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Ferdig med lasting</translation>
     </message>
     <message>
+        <source>Dump file %s does not exist.</source>
+        <translation type="unfinished">Dump fil %s eksisterer ikke.</translation>
+    </message>
+    <message>
         <source>Error creating %s</source>
         <translation type="unfinished">Feil under opprettelse av %s</translation>
     </message>
@@ -3631,6 +3820,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Feil ved lesing fra database, stenger ned.</translation>
     </message>
     <message>
+        <source>Error reading next record from wallet database</source>
+        <translation type="unfinished">Feil ved lesing av neste oppføring fra lommebokdatabase</translation>
+    </message>
+    <message>
         <source>Error upgrading chainstate database</source>
         <translation type="unfinished">Feil ved oppgradering av kjedetilstandsdatabase</translation>
     </message>
@@ -3643,12 +3836,28 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Feil: Dumpfil sjekksum samsvarer ikke. Beregnet %s, forventet %s</translation>
     </message>
     <message>
+        <source>Error: Got key that was not hex: %s</source>
+        <translation type="unfinished">Feil: Fikk nøkkel som ikke var hex: %s</translation>
+    </message>
+    <message>
+        <source>Error: Got value that was not hex: %s</source>
+        <translation type="unfinished">Feil: Fikk verdi som ikke var hex: %s</translation>
+    </message>
+    <message>
         <source>Error: Keypool ran out, please call keypoolrefill first</source>
         <translation type="unfinished">Feil: Keypool gikk tom, kall keypoolrefill først.</translation>
     </message>
     <message>
         <source>Error: Missing checksum</source>
         <translation type="unfinished">Feil: Manglende sjekksum</translation>
+    </message>
+    <message>
+        <source>Error: No %s addresses available.</source>
+        <translation type="unfinished">Feil: Ingen %s adresser tilgjengelige.</translation>
+    </message>
+    <message>
+        <source>Error: Unable to write record to new wallet</source>
+        <translation type="unfinished">Feil: Kan ikke skrive rekord til ny lommebok</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -3715,6 +3924,18 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Ugyldig nettmaske spesifisert i -whitelist: '%s'</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">Laster P2P-adresser...</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">Laster inn bannlysningsliste…</translation>
+    </message>
+    <message>
+        <source>Loading block index…</source>
+        <translation type="unfinished">Laster blokkindeks...</translation>
+    </message>
+    <message>
         <source>Loading wallet…</source>
         <translation type="unfinished">Laster lommebok...</translation>
     </message>
@@ -3735,8 +3956,12 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Beskjæringsmodus kan ikke konfigureres med en negativ verdi.</translation>
     </message>
     <message>
+        <source>Prune mode is incompatible with -coinstatsindex.</source>
+        <translation type="unfinished">Beskjæringsmodus er inkompatibel med -coinstatsindex.</translation>
+    </message>
+    <message>
         <source>Prune mode is incompatible with -txindex.</source>
-        <translation type="unfinished">Beskjæringsmodus er ikke kompatibel med -txindex.</translation>
+        <translation type="unfinished">Beskjæringsmodus er inkompatibel med -txindex.</translation>
     </message>
     <message>
         <source>Pruning blockstore…</source>
@@ -3747,8 +3972,28 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Reduserer -maxconnections fra %d til %d, pga. systembegrensninger.</translation>
     </message>
     <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">Spiller av blokker på nytt …</translation>
+    </message>
+    <message>
         <source>Rescanning…</source>
         <translation type="unfinished">Leser gjennom igjen...</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
+        <translation type="unfinished">SQLiteDatabase: Kunne ikke utføre uttrykk for å verifisere database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
+        <translation type="unfinished">SQLiteDataBase: Kunne ikke forberede uttrykk for å verifisere database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation type="unfinished">SQLiteDatabase: Kunne ikke lese databaseverifikasjonsfeil: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
+        <translation type="unfinished">SQLiteDatabase: Uventet applikasjonsid. Forventet %u, fikk %u</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -3815,6 +4060,10 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Transaksjonen må ha minst én mottaker</translation>
     </message>
     <message>
+        <source>Transaction needs a change address, but we can't generate it. %s</source>
+        <translation type="unfinished">Transaksjonen trenger en vekseladresse, men vi kan ikke generere den. %s</translation>
+    </message>
+    <message>
         <source>Transaction too large</source>
         <translation type="unfinished">Transaksjonen er for stor</translation>
     </message>
@@ -3835,12 +4084,20 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Klarte ikke å lage nøkkel</translation>
     </message>
     <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">Kan ikke åpne %s for skriving</translation>
+    </message>
+    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">Kunne ikke starte HTTP-tjener. Se feilrettingslogg for detaljer.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation type="unfinished">Ukjent nettverk angitt i -onlynet '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">Ukjente nye regler aktivert (versionbit %i)</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>

@@ -3,15 +3,15 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation type="unfinished">지갑 주소나 라벨을 수정하려면 우클릭을 하십시오.</translation>
+        <translation type="unfinished">우클릭하여 주소나 상표 수정하기</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>새로운 지갑 주소 생성</translation>
+        <translation>새로운 주소 생성 </translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation type="unfinished">새 항목(&amp;N)</translation>
+        <translation type="unfinished">&amp;새 항목</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -19,15 +19,15 @@
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation type="unfinished">복사(&amp;C)</translation>
+        <translation type="unfinished">&amp;복사</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation type="unfinished">닫기(&amp;L)</translation>
+        <translation type="unfinished">C&amp;닫기</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>목록에 현재 선택한 주소를 삭제</translation>
+        <translation>목록에 현재 선택한 주소 삭제</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -39,11 +39,11 @@
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>내보내기 (&amp;E)</translation>
+        <translation>&amp;내보내기</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>삭제(&amp;D)</translation>
+        <translation>&amp;삭제</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -51,11 +51,11 @@
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">코인을 받을 주소를 선택하십시오.</translation>
+        <translation type="unfinished">코인을 받을 주소를 선택하십시오</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation type="unfinished">선택(&amp;H)</translation>
+        <translation type="unfinished">&amp;선택</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -66,11 +66,11 @@
         <translation type="unfinished">받는 주소들</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">비트코인을 보내는 계좌 주소입니다. 코인을 보내기 전에 금액과 받는 주소를 항상 확인하십시오.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">비트코인을 받는 계좌 주소입니다. 신규 주소를 만들려면 수신 탭의 '새 수신 주소를 생성하기' 버튼을 사용하십시오.
 서명은 '레거시' 타입의 주소만 가능합니다.</translation>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">지갑 암호화 승인</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation type="unfinished">경고: 만약 암호화 된 지갑의 비밀번호를 잃어버릴 경우, &lt;b&gt;모든 비트코인들을 잃어버릴 수 있습니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">지갑의 이전 비밀번호와 새로운 비밀번호를 입력하세요.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">지갑을 암호화 해도 컴퓨터에 바이러스가 있을시 안전하지 않다는 것을 참고하세요.</translation>
     </message>
     <message>
@@ -244,7 +244,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
     <message>
         <source>Runaway exception</source>
         <translation type="unfinished">런어웨이 예외</translation>
@@ -293,8 +293,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">금액</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
         <translation type="unfinished">비트코인 주소를 입력하세요 (예: %1)</translation>
+    </message>
+    <message>
+        <source>Unroutable</source>
+        <translation type="unfinished">라우팅할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Internal</source>
+        <translation type="unfinished">내부</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -303,6 +311,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Outbound</source>
         <translation type="unfinished">아웃바운드</translation>
+    </message>
+    <message>
+        <source>Full Relay</source>
+        <translation type="unfinished">전체 릴레이</translation>
+    </message>
+    <message>
+        <source>Block Relay</source>
+        <translation type="unfinished">블록 릴레이</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="unfinished">매뉴얼</translation>
+    </message>
+    <message>
+        <source>Feeler</source>
+        <translation type="unfinished">필러</translation>
+    </message>
+    <message>
+        <source>Address Fetch</source>
+        <translation type="unfinished">주소 가져오기</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -339,19 +367,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n hour(s)</source>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>%n시간</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>%n일</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>%n주</numerusform>
         </translation>
     </message>
     <message>
@@ -361,7 +389,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>%n년</numerusform>
         </translation>
     </message>
     <message>
@@ -378,7 +406,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>개요(&amp;O)</translation>
@@ -441,7 +469,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">프록시가 &lt;b&gt;활성화&lt;/b&gt; 되었습니다: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
+        <source>Send coins to a Bitcoin address</source>
         <translation>코인을 비트코인 주소로 전송합니다.</translation>
     </message>
     <message>
@@ -493,7 +521,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지 서명(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>지갑 주소가 본인 소유인지 증명하기 위해 메시지를 서명합니다.</translation>
     </message>
     <message>
@@ -501,7 +529,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지 검증(&amp;V)</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>해당 비트코인 주소로 서명되었는지 확인하기 위해 메시지를 검증합니다.</translation>
     </message>
     <message>
@@ -569,8 +597,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">피어에 연결 중...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">지불 요청하기 (QR 코드와 vertcoin을 생성합니다: URIs)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">지불 요청하기 (QR 코드와 bitcoin을 생성합니다: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -587,7 +615,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform />
+            <numerusform>트랜잭션 기록 블록 %n개를 처리했습니다.</numerusform>
         </translation>
     </message>
     <message>
@@ -623,11 +651,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>최신 정보</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
+        <source>Load Partially Signed Bitcoin Transaction</source>
         <translation type="unfinished">부분적으로 서명된 비트코인 트랜잭션 불러오기</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
         <translation type="unfinished">클립보드로부터 부분적으로 서명된 비트코인 트랜잭션 불러오기</translation>
     </message>
     <message>
@@ -647,8 +675,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">받는 주소들(&amp;R)</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">vertcoin 열기: URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">bitcoin 열기: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -667,7 +695,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">모든 지갑 닫기</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation type="unfinished">사용할 수 있는 비트코인 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
     </message>
     <message>
@@ -707,10 +735,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 클라이언트</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>%n은/는 비트코인 네트워크에 대한 활성 연결입니다.</numerusform>
         </translation>
     </message>
     <message>
@@ -892,6 +920,30 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">거래액 복사</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp; 주소 복사</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">복사 &amp; 라벨</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">복사 &amp; 금액</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">복사 트랜잭션 &amp; 아이디</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">L&amp;ock 미사용</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">&amp; 사용 안 함 잠금 해제</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">수량 복사</translation>
     </message>
@@ -962,7 +1014,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Create wallet warning</source>
         <translation type="unfinished">지갑 생성 경고</translation>
     </message>
-    </context>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">서명자를 나열할 수 없습니다.</translation>
+    </message>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1056,6 +1112,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">디스크립터 지갑</translation>
     </message>
     <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Hardware wallet과 같은 외부 서명 장치를 사용합니다. 지갑 기본 설정에서 외부 서명자 스크립트를 먼저 구성하십시오.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">외부 서명자</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation type="unfinished">생성</translation>
     </message>
@@ -1063,7 +1127,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
         <translation type="unfinished">에스큐엘라이트 지원 없이 컴파일 되었습니다. (디스크립터 지갑에 요구됩니다.)</translation>
     </message>
-    </context>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">외부 서명 지원 없이 컴파일됨 (외부 서명에 필요) 개발자 참고 사항 [from:developer] "외부 서명"은 하드웨어 지갑과 같은 장치를 사용하는 것을 의미합니다.</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1099,7 +1168,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">보내는 주소 편집</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation type="unfinished">입력한 "%1" 주소는 올바른 비트코인 주소가 아닙니다.</translation>
     </message>
     <message>
@@ -1145,7 +1214,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>Vertcoin</source>
+        <source>Bitcoin</source>
         <translation type="unfinished">비트코인</translation>
     </message>
     <message>
@@ -1172,11 +1241,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>(sufficient to restore backups %n day(s) old)</source>
         <extracomment>Explanatory text on the capability of the current prune target.</extracomment>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>(%n일 전의 백업을 복원하기에 충분함)</numerusform>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
         <translation type="unfinished">%1은 비트코인 블록체인의 사본을 다운로드하여 저장합니다.</translation>
     </message>
     <message>
@@ -1269,11 +1338,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">유형</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
         <translation type="unfinished">최근 거래는 아직 보이지 않을 수 있습니다. 따라서 당신의 지갑의 잔액이 틀릴 수도 있습니다. 이 정보는 당신의 지갑이 비트코인 네트워크와 완전한 동기화를 완료하면, 아래의 설명과 같이 정확해집니다.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">아직 표시되지 않은 거래의 영향을 받는 비트코인을 사용하려고 하는 것은 네트워크에서 허가되지 않습니다.</translation>
     </message>
     <message>
@@ -1320,7 +1389,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
+        <source>Open bitcoin URI</source>
         <translation type="unfinished">비트코인 URI 열기</translation>
     </message>
     </context>
@@ -1341,6 +1410,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>&amp;Start %1 on system login</source>
         <translation type="unfinished">시스템 로그인시 %1 시작(&amp;S)</translation>
+    </message>
+    <message>
+        <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation type="unfinished">정리를 활성화하면 트랜잭션을 저장하는 데 필요한 디스크 공간이 크게 줄어듭니다. 모든 블록의 유효성이 여전히 완전히 확인되었습니다. 이 설정을 되돌리려면 전체 블록체인을 다시 다운로드해야 합니다.</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1419,7 +1492,20 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">검증되지 않은 잔돈 쓰기 (&amp;S)</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">외부 서명자 (예: 하드웨어 지갑)</translation>
+    </message>
+    <message>
+        <source>&amp;External signer script path</source>
+        <translation type="unfinished">외부 서명자 스크립트 경로
+ </translation>
+    </message>
+    <message>
+        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">비트코인 코어 호환 스크립트의 전체 경로 (예: C:\Downloads\whi.exe 또는 /Users/you/Downloads/hwi.py). 주의: 악성 프로그램이 코인을 훔칠 수 있습니다!</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>라우터에서 비트코인 클라이언트 포트를 자동적으로 엽니다. 라우터에서 UPnP를 지원하고 활성화 했을 경우에만 동작합니다.</translation>
     </message>
     <message>
@@ -1427,7 +1513,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;UPnP를 이용해 포트 매핑</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">라우터에서 비트코인 클라이언트 포트를 자동으로 엽니다. 이는 라우터가 NAT-PMP를 지원하고 활성화 된 경우에만 작동합니다. 외부 포트는 무작위 일 수 있습니다.</translation>
     </message>
     <message>
@@ -1443,7 +1529,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">연결 요청을 허용 (&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">SOCKS5 프록시를 통해 비트코인 네트워크에 연결합니다.</translation>
     </message>
     <message>
@@ -1515,8 +1601,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">코인 상세 제어기능에 대한 표시 여부를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Vertcoin 네트워크에 연결합니다.</translation>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Bitcoin 네트워크에 연결합니다.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1525,6 +1611,18 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>&amp;Third party transaction URLs</source>
         <translation type="unfinished">제 3자 거래 URL들(&amp;T)</translation>
+    </message>
+    <message>
+        <source>Monospaced font in the Overview tab:</source>
+        <translation type="unfinished">개요 탭의 고정 폭 글꼴:</translation>
+    </message>
+    <message>
+        <source>embedded "%1"</source>
+        <translation type="unfinished">%1 포함됨</translation>
+    </message>
+    <message>
+        <source>closest matching "%1"</source>
+        <translation type="unfinished">가장 가까운 의미 "1%1"</translation>
     </message>
     <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
@@ -1537,6 +1635,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>&amp;Cancel</source>
         <translation>취소(&amp;C)</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">외부 서명 지원 없이 컴파일됨 (외부 서명에 필요) 개발자 참고 사항 [from:developer] "외부 서명"은 하드웨어 지갑과 같은 장치를 사용하는 것을 의미합니다.</translation>
     </message>
     <message>
         <source>default</source>
@@ -1590,7 +1693,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>유형</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>표시된 정보가 오래된 것 같습니다. 당신의 지갑은 비트코인 네트워크에 연결된 뒤 자동으로 동기화 하지만, 아직 과정이 끝나지 않았습니다.</translation>
     </message>
     <message>
@@ -1681,6 +1784,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">클립보드로 복사</translation>
     </message>
     <message>
+        <source>Save…</source>
+        <translation type="unfinished">저장...</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation type="unfinished">닫기</translation>
     </message>
@@ -1719,6 +1826,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">트랜잭션 데이터 저장</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">부분 서명 트랜잭션 (이진수)</translation>
     </message>
     <message>
         <source>PSBT saved to disk.</source>
@@ -1780,7 +1892,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">지불 요청 오류</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation type="unfinished">비트코인을 시작할 수 없습니다: 지급을 위한 클릭 핸들러</translation>
     </message>
     <message>
@@ -1788,11 +1900,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">URI 핸들링</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">'vertcoin://"은 잘못된 URI입니다. 'vertcoin:'을 사용하십시오.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <source>Cannot process payment request because BIP70 is not supported.
+Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
+If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
+        <translation type="unfinished">BIP70이 지원되지 않으므로 결제 요청을 처리할 수 없습니다.
+BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지갑을 전환하라는 지침을 무시하는 것이 좋습니다.
+이 오류가 발생하면 판매자에게 BIP21 호환 URI를 제공하도록 요청해야 합니다.</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
         <translation type="unfinished">URI의 파싱에 문제가 발생했습니다. 잘못된 비트코인 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
@@ -1845,6 +1965,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 </context>
 <context>
     <name>QRImageWidget</name>
+    <message>
+        <source>&amp;Save Image…</source>
+        <translation type="unfinished">이미지 저장...(&amp;S)</translation>
+    </message>
     <message>
         <source>&amp;Copy Image</source>
         <translation type="unfinished">이미지 복사(&amp;C)</translation>
@@ -2014,12 +2138,52 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">권한</translation>
     </message>
     <message>
+        <source>The direction and type of peer connection: %1</source>
+        <translation type="unfinished">피어 연결의 방향 및 유형: %1</translation>
+    </message>
+    <message>
+        <source>The network protocol this peer is connected through: IPv4, IPv6, Onion, I2P, or CJDNS.</source>
+        <translation type="unfinished">이 피어가 연결된 네트워크 프로토콜: IPv4, IPv6, Onion, I2P 또는 CJDNS.</translation>
+    </message>
+    <message>
         <source>Services</source>
         <translation type="unfinished">서비스</translation>
     </message>
     <message>
+        <source>Whether the peer requested us to relay transactions.</source>
+        <translation type="unfinished">피어가 트랜잭션 중계를 요청했는지 여부.</translation>
+    </message>
+    <message>
+        <source>Wants Tx Relay</source>
+        <translation type="unfinished">Tx 릴레이를 원합니다</translation>
+    </message>
+    <message>
+        <source>High bandwidth BIP152 compact block relay: %1</source>
+        <translation type="unfinished">고대역폭 BIP152 소형 블록 릴레이: %1</translation>
+    </message>
+    <message>
+        <source>High Bandwidth</source>
+        <translation type="unfinished">고대역폭</translation>
+    </message>
+    <message>
         <source>Connection Time</source>
         <translation type="unfinished">접속 시간</translation>
+    </message>
+    <message>
+        <source>Elapsed time since a novel block passing initial validity checks was received from this peer.</source>
+        <translation type="unfinished">초기 유효성 검사를 통과하는 새로운 블록이 이 피어로부터 수신된 이후 경과된 시간입니다.</translation>
+    </message>
+    <message>
+        <source>Last Block</source>
+        <translation type="unfinished">마지막 블록</translation>
+    </message>
+    <message>
+        <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
+        <translation type="unfinished">이 피어에서 새 트랜잭션이 수신된 이후 경과된 시간입니다.</translation>
+    </message>
+    <message>
+        <source>Last Tx</source>
+        <translation type="unfinished">마지막 Tx</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -2086,12 +2250,53 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">출력:</translation>
     </message>
     <message>
+        <source>Inbound: initiated by peer</source>
+        <translation type="unfinished">시작점 : 동기에 의해 시작됨</translation>
+    </message>
+    <message>
+        <source>Outbound Full Relay: default</source>
+        <translation type="unfinished">아웃바운드 전체 릴레이: 기본값</translation>
+    </message>
+    <message>
+        <source>Outbound Block Relay: does not relay transactions or addresses</source>
+        <translation type="unfinished">아웃바운드 블록 릴레이: 트랜잭션 또는 주소를 릴레이하지 않음</translation>
+    </message>
+    <message>
+        <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
+        <translation type="unfinished">아웃바운드 매뉴얼 : RPC 1%1 이나 2%2/3%3 을 사용해서 환경설정 옵션을 추가</translation>
+    </message>
+    <message>
+        <source>Outbound Feeler: short-lived, for testing addresses</source>
+        <translation type="unfinished">Outbound Feeler: 짧은 용도, 주소 테스트용</translation>
+    </message>
+    <message>
+        <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
+        <translation type="unfinished">아웃바운드 주소 가져오기: 단기, 주소 요청용
+ </translation>
+    </message>
+    <message>
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation type="unfinished">저희는 가장 빠른 대역폭을 가지고 있는 피어를 선택합니다.</translation>
+    </message>
+    <message>
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation type="unfinished">피어는 높은 대역폭을 위해 우리를 선택합니다</translation>
+    </message>
+    <message>
+        <source>no high bandwidth relay selected</source>
+        <translation type="unfinished">고대역폭 릴레이가 선택되지 않음</translation>
+    </message>
+    <message>
         <source>&amp;Disconnect</source>
         <translation type="unfinished">접속 끊기(&amp;D)</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
         <translation type="unfinished">1시간(&amp;H)</translation>
+    </message>
+    <message>
+        <source>1 d&amp;ay</source>
+        <translation type="unfinished">1일(&amp;a)</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
@@ -2116,6 +2321,23 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Executing command using "%1" wallet</source>
         <translation type="unfinished">"%1" 지갑을 사용하여 명령 실행</translation>
+    </message>
+    <message>
+        <source>Welcome to the %1 RPC console.
+Use up and down arrows to navigate history, and %2 to clear screen.
+Use %3 and %4 to increase or decrease the font size.
+Type %5 for an overview of available commands.
+For more information on using this console, type %6.
+
+%7WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.%8</source>
+        <extracomment>RPC console welcome message. Placeholders %7 and %8 are style tags for the warning content, and they are not space separated from the rest of the text intentionally.</extracomment>
+        <translation type="unfinished">1%1 RPC 콘솔에 오신 것을 환영합니다.
+위쪽 및 아래쪽 화살표를 사용하여 기록 탐색을하고 2%2를 사용하여 화면을 지우세요. 
+3%3과 4%4을 사용하여 글꼴 크기 증가 또는 감소하세요
+사용 가능한 명령의 개요를 보려면 5%5를 입력하십시오.
+이 콘솔 사용에 대한 자세한 내용을 보려면 6%6을 입력하십시오.
+7%7 경고: 사기꾼들은 사용자들에게 여기에 명령을 입력하라고 말하고 활발히 금품을 훔칩니다. 완전히 이해하지 않고 이 콘솔을 사용하지 마십시오. 8%8
+</translation>
     </message>
     <message>
         <source>Executing…</source>
@@ -2151,6 +2373,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">차단사유:</translation>
     </message>
     <message>
+        <source>Never</source>
+        <translation type="unfinished">절대</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation type="unfinished">알수없음</translation>
     </message>
@@ -2170,7 +2396,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
         <translation type="unfinished">지불 요청에 첨부되는 선택가능한 메시지 입니다. 이 메세지는 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -2238,6 +2464,22 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">URI 복사(&amp;U)</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp; 주소 복사</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">복사 &amp; 라벨</translation>
+    </message>
+    <message>
+        <source>Copy &amp;message</source>
+        <translation type="unfinished">메세지 복사(&amp;m)</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">복사 &amp; 금액</translation>
+    </message>
+    <message>
         <source>Could not unlock wallet.</source>
         <translation type="unfinished">지갑을 잠금해제 할 수 없습니다.</translation>
     </message>
@@ -2248,6 +2490,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Request payment to …</source>
+        <translation type="unfinished">에게 지불을 요청</translation>
+    </message>
     <message>
         <source>Address:</source>
         <translation type="unfinished">주소:</translation>
@@ -2275,6 +2521,18 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Copy &amp;Address</source>
         <translation type="unfinished">주소 복사(&amp;A)</translation>
+    </message>
+    <message>
+        <source>&amp;Verify</source>
+        <translation type="unfinished">&amp;승인</translation>
+    </message>
+    <message>
+        <source>Verify this address on e.g. a hardware wallet screen</source>
+        <translation type="unfinished">하드웨어 지갑 화면 등에서 이 주소를 확인하십시오</translation>
+    </message>
+    <message>
+        <source>&amp;Save Image…</source>
+        <translation type="unfinished">이미지 저장...(&amp;S)</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -2423,12 +2681,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">거래 수수료 설정 숨기기</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satoshis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation type="unfinished">트랜잭션 가상 크기의 kB (1,000바이트)당 사용자 지정 수수료를 지정합니다.
+
+참고: 수수료는 바이트 단위로 계산되므로 500 가상 바이트(1kvB의 절반)의 트랜잭션 크기에 대해 "kvB당 100 사토시"의 수수료율은 궁극적으로 50사토시만 수수료를 산출합니다.</translation>
+    </message>
+    <message>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation type="unfinished">거래량이 블록에 남은 공간보다 적은 경우, 채굴자나 중계 노드들이 최소 수수료를 허용할 수 있습니다. 최소 수수료만 지불하는건 괜찮지만, 네트워크가 처리할 수 있는 용량을 넘는 비트코인 거래가 있을 경우에는 이 거래가 승인이 안될 수 있다는 점을 유의하세요.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
         <translation type="unfinished">너무 적은 수수료로는 거래 승인이 안될 수도 있습니다 (툴팁을 참고하세요)</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks…)</source>
+        <translation type="unfinished">(Smart fee가 아직 초기화 되지 않았습니다. 블록 분석이 완전하게 끝날 때 까지 기다려주십시오...)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2491,11 +2761,25 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 (%2 블록)</translation>
     </message>
     <message>
+        <source>Sign on device</source>
+        <extracomment>"device" usually means a hardware wallet</extracomment>
+        <translation type="unfinished">장치에 로그인</translation>
+    </message>
+    <message>
+        <source>Connect your hardware wallet first.</source>
+        <translation type="unfinished">먼저 하드웨어 지갑을 연결하십시오.</translation>
+    </message>
+    <message>
+        <source>Set external signer script path in Options -&gt; Wallet</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">옵션 -&gt; 지갑에서 외부 서명자 스크립트 경로 설정</translation>
+    </message>
+    <message>
         <source>Cr&amp;eate Unsigned</source>
         <translation type="unfinished">사인되지 않은 것을 생성(&amp;e)</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Vertcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">오프라인 %1 지갑 또는 PSBT가 호환되는 하드웨어 지갑과의 사용을 위한 '부분적으로 서명 된 비트 코인 트랜잭션(PSBT)'를 생성합니다.</translation>
     </message>
     <message>
@@ -2523,8 +2807,31 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">서명되지 않은 것을 생성</translation>
     </message>
     <message>
+        <source>Sign and send</source>
+        <translation type="unfinished">서명하고 보내기</translation>
+    </message>
+    <message>
+        <source>Sign failed</source>
+        <translation type="unfinished">서명 실패</translation>
+    </message>
+    <message>
+        <source>External signer not found</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">외부 서명자를 찾을 수 없음</translation>
+    </message>
+    <message>
+        <source>External signer failure</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">외부 서명자 실패</translation>
+    </message>
+    <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">트랜잭션 데이터 저장</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">부분 서명 트랜잭션 (이진수)</translation>
     </message>
     <message>
         <source>PSBT saved</source>
@@ -2539,7 +2846,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">추후에 거래 수수료를 올릴 수 있습니다 ('수수료로-대체', BIP-125 지원)</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">거래 제안을 검토해 주십시오. 이것은 당신이 저장하거나 복사한 뒤 e.g. 오프라인 %1 지갑 또는 PSBT 호환 하드웨어 지갑으로 서명할 수 있는 PSBT (부분적으로 서명된 비트코인 트랜잭션)를 생성할 것입니다.</translation>
     </message>
     <message>
@@ -2609,7 +2916,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
+        <source>Warning: Invalid Bitcoin address</source>
         <translation type="unfinished">경고: 잘못된 비트코인 주소입니다</translation>
     </message>
     <message>
@@ -2648,7 +2955,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">이전에 사용한 주소를 선택하기</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
+        <source>The Bitcoin address to send the payment to</source>
         <translation type="unfinished">이 비트코인 주소로 송금됩니다</translation>
     </message>
     <message>
@@ -2664,7 +2971,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">선택한 단위로 보낼 수량</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">수수료가 송금되는 금액에서 공제됩니다. 수령자는 금액 필드에서 입력한 금액보다 적은 금액을 전송받게 됩니다. 받는 사람이 여러 명인 경우 수수료는 균등하게 나누어집니다.</translation>
     </message>
     <message>
@@ -2692,8 +2999,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">이 주소에 라벨을 입력하면 사용된 주소 목록에 라벨이 표시됩니다</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">vertcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">bitcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2715,11 +3022,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>메시지 서명(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">당신이 해당 주소로 비트코인을 받을 수 있다는 것을 증명하기 위해 메시지/합의문을 그 주소로 서명할 수 있습니다. 피싱 공격이 당신을 속일 수 있으므로 임의의 내용이나 모호한 내용에 서명하지 않도록 주의하세요. 당신이 동의하는 명확한 조항들에만 서명하세요.</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
+        <source>The Bitcoin address to sign the message with</source>
         <translation type="unfinished">메세지를 서명할 비트코인 주소</translation>
     </message>
     <message>
@@ -2743,7 +3050,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>이 서명을 시스템 클립보드로 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>당신이 이 비트코인 주소를 소유한다는 증명을 위해 메시지를 서명합니다</translation>
     </message>
     <message>
@@ -2767,7 +3074,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지를 검증하기 위해 아래 칸에 각각 지갑 주소와 메시지, 서명을 입력하세요 (메시지 원본의 띄어쓰기, 들여쓰기, 행 나눔 등이 정확하게 입력되어야 하므로 원본을 복사해서 입력하세요). 네트워크 침입자의 속임수에 넘어가지 않도록 서명된 메시지 내용 이외의 내용은 참고하지 않도록 유의하세요. 이 기능은 단순히 서명한 쪽에서 해당 주소로 송금을 받을 수 있다는 것을 증명하는 것 뿐이며 그 이상은 어떤 것도 보증하지 않습니다.</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
+        <source>The Bitcoin address the message was signed with</source>
         <translation type="unfinished">메세지의 서명에 사용된 비트코인 주소</translation>
     </message>
     <message>
@@ -2779,7 +3086,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메세지의 서명되었을 때의 시그니처</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>입력된 비트코인 주소로 메시지가 서명되었는지 검증합니다</translation>
     </message>
     <message>
@@ -3197,6 +3504,30 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">최소 거래액</translation>
     </message>
     <message>
+        <source>Range…</source>
+        <translation type="unfinished">범위...</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp; 주소 복사</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">복사 &amp; 라벨</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">복사 &amp; 금액</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">복사 트랜잭션 &amp; 아이디</translation>
+    </message>
+    <message>
+        <source>&amp;Edit address label</source>
+        <translation type="unfinished">&amp;주소 라벨 수정하기</translation>
+    </message>
+    <message>
         <source>Export Transaction History</source>
         <translation type="unfinished">거래 기록 내보내기</translation>
     </message>
@@ -3308,6 +3639,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">새로운 수수료:</translation>
     </message>
     <message>
+        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
+        <translation type="unfinished">경고: 이것은 필요할 때 변경 결과를 줄이거나 입력을 추가함으로써 추가 수수료를 지불할 수 있습니다. 아직 새 변경 출력이 없는 경우 새 변경 출력을 추가할 수 있습니다. 이러한 변경으로 인해 개인 정보가 유출될 수 있습니다.</translation>
+    </message>
+    <message>
         <source>Confirm fee bump</source>
         <translation type="unfinished">수수료 범프 승인</translation>
     </message>
@@ -3326,6 +3661,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Could not commit transaction</source>
         <translation type="unfinished">거래를 커밋 할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Can't display address</source>
+        <translation type="unfinished">주소를 표시할 수 없습니다.</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -3397,13 +3736,13 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 개발자들</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
         <translation type="unfinished">%s가 손상되었습니다. '비트 코인-지갑'을 사용하여 백업을 구제하거나 복원하십시오.</translation>
     </message>
     <message>
@@ -3433,6 +3772,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
         <translation type="unfinished">수수료 추정이 실패했습니다. 고장 대체 수수료가 비활성화 상태입니다. 몇 블록을 기다리거나 -fallbackfee를 활성화 하십시오.</translation>
+    </message>
+    <message>
+        <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
+        <translation type="unfinished">%s 파일이 이미 존재합니다. 무엇을 하고자 하는지 확실하시다면, 파일을 먼저 다른 곳으로 옮기십시오.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
@@ -3567,6 +3910,16 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">로딩 완료</translation>
     </message>
     <message>
+        <source>Dump file %s does not exist.</source>
+        <translation type="unfinished">파일 버리기 1%s 존재 안함
+</translation>
+    </message>
+    <message>
+        <source>Error creating %s</source>
+        <translation type="unfinished">만들기 오류 1%s
+</translation>
+    </message>
+    <message>
         <source>Error initializing block database</source>
         <translation type="unfinished">블록 데이터베이스 초기화 오류 발생</translation>
     </message>
@@ -3603,6 +3956,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">블록 데이터베이스를 불러오는데 오류가 발생하였습니다, 곧 종료됩니다.</translation>
     </message>
     <message>
+        <source>Error reading next record from wallet database</source>
+        <translation type="unfinished">지갑 데이터베이스에서 다음 기록을 불러오는데 오류가 발생하였습니다.</translation>
+    </message>
+    <message>
         <source>Error upgrading chainstate database</source>
         <translation type="unfinished">체인 상태 데이터베이스 업그레이드 중 오류가 발생했습니다.</translation>
     </message>
@@ -3613,6 +3970,14 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Error: Keypool ran out, please call keypoolrefill first</source>
         <translation type="unfinished">오류: 키풀이 바닥남, 키풀 리필을 먼저 호출할 하십시오</translation>
+    </message>
+    <message>
+        <source>Error: Missing checksum</source>
+        <translation type="unfinished">오류: 체크섬 누락</translation>
+    </message>
+    <message>
+        <source>Error: Unable to write record to new wallet</source>
+        <translation type="unfinished">오류: 새로운 지갑에 기록하지 못했습니다.</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -3627,6 +3992,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">데이터베이스를 검증 실패</translation>
     </message>
     <message>
+        <source>Importing…</source>
+        <translation type="unfinished">불러오는 중...</translation>
+    </message>
+    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation type="unfinished">제네시스 블록이 없거나 잘 못 되었습니다. 네트워크의 datadir을 확인해 주십시오.</translation>
     </message>
@@ -3637,6 +4006,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Insufficient funds</source>
         <translation type="unfinished">잔액이 부족합니다</translation>
+    </message>
+    <message>
+        <source>Invalid -i2psam address or hostname: '%s'</source>
+        <translation type="unfinished">올바르지 않은 -i2psam 주소 또는 호스트 이름: '%s'</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -3671,6 +4044,22 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">유효하지 않은 넷마스크가 -whitelist: '%s" 를 통해 지정됨</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">P2P 주소를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">추방리스트를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading block index…</source>
+        <translation type="unfinished">블록 인덱스를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading wallet…</source>
+        <translation type="unfinished">지갑을 불러오는 중...</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation type="unfinished">-whitebind: '%s' 를 이용하여 포트를 지정해야 합니다</translation>
     </message>
@@ -3687,12 +4076,28 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">블록 축소는 음수로 설정할 수 없습니다.</translation>
     </message>
     <message>
+        <source>Prune mode is incompatible with -coinstatsindex.</source>
+        <translation type="unfinished">블록 축소 모드는 -coinstatsindex와 호환되지 않습니다.</translation>
+    </message>
+    <message>
         <source>Prune mode is incompatible with -txindex.</source>
         <translation type="unfinished">블록 축소 모드는 -txindex와 호환되지 않습니다.</translation>
     </message>
     <message>
+        <source>Pruning blockstore…</source>
+        <translation type="unfinished">블록 데이터를 축소 중입니다...</translation>
+    </message>
+    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation type="unfinished">시스템 한계로 인하여 -maxconnections를 %d 에서 %d로 줄였습니다.</translation>
+    </message>
+    <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">블록 재생 중...</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">재스캔 중...</translation>
     </message>
     <message>
         <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
@@ -3729,6 +4134,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
         <translation type="unfinished">지정한 블록 디렉토리 "%s" 가 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">네트워크 스레드 시작중...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
@@ -3795,6 +4204,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">키 생성 불가</translation>
     </message>
     <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">%s을 쓰기 위하여 열 수 없습니다.</translation>
+    </message>
+    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">HTTP 서버를 시작할 수 없습니다. 자세한 사항은 디버그 로그를 확인 하세요.</translation>
     </message>
@@ -3809,6 +4222,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation type="unfinished">-onlynet: '%s' 에 알수없는 네트워크가 지정되었습니다</translation>
+    </message>
+    <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">알 수 없는 새로운 규칙이 활성화 되었습니다. (versionbit %i)</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>

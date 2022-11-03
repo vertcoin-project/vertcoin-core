@@ -66,22 +66,22 @@
         <translation type="unfinished">Διευθύνσεις λήψης</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Αυτές είναι οι Vertcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Αυτές είναι οι Bitcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Αυτές είναι οι Vertcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης.
+        <translation type="unfinished">Αυτές είναι οι Bitcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης.
 Η υπογραφή είναι διαθέσιμη μόνο σε διευθύνσεις 'παλαιού τύπου'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation type="unfinished">&amp;Αντιγραφή Διεύθυνσης</translation>
+        <translation type="unfinished">&amp;Αντιγραφή διεύθυνσης</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation type="unfinished">Αντιγραφή&amp;Ετικέτα</translation>
+        <translation type="unfinished">Αντιγραφή &amp;ετικέτας</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -103,7 +103,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation type="unfinished">Αποτυχία Εξαγωγής</translation>
+        <translation type="unfinished">Αποτυχία εξαγωγής</translation>
     </message>
 </context>
 <context>
@@ -137,7 +137,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Επανέλαβε τον νέο κωδικό πρόσβασης</translation>
+        <translation>Επανάλαβε τον νέο κωδικό πρόσβασης</translation>
     </message>
     <message>
         <source>Show passphrase</source>
@@ -164,8 +164,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Επιβεβαίωσε κρυπτογράφηση πορτοφολιού</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ VERTCOIN &lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ BITCOIN &lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Πληκτρολόγησε τον παλιό κωδικό πρόσβασής σου και τον νέο κωδικό πρόσβασής σου για το πορτοφόλι</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα vertcoins σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα bitcoins σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -240,7 +240,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
     <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">Συνέβη ενα μοιραίο σφάλμα. %1 δε μπορεί να συνεχιστεί με ασφάλεια και θα σταματήσει</translation>
@@ -249,7 +249,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Internal error</source>
         <translation type="unfinished">Εσωτερικό σφάλμα</translation>
     </message>
-    </context>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">Προέκυψε ένα εσωτερικό σφάλμα. Το %1 θα επιχειρήσει να συνεχίσει με ασφάλεια. Αυτό είναι ένα απροσδόκητο σφάλμα· μπορείτε να το αναφέρετε όπως περιγράφεται παρακάτω.</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -281,8 +285,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ποσό</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation type="unfinished">Εισάγετε μια διεύθυνση Vertcoin (π.χ. %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation type="unfinished">Εισάγετε μια διεύθυνση Bitcoin (π.χ. %1)</translation>
+    </message>
+    <message>
+        <source>Unroutable</source>
+        <translation type="unfinished">Αδρομολόγητο</translation>
+    </message>
+    <message>
+        <source>Internal</source>
+        <translation type="unfinished">Εσωτερικό</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -303,6 +315,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Manual</source>
         <translation type="unfinished">Χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Address Fetch</source>
+        <translation type="unfinished">Λήψη Διεύθυνσης</translation>
     </message>
     <message>
         <source>None</source>
@@ -360,7 +376,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Επισκόπηση</translation>
@@ -423,8 +439,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy είναι&lt;b&gt;ενεργοποιημένος&lt;/b&gt;:%1 </translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση vertcoin</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -475,7 +491,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Υπογραφή &amp;μηνύματος...</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
@@ -483,8 +499,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Επιβεβαίωση μηνύματος...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Vertcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -535,8 +551,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Συγχρονισμός με το δίκτυο...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις vertcoin: )</translation>
+        <source>Indexing blocks on disk…</source>
+        <translation type="unfinished">Καταλογισμός μπλοκ στον δίσκο...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk…</source>
+        <translation type="unfinished">Επεξεργασία των μπλοκ στον δίσκο...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk…</source>
+        <translation type="unfinished">Επανακαταλογισμός μπλοκ στον δίσκο...</translation>
+    </message>
+    <message>
+        <source>Connecting to peers…</source>
+        <translation type="unfinished">Σύνδεση στους χρήστες...</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις bitcoin: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -553,13 +585,17 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform />
-            <numerusform />
+            <numerusform>Επεξεργάστηκε %n των κομματιών της ιστορίας συναλλαγών.</numerusform>
+            <numerusform>Επεξεργάστηκε %n των κομματιών της ιστορίας συναλλαγών.</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
         <translation>%1 πίσω</translation>
+    </message>
+    <message>
+        <source>Catching up…</source>
+        <translation type="unfinished">Φτάνει...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -586,12 +622,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ενημερωμένο</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Vertcoin</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Bitcoin</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
-        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Vertcoin από το πρόχειρο</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Bitcoin από το πρόχειρο</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -610,8 +646,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Λήψη διευθύνσεων</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">Ανοίξτε ένα vertcoin: URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Ανοίξτε ένα bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -630,8 +666,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Κλείσιμο όλων των πορτοφολιών</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation type="unfinished">Εμφάνισε το %1 βοηθητικό μήνυμα για λήψη μιας λίστας με διαθέσιμες επιλογές για Vertcoin εντολές </translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Εμφάνισε το %1 βοηθητικό μήνυμα για λήψη μιας λίστας με διαθέσιμες επιλογές για Bitcoin εντολές </translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -670,17 +706,22 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 πελάτης</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n ενεργές συνδέσεις στο δίκτυο Vertcoin.</numerusform>
-            <numerusform>%n ενεργές συνδέσεις στο δίκτυο Vertcoin.</numerusform>
+            <numerusform>%n ενεργές συνδέσεις στο δίκτυο Bitcoin.</numerusform>
+            <numerusform>%n ενεργές συνδέσεις στο δίκτυο Bitcoin.</numerusform>
         </translation>
     </message>
     <message>
         <source>Click for more actions.</source>
         <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
         <translation type="unfinished">Κάντε κλικ για περισσότερες επιλογές.</translation>
+    </message>
+    <message>
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation type="unfinished">Προβολή καρτέλας Χρηστών</translation>
     </message>
     <message>
         <source>Disable network activity</source>
@@ -863,6 +904,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Αντιγραφή συναλλαγής &amp;ID</translation>
     </message>
     <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">L&amp;ock διαθέσιμο</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">Αντιγραφή ποσότητας</translation>
     </message>
@@ -933,7 +978,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Create wallet warning</source>
         <translation type="unfinished">Προειδοποίηση δημιουργίας πορτοφολιού</translation>
     </message>
-    </context>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">Αδυναμία απαρίθμησης εγγεγραμμένων </translation>
+    </message>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1027,6 +1076,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Πορτοφόλι Περιγραφέα </translation>
     </message>
     <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Χρησιμοποιήστε μια εξωτερική συσκευή υπογραφής, όπως ένα πορτοφόλι υλικού. Ρυθμίστε πρώτα στις προτιμήσεις του πορτοφολιού το εξωτερικό script υπογραφής.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">Εξωτερικός υπογράφων</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation type="unfinished">Δημιουργία</translation>
     </message>
@@ -1070,8 +1127,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Επεξεργασία διεύθυνσης αποστολής</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">Η διεύθυνση "%1" δεν είναι έγκυρη Vertcoin διεύθυνση.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Η διεύθυνση "%1" δεν είναι έγκυρη Bitcoin διεύθυνση.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1144,8 +1201,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation type="unfinished">Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ Vertcoin.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ Bitcoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1170,6 +1227,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation type="unfinished">Όταν κάνετε κλικ στο OK, το %1 θα ξεκινήσει τη λήψη και την επεξεργασία της πλήρους αλυσίδας μπλοκ% 4 (%2GB) αρχίζοντας από τις πρώτες συναλλαγές στο %3 όταν αρχικά ξεκίνησε το %4.</translation>
+    </message>
+    <message>
+        <source>Limit block chain storage to</source>
+        <translation type="unfinished">Περιόρισε την χωρητικότητα της αλυσίδας block σε</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -1225,12 +1286,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Φόρμα</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation type="unfinished">Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο Vertcoin, όπως περιγράφεται παρακάτω.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο Bitcoin, όπως περιγράφεται παρακάτω.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Η προσπάθεια να δαπανήσετε vertcoins που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Η προσπάθεια να δαπανήσετε bitcoins που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1270,7 +1331,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
-        <translation type="unfinished">Το %1 συγχρονίζεται αυτήν τη στιγμή. Θα κατεβάσει κεφαλίδες και μπλοκ από τους συντρόφους και θα τους επικυρώσει μέχρι να φτάσουν στην άκρη της αλυσίδας μπλοκ.</translation>
+        <translation type="unfinished">Το %1 συγχρονίζεται αυτήν τη στιγμή. Θα κατεβάσει κεφαλίδες και μπλοκ από τους χρήστες και θα τους επικυρώσει μέχρι να φτάσουν στην άκρη της αλυσίδας μπλοκ.</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1, %2%)…</source>
@@ -1280,8 +1341,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
-        <translation type="unfinished">Ανοίξτε το vertcoin URI</translation>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Ανοίξτε το bitcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1312,7 +1373,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation type="unfinished">Διεύθυνση IP του διαμεσολαβητή (π.χ. 127.0.0.1  / IPv6: ::1)</translation>
+        <translation type="unfinished">Διεύθυνση IP του διαμεσολαβητή (π.χ. IPv4: 127.0.0.1  / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
@@ -1383,12 +1444,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Vertcoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">Εξωτερική συσκευή υπογραφής (π.χ. πορτοφόλι υλικού)</translation>
+    </message>
+    <message>
+        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Πλήρης διαδρομή ενός script συμβατού με το Bitcoin Core (π.χ.: C:\Downloads\hwi.exe ή /Users/you/Downloads/hwi.py). Προσοχή: το κακόβουλο λογισμικό μπορεί να κλέψει τα νομίσματά σας!</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών Bitcoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Ανοίξτε αυτόματα τη πόρτα του Bitcoin client στο router. Αυτό λειτουργεί μόνο όταν το router σας υποστηρίζει NAT-PMP και είναι ενεργοποιημένο. Η εξωτερική πόρτα μπορεί να είναι τυχαία.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1403,8 +1476,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Επιτρέπονται εισερχόμενες συνδέσεις</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Σύνδεση στο δίκτυο Vertcoin μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Σύνδεση στο δίκτυο Bitcoin μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1424,7 +1497,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation type="unfinished">Χρησιμοποιείται για να φτάσεις στους σύντροφους μέσω:</translation>
+        <translation type="unfinished">Χρησιμοποιείται για να φτάσεις στους χρήστες μέσω:</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1475,12 +1548,20 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Επιλογή κατά πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Συνδεθείτε στο δίκτυο Vertcoin μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Συνδεθείτε στο δίκτυο Bitcoin μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
         <translation type="unfinished">Χρησιμοποιήστε ξεχωριστό διακομιστή μεσολάβησης SOCKS&amp;5 για σύνδεση με αποδέκτες μέσω των υπηρεσιών onion του Tor:</translation>
+    </message>
+    <message>
+        <source>embedded "%1"</source>
+        <translation type="unfinished">ενσωματωμένο "%1"</translation>
+    </message>
+    <message>
+        <source>closest matching "%1"</source>
+        <translation type="unfinished">πλησιέστερη αντιστοίχιση "%1"</translation>
     </message>
     <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
@@ -1547,8 +1628,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Vertcoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Bitcoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1654,6 +1735,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Αποτυχία εκπλήρωσης συναλλαγής: %1</translation>
     </message>
     <message>
+        <source>Could not sign any more inputs.</source>
+        <translation type="unfinished">Δεν είναι δυνατή η υπογραφή περισσότερων καταχωρήσεων.</translation>
+    </message>
+    <message>
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation type="unfinished">Υπεγράφη %1 καταχώρηση, αλλά περισσότερες υπογραφές χρειάζονται.</translation>
+    </message>
+    <message>
         <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
         <translation type="unfinished">Η συναλλαγή υπογράφηκε με επιτυχία. Η συναλλαγή είναι έτοιμη για μετάδοση.</translation>
     </message>
@@ -1677,6 +1766,11 @@ ID Συναλλαγής: %1</translation>
     <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">Αποθήκευση Δεδομένων Συναλλαγής</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">Μερικώς Υπογεγραμμένη Συναλλαγή (binary)</translation>
     </message>
     <message>
         <source>PSBT saved to disk.</source>
@@ -1703,6 +1797,18 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">ή</translation>
     </message>
     <message>
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation type="unfinished">Η συναλλαγή έχει %1 μη υπογεγραμμένη καταχώρηση.</translation>
+    </message>
+    <message>
+        <source>Transaction is missing some information about inputs.</source>
+        <translation type="unfinished">Λείπουν μερικές πληροφορίες από την συναλλαγή.</translation>
+    </message>
+    <message>
+        <source>Transaction still needs signature(s).</source>
+        <translation type="unfinished">Η συναλλαγή απαιτεί υπογραφή/ές</translation>
+    </message>
+    <message>
         <source>(But this wallet cannot sign transactions.)</source>
         <translation type="unfinished">(Αλλά αυτό το πορτοφόλι δεν μπορεί να υπογράψει συναλλαγές.)</translation>
     </message>
@@ -1726,20 +1832,20 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Σφάλμα αίτησης πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation type="unfinished">Δεν είναι δυνατή η εκκίνηση του vertcoin: χειριστής click-to-pay</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished">Δεν είναι δυνατή η εκκίνηση του bitcoin: χειριστής click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI χειριστής</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">'vertcoin: //' δεν είναι έγκυρο URI. Χρησιμοποιήστε το "vertcoin:" αντ 'αυτού.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">'bitcoin: //' δεν είναι έγκυρο URI. Χρησιμοποιήστε το "bitcoin:" αντ 'αυτού.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">Δεν είναι δυνατή η ανάλυση του URI! Αυτό μπορεί να προκληθεί από μη έγκυρη διεύθυνση Vertcoin ή παραμορφωμένες παραμέτρους URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation type="unfinished">Δεν είναι δυνατή η ανάλυση του URI! Αυτό μπορεί να προκληθεί από μη έγκυρη διεύθυνση Bitcoin ή παραμορφωμένες παραμέτρους URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1752,6 +1858,11 @@ ID Συναλλαγής: %1</translation>
         <source>User Agent</source>
         <extracomment>Title of Peers Table column which contains the peer's User Agent string.</extracomment>
         <translation type="unfinished">Agent χρήστη</translation>
+    </message>
+    <message>
+        <source>Peer</source>
+        <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
+        <translation type="unfinished">Χρήστης</translation>
     </message>
     <message>
         <source>Sent</source>
@@ -1899,7 +2010,7 @@ ID Συναλλαγής: %1</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation type="unfinished">Αποκλεισμένοι σύντροφοι</translation>
+        <translation type="unfinished">Αποκλεισμένοι χρήστες</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
@@ -1966,8 +2077,24 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Υπηρεσίες</translation>
     </message>
     <message>
+        <source>Wants Tx Relay</source>
+        <translation type="unfinished">Απαιτεί Αναμετάδοση Tx</translation>
+    </message>
+    <message>
+        <source>High Bandwidth</source>
+        <translation type="unfinished">Υψηλό εύρος ζώνης</translation>
+    </message>
+    <message>
         <source>Connection Time</source>
         <translation type="unfinished">Χρόνος σύνδεσης</translation>
+    </message>
+    <message>
+        <source>Last Block</source>
+        <translation type="unfinished">Τελευταίο Block</translation>
+    </message>
+    <message>
+        <source>Last Tx</source>
+        <translation type="unfinished">Τελευταίο Tx</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -2034,6 +2161,14 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Εξερχόμενα:</translation>
     </message>
     <message>
+        <source>Inbound: initiated by peer</source>
+        <translation type="unfinished">Εισερχόμενo: Ξεκίνησε από peer</translation>
+    </message>
+    <message>
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation type="unfinished">ο ομότιμος μας επέλεξε για υψηλής ταχύτητας αναμετάδοση </translation>
+    </message>
+    <message>
         <source>&amp;Disconnect</source>
         <translation type="unfinished">&amp;Αποσύνδεση</translation>
     </message>
@@ -2065,6 +2200,15 @@ ID Συναλλαγής: %1</translation>
         <source>Executing command using "%1" wallet</source>
         <translation type="unfinished"> 
 Εκτελέστε εντολή χρησιμοποιώντας το πορτοφόλι "%1"</translation>
+    </message>
+    <message>
+        <source>Executing…</source>
+        <extracomment>A console message indicating an entered command is currently being executed.</extracomment>
+        <translation type="unfinished">Εκτέλεση...</translation>
+    </message>
+    <message>
+        <source>(peer: %1)</source>
+        <translation type="unfinished">(χρήστης: %1)</translation>
     </message>
     <message>
         <source>via %1</source>
@@ -2114,8 +2258,8 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">&amp;Μήνυμα:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation type="unfinished">Ένα προαιρετικό μήνυμα που επισυνάπτεται στο αίτημα πληρωμής, το οποίο θα εμφανιστεί όταν το αίτημα ανοίξει. Σημείωση: Το μήνυμα δεν θα αποσταλεί με την πληρωμή μέσω του δικτύου Vertcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation type="unfinished">Ένα προαιρετικό μήνυμα που επισυνάπτεται στο αίτημα πληρωμής, το οποίο θα εμφανιστεί όταν το αίτημα ανοίξει. Σημείωση: Το μήνυμα δεν θα αποσταλεί με την πληρωμή μέσω του δικτύου Bitcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2396,12 +2540,24 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Απόκρυψη ρυθμίσεων αμοιβής συναλλαγής</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
-        <translation type="unfinished">Όταν υπάρχει λιγότερος όγκος συναλλαγών από το χώρο στα μπλοκ, οι ανθρακωρύχοι καθώς και οι κόμβοι αναμετάδοσης μπορούν να επιβάλουν ένα ελάχιστο τέλος. Η πληρωμή μόνο αυτού του ελάχιστου τέλους είναι μια χαρά, αλλά γνωρίζετε ότι αυτό μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ τη στιγμή που υπάρχει μεγαλύτερη ζήτηση για συναλλαγές vertcoin από ό, τι μπορεί να επεξεργαστεί το δίκτυο.</translation>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satoshis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation type="unfinished">Καθορίστε μία εξατομικευμένη χρέωση ανά kB (1.000 bytes) του εικονικού μεγέθους της συναλλαγής.
+
+Σημείωση: Εφόσον η χρέωση υπολογίζεται ανά byte, ένας ρυθμός χρέωσης των «100 satoshis ανά kvB» για μέγεθος συναλλαγής 500 ψηφιακών bytes (το μισό του 1 kvB) θα απέφερε χρέωση μόλις 50 satoshis.</translation>
+    </message>
+    <message>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation type="unfinished">Όταν υπάρχει λιγότερος όγκος συναλλαγών από το χώρο στα μπλοκ, οι ανθρακωρύχοι καθώς και οι κόμβοι αναμετάδοσης μπορούν να επιβάλουν ένα ελάχιστο τέλος. Η πληρωμή μόνο αυτού του ελάχιστου τέλους είναι μια χαρά, αλλά γνωρίζετε ότι αυτό μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ τη στιγμή που υπάρχει μεγαλύτερη ζήτηση για συναλλαγές bitcoin από ό, τι μπορεί να επεξεργαστεί το δίκτυο.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
         <translation type="unfinished">Μια πολύ χαμηλή χρέωση μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ (διαβάστε την επεξήγηση εργαλείου)</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks…)</source>
+        <translation type="unfinished">(Η έξυπνη χρέωση δεν έχει αρχικοποιηθεί ακόμη. Αυτό συνήθως παίρνει κάποια μπλοκ...)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2464,6 +2620,11 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">%1 (%2 μπλοκς)</translation>
     </message>
     <message>
+        <source>Sign on device</source>
+        <extracomment>"device" usually means a hardware wallet</extracomment>
+        <translation type="unfinished">Εγγραφή στην συσκευή</translation>
+    </message>
+    <message>
         <source>Connect your hardware wallet first.</source>
         <translation type="unfinished">Συνδέστε πρώτα τη συσκευή πορτοφολιού σας.</translation>
     </message>
@@ -2492,6 +2653,10 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Είστε βέβαιοι ότι θέλετε να στείλετε;</translation>
     </message>
     <message>
+        <source>To review recipient list click "Show Details…"</source>
+        <translation type="unfinished">Για να αναθεωρήσετε τη λίστα παραληπτών, κάντε κλικ στην επιλογή "Εμφάνιση λεπτομερειών..."</translation>
+    </message>
+    <message>
         <source>Create Unsigned</source>
         <translation type="unfinished">Δημιουργία Ανυπόγραφου</translation>
     </message>
@@ -2500,12 +2665,30 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Υπογραφή και αποστολή</translation>
     </message>
     <message>
+        <source>Sign failed</source>
+        <translation type="unfinished">H εγγραφή απέτυχε</translation>
+    </message>
+    <message>
+        <source>External signer not found</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Δεν βρέθηκε ο εξωτερικός υπογράφων</translation>
+    </message>
+    <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">Αποθήκευση Δεδομένων Συναλλαγής</translation>
     </message>
     <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">Μερικώς Υπογεγραμμένη Συναλλαγή (binary)</translation>
+    </message>
+    <message>
         <source>PSBT saved</source>
         <translation type="unfinished">Το PSBT αποθηκεύτηκε</translation>
+    </message>
+    <message>
+        <source>External balance:</source>
+        <translation type="unfinished">Εξωτερικό υπόλοιπο:</translation>
     </message>
     <message>
         <source>or</source>
@@ -2516,8 +2699,8 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished"> Μπορείτε να αυξήσετε αργότερα την αμοιβή (σήματα Αντικατάσταση-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή Vertcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή Bitcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -2583,13 +2766,13 @@ ID Συναλλαγής: %1</translation>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation>
-            <numerusform />
-            <numerusform />
+            <numerusform>Αναμένεται η έναρξη επιβεβαίωσης εντός %n μπλοκ.</numerusform>
+            <numerusform>Αναμένεται η έναρξη επιβεβαίωσης εντός %n μπλοκ.</numerusform>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation type="unfinished">Προειδοποίηση: Μη έγκυρη διεύθυνση Vertcoin</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation type="unfinished">Προειδοποίηση: Μη έγκυρη διεύθυνση Bitcoin</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2627,8 +2810,8 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Επιλογή διεύθυνσης που έχει ήδη χρησιμοποιηθεί</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation type="unfinished">Η διεύθυνση Vertcoin που θα σταλεί η πληρωμή</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation type="unfinished">Η διεύθυνση Bitcoin που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2643,8 +2826,8 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Το ποσό που θα αποσταλεί στην επιλεγμένη μονάδα</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα vertcoins από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα bitcoins από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2667,8 +2850,8 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Εισάγετε μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο vertcoin: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Vertcoin.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο bitcoin: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Bitcoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2690,12 +2873,12 @@ ID Συναλλαγής: %1</translation>
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα vertcoins που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα bitcoins που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation type="unfinished">Διεύθυνση Vertcoin που θα σταλεί το μήνυμα</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation type="unfinished">Διεύθυνση Bitcoin που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2718,8 +2901,8 @@ ID Συναλλαγής: %1</translation>
         <translation>Αντιγραφή της επιλεγμένης υπογραφής στο πρόχειρο του συστήματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
-        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Vertcoin</translation>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Bitcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2742,16 +2925,16 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Εισαγάγετε τη διεύθυνση του παραλήπτη, το μήνυμα (βεβαιωθείτε ότι αντιγράφετε σωστά τα διαλείμματα γραμμής, τα κενά, τις καρτέλες κλπ.) Και την υπογραφή παρακάτω για να επαληθεύσετε το μήνυμα. Προσέξτε να μην διαβάσετε περισσότερα στην υπογραφή από ό,τι είναι στο ίδιο το υπογεγραμμένο μήνυμα, για να αποφύγετε να εξαπατήσετε από μια επίθεση στον άνθρωπο στη μέση. Σημειώστε ότι αυτό αποδεικνύει μόνο ότι η υπογραφή συμβαλλόμενο μέρος λαμβάνει με τη διεύθυνση, δεν μπορεί να αποδειχθεί αποστολή οποιασδήποτε συναλλαγής!</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation type="unfinished">Διεύθυνση Vertcoin με την οποία έχει υπογραφεί το μήνυμα</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation type="unfinished">Διεύθυνση Bitcoin με την οποία έχει υπογραφεί το μήνυμα</translation>
     </message>
     <message>
         <source>The signature given when the message was signed</source>
         <translation type="unfinished">Η υπογραφή που δόθηκε όταν υπογράφηκε το μήνυμα</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Vertcoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Bitcoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3171,6 +3354,10 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Ελάχιστο ποσό</translation>
     </message>
     <message>
+        <source>Range…</source>
+        <translation type="unfinished">Πεδίο...</translation>
+    </message>
+    <message>
         <source>&amp;Copy address</source>
         <translation type="unfinished">&amp;Αντιγραφή διεύθυνσης</translation>
     </message>
@@ -3185,6 +3372,10 @@ ID Συναλλαγής: %1</translation>
     <message>
         <source>Copy transaction &amp;ID</source>
         <translation type="unfinished">Αντιγραφή συναλλαγής &amp;ID</translation>
+    </message>
+    <message>
+        <source>Copy &amp;raw transaction</source>
+        <translation type="unfinished">Αντιγραφή &amp;ανεπεξέργαστης συναλλαγής</translation>
     </message>
     <message>
         <source>Copy full transaction &amp;details</source>
@@ -3338,6 +3529,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Δεν ήταν δυνατή η ανάληψη συναλλαγής</translation>
     </message>
     <message>
+        <source>Can't display address</source>
+        <translation type="unfinished">Αδυναμία προβολής διεύθυνσης</translation>
+    </message>
+    <message>
         <source>default wallet</source>
         <translation type="unfinished">Προεπιλεγμένο πορτοφόλι</translation>
     </message>
@@ -3357,8 +3552,24 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Σφάλμα</translation>
     </message>
     <message>
+        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
+        <translation type="unfinished">Αδυναμία αποκωδικοποίησης PSBT από το πρόχειρο (μη έγκυρο Base64)</translation>
+    </message>
+    <message>
         <source>Load Transaction Data</source>
         <translation type="unfinished">Φόρτωση δεδομένων συναλλαγής</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (*.psbt)</source>
+        <translation type="unfinished">Μερικώς υπογεγραμμένη συναλλαγή (*.psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT file must be smaller than 100 MiB</source>
+        <translation type="unfinished">Το αρχείο PSBT πρέπει να είναι μικρότερο από 100 MiB</translation>
+    </message>
+    <message>
+        <source>Unable to decode PSBT</source>
+        <translation type="unfinished">Αδυναμία στην αποκωδικοποίηση του PSBT</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -3391,14 +3602,22 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Οι προγραμματιστές %s</translation>
     </message>
     <message>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s κατεστραμμένο. Δοκιμάστε να το επισκευάσετε με το εργαλείο πορτοφολιού bitcoin-wallet, ή επαναφέρετε κάποιο αντίγραφο ασφαλείας.</translation>
+    </message>
+    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation type="unfinished"> -maxtxfee είναι καταχωρημένο πολύ υψηλά! Έξοδα τόσο υψηλά μπορούν να πληρωθούν σε μια ενιαία συναλλαγή.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
+        <translation type="unfinished">Αδύνατη η υποβάθμιση του πορτοφολιού από την έκδοση %i στην έκδοση %i. Η έκδοση του πορτοφολιού δεν έχει αλλάξει.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3417,6 +3636,14 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Σφάλμα κατά την ανάγνωση %s! Όλα τα κλειδιά διαβάζονται σωστά, αλλά τα δεδομένα των συναλλαγών ή οι καταχωρίσεις του βιβλίου διευθύνσεων ενδέχεται να λείπουν ή να είναι εσφαλμένα.</translation>
     </message>
     <message>
+        <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
+        <translation type="unfinished">Σφάλμα: Η καταγραφή του φορμά του αρχείου dump είναι εσφαλμένη. Ελήφθη: «%s», αναμενόταν: «φορμά».</translation>
+    </message>
+    <message>
+        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Σφάλμα: Η έκδοση του αρχείου dump δεν υποστηρίζεται. Αυτή η έκδοση του bitcoin-wallet υποστηρίζει αρχεία dump μόνο της έκδοσης 1. Δόθηκε αρχείο dump έκδοσης %s.</translation>
+    </message>
+    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation type="unfinished">Σφάλμα: Η ακρόαση για εισερχόμενες συνδέσεις απέτυχε (ακούστε επιστραμμένο σφάλμα %s)</translation>
     </message>
@@ -3425,8 +3652,24 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Η αποτίμηση του τέλους απέτυχε. Το Fallbackfee είναι απενεργοποιημένο. Περιμένετε λίγα τετράγωνα ή ενεργοποιήστε το -fallbackfee.</translation>
     </message>
     <message>
+        <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
+        <translation type="unfinished">Το αρχείο %s υπάρχει ήδη. Αν είστε σίγουροι ότι αυτό θέλετε, βγάλτε το πρώτα από τη μέση.</translation>
+    </message>
+    <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation type="unfinished">Μη έγκυρο ποσό για το -maxtxfee =: '%s' (πρέπει να είναι τουλάχιστον το minrelay έξοδο του %s για την αποφυγή κολλημένων συναλλαγών)</translation>
+    </message>
+    <message>
+        <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
+        <translation type="unfinished">Δεν δόθηκε αρχείο dump. Για να χρησιμοποιηθεί το createfromdump θα πρέπει να δοθεί το -dumpfile=&lt;filename&gt;.</translation>
+    </message>
+    <message>
+        <source>No dump file provided. To use dump, -dumpfile=&lt;filename&gt; must be provided.</source>
+        <translation type="unfinished">Δεν δόθηκε αρχείο dump. Για να χρησιμοποιηθεί το dump, πρέπει να δοθεί το -dumpfile=&lt;filename&gt;.</translation>
+    </message>
+    <message>
+        <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
+        <translation type="unfinished">Δεν δόθηκε φορμά αρχείου πορτοφολιού. Για τη χρήση του createfromdump, πρέπει να δοθεί -format=&lt;format&gt;.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3443,6 +3686,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation type="unfinished">Κλάδεμα: ο τελευταίος συγχρονισμός πορτοφολιού ξεπερνά τα κλαδεμένα δεδομένα. Πρέπει να κάνετε -reindex (κατεβάστε ολόκληρο το blockchain και πάλι σε περίπτωση κλαδέματος κόμβου)</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unknown sqlite wallet schema version %d. Only version %d is supported</source>
+        <translation type="unfinished">SQLiteDatabase: Άγνωστη sqlite έκδοση %d του schema πορτοφολιού . Υποστηρίζεται μόνο η έκδοση %d.</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -3470,7 +3717,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished">Προειδοποίηση: Δεν φαίνεται να συμφωνούμε πλήρως με τους συμμαθητές μας! Ίσως χρειαστεί να κάνετε αναβάθμιση ή ίσως χρειαστεί να αναβαθμίσετε άλλους κόμβους.</translation>
+        <translation type="unfinished">Προειδοποίηση: Δεν φαίνεται να συμφωνείτε πλήρως με τους χρήστες! Ίσως χρειάζεται να κάνετε αναβάθμιση, ή ίσως οι άλλοι κόμβοι χρειάζονται αναβάθμιση.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
@@ -3479,6 +3726,10 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>-maxmempool must be at least %d MB</source>
         <translation type="unfinished">-maxmempool πρέπει να είναι τουλάχιστον %d MB</translation>
+    </message>
+    <message>
+        <source>A fatal internal error occurred, see debug.log for details</source>
+        <translation type="unfinished">Προέκυψε ένα κρίσιμο εσωτερικό σφάλμα. Ανατρέξτε στο debug.log για λεπτομέρειες</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
@@ -3525,6 +3776,14 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Η φόρτωση ολοκληρώθηκε</translation>
     </message>
     <message>
+        <source>Dump file %s does not exist.</source>
+        <translation type="unfinished">Το αρχείο dump %s δεν υπάρχει.</translation>
+    </message>
+    <message>
+        <source>Error creating %s</source>
+        <translation type="unfinished">Σφάλμα στη δημιουργία %s</translation>
+    </message>
+    <message>
         <source>Error initializing block database</source>
         <translation type="unfinished">Σφάλμα κατά την ενεργοποίηση της βάσης δεδομένων των μπλοκ</translation>
     </message>
@@ -3569,6 +3828,26 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Σφάλμα: Ο χώρος στο δίσκο είναι χαμηλός για %s</translation>
     </message>
     <message>
+        <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
+        <translation type="unfinished">Σφάλμα: Το checksum του αρχείου dump δεν αντιστοιχεί. Υπολογίστηκε: %s, αναμενόταν: %s</translation>
+    </message>
+    <message>
+        <source>Error: Got key that was not hex: %s</source>
+        <translation type="unfinished">Σφάλμα: Ελήφθη μη δεκαεξαδικό κλειδί: %s</translation>
+    </message>
+    <message>
+        <source>Error: Got value that was not hex: %s</source>
+        <translation type="unfinished">Σφάλμα: Ελήφθη μη δεκαεξαδική τιμή: %s</translation>
+    </message>
+    <message>
+        <source>Error: Missing checksum</source>
+        <translation type="unfinished">Σφάλμα: Δεν υπάρχει το checksum</translation>
+    </message>
+    <message>
+        <source>Error: No %s addresses available.</source>
+        <translation type="unfinished">Σφάλμα: Δεν υπάρχουν διευθύνσεις %s διαθέσιμες.</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished">Αποτυχία παρακολούθησης σε οποιαδήποτε θύρα. Χρησιμοποιήστε -listen=0 αν θέλετε αυτό.</translation>
     </message>
@@ -3579,6 +3858,14 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Failed to verify database</source>
         <translation type="unfinished">Η επιβεβαίωση της βάσης δεδομένων απέτυχε</translation>
+    </message>
+    <message>
+        <source>Ignoring duplicate -wallet %s.</source>
+        <translation type="unfinished">Αγνόηση διπλότυπου -wallet %s.</translation>
+    </message>
+    <message>
+        <source>Importing…</source>
+        <translation type="unfinished">Εισαγωγή...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
@@ -3621,8 +3908,24 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Μη έγκυρη μάσκα δικτύου που καθορίζεται στο -whitelist: '%s'</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">Φόρτωση διευθύνσεων P2P...</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">Φόρτωση λίστας απαγόρευσης...</translation>
+    </message>
+    <message>
+        <source>Loading wallet…</source>
+        <translation type="unfinished">Φόρτωση πορτοφολιού...</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation type="unfinished">Πρέπει να καθορίσετε μια θύρα με -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
+        <translation type="unfinished">Δεν ορίστηκε διακομιστής μεσολάβησης. Χρησιμοποιήστε -proxy=&lt;ip&gt; ή -proxy=&lt;ip:port&gt;.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -3639,6 +3942,26 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation type="unfinished">Μείωση -maxconnections από %d σε %d, λόγω των περιορισμών του συστήματος.</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">Σάρωση εκ νέου...</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
+        <translation type="unfinished">SQLite βάση δεδομένων: Απέτυχε η εκτέλεση της δήλωσης για την επαλήθευση της βάσης δεδομένων: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
+        <translation type="unfinished">SQLite βάση δεδομένων: Απέτυχε η προετοιμασία της δήλωσης για την επαλήθευση της βάσης δεδομένων: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation type="unfinished">SQLite βάση δεδομένων: Απέτυχε η ανάγνωση της επαλήθευσης του σφάλματος της βάσης δεδομένων: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
+        <translation type="unfinished">SQLiteDatabase: Μη αναμενόμενο αναγνωριστικό εφαρμογής. Αναμενόταν: %u, ελήφθη: %u</translation>
     </message>
     <message>
         <source>Section [%s] is not recognized.</source>
@@ -3665,8 +3988,16 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Δεν υπάρχει κατάλογος καθορισμένων μπλοκ "%s".</translation>
     </message>
     <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">Εκκίνηση των threads δικτύου...</translation>
+    </message>
+    <message>
         <source>The source code is available from %s.</source>
         <translation type="unfinished"> Ο πηγαίος κώδικας είναι διαθέσιμος από το %s.</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist</source>
+        <translation type="unfinished">Το δοθέν αρχείο ρυθμίσεων %s δεν υπάρχει </translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3698,11 +4029,15 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
-        <translation type="unfinished">Η συναλλαγή έχει μια μακρά αλυσίδα mempool</translation>
+        <translation type="unfinished">Η συναλλαγή έχει υπεβολικά μεγάλη αλυσίδα mempool</translation>
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
         <translation type="unfinished">Η συναλλαγή πρέπει να έχει τουλάχιστον έναν παραλήπτη</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. %s</source>
+        <translation type="unfinished">Η συναλλαγή απαιτεί μία διεύθυνση αλλαγής, αλλά δεν μπορούμε να την παράξουμε. %s</translation>
     </message>
     <message>
         <source>Transaction too large</source>
@@ -3729,6 +4064,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Δεν είναι δυνατή η δημιουργία κλειδιών</translation>
     </message>
     <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">Αδυναμία στο άνοιγμα του %s για εγγραφή</translation>
+    </message>
+    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">Δεν είναι δυνατή η εκκίνηση του διακομιστή HTTP. Δείτε το αρχείο εντοπισμού σφαλμάτων για λεπτομέρειες.</translation>
     </message>
@@ -3745,6 +4084,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Έχει οριστεί άγνωστo δίκτυο στο -onlynet: '%s'</translation>
     </message>
     <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">Ενεργοποιήθηκαν άγνωστοι νέοι κανόνες (bit έκδοσης %i)</translation>
+    </message>
+    <message>
         <source>Unsupported logging category %s=%s.</source>
         <translation type="unfinished">Μη υποστηριζόμενη κατηγορία καταγραφής %s=%s.</translation>
     </message>
@@ -3759,6 +4102,14 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation type="unfinished">Το σχόλιο του παράγοντα χρήστη (%s) περιέχει μη ασφαλείς χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks…</source>
+        <translation type="unfinished">Επαλήθευση των blocks…</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)…</source>
+        <translation type="unfinished">Επαλήθευση πορτοφολιού/ιών...</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
