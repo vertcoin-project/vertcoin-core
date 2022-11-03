@@ -3,11 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation type="unfinished">Smelltu á hægri músatakka til að breyta færslugildi eða merkingu</translation>
+        <translation type="unfinished">Smelltu á hægri músatakka til að velja veski eða merkingu</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Búa til nýtt færslugildi</translation>
+        <translation>Búa til nýtt veski</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Afrita valið færslugildi í klemmuspjald</translation>
+        <translation>Afrita valið veski í klemmuspjald</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,11 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Eyða völdu færslugildi úr listanum</translation>
+        <translation>Eyða völdu veski úr listanum</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation type="unfinished">Veldu veski eða merkingu fyrir leit</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -43,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished">Veldu færslugildi sem greiða skal til</translation>
+        <translation type="unfinished">Veldu veski sem greiða skal til</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">Veldu færslugildi sem á að taka við mynt</translation>
+        <translation type="unfinished">Veldu veski til að taka við rafmynt</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -55,15 +59,15 @@
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation type="unfinished">Færslugildi sem senda frá sér</translation>
+        <translation type="unfinished">Veski sem senda frá sér</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation type="unfinished">Færslugildi sem þiggja til sín</translation>
+        <translation type="unfinished">Veski sem þiggja til sín</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Þetta eru Vertcoin færslugildin sem senda greiðslur. Skoðið ævinlega vel upphæðina og færslugildin sem þiggja greiðslur áður en mynt er send.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Þetta eru Bitcoin veskin sem senda greiðslur. Skoðið ævinlega vel upphæðina og veskin sem þiggja greiðslur áður en rafmynt er send.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -145,8 +149,8 @@
         <translation type="unfinished">Staðfesta dulkóðun veskis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI VERTCOIN MYNT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI BITCOIN MYNT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,7 +258,7 @@
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Yfirlit</translation>
@@ -305,8 +309,8 @@
         <translation type="unfinished">Slökkt á netumferð.</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Senda mynt í Vertcoin færslugildi</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Senda mynt í Bitcoin færslugildi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -337,12 +341,12 @@
         <translation>Dulkóða einkalyklana sem tilheyra veskinu þínu</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Kvitta undir skilaboð með Vertcoin færslugildunum þínum til að sanna að þú eigir þau</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Kvitta undir skilaboð með Bitcoin færslugildunum þínum til að sanna að þú eigir þau</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum Vertcoin færslugildum</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum Bitcoin færslugildum</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -361,8 +365,8 @@
         <translation>Tólaborð flipa</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Óska eftir greiðslum (býr til QR kóða og vertcoin: URI)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Óska eftir greiðslum (býr til QR kóða og bitcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -412,15 +416,15 @@
         <translation>Uppfært</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation type="unfinished">Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti Vertcoin aðgerðir í skipanalínu</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti Bitcoin aðgerðir í skipanalínu</translation>
     </message>
     <message>
         <source>%1 client</source>
         <translation type="unfinished">%1 biðlarar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -591,8 +595,8 @@
         <translation type="unfinished">Breyta sendingarfærslugildi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">Færslugildið sem slegið var inn "%1" er ekki leyfilegt Vertcoin færslugildi.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Færslugildið sem slegið var inn "%1" er ekki leyfilegt Bitcoin færslugildi.</translation>
     </message>
     </context>
 <context>
@@ -857,7 +861,7 @@
     </message>
     </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation type="unfinished">Villa við lestur %s! Allir lyklar fóru inn á réttan hátt, en færslugögn eða færslugildi gætu verið röng eða horfin.</translation>

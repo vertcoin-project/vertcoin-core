@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation type="unfinished">Pravým tlačítkem myši můžeš upravit označení adresy</translation>
+        <translation type="unfinished">Pravým tlačítkem myši upravte adresu nebo štítek</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -62,13 +62,13 @@
         <translation type="unfinished">Přijímací adresy</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Tohle jsou tvé vertcoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Tohle jsou tvé bitcoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Tohle jsou tvé vertcoinové adresy pro přijmaní plateb. Použij "Vytvoř novou přijimací adresu" pro vytvoření nových adres. Přihlašování je povoleno jen s adresami typu "Legacy"</translation>
+        <translation type="unfinished">Tohle jsou tvé bitcoinové adresy pro přijmaní plateb. Použij "Vytvoř novou přijimací adresu" pro vytvoření nových adres. Přihlašování je povoleno jen s adresami typu "Legacy"</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -159,8 +159,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Potvrď zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY VERTCOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY BITCOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zadej staré a nové heslo k peněžence.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Pamatujte, že zašifrování peněženky nemůže plně ochránit vaše vertcoiny před krádeží, pokud by byl váš počítač napadem malwarem.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Pamatujte, že zašifrování peněženky nemůže plně ochránit vaše bitcoiny před krádeží, pokud by byl váš počítač napadem malwarem.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -239,7 +239,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">Uprchlá výjimka</translation>
+    </message>
     <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">Stala se fatální chyba. %1 nemůže bezpečně pokračovat v činnosti, a bude ukončen.</translation>
@@ -272,6 +276,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zjišťování neshod: %1</translation>
     </message>
     <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 ještě bezpečně neskončil...</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation type="unfinished">neznámo</translation>
     </message>
@@ -280,8 +288,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Částka</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation type="unfinished">Zadej vertcoinovou adresu (např. %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation type="unfinished">Zadej bitcoinovou adresu (např. %1)</translation>
+    </message>
+    <message>
+        <source>Unroutable</source>
+        <translation type="unfinished">Nesměrovatelné</translation>
+    </message>
+    <message>
+        <source>Internal</source>
+        <translation type="unfinished">Vnitřní</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -290,6 +306,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Outbound</source>
         <translation type="unfinished">Ven</translation>
+    </message>
+    <message>
+        <source>Full Relay</source>
+        <translation type="unfinished">Plná štafeta</translation>
+    </message>
+    <message>
+        <source>Block Relay</source>
+        <translation type="unfinished">Blokové relé</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="unfinished">Manuální</translation>
+    </message>
+    <message>
+        <source>Feeler</source>
+        <translation type="unfinished">Tykadlo</translation>
+    </message>
+    <message>
+        <source>Address Fetch</source>
+        <translation type="unfinished">Načtení adresy</translation>
     </message>
     <message>
         <source>None</source>
@@ -302,17 +338,17 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n second(s)</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>%n sekunda</numerusform>
+            <numerusform>%n sekund</numerusform>
+            <numerusform>%n sekund</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>%n minuta</numerusform>
+            <numerusform>%n minut</numerusform>
+            <numerusform>%n minut</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -334,9 +370,9 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n week(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>%n týden</numerusform>
+            <numerusform>%n týdnů</numerusform>
+            <numerusform>%n týdnů</numerusform>
         </translation>
     </message>
     <message>
@@ -346,14 +382,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>%n rok</numerusform>
+            <numerusform>%n roků</numerusform>
+            <numerusform>%n roků</numerusform>
         </translation>
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Přehled</translation>
@@ -416,8 +452,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy je &lt;b&gt;zapnutá&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Pošli mince na vertcoinovou adresu</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Pošli mince na bitcoinovou adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -448,16 +484,48 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Zobraz nebo skryj hlavní okno</translation>
     </message>
     <message>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation type="unfinished">&amp;Zašifrovat peněženku...</translation>
+    </message>
+    <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Zašifruj soukromé klíče ve své peněžence</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými vertcoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation type="unfinished">&amp;Zazálohovat peněženku</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými vertcoinovými adresami</translation>
+        <source>&amp;Change Passphrase…</source>
+        <translation type="unfinished">&amp;Změnit heslo...</translation>
+    </message>
+    <message>
+        <source>Sign &amp;message…</source>
+        <translation type="unfinished">Podepiš &amp;zprávu...</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými bitcoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message…</source>
+        <translation type="unfinished">&amp;Ověř zprávu...</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými bitcoinovými adresami</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file…</source>
+        <translation type="unfinished">&amp;Načíst PSBT ze souboru...</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard…</source>
+        <translation type="unfinished">Načíst PSBT ze schránky</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI…</source>
+        <translation type="unfinished">Načíst &amp;URI...</translation>
     </message>
     <message>
         <source>Close Wallet…</source>
@@ -488,12 +556,32 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Panel s listy</translation>
     </message>
     <message>
+        <source>Syncing Headers (%1%)…</source>
+        <translation type="unfinished">Synchronizuji hlavičky bloků (%1 %)...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network…</source>
+        <translation type="unfinished">Synchronizuji se se sítí...</translation>
+    </message>
+    <message>
         <source>Indexing blocks on disk…</source>
         <translation type="unfinished">Vytvářím index bloků na disku...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Požaduj platby (generuje QR kódy a vertcoin: URI)</translation>
+        <source>Processing blocks on disk…</source>
+        <translation type="unfinished">Zpracovávám bloky na disku...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk…</source>
+        <translation type="unfinished">Vytvářím nový index bloků na disku...</translation>
+    </message>
+    <message>
+        <source>Connecting to peers…</source>
+        <translation type="unfinished">Připojuji se…</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Požaduj platby (generuje QR kódy a bitcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -510,14 +598,18 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>Zpracován %n blok transakční historie.</numerusform>
+            <numerusform>Zpracováno %n bloků transakční historie.</numerusform>
+            <numerusform>Zpracováno %n bloků transakční historie.</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
         <translation>Stahuji ještě %1 bloků transakcí</translation>
+    </message>
+    <message>
+        <source>Catching up…</source>
+        <translation type="unfinished">Stahuji...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -544,12 +636,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Aktuální</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation type="unfinished">Načíst částečně podepsanou Vertcoinovou transakci</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Načíst částečně podepsanou Bitcoinovou transakci</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
-        <translation type="unfinished">Načíst částečně podepsanou Vertcoinovou transakci ze schránky</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Načíst částečně podepsanou Bitcoinovou transakci ze schránky</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -568,8 +660,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Přijímací adresy</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">Načíst Vertcoin: URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Načíst Bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -588,8 +680,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zavřít všechny peněženky</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation type="unfinished">Seznam argumentů Vertcoinu pro příkazovou řádku získáš v nápovědě %1</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Seznam argumentů Bitcoinu pro příkazovou řádku získáš v nápovědě %1</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -628,13 +720,33 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>%n aktivní spojení s Bitcoinovou sítí.</numerusform>
+            <numerusform>%n aktivních spojení s Bitcoinovou sítí.</numerusform>
+            <numerusform>%n aktivních spojení s Bitcoinovou sítí.</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">Klikněte pro více možností.</translation>
+    </message>
+    <message>
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation type="unfinished">Zobrazit uzly</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">Vypnout síťovou aktivitu</translation>
+    </message>
+    <message>
+        <source>Enable network activity</source>
+        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
+        <translation type="unfinished">Zapnout síťovou aktivitu</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -795,6 +907,30 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kopíruj částku</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Zkopírovat adresu</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">Zkopírovat &amp;označení</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Zkopírovat &amp;částku</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Zkopírovat &amp;ID transakce</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">&amp;zamknout neutracené</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">&amp;Odemknout neutracené</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">Kopíruj počet</translation>
     </message>
@@ -854,6 +990,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation type="unfinished">Vytvářím peněženku &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
         <source>Create wallet failed</source>
         <translation type="unfinished">Vytvoření peněženky selhalo</translation>
     </message>
@@ -861,7 +1001,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Create wallet warning</source>
         <translation type="unfinished">Vytvořit varování peněženky</translation>
     </message>
-    </context>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">Nelze vypsat podepisovatele</translation>
+    </message>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -876,7 +1020,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>default wallet</source>
         <translation type="unfinished">výchozí peněženka</translation>
     </message>
-    </context>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation type="unfinished">Otevírám peněženku &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+</context>
 <context>
     <name>WalletController</name>
     <message>
@@ -951,6 +1099,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Popisovačová peněženka</translation>
     </message>
     <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Použijte externí podepisovací zařízení, například hardwarovou peněženku. V nastavení peněženky nejprve nakonfigurujte skript externího podepisovacího zařízení.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">Externí podepisovatel</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation type="unfinished">Vytvořit</translation>
     </message>
@@ -958,7 +1114,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
         <translation type="unfinished">Zkompilováno bez podpory sqlite (vyžadováno pro popisovačové peněženky)</translation>
     </message>
-    </context>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Zkompilováno bez externí podpory podepisování (nutné pro externí podepisování)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -994,8 +1155,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Uprav odesílací adresu</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">Zadaná adresa „%1“ není platná vertcoinová adresa.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Zadaná adresa „%1“ není platná bitcoinová adresa.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1059,13 +1220,13 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>(sufficient to restore backups %n day(s) old)</source>
         <extracomment>Explanatory text on the capability of the current prune target.</extracomment>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>(Dostačující k obnovení zálohy %n den staré)</numerusform>
+            <numerusform>(Dostačující k obnovení záloh %n dnů staré)</numerusform>
+            <numerusform>(Dostačující k obnovení záloh %n dnů staré)</numerusform>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
         <translation type="unfinished">%1 bude stahovat kopii blockchainu.</translation>
     </message>
     <message>
@@ -1095,6 +1256,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation type="unfinished">Jakmile stiskneš OK, %1 začne stahovat a zpracovávat celý %4ový blockchain (%2 GB), počínaje nejstaršími transakcemi z roku %3, kdy byl %4 spuštěn.</translation>
+    </message>
+    <message>
+        <source>Limit block chain storage to</source>
+        <translation type="unfinished">Omezit uložiště blokového řetězce na</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -1139,6 +1304,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
+        <source>%1 is shutting down…</source>
+        <translation type="unfinished">%1 se ukončuje...</translation>
+    </message>
+    <message>
         <source>Do not shut down the computer until this window disappears.</source>
         <translation type="unfinished">Nevypínej počítač, dokud toto okno nezmizí.</translation>
     </message>
@@ -1150,12 +1319,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Formulář</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation type="unfinished">Nedávné transakce ještě nemusí být vidět, takže stav tvého účtu nemusí být platný. Jakmile se však tvá peněženka dosynchronizuje s vertcoinovou sítí (viz informace níže), tak už bude stav správně.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">Nedávné transakce ještě nemusí být vidět, takže stav tvého účtu nemusí být platný. Jakmile se však tvá peněženka dosynchronizuje s bitcoinovou sítí (viz informace níže), tak už bude stav správně.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Utrácení vertcoinů, které už utratily zatím nezobrazené transakce, nebude vertcoinovou sítí umožněno.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Utrácení bitcoinů, které už utratily zatím nezobrazené transakce, nebude bitcoinovou sítí umožněno.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1197,12 +1366,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
         <translation type="unfinished">%1 se právě synchronizuje. Stáhnou se hlavičky a bloky od protějsků. Ty se budou se ověřovat až se kompletně ověří celý řetězec bloků.</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1, %2%)…</source>
+        <translation type="unfinished">Neznámé. Synchronizace hlaviček bloků (%1, %2%)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
-        <translation type="unfinished">Otevřít vertcoin URI</translation>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Otevřít bitcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1304,7 +1477,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Utrácet i ještě nepotvrzené drobné</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">Externí podepisovatel (například hardwarová peněženka)</translation>
+    </message>
+    <message>
+        <source>&amp;External signer script path</source>
+        <translation type="unfinished">Cesta ke skriptu &amp;Externího podepisovatele</translation>
+    </message>
+    <message>
+        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Absolutní cesta ke skriptu kompatibilnímu s Bitcoin Core (např. C:\Downloads\hwi.exe nebo /Users/you/Downloads/hwi.py). Pozor: malware vám může ukrást mince!</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -1312,8 +1497,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Namapovat port přes &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Automaticky otevřít port pro Vertcoinový klient na routeru. Toto funguje pouze pokud váš router podporuje a má zapnutou funkci NAT-PMP. Vnější port může být zvolen náhodně.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Automaticky otevřít port pro Bitcoinový klient na routeru. Toto funguje pouze pokud váš router podporuje a má zapnutou funkci NAT-PMP. Vnější port může být zvolen náhodně.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1328,8 +1513,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Přijí&amp;mat příchozí spojení</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Připojí se do vertcoinové sítě přes SOCKS5 proxy.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Připojí se do bitcoinové sítě přes SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1400,8 +1585,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zda ukazovat možnosti pro ruční správu mincí nebo ne.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Připojí se do Vertcoinové sítě přes vyhrazenou SOCKS5 proxy pro služby v Tor síti.</translation>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Připojí se do Bitcoinové sítě přes vyhrazenou SOCKS5 proxy pro služby v Tor síti.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1434,6 +1619,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>&amp;Cancel</source>
         <translation>&amp;Zrušit</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Zkompilováno bez externí podpory podepisování (nutné pro externí podepisování)</translation>
     </message>
     <message>
         <source>default</source>
@@ -1487,8 +1677,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Formulář</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s vertcoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s bitcoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1686,16 +1876,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Chyba platebního požadavku</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation type="unfinished">Nemůžu spustit vertcoin: obsluha click-to-pay</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished">Nemůžu spustit bitcoin: obsluha click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Zpracování URI</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">'vertcoin://' není platné URI. Místo toho použij 'vertcoin:'.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">'bitcoin://' není platné URI. Místo toho použij 'bitcoin:'.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1706,8 +1896,8 @@ Vzhledem k rozšířeným bezpečnostním chybám v BIP70 je důrazně doporuče
 Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu kompatibilní s BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">Nepodařilo se analyzovat URI! Důvodem může být neplatná vertcoinová adresa nebo poškozené parametry URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation type="unfinished">Nepodařilo se analyzovat URI! Důvodem může být neplatná bitcoinová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1759,6 +1949,10 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
 </context>
 <context>
     <name>QRImageWidget</name>
+    <message>
+        <source>&amp;Save Image…</source>
+        <translation type="unfinished">&amp;Uložit obrázek...</translation>
+    </message>
     <message>
         <source>&amp;Copy Image</source>
         <translation type="unfinished">&amp;Kopíruj obrázek</translation>
@@ -1956,6 +2150,14 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Chce přeposílání transakcí</translation>
     </message>
     <message>
+        <source>High bandwidth BIP152 compact block relay: %1</source>
+        <translation type="unfinished">Kompaktní blokové relé BIP152 s vysokou šířkou pásma: %1</translation>
+    </message>
+    <message>
+        <source>High Bandwidth</source>
+        <translation type="unfinished">Velká šířka pásma</translation>
+    </message>
+    <message>
         <source>Connection Time</source>
         <translation type="unfinished">Doba spojení</translation>
     </message>
@@ -2040,12 +2242,52 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Ven:</translation>
     </message>
     <message>
+        <source>Inbound: initiated by peer</source>
+        <translation type="unfinished">Příchozí: iniciováno uzlem</translation>
+    </message>
+    <message>
+        <source>Outbound Full Relay: default</source>
+        <translation type="unfinished">Outbound Full Relay: výchozí</translation>
+    </message>
+    <message>
+        <source>Outbound Block Relay: does not relay transactions or addresses</source>
+        <translation type="unfinished">Outbound Block Relay: nepřenáší transakce ani adresy</translation>
+    </message>
+    <message>
+        <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
+        <translation type="unfinished">Outbound Manual: přidáno pomocí RPC %1 nebo %2/%3 konfiguračních možností</translation>
+    </message>
+    <message>
+        <source>Outbound Feeler: short-lived, for testing addresses</source>
+        <translation type="unfinished">Outbound Feeler: krátkodobý, pro testování adres</translation>
+    </message>
+    <message>
+        <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
+        <translation type="unfinished">Odchozí načítání adresy: krátkodobé, pro získávání adres</translation>
+    </message>
+    <message>
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation type="unfinished">vybrali jsme peer pro přenos s velkou šířkou pásma</translation>
+    </message>
+    <message>
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation type="unfinished">partner nás vybral pro přenos s vysokou šířkou pásma</translation>
+    </message>
+    <message>
+        <source>no high bandwidth relay selected</source>
+        <translation type="unfinished">není vybráno žádné širokopásmové relé</translation>
+    </message>
+    <message>
         <source>&amp;Disconnect</source>
         <translation type="unfinished">&amp;Odpoj</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
         <translation type="unfinished">1 &amp;hodinu</translation>
+    </message>
+    <message>
+        <source>1 d&amp;ay</source>
+        <translation type="unfinished">1 &amp;den</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
@@ -2070,6 +2312,15 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message>
         <source>Executing command using "%1" wallet</source>
         <translation type="unfinished">Příkaz se vykonává s použitím peněženky "%1"</translation>
+    </message>
+    <message>
+        <source>Executing…</source>
+        <extracomment>A console message indicating an entered command is currently being executed.</extracomment>
+        <translation type="unfinished">Provádím...</translation>
+    </message>
+    <message>
+        <source>(peer: %1)</source>
+        <translation type="unfinished">(uzel: %1)</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -2115,8 +2366,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">&amp;Zpráva:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation type="unfinished">Volitelná zpráva, která se připojí k platebnímu požadavku a která se zobrazí, když se požadavek otevře. Poznámka: tahle zpráva se neposílá s platbou po vertcoinové síti.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation type="unfinished">Volitelná zpráva, která se připojí k platebnímu požadavku a která se zobrazí, když se požadavek otevře. Poznámka: tahle zpráva se neposílá s platbou po bitcoinové síti.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2183,6 +2434,22 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">&amp;Kopíruj URI</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Zkopírovat adresu</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">Zkopírovat &amp;označení</translation>
+    </message>
+    <message>
+        <source>Copy &amp;message</source>
+        <translation type="unfinished">Zkopírovat &amp;zprávu</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Zkopírovat &amp;částku</translation>
+    </message>
+    <message>
         <source>Could not unlock wallet.</source>
         <translation type="unfinished">Nemohu odemknout peněženku.</translation>
     </message>
@@ -2193,6 +2460,10 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Request payment to …</source>
+        <translation type="unfinished">Požádat o platbu pro ...</translation>
+    </message>
     <message>
         <source>Address:</source>
         <translation type="unfinished">Adresa:</translation>
@@ -2220,6 +2491,18 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message>
         <source>Copy &amp;Address</source>
         <translation type="unfinished">Kopíruj &amp;adresu</translation>
+    </message>
+    <message>
+        <source>&amp;Verify</source>
+        <translation type="unfinished">&amp;Ověřit</translation>
+    </message>
+    <message>
+        <source>Verify this address on e.g. a hardware wallet screen</source>
+        <translation type="unfinished">Ověřte tuto adresu na obrazovce vaší hardwarové peněženky</translation>
+    </message>
+    <message>
+        <source>&amp;Save Image…</source>
+        <translation type="unfinished">&amp;Uložit obrázek...</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -2352,6 +2635,10 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Promaž obsah ze všech formulářových políček.</translation>
     </message>
     <message>
+        <source>Inputs…</source>
+        <translation type="unfinished">Vstupy...</translation>
+    </message>
+    <message>
         <source>Dust:</source>
         <translation type="unfinished">Prach:</translation>
     </message>
@@ -2364,12 +2651,24 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Schovat nastavení poplatků transakce - transaction fee</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
-        <translation type="unfinished">Když je zde měně transakcí než místa na bloky, mineři stejně tak relay-e mohou nasadit minimální poplatky. Zaplacením pouze minimálního poplatku je v pohodě, ale mějte na paměti že toto může mít za následek nikdy neověřenou transakci pokud zde bude více vertcoinových transakcí než může síť zvládnout.</translation>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satoshis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation type="unfinished">Zadejte vlastní poplatek za kB (1 000 bajtů) virtuální velikosti transakce.
+
+ Poznámka: Vzhledem k tomu, že poplatek se vypočítává na bázi za bajt, sazba poplatku „100 satoshi za kvB“ za velikost transakce 500 virtuálních bajtů (polovina z 1 kvB) by nakonec přinesla poplatek pouze 50 satoshi.</translation>
+    </message>
+    <message>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation type="unfinished">Když je zde měně transakcí než místa na bloky, mineři stejně tak relay-e mohou nasadit minimální poplatky. Zaplacením pouze minimálního poplatku je v pohodě, ale mějte na paměti že toto může mít za následek nikdy neověřenou transakci pokud zde bude více bitcoinových transakcí než může síť zvládnout.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
         <translation type="unfinished">Příliš malý poplatek může způsobit, že transakce nebude nikdy potvrzena (přečtěte popis)</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks…)</source>
+        <translation type="unfinished">(Chytrý poplatek ještě nebyl inicializován. Obvykle to trvá několik bloků...)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2437,12 +2736,21 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Přihlásit na zařízení</translation>
     </message>
     <message>
+        <source>Connect your hardware wallet first.</source>
+        <translation type="unfinished">Nejdříve připojte vaši hardwarovou peněženku.</translation>
+    </message>
+    <message>
+        <source>Set external signer script path in Options -&gt; Wallet</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Nastavte cestu pro skript pro externí podepisování v Nastavení -&gt; Peněženka</translation>
+    </message>
+    <message>
         <source>Cr&amp;eate Unsigned</source>
         <translation type="unfinished">Vytvořit bez podpisu</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Vertcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Vytvořit částečně podepsanou Vertcoin transakci (Partially Signed Vertcoin Transaction - PSBT) k použtí kupříkladu s offline %1 peněženkou nebo s jinou kompatibilní PSBT hardware peněženkou.</translation>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Vytvořit částečně podepsanou Bitcoin transakci (Partially Signed Bitcoin Transaction - PSBT) k použtí kupříkladu s offline %1 peněženkou nebo s jinou kompatibilní PSBT hardware peněženkou.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -2465,8 +2773,30 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Jsi si jistý, že tuhle transakci chceš poslat?</translation>
     </message>
     <message>
+        <source>To review recipient list click "Show Details…"</source>
+        <translation type="unfinished">Chcete-li zkontrolovat seznam příjemců, klikněte na „Zobrazit podrobnosti ...“</translation>
+    </message>
+    <message>
         <source>Create Unsigned</source>
         <translation type="unfinished">Vytvořit bez podpisu</translation>
+    </message>
+    <message>
+        <source>Sign and send</source>
+        <translation type="unfinished">Podepsat a poslat</translation>
+    </message>
+    <message>
+        <source>Sign failed</source>
+        <translation type="unfinished">Podepsání selhalo</translation>
+    </message>
+    <message>
+        <source>External signer not found</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Externí podepisovatel nebyl nalezen</translation>
+    </message>
+    <message>
+        <source>External signer failure</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Selhání externího podepisovatele</translation>
     </message>
     <message>
         <source>Save Transaction Data</source>
@@ -2482,6 +2812,10 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">PSBT uložena</translation>
     </message>
     <message>
+        <source>External balance:</source>
+        <translation type="unfinished">Externí zůstatek:</translation>
+    </message>
+    <message>
         <source>or</source>
         <translation type="unfinished">nebo</translation>
     </message>
@@ -2490,8 +2824,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Poplatek můžete navýšit později (vysílá se "Replace-By-Fee" - nahrazení poplatkem, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Zkontrolujte prosím svůj návrh transakce. Výsledkem bude částečně podepsaná vertcoinová transakce (PSBT), kterou můžete uložit nebo kopírovat a poté podepsat např. pomocí offline %1 peněženky nebo hardwarové peněženky kompatibilní s PSBT.</translation>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Zkontrolujte prosím svůj návrh transakce. Výsledkem bude částečně podepsaná bitcoinová transakce (PSBT), kterou můžete uložit nebo kopírovat a poté podepsat např. pomocí offline %1 peněženky nebo hardwarové peněženky kompatibilní s PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -2556,14 +2890,14 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>Očekávaný počátek potvrzení během %n bloku.</numerusform>
+            <numerusform>Očekávaný počátek potvrzení během %n bloků.</numerusform>
+            <numerusform>Očekávaný počátek potvrzení během %n bloků.</numerusform>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation type="unfinished">Upozornění: Neplatná vertcoinová adresa</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation type="unfinished">Upozornění: Neplatná bitcoinová adresa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2601,8 +2935,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Vyber již použitou adresu</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation type="unfinished">Vertcoinová adresa příjemce</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation type="unfinished">Bitcoinová adresa příjemce</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2617,8 +2951,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Částka k odeslání ve vybrané měně</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Poplatek se odečte od posílané částky. Příjemce tak dostane méně vertcoinů, než zadáš do pole Částka. Pokud vybereš více příjemců, tak se poplatek rovnoměrně rozloží.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Poplatek se odečte od posílané částky. Příjemce tak dostane méně bitcoinů, než zadáš do pole Částka. Pokud vybereš více příjemců, tak se poplatek rovnoměrně rozloží.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2645,8 +2979,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">Zpráva, která byla připojena k vertcoin: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po vertcoinové síti.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">Zpráva, která byla připojena k bitcoin: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po bitcoinové síti.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2668,12 +3002,12 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation>&amp;Podepiš zprávu</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Podepsáním zprávy/smlouvy svými adresami můžeš prokázat, že jsi na ně schopen přijmout vertcoiny. Buď opatrný a nepodepisuj nic vágního nebo náhodného; například při phishingových útocích můžeš být lákán, abys něco takového podepsal. Podepisuj pouze naprosto úplná a detailní prohlášení, se kterými souhlasíš.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Podepsáním zprávy/smlouvy svými adresami můžeš prokázat, že jsi na ně schopen přijmout bitcoiny. Buď opatrný a nepodepisuj nic vágního nebo náhodného; například při phishingových útocích můžeš být lákán, abys něco takového podepsal. Podepisuj pouze naprosto úplná a detailní prohlášení, se kterými souhlasíš.</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation type="unfinished">Vertcoinová adresa, kterou se zpráva podepíše</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation type="unfinished">Bitcoinová adresa, kterou se zpráva podepíše</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2696,8 +3030,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation>Zkopíruj tento podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této vertcoinové adresy</translation>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této bitcoinové adresy</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2720,8 +3054,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">K ověření podpisu zprávy zadej adresu příjemce, zprávu (ověř si, že správně kopíruješ zalomení řádků, mezery, tabulátory apod.) a podpis. Dávej pozor na to, abys nezkopíroval do podpisu víc, než co je v samotné podepsané zprávě, abys nebyl napálen man-in-the-middle útokem. Poznamenejme však, že takto lze pouze prokázat, že podepisující je schopný na dané adrese přijmout platbu, ale není možnéprokázat, že odeslal jakoukoli transakci!</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation type="unfinished">Vertcoinová adresa, kterou je zpráva podepsána</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation type="unfinished">Bitcoinová adresa, kterou je zpráva podepsána</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -2732,8 +3066,8 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Podpis daný při podpisu zprávy</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou vertcoinovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou bitcoinovou adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2805,9 +3139,9 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>Otevřeno pro %n další blok</numerusform>
+            <numerusform>Otevřeno pro %n dalších bloků</numerusform>
+            <numerusform>Otevřeno pro %n dalších bloků</numerusform>
         </translation>
     </message>
     <message>
@@ -2889,9 +3223,9 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>dozraje za %n další blok</numerusform>
+            <numerusform>dozraje za %n dalších bloků</numerusform>
+            <numerusform>dozraje za %n dalších bloků</numerusform>
         </translation>
     </message>
     <message>
@@ -2999,9 +3333,9 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation>
-            <numerusform />
-            <numerusform />
-            <numerusform />
+            <numerusform>Otevřeno pro %n další blok</numerusform>
+            <numerusform>Otevřeno pro %n dalších bloků</numerusform>
+            <numerusform>Otevřeno pro %n dalších bloků</numerusform>
         </translation>
     </message>
     <message>
@@ -3144,6 +3478,50 @@ Pokud vidíte tuto chybu, měli byste požádat, aby obchodník poskytl adresu k
         <translation type="unfinished">Minimální částka</translation>
     </message>
     <message>
+        <source>Range…</source>
+        <translation type="unfinished">Rozsah...</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Zkopírovat adresu</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">Zkopírovat &amp;označení</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Zkopírovat &amp;částku</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Zkopírovat &amp;ID transakce</translation>
+    </message>
+    <message>
+        <source>Copy &amp;raw transaction</source>
+        <translation type="unfinished">Zkopírovat &amp;surovou transakci</translation>
+    </message>
+    <message>
+        <source>Copy full transaction &amp;details</source>
+        <translation type="unfinished">Zkopírovat kompletní &amp;podrobnosti transakce</translation>
+    </message>
+    <message>
+        <source>&amp;Show transaction details</source>
+        <translation type="unfinished">&amp;Zobrazit detaily transakce</translation>
+    </message>
+    <message>
+        <source>Increase transaction &amp;fee</source>
+        <translation type="unfinished">Zvýšit transakční &amp;poplatek</translation>
+    </message>
+    <message>
+        <source>A&amp;bandon transaction</source>
+        <translation type="unfinished">&amp;Zahodit transakci</translation>
+    </message>
+    <message>
+        <source>&amp;Edit address label</source>
+        <translation type="unfinished">&amp;Upravit označení adresy</translation>
+    </message>
+    <message>
         <source>Export Transaction History</source>
         <translation type="unfinished">Exportuj transakční historii</translation>
     </message>
@@ -3251,6 +3629,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">Nový poplatek:</translation>
     </message>
     <message>
+        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
+        <translation type="unfinished">Upozornění: To může v případě potřeby zaplatit dodatečný poplatek snížením výstupů změn nebo přidáním vstupů.  Může přidat nový výstup změn, pokud takový ještě neexistuje.  Tyto změny mohou potenciálně uniknout soukromí.</translation>
+    </message>
+    <message>
         <source>Confirm fee bump</source>
         <translation type="unfinished">Potvrď navýšení poplatku</translation>
     </message>
@@ -3269,6 +3651,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>Could not commit transaction</source>
         <translation type="unfinished">Nemohl jsem uložit transakci do peněženky</translation>
+    </message>
+    <message>
+        <source>Can't display address</source>
+        <translation type="unfinished">Nemohu zobrazit adresu</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -3336,14 +3722,14 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Vývojáři %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">Soubor %s je poškozen. Zkus použít vertcoin-wallet pro opravu nebo obnov zálohu.</translation>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">Soubor %s je poškozen. Zkus použít bitcoin-wallet pro opravu nebo obnov zálohu.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -3382,8 +3768,12 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">Chyba: záznam identifikátoru souboru výpisu je nesprávný. Získáno "%s", očekáváno "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Chyba: verze souboru výpisu není podporována. Tato verze peněženky Vertcoin podporuje pouze soubory výpisu verze 1. Získán soubor výpisu verze %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Chyba: verze souboru výpisu není podporována. Tato verze peněženky Bitcoin podporuje pouze soubory výpisu verze 1. Získán soubor výpisu verze %s</translation>
+    </message>
+    <message>
+        <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
+        <translation type="unfinished">Chyba: Starší peněženky podporují pouze typy adres "legacy", "p2sh-segwit" a "bech32".</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3488,6 +3878,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation type="unfinished">Upozornění: Nesouhlasím zcela se svými protějšky! Možná potřebuji aktualizovat nebo ostatní uzly potřebují aktualizovat.</translation>
+    </message>
+    <message>
+        <source>Witness data for blocks after height %d requires validation. Please restart with -reindex.</source>
+        <translation type="unfinished">Svědecká data pro bloky po výšce %d vyžadují ověření.  Restartujte prosím pomocí -reindex.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
@@ -3634,6 +4028,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">Chyba: chybí kontrolní součet</translation>
     </message>
     <message>
+        <source>Error: No %s addresses available.</source>
+        <translation type="unfinished">Chyba: Žádné %s adresy nejsou dostupné.</translation>
+    </message>
+    <message>
         <source>Error: Unable to parse version %u as a uint32_t</source>
         <translation type="unfinished">Chyba: nelze zpracovat verzi %u jako uint32_t</translation>
     </message>
@@ -3660,6 +4058,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>Ignoring duplicate -wallet %s.</source>
         <translation type="unfinished">Ignoruji duplicitní -wallet %s.</translation>
+    </message>
+    <message>
+        <source>Importing…</source>
+        <translation type="unfinished">Importuji...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
@@ -3710,6 +4112,22 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">Ve -whitelist byla zadána neplatná podsíť: '%s'</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">Načítám P2P adresy…</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">Načítám banlist...</translation>
+    </message>
+    <message>
+        <source>Loading block index…</source>
+        <translation type="unfinished">Načítám index bloků...</translation>
+    </message>
+    <message>
+        <source>Loading wallet…</source>
+        <translation type="unfinished">Načítám peněženku...</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation type="unfinished">V rámci -whitebind je třeba specifikovat i port: '%s'</translation>
     </message>
@@ -3726,12 +4144,28 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">Prořezávání nemůže být zkonfigurováno s negativní hodnotou.</translation>
     </message>
     <message>
+        <source>Prune mode is incompatible with -coinstatsindex.</source>
+        <translation type="unfinished">Prořezávací režim je nekompatibilní s -coinstatsindex.</translation>
+    </message>
+    <message>
         <source>Prune mode is incompatible with -txindex.</source>
         <translation type="unfinished">Prořezávací režim není kompatibilní s -txindex.</translation>
     </message>
     <message>
+        <source>Pruning blockstore…</source>
+        <translation type="unfinished">Prořezávám úložiště bloků...</translation>
+    </message>
+    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation type="unfinished">Omezuji -maxconnections z %d na %d kvůli systémovým omezením.</translation>
+    </message>
+    <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">Přehrání bloků...</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">Přeskenovávám...</translation>
     </message>
     <message>
         <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
@@ -3772,6 +4206,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
         <translation type="unfinished">Zadaný adresář bloků "%s" neexistuje.</translation>
+    </message>
+    <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">Spouštím síťová vlákna…</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
@@ -3816,6 +4254,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>Transaction must have at least one recipient</source>
         <translation type="unfinished">Transakce musí mít alespoň jednoho příjemce</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. %s</source>
+        <translation type="unfinished">Transakce potřebuje změnu adresy, ale ta se nepodařila vygenerovat. %s</translation>
     </message>
     <message>
         <source>Transaction too large</source>
@@ -3866,6 +4308,10 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
         <translation type="unfinished">V -onlynet byla uvedena neznámá síť: '%s'</translation>
     </message>
     <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">Neznámá nová pravidla aktivována (verzový bit %i)</translation>
+    </message>
+    <message>
         <source>Unsupported logging category %s=%s.</source>
         <translation type="unfinished">Nepodporovaná logovací kategorie %s=%s.</translation>
     </message>
@@ -3880,6 +4326,14 @@ Přejděte do Soubor &gt; Otevřít peněženku pro načtení peněženky.
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation type="unfinished">Komentář u typu klienta (%s) obsahuje riskantní znaky.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks…</source>
+        <translation type="unfinished">Ověřuji bloky…</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)…</source>
+        <translation type="unfinished">Kontroluji peněženku/y…</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>

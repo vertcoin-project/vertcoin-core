@@ -62,8 +62,13 @@
         <translation type="unfinished">Адрес за получаване</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">Тези са вашите Биткойн адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation type="unfinished">създавам</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -149,7 +154,7 @@
         <translation type="unfinished">Потвърди криптирането на порфейла</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation type="unfinished">ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -159,6 +164,10 @@
     <message>
         <source>Wallet encrypted</source>
         <translation type="unfinished">портфейлa е шифрован</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished">Въведете нова пасфраза за уолета.&lt;br/&gt;Моля използвайте пасфраза от &lt;b&gt;десет или повече произволни символа &lt;/b&gt;, или &lt;b&gt;осем или повече думи&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
@@ -221,10 +230,29 @@
     </message>
 </context>
 <context>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation type="unfinished">Фатална грешка се появи. %1 не може да продължи безопастно и ще се затвори.</translation>
+    </message>
+    <message>
+        <source>Internal error</source>
+        <translation type="unfinished">Вътрешна грешка.</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation type="unfinished">Грешка:Избраната "%1" директория не съществува.</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation type="unfinished">Грешка: %1</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 не излезе безопасно…</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -235,7 +263,7 @@
         <translation type="unfinished">Количество</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
         <translation type="unfinished">Въведете Биткойн адрес (например: %1)</translation>
     </message>
     <message>
@@ -334,7 +362,7 @@
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>Преглед</translation>
@@ -393,7 +421,11 @@
         <translation type="unfinished">Мрежата деактивирана</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation type="unfinished">Прокси е &lt;b&gt;разрешено&lt;/b&gt;: %1</translation>
+    </message>
+    <message>
+        <source>Send coins to a Bitcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -413,6 +445,10 @@
         <translation>&amp;получавам</translation>
     </message>
     <message>
+        <source>&amp;Options…</source>
+        <translation type="unfinished">&amp;Опции</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Показване / Скриване</translation>
     </message>
@@ -421,16 +457,44 @@
         <translation>Показване и скриване на основния прозорец</translation>
     </message>
     <message>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation type="unfinished">&amp;Крипритай уолет..</translation>
+    </message>
+    <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>&amp;Backup Wallet…</source>
+        <translation type="unfinished">&amp;Бекъп уолет.</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase…</source>
+        <translation type="unfinished">&amp;Промени пасфрейз.</translation>
+    </message>
+    <message>
+        <source>Sign &amp;message…</source>
+        <translation type="unfinished">Подпиши &amp;съобщение…</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Пишете съобщения със своя Биткойн адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <source>&amp;Verify message…</source>
+        <translation type="unfinished">&amp;Потвърди съобщение…</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Биткойн адреси.</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file…</source>
+        <translation type="unfinished">&amp;Зареди PSBT от файл…</translation>
+    </message>
+    <message>
+        <source>Close All Wallets…</source>
+        <translation type="unfinished">Затвори всички уолети</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -449,7 +513,11 @@
         <translation>Лентата с инструменти</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <source>Synchronizing with network…</source>
+        <translation type="unfinished">Синхронизиране с мрежа</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation type="unfinished">Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
     </message>
     <message>
@@ -508,6 +576,10 @@
         <translation type="unfinished">Отворете портфейл</translation>
     </message>
     <message>
+        <source>Open a wallet</source>
+        <translation type="unfinished">Отвори портфейл</translation>
+    </message>
+    <message>
         <source>Close wallet</source>
         <translation type="unfinished">Затвори портфейла</translation>
     </message>
@@ -516,12 +588,16 @@
         <translation type="unfinished">Затвори всички портфейли</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation type="unfinished">Покажи %1 помощно съобщение за да получиш лист с възможни Биткойн команди</translation>
     </message>
     <message>
         <source>default wallet</source>
         <translation type="unfinished">Портфейл по подразбиране</translation>
+    </message>
+    <message>
+        <source>No wallets available</source>
+        <translation type="unfinished">Няма достъпни портфейли</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -544,12 +620,35 @@
         <translation type="unfinished">%1 клиент</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">Клик за повече действия</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">Блокирай мрежова активност</translation>
+    </message>
+    <message>
+        <source>Enable network activity</source>
+        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
+        <translation type="unfinished">Разреши мрежова активност</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation type="unfinished">Грешка: %1</translation>
+    </message>
+    <message>
+        <source>Warning: %1</source>
+        <translation type="unfinished">Внимание: %1</translation>
     </message>
     <message>
         <source>Date: %1
@@ -562,6 +661,11 @@
 </source>
         <translation type="unfinished">Сума: %1
 </translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation type="unfinished">Портфейл: %1</translation>
     </message>
     <message>
         <source>Type: %1
@@ -590,6 +694,18 @@
         <translation>Входяща транзакция</translation>
     </message>
     <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation type="unfinished">Генерирането на HD ключ е &lt;b&gt;разрешено&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation type="unfinished">Генерирането на HD ключ е &lt;b&gt;изключено&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation type="unfinished">Частнен ключ&lt;b&gt;изключен&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;отключен&lt;/b&gt;</translation>
     </message>
@@ -597,7 +713,11 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
-    </context>
+    <message>
+        <source>Original message:</source>
+        <translation type="unfinished">Оригинално съобщение:</translation>
+    </message>
+</context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -673,6 +793,22 @@
         <translation type="unfinished">Копиране на сумата</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Копирай адрес</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Копирай сума</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">Заключи неизхарчено</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">Отключи неизхарчено</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">Копиране на количеството</translation>
     </message>
@@ -713,6 +849,10 @@
         <translation type="unfinished">Този етикет става червен ако някой получател получи количество, по-малко от текущия праг на прах</translation>
     </message>
     <message>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation type="unfinished">Може да варира с +/- %1 байт(а).</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation type="unfinished">(без етикет)</translation>
     </message>
@@ -728,12 +868,20 @@
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation type="unfinished">Създаване на уолет 1 1%1 1</translation>
+    </message>
+    <message>
         <source>Create wallet failed</source>
         <translation type="unfinished">Създаването на портфейл не бе успешен</translation>
     </message>
     </context>
 <context>
     <name>OpenWalletActivity</name>
+    <message>
+        <source>Open wallet failed</source>
+        <translation type="unfinished">Отварянето на уолет неупсешно</translation>
+    </message>
     <message>
         <source>default wallet</source>
         <translation type="unfinished">Портфейл по подразбиране</translation>
@@ -757,8 +905,20 @@
         <translation type="unfinished">Създайте портфейл</translation>
     </message>
     <message>
+        <source>Wallet Name</source>
+        <translation type="unfinished">Име на портфейл</translation>
+    </message>
+    <message>
         <source>Wallet</source>
         <translation type="unfinished">портфейл</translation>
+    </message>
+    <message>
+        <source>Encrypt Wallet</source>
+        <translation type="unfinished">Криптирай портфейла</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation type="unfinished">Създай</translation>
     </message>
     </context>
 <context>
@@ -796,7 +956,7 @@
         <translation type="unfinished">Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation type="unfinished">"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -834,7 +994,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Vertcoin</source>
+        <source>Bitcoin</source>
         <translation type="unfinished">Биткоин</translation>
     </message>
     <message>
@@ -854,6 +1014,10 @@
         </translation>
     </message>
     <message>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">%1 ще свали и съхрани копие на биткойн блокчейна.</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>грешка</translation>
     </message>
@@ -868,6 +1032,10 @@
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
         <translation type="unfinished">Програмата се стартира за първи път вие може да изберете къде %1 ще се запаметят данните.</translation>
+    </message>
+    <message>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation type="unfinished">Първоначалната синхронизация е изключително взискателна, и може да разкрие хардуерни проблеми с вашия компютър, които до сега са били незабелязани. Всеки път, когато включите %1,  свалянето ще започне от където е приключило.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -978,8 +1146,8 @@
         <translation type="unfinished">&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Vertcoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Bitcoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -994,7 +1162,7 @@
         <translation type="unfinished">Позволи входящи връзки</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">Свързване с Биткойн мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
@@ -1105,7 +1273,7 @@
         <translation>форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1167,7 +1335,7 @@
         <translation type="unfinished">Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation type="unfinished">Биткойн не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
@@ -1228,6 +1396,10 @@
         <translation type="unfinished">Грешка при създаването на QR Code от URI.</translation>
     </message>
     <message>
+        <source>QR code support not available.</source>
+        <translation type="unfinished">QR код подръжка не е достъпна.</translation>
+    </message>
+    <message>
         <source>Save QR Code</source>
         <translation type="unfinished">Запази QR Код</translation>
     </message>
@@ -1267,6 +1439,18 @@
         <translation>Брой връзки</translation>
     </message>
     <message>
+        <source>Block chain</source>
+        <translation>Блокчейн</translation>
+    </message>
+    <message>
+        <source>Memory usage</source>
+        <translation type="unfinished">Използвана памет</translation>
+    </message>
+    <message>
+        <source>Wallet: </source>
+        <translation type="unfinished">Портфейл:</translation>
+    </message>
+    <message>
         <source>Received</source>
         <translation type="unfinished">Получени</translation>
     </message>
@@ -1287,12 +1471,24 @@
         <translation type="unfinished">Версия</translation>
     </message>
     <message>
+        <source>Synced Blocks</source>
+        <translation type="unfinished">Синхронизирани блокове</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation type="unfinished">Потребителски агент</translation>
     </message>
     <message>
         <source>Node window</source>
         <translation type="unfinished">Прозорец на възела</translation>
+    </message>
+    <message>
+        <source>Decrease font size</source>
+        <translation type="unfinished">Намали размера на шрифта</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation type="unfinished">Разрешения</translation>
     </message>
     <message>
         <source>Services</source>
@@ -1349,6 +1545,10 @@
     <message>
         <source>Out:</source>
         <translation type="unfinished">Изходящи</translation>
+    </message>
+    <message>
+        <source>Executing command without any wallet</source>
+        <translation type="unfinished">Извършване на команда без портфейл</translation>
     </message>
     <message>
         <source>via %1</source>
@@ -1420,6 +1620,14 @@
     <message>
         <source>Copy &amp;URI</source>
         <translation type="unfinished">Копиране на &amp;URI</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Копирай адрес</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Копирай сума</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -1654,7 +1862,7 @@
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
+        <source>Warning: Invalid Bitcoin address</source>
         <translation type="unfinished">Внимание: Невалиден Биткойн адрес</translation>
     </message>
     <message>
@@ -1691,6 +1899,10 @@
     <message>
         <source>Remove this entry</source>
         <translation type="unfinished">Премахване на този запис</translation>
+    </message>
+    <message>
+        <source>Use available balance</source>
+        <translation type="unfinished">Ползвай достъпен баланс</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -1736,7 +1948,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1752,7 +1964,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -1824,6 +2036,10 @@
     <message>
         <source>Open until %1</source>
         <translation type="unfinished">Подлежи на промяна до %1</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, %1</source>
+        <translation type="unfinished">0/непотвърдено, %1</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
@@ -2093,6 +2309,14 @@
         <translation type="unfinished">Минимална сума</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;Копирай адрес</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">Копирай сума</translation>
+    </message>
+    <message>
         <source>Export Transaction History</source>
         <translation type="unfinished">Изнасяне историята на транзакциите</translation>
     </message>
@@ -2178,6 +2402,10 @@
         <translation type="unfinished">грешка</translation>
     </message>
     <message>
+        <source>Partially Signed Transaction (*.psbt)</source>
+        <translation type="unfinished">Частично Подписана Транзакция (*.psbt)</translation>
+    </message>
+    <message>
         <source>Backup Wallet</source>
         <translation type="unfinished">Запазване на портфейла</translation>
     </message>
@@ -2199,7 +2427,11 @@
     </message>
     </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Config setting for %s only applied on %s network when in [%s] section.</source>
+        <translation type="unfinished">Конфигурирай настройки за %s само когато са приложени на %s мрежа, когато са в [%s] секция.</translation>
+    </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation type="unfinished">Желаете ли да пресъздадете базата данни с блокове сега?</translation>

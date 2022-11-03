@@ -35,7 +35,7 @@
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>匯出(&amp;E)</translation>
+        <translation>&amp;匯出</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -58,11 +58,11 @@
         <translation type="unfinished">接收地址</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">這些是你要發送過去的 比特幣地址。在發送幣之前，務必要檢查金額和接收地址是否正確。</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">這些是您的比特幣接收地址。使用“接收”標籤中的“產生新的接收地址”按鈕產生新的地址。只能使用“傳統”類型的地址進行簽名。</translation>
     </message>
@@ -81,6 +81,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Export Address List</source>
         <translation type="unfinished">匯出地址清單</translation>
+    </message>
+    <message>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <translation type="unfinished">逗號分隔文件</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
@@ -150,8 +155,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">確認錢包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Vertcoin 了&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Bitcoin 了&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -163,14 +168,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished">輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;個或10個以上隨機字符&lt;/b&gt;或&lt;b&gt;個8個以上單詞3的密碼。</translation>
+        <translation type="unfinished">輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;個或10個以上隨機字符&lt;/b&gt;或&lt;b&gt;個8個以上單詞&lt;/b&gt;的密碼。</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
         <translation type="unfinished">輸入錢包的密碼短語和新密碼短語。</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">請記得, 即使將錢包加密, 也不能完全防止因惡意軟體入侵, 而導致位元幣被偷.</translation>
     </message>
     <message>
@@ -230,6 +235,21 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">失控異常</translation>
+    </message>
+    <message>
+        <source>Internal error</source>
+        <translation type="unfinished">內部錯誤</translation>
+    </message>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">發生了內部錯誤%1 將嘗試安全地繼續。 這是一個意外錯誤，可以按如下所述進行報告。</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -244,6 +264,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">错误：%1</translation>
     </message>
     <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1還沒有安全退出……</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation type="unfinished">未知</translation>
     </message>
@@ -252,8 +276,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">金額</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
         <translation type="unfinished">輸入 比特幣地址 (比如說 %1)</translation>
+    </message>
+    <message>
+        <source>Unroutable</source>
+        <translation type="unfinished">不可路由</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -345,7 +373,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;總覽</translation>
@@ -400,7 +428,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">代理伺服器&lt;b&gt;已經啟用&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
+        <source>Send coins to a Bitcoin address</source>
         <translation>發送幣給一個比特幣地址</translation>
     </message>
     <message>
@@ -420,6 +448,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;接收</translation>
     </message>
     <message>
+        <source>&amp;Options…</source>
+        <translation type="unfinished">&amp;選項...</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;顯示或隱藏</translation>
     </message>
@@ -428,16 +460,61 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>顯示或隱藏主視窗</translation>
     </message>
     <message>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation type="unfinished">&amp;加密錢包...</translation>
+    </message>
+    <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>將錢包中之密鑰加密</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <source>&amp;Backup Wallet…</source>
+        <translation type="unfinished">&amp;备用钱包...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase…</source>
+        <translation type="unfinished">&amp;更改密碼短語...</translation>
+    </message>
+    <message>
+        <source>Sign &amp;message…</source>
+        <translation type="unfinished">簽名 &amp;信息…</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>用比特幣地址簽名訊息來證明位址是你的</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <source>&amp;Verify message…</source>
+        <translation type="unfinished">&amp;驗證
+訊息...</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>驗證訊息是用來確定訊息是用指定的比特幣地址簽名的</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file…</source>
+        <translation type="unfinished">&amp;從檔案載入PSBT...</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard…</source>
+        <translation type="unfinished">從剪貼簿載入PSBT...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI…</source>
+        <translation type="unfinished">開啟 &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Close Wallet…</source>
+        <translation type="unfinished">关钱包...</translation>
+    </message>
+    <message>
+        <source>Create Wallet…</source>
+        <translation type="unfinished">创建钱包...</translation>
+    </message>
+    <message>
+        <source>Close All Wallets…</source>
+        <translation type="unfinished">关所有钱包...</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -456,8 +533,32 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>分頁工具列</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">要求付款(產生 QR Code 和 vertcoin 付款協議的資源識別碼: URI)</translation>
+        <source>Syncing Headers (%1%)…</source>
+        <translation type="unfinished">同步區塊頭 (%1%)…</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network…</source>
+        <translation type="unfinished">正在與網絡同步…</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk…</source>
+        <translation type="unfinished">索引磁盤上的索引塊中...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk…</source>
+        <translation type="unfinished">處理磁碟裡的區塊中...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk…</source>
+        <translation type="unfinished">正在重新索引磁盤上的區塊...</translation>
+    </message>
+    <message>
+        <source>Connecting to peers…</source>
+        <translation type="unfinished">连到同行...</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">要求付款(產生 QR Code 和 bitcoin 付款協議的資源識別碼: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -474,12 +575,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform />
+            <numerusform>已處理%n個區塊的交易歷史。</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
         <translation>落後 %1</translation>
+    </message>
+    <message>
+        <source>Catching up…</source>
+        <translation type="unfinished">赶上...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -506,11 +611,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>最新狀態</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
+        <source>Load Partially Signed Bitcoin Transaction</source>
         <translation type="unfinished">載入部分簽名的比特幣交易</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
         <translation type="unfinished">從剪貼簿載入部分簽名的比特幣交易</translation>
     </message>
     <message>
@@ -530,7 +635,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;接收地址</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
+        <source>Open a bitcoin: URI</source>
         <translation type="unfinished">打開一個比特幣：URI</translation>
     </message>
     <message>
@@ -550,7 +655,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">關閉所有錢包</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation type="unfinished">顯示 %1 的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -590,11 +695,31 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 客戶端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform />
+            <numerusform>已處理%n個區塊的交易歷史。</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">點擊查看更多操作</translation>
+    </message>
+    <message>
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation type="unfinished">顯示節點選項卡</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">關閉網路紀錄</translation>
+    </message>
+    <message>
+        <source>Enable network activity</source>
+        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
+        <translation type="unfinished">關閉網路紀錄</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -755,6 +880,30 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">複製金額</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;复制地址</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">复制和标签</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">复制和数量</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">複製交易 &amp;ID</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">鎖定未消費金額額</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">解鎖未花費金額</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">複製數目</translation>
     </message>
@@ -813,6 +962,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 </context>
 <context>
     <name>CreateWalletActivity</name>
+    <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation type="unfinished">正在創建錢包&lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
     <message>
         <source>Create wallet failed</source>
         <translation type="unfinished">創建錢包失敗&lt;br&gt;</translation>
@@ -946,7 +1099,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">編輯發送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation type="unfinished">輸入的地址 %1 並不是有效的比特幣地址。</translation>
     </message>
     <message>
@@ -1003,8 +1156,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation type="unfinished">%1 會下載 Vertcoin 區塊鏈並且儲存一份副本。</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">%1 會下載 Bitcoin 區塊鏈並且儲存一份副本。</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1084,16 +1237,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">表單</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 vertcoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 bitcoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 vertcoin 可能會不被網路所接受。</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 bitcoin 可能會不被網路所接受。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
         <translation type="unfinished">剩餘區塊數</translation>
+    </message>
+    <message>
+        <source>Unknown…</source>
+        <translation type="unfinished">不明...</translation>
+    </message>
+    <message>
+        <source>calculating…</source>
+        <translation type="unfinished">计算...</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1123,7 +1284,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
+        <source>Open bitcoin URI</source>
         <translation type="unfinished">打開比特幣URI</translation>
     </message>
     </context>
@@ -1226,8 +1387,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;可以花費還未確認的找零</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動在路由器上開放 Vertcoin 的客戶端通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動在路由器上開放 Bitcoin 的客戶端通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1242,8 +1403,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">接受外來連線(&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 Vertcoin 網路。</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 Bitcoin 網路。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1306,7 +1467,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">是否要顯示錢幣控制功能。</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">通過用於Tor洋蔥服務個別的SOCKS5代理連接到比特幣網路。</translation>
     </message>
     <message>
@@ -1381,8 +1542,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>表單</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>顯示的資訊可能是過期的。跟 Vertcoin 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>顯示的資訊可能是過期的。跟 Bitcoin 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1472,6 +1633,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">複製到剪貼簿</translation>
     </message>
     <message>
+        <source>Save…</source>
+        <translation type="unfinished">拯救...</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation type="unfinished">關閉</translation>
     </message>
@@ -1547,19 +1712,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation type="unfinished">沒辦法啟動 vertcoin 協議的「按就付」處理器</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished">沒辦法啟動 bitcoin 協議的「按就付」處理器</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI 處理</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">字首為 vertcoin:// 不是有效的 URI，請改用 vertcoin: 開頭。</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">字首為 bitcoin:// 不是有效的 URI，請改用 bitcoin: 開頭。</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
         <translation type="unfinished">沒辦法解析 URI ！可能是因為無效比特幣地址，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
@@ -1578,6 +1743,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Ping</source>
         <extracomment>Title of Peers Table column which indicates the current latency of the connection with the peer.</extracomment>
         <translation type="unfinished">Ping  時間</translation>
+    </message>
+    <message>
+        <source>Peer</source>
+        <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
+        <translation type="unfinished">同行</translation>
     </message>
     <message>
         <source>Sent</source>
@@ -1926,8 +2096,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">訊息(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 Vertcoin 網路上。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 Bitcoin 網路上。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1992,6 +2162,18 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Copy &amp;URI</source>
         <translation type="unfinished">複製 &amp;URI</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;复制地址</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">复制和标签</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">复制和数量</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -2167,7 +2349,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">隱藏交易手續費設定</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation type="unfinished">当交易量小于可用区块空间时，矿工和中继节点可能会执行最低手续费率限制。按照这个最低费率来支付手续费也是可以的，但请注意，一旦交易需求超出比特币网络能处理的限度，你的交易可能永远也无法确认。</translation>
     </message>
     <message>
@@ -2349,7 +2531,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
+        <source>Warning: Invalid Bitcoin address</source>
         <translation type="unfinished">警告: 比特幣地址無效</translation>
     </message>
     <message>
@@ -2388,7 +2570,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">選擇先前使用過的地址</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
+        <source>The Bitcoin address to send the payment to</source>
         <translation type="unfinished">將支付發送到的比特幣地址給</translation>
     </message>
     <message>
@@ -2404,8 +2586,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">以所選單位發送的金額</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 vertcoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 bitcoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2432,8 +2614,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">請輸入這個地址的標籤，來把它加進去已使用過地址清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">附加在 Vertcoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Vertcoin 網路上。</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">附加在 Bitcoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Bitcoin 網路上。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2455,11 +2637,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>簽署訊息(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">您可以使用您的地址簽名訊息/協議，以證明您可以接收發送給他們的比特幣。但是請小心，不要簽名語意含糊不清，或隨機產生的內容，因為釣魚式詐騙可能會用騙你簽名的手法來冒充是你。只有簽名您同意的詳細內容。</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
+        <source>The Bitcoin address to sign the message with</source>
         <translation type="unfinished">用來簽名訊息的 比特幣地址</translation>
     </message>
     <message>
@@ -2483,7 +2665,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>複製目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>簽名這個訊息來證明這個比特幣地址是你的</translation>
     </message>
     <message>
@@ -2507,7 +2689,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">請在下面輸入收款人的地址，訊息(請確定完整複製了所包含的換行、空格、tabs...等)，以及簽名，來驗證這個訊息。請小心，除了訊息內容以外，不要對簽名本身過度解讀，以避免被用「中間人攻擊法」詐騙。請注意，通過驗證的簽名只能證明簽名人確實可以從該地址收款，不能證明任何交易中的付款人身份！</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
+        <source>The Bitcoin address the message was signed with</source>
         <translation type="unfinished">簽名這個訊息的 比特幣地址</translation>
     </message>
     <message>
@@ -2519,7 +2701,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">簽名訊息時給出的簽名</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>驗證這個訊息來確定是用指定的比特幣地址簽名的</translation>
     </message>
     <message>
@@ -2937,8 +3119,29 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">最小金額</translation>
     </message>
     <message>
+        <source>&amp;Copy address</source>
+        <translation type="unfinished">&amp;复制地址</translation>
+    </message>
+    <message>
+        <source>Copy &amp;label</source>
+        <translation type="unfinished">复制和标签</translation>
+    </message>
+    <message>
+        <source>Copy &amp;amount</source>
+        <translation type="unfinished">复制和数量</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">复制交易 &amp;ID</translation>
+    </message>
+    <message>
         <source>Export Transaction History</source>
         <translation type="unfinished">匯出交易記錄</translation>
+    </message>
+    <message>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <translation type="unfinished">逗號分隔文件</translation>
     </message>
     <message>
         <source>Confirmed</source>
@@ -3127,7 +3330,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 開發人員</translation>
@@ -3337,6 +3540,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">初始化時重新掃描錢包失敗了</translation>
     </message>
     <message>
+        <source>Importing…</source>
+        <translation type="unfinished">匯入中...</translation>
+    </message>
+    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation type="unfinished">創世區塊不正確或找不到。資料目錄錯了嗎？</translation>
     </message>
@@ -3381,6 +3588,22 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">指定在 -whitelist 的網段無效: '%s'</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">載入P2P地址中...</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">正在載入黑名單中...</translation>
+    </message>
+    <message>
+        <source>Loading block index…</source>
+        <translation type="unfinished">載入區塊索引中...</translation>
+    </message>
+    <message>
+        <source>Loading wallet…</source>
+        <translation type="unfinished">載入錢包中...</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation type="unfinished">指定 -whitebind 時必須包含通訊埠: '%s'</translation>
     </message>
@@ -3397,12 +3620,28 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">修剪值不能設定為負的。</translation>
     </message>
     <message>
+        <source>Prune mode is incompatible with -coinstatsindex.</source>
+        <translation type="unfinished">修剪模式和 -硬幣統計指數 不相容</translation>
+    </message>
+    <message>
         <source>Prune mode is incompatible with -txindex.</source>
         <translation type="unfinished">修剪模式和 -txindex 參數不相容。</translation>
     </message>
     <message>
+        <source>Pruning blockstore…</source>
+        <translation type="unfinished">修剪區塊資料庫中...</translation>
+    </message>
+    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation type="unfinished">因為系統的限制，將 -maxconnections 參數從 %d 降到了 %d</translation>
+    </message>
+    <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">正在對區塊進行重新計算...</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">重新掃描中...</translation>
     </message>
     <message>
         <source>Section [%s] is not recognized.</source>
@@ -3429,8 +3668,16 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">指定的區塊目錄 "%s" 不存在。</translation>
     </message>
     <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">正在開始網路線程...</translation>
+    </message>
+    <message>
         <source>The source code is available from %s.</source>
         <translation type="unfinished">原始碼可以在 %s 取得。</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist</source>
+        <translation type="unfinished">這個指定的配置檔案%s不存在</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3493,6 +3740,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">沒辦法產生密鑰</translation>
     </message>
     <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">無法開啟%s來寫入</translation>
+    </message>
+    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">無法啟動 HTTP 伺服器。詳情請看除錯紀錄。</translation>
     </message>
@@ -3513,6 +3764,10 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">在 -onlynet 指定了不明的網路別: '%s'</translation>
     </message>
     <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">未知的交易已經有新規則激活 (versionbit %i)</translation>
+    </message>
+    <message>
         <source>Unsupported logging category %s=%s.</source>
         <translation type="unfinished">不支援的紀錄類別 %s=%s。</translation>
     </message>
@@ -3527,6 +3782,14 @@ Go to File &gt; Open Wallet to load a wallet.
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation type="unfinished">使用者代理註解(%s)中含有不安全的字元。</translation>
+    </message>
+    <message>
+        <source>Verifying blocks…</source>
+        <translation type="unfinished">正在驗證區塊數據...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)…</source>
+        <translation type="unfinished">正在驗證錢包...</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>

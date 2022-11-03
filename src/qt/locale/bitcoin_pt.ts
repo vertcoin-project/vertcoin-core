@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Criar um novo endereço</translation>
+        <translation>Crie um endereço novo</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -66,13 +66,13 @@
         <translation type="unfinished">Endereços de receção</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Estes são os seus endereços Vertcoin para enviar pagamentos. Verifique sempre o valor e o endereço de receção antes de enviar moedas.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Estes são os seus endereços Bitcoin para enviar pagamentos. Verifique sempre o valor e o endereço de receção antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Estes são seus novos endereços Vertcoin para o recebimento de pagamentos. Use o botão "Criar novo endereço de recebimento" na aba "Receber"  para criar novos endereços.
+        <translation type="unfinished">Estes são seus novos endereços Bitcoin para o recebimento de pagamentos. Use o botão "Criar novo endereço de recebimento" na aba "Receber"  para criar novos endereços.
 Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
@@ -164,8 +164,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Aviso: se encriptar a sua carteira e perder a sua frase de segurnça, &lt;b&gt;PERDERÁ TODOS OS SEUS VERTCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Aviso: se encriptar a sua carteira e perder a sua frase de segurnça, &lt;b&gt;PERDERÁ TODOS OS SEUS BITCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Insira a password antiga e a nova para a carteira.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Lembra se que encrostar a sua carteira não o pode defender na totalidade os seus vertcoins de serem roubados por um malware que possa infectar o seu computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Lembra se que encrostar a sua carteira não o pode defender na totalidade os seus bitcoins de serem roubados por um malware que possa infectar o seu computador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -244,7 +244,11 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">Exceção de Runaway</translation>
+    </message>
     <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">Um erro fatal ocorreu. %1 não pode mais continuar de maneira segura e será terminada.</translation>
@@ -253,7 +257,11 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <source>Internal error</source>
         <translation type="unfinished">Erro interno</translation>
     </message>
-    </context>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">Ocorreu um erro interno. %1 irá tentar continuar com segurança. Isto é um erro inesperado que pode ser reportado como descrito abaixo.</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -273,6 +281,10 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Erro ao inicializar configurações: %1</translation>
     </message>
     <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 ainda não terminou com segurança...</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation type="unfinished">desconhecido</translation>
     </message>
@@ -281,8 +293,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Quantia</translation>
     </message>
     <message>
-        <source>Enter a Vertcoin address (e.g. %1)</source>
-        <translation type="unfinished">Introduza um endereço Vertcoin (ex. %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation type="unfinished">Introduza um endereço Bitcoin (ex. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -299,6 +311,22 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     <message>
         <source>Outbound</source>
         <translation type="unfinished">Saída</translation>
+    </message>
+    <message>
+        <source>Full Relay</source>
+        <translation type="unfinished">Retransmissão total</translation>
+    </message>
+    <message>
+        <source>Block Relay</source>
+        <translation type="unfinished">Retransmissão de Blocos</translation>
+    </message>
+    <message>
+        <source>Feeler</source>
+        <translation type="unfinished">Antena</translation>
+    </message>
+    <message>
+        <source>Address Fetch</source>
+        <translation type="unfinished">Procura de endreços</translation>
     </message>
     <message>
         <source>None</source>
@@ -356,7 +384,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Resumo</translation>
@@ -419,8 +447,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Proxy está &lt;b&gt;ativado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Enviar moedas para um endereço Vertcoin</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Enviar moedas para um endereço Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -471,16 +499,24 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Assinar &amp;mensagem…</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Assine as mensagens com os seus endereços Vertcoin para provar que é o proprietário dos mesmos</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Assine as mensagens com os seus endereços Bitcoin para provar que é o proprietário dos mesmos</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verificar mensagem…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Vertcoin especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Bitcoin especificado</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file…</source>
+        <translation type="unfinished">&amp;Carregar PSBT do arquivo...</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard…</source>
+        <translation type="unfinished">Carregar PSBT da área de transferência...</translation>
     </message>
     <message>
         <source>Open &amp;URI…</source>
@@ -539,8 +575,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">A conectar aos pares…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Solicitar pagamentos (gera códigos QR e vertcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Solicitar pagamentos (gera códigos QR e bitcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -557,13 +593,17 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform />
-            <numerusform />
+            <numerusform>Processado %n bloco do histórico de transações.</numerusform>
+            <numerusform>Processados %n blocos do histórico de transações.</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
         <translation>%1 em atraso</translation>
+    </message>
+    <message>
+        <source>Catching up…</source>
+        <translation type="unfinished">Recuperando o atraso...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -590,12 +630,12 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation>Atualizado</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation type="unfinished">Carregar transação de Vertcoin parcialmente assinada</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Carregar transação de Bitcoin parcialmente assinada</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
-        <translation type="unfinished">Carregar transação de Vertcoin parcialmente assinada da área de transferência.</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Carregar transação de Bitcoin parcialmente assinada da área de transferência.</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -614,8 +654,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">&amp;Endereços de receção</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">Abrir um vertcoin URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Abrir um bitcoin URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -634,7 +674,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Fechar todas carteiras.</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation type="unfinished">Mostrar a mensagem de ajuda %1 para obter uma lista com possíveis opções a usar na linha de comandos.</translation>
     </message>
     <message>
@@ -674,12 +714,32 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Cliente %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n ligação ativa à rede Bitcoin.</numerusform>
+            <numerusform>%n ligações ativas à rede Bitcoin</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">Clique para mais acções.</translation>
+    </message>
+    <message>
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation type="unfinished">Mostra aba de Pares</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">Desativar atividade da rede</translation>
+    </message>
+    <message>
+        <source>Enable network activity</source>
+        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
+        <translation type="unfinished">Activar atividade da rede</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -848,6 +908,18 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Copiar &amp;quantia</translation>
     </message>
     <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Copiar Id. da transação</translation>
+    </message>
+    <message>
+        <source>L&amp;ock unspent</source>
+        <translation type="unfinished">&amp;Bloquear não gasto</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock unspent</source>
+        <translation type="unfinished">&amp;Desbloquear não gasto</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation type="unfinished">Copiar quantidade</translation>
     </message>
@@ -918,7 +990,11 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <source>Create wallet warning</source>
         <translation type="unfinished">Aviso ao criar carteira</translation>
     </message>
-    </context>
+    <message>
+        <source>Can't list signers</source>
+        <translation type="unfinished">Não é possível listar signatários</translation>
+    </message>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1012,6 +1088,14 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Carteira de descritor</translation>
     </message>
     <message>
+        <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
+        <translation type="unfinished">Utilize um dispositivo de assinatura externo tal com uma carteira de hardware. Configure primeiro o script de assinatura nas preferências da carteira.</translation>
+    </message>
+    <message>
+        <source>External signer</source>
+        <translation type="unfinished">Signatário externo</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation type="unfinished">Criar</translation>
     </message>
@@ -1019,7 +1103,12 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
         <translation type="unfinished">Compilado sem suporte para sqlite (requerido para carteiras de descritor)</translation>
     </message>
-    </context>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Compilado sem suporte de assinatura externa. (necessário para assinatura externa)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1055,8 +1144,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Editar o endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">O endereço introduzido "%1" não é um endereço vertcoin válido.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">O endereço introduzido "%1" não é um endereço bitcoin válido.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1109,6 +1198,10 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">(de %1 GB necessários)</translation>
     </message>
     <message>
+        <source>(%1 GB needed for full chain)</source>
+        <translation type="unfinished">(1%1 GB necessários para a blockchain  completa)</translation>
+    </message>
+    <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation type="unfinished">No mínimo %1 GB de dados irão ser armazenados nesta pasta.</translation>
     </message>
@@ -1120,13 +1213,13 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <source>(sufficient to restore backups %n day(s) old)</source>
         <extracomment>Explanatory text on the capability of the current prune target.</extracomment>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>(suficiente para restaurar backups com %n dia(s) de antiguidade)</numerusform>
+            <numerusform>(suficiente para restaurar backups com %n dia(s) de antiguidade)</numerusform>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation type="unfinished">%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Vertcoin.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Bitcoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1155,6 +1248,10 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation type="unfinished">Quando clicar OK, %1 vai começar a descarregar e processar a cadeia de blocos %4 completa (%2GB) começando com as transações mais antigas em %3 quando a %4 foi inicialmente lançada.</translation>
+    </message>
+    <message>
+        <source>Limit block chain storage to</source>
+        <translation type="unfinished">Limitar o tamanho da blockchain para</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -1210,12 +1307,12 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Formulário</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
         <translation type="unfinished">Transações recentes podem não ser visíveis por agora, portanto o saldo da sua carteira pode estar incorreto. Esta informação será corrigida quando a sua carteira acabar de sincronizar com a rede, como está explicado em baixo.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Tentar enviar vertcoins que estão afetadas por transações ainda não exibidas não será aceite pela rede.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Tentar enviar bitcoins que estão afetadas por transações ainda não exibidas não será aceite pela rede.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1257,12 +1354,16 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
         <translation type="unfinished">%1 está neste momento a sincronizar. Irá descarregar os cabeçalhos e blocos dos pares e validá-los até atingir a ponta da cadeia de blocos.</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1, %2%)…</source>
+        <translation type="unfinished">Desconhecido. A sincronizar cabeçalhos (%1, %2%)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
-        <translation type="unfinished">Abrir um Vertcoin URI</translation>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Abrir um Bitcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1282,6 +1383,10 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     <message>
         <source>&amp;Start %1 on system login</source>
         <translation type="unfinished">&amp;Iniciar o %1 no início de sessão do sistema</translation>
+    </message>
+    <message>
+        <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation type="unfinished">A ativação do pruning reduz significativamente o espaço em disco necessário para armazenar transações. Todos os blocos ainda estão totalmente validados. Reverter esta configuração requer que faça novamente o download de toda a blockchain.</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1365,12 +1470,32 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">&amp;Gastar troco não confirmado</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente vertcoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation type="unfinished">Signatário externo (ex: carteira física)</translation>
+    </message>
+    <message>
+        <source>&amp;External signer script path</source>
+        <translation type="unfinished">&amp;Caminho do script para signatário externo </translation>
+    </message>
+    <message>
+        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Caminho completo para um script compatível com Bitcoin Core (por exemplo, C: \ Downloads \ hwi.exe ou /Users/you/Downloads/hwi.py). Cuidado: o malware pode roubar suas moedas!</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir a porta do cliente bitcoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear porta, utilizando &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Abrir a porta do cliente bitcoin automaticamente no seu router. Isto só funciona se o seu router suportar NAT-PMP e este se encontrar ligado. A porta externa poderá ser aleatória.</translation>
+    </message>
+    <message>
+        <source>Map port using NA&amp;T-PMP</source>
+        <translation type="unfinished">Mapear porta usando &amp;NAT-PMP</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -1381,8 +1506,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Permitir ligações de "a receber"</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Conectar à rede da Vertcoin através dum proxy SOCLS5.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Conectar à rede da Bitcoin através dum proxy SOCLS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1407,6 +1532,14 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;Janela</translation>
+    </message>
+    <message>
+        <source>Show the icon in the system tray.</source>
+        <translation type="unfinished">Mostrar o ícone na barra de ferramentas.</translation>
+    </message>
+    <message>
+        <source>&amp;Show tray icon</source>
+        <translation type="unfinished">&amp;Mostrar ícone de bandeja</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1445,8 +1578,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Escolha se deve mostrar as funcionalidades de controlo de moedas ou não.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Conecte-se a rede Vertcoin através de um proxy SOCKS5 separado para serviços Tor Onion</translation>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Conecte-se a rede Bitcoin através de um proxy SOCKS5 separado para serviços Tor Onion</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1457,12 +1590,25 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">URLs de transação de &amp;terceiros</translation>
     </message>
     <message>
+        <source>Monospaced font in the Overview tab:</source>
+        <translation type="unfinished">Fonte no painel de visualização:</translation>
+    </message>
+    <message>
+        <source>embedded "%1"</source>
+        <translation type="unfinished">embutido "%1"</translation>
+    </message>
+    <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
         <translation type="unfinished">As opções nesta janela são substituídas pela linha de comandos ou no ficheiro de configuração:</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
         <translation>&amp;Cancelar</translation>
+    </message>
+    <message>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Compilado sem suporte de assinatura externa. (necessário para assinatura externa)</translation>
     </message>
     <message>
         <source>default</source>
@@ -1516,8 +1662,8 @@ Assinar só é possível com endereços do tipo "legado".</translation>
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Vertcoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Bitcoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1652,6 +1798,11 @@ ID transação: %1</translation>
         <translation type="unfinished">Salvar informação de transação</translation>
     </message>
     <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">Transação parcialmente assinada (Binário)</translation>
+    </message>
+    <message>
         <source>PSBT saved to disk.</source>
         <translation type="unfinished">PSBT salva no disco.</translation>
     </message>
@@ -1711,20 +1862,28 @@ ID transação: %1</translation>
         <translation type="unfinished">Erro do pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start vertcoin: click-to-pay handler</source>
-        <translation type="unfinished">Impossível iniciar o controlador de vertcoin: click-to-pay</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished">Impossível iniciar o controlador de bitcoin: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Manuseamento de URI</translation>
     </message>
     <message>
-        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
-        <translation type="unfinished">'vertcoin://' não é um URI válido. Utilize 'vertcoin:'.</translation>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation type="unfinished">'bitcoin://' não é um URI válido. Utilize 'bitcoin:'.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI não foi lido corretamente! Isto pode ser causado por um endereço Vertcoin inválido ou por parâmetros URI malformados.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.
+Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
+If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
+        <translation type="unfinished">Não é possível processar o pagamento pedido porque o BIP70 não é suportado.
+Devido a falhas de segurança no BIP70, é recomendado que todas as instruçōes ao comerciante para mudar de carteiras sejam ignorada.
+Se está a receber este erro, deverá pedir ao comerciante para fornecer um URI compatível com BIP21.</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation type="unfinished">URI não foi lido corretamente! Isto pode ser causado por um endereço Bitcoin inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1737,6 +1896,11 @@ ID transação: %1</translation>
         <source>Ping</source>
         <extracomment>Title of Peers Table column which indicates the current latency of the connection with the peer.</extracomment>
         <translation type="unfinished">Latência</translation>
+    </message>
+    <message>
+        <source>Peer</source>
+        <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
+        <translation type="unfinished">Par</translation>
     </message>
     <message>
         <source>Sent</source>
@@ -1955,12 +2119,28 @@ ID transação: %1</translation>
         <translation type="unfinished">Se este par pediu ou não para retransmitirmos transações.</translation>
     </message>
     <message>
+        <source>High Bandwidth</source>
+        <translation type="unfinished">Alta largura de banda</translation>
+    </message>
+    <message>
         <source>Connection Time</source>
         <translation type="unfinished">Tempo de Ligação</translation>
     </message>
     <message>
+        <source>Elapsed time since a novel block passing initial validity checks was received from this peer.</source>
+        <translation type="unfinished">Tempo decorrido desde que um novo bloco que passou as verificações de validade iniciais foi recebido deste par.</translation>
+    </message>
+    <message>
         <source>Last Block</source>
         <translation type="unfinished">Último bloco</translation>
+    </message>
+    <message>
+        <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
+        <translation type="unfinished">Tempo decorrido desde que uma nova transação aceite para a nossa mempool foi recebida deste par.</translation>
+    </message>
+    <message>
+        <source>Last Tx</source>
+        <translation type="unfinished">Última Tx</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -2027,6 +2207,22 @@ ID transação: %1</translation>
         <translation type="unfinished">Saída:</translation>
     </message>
     <message>
+        <source>Inbound: initiated by peer</source>
+        <translation type="unfinished">Entrando: iniciado por par</translation>
+    </message>
+    <message>
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation type="unfinished">selecionámos o par para uma retransmissão de alta banda larga</translation>
+    </message>
+    <message>
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation type="unfinished">o par selecionou-nos para uma retransmissão de alta banda larga</translation>
+    </message>
+    <message>
+        <source>no high bandwidth relay selected</source>
+        <translation type="unfinished">nenhum retransmissor de alta banda larga selecionado</translation>
+    </message>
+    <message>
         <source>&amp;Disconnect</source>
         <translation type="unfinished">&amp;Desconectar</translation>
     </message>
@@ -2063,9 +2259,30 @@ ID transação: %1</translation>
         <translation type="unfinished">A executar o comando utilizando a carteira "%1"</translation>
     </message>
     <message>
+        <source>Welcome to the %1 RPC console.
+Use up and down arrows to navigate history, and %2 to clear screen.
+Use %3 and %4 to increase or decrease the font size.
+Type %5 for an overview of available commands.
+For more information on using this console, type %6.
+
+%7WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.%8</source>
+        <extracomment>RPC console welcome message. Placeholders %7 and %8 are style tags for the warning content, and they are not space separated from the rest of the text intentionally.</extracomment>
+        <translation type="unfinished">Bem vindo à %1 consola RPC.
+Utilize as setas para cima e para baixo para navegar no histórico, e %2 para limpar o ecrã.
+Utilize o %3 e %4 para aumentar ou diminuir o tamanho da letra.
+Escreva %5 para uma visão geral dos comandos disponíveis.
+Para mais informação acerca da utilização desta consola, escreva %6.
+
+%7ATENÇÃO: Foram notadas burlas, dizendo aos utilizadores para escreverem comandos aqui, roubando os conteúdos da sua carteira. Não utilize esta consola sem perceber as ramificações de um comando.%8</translation>
+    </message>
+    <message>
         <source>Executing…</source>
         <extracomment>A console message indicating an entered command is currently being executed.</extracomment>
         <translation type="unfinished">A executar...</translation>
+    </message>
+    <message>
+        <source>(peer: %1)</source>
+        <translation type="unfinished">(par: %1)</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -2111,8 +2328,8 @@ ID transação: %1</translation>
         <translation type="unfinished">&amp;Mensagem:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
-        <translation type="unfinished">Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede Vertcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation type="unfinished">Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede Bitcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2240,6 +2457,10 @@ ID transação: %1</translation>
     <message>
         <source>&amp;Verify</source>
         <translation type="unfinished">&amp;Verificar</translation>
+    </message>
+    <message>
+        <source>Verify this address on e.g. a hardware wallet screen</source>
+        <translation type="unfinished">Verifique este endreço, por exemplo, no ecrã de uma wallet física</translation>
     </message>
     <message>
         <source>&amp;Save Image…</source>
@@ -2372,6 +2593,10 @@ ID transação: %1</translation>
         <translation type="unfinished">Limpar todos os campos do formulário.</translation>
     </message>
     <message>
+        <source>Inputs…</source>
+        <translation type="unfinished">Entradas...</translation>
+    </message>
+    <message>
         <source>Dust:</source>
         <translation type="unfinished">Lixo:</translation>
     </message>
@@ -2384,12 +2609,16 @@ ID transação: %1</translation>
         <translation type="unfinished">Esconder configurações de taxas de transação</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation type="unfinished">Quando o volume de transações é maior que o espaço nos blocos, os mineradores, bem como os nós de retransmissão, podem impor uma taxa mínima. Pagar apenas esta taxa mínima é muito bom, mas esteja ciente que isso pode resultar numa transação nunca confirmada, uma vez que há mais pedidos para transações do que a rede pode processar.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
         <translation type="unfinished">Uma taxa muito baixa pode resultar numa transação nunca confirmada (leia a dica)</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks…)</source>
+        <translation type="unfinished">(A taxa inteligente ainda não foi inicializada. Isto demora normalmente alguns blocos...)</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
@@ -2452,12 +2681,21 @@ ID transação: %1</translation>
         <translation type="unfinished">%1 (%2 blocos)</translation>
     </message>
     <message>
+        <source>Sign on device</source>
+        <extracomment>"device" usually means a hardware wallet</extracomment>
+        <translation type="unfinished">entrar no dispositivo</translation>
+    </message>
+    <message>
+        <source>Connect your hardware wallet first.</source>
+        <translation type="unfinished">Por favor conecte a sua wallet física primeiro.</translation>
+    </message>
+    <message>
         <source>Cr&amp;eate Unsigned</source>
         <translation type="unfinished">Criar não assinado</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Vertcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Cria uma transação de Vertcoin parcialmente assinada (PSBT)(sigla em inglês) para ser usada por exemplo com uma carteira %1 offline ou uma carteira de hardware compatível com PSBT.</translation>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Cria uma transação de Bitcoin parcialmente assinada (PSBT)(sigla em inglês) para ser usada por exemplo com uma carteira %1 offline ou uma carteira de hardware compatível com PSBT.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -2480,16 +2718,47 @@ ID transação: %1</translation>
         <translation type="unfinished">Tem a certeza que deseja enviar?</translation>
     </message>
     <message>
+        <source>To review recipient list click "Show Details…"</source>
+        <translation type="unfinished">Para rever a lista de destinatários clique "Mostrar detalhes..."</translation>
+    </message>
+    <message>
         <source>Create Unsigned</source>
         <translation type="unfinished">Criar sem assinatura</translation>
+    </message>
+    <message>
+        <source>Sign and send</source>
+        <translation type="unfinished">Assinar e enviar</translation>
+    </message>
+    <message>
+        <source>Sign failed</source>
+        <translation type="unfinished">Assinatura falhou</translation>
+    </message>
+    <message>
+        <source>External signer not found</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Signatário externo não encontrado</translation>
+    </message>
+    <message>
+        <source>External signer failure</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation type="unfinished">Falha do signatário externo</translation>
     </message>
     <message>
         <source>Save Transaction Data</source>
         <translation type="unfinished">Salvar informação de transação</translation>
     </message>
     <message>
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation type="unfinished">Transação parcialmente assinada (Binário)</translation>
+    </message>
+    <message>
         <source>PSBT saved</source>
         <translation type="unfinished">PSBT salva</translation>
+    </message>
+    <message>
+        <source>External balance:</source>
+        <translation type="unfinished">Balanço externo:</translation>
     </message>
     <message>
         <source>or</source>
@@ -2500,8 +2769,8 @@ ID transação: %1</translation>
         <translation type="unfinished">Pode aumentar a taxa depois (sinaliza substituir-por-taxa, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Por favor, reveja sua proposta de transação. Isto irá produzir uma Transação de Vertcoin parcialmente assinada (PSBT, sigla em inglês) a qual você pode salvar ou copiar e então assinar com por exemplo uma carteira %1 offiline ou uma PSBT compatível com carteira de hardware.</translation>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Por favor, reveja sua proposta de transação. Isto irá produzir uma Transação de Bitcoin parcialmente assinada (PSBT, sigla em inglês) a qual você pode salvar ou copiar e então assinar com por exemplo uma carteira %1 offiline ou uma PSBT compatível com carteira de hardware.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -2566,13 +2835,13 @@ ID transação: %1</translation>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation>
-            <numerusform />
-            <numerusform />
+            <numerusform>Estimado para iniciar a confirmação dentro de %n blocos.</numerusform>
+            <numerusform>Estimado para iniciar a confirmação dentro de %n blocos.</numerusform>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Vertcoin address</source>
-        <translation type="unfinished">Aviso: endereço Vertcoin inválido</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation type="unfinished">Aviso: endereço Bitcoin inválido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2610,8 +2879,8 @@ ID transação: %1</translation>
         <translation type="unfinished">Escolha o endereço utilizado anteriormente</translation>
     </message>
     <message>
-        <source>The Vertcoin address to send the payment to</source>
-        <translation type="unfinished">O endereço Vertcoin para enviar o pagamento</translation>
+        <source>The Bitcoin address to send the payment to</source>
+        <translation type="unfinished">O endereço Bitcoin para enviar o pagamento</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2626,8 +2895,8 @@ ID transação: %1</translation>
         <translation type="unfinished">A quantidade para enviar na unidade selecionada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">A taxa será deduzida ao valor que está a ser enviado. O destinatário irá receber menos vertcoins do que as que inseridas no campo do valor. Se estiverem selecionados múltiplos destinatários, a taxa será repartida equitativamente.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">A taxa será deduzida ao valor que está a ser enviado. O destinatário irá receber menos bitcoins do que as que inseridas no campo do valor. Se estiverem selecionados múltiplos destinatários, a taxa será repartida equitativamente.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2654,8 +2923,8 @@ ID transação: %1</translation>
         <translation type="unfinished">Introduza uma etiqueta para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
-        <translation type="unfinished">Uma mensagem que estava anexada ao URI vertcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Vertcoin.</translation>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished">Uma mensagem que estava anexada ao URI bitcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Bitcoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2677,12 +2946,12 @@ ID transação: %1</translation>
         <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Pode assinar mensagens com os seus endereços para provar que são seus. Tenha atenção ao assinar mensagens ambíguas, pois ataques de phishing podem tentar enganá-lo de modo a assinar a sua identidade para os atacantes. Apenas assine declarações detalhadas com as quais concorde.</translation>
     </message>
     <message>
-        <source>The Vertcoin address to sign the message with</source>
-        <translation type="unfinished">O endereço Vertcoin para designar a mensagem</translation>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation type="unfinished">O endereço Bitcoin para designar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2705,8 +2974,8 @@ ID transação: %1</translation>
         <translation>Copiar a assinatura atual para a área de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Vertcoin address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Vertcoin</translation>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Assine uma mensagem para provar que é dono deste endereço Bitcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2729,8 +2998,8 @@ ID transação: %1</translation>
         <translation type="unfinished">Introduza o endereço de assinatura, mensagem (assegure-se que copia quebras de linha, espaços, tabulações, etc. exatamente) e assinatura abaixo para verificar a mensagem. Tenha atenção para não ler mais na assinatura do que o que estiver na mensagem assinada, para evitar ser enganado por um atacante que se encontre entre si e quem assinou a mensagem.</translation>
     </message>
     <message>
-        <source>The Vertcoin address the message was signed with</source>
-        <translation type="unfinished">O endereço Vertcoin com que a mensagem foi designada</translation>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation type="unfinished">O endereço Bitcoin com que a mensagem foi designada</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -2741,8 +3010,8 @@ ID transação: %1</translation>
         <translation type="unfinished">A assinatura dada quando a mensagem foi assinada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Vertcoin especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Bitcoin especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3178,6 +3447,14 @@ ID transação: %1</translation>
         <translation type="unfinished">Copiar &amp;quantia</translation>
     </message>
     <message>
+        <source>Copy transaction &amp;ID</source>
+        <translation type="unfinished">Copiar Id. da transação</translation>
+    </message>
+    <message>
+        <source>&amp;Show transaction details</source>
+        <translation type="unfinished">Mo&amp;strar detalhes da transação</translation>
+    </message>
+    <message>
         <source>&amp;Edit address label</source>
         <translation type="unfinished">&amp;Editar etiqueta do endereço</translation>
     </message>
@@ -3313,6 +3590,10 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Não foi possível cometer a transação</translation>
     </message>
     <message>
+        <source>Can't display address</source>
+        <translation type="unfinished">Não é possível exibir o endereço</translation>
+    </message>
+    <message>
         <source>default wallet</source>
         <translation type="unfinished">carteira predefinida</translation>
     </message>
@@ -3382,18 +3663,22 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
     </message>
 </context>
 <context>
-    <name>vertcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Os programadores de %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s corrompido. Tente usar a ferramenta de carteira vertcoin-wallet para salvar ou restaurar um backup.</translation>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s corrompido. Tente usar a ferramenta de carteira bitcoin-wallet para salvar ou restaurar um backup.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation type="unfinished">-maxtxfee está definido com um valor muito alto! Taxas desta magnitude podem ser pagas numa única transação.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
+        <translation type="unfinished">Não é possível fazer o downgrade da carteira da versão %i para %i. Versão da carteira inalterada.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3412,6 +3697,10 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Erro ao ler %s! Todas as chaves foram lidas corretamente, mas os dados de transação ou as entradas no livro de endereços podem não existir ou estarem incorretos.</translation>
     </message>
     <message>
+        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Erro: Esta versão do bitcoin-wallet apenas suporta arquivos de despejo na versão 1. (Versão atual: %s)</translation>
+    </message>
+    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation type="unfinished">Erro: a escuta de ligações de entrada falhou (escuta devolveu o erro %s)</translation>
     </message>
@@ -3420,12 +3709,21 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Falha na estimativa de taxa. A taxa alternativa de recurso está desativada. Espere alguns blocos ou ative -fallbackfee.</translation>
     </message>
     <message>
+        <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
+        <translation type="unfinished">Arquivo%sjá existe. Se você tem certeza de que é isso que quer, tire-o do caminho primeiro.</translation>
+    </message>
+    <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation type="unfinished">Montante inválido para -maxtxfee=&lt;amount&gt;: '%s' (deverá ser, no mínimo, a taxa mínima de propagação de %s, de modo a evitar transações bloqueadas)</translation>
     </message>
     <message>
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation type="unfinished">Mais de um endereço de ligação onion é fornecido. Usando %s para o serviço Tor onion criado automaticamente.</translation>
+    </message>
+    <message>
+        <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
+        <translation type="unfinished">Nenhum formato de arquivo de carteira fornecido. Para usar createfromdump, -format = &lt;format&gt;
+deve ser fornecido.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3556,6 +3854,10 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Carregamento concluído</translation>
     </message>
     <message>
+        <source>Dump file %s does not exist.</source>
+        <translation type="unfinished">Arquivo de despejo %s não existe</translation>
+    </message>
+    <message>
         <source>Error creating %s</source>
         <translation type="unfinished">Erro a criar %s</translation>
     </message>
@@ -3596,6 +3898,10 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Erro ao ler da base de dados. A encerrar.</translation>
     </message>
     <message>
+        <source>Error reading next record from wallet database</source>
+        <translation type="unfinished">Erro ao ler o registo seguinte da base de dados da carteira</translation>
+    </message>
+    <message>
         <source>Error upgrading chainstate database</source>
         <translation type="unfinished">Erro ao atualizar a base de dados do estado da cadeia (chainstate)</translation>
     </message>
@@ -3604,8 +3910,32 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Erro: espaço em disco demasiado baixo para %s</translation>
     </message>
     <message>
+        <source>Error: Got key that was not hex: %s</source>
+        <translation type="unfinished">Erro: Chave obtida sem ser no formato hex: %s</translation>
+    </message>
+    <message>
+        <source>Error: Got value that was not hex: %s</source>
+        <translation type="unfinished">Erro: Valor obtido sem ser no formato hex: %s</translation>
+    </message>
+    <message>
         <source>Error: Keypool ran out, please call keypoolrefill first</source>
         <translation type="unfinished">A keypool esgotou-se, por favor execute primeiro keypoolrefill1</translation>
+    </message>
+    <message>
+        <source>Error: Missing checksum</source>
+        <translation type="unfinished">Erro: soma de verificação ausente</translation>
+    </message>
+    <message>
+        <source>Error: No %s addresses available.</source>
+        <translation type="unfinished">Erro: Não existem %s endereços disponíveis.</translation>
+    </message>
+    <message>
+        <source>Error: Unable to parse version %u as a uint32_t</source>
+        <translation type="unfinished">Erro: Não foi possível converter versão %u como uint32_t</translation>
+    </message>
+    <message>
+        <source>Error: Unable to write record to new wallet</source>
+        <translation type="unfinished">Erro: Não foi possível escrever registro para a nova carteira</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -3644,6 +3974,10 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Fundos insuficientes</translation>
     </message>
     <message>
+        <source>Invalid -i2psam address or hostname: '%s'</source>
+        <translation type="unfinished">Endereço ou nome de servidor -i2psam inválido: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation type="unfinished">Endereço -onion ou hostname inválido: '%s'</translation>
     </message>
@@ -3676,6 +4010,18 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">Máscara de rede inválida especificada em -whitelist: '%s'</translation>
     </message>
     <message>
+        <source>Loading P2P addresses…</source>
+        <translation type="unfinished">Carregando endereços P2P...</translation>
+    </message>
+    <message>
+        <source>Loading banlist…</source>
+        <translation type="unfinished">A carregar a lista de banidos...</translation>
+    </message>
+    <message>
+        <source>Loading block index…</source>
+        <translation type="unfinished">Carregando índice do bloco...</translation>
+    </message>
+    <message>
         <source>Loading wallet…</source>
         <translation type="unfinished">A carregar a carteira…</translation>
     </message>
@@ -3696,12 +4042,28 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
         <translation type="unfinished">A redução não pode ser configurada com um valor negativo.</translation>
     </message>
     <message>
+        <source>Prune mode is incompatible with -coinstatsindex.</source>
+        <translation type="unfinished">Modo de poda é incompatível com -coinstatsindex.</translation>
+    </message>
+    <message>
         <source>Prune mode is incompatible with -txindex.</source>
         <translation type="unfinished">O modo de redução é incompatível com -txindex.</translation>
     </message>
     <message>
+        <source>Pruning blockstore…</source>
+        <translation type="unfinished">Prunando os blocos existentes...</translation>
+    </message>
+    <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation type="unfinished">Reduzindo -maxconnections de %d para %d, devido a limitações no sistema.</translation>
+    </message>
+    <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">Repetindo blocos...</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">.Reexaminando...</translation>
     </message>
     <message>
         <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
@@ -3745,8 +4107,17 @@ Ir para o arquivo &gt; Abrir carteira para carregar a carteira
 A pasta de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">A iniciar threads de rede...</translation>
+    </message>
+    <message>
         <source>The source code is available from %s.</source>
         <translation type="unfinished">O código fonte está disponível pelo %s.</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist</source>
+        <translation type="unfinished">O ficheiro de configuração especificado %s não existe
+</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3785,6 +4156,10 @@ A pasta de blocos especificados "%s" não existe.</translation>
         <translation type="unfinished">A transação dever pelo menos um destinatário</translation>
     </message>
     <message>
+        <source>Transaction needs a change address, but we can't generate it. %s</source>
+        <translation type="unfinished">Transação precisa alteração de endereço, mas não podemos gerar o mesmo. %s</translation>
+    </message>
+    <message>
         <source>Transaction too large</source>
         <translation type="unfinished">Transação grande demais</translation>
     </message>
@@ -3809,6 +4184,10 @@ A pasta de blocos especificados "%s" não existe.</translation>
         <translation type="unfinished">Não foi possível gerar chaves</translation>
     </message>
     <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">Não foi possível abrir %s para escrita</translation>
+    </message>
+    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">Não é possível iniciar o servidor HTTP. Verifique o debug.log para detalhes.</translation>
     </message>
@@ -3827,6 +4206,10 @@ A pasta de blocos especificados "%s" não existe.</translation>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation type="unfinished">Rede desconhecida especificada em -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">Ativadas novas regras desconhecidas (versionbit %i)</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>

@@ -66,13 +66,13 @@
         <translation type="unfinished">Adrese primalaca</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ovo su vaše Vertcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ovo su vaše Bitcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ovo su vaše Vertcoin adrese za primanje uplata. Upotrijebite dugme 'Stvori novu adresu prijema' na kartici primanja da biste kreirali nove adrese. Potpisivanje je moguće samo s adresama tipa 'legacy'.</translation>
+        <translation type="unfinished">Ovo su vaše Bitcoin adrese za primanje uplata. Upotrijebite dugme 'Stvori novu adresu prijema' na kartici primanja da biste kreirali nove adrese. Potpisivanje je moguće samo s adresama tipa 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -163,7 +163,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Upozorenje: Ako šifrirate novčanik i izgubite lozinku, &lt;b&gt;IZGUBIT ĆETE SVE SVOJE BITKOINE!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -183,8 +183,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Unesite staru i novu lozinku za novčanik.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše vertcoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše bitcoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -239,7 +239,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
+    <message>
+        <source>Runaway exception</source>
+        <translation type="unfinished">Odbegli izuzetak</translation>
+    </message>
     <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">Dogodila se fatalna greška. %1 više ne može sigurno nastaviti i prestat će raditi.</translation>
@@ -270,6 +274,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Error initializing settings: %1</source>
         <translation type="unfinished">Greška prilikom inicijalizacije postavki: %1</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 još nije sigurno izašao...</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -329,7 +337,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Pregled</translation>
@@ -345,6 +353,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Browse transaction history</source>
         <translation>Pregledajte historiju transakcija</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>&amp;Izlaz</translation>
     </message>
     <message>
         <source>Quit application</source>
@@ -388,8 +400,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy je &lt;b&gt;omogućen&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Vertcoin address</source>
-        <translation>Pošaljite kovanice na Vertcoin adresu</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Pošaljite kovanice na Bitcoin adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -408,6 +420,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;Primite</translation>
     </message>
     <message>
+        <source>&amp;Options…</source>
+        <translation type="unfinished">&amp;Opcije…</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Prikaži / Sakrij</translation>
     </message>
@@ -420,12 +436,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Šifrirajte privatne ključeve koji pripadaju vašem novčaniku</translation>
     </message>
     <message>
-        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim Vertcoin adresama da biste dokazali da ste njihov vlasnik</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Potpišite poruke sa svojim Bitcoin adresama da biste dokazali da ste njihov vlasnik</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisane navedenim Vertcoin adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisane navedenim Bitcoin adresama</translation>
+    </message>
+    <message>
+        <source>Close Wallet…</source>
+        <translation type="unfinished">Zatvori novčanik...</translation>
+    </message>
+    <message>
+        <source>Create Wallet…</source>
+        <translation type="unfinished">Napravi novčanik...</translation>
+    </message>
+    <message>
+        <source>Close All Wallets…</source>
+        <translation type="unfinished">Zatvori sve novčanike...</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -444,8 +472,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
-        <translation type="unfinished">Zatražite uplate (generira QR kodove i vertcoin: URI-je)</translation>
+        <source>Synchronizing with network…</source>
+        <translation type="unfinished">Sinhronizacija sa mrežom...</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk…</source>
+        <translation type="unfinished">Indeksiraju se blokovi na disku...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk…</source>
+        <translation type="unfinished">Procesuiraju se blokovi na disku...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk…</source>
+        <translation type="unfinished">Reindekiraju se blokovi na disku...</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation type="unfinished">Zatražite uplate (generira QR kodove i bitcoin: URI-je)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -496,12 +540,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>U toku</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction</source>
-        <translation type="unfinished">Učitajte Djelomično Potpisanu Vertcoin Transakciju</translation>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation type="unfinished">Učitajte Djelomično Potpisanu Bitcoin Transakciju</translation>
     </message>
     <message>
-        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
-        <translation type="unfinished">Učitajte djelomično potpisanu vertcoin transakciju iz međuspremnika</translation>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation type="unfinished">Učitajte djelomično potpisanu bitcoin transakciju iz međuspremnika</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -520,8 +564,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Primanje adresa</translation>
     </message>
     <message>
-        <source>Open a vertcoin: URI</source>
-        <translation type="unfinished">Otvorite vertcoin: URI</translation>
+        <source>Open a bitcoin: URI</source>
+        <translation type="unfinished">Otvorite bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -540,8 +584,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zatvori sve novčanike</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
-        <translation type="unfinished">Pokažite %1 poruku za pomoć da biste dobili listu s mogućim opcijama Vertcoin naredbenog retka</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation type="unfinished">Pokažite %1 poruku za pomoć da biste dobili listu s mogućim opcijama Bitcoin naredbenog retka</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -576,13 +620,23 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%1 klijent</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Vertcoin network.</source>
+        <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
             <numerusform />
             <numerusform />
         </translation>
+    </message>
+    <message>
+        <source>Click for more actions.</source>
+        <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
+        <translation type="unfinished">Klikni za još radnji</translation>
+    </message>
+    <message>
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation type="unfinished">Onemogući rad mreže</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -914,8 +968,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Uredite adresu za slanje</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Vertcoin address.</source>
-        <translation type="unfinished">Unesena adresa "%1" nije važeća Vertcoin adresa.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation type="unfinished">Unesena adresa "%1" nije važeća Bitcoin adresa.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -977,8 +1031,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
-        <translation type="unfinished">%1 će preuzeti i pohraniti kopiju lanca Vertcoin blokova.</translation>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation type="unfinished">%1 će preuzeti i pohraniti kopiju lanca Bitcoin blokova.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1054,12 +1108,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Obrazac</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
-        <translation type="unfinished">Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s vertcoin mrežom, kao što je detaljno opisano u nastavku.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation type="unfinished">Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s bitcoin mrežom, kao što je detaljno opisano u nastavku.</translation>
     </message>
     <message>
-        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Pokušaj trošenja vertcoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Pokušaj trošenja bitcoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1093,8 +1147,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open vertcoin URI</source>
-        <translation type="unfinished">Otvorite vertcoin URI</translation>
+        <source>Open bitcoin URI</source>
+        <translation type="unfinished">Otvorite bitcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1176,24 +1230,24 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ako onemogućite trošenje nepotvrđene promjene, promjena iz transakcije neće se moći koristiti dok ta transakcija nema barem jednu potvrdu. Ovo također utječe na način izračunavanja vašeg stanja.</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite port Vertcoin klijenta na ruteru. Ovo radi samo kada vaš ruter podržava UPnP i ako je omogućen.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite port Bitcoin klijenta na ruteru. Ovo radi samo kada vaš ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port koristi &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Automatski otvorite port Vertcoin klijenta na ruteru. Ovo radi samo kada vaš ruter podržava NAT-PMP i ako je omogućen. Vanjski port može biti nasumičan.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Automatski otvorite port Bitcoin klijenta na ruteru. Ovo radi samo kada vaš ruter podržava NAT-PMP i ako je omogućen. Vanjski port može biti nasumičan.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
         <translation type="unfinished">Prihvatite veze izvana.</translation>
     </message>
     <message>
-        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Povežite se s Vertcoin mrežom putem SOCKS5 proxyja.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Povežite se s Bitcoin mrežom putem SOCKS5 proxyja.</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
@@ -1235,8 +1289,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Moguće je da su prikazane informacije zastarjele.Vaš novčanik se automatski sinhronizira sa Vertcoin mrežom nakon što je konekcija uspostavljena, ali proces nije još uvijek dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Moguće je da su prikazane informacije zastarjele.Vaš novčanik se automatski sinhronizira sa Bitcoin mrežom nakon što je konekcija uspostavljena, ali proces nije još uvijek dovršen.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1501,4 +1555,187 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Greška</translation>
     </message>
     </context>
+<context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Replaying blocks…</source>
+        <translation type="unfinished">Reprodukcija blokova…</translation>
+    </message>
+    <message>
+        <source>Rescanning…</source>
+        <translation type="unfinished">Ponovno skeniranje…</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
+        <translation type="unfinished">SQLiteDatabase: Izvršenje naredbe za provjeru baze podataka nije uspjelo: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
+        <translation type="unfinished">SQLiteDatabase: Nije uspjela priprema naredbe za provjeru baze podataka: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation type="unfinished">SQLiteDatabase: Neuspjelo čitanje greške verifikacije baze podataka: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
+        <translation type="unfinished">SQLiteDatabase: Neočekivani ID aplikacije. Ocekivao %u, dobio %u</translation>
+    </message>
+    <message>
+        <source>Section [%s] is not recognized.</source>
+        <translation type="unfinished">Odjeljak [%s] nije prepoznat.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation type="unfinished">Potpisivanje transakcije nije uspjelo</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation type="unfinished">Navedeni -walletdir "%s" ne postoji</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation type="unfinished">Navedeni -walletdir "%s" je relativna putanja</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation type="unfinished">Navedeni -walletdir "%s" nije direktorij</translation>
+    </message>
+    <message>
+        <source>Specified blocks directory "%s" does not exist.</source>
+        <translation type="unfinished">Navedeni direktorij blokova "%s" ne postoji.</translation>
+    </message>
+    <message>
+        <source>Starting network threads…</source>
+        <translation type="unfinished">Pokretanje mrežnih niti…</translation>
+    </message>
+    <message>
+        <source>The source code is available from %s.</source>
+        <translation type="unfinished">Izvorni kod je dostupan od %s.</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist</source>
+        <translation type="unfinished">Navedena konfiguracijska datoteka %s ne postoji</translation>
+    </message>
+    <message>
+        <source>The transaction amount is too small to pay the fee</source>
+        <translation type="unfinished">Iznos transakcije je premali za plaćanje naknade</translation>
+    </message>
+    <message>
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation type="unfinished">Novčanik će izbjeći plaćanje manje od minimalne relejne naknade.</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation type="unfinished">Ovo je eksperimentalni softver.</translation>
+    </message>
+    <message>
+        <source>This is the minimum transaction fee you pay on every transaction.</source>
+        <translation type="unfinished">Ovo je minimalna naknada za transakciju koju plaćate za svaku transakciju.</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Ovo je naknada za transakciju koju ćete platiti ako pošaljete transakciju.</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation type="unfinished">Iznos transakcije je premali</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must not be negative</source>
+        <translation type="unfinished">Iznosi transakcija ne smiju biti negativni</translation>
+    </message>
+    <message>
+        <source>Transaction has too long of a mempool chain</source>
+        <translation type="unfinished">Transakcija ima predugačak mempool lanac </translation>
+    </message>
+    <message>
+        <source>Transaction must have at least one recipient</source>
+        <translation type="unfinished">Transakcija mora imati najmanje jednog primaoca</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. %s</source>
+        <translation type="unfinished">Transakciji je potrebna promjena adrese, ali je ne možemo generirati. %s</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation type="unfinished">Transakcija je prevelika</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation type="unfinished">Nije moguće povezati se na %s na ovom računaru (povezivanje je vratilo grešku %s)</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. %s is probably already running.</source>
+        <translation type="unfinished">Nije moguće povezati se na %s na ovom računaru. %s vjerovatno već radi.</translation>
+    </message>
+    <message>
+        <source>Unable to create the PID file '%s': %s</source>
+        <translation type="unfinished">Nije moguće kreirati PID fajl '%s': %s</translation>
+    </message>
+    <message>
+        <source>Unable to generate initial keys</source>
+        <translation type="unfinished">Nije moguće generirati početne ključeve</translation>
+    </message>
+    <message>
+        <source>Unable to generate keys</source>
+        <translation type="unfinished">Nije moguće generirati ključeve</translation>
+    </message>
+    <message>
+        <source>Unable to open %s for writing</source>
+        <translation type="unfinished">Nije moguće otvoriti %s za pisanje</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation type="unfinished">Nije moguće pokrenuti HTTP server. Pogledajte dnevnik otklanjanja grešaka za detalje.</translation>
+    </message>
+    <message>
+        <source>Unknown -blockfilterindex value %s.</source>
+        <translation type="unfinished">Nepoznata vrijednost -blockfilterindex %s.</translation>
+    </message>
+    <message>
+        <source>Unknown address type '%s'</source>
+        <translation type="unfinished">Nepoznata vrsta adrese '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown change type '%s'</source>
+        <translation type="unfinished">Nepoznata vrsta promjene '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation type="unfinished">Nepoznata mreža navedena u -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown new rules activated (versionbit %i)</source>
+        <translation type="unfinished">Nepoznata nova pravila aktivirana (versionbit %i)</translation>
+    </message>
+    <message>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation type="unfinished">Nepodržana kategorija logivanja %s=%s.</translation>
+    </message>
+    <message>
+        <source>Upgrading UTXO database</source>
+        <translation type="unfinished">Nadogradnja UTXO baze podataka</translation>
+    </message>
+    <message>
+        <source>Upgrading txindex database</source>
+        <translation type="unfinished">Nadogradnja txindex baze podataka</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation type="unfinished">Komentar korisničkog agenta (%s) sadrži nesigurne znakove.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks…</source>
+        <translation type="unfinished">Provjera blokova…</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)…</source>
+        <translation type="unfinished">Provjera novčanika…</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart %s to complete</source>
+        <translation type="unfinished">Novčanik je trebao biti prepisan: ponovo pokrenite %s da biste završili</translation>
+    </message>
+</context>
 </TS>
