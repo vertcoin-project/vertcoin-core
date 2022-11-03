@@ -6,7 +6,7 @@
 #include <ctime>
 #include <iomanip>
 #include <sstream>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 #define HEADER_SIZE 80
 #define HASH_OUT_SIZE 32
@@ -30,7 +30,7 @@ bool Verthash::VerifyDatFile()
     CSHA256 ctx;
     if(!datFileInRam) {
         fs::path dataFile = gArgs.GetDataDirNet() / "verthash.dat";
-        if(!boost::filesystem::exists(dataFile)) {
+        if(!fs::exists(dataFile)) {
             throw std::runtime_error("Verthash datafile not found");
         }
         FILE* datfile = fsbridge::fopen(dataFile.c_str(),"rb");
@@ -57,7 +57,7 @@ bool Verthash::VerifyDatFile()
 
 void Verthash::LoadInRam() {
     fs::path dataFile = gArgs.GetDataDirNet() / "verthash.dat";
-    if(!boost::filesystem::exists(dataFile)) {
+    if(!fs::exists(dataFile)) {
         throw std::runtime_error("Verthash datafile not found");
     }
     FILE* datfile = fsbridge::fopen(dataFile.c_str(),"rb");
@@ -107,7 +107,7 @@ void Verthash::Hash(const char* input, char* output)
 
     if(!datFileInRam) {
         fs::path dataFile = gArgs.GetDataDirNet() / "verthash.dat";
-        if(!boost::filesystem::exists(dataFile)) {
+        if(!fs::exists(dataFile)) {
             throw std::runtime_error("Verthash datafile not found");
         }
         VerthashDatFile = fsbridge::fopen(dataFile.c_str(),"rb");

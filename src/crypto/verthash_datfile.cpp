@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <filesystem>
 
 #define NODE_SIZE 32
 
@@ -460,8 +460,8 @@ RecursiveMutex VerthashDatFile::cs_Datfile;
 
 void VerthashDatFile::DeleteMiningDataFile() {
     const fs::path targetFile = gArgs.GetDataDirNet() / "verthash.dat";
-    if(boost::filesystem::exists(targetFile)) {
-        boost::filesystem::remove(targetFile);
+    if(fs::exists(targetFile)) {
+        fs::remove(targetFile);
     }
 }
 
@@ -474,7 +474,7 @@ void VerthashDatFile::CreateMiningDataFile() {
     }
 
     const fs::path targetFile = gArgs.GetDataDirNet() / "verthash.dat";
-    if(!boost::filesystem::exists(targetFile)) {
+    if(!fs::exists(targetFile)) {
         LogPrintf("Starting Proof-of-Space datafile generation at %s.\n", targetFile.string());
 
         const char *hashInput = "Verthash Proof-of-Space Datafile";
