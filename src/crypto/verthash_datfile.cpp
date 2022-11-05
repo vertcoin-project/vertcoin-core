@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <boost/filesystem.hpp>
 
 #define NODE_SIZE 32
 
@@ -425,7 +425,7 @@ void XiGraphIter(struct Graph *g, int64_t index)
     free(graphStack);
 }
 
-struct Graph *NewGraph(int64_t index, const fs::path& targetFile, uint8_t *pk)
+struct Graph *NewGraph(int64_t index, const boost::filesystem::path& targetFile, uint8_t *pk)
 {
     uint8_t exists = 0;
     FILE *db;
@@ -459,7 +459,7 @@ struct Graph *NewGraph(int64_t index, const fs::path& targetFile, uint8_t *pk)
 RecursiveMutex VerthashDatFile::cs_Datfile;
 
 void VerthashDatFile::DeleteMiningDataFile() {
-    const fs::path targetFile = gArgs.GetDataDirNet() / "verthash.dat";
+    const boost::filesystem::path targetFile{gArgs.GetDataDirNet() / "verthash.dat"};
     if(boost::filesystem::exists(targetFile)) {
         boost::filesystem::remove(targetFile);
     }
@@ -473,7 +473,7 @@ void VerthashDatFile::CreateMiningDataFile() {
         return;
     }
 
-    const fs::path targetFile = gArgs.GetDataDirNet() / "verthash.dat";
+    const boost::filesystem::path targetFile{gArgs.GetDataDirNet() / "verthash.dat"};
     if(!boost::filesystem::exists(targetFile)) {
         LogPrintf("Starting Proof-of-Space datafile generation at %s.\n", targetFile.string());
 
