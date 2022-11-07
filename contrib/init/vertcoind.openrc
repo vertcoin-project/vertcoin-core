@@ -1,0 +1,93 @@
+#!/sbin/openrc-run
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/vertcoin/.vertcoin" ]; then
+	VERTCOIND_DEFAULT_DATADIR="/var/lib/vertcoin/.vertcoin"
+else
+	VERTCOIND_DEFAULT_DATADIR="/var/lib/vertcoind"
+fi
+
+VERTCOIND_CONFIGFILE=${VERTCOIND_CONFIGFILE:-/etc/vertcoin/vertcoin.conf}
+VERTCOIND_PIDDIR=${VERTCOIND_PIDDIR:-/var/run/vertcoind}
+VERTCOIND_PIDFILE=${VERTCOIND_PIDFILE:-${VERTCOIND_PIDDIR}/vertcoind.pid}
+VERTCOIND_DATADIR=${VERTCOIND_DATADIR:-${VERTCOIND_DEFAULT_DATADIR}}
+VERTCOIND_USER=${VERTCOIND_USER:-${VERTCOIN_USER:-vertcoin}}
+VERTCOIND_GROUP=${VERTCOIND_GROUP:-vertcoin}
+VERTCOIND_BIN=${VERTCOIND_BIN:-/usr/bin/vertcoind}
+VERTCOIND_NICE=${VERTCOIND_NICE:-${NICELEVEL:-0}}
+VERTCOIND_OPTS="${VERTCOIND_OPTS:-${VERTCOIN_OPTS}}"
+
+name="Vertcoin Core Daemon"
+description="Vertcoin cryptocurrency P2P network daemon"
+
+command="/usr/bin/vertcoind"
+command_args="-pid=\"${VERTCOIND_PIDFILE}\" \
+		-conf=\"${VERTCOIND_CONFIGFILE}\" \
+		-datadir=\"${VERTCOIND_DATADIR}\" \
+		-daemon \
+		${VERTCOIND_OPTS}"
+
+required_files="${VERTCOIND_CONFIGFILE}"
+start_stop_daemon_args="-u ${VERTCOIND_USER} \
+			-N ${VERTCOIND_NICE} -w 2000"
+pidfile="${VERTCOIND_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${VERTCOIND_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${VERTCOIND_USER}:${VERTCOIND_GROUP}" \
+	"${VERTCOIND_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${VERTCOIND_USER}:${VERTCOIND_GROUP}" \
+	"${VERTCOIND_PIDDIR}"
+
+	checkpath -f \
+	-o "${VERTCOIND_USER}:${VERTCOIND_GROUP}" \
+	-m 0660 \
+	"${VERTCOIND_CONFIGFILE}"
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if grep -qs '^rpcuser=' "${VERTCOIND_CONFIGFILE}" && \
+		! grep -qs '^rpcpassword=' "${VERTCOIND_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run vertcoind."
+		eerror "The setting must appear in ${VERTCOIND_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following "
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Vertcoin Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}

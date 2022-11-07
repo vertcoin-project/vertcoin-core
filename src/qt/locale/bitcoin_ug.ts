@@ -66,13 +66,13 @@
         <translation type="unfinished">تاپشۇرۇۋېلىش ئادرېسى</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">بۇلار سىز Bitcoin چىقىم قىلىدىغان ئادرېس. تەڭگە چىقىم قىلىشتىن ئىلگىرى، سومما ۋە تاپشۇرۇۋېلىش ئادرېسىنىڭ توغرا ئىكەنلىكىنى تەكشۈرۈشنى ئۇنۇتماڭ.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">بۇلار سىز Vertcoin چىقىم قىلىدىغان ئادرېس. تەڭگە چىقىم قىلىشتىن ئىلگىرى، سومما ۋە تاپشۇرۇۋېلىش ئادرېسىنىڭ توغرا ئىكەنلىكىنى تەكشۈرۈشنى ئۇنۇتماڭ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">بۇ Bitcoin تاپشۇرۇۋېلىشقا ئىشلىتىدىغان ئادرېسىڭىز. «قوبۇللاش» بەتكۈچتىكى «يېڭى تاپشۇرۇۋېلىش ئادرېسى قۇر» توپچىنى چېكىپ يېڭى ئادرېس قۇرالايسىز.
+        <translation type="unfinished">بۇ Vertcoin تاپشۇرۇۋېلىشقا ئىشلىتىدىغان ئادرېسىڭىز. «قوبۇللاش» بەتكۈچتىكى «يېڭى تاپشۇرۇۋېلىش ئادرېسى قۇر» توپچىنى چېكىپ يېڭى ئادرېس قۇرالايسىز.
 پەقەت «ئەنئەنىۋى(legacy)» تىپتىكى ئادرېسلا ئىمزانى قوللايدۇ.</translation>
     </message>
     <message>
@@ -155,7 +155,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
@@ -163,8 +163,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
             <numerusform />
         </translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation>خاتالىق</translation>
+    </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -180,6 +184,13 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
+    <name>EditAddressDialog</name>
+    <message>
+        <source>&amp;Label</source>
+        <translation>&amp;خەتكۈچ</translation>
+    </message>
+    </context>
+<context>
     <name>Intro</name>
     <message numerus="yes">
         <source>(sufficient to restore backups %n day(s) old)</source>
@@ -188,6 +199,17 @@ Signing is only possible with addresses of the type 'legacy'.</source>
             <numerusform />
             <numerusform />
         </translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خاتالىق</translation>
+    </message>
+    </context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">خاتالىق</translation>
     </message>
     </context>
 <context>
@@ -261,6 +283,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>TransactionView</name>
     <message>
+        <source>Other</source>
+        <translation type="unfinished">باشقىلىرى</translation>
+    </message>
+    <message>
         <source>Comma separated file</source>
         <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
         <translation type="unfinished">ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
@@ -287,6 +313,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation type="unfinished">نۆۋەتتىكى بەتكۈچتىكى سانلىق مەلۇماتنى ھۆججەتكە چىقىرىدۇ</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">خاتالىق</translation>
     </message>
     </context>
 </TS>

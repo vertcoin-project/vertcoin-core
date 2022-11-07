@@ -17,6 +17,8 @@
 #include <chainparams.h>
 #include <compat/sanity.h>
 #include <deploymentstatus.h>
+#include <crypto/verthash_datfile.h>
+#include <crypto/verthash.h>
 #include <fs.h>
 #include <hash.h>
 #include <httprpc.h>
@@ -104,10 +106,12 @@ static const bool DEFAULT_REST_ENABLE = false;
 
 static const char* DEFAULT_ASMAP_FILENAME="ip_asn.map";
 
+ChainstateManager* g_chainman = nullptr;
+
 /**
  * The PID file facilities.
  */
-static const char* BITCOIN_PID_FILENAME = "bitcoind.pid";
+static const char* BITCOIN_PID_FILENAME = "vertcoind.pid";
 
 static fs::path GetPidFile(const ArgsManager& args)
 {
@@ -473,6 +477,11 @@ void SetupServerArgs(ArgsManager& argsman)
         "CIDR-notated network (e.g. 1.2.3.0/24). Uses the same permissions as "
         "-whitebind. Can be specified multiple times." , ArgsManager::ALLOW_ANY, OptionsCategory::CONNECTION);
 
+
+    argsman.AddArg("-verthash-diskonly", "Don't load Verthash's datafile into RAM. Will slow down validation significantly, but might be needed on low-memory systems.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
+
+    argsman.AddArg("-full-startup-verify", "Check the complete chain of work on startup from the Genesis block", ArgsManager::ALLOW_BOOL, OptionsCategory::OPTIONS);
+
     g_wallet_init_interface.AddWalletOptions(argsman);
 
 #if ENABLE_ZMQ
@@ -567,9 +576,10 @@ void SetupServerArgs(ArgsManager& argsman)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/bitcoin/bitcoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/vertcoin-project/vertcoin-core>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i").translated, 2009, COPYRIGHT_YEAR) + " ") + "\n" +
+    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i").translated, 2014, COPYRIGHT_YEAR) + " ",
+           strprintf(_("Copyright (C) %i-%i").translated, 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software.").translated,
@@ -1079,9 +1089,9 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
     // Warn about relative -datadir path.
     if (args.IsArgSet("-datadir") && !fs::path(args.GetArg("-datadir", "")).is_absolute()) {
         LogPrintf("Warning: relative datadir option '%s' specified, which will be interpreted relative to the " /* Continued */
-                  "current working directory '%s'. This is fragile, because if bitcoin is started in the future "
+                  "current working directory '%s'. This is fragile, because if vertcoin is started in the future "
                   "from a different location, it will be unable to locate the current data files. There could "
-                  "also be data loss if bitcoin is started while in a temporary directory.\n",
+                  "also be data loss if vertcoin is started while in a temporary directory.\n",
                   args.GetArg("-datadir", ""), fs::current_path().string());
     }
 
@@ -1178,10 +1188,11 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
     assert(!node.chainman);
     node.chainman = std::make_unique<ChainstateManager>();
     ChainstateManager& chainman = *node.chainman;
+    g_chainman = &chainman;
 
     assert(!node.peerman);
     node.peerman = PeerManager::make(chainparams, *node.connman, *node.addrman, node.banman.get(),
-                                     *node.scheduler, chainman, *node.mempool, ignores_incoming_txs);
+                                     chainman, *node.mempool, ignores_incoming_txs);
     RegisterValidationInterface(node.peerman.get());
 
     // sanitize comments per BIP-0014, format user agent and check total size
@@ -1297,6 +1308,36 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
         RegisterValidationInterface(g_zmq_notification_interface);
     }
 #endif
+
+
+    // ********************************************************* Step 6b: generate verthash file and verify if it's valid
+
+    int cycle = 0;
+    while(cycle <= 1) {
+        uiInterface.InitMessage(_("Creating Verthash Datafile - may take several minutes").translated);
+        VerthashDatFile::CreateMiningDataFile();
+
+        bool fVerthashDiskOnly = gArgs.GetBoolArg("-verthash-diskonly", false);
+        if(!fVerthashDiskOnly) {
+            uiInterface.InitMessage(_("Loading Verthash Datafile into RAM").translated);
+            Verthash::LoadInRam();
+        }
+
+        uiInterface.InitMessage(_("Verifying Verthash Datafile").translated);
+        if(!Verthash::VerifyDatFile()) {
+            if(cycle == 0) {
+                VerthashDatFile::DeleteMiningDataFile();
+            } else {
+                return InitError(_("Generated Verthash datafile mismatch"));
+            }
+        } else {
+            break;
+        }
+        cycle++;
+    }
+
+
+
 
     // ********************************************************* Step 7: load block chain
 
@@ -1794,6 +1835,8 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
     node.scheduler->scheduleEvery([banman]{
         banman->DumpBanlist();
     }, DUMP_BANS_INTERVAL);
+
+    if (node.peerman) node.peerman->StartScheduledTasks(*node.scheduler);
 
 #if HAVE_SYSTEM
     StartupNotify(args);

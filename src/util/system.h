@@ -490,7 +490,7 @@ std::string HelpMessageOpt(const std::string& option, const std::string& message
  */
 int GetNumCores();
 
-std::string CopyrightHolders(const std::string& strPrefix);
+std::string CopyrightHolders(const std::string& strPrefix1, const std::string& strPrefix2);
 
 /**
  * On platforms that support it, tell the kernel the calling thread is

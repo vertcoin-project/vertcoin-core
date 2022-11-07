@@ -240,12 +240,13 @@ mkdir -p "$OUTDIR"
 CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests --disable-fuzz-binary"
 case "$HOST" in
     *linux*) CONFIGFLAGS+=" --disable-threadlocal" ;;
+    *mingw*) CONFIGFLAGS+=" --disable-shared" ;;
 esac
 
 # CFLAGS
 HOST_CFLAGS="-O2 -g"
 case "$HOST" in
-    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=." ;;
+    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=. -fPIC" ;;
     *mingw*)  HOST_CFLAGS+=" -fno-ident" ;;
     *darwin*) unset HOST_CFLAGS ;;
 esac
@@ -357,11 +358,11 @@ mkdir -p "$DISTSRC"
     (
         cd installed
 
-        case "$HOST" in
-            *mingw*)
-                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
-                ;;
-        esac
+#        case "$HOST" in
+#            *mingw*)
+#                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
+#                ;;
+#        esac
 
         # Prune libtool and object archives
         find . -name "lib*.la" -delete

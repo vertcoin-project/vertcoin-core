@@ -2,10 +2,6 @@
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Right-click to edit address or label</source>
-        <translation type="unfinished">右击编辑地址或标签</translation>
-    </message>
-    <message>
         <source>Create a new address</source>
         <translation>创建一个新的地址</translation>
     </message>
@@ -66,11 +62,11 @@
         <translation type="unfinished">接收地址</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">这是你的比特币发币地址。发送前请确认发送数量和接收地址</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">这是你的比特币接收地址。点击接收选项卡中“创建新的接收地址”按钮来创建新的地址。
 签名只能使用“传统”类型的地址。</translation>
@@ -150,6 +146,54 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Unlock wallet</source>
         <translation type="unfinished">解锁钱包</translation>
     </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation type="unfinished">修改密码</translation>
+    </message>
+    <message>
+        <source>Confirm wallet encryption</source>
+        <translation type="unfinished">确认钱包加密</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">注意:如果你加密了钱包又忘记了密码，你将会丢失所有的比特币！</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation type="unfinished">你确定要将钱包加密吗？</translation>
+    </message>
+    <message>
+        <source>Wallet encrypted</source>
+        <translation type="unfinished">钱包已加密</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished">输入钱包的新密码。&lt;br/&gt;密码中请使用&lt;b&gt;10个或更多随机字符&lt;/b&gt;，或&lt;b&gt;8个或更多的单词&lt;/b&gt;。</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation type="unfinished">输入钱包的旧密码和新密码。</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation type="unfinished">需要加密的钱包</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation type="unfinished">你的钱包将要被加密</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation type="unfinished">你的钱包已被加密</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed</source>
+        <translation type="unfinished">钱包加密失败</translation>
+    </message>
+    <message>
+        <source>Wallet unlock failed</source>
+        <translation type="unfinished">钱包解锁失败</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -191,7 +235,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
@@ -199,7 +243,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

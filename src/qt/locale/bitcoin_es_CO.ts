@@ -66,13 +66,13 @@
         <translation type="unfinished">Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Estas son tus direcciones de Bitcoin para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Estas son tus direcciones de Vertcoin para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Estas son tus direcciones Bitcoin para recibir pagos. Usa el botón 'Crear una nueva dirección para recibir' en la pestaña 'Recibir' para crear nuevas direcciones.
+        <translation type="unfinished">Estas son tus direcciones Vertcoin para recibir pagos. Usa el botón 'Crear una nueva dirección para recibir' en la pestaña 'Recibir' para crear nuevas direcciones.
 Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     <message>
@@ -164,8 +164,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Ingresa la antigua frase de contraseña y la nueva frase de contraseña para la billetera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que cifrar tu billetera no garantiza total protección de robo de tus bitcoins si tu ordenador es infectado con malware.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que cifrar tu billetera no garantiza total protección de robo de tus vertcoins si tu ordenador es infectado con malware.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -244,7 +244,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>VertcoinApplication</name>
     <message>
         <source>Internal error</source>
         <translation type="unfinished">Error interno</translation>
@@ -265,8 +265,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Ingresa una dirección de Bitcoin (Ejemplo: %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation type="unfinished">Ingresa una dirección de Vertcoin (Ejemplo: %1)</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -328,7 +328,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Vista general</translation>
@@ -391,8 +391,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Proxy &lt;b&gt;habilitado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Enviar monedas a una dirección vertcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -435,7 +435,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Firmar &amp;mensaje...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -443,8 +443,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Bitcoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Vertcoin concretas</translation>
     </message>
     <message>
         <source>Close Wallet…</source>
@@ -475,8 +475,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Pide pagos (genera codigos QR and bitcoin: URls)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation type="unfinished">Pide pagos (genera codigos QR and vertcoin: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -522,8 +522,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>Actualizado</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Cargar una transacción de Bitcoin parcialmente firmada desde el Portapapeles</translation>
+        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
+        <translation type="unfinished">Cargar una transacción de Vertcoin parcialmente firmada desde el Portapapeles</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -542,8 +542,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">&amp;Direcciones de entrega</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Abrir un bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation type="unfinished">Abrir un vertcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -562,8 +562,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Cerrar todas las billeteras</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation type="unfinished">Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de Vertcoin</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -595,7 +595,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">%1 cliente</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -809,6 +809,10 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation type="unfinished">Creación de monedero&lt;b&gt;%1&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>Create wallet failed</source>
         <translation type="unfinished">Fallo al crear la billetera</translation>
     </message>
@@ -925,8 +929,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Editar dirección de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">La dirección introducida "%1" no es una dirección Bitcoin valida.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation type="unfinished">La dirección introducida "%1" no es una dirección Vertcoin valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -979,8 +983,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 descargará y almacenará una copia del blockchain de Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation type="unfinished">%1 descargará y almacenará una copia del blockchain de Vertcoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1056,12 +1060,12 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de bitcoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation type="unfinished">Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de vertcoin, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">La red no aceptará el intentar gastar bitcoins que están afectados por transacciones aún no mostradas.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">La red no aceptará el intentar gastar vertcoins que están afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1175,8 +1179,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Gastar cambio sin confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Bitcoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Vertcoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1191,8 +1195,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Conectar a la red de Bitcoin a través de un proxy SOCKS5</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Conectar a la red de Vertcoin a través de un proxy SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1311,8 +1315,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de Bitcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de Vertcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1409,16 +1413,16 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Error en la solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">No se puede iniciar Bitcoin: controlador de clic para pagar</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation type="unfinished">No se puede iniciar Vertcoin: controlador de clic para pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Manejo de URI</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">¡URI no puede ser analizado! Esto puede deberse a una dirección de Bitcoin no válida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation type="unfinished">¡URI no puede ser analizado! Esto puede deberse a una dirección de Vertcoin no válida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1668,6 +1672,10 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Actividad de red desactivada</translation>
     </message>
     <message>
+        <source>Executing command without any wallet</source>
+        <translation type="unfinished">Ejecutando comando con cualquier cartera</translation>
+    </message>
+    <message>
         <source>Yes</source>
         <translation type="unfinished">Si</translation>
     </message>
@@ -1703,8 +1711,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">&amp;mensaje</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation type="unfinished">Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red Vertcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2040,8 +2048,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Peligro: Dirección de Bitcoin inválida</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation type="unfinished">Peligro: Dirección de Vertcoin inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2079,8 +2087,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Seleccionar dirección usada anteriormente</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">Dirección Bitcoin a enviar el pago</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation type="unfinished">Dirección Vertcoin a enviar el pago</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2130,8 +2138,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Dirección Bitcoin con la que firmar el mensaje</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation type="unfinished">Dirección Vertcoin con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2154,7 +2162,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -2174,12 +2182,12 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">La dirección Bitcoin con la que se firmó el mensaje</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation type="unfinished">La dirección Vertcoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Bitcoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Vertcoin especificada.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2650,6 +2658,10 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">¿Desea incrementar la cuota?</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation type="unfinished">¿Desea redactar una transacción con aumento de tarifa?</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation type="unfinished">Comisión actual:</translation>
     </message>
@@ -2714,7 +2726,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Los desarrolladores de %s</translation>
@@ -2758,6 +2770,10 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     <message>
         <source>Change index out of range</source>
         <translation type="unfinished">Cambio de indice fuera de rango</translation>
+    </message>
+    <message>
+        <source>Config setting for %s only applied on %s network when in [%s] section.</source>
+        <translation type="unfinished">Configurar ajustes para %s solo aplicados en %s en red cuando [%s] sección.</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

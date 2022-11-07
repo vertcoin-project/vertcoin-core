@@ -66,8 +66,14 @@
         <translation type="unfinished">Қабул қилинадиган манзиллар</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Улар тўловларни жўнатиш учун сизнинг Bitcoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Улар тўловларни жўнатиш учун сизнинг Vertcoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation type="unfinished">Улар тўловларни қабул қилиш учун сизнинг Bitcoin манзилларингиз. Янги манзилларни яратиш учун қабул қилиш варағидаги "Янги қабул қилиш манзилини яратиш" устига босинг. 
+Фақат 'legacy' туридаги манзиллар билан ҳисобга кириш мумкин.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -84,6 +90,11 @@
     <message>
         <source>Export Address List</source>
         <translation type="unfinished">Манзил рўйхатини экспорт қилиш</translation>
+    </message>
+    <message>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <translation type="unfinished">Вергул билан ажратилган файл</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
@@ -118,23 +129,27 @@
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Махфий сузни киритинг</translation>
+        <translation>Махфий сўзни киритинг</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Янги махфий суз</translation>
+        <translation>Янги махфий сўз</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Янги махфий сузни такрорланг</translation>
+        <translation>Янги махфий сўзни такрорланг</translation>
+    </message>
+    <message>
+        <source>Show passphrase</source>
+        <translation type="unfinished">Махфий сўзни кўрсатиш</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation type="unfinished">Ҳамённи қодлаш</translation>
+        <translation type="unfinished">Ҳамённи шифрлаш</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation type="unfinished">Ушбу операцияни амалга ошириш учун ҳамённи қулфдан чиқариш парол сўзини талаб қилади.</translation>
+        <translation type="unfinished">Ушбу операцияни амалга ошириш учун ҳамённи қулфдан чиқариш махфий сўзини талаб қилади.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -149,8 +164,8 @@
         <translation type="unfinished">Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА BITCOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА VERTCOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -158,7 +173,19 @@
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation type="unfinished">Ҳамёни кодланган</translation>
+        <translation type="unfinished">Ҳамён шифрланган</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation type="unfinished">Шифрланадиган ҳамён</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation type="unfinished">Ҳамёнингиз шифрланиш арафасида.</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation type="unfinished">Ҳамёнингиз энди шифрланади.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -204,8 +231,8 @@
         <translation type="unfinished">Миқдори</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Bitcoin манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation type="unfinished">Vertcoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -295,7 +322,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VertcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Кўриб чиқиш</translation>
@@ -329,8 +356,8 @@
         <translation>Qt ҳақидаги маълумотларни кўрсатиш</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Тангаларни Bitcoin манзилига жўнатиш</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Тангаларни Vertcoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -361,12 +388,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Bitcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Vertcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Хабарларни махсус Bitcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Хабарларни махсус Vertcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -385,8 +412,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Тўловлар (QR кодлари ва bitcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation type="unfinished">Тўловлар (QR кодлари ва vertcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -444,7 +471,7 @@
         <translation type="unfinished">Камайтириш</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -625,8 +652,8 @@
         <translation type="unfinished">Жунатилувчи манзилни тахрирлаш</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Киритилган "%1" манзили тўғри Bitcoin манзили эмас.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation type="unfinished">Киритилган "%1" манзили тўғри Vertcoin манзили эмас.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -823,8 +850,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Bitcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Vertcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1321,8 +1348,8 @@
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Диққат: Нотўғр Bitcoin манзили</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation type="unfinished">Диққат: Нотўғр Vertcoin манзили</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1640,6 +1667,11 @@
         <translation type="unfinished">Ўтказмалар тарихини экспорт қилиш</translation>
     </message>
     <message>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <translation type="unfinished">Вергул билан ажратилган файл</translation>
+    </message>
+    <message>
         <source>Confirmed</source>
         <translation type="unfinished">Тасдиқланди</translation>
     </message>
@@ -1703,7 +1735,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Юклаш тайёр</translation>

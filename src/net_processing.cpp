@@ -270,7 +270,7 @@ class PeerManagerImpl final : public PeerManager
 {
 public:
     PeerManagerImpl(const CChainParams& chainparams, CConnman& connman, CAddrMan& addrman,
-                    BanMan* banman, CScheduler& scheduler, ChainstateManager& chainman,
+                    BanMan* banman, ChainstateManager& chainman,
                     CTxMemPool& pool, bool ignore_incoming_txs);
 
     /** Overridden from CValidationInterface. */
@@ -287,6 +287,7 @@ public:
     bool SendMessages(CNode* pto) override EXCLUSIVE_LOCKS_REQUIRED(pto->cs_sendProcessing);
 
     /** Implement PeerManager */
+    void StartScheduledTasks(CScheduler& scheduler) override;
     void CheckForStaleTipAndEvictPeers() override;
     bool GetNodeStateStats(NodeId nodeid, CNodeStateStats& stats) const override;
     bool IgnoresIncomingTxs() override { return m_ignore_incoming_txs; }
@@ -704,6 +705,8 @@ struct CNodeState {
         //! Whether this peer is protected from disconnection due to a bad/slow chain
         bool m_protect{false};
     };
+
+    int8_t nDuplicateHeaderRequests;
 
     ChainSyncTimeoutState m_chain_sync;
 
@@ -1377,14 +1380,14 @@ bool PeerManagerImpl::BlockRequestAllowed(const CBlockIndex* pindex)
 }
 
 std::unique_ptr<PeerManager> PeerManager::make(const CChainParams& chainparams, CConnman& connman, CAddrMan& addrman,
-                                               BanMan* banman, CScheduler& scheduler, ChainstateManager& chainman,
+                                               BanMan* banman, ChainstateManager& chainman,
                                                CTxMemPool& pool, bool ignore_incoming_txs)
 {
-    return std::make_unique<PeerManagerImpl>(chainparams, connman, addrman, banman, scheduler, chainman, pool, ignore_incoming_txs);
+    return std::make_unique<PeerManagerImpl>(chainparams, connman, addrman, banman, chainman, pool, ignore_incoming_txs);
 }
 
 PeerManagerImpl::PeerManagerImpl(const CChainParams& chainparams, CConnman& connman, CAddrMan& addrman,
-                                 BanMan* banman, CScheduler& scheduler, ChainstateManager& chainman,
+                                 BanMan* banman, ChainstateManager& chainman,
                                  CTxMemPool& pool, bool ignore_incoming_txs)
     : m_chainparams(chainparams),
       m_connman(connman),
@@ -1408,7 +1411,10 @@ PeerManagerImpl::PeerManagerImpl(const CChainParams& chainparams, CConnman& conn
     // transaction per day that would be inadvertently ignored (which is the
     // same probability that we have in the reject filter).
     m_recent_confirmed_transactions.reset(new CRollingBloomFilter(48000, 0.000001));
+}
 
+void PeerManagerImpl::StartScheduledTasks(CScheduler& scheduler)
+{
     // Stale tip checking and peer eviction are on two different timers, but we
     // don't want them to get out of sync due to drift in the scheduler, so we
     // combine them in one function and schedule at the quicker (peer-eviction)
@@ -3135,6 +3141,35 @@ void PeerManagerImpl::ProcessMessage(CNode& pfrom, const std::string& msg_type, 
             if (--nLimit <= 0 || pindex->GetBlockHash() == hashStop)
                 break;
         }
+
+        // Pre-Lyra2REv3 nodes are still active and keep requesting blocks
+        // that do have a common ancestor to our chain - and thus we keep
+        // sending them leading to huge amounts of data being transfered
+        // in vain. We should prevent sending duplicate header chunks over
+        // and over. So if we're sending MAX_HEADERS_RESULTS headers of which
+        // the last one we already sent, we're treating it as a duplicate request.
+        // A node should get 3 strikes and then the ban score gets increased
+        bool bDuplicate = false;
+        if(nLimit <= 0) {
+            if (pindex == nodestate->pindexBestHeaderSent) {
+                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom.GetId());
+                bDuplicate = true;
+            } else if (nodestate->pindexBestHeaderSent) {
+                if (pindex && (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex)) {
+                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom.GetId());
+                    bDuplicate = true;
+                }
+            }
+        }
+        if (bDuplicate) {
+            nodestate->nDuplicateHeaderRequests++;
+            LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom.GetId(), nodestate->nDuplicateHeaderRequests);
+            if(nodestate->nDuplicateHeaderRequests >= 3) {
+                Misbehaving(pfrom.GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
+            }
+        }
+
+
         // pindex can be nullptr either if we sent m_chainman.ActiveChain().Tip() OR
         // if our peer has m_chainman.ActiveChain().Tip() (and thus we are sending an empty
         // headers message). In both cases it's safe to update
