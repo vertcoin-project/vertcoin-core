@@ -576,7 +576,10 @@ public:
         std::chrono::microseconds m_next_send_feefilter{0};
     };
 
-    // m_tx_relay == nullptr if we're not relaying transactions with this peer
+	// Counts getheaders requests sent to this peer
+    std::atomic<int64_t> nPendingHeaderRequests;
+    
+	// m_tx_relay == nullptr if we're not relaying transactions with this peer
     std::unique_ptr<TxRelay> m_tx_relay;
 
     /** UNIX epoch time of the last block received from this peer that we had
