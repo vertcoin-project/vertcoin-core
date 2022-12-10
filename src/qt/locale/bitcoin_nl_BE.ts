@@ -144,7 +144,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Vertcoin</source>
         <translation>Vertcoin</translation>
