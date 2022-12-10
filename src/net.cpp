@@ -2983,7 +2983,9 @@ CNode::CNode(NodeId idIn, ServiceFlags nLocalServicesIn, SOCKET hSocketIn, const
       m_conn_type(conn_type_in),
       nLocalServices(nLocalServicesIn)
 {
-    if (inbound_onion) assert(conn_type_in == ConnectionType::INBOUND);
+    nPendingHeaderRequests = 0;
+	
+	if (inbound_onion) assert(conn_type_in == ConnectionType::INBOUND);
     hSocket = hSocketIn;
     addrName = addrNameIn == "" ? addr.ToStringIPPort() : addrNameIn;
     if (conn_type_in != ConnectionType::BLOCK_RELAY) {
