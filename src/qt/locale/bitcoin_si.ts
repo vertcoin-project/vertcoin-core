@@ -275,7 +275,7 @@
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;දළ විශ්ලේෂණය</translation>
@@ -322,7 +322,7 @@
         <translation type="unfinished">ජාලයේ ක්‍රියාකාරකම අබල කර ඇත.</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>බිට්කොයින් ලිපිනයට කාසි යවන්න</translation>
     </message>
     <message>
@@ -657,7 +657,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation type="unfinished">බිට්කොයින්</translation>
     </message>
     <message numerus="yes">
@@ -1171,7 +1171,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>vertcoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s සංවර්ධකයින්</translation>

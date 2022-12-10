@@ -238,7 +238,7 @@
     </message>
 </context>
 <context>
-    <name>VertcoinApplication</name>
+    <name>BitcoinApplication</name>
     <message>
         <source>Internal error</source>
         <translation type="unfinished">Süsteemisisene Viga</translation>
@@ -314,7 +314,7 @@
     </message>
     </context>
 <context>
-    <name>VertcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Ülevaade</translation>
