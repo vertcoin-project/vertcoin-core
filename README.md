@@ -11,7 +11,7 @@ mining power.
  - 2.5 minute block targets
  - Subsidy halves in 840k blocks (~4 years)
  - 84 million total coins
- - 25 coins per block 
+ - 12.5 coins per block 
  - Difficulty retargeting every block to recover from large hashrate swings
  - Verthash proof of work algorithm for ASIC resistance
 
