@@ -3030,6 +3030,8 @@ CNode::CNode(NodeId idIn, ServiceFlags nLocalServicesIn, std::shared_ptr<Sock> s
       m_conn_type(conn_type_in),
       nLocalServices(nLocalServicesIn)
 {
+    nPendingHeaderRequests = 0;
+
     if (inbound_onion) assert(conn_type_in == ConnectionType::INBOUND);
     if (conn_type_in != ConnectionType::BLOCK_RELAY) {
         m_tx_relay = std::make_unique<TxRelay>();

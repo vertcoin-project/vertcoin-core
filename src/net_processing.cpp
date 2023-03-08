@@ -329,6 +329,7 @@ public:
     void Misbehaving(const NodeId pnode, const int howmuch, const std::string& message) override;
     void ProcessMessage(CNode& pfrom, const std::string& msg_type, CDataStream& vRecv,
                         const std::chrono::microseconds time_received, const std::atomic<bool>& interruptMsgProc) override;
+	void RequestHeadersFrom(CNode& pto, CConnman& connman, const CBlockIndex* pindex, uint256 untilHash, bool fforceQuery);
 
 private:
     void _RelayTransaction(const uint256& txid, const uint256& wtxid)
@@ -768,6 +769,8 @@ struct CNodeState {
         bool m_protect{false};
     };
 
+    int8_t nDuplicateHeaderRequests;
+
     ChainSyncTimeoutState m_chain_sync;
 
     //! Time of last new block announcement
@@ -1120,6 +1123,26 @@ void PeerManagerImpl::FindNextBlocksToDownload(NodeId nodeid, unsigned int count
 }
 
 } // namespace
+
+// Do not request headers from a peer we are
+// already requesting headers from, unless forced.
+void PeerManagerImpl::RequestHeadersFrom(CNode& pto, CConnman& connman, const CBlockIndex* pindex, uint256 untilHash, bool fforceQuery)
+{
+  if (pto.nPendingHeaderRequests > 0) {
+    if (fforceQuery) {
+      LogPrint(BCLog::NET, "forcing getheaders request (%d) to peer=%d (%d open)\n",
+                pindex->nHeight, pto.GetId(), pto.nPendingHeaderRequests);
+    } else {
+      LogPrint(BCLog::NET, "dropped getheaders request (%d) to peer=%d\n", pindex->nHeight, pto.GetId());
+      return;
+    }
+  }
+  const CNetMsgMaker msgMaker(pto.GetCommonVersion());
+  LogPrint(BCLog::NET, "getheaders request (%d) to peer=%d (%d open)\n", pindex->nHeight, pto.GetId(), pto.nPendingHeaderRequests);
+  connman.PushMessage(&pto, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindex), untilHash));
+  pto.nPendingHeaderRequests += 1;
+
+}
 
 void PeerManagerImpl::PushNodeVersion(CNode& pnode)
 {
@@ -2131,7 +2154,8 @@ void PeerManagerImpl::ProcessHeadersMessage(CNode& pfrom, const Peer& peer,
         //   nUnconnectingHeaders gets reset back to 0.
         if (!m_chainman.m_blockman.LookupBlockIndex(headers[0].hashPrevBlock) && nCount < MAX_BLOCKS_TO_ANNOUNCE) {
             nodestate->nUnconnectingHeaders++;
-            m_connman.PushMessage(&pfrom, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindexBestHeader), uint256()));
+       		// Allow a single getheaders query before triggering DoS
+            RequestHeadersFrom(pfrom, m_connman, pindexBestHeader, uint256(), true);
             LogPrint(BCLog::NET, "received header %s: missing prev block %s, sending getheaders (%d) to end (peer=%d, nUnconnectingHeaders=%d)\n",
                     headers[0].GetHash().ToString(),
                     headers[0].hashPrevBlock.ToString(),
@@ -2197,7 +2221,7 @@ void PeerManagerImpl::ProcessHeadersMessage(CNode& pfrom, const Peer& peer,
             // from there instead.
             LogPrint(BCLog::NET, "more getheaders (%d) to end to peer=%d (startheight:%d)\n",
                                  pindexLast->nHeight, pfrom.GetId(), peer.m_starting_height);
-            m_connman.PushMessage(&pfrom, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindexLast), uint256()));
+            RequestHeadersFrom(pfrom, m_connman, pindexLast, uint256(), false);
         }
 
         // If this set of headers is valid and ends in a block with at least as
@@ -3058,7 +3082,8 @@ void PeerManagerImpl::ProcessMessage(CNode& pfrom, const std::string& msg_type, 
         }
 
         if (best_block != nullptr) {
-            m_connman.PushMessage(&pfrom, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindexBestHeader), *best_block));
+			// We force this check, in case we're only connected to nodes that send invs
+			RequestHeadersFrom(pfrom, m_connman, pindexBestHeader, *best_block, true);
             LogPrint(BCLog::NET, "getheaders (%d) %s to peer=%d\n", pindexBestHeader->nHeight, best_block->ToString(), pfrom.GetId());
         }
 
@@ -3257,6 +3282,35 @@ void PeerManagerImpl::ProcessMessage(CNode& pfrom, const std::string& msg_type, 
             if (--nLimit <= 0 || pindex->GetBlockHash() == hashStop)
                 break;
         }
+
+        // Pre-Lyra2REv3 nodes are still active and keep requesting blocks
+        // that do have a common ancestor to our chain - and thus we keep
+        // sending them leading to huge amounts of data being transfered
+        // in vain. We should prevent sending duplicate header chunks over
+        // and over. So if we're sending MAX_HEADERS_RESULTS headers of which
+        // the last one we already sent, we're treating it as a duplicate request.
+        // A node should get 3 strikes and then the ban score gets increased
+        bool bDuplicate = false;
+        if(nLimit <= 0) {
+            if (pindex == nodestate->pindexBestHeaderSent) {
+                 LogPrint(BCLog::NET, "getheaders already sent peer=%d\n", pfrom.GetId());
+                bDuplicate = true;
+            } else if (nodestate->pindexBestHeaderSent) {
+                if (pindex && (nodestate->pindexBestHeaderSent->GetAncestor(pindex->nHeight) == pindex)) {
+                    LogPrint(BCLog::NET, "getheaders before best index sent from peer=%d\n", pfrom.GetId());
+                    bDuplicate = true;
+                }
+            }
+        }
+        if (bDuplicate) {
+            nodestate->nDuplicateHeaderRequests++;
+            LogPrintf("getheaders peer %d sent a duplicate request (happened %d times)\n", pfrom.GetId(), nodestate->nDuplicateHeaderRequests);
+            if(nodestate->nDuplicateHeaderRequests >= 3) {
+                Misbehaving(pfrom.GetId(), (nodestate->nDuplicateHeaderRequests-2) * 10, "Duplicate header requests");
+            }
+        }
+
+
         // pindex can be nullptr either if we sent m_chainman.ActiveChain().Tip() OR
         // if our peer has m_chainman.ActiveChain().Tip() (and thus we are sending an empty
         // headers message). In both cases it's safe to update
@@ -3507,8 +3561,9 @@ void PeerManagerImpl::ProcessMessage(CNode& pfrom, const std::string& msg_type, 
 
         if (!m_chainman.m_blockman.LookupBlockIndex(cmpctblock.header.hashPrevBlock)) {
             // Doesn't connect (or is genesis), instead of DoSing in AcceptBlockHeader, request deeper headers
-            if (!m_chainman.ActiveChainstate().IsInitialBlockDownload())
-                m_connman.PushMessage(&pfrom, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindexBestHeader), uint256()));
+            if (!m_chainman.ActiveChainstate().IsInitialBlockDownload()) {
+				RequestHeadersFrom(pfrom, m_connman, pindexBestHeader, uint256(), true);
+			}
             return;
         }
 
@@ -3789,6 +3844,10 @@ void PeerManagerImpl::ProcessMessage(CNode& pfrom, const std::string& msg_type, 
         }
 
         std::vector<CBlockHeader> headers;
+
+        if (pfrom.nPendingHeaderRequests > 0) {
+          pfrom.nPendingHeaderRequests -= 1;
+	    }
 
         // Bypass the normal CBlock deserialization, as we don't want to risk deserializing 2000 full blocks.
         unsigned int nCount = ReadCompactSize(vRecv);
@@ -4648,7 +4707,7 @@ bool PeerManagerImpl::SendMessages(CNode* pto)
                 if (pindexStart->pprev)
                     pindexStart = pindexStart->pprev;
                 LogPrint(BCLog::NET, "initial getheaders (%d) to peer=%d (startheight:%d)\n", pindexStart->nHeight, pto->GetId(), peer->m_starting_height);
-                m_connman.PushMessage(pto, msgMaker.Make(NetMsgType::GETHEADERS, m_chainman.ActiveChain().GetLocator(pindexStart), uint256()));
+				RequestHeadersFrom(*pto, m_connman, pindexStart, uint256(), false);
             }
         }
 
