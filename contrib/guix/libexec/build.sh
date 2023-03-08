@@ -245,7 +245,7 @@ CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests --disab
 # CFLAGS
 HOST_CFLAGS="-O2 -g"
 case "$HOST" in
-    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=." ;;
+    *linux*)  HOST_CFLAGS+=" -ffile-prefix-map=${PWD}=. -fPIC" ;;
     *mingw*)  HOST_CFLAGS+=" -fno-ident" ;;
     *darwin*) unset HOST_CFLAGS ;;
 esac

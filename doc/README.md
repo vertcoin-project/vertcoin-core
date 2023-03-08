@@ -1,32 +1,38 @@
-Bitcoin Core
+Vertcoin Core
 =============
 
 Setup
 ---------------------
-Bitcoin Core is the original Bitcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bitcoin transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Vertcoin Core is based on Bitcoin Core, the original Bitcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Vertcoin transactions, which requires a few gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from an hour to a day or more.
 
-To download Bitcoin Core, visit [bitcoincore.org](https://bitcoincore.org/en/download/).
+To download Vertcoin Core, visit [vertcoin.org](https://vertcoin.org/download-wallet/).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bitcoin Core on your native platform.
+The following are some helpful notes on how to run Vertcoin Core on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- `bin/vertcoin-qt` (GUI) or
+- `bin/vertcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run bitcoin-qt.exe.
+Unpack the files into a directory, and then run vertcoin-qt.exe.
 
 ### macOS
 
-Drag Bitcoin Core to your applications folder, and then run Bitcoin Core.
+Drag Vertcoin Core to your applications folder, and then run Vertcoin Core.
 
 ### Need Help?
+
+Since Vertcoin is forked from Bitcoin, most technical questions can be answered using the Bitcoin Help resources listed below.
+
+However, for Vertcoin specific issues, ask for help on the [Vertcoin Discord Channel](https://discord.gg/vertcoin)
+
+Bitcoin help and documentation can be found at the following links:
 
 * See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 for help and more information.
@@ -36,6 +42,8 @@ for help and more information.
 
 Building
 ---------------------
+Building Vertcoin Core follows the process and tools used for Bitcoin Core.
+
 The following are developer notes on how to build Bitcoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
