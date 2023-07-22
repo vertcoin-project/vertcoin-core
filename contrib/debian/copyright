@@ -2,13 +2,15 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Bitcoin
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#bitcoin-core-dev@libera.chat
-Source: https://github.com/bitcoin/bitcoin
+Source: https://github.com/vertcoin-project/vertcoin-core
 
 Files: *
-Copyright: 2009-2022, Bitcoin Core Developers
+Copyright:  2014-2022, Vertcoin Core Developers
+Copyright: 2009-2021, Bitcoin Core Developers
 License: Expat
 Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
-         as well as the numerous contributors to the project.
+         as well as the numerous contributors to the project. This version has
+         also been modified by Vertcoin developers.
 
 Files: debian/*
 Copyright: 2010-2011, Jonas Smedegaard <dr@jones.dk>
@@ -75,12 +77,15 @@ Copyright: Stephen Hutchings, Jonas Schnelli
 License: Expat
 Comment: Modifications of Stephen Hutchings' Typicons
 
-Files: src/qt/res/icons/bitcoin.*
-       share/pixmaps/bitcoin*
-       src/qt/res/src/bitcoin.svg
-Copyright: Bitboy, Jonas Schnelli
-License: public-domain
-Comment: Site: https://bitcointalk.org/?topic=1756.0
+Files:
+ src/qt/res/icons/vertcoin.*
+ share/pixmaps/vertcoin*
+ src/qt/res/src/vertcoin.svg
+Copyright:
+ Bushido
+License: CC-BY-SA-4.0
+Comment:
+ https://commons.wikimedia.org/wiki/File:Vertcoin.svg
 
 Files: src/qt/res/icons/proxy.png
        src/qt/res/src/proxy.svg
