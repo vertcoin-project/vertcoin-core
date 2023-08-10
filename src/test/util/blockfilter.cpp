@@ -1,4 +1,5 @@
 // Copyright (c) 2019-2021 The Bitcoin Core developers
+// Copyright (c) 2019-2023 The Vertcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +17,7 @@ bool ComputeFilter(BlockFilterType filter_type, const CBlockIndex* block_index, 
     LOCK(::cs_main);
 
     CBlock block;
-    if (!ReadBlockFromDisk(block, block_index->GetBlockPos(), Params().GetConsensus())) {
+    if (!ReadBlockFromDisk(block, block_index->GetBlockPos(), block_index->nHeight, Params().GetConsensus())) {
         return false;
     }
 
