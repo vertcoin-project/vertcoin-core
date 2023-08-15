@@ -1,10 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2021 The Bitcoin Core developers
+// Copyright (c) 2014-2023 The Vertcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <txdb.h>
 
+#include <chainparams.h>
 #include <chain.h>
 #include <pow.h>
 #include <random.h>
@@ -300,6 +302,12 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
 {
     AssertLockHeld(::cs_main);
     std::unique_ptr<CDBIterator> pcursor(NewIterator());
+
+    const bool fullChainVerification = gArgs.GetBoolArg("-full-startup-verify", false);
+
+    const CChainParams& chainparams = Params();
+    MapCheckpoints checkPoints = chainparams.Checkpoints().mapCheckpoints;
+    int highestCheckpointHeight = checkPoints.rbegin()->first;
     pcursor->Seek(std::make_pair(DB_BLOCK_INDEX, uint256()));
 
     // Load m_block_index
@@ -324,10 +332,20 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                if (!CheckProofOfWork(pindexNew->GetBlockHash(), pindexNew->nBits, consensusParams)) {
-                    return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
+                MapCheckpoints::iterator it = checkPoints.find(pindexNew->nHeight);
+                if(it != checkPoints.end())
+                {
+                    LogPrintf("Verifying checkpoint at height %i\n", pindexNew->nHeight);
+                    if(pindexNew->GetBlockHash() != it->second)
+                        return error("%s: Block hash mismatches checkpoint: %s\n", __func__, pindexNew->ToString());
                 }
-
+                if(fullChainVerification)
+                {
+                    if(pindexNew->nHeight % 10000 == 0) LogPrintf("Checking PoW for block %i\n", pindexNew->nHeight);
+                    if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams)) {
+                        return error("%s: CheckProofOfWork failed: %s\n", __func__, pindexNew->ToString());
+                    }
+                }
                 pcursor->Next();
             } else {
                 return error("%s: failed to read value", __func__);
