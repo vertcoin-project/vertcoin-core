@@ -54,8 +54,8 @@
         <translation type="unfinished">Confirmar el encriptado de la billetera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: Si encriptas la billetera y pierdes tu frase de contraseña, ¡&lt;b&gt;PERDERÁS TODOS TUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: Si encriptas la billetera y pierdes tu frase de contraseña, ¡&lt;b&gt;PERDERÁS TODOS TUS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -66,8 +66,8 @@
         <translation type="unfinished">Billetera encriptada</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que encriptar tu billetera no garantiza la protección total contra el robo de tus bitcoins si la computadora está infectada con malware.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que encriptar tu billetera no garantiza la protección total contra el robo de tus vertcoins si la computadora está infectada con malware.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -192,8 +192,8 @@
         <translation type="unfinished">Error: el registro del identificador del archivo de volcado es incorrecto. Se obtuvo "%s"; se esperaba "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Error: la versión del archivo volcado no es compatible. Esta versión de la billetera de bitcoin solo admite archivos de volcado de la versión 1. Se obtuvo un archivo de volcado con la versión %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Error: la versión del archivo volcado no es compatible. Esta versión de la billetera de vertcoin solo admite archivos de volcado de la versión 1. Se obtuvo un archivo de volcado con la versión %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -260,8 +260,8 @@
         <translation type="unfinished">La actualización -txindex iniciada por una versión anterior no puede completarse. Reinicia con la versión anterior o ejecuta un -reindex completo.</translation>
     </message>
     <message>
-        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Bitcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation type="unfinished">%s solicitud para escuchar en el puerto%u. Este puerto se considera "malo" y, por lo tanto, es poco probable que algún par de Bitcoin Core se conecte a él. Consulta doc/p2p-bad-ports.md para obtener detalles y una lista completa.</translation>
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Vertcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation type="unfinished">%s solicitud para escuchar en el puerto%u. Este puerto se considera "malo" y, por lo tanto, es poco probable que algún par de Vertcoin Core se conecte a él. Consulta doc/p2p-bad-ports.md para obtener detalles y una lista completa.</translation>
     </message>
     <message>
         <source>-reindex-chainstate option is not compatible with -blockfilterindex. Please temporarily disable blockfilterindex while using -reindex-chainstate, or replace -reindex-chainstate with -reindex to fully rebuild all indexes.</source>
@@ -507,12 +507,12 @@ No se puede restaurar la copia de seguridad de la billetera.</translation>
         <translation type="unfinished">Cifre las claves privadas que pertenecen a su billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Firme mensajes con sus direcciones de Bitcoin para demostrar que los posee</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation type="unfinished">Firme mensajes con sus direcciones de Vertcoin para demostrar que los posee</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifique los mensajes para asegurarse de que se firmaron con direcciones de Bitcoin especificadas.</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation type="unfinished">Verifique los mensajes para asegurarse de que se firmaron con direcciones de Vertcoin especificadas.</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -566,11 +566,11 @@ No se puede restaurar la copia de seguridad de la billetera.</translation>
         <translation type="unfinished">M&amp;ostrar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n conexiones activas con la red Bitcoin</numerusform>
-            <numerusform>%n conexiones activas con la red Bitcoin </numerusform>
+            <numerusform>%n conexiones activas con la red Vertcoin</numerusform>
+            <numerusform>%n conexiones activas con la red Vertcoin </numerusform>
         </translation>
     </message>
     <message>
@@ -861,12 +861,12 @@ No se puede restaurar la copia de seguridad de la billetera.</translation>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">Es posible que las transacciones recientes aún no sean visibles y, por lo tanto, el saldo de la billetera podría ser incorrecto. Esta información será correcta una vez que la billetera haya terminado de sincronizarse con la red de Bitcoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation type="unfinished">Es posible que las transacciones recientes aún no sean visibles y, por lo tanto, el saldo de la billetera podría ser incorrecto. Esta información será correcta una vez que la billetera haya terminado de sincronizarse con la red de Vertcoin, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">La red no aceptará si se intenta gastar bitcoins que estén afectados por las transacciones que aún no se muestran.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">La red no aceptará si se intenta gastar vertcoins que estén afectados por las transacciones que aún no se muestran.</translation>
     </message>
     <message>
         <source>calculating…</source>
@@ -960,12 +960,12 @@ No se puede restaurar la copia de seguridad de la billetera.</translation>
         <translation type="unfinished">&amp;Ruta al script del firmante externo</translation>
     </message>
     <message>
-        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Ruta completa a un script compatible con Bitcoin Core (p. ej., C:\Descargas\hwi.exe o /Usuarios/SuUsuario/Descargas/hwi.py). Advertencia: ¡El malware podría robarte tus monedas!</translation>
+        <source>Full path to a Vertcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Ruta completa a un script compatible con Vertcoin Core (p. ej., C:\Descargas\hwi.exe o /Usuarios/SuUsuario/Descargas/hwi.py). Advertencia: ¡El malware podría robarte tus monedas!</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Abrir automáticamente el puerto del cliente de Bitcoin en el router. Esto solo funciona cuando el router es compatible con NAT-PMP y está activo. El puerto externo podría ser aleatorio</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Abrir automáticamente el puerto del cliente de Vertcoin en el router. Esto solo funciona cuando el router es compatible con NAT-PMP y está activo. El puerto externo podría ser aleatorio</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1151,8 +1151,8 @@ Para obtener más información sobre cómo usar esta consola, escribe %6.
         <translation type="unfinished">&amp;Mensaje:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Mensaje opcional para adjuntar a la solicitud de pago, que se mostrará cuando se abra la solicitud. Nota: Este mensaje no se enviará con el pago a través de la red de Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation type="unfinished">Mensaje opcional para adjuntar a la solicitud de pago, que se mostrará cuando se abra la solicitud. Nota: Este mensaje no se enviará con el pago a través de la red de Vertcoin.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1243,9 +1243,9 @@ Para obtener más información sobre cómo usar esta consola, escribe %6.
         <translation type="unfinished">¿Quieres crear esta transacción?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Vertcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Revisa por favor la transacción. Puedes crear y enviar esta transacción de Bitcoin parcialmente firmada (PSBT), que además puedes guardar o copiar y, luego, firmar; por ejemplo, una billetera %1 sin conexión o una billetera de hardware compatible con PSBT.</translation>
+        <translation type="unfinished">Revisa por favor la transacción. Puedes crear y enviar esta transacción de Vertcoin parcialmente firmada (PSBT), que además puedes guardar o copiar y, luego, firmar; por ejemplo, una billetera %1 sin conexión o una billetera de hardware compatible con PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -1280,8 +1280,8 @@ Para obtener más información sobre cómo usar esta consola, escribe %6.
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Advertencia: Dirección de Bitcoin inválida</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation type="unfinished">Advertencia: Dirección de Vertcoin inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1303,8 +1303,8 @@ Para obtener más información sobre cómo usar esta consola, escribe %6.
         <translation type="unfinished">Pagar &amp;a:</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">La dirección de Bitcoin a la que se enviará el pago</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation type="unfinished">La dirección de Vertcoin a la que se enviará el pago</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>

@@ -66,11 +66,11 @@
         <translation type="unfinished">العناوين المستلمة</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">‫هذه عناوين البتكوين الخاصة بك لإرسال المدفوعات. تأكد دائما من القيم المدخلة ومن العنوان المستلم قبل الارسال.‬</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">هذه عناوين البتكوين الخاصة بك لاستلام المدفوعات. قم بالنقر على زر انشاء عنوان استلام جديد لإنشاء عناوين جديدة.
 التوقيع ممكن باستخدام العناوين القديمة "Legacy" فقط.</translation>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">تأكيد تشفير المحفظة</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation type="unfinished">تحذير: إذا قمت بتشفير المحفظة وأضعت الكلمة السرية؛ &lt;b&gt;ستفقد كل البتكوين&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">أدخل ‫عبارة المرور‬ السابقة و‫عبارة المرور‬ الجديدة للمحفظة</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">تذكر أن تشفير محفظتك قد لا يحميك بشكل كامل من البرمجيات الخبيثة التي تصيب جهازك.</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫القيمة‬</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation type="unfinished">ادخل عنوان محفطة البتكوين (مثال %1)</translation>
     </message>
     <message>
@@ -479,7 +479,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">%s المبرمجون</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
         <translation type="unfinished">‫‫%s مشكل. حاول استخدام أداة محفظة البتكوين للاصلاح أو استعادة نسخة احتياطية.‬</translation>
     </message>
     <message>
@@ -603,8 +603,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫لايمكن الكتابة في المجلد '%s'؛ تحقق من الصلاحيات.‬</translation>
     </message>
     <message>
-        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Bitcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation type="unfinished">%s طلب الاستماع على منفذ %u. يعتبر منفذه "سيئًا" وبالتالي فمن غير المحتمل أن يتصل به أي من أقران Bitcoin Core. انظر الى doc / p2p-bad-ports.md للحصول على التفاصيل والقائمة الكاملة.</translation>
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Vertcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation type="unfinished">%s طلب الاستماع على منفذ %u. يعتبر منفذه "سيئًا" وبالتالي فمن غير المحتمل أن يتصل به أي من أقران Vertcoin Core. انظر الى doc / p2p-bad-ports.md للحصول على التفاصيل والقائمة الكاملة.</translation>
     </message>
     <message>
         <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
@@ -1019,7 +1019,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">البروكسي &lt;b&gt;يعمل &lt;/b&gt;:%1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation type="unfinished">‫ارسل بتكوين الى عنوان‬</translation>
     </message>
     <message>
@@ -1063,7 +1063,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫توقيع &amp;رسالة…‬</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation type="unfinished">‫وقَع الرسائل باستخدام عناوين البتكوين لإثبات امتلاكك لهذه العناوين‬</translation>
     </message>
     <message>
@@ -1071,7 +1071,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫&amp;تحقق من الرسالة…‬</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation type="unfinished">‫تحقق من الرسائل للتأكد من أنَها وُقّعت بعناوين بتكوين محددة‬</translation>
     </message>
     <message>
@@ -1135,7 +1135,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫الاتصال بالأقران…‬</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation type="unfinished">‫أطلب مدفوعات (أنشئ رموز استجابة (QR Codes) وعناوين بتكوين)‬</translation>
     </message>
     <message>
@@ -1194,7 +1194,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫حديث‬</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed Vertcoin Transaction</source>
         <translation type="unfinished">‫تحميل معاملة بتكوين موقعة جزئيًا (PSBT)‬</translation>
     </message>
     <message>
@@ -1202,7 +1202,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫تحميل معاملة بتكوين موقعة جزئيا (‫PSBT) من &amp;الحافظة…‬</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
         <translation type="unfinished">‫تحميل معاملة بتكوين موقعة جزئيًا ‫(‫PSBT) من الحافظة‬</translation>
     </message>
     <message>
@@ -1222,7 +1222,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫&amp;عناوين الإستلام‬</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation type="unfinished">‫افتح رابط بتكوين: URI‬</translation>
     </message>
     <message>
@@ -1252,7 +1252,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫إغلاق جميع المحافظ‬</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation type="unfinished">‫اعرض %1 رسالة المساعدة للحصول على قائمة من خيارات سطر أوامر البتكوين المحتملة‬</translation>
     </message>
     <message>
@@ -1316,14 +1316,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫ع&amp;رض‬</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Vertcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Vertcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Vertcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Vertcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Vertcoin network.</numerusform>
             <numerusform>%n اتصال نشط بشبكة البتكوين.</numerusform>
         </translation>
     </message>
@@ -1815,7 +1815,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">تعديل عنوان الارسال</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation type="unfinished">‫العنوان المدخل "%1" ليس عنوان بتكوين صحيح.‬</translation>
     </message>
     <message>
@@ -1861,7 +1861,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation type="unfinished">بتكوين</translation>
     </message>
     <message numerus="yes">
@@ -1918,7 +1918,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation type="unfinished">‫سيقوم %1 بتنزيل نسخة من الطوابق المتتالية للبتكوين وتخزينها.‬</translation>
     </message>
     <message>
@@ -2011,11 +2011,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫نموذج‬</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation type="unfinished">‫قد لا تكون العمليات الأخيرة مرئية بعد، وبالتالي قد يكون رصيد محفظتك غير دقيق. ستكون هذه المعلومات دقيقة بمجرد انتهاء مزامنة محفظتك مع شبكة البيتكوين، كما هو موضح أدناه.‬</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">‫لن تقبل الشبكة محاولة انفاق وحدات البتكوين في الطوابق لم يتم مزامنتها بعد.‬</translation>
     </message>
     <message>
@@ -2066,7 +2066,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation type="unfinished">‫افتح رابط بتكوين (URI)‬</translation>
     </message>
     <message>
@@ -2224,11 +2224,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp; مسار البرنامج النصي للموقّع الخارجي</translation>
     </message>
     <message>
-        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">‫مثال لمسار كامل متوافق مع البتكوين الأساسي Bitcoin Core (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). احذر: يمكن أن تسرق البرمجيات الضارة عملاتك!‬</translation>
+        <source>Full path to a Vertcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">‫مثال لمسار كامل متوافق مع البتكوين الأساسي Vertcoin Core (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). احذر: يمكن أن تسرق البرمجيات الضارة عملاتك!‬</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished">‫فتح منفذ عميل البتكوين تلقائيا على الموجه. يعمل فقط عندما يكون الموجه الخاص بك يدعم UPnP ومفعل ايضا.‬</translation>
     </message>
     <message>
@@ -2236,7 +2236,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫ربط المنفذ باستخدام &amp;UPnP‬</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">‫افتح منفذ عميل بتكوين تلقائيًا على جهاز التوجيه. يعمل هذا فقط عندما يدعم جهاز التوجيه الخاص بك NAT-PMP ويتم تمكينه. يمكن أن يكون المنفذ الخارجي عشوائيًا.‬</translation>
     </message>
     <message>
@@ -2252,7 +2252,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫السماح بالاتصالات الوارد&amp;ة‬</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">الاتصال بشبكة البتكوين عبر وكيل SOCKS5.</translation>
     </message>
     <message>
@@ -2336,7 +2336,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫ما اذا أردت إظهار ميزات التحكم في وحدات البتكوين أم لا.‬</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">اتصل بشبكة بتكوين من خلال وكيل SOCKS5 منفصل لخدمات Tor onion.</translation>
     </message>
     <message>
@@ -2445,7 +2445,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">‫نموذج‬</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished">قد تكون المعلومات المعروضة قديمة. تتزامن محفظتك تلقائيًا مع شبكة البتكوين بعد إنشاء الاتصال، ولكن هذه العملية لم تكتمل بعد.</translation>
     </message>
     <message>
@@ -2656,7 +2656,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">خطأ في طلب الدفع</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation type="unfinished">لا يمكن تشغيل بتكوين: معالج النقر للدفع</translation>
     </message>
     <message>
@@ -2664,8 +2664,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">التعامل مع العنوان</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">'bitcoin://' هو ليس عنوان URL صالح. استعمل 'bitcoin:' بدلا من ذلك.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation type="unfinished">'vertcoin://' هو ليس عنوان URL صالح. استعمل 'vertcoin:' بدلا من ذلك.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2676,7 +2676,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 ‬‫‫‫إذا كنت تتلقى هذا الخطأ ، يجب أن تطلب من المستلم تقديم عنوان URI متوافق مع BIP21.‬</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation type="unfinished">‫لا يمكن تحليل العنوان (URI)! يمكن أن يحدث هذا بسبب عنوان بتكوين غير صالح أو محددات عنوان غير صحيحة.‬</translation>
     </message>
     <message>
@@ -3222,7 +3222,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">&amp;رسالة:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation type="unfinished">‫رسالة اختيارية لإرفاقها بطلب الدفع، والتي سيتم عرضها عند فتح الطلب. ملاحظة: لن يتم إرسال الرسالة مع العملية عبر شبكة البتكوين.‬</translation>
     </message>
     <message>
@@ -3507,7 +3507,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 ملاحظة: بما أن الرسوم تحتسب لكل بايت، معدل الرسوم ل “ ١٠٠ ساتوشي لكل كيلوبايت افتراضي” لعملية بحجم ٥٠٠ بايت افتراضي (نصف كيلوبايت افتراضي) ستكون ٥٠ ساتوشي فقط.‬</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation type="unfinished">‫قد يفرض المعدنون والأنواد الموصلة حدا أدنى للرسوم عندما يكون عدد العمليات قليل نسبة لسعة الطوابق. يمكنك دفع الحد الأدنى ولكن كن على دراية بأن العملية قد لا تنفذ في حالة أن الطلب على عمليات البتكوين فاق قدرة الشبكة على المعالجة.‬</translation>
     </message>
     <message>
@@ -3652,7 +3652,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫يمكنك زيادة الرسوم لاحقًا (الاستبدال بواسطة الرسوم، BIP-125 مفعل).‬</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">‫رجاء، راجع معاملتك. هذا ينشئ معاملة بتكوين موقعة جزئيا (PSBT) ويمكنك حفظها أو نسخها و التوقيع مع محفظة %1 غير متصلة بالشبكة، أو محفظة خارجية متوافقة مع الـPSBT.‬</translation>
     </message>
@@ -3662,7 +3662,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫هل تريد انشاء هذه المعاملة؟‬</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Vertcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">‫رجاء، راجع معاملتك.تستطيع انشاء وارسال هذه العملية أو انشاء معاملة بتكوين موقعة جزئيا (PSBT) ويمكنك حفظها أو نسخها و التوقيع مع محفظة %1 غير متصلة بالشبكة، أو محفظة خارجية متوافقة مع الـPSBT.‬</translation>
     </message>
@@ -3731,7 +3731,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation type="unfinished">تحذير: عنوان بتكوين غير صالح</translation>
     </message>
     <message>
@@ -3770,7 +3770,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫اختر عنوانا تم استخدامه سابقا‬</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation type="unfinished">‫عنوان البتكوين لارسال الدفعة له‬</translation>
     </message>
     <message>
@@ -3786,7 +3786,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫القيمة للإرسال في الوحدة المحددة‬</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">‫سيتم خصم الرسوم من المبلغ الذي يتم إرساله. لذا سوف يتلقى المستلم قيمة أقل من البتكوين المدخل في حقل القيمة. في حالة تحديد عدة مستلمين، يتم تقسيم الرسوم بالتساوي.‬</translation>
     </message>
     <message>
@@ -3806,7 +3806,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫أدخل مذكرة لهذا العنوان لإضافته إلى قائمة العناوين المستخدمة‬</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
         <translation type="unfinished">‫الرسالة يتم إرفاقها مع البتكوين: الرابط سيتم تخزينه مع العملية لك للرجوع إليه. ملاحظة: لن يتم إرسال هذه الرسالة عبر شبكة البتكوين.‬</translation>
     </message>
 </context>
@@ -3832,11 +3832,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">&amp;توقيع الرسالة</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">‫تستطيع توقيع رسائل/اتفاقيات من عناوينك لإثبات أنه بإمكانك استلام بتكوين مرسل لهذه العناوين. كن حذرا من توقيع أي شيء غامض أو عشوائي، هجمات التصيد قد تحاول خداعك وانتحال هويتك. وقع البيانات الواضحة بالكامل والتي توافق عليها فقط.‬</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation type="unfinished">عنوان البتكوين لتوقيع الرسالة منه</translation>
     </message>
     <message>
@@ -3860,7 +3860,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">نسخ التوقيع الحالي إلى حافظة النظام</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation type="unfinished">‫وقع الرسالة لتثبت انك تملك عنوان البتكوين هذا‬</translation>
     </message>
     <message>
@@ -3884,7 +3884,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">أدخل عنوان المتلقي، راسل (تأكد من نسخ فواصل الأسطر، الفراغات، الخ.. تماما) والتوقيع أسفله لتأكيد الرسالة. كن حذرا من عدم قراءة داخل التوقيع أكثر مما هو موقع بالرسالة نفسها، لتجنب خداعك بهجوم man-in-the-middle. لاحظ أنه هذا لاثبات أن الجهة الموقعة تستقبل مع العنوان فقط، لا تستطيع اثبات الارسال لأي معاملة.</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation type="unfinished">عنوان البتكوين الذي تم توقيع الرسالة منه</translation>
     </message>
     <message>
@@ -3896,7 +3896,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">‫التوقيع المعطى عند توقيع الرسالة‬</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation type="unfinished">‫تحقق من الرسالة للتأكد أنه تم توقيعها من عنوان البتكوين المحدد‬</translation>
     </message>
     <message>
