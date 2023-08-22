@@ -66,8 +66,8 @@ public:
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.script_flag_exceptions.emplace( // BIP16 exception
             uint256{}, SCRIPT_VERIFY_NONE);
-        //consensus.script_flag_exceptions.emplace( // Taproot exception
-        //     uint256S("0x0000000000000000000f14c35b2d841e986ab5441de8c585d5ffe55ea1e395ad"), SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_WITNESS);
+        consensus.script_flag_exceptions.emplace( // Taproot exception
+            uint256{}, SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_WITNESS);
         consensus.BIP34Height = 691488;
         consensus.BIP34Hash = uint256S("0x1d0446fe48fdebf4780f544f1de81c2527099da2d09465873475cefe96ab84a1");
         consensus.BIP65Height = 691488;
