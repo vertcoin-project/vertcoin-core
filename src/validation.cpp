@@ -3448,10 +3448,11 @@ std::vector<unsigned char> ChainstateManager::GenerateCoinbaseCommitment(CBlock&
     return commitment;
 }
 
-bool HasValidProofOfWork(const std::vector<CBlockHeader>& headers, const Consensus::Params& consensusParams)
+bool HasValidProofOfWork(const std::vector<CBlockHeader>& headers, const Consensus::Params& consensusParams, int nHeight)
 {
+    int preSyncHeight = nHeight + 1;
     return std::all_of(headers.cbegin(), headers.cend(),
-            [&](const auto& header) { return CheckProofOfWork(header.GetHash(), header.nBits, consensusParams);});
+            [&](const auto& header) { return CheckProofOfWork(header.GetPoWHash(preSyncHeight++), header.nBits, consensusParams);});
 }
 
 arith_uint256 CalculateHeadersWork(const std::vector<CBlockHeader>& headers)
