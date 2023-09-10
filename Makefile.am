@@ -34,13 +34,13 @@ BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win64-setup$(EXEEXT)
 empty :=
 space := $(empty) $(empty)
 
-OSX_APP=Bitcoin-Qt.app
+OSX_APP=Vertcoin-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_TEMP_ISO = $(OSX_DMG:.dmg=).temp.iso
 OSX_BACKGROUND_IMAGE=$(top_srcdir)/contrib/macdeploy/background.tiff
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
-OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/bitcoin.icns
+OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/vertcoin.icns
 OSX_PLIST=$(top_builddir)/share/qt/Info.plist #not installed
 
 DIST_CONTRIB = \
@@ -58,7 +58,7 @@ BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py \
            $(top_srcdir)/contrib/devtools/utils.py
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/bitcoin.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/vertcoin.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
@@ -104,11 +104,11 @@ $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
+$(OSX_APP)/Contents/Resources/vertcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/Bitcoin-Qt: all-recursive
+$(OSX_APP)/Contents/MacOS/Vertcoin-Qt: all-recursive
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(BITCOIN_QT_BIN) $@
 
@@ -117,8 +117,8 @@ $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	echo '{	CFBundleDisplayName = "$(PACKAGE_NAME)"; CFBundleName = "$(PACKAGE_NAME)"; }' > $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
-  $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Bitcoin-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/Resources/vertcoin.icns $(OSX_APP)/Contents/Info.plist \
+  $(OSX_APP)/Contents/MacOS/Vertcoin-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 osx_volname:
 	echo $(OSX_VOLNAME) >$@
@@ -136,7 +136,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bitcoin-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Vertcoin-Qt
 
 $(OSX_TEMP_ISO): $(APP_DIST_EXTRAS)
 	$(XORRISOFS) -D -l -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -o $@ $(APP_DIST_DIR) -- $(if $(SOURCE_DATE_EPOCH),-volume_date all_file_dates =$(SOURCE_DATE_EPOCH))
@@ -148,7 +148,7 @@ $(APP_DIST_DIR)/.background/background.tiff:
 	$(MKDIR_P) $(@D)
 	cp $(OSX_BACKGROUND_IMAGE) $@
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bitcoin-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Vertcoin-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL) OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) $(OSX_VOLNAME) -translations-dir=$(QT_TRANSLATION_DIR)
 
 deploydir: $(APP_DIST_EXTRAS)

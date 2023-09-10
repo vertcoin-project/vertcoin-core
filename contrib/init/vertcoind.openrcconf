@@ -1,0 +1,33 @@
+# /etc/conf.d/vertcoind: config file for /etc/init.d/vertcoind
+
+# Config file location
+#VERTCOIND_CONFIGFILE="/etc/vertcoin/vertcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $VERTCOIND_USER)
+#VERTCOIND_PIDDIR="/var/run/vertcoind"
+
+# What filename to give the pidfile
+#VERTCOIND_PIDFILE="${VERTCOIND_PIDDIR}/vertcoind.pid"
+
+# Where to write vertcoind data (be mindful that the blockchain is large)
+#VERTCOIND_DATADIR="/var/lib/vertcoind"
+
+# User and group to own vertcoind process
+#VERTCOIND_USER="vertcoin"
+#VERTCOIND_GROUP="vertcoin"
+
+# Path to vertcoind executable
+#VERTCOIND_BIN="/usr/bin/vertcoind"
+
+# Nice value to run vertcoind under
+#VERTCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#VERTCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for vertcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+VERTCOIND_SIGTERM_TIMEOUT=600
