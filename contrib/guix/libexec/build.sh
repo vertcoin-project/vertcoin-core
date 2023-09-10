@@ -240,7 +240,7 @@ mkdir -p "$OUTDIR"
 ###########################
 
 # CONFIGFLAGS
-CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests --disable-fuzz-binary"
+CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-tests --disable-fuzz-binary"
 case "$HOST" in
     *mingw*) CONFIGFLAGS+=" --disable-shared" ;;
 esac
