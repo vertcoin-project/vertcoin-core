@@ -158,8 +158,8 @@ static bool InitSettings()
 
     std::vector<std::string> errors;
     if (!gArgs.ReadSettingsFile(&errors)) {
-        std::string error = QT_TRANSLATE_NOOP("bitcoin-core", "Settings file could not be read");
-        std::string error_translated = QCoreApplication::translate("bitcoin-core", error.c_str()).toStdString();
+        std::string error = QT_TRANSLATE_NOOP("vertcoin-core", "Settings file could not be read");
+        std::string error_translated = QCoreApplication::translate("vertcoin-core", error.c_str()).toStdString();
         InitError(Untranslated(strprintf("%s:\n%s\n", error, MakeUnorderedList(errors))));
 
         QMessageBox messagebox(QMessageBox::Critical, PACKAGE_NAME, QString::fromStdString(strprintf("%s.", error_translated)), QMessageBox::Reset | QMessageBox::Abort);
@@ -181,8 +181,8 @@ static bool InitSettings()
 
     errors.clear();
     if (!gArgs.WriteSettingsFile(&errors)) {
-        std::string error = QT_TRANSLATE_NOOP("bitcoin-core", "Settings file could not be written");
-        std::string error_translated = QCoreApplication::translate("bitcoin-core", error.c_str()).toStdString();
+        std::string error = QT_TRANSLATE_NOOP("vertcoin-core", "Settings file could not be written");
+        std::string error_translated = QCoreApplication::translate("vertcoin-core", error.c_str()).toStdString();
         InitError(Untranslated(strprintf("%s:\n%s\n", error, MakeUnorderedList(errors))));
 
         QMessageBox messagebox(QMessageBox::Critical, PACKAGE_NAME, QString::fromStdString(strprintf("%s.", error_translated)), QMessageBox::Ok);
@@ -211,7 +211,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 
 static int qt_argc = 1;
-static const char* qt_argv = "bitcoin-qt";
+static const char* qt_argv = "vertcoin-qt";
 
 BitcoinApplication::BitcoinApplication():
     QApplication(qt_argc, const_cast<char **>(&qt_argv)),
