@@ -70,9 +70,9 @@ Comment: Modifications of Stephen Hutchings' Typicons
 Files: src/qt/res/icons/vertcoin.*
        share/pixmaps/vertcoin*
        src/qt/res/src/vertcoin.svg
-Copyright: Bushido
-License: CC-BY-SA-4.0
-Comment: https://commons.wikimedia.org/wiki/File:Vertcoin.svg
+Copyright: Vertcoin Project
+License: public-domain
+Comment: Site: https://vertcoin.org
 
 Files: src/qt/res/icons/proxy.png
        src/qt/res/src/proxy.svg
