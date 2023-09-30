@@ -1,9 +1,9 @@
 23.2 Release Notes
 ==================
 
-Vertcoin Core version 23.2rc1 is now available from:
+Vertcoin Core version 23.2 is now available from:
 
-  <https://github.com/vertcoin-project/vertcoin-core/releases/tag/v23.2rc1>
+  <https://github.com/vertcoin-project/vertcoin-core/releases/tag/v23.2>
 
 This release includes various bug fixes and performance
 improvements, as well as updated translations.
