@@ -2378,8 +2378,20 @@ void PeerManagerImpl::SendBlockTransactions(CNode& pfrom, Peer& peer, const CBlo
 
 bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, const Consensus::Params& consensusParams, Peer& peer)
 {
+    // Vertcoin Core: need to know the height for correct POW algorithm selection
+    int nHeight = 0;
+    if (peer.m_headers_sync) {
+        if (peer.m_headers_sync->GetState() == HeadersSyncState::State::PRESYNC) {
+            nHeight = peer.m_headers_sync->GetPresyncHeight();
+        } else if (peer.m_headers_sync->GetState() == HeadersSyncState::State::REDOWNLOAD) {
+            nHeight = peer.m_headers_sync->GetRedownloadHeight();
+        }
+    } else {
+        //We're done pre-checking headers from this peer
+        return true;
+    }
     // Do these headers have proof-of-work matching what's claimed?
-    if (!HasValidProofOfWork(headers, consensusParams)) {
+    if (!HasValidProofOfWork(headers, consensusParams, nHeight)) {
         Misbehaving(peer, 100, "header with invalid proof of work");
         return false;
     }

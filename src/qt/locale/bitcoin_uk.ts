@@ -66,11 +66,11 @@
         <translation type="unfinished">Адреси отримання</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">Це ваші біткоїн-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Це ваші Біткоїн адреси для отримання платежів. Використовуйте кнопку "Створити нову адресу для отримання" на вкладці отримання, щоб створити нові адреси.
 Підпис можливий лише з адресами типу "legacy".</translation>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Підтвердить шифрування гаманця</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Увага: Якщо ви зашифруєте гаманець і забудете пароль, ви &lt;b&gt;ВТРАТИТЕ ВСІ СВОЇ БІТКОЇНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Введіть стару та нову парольну фразу для гаманця.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Пам’ятайте, що шифрування гаманця не може повністю захистити ваші біткоїни від крадіжки, у випадку якщо ваш комп’ютер буде інфіковано шкідливими програмами.</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Кількість</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation type="unfinished">Введіть біткоїн-адресу (наприклад, %1)</translation>
     </message>
     <message>
@@ -461,8 +461,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Розробники %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s пошкоджено. Спробуйте скористатися інструментом гаманця bitcoin-wallet для виправлення або відновлення резервної копії.</translation>
+        <source>%s corrupt. Try using the wallet tool vertcoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s пошкоджено. Спробуйте скористатися інструментом гаманця vertcoin-wallet для виправлення або відновлення резервної копії.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -501,8 +501,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Помилка: Неправильний запис ідентифікатора файлу дампа. Отримано "%s", очікується "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Помилка: Версія файлу дампа не підтримується. Ця версія bitcoin-wallet підтримує лише файли дампа версії 1. Отримано файл дампа версії %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Помилка: Версія файлу дампа не підтримується. Ця версія vertcoin-wallet підтримує лише файли дампа версії 1. Отримано файл дампа версії %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -669,8 +669,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Оновлення -txindex, що було почате попередньою версією, не вдалося завершити. Перезапустить попередню версію або виконайте повний -reindex.</translation>
     </message>
     <message>
-        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Bitcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation type="unfinished">%s запитує прослуховування порту %u . Цей порт вважається "поганим", і тому малоймовірно, що будь-які інші вузли Bitcoin Core підключаться до нього. Дивіться doc/p2p-bad-ports.md для отримання детальної інформації та повного списку.</translation>
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any Vertcoin Core peers connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation type="unfinished">%s запитує прослуховування порту %u . Цей порт вважається "поганим", і тому малоймовірно, що будь-які інші вузли Vertcoin Core підключаться до нього. Дивіться doc/p2p-bad-ports.md для отримання детальної інформації та повного списку.</translation>
     </message>
     <message>
         <source>-reindex-chainstate option is not compatible with -blockfilterindex. Please temporarily disable blockfilterindex while using -reindex-chainstate, or replace -reindex-chainstate with -reindex to fully rebuild all indexes.</source>
@@ -1313,7 +1313,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Проксі &lt;b&gt;увімкнено&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation type="unfinished">Відправити монети на вказану адресу</translation>
     </message>
     <message>
@@ -1357,7 +1357,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">&amp;Підписати повідомлення...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation type="unfinished">Підтвердіть, що Ви є власником повідомлення, підписавши його Вашою біткоїн-адресою</translation>
     </message>
     <message>
@@ -1365,7 +1365,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">П&amp;еревірити повідомлення...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation type="unfinished">Перевірте повідомлення для впевненості, що воно підписано вказаною біткоїн-адресою</translation>
     </message>
     <message>
@@ -1429,8 +1429,8 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Встановлення з'єднань…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Створити запит платежу (генерує QR-код та bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation type="unfinished">Створити запит платежу (генерує QR-код та vertcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1485,7 +1485,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Синхронізовано</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed Vertcoin Transaction</source>
         <translation type="unfinished">Завантажити частково підписану біткоїн-транзакцію (PSBT)</translation>
     </message>
     <message>
@@ -1493,7 +1493,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Завантажити PSBT-транзакцію з &amp;буфера обміну…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Vertcoin Transaction from clipboard</source>
         <translation type="unfinished">Завантажити частково підписану біткоїн-транзакцію (PSBT) з буфера обміну</translation>
     </message>
     <message>
@@ -1513,8 +1513,8 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">&amp;Адреси для отримання</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Відкрити URI-адресу "bitcoin:"</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation type="unfinished">Відкрити URI-адресу "vertcoin:"</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1543,7 +1543,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Закрити всі гаманці</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation type="unfinished">Показати довідку %1 для отримання переліку можливих параметрів командного рядка.</translation>
     </message>
     <message>
@@ -1607,7 +1607,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">&amp;Відобразити</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>%n активне з'єднання з мережею Біткоїн.</numerusform>
@@ -2103,7 +2103,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Редагувати адресу для відправлення</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation type="unfinished">Введена адреса "%1" не є дійсною біткоїн-адресою.</translation>
     </message>
     <message>
@@ -2190,7 +2190,7 @@ Unable to restore backup of wallet.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation type="unfinished">%1 буде завантажувати та зберігати копію блокчейна.</translation>
     </message>
     <message>
@@ -2283,11 +2283,11 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Форма</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation type="unfinished">Нещодавні транзакції ще не відображаються, тому баланс вашого гаманця може бути неточним. Ця інформація буде вірною після того, як ваш гаманець завершить синхронізацію з мережею Біткоїн (дивіться нижче).</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">Спроба відправити біткоїни, які ще не відображаються, не буде прийнята мережею.</translation>
     </message>
     <message>
@@ -2338,7 +2338,7 @@ Unable to restore backup of wallet.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation type="unfinished">Відкрити біткоїн URI</translation>
     </message>
     <message>
@@ -2502,11 +2502,11 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">&amp;Шлях до скрипту зовнішнього підписувача</translation>
     </message>
     <message>
-        <source>Full path to a Bitcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Повний шлях до скрипту, сумісного з Bitcoin Core (наприклад, C:\Downloads\hwi.exe або /Users/you/Downloads/hwi.py). Обережно: зловмисні програми можуть вкрасти Ваші монети!</translation>
+        <source>Full path to a Vertcoin Core compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation type="unfinished">Повний шлях до скрипту, сумісного з Vertcoin Core (наприклад, C:\Downloads\hwi.exe або /Users/you/Downloads/hwi.py). Обережно: зловмисні програми можуть вкрасти Ваші монети!</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished">Автоматично відкривати порт для клієнту Біткоїн на роутері. Працює лише, якщо ваш роутер підтримує UPnP, і ця функція увімкнена.</translation>
     </message>
     <message>
@@ -2514,7 +2514,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Перенаправити порт за допомогою &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">Автоматично відкривати порт клієнта Біткоїн в маршрутизаторі. Це працює, якщо ваш маршрутизатор підтримує NAT-PMP, і ця функція увімкнута. Зовнішній порт може бути випадковим.</translation>
     </message>
     <message>
@@ -2530,7 +2530,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Дозволити вхідні з'єднання</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">Підключення до мережі Біткоїн через SOCKS5 проксі.</translation>
     </message>
     <message>
@@ -2610,7 +2610,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Показати або сховати керування входами.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">Підключитися до мережі Біткоїн через окремий проксі-сервер SOCKS5 для сервісів Tor.</translation>
     </message>
     <message>
@@ -2715,7 +2715,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished">Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Біткоїн після встановлення підключення, але цей процес ще не завершено.</translation>
     </message>
     <message>
@@ -2926,7 +2926,7 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Помилка запиту платежу</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation type="unfinished">Не вдалося запустити біткоїн: обробник "click-to-pay"</translation>
     </message>
     <message>
@@ -2934,8 +2934,8 @@ Unable to restore backup of wallet.</source>
         <translation type="unfinished">Обробка URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">"bitcoin://" не є припустимим URI. Використовуйте натомість "bitcoin:".</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation type="unfinished">"vertcoin://" не є припустимим URI. Використовуйте натомість "vertcoin:".</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2946,7 +2946,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 Якщо ви отримуєте цю помилку, вам слід вимагати у продавця надати URI, який сумісний з BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation type="unfinished">Не вдалося проаналізувати URI-адресу! Причиною цього може бути некоректна біткоїн-адреса або неправильні параметри URI.</translation>
     </message>
     <message>
@@ -3508,7 +3508,7 @@ For more information on using this console, type %6.
         <translation type="unfinished">&amp;Повідомлення:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation type="unfinished">Необов'язкове повідомлення на додаток до запиту платежу, яке буде показане під час відкриття запиту. Примітка: це повідомлення не буде відправлено з платежем через мережу Біткоїн.</translation>
     </message>
     <message>
@@ -3793,7 +3793,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Примітка: Оскільки в розрахунку враховуються байти, комісія "100 сатоші за квБ" для транзакції розміром 500 віртуальних байт (половина 1 квБ) в результаті становить всього 50 сатоші.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation type="unfinished">Якщо обсяг транзакцій менше, ніж простір у блоках, майнери, а також вузли ретрансляції можуть стягувати мінімальну плату. Сплата лише цієї мінімальної суми може призвести до ніколи не підтверджуваної транзакції, коли буде більше попиту на біткоїн-транзакції, ніж мережа може обробити.</translation>
     </message>
     <message>
@@ -3883,7 +3883,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">С&amp;творити непідписану</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed Vertcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">Створює частково підписану біткоїн-транзакцію (PSBT) для використання, наприклад, офлайн-гаманець %1 або гаманця, сумісного з PSBT.</translation>
     </message>
     <message>
@@ -3942,7 +3942,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Ви можете збільшити комісію пізніше (сигналізує Заміна-Через-Комісію, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Vertcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">Перевірте запропоновану транзакцію. Буде сформована частково підписана біткоїн-транзакція (PSBT), яку можна зберегти або скопіювати, а потім підписати з використанням, наприклад, офлайн гаманця %1 або апаратного PSBT-сумісного гаманця.</translation>
     </message>
@@ -3952,7 +3952,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Створити таку транзакцію?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Vertcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">Перевірте транзакцію. Можливо створити та надіслати цю транзакцію або створити частково підписану біткоїн-транзакцію (PSBT), яку можна зберегти або скопіювати, а потім підписати з використанням, наприклад, офлайн гаманця %1 або апаратного PSBT-сумісного гаманця.</translation>
     </message>
@@ -4018,7 +4018,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation type="unfinished">Увага: Неприпустима біткоїн-адреса.</translation>
     </message>
     <message>
@@ -4057,7 +4057,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Обрати ранiш використовувану адресу</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation type="unfinished">Біткоїн-адреса для відправлення платежу</translation>
     </message>
     <message>
@@ -4073,7 +4073,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Сума у вибраній одиниці, яку потрібно надіслати</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">Комісію буде знято зі вказаної суми. До отримувача надійде менше біткоїнів, ніж було вказано в полі кількості. Якщо ж отримувачів декілька - комісію буде розподілено між ними.</translation>
     </message>
     <message>
@@ -4093,8 +4093,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Введіть мітку для цієї адреси для додавання її в список використаних адрес</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Повідомлення, що було додане до bitcoin:URI та буде збережено разом з транзакцією для довідки. Примітка: це повідомлення не буде відправлено в мережу Біткоїн.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation type="unfinished">Повідомлення, що було додане до vertcoin:URI та буде збережено разом з транзакцією для довідки. Примітка: це повідомлення не буде відправлено в мережу Біткоїн.</translation>
     </message>
 </context>
 <context>
@@ -4119,11 +4119,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">&amp;Підписати повідомлення</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Ви можете підписувати повідомлення/угоди своїми адресами, щоб довести можливість отримання біткоїнів, що будуть надіслані на них. Остерігайтеся підписувати будь-що нечітке чи неочікуване, так як за допомогою фішинг-атаки вас можуть спробувати ввести в оману для отримання вашого підпису під чужими словами. Підписуйте лише чіткі твердження, з якими ви повністю згодні.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation type="unfinished">Біткоїн-адреса для підпису цього повідомлення</translation>
     </message>
     <message>
@@ -4147,7 +4147,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Копіювати поточну сигнатуру до системного буферу обміну</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation type="unfinished">Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -4171,7 +4171,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Введіть нижче адресу отримувача, повідомлення (впевніться, що ви точно скопіювали символи завершення рядка, табуляцію, пробіли тощо) та підпис для перевірки повідомлення. Впевніться, що в підпис не було додано зайвих символів: це допоможе уникнути атак типу «людина посередині». Зауважте, що це лише засвідчує можливість отримання транзакцій підписувачем, але не в стані підтвердити джерело жодної транзакції!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation type="unfinished">Біткоїн-адреса, якою було підписано це повідомлення</translation>
     </message>
     <message>
@@ -4183,7 +4183,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Підпис наданий при підписанні цього повідомлення</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation type="unfinished">Перевірте повідомлення для впевненості, що воно підписано вказаною біткоїн-адресою</translation>
     </message>
     <message>
