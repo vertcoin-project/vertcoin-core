@@ -22,23 +22,17 @@ MAX_SEEDS_PER_ASN = {
     'ipv6': 10,
 }
 
-MIN_BLOCKS = 730000
+MIN_BLOCKS = 1680000
 
 PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$")
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
-PATTERN_ONION = re.compile(r"^([a-z2-7]{56}\.onion):(\d+)$")
+PATTERN_ONION = re.compile(r"^([a-z2-7]{16}\.onion):(\d+)$")
 PATTERN_AGENT = re.compile(
     r"^/Satoshi:("
-    r"0.14.(0|1|2|3|99)|"
-    r"0.15.(0|1|2|99)|"
-    r"0.16.(0|1|2|3|99)|"
     r"0.17.(0|0.1|1|2|99)|"
-    r"0.18.(0|1|99)|"
-    r"0.19.(0|1|2|99)|"
-    r"0.20.(0|1|2|99)|"
-    r"0.21.(0|1|2|99)|"
-    r"22.(0|99)|"
-    r"23.(0|99)|"
+    r"0.18.(0|1|2|99)|"
+    r"22.(0|1|2|3|99)|"
+    r"23.(0|1|2|3|99)|"
     r"24.99"
     r")")
 
@@ -202,10 +196,10 @@ def main():
     # Require service bit 1.
     ips = [ip for ip in ips if (ip['service'] & 1) == 1]
     print(f'{ip_stats(ips):s} Require service bit 1', file=sys.stderr)
-    # Require at least 50% 30-day uptime for clearnet, 10% for onion.
+    # Require at least 10% 30-day uptime for clearnet, 10% for onion.
     req_uptime = {
-        'ipv4': 50,
-        'ipv6': 50,
+        'ipv4': 10,
+        'ipv6': 10,
         'onion': 10,
     }
     ips = [ip for ip in ips if ip['uptime'] > req_uptime[ip['net']]]
