@@ -6,8 +6,8 @@ define(_CLIENT_VERSION_RC, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2022)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core]])
-AC_INIT([Bitcoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_BUILD)m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Vertcoin Core]])
+AC_INIT([Vertcoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_BUILD)m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/vertcoin-project/vertcoin-core/issues],[vertcoin],[https://vertcoin.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -29,17 +29,17 @@ if test -n "$PKG_CONFIG_LIBDIR"; then
   PKG_CONFIG="env PKG_CONFIG_LIBDIR=$PKG_CONFIG_LIBDIR $PKG_CONFIG"
 fi
 
-BITCOIN_DAEMON_NAME=bitcoind
-BITCOIN_GUI_NAME=bitcoin-qt
-BITCOIN_TEST_NAME=test_bitcoin
-BITCOIN_CLI_NAME=bitcoin-cli
-BITCOIN_TX_NAME=bitcoin-tx
-BITCOIN_UTIL_NAME=bitcoin-util
-BITCOIN_CHAINSTATE_NAME=bitcoin-chainstate
-BITCOIN_WALLET_TOOL_NAME=bitcoin-wallet
+BITCOIN_DAEMON_NAME=vertcoind
+BITCOIN_GUI_NAME=vertcoin-qt
+BITCOIN_TEST_NAME=test_vertcoin
+BITCOIN_CLI_NAME=vertcoin-cli
+BITCOIN_TX_NAME=vertcoin-tx
+BITCOIN_UTIL_NAME=vertcoin-util
+BITCOIN_CHAINSTATE_NAME=vertcoin-chainstate
+BITCOIN_WALLET_TOOL_NAME=vertcoin-wallet
 dnl Multi Process
-BITCOIN_MP_NODE_NAME=bitcoin-node
-BITCOIN_MP_GUI_NAME=bitcoin-gui
+BITCOIN_MP_NODE_NAME=vertcoin-node
+BITCOIN_MP_GUI_NAME=vertcoin-gui
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 dnl This is also the default as-of libtool 2.4.7
@@ -239,7 +239,7 @@ AC_ARG_ENABLE([ccache],
 
 dnl Suppress warnings from external headers (e.g. Boost, Qt).
 dnl May be useful if warnings from external headers clutter the build output
-dnl too much, so that it becomes difficult to spot Bitcoin Core warnings
+dnl too much, so that it becomes difficult to spot Vertcoin Core warnings
 dnl or if they cause a build failure with --enable-werror.
 AC_ARG_ENABLE([suppress-external-warnings],
   [AS_HELP_STRING([--enable-suppress-external-warnings],
@@ -295,7 +295,7 @@ AC_ARG_WITH([mpgen],
 
 AC_ARG_ENABLE([multiprocess],
   [AS_HELP_STRING([--enable-multiprocess],
-  [build multiprocess bitcoin-node, bitcoin-wallet, and bitcoin-gui executables in addition to monolithic bitcoind and bitcoin-qt executables. Requires libmultiprocess library. Experimental (default is no)])],
+  [build multiprocess vertcoin-node, vertcoin-wallet, and vertcoin-gui executables in addition to monolithic vertcoind and vertcoin-qt executables. Requires libmultiprocess library. Experimental (default is no)])],
   [enable_multiprocess=$enableval],
   [enable_multiprocess=no])
 
@@ -634,37 +634,37 @@ CORE_CPPFLAGS="$CORE_CPPFLAGS -DHAVE_BUILD_INFO"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build bitcoin-cli bitcoin-tx bitcoin-util bitcoin-wallet (default=yes)])],
+  [build vertcoin-cli vertcoin-tx vertcoin-util vertcoin-wallet (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
 AC_ARG_ENABLE([util-cli],
   [AS_HELP_STRING([--enable-util-cli],
-  [build bitcoin-cli])],
+  [build vertcoin-cli])],
   [build_bitcoin_cli=$enableval],
   [build_bitcoin_cli=$build_bitcoin_utils])
 
 AC_ARG_ENABLE([util-tx],
   [AS_HELP_STRING([--enable-util-tx],
-  [build bitcoin-tx])],
+  [build vertcoin-tx])],
   [build_bitcoin_tx=$enableval],
   [build_bitcoin_tx=$build_bitcoin_utils])
 
 AC_ARG_ENABLE([util-wallet],
   [AS_HELP_STRING([--enable-util-wallet],
-  [build bitcoin-wallet])],
+  [build vertcoin-wallet])],
   [build_bitcoin_wallet=$enableval],
   [build_bitcoin_wallet=$build_bitcoin_utils])
 
 AC_ARG_ENABLE([util-util],
   [AS_HELP_STRING([--enable-util-util],
-  [build bitcoin-util])],
+  [build vertcoin-util])],
   [build_bitcoin_util=$enableval],
   [build_bitcoin_util=$build_bitcoin_utils])
 
 AC_ARG_ENABLE([experimental-util-chainstate],
   [AS_HELP_STRING([--enable-experimental-util-chainstate],
-  [build experimental bitcoin-chainstate executable (default=no)])],
+  [build experimental vertcoin-chainstate executable (default=no)])],
   [build_bitcoin_chainstate=$enableval],
   [build_bitcoin_chainstate=no])
 
@@ -676,13 +676,13 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([experimental-kernel-lib],
   [AS_HELP_STRING([--with-experimental-kernel-lib],
-  [build experimental bitcoinkernel library (default is to build if we're building libraries and the experimental build-chainstate executable)])],
+  [build experimental vertcoinkernel library (default is to build if we're building libraries and the experimental build-chainstate executable)])],
   [build_experimental_kernel_lib=$withval],
   [build_experimental_kernel_lib=auto])
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build bitcoind daemon (default=yes)])],
+  [build vertcoind daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -1013,7 +1013,7 @@ AC_CHECK_DECLS([getifaddrs, freeifaddrs],[CHECK_SOCKET],,
     #include <ifaddrs.h>]
 )
 
-dnl These are used for daemonization in bitcoind
+dnl These are used for daemonization in vertcoind
 AC_CHECK_DECLS([fork])
 AC_CHECK_DECLS([setsid])
 
@@ -1536,10 +1536,10 @@ fi
 AM_CONDITIONAL([ENABLE_EXTERNAL_SIGNER], [test "$use_external_signer" = "yes"])
 
 dnl Do not compile with syscall sandbox support when compiling under the sanitizers.
-dnl The sanitizers introduce use of syscalls that are not typically used in bitcoind
+dnl The sanitizers introduce use of syscalls that are not typically used in vertcoind
 dnl (such as execve when the sanitizers execute llvm-symbolizer).
 if test "$use_sanitizers" != ""; then
-  AC_MSG_WARN([Specifying --with-sanitizers forces --without-seccomp since the sanitizers introduce use of syscalls not allowed by the bitcoind syscall sandbox (-sandbox=<mode>).])
+  AC_MSG_WARN([Specifying --with-sanitizers forces --without-seccomp since the sanitizers introduce use of syscalls not allowed by the vertcoind syscall sandbox (-sandbox=<mode>).])
   seccomp_found=no
 fi
 if test "$seccomp_found" != "no"; then
@@ -1680,30 +1680,30 @@ if test "$build_multiprocess" != "no"; then
   AC_SUBST(MPGEN_PREFIX)
 fi
 
-AC_MSG_CHECKING([whether to build bitcoind])
+AC_MSG_CHECKING([whether to build vertcoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test $build_bitcoind = "yes"])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build bitcoin-cli])
+AC_MSG_CHECKING([whether to build vertcoin-cli])
 AM_CONDITIONAL([BUILD_BITCOIN_CLI], [test $build_bitcoin_cli = "yes"])
 AC_MSG_RESULT($build_bitcoin_cli)
 
-AC_MSG_CHECKING([whether to build bitcoin-tx])
+AC_MSG_CHECKING([whether to build vertcoin-tx])
 AM_CONDITIONAL([BUILD_BITCOIN_TX], [test $build_bitcoin_tx = "yes"])
 AC_MSG_RESULT($build_bitcoin_tx)
 
-AC_MSG_CHECKING([whether to build bitcoin-wallet])
+AC_MSG_CHECKING([whether to build vertcoin-wallet])
 AM_CONDITIONAL([BUILD_BITCOIN_WALLET], [test $build_bitcoin_wallet = "yes"])
 AC_MSG_RESULT($build_bitcoin_wallet)
 
-AC_MSG_CHECKING([whether to build bitcoin-util])
+AC_MSG_CHECKING([whether to build vertcoin-util])
 AM_CONDITIONAL([BUILD_BITCOIN_UTIL], [test $build_bitcoin_util = "yes"])
 AC_MSG_RESULT($build_bitcoin_util)
 
-AC_MSG_CHECKING([whether to build experimental bitcoin-chainstate])
+AC_MSG_CHECKING([whether to build experimental vertcoin-chainstate])
 if test "$build_bitcoin_chainstate" = "yes"; then
   if test "$build_experimental_kernel_lib" = "no"; then
-    AC_MSG_ERROR([experimental bitcoin-chainstate cannot be built without the experimental bitcoinkernel library. Use --with-experimental-kernel-lib]);
+    AC_MSG_ERROR([experimental vertcoin-chainstate cannot be built without the experimental vertcoinkernel library. Use --with-experimental-kernel-lib]);
   fi
 fi
 AM_CONDITIONAL([BUILD_BITCOIN_CHAINSTATE], [test $build_bitcoin_chainstate = "yes"])
