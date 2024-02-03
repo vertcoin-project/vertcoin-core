@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2014-2023 The Vertcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,6 +11,9 @@
 #include <serialize.h>
 #include <uint256.h>
 #include <util/time.h>
+
+#include <crypto/scrypt.h>
+#include <crypto/Lyra2RE/Lyra2RE.h>
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -53,6 +57,8 @@ public:
 
     uint256 GetHash() const;
 
+    uint256 GetPoWHash(const int nHeight) const;
+
     NodeSeconds Time() const
     {
         return NodeSeconds{std::chrono::seconds{nTime}};
@@ -61,6 +67,11 @@ public:
     int64_t GetBlockTime() const
     {
         return (int64_t)nTime;
+    }
+
+    char* begin() const
+    {
+        return ((char*)&(nVersion));
     }
 };
 
