@@ -2001,6 +2001,11 @@ AC_CONFIG_LINKS([src/qt/Makefile:src/qt/Makefile])
 AC_CONFIG_LINKS([src/qt/test/Makefile:src/qt/test/Makefile])
 AC_CONFIG_LINKS([src/test/Makefile:src/test/Makefile])
 
+GMP_CHECK
+if test x"$has_gmp" != x"yes"; then
+  AC_MSG_ERROR([gmp bignum explicitly requested but libgmp is not available])
+fi
+
 dnl boost's m4 checks do something really nasty: they export these vars. As a
 dnl result, they leak into secp256k1's configure and crazy things happen.
 dnl Until this is fixed upstream and we've synced, we'll just un-export them.
