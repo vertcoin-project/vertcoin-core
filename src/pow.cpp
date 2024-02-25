@@ -221,6 +221,8 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 // or decrease beyond the permitted limits.
 bool PermittedDifficultyTransition(const Consensus::Params& params, int64_t height, uint32_t old_nbits, uint32_t new_nbits)
 {
+// Vertcoin uses KGW for network retargetting
+/*
     if (params.fPowAllowMinDifficultyBlocks) return true;
 
     if (height % params.DifficultyAdjustmentInterval() == 0) {
@@ -264,7 +266,8 @@ bool PermittedDifficultyTransition(const Consensus::Params& params, int64_t heig
         if (minimum_new_target > observed_new_target) return false;
     } else if (old_nbits != new_nbits) {
         return false;
-    }
+    } */
+    //Vertcoin uses KGW for network retargetting
     return true;
 }
 
