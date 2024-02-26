@@ -31,7 +31,7 @@ fi
 
 BITCOIN_DAEMON_NAME=vertcoind
 BITCOIN_GUI_NAME=vertcoin-qt
-BITCOIN_TEST_NAME=test_vertcoin
+BITCOIN_TEST_NAME=test_bitcoin
 BITCOIN_CLI_NAME=vertcoin-cli
 BITCOIN_TX_NAME=vertcoin-tx
 BITCOIN_UTIL_NAME=vertcoin-util
