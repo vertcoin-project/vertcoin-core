@@ -33,8 +33,8 @@ QString BitcoinUnits::longName(Unit unit)
     switch (unit) {
     case Unit::BTC: return QString("VTC");
     case Unit::mBTC: return QString("mVTC");
-    case Unit::uBTC: return QString::fromUtf8("µVTC (bits)");
-    case Unit::SAT: return QString("Satoshi (sat)");
+    case Unit::uBTC: return QString::fromUtf8("µVTC (verts)");
+    case Unit::SAT: return QString("Vatoshi (vat)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -44,8 +44,8 @@ QString BitcoinUnits::shortName(Unit unit)
     switch (unit) {
     case Unit::BTC: return longName(unit);
     case Unit::mBTC: return longName(unit);
-    case Unit::uBTC: return QString("bits");
-    case Unit::SAT: return QString("sat");
+    case Unit::uBTC: return QString("verts");
+    case Unit::SAT: return QString("vat");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -56,7 +56,7 @@ QString BitcoinUnits::description(Unit unit)
     case Unit::BTC: return QString("Vertcoins");
     case Unit::mBTC: return QString("Milli-Vertcoins (1 / 1" THIN_SP_UTF8 "000)");
     case Unit::uBTC: return QString("Micro-Vertcoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case Unit::SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case Unit::SAT: return QString("Vatoshi (vat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
