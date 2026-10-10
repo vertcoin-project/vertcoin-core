@@ -226,6 +226,10 @@ include(AddBoostIfNeeded)
 add_boost_if_needed()
 endif()
 
+if(NOT CMAKE_SYSTEM_NAME STREQUAL "Generic")
+find_package(GMP MODULE REQUIRED)
+endif()
+
 if(ENABLE_WALLET)
   if(VCPKG_TARGET_TRIPLET)
     # Use of the `unofficial::` namespace is a vcpkg package manager convention.
