@@ -103,13 +103,13 @@ void NotifyWalletLoaded(WalletContext& context, const std::shared_ptr<CWallet>& 
 std::unique_ptr<WalletDatabase> MakeWalletDatabase(const std::string& name, const DatabaseOptions& options, DatabaseStatus& status, bilingual_str& error);
 
 //! -fallbackfee default
-inline constexpr CAmount DEFAULT_FALLBACK_FEE = 0;
+inline constexpr CAmount DEFAULT_FALLBACK_FEE = 100000;
 //! -discardfee default
 inline constexpr CAmount DEFAULT_DISCARD_FEE{10'000};
 //! -mintxfee default
-inline constexpr CAmount DEFAULT_TRANSACTION_MINFEE = 1000;
+inline constexpr CAmount DEFAULT_TRANSACTION_MINFEE = 100000;
 //! -consolidatefeerate default
-inline constexpr CAmount DEFAULT_CONSOLIDATE_FEERATE{10'000}; // 10 sat/vbyte
+inline constexpr CAmount DEFAULT_CONSOLIDATE_FEERATE{1000000}; // 1000 sat/vbyte
 /**
  * maximum fee increase allowed to do partial spend avoidance, even for nodes with this feature disabled by default
  *
