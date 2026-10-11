@@ -9,6 +9,8 @@ $(package)_config_opts=--disable-shared
 $(package)_config_opts_mingw32=--enable-mingw
 $(package)_config_opts_linux=--with-pic
 $(package)_config_opts_darwin=--with-pic
+# ld64.lld rejects the short branch relocations in GMP's x86_64 assembly; use GMP's C code on macOS.
+$(package)_config_opts_darwin+=--disable-assembly
 # GMP 6.3.0's configure probes fail under GCC 15's default C23 mode.
 $(package)_cflags+=-std=gnu17
 # GMP builds table generators with the build compiler; use depends' native compiler (as sqlite.mk does).
