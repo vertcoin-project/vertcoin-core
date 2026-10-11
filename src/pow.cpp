@@ -51,8 +51,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
         if(nHeight % 12 != 0) {
             CBigNum bnNew;
-	        bnNew.SetCompact(pindexLast->nBits);
-	        if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+            bnNew.SetCompact(pindexLast->nBits);
+            if (bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
             return bnNew.GetCompact();
         }
     }
@@ -181,7 +181,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
         }
     } else if (bnNew > bnProofOfWorkLimit) { // REGTEST
         bnNew = bnProofOfWorkLimit;
-	}
+    }
 
     return bnNew.GetCompact();
 }

@@ -45,11 +45,11 @@ uint256 CBlockHeader::GetPoWHash(const int nHeight) const
    }
    else if(nHeight >= 208301)
    {
-   	    lyra2re_hash(this->begin(), out);
+        lyra2re_hash(this->begin(), out);
    }
    else
    {
-   	    scrypt_N_1_1_256(this->begin(), out, 10);
+        scrypt_N_1_1_256(this->begin(), out, 10);
    }
    return thash;
 }

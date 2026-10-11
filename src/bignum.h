@@ -183,12 +183,12 @@ public:
         return ToString(10);
     }
 
-    
+
 
     /**
         * exponentiation with an int. this^e
         * @param e the exponent as an int
-        * @return
+        * @return this^e
         */
     CBigNum pow(const int e) const {
         return this->pow(CBigNum(e));
@@ -197,7 +197,7 @@ public:
     /**
      * exponentiation this^e
      * @param e the exponent
-     * @return
+     * @return this^e
      */
     CBigNum pow(const CBigNum& e) const {
         CBigNum ret;
@@ -315,7 +315,7 @@ public:
 
     /**
      * Calculates the greatest common divisor (GCD) of two numbers.
-     * @param m the second element
+     * @param b the second element
      * @return the GCD
      */
     CBigNum gcd( const CBigNum& b) const{
@@ -326,7 +326,7 @@ public:
 
    /**
     * Miller-Rabin primality test on this element
-    * @param checks: optional, the number of Miller-Rabin tests to run
+    * @param checks optional, the number of Miller-Rabin tests to run
     *               default causes error rate of 2^-80.
     * @return true if prime
     */
