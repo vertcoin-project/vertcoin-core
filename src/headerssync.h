@@ -128,6 +128,9 @@ public:
     /** Return the height reached during the PRESYNC phase */
     int64_t GetPresyncHeight() const { return m_current_height; }
 
+    /** Return the hash of the last header received during the PRESYNC phase */
+    uint256 GetPresyncLastHash() const { return m_last_header_received.GetHash(); }
+
     /** Return the block timestamp of the last header received during the PRESYNC phase. */
     uint32_t GetPresyncTime() const { return m_last_header_received.nTime; }
 
@@ -136,6 +139,9 @@ public:
 
     /** Return the height reached during the REDOWNLOAD phase */
     int64_t GetRedownloadHeight() const { return m_redownload_buffer_last_height; }
+
+    /** Return the hash of the last header received during the REDOWNLOAD phase */
+    uint256 GetRedownloadLastHash() const { return m_redownload_buffer_last_hash; }
 
     /** Construct a HeadersSyncState object representing a headers sync via this
      *  download-twice mechanism).
