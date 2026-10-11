@@ -46,7 +46,7 @@ static void ReadBlockBench(benchmark::Bench& bench)
     const auto& pos{WITH_LOCK(::cs_main, return blockman.WriteBlock(test_block, 413'567))};
     bench.run([&] {
         CBlock block;
-        const auto success{blockman.ReadBlock(block, pos, expected_hash)};
+        const auto success{blockman.ReadBlock(block, pos, 0, expected_hash)};
         assert(success);
     });
 }
