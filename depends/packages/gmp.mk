@@ -1,14 +1,18 @@
 package=gmp
 $(package)_version=6.3.0
-$(package)_download_path=https://gmplib.org/download/gmp
-$(package)_file_name=$(package)-$($(package)_version).tar.bz2
-$(package)_sha256_hash=ac28211a7cfb609bae2e2c8d6058d66c8fe96434f740cf6fe2e47b000d1c20cb
+$(package)_download_path=https://ftp.gnu.org/gnu/gmp
+$(package)_file_name=$(package)-$($(package)_version).tar.gz
+$(package)_sha256_hash=e56fd59d76810932a0555aa15a14b61c16bed66110d3c75cc2ac49ddaa9ab24c
 
 define $(package)_set_vars
 $(package)_config_opts=--disable-shared
 $(package)_config_opts_mingw32=--enable-mingw
 $(package)_config_opts_linux=--with-pic
 $(package)_config_opts_darwin=--with-pic
+# GMP 6.3.0's configure probes fail under GCC 15's default C23 mode.
+$(package)_cflags+=-std=gnu17
+# GMP builds table generators with the build compiler; use depends' native compiler (as sqlite.mk does).
+$(package)_config_env := CC_FOR_BUILD="$$(build_CC)"
 endef
 
 define $(package)_config_cmds
