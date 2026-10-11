@@ -4632,6 +4632,7 @@ void PeerManagerImpl::ProcessMessage(Peer& peer, CNode& pfrom, const std::string
 
             if (pindex->nHeight >= m_chainman.ActiveChain().Height() - MAX_BLOCKTXN_DEPTH) {
                 block_pos = pindex->GetBlockPos();
+                block_height = pindex->nHeight;
             }
         }
 
