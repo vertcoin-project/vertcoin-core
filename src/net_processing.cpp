@@ -3338,7 +3338,12 @@ void PeerManagerImpl::ProcessHeadersMessage(CNode& pfrom, Peer& peer,
     // If headers connect, assume that this is in response to any outstanding getheaders
     // request we may have sent, and clear out the time of our last request. Non-connecting
     // headers cannot be a response to a getheaders request.
-    peer.m_last_getheaders_timestamp = {};
+    // If a headers sync is still in progress, IsContinuationOfLowWorkHeadersSync()
+    // has already done this and sent the next getheaders request, which is
+    // still outstanding; clearing its time would let a block announcement
+    // send another getheaders whose response does not continue the sync and
+    // so aborts it.
+    if (!have_headers_sync) peer.m_last_getheaders_timestamp = {};
 
     // If the headers we received are already in memory and an ancestor of
     // m_best_header or our tip, skip anti-DoS checks. These headers will not
