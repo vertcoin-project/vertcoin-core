@@ -72,11 +72,13 @@
 #include <cassert>
 #include <chrono>
 #include <deque>
+#include <future>
 #include <numeric>
 #include <optional>
 #include <ranges>
 #include <span>
 #include <string>
+#include <thread>
 #include <tuple>
 #include <utility>
 
@@ -4042,10 +4044,25 @@ void ChainstateManager::GenerateCoinbaseCommitment(CBlock& block, const CBlockIn
 
 bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight)
 {
-    // nHeight is the parent of headers[0], so the first header is checked at nHeight + 1.
-    int height{nHeight};
-    return std::ranges::all_of(headers,
-                               [&](const auto& header) { return CheckProofOfWork(header.GetPoWHash(++height), header.nBits, consensusParams); });
+    // nHeight is the parent of headers[0], so headers[i] is checked at nHeight + 1 + i.
+    const auto check_range{[&](size_t begin, size_t end) {
+        for (size_t i{begin}; i < end; ++i) {
+            if (!CheckProofOfWork(headers[i].GetPoWHash(nHeight + 1 + static_cast<int>(i)), headers[i].nBits, consensusParams)) return false;
+        }
+        return true;
+    }};
+    // Vertcoin's proof-of-work functions cost up to a few milliseconds per
+    // header, so split a headers message across one thread per core. The
+    // functions keep no shared mutable state.
+    const size_t num_threads{std::max(1U, std::thread::hardware_concurrency())};
+    const size_t chunk{(headers.size() + num_threads - 1) / num_threads};
+    std::vector<std::future<bool>> results;
+    for (size_t begin{chunk}; begin < headers.size(); begin += chunk) {
+        results.push_back(std::async(std::launch::async, check_range, begin, std::min(begin + chunk, headers.size())));
+    }
+    bool valid{check_range(0, std::min(chunk, headers.size()))};
+    for (auto& result : results) valid = result.get() && valid;
+    return valid;
 }
 
 bool IsBlockMutated(const CBlock& block, bool check_witness_root)
