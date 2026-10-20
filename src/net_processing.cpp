@@ -96,9 +96,12 @@ TRACEPOINT_SEMAPHORE(net, inbound_message);
 TRACEPOINT_SEMAPHORE(net, misbehaving_connection);
 
 /** Headers download timeout.
- *  Timeout = base + per_header * (expected number of headers) */
+ *  Timeout = base + per_header * (expected number of headers)
+ *  Vertcoin: a low-work headers sync processes every header twice, and each
+ *  pass checks proof of work with functions that cost up to a few
+ *  milliseconds per header, so allow 5ms per header instead of 1ms. */
 static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_BASE = 15min;
-static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 1ms;
+static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 5ms;
 /** How long to wait for a peer to respond to a getheaders request */
 static constexpr auto HEADERS_RESPONSE_TIME{2min};
 /** Protect at least this many outbound peers from disconnection due to slow/
