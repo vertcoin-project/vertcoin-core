@@ -137,9 +137,6 @@ public:
     /** Return the amount of work in the chain received during the PRESYNC phase. */
     arith_uint256 GetPresyncWork() const { return m_current_chain_work; }
 
-    /** Return the height reached during the REDOWNLOAD phase */
-    int64_t GetRedownloadHeight() const { return m_redownload_buffer_last_height; }
-
     /** Return the hash of the last header received during the REDOWNLOAD phase */
     uint256 GetRedownloadLastHash() const { return m_redownload_buffer_last_hash; }
 

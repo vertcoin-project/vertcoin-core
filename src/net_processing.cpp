@@ -2873,14 +2873,16 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
     // height of the parent of headers[0].
     int nHeight{0};
     bool have_height{false};
+    bool check_pow{true};
     {
         LOCK(peer.m_headers_sync_mutex);
         if (peer.m_headers_sync) {
-            // Both heights are those of the last header received in the sync,
-            // which is the parent of the next batch only if the batch continues
-            // the sync. Upstream may send a syncing peer an extra getheaders from
-            // m_best_header when a block is announced; that reply is not a
-            // continuation, so for it fall through to the parent lookup below.
+            // The presync height is that of the last header received in the
+            // sync, which is the parent of the next batch only if the batch
+            // continues the sync. Upstream may send a syncing peer an extra
+            // getheaders from m_best_header when a block is announced; that
+            // reply is not a continuation, so for it fall through to the parent
+            // lookup below.
             const auto state{peer.m_headers_sync->GetState()};
             if (state == HeadersSyncState::State::PRESYNC &&
                 headers[0].hashPrevBlock == peer.m_headers_sync->GetPresyncLastHash()) {
@@ -2888,12 +2890,16 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
                 have_height = true;
             } else if (state == HeadersSyncState::State::REDOWNLOAD &&
                        headers[0].hashPrevBlock == peer.m_headers_sync->GetRedownloadLastHash()) {
-                nHeight = peer.m_headers_sync->GetRedownloadHeight();
-                have_height = true;
+                // Headers of the redownload phase are only buffered (up to
+                // redownload_buffer_size) until they are passed to
+                // AcceptBlockHeader(), which checks the proof of work of every
+                // header it does not already have. Checking it here as well
+                // would double the cost of the phase.
+                check_pow = false;
             }
         }
     }
-    if (!have_height) {
+    if (check_pow && !have_height) {
         // Not in headers sync, sync is FINAL, or the batch does not continue
         // the sync: use the height of the parent block, if we know it.
         LOCK(cs_main);
@@ -2911,7 +2917,7 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
     }
 
     // Do these headers have proof-of-work matching what's claimed?
-    if (have_height && !HasValidProofOfWork(headers, m_chainparams.GetConsensus(), nHeight)) {
+    if (check_pow && have_height && !HasValidProofOfWork(headers, m_chainparams.GetConsensus(), nHeight)) {
         Misbehaving(peer, "header with invalid proof of work");
         return false;
     }
