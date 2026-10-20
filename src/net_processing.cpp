@@ -104,6 +104,9 @@ static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_BASE = 15min;
 static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 5ms;
 /** How long to wait for a peer to respond to a getheaders request */
 static constexpr auto HEADERS_RESPONSE_TIME{2min};
+/** Vertcoin: do not start a headers sync with another peer on a block
+ *  announcement while this many low-work headers syncs are in progress. */
+static constexpr size_t MAX_CONCURRENT_HEADERS_SYNCS{2};
 /** Protect at least this many outbound peers from disconnection due to slow/
  * behind headers chain.
  */
@@ -4471,7 +4474,14 @@ void PeerManagerImpl::ProcessMessage(Peer& peer, CNode& pfrom, const std::string
             // our initial peer is unresponsive (but less bandwidth than we'd
             // use if we turned on sync with all peers).
             CNodeState& state{*Assert(State(pfrom.GetId()))};
-            if (state.fSyncStarted || (!peer.m_inv_triggered_getheaders_before_sync && *best_block != m_last_block_inv_triggering_headers_sync)) {
+            // Vertcoin: every low-work headers sync checks the proof of work of
+            // the whole chain on the message handling thread, and with 2.5
+            // minute blocks one is started with a new peer every few minutes,
+            // so they slow each other down until none finishes in time. Only
+            // start another one while fewer than MAX_CONCURRENT_HEADERS_SYNCS
+            // are in progress.
+            const bool may_start_headers_sync{WITH_LOCK(m_headers_presync_mutex, return m_headers_presync_stats.size()) < MAX_CONCURRENT_HEADERS_SYNCS};
+            if (state.fSyncStarted || (may_start_headers_sync && !peer.m_inv_triggered_getheaders_before_sync && *best_block != m_last_block_inv_triggering_headers_sync)) {
                 if (MaybeSendGetHeaders(pfrom, GetLocator(m_chainman.m_best_header), peer)) {
                     LogDebug(BCLog::NET, "getheaders (%d) %s to peer=%d\n",
                             m_chainman.m_best_header->nHeight, best_block->ToString(),
