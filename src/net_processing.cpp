@@ -5549,6 +5549,17 @@ void PeerManagerImpl::ConsiderEviction(CNode& pto, Peer& peer, std::chrono::seco
     CNodeState &state = *State(pto.GetId());
 
     if (!state.m_chain_sync.m_protect && pto.IsOutboundOrBlockRelayConn() && state.fSyncStarted) {
+        // Headers received during a low-work headers sync do not update
+        // pindexBestKnownBlock until the sync reaches its redownload phase,
+        // and with Vertcoin's proof-of-work functions the presync phase alone
+        // can take longer than CHAIN_SYNC_TIMEOUT. Do not start the timeout
+        // until the peer's headers sync has ended.
+        if (WITH_LOCK(peer.m_headers_sync_mutex, return peer.m_headers_sync != nullptr)) {
+            state.m_chain_sync.m_timeout = 0s;
+            state.m_chain_sync.m_work_header = nullptr;
+            state.m_chain_sync.m_sent_getheaders = false;
+            return;
+        }
         // This is an outbound peer subject to disconnection if they don't
         // announce a block with as much work as the current tip within
         // CHAIN_SYNC_TIMEOUT + HEADERS_RESPONSE_TIME seconds (note: if
