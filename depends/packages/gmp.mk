@@ -1,6 +1,7 @@
 package=gmp
 $(package)_version=6.3.0
-$(package)_download_path=https://ftp.gnu.org/gnu/gmp
+# ftp.gnu.org refuses connections from GitHub Actions runners; the sha256 below pins the file whatever the mirror.
+$(package)_download_path=https://mirrors.kernel.org/gnu/gmp
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
 $(package)_sha256_hash=e56fd59d76810932a0555aa15a14b61c16bed66110d3c75cc2ac49ddaa9ab24c
 
