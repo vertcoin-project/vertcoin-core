@@ -43,9 +43,17 @@ jobs:
           path: depends/sources
           key: depends-sources-${{ hashFiles('depends/packages/*') }}
 
+      # curl does not retry a reset connection, so retry the whole download; files
+      # already fetched and checked are kept between attempts
       - name: download depends sources
         if: steps.cache.outputs.cache-hit != 'true'
-        run: make -C depends download
+        run: |
+          for attempt in 1 2 3; do
+            make -C depends download && exit 0
+            echo "depends download attempt ${attempt} failed"
+            sleep 30
+          done
+          exit 1
 
   build:
     name: ${{ matrix.host }}
