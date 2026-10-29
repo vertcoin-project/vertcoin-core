@@ -16,6 +16,7 @@
 #include <vector>
 
 #include <gmp.h>
+#include <uint256.h>
 #include <util/strencodings.h>
 
 /** Errors thrown by the bignum class */
