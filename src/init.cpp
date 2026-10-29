@@ -1895,12 +1895,14 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
 
     // ********************************************************* Step 6b: generate verthash file and verify if it's valid
 
+    const bool fVerthashDiskOnly = args.GetBoolArg("-verthash-diskonly", false);
     int cycle = 0;
     while(cycle <= 1) {
         uiInterface.InitMessage(_("Creating Verthash Datafile - may take several minutes"));
-        VerthashDatFile::CreateMiningDataFile();
+        if(!VerthashDatFile::CreateMiningDataFile(/*in_ram=*/!fVerthashDiskOnly)) {
+            return InitError(_("Could not create the Verthash datafile"));
+        }
 
-        bool fVerthashDiskOnly = args.GetBoolArg("-verthash-diskonly", false);
         if(!fVerthashDiskOnly) {
             uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
             Verthash::LoadInRam();
