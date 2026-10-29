@@ -177,6 +177,22 @@ public:
         fDefaultConsistencyChecks = false;
         m_is_mockable_chain = false;
 
+        m_checkpoints = {
+            {      0, uint256{"4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4"}},
+            {  24200, uint256{"d7ed819858011474c8b0cae4ad0b9bdbb745becc4c386bc22d1220cc5a4d1787"}},
+            {  65000, uint256{"9e673a69c35a423f736ab66f9a195d7c42f979847a729c0f3cef2c0b8b9d0289"}},
+            {  84065, uint256{"a904170a5a98109b2909379d9bc03ef97a6b44d5dafbc9084b8699b0cba5aa98"}},
+            { 228023, uint256{"15c94667a9e941359d2ee6527e2876db1b5e7510a5ded3885ca02e7e0f516b51"}},
+            { 346992, uint256{"f1714fa4c7990f4b3d472eb22132891ccd3c7ad7208e2d1ab15bde68854fb0ee"}},
+            { 347269, uint256{"fa1e592b7ea2aa97c5f20ccd7c40f3aaaeb31d1232c978847a79f28f83b6c22a"}},
+            { 430000, uint256{"2f5703cf7b6f956b84fd49948cbf49dc164cfcb5a7b55903b1c4f53bc7851611"}},
+            { 516999, uint256{"572ed47da461743bcae526542053e7bc532de299345e4f51d77786f2870b7b28"}},
+            { 627610, uint256{"6000a787f2d8bb77d4f491a423241a4cc8439d862ca6cec6851aba4c79ccfedc"}},
+            {1172000, uint256{"13311f001ad833853d714d1b0425f76004373cb2286a4e5094a811b8a4246147"}},
+            {1474747, uint256{"edf23a98cc196888635a01ba4672680df0b7c16eb48146e706b6f2e669974934"}},
+            {1740000, uint256{"3a9d0a6b19f4c20959caef1bad1a7aa18e492c049327ccaf3b3fcf7c3815f4e0"}},
+        };
+
         m_assumeutxo_data = {};
 
         chainTxData = ChainTxData{
@@ -263,6 +279,12 @@ public:
 
         fDefaultConsistencyChecks = false;
         m_is_mockable_chain = false;
+
+        m_checkpoints = {
+            {     0, uint256{"cee8f24feb7a64c8f07916976aa4855decac79b6741a8ec2e32e2747497ad2c9"}},
+            {160000, uint256{"3e5da83cea2056869b6792446e78f82e43f96716e0623833c3d1e030456a88e3"}},
+            {232000, uint256{"0046e2d75adc14d355a2904ac68756cb12a0252f07da05dbf36137aeab39889a"}},
+        };
 
         m_assumeutxo_data = {};
 
@@ -560,6 +582,10 @@ public:
 
         fDefaultConsistencyChecks = true;
         m_is_mockable_chain = true;
+
+        m_checkpoints = {
+            {0, uint256{"2399c0b047ebbbd1650d66867206c97317027b1a1932bc6fc17ce833dc4a85ce"}},
+        };
 
         m_assumeutxo_data = {};
 
