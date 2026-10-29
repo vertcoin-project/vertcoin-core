@@ -1,4 +1,5 @@
 #include <crypto/verthash_datfile.h>
+#include <crypto/sha3.h>
 #include <logging.h>
 #include <util/fs_helpers.h>
 #include <util/time.h>
@@ -91,7 +92,8 @@ static void NewNode(struct Graph *g, const int64_t id, const uint8_t *parent0, c
         memcpy(hashInput + hashInputSize, parent1, NODE_SIZE);
         hashInputSize += NODE_SIZE;
     }
-    sha3(hashInput, hashInputSize, GetNode(g, id), NODE_SIZE);
+    // Core's unrolled SHA3-256 is about four times faster here than tiny_sha3's reference code.
+    SHA3_256().Write({hashInput, hashInputSize}).Finalize({GetNode(g, id), NODE_SIZE});
 }
 
 static void ButterflyGraph(struct Graph *g, int64_t index, int64_t *count)
@@ -225,7 +227,7 @@ static void GenerateGraph(uint8_t *data)
 {
     const char *hashInput = "Verthash Proof-of-Space Datafile";
     uint8_t pk[NODE_SIZE];
-    sha3(hashInput, 32, pk, NODE_SIZE);
+    SHA3_256().Write({(const uint8_t *)hashInput, 32}).Finalize(pk);
 
     struct Graph g;
     g.data = data;
