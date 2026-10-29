@@ -70,6 +70,7 @@
 #include <versionbits.h>
 
 #include <algorithm>
+#include <atomic>
 #include <cassert>
 #include <chrono>
 #include <deque>
@@ -5039,6 +5040,53 @@ void Chainstate::PopulateBlockIndexCandidates()
     }
 }
 
+/**
+ * Vertcoin: check the block index loaded from disk, whose headers were
+ * checked when they were accepted but which can since have been corrupted or
+ * replaced. The best header chain must agree with every checkpoint it
+ * reaches, and every header above the highest checkpoint it reaches, or above
+ * the default assumevalid block if that is on the chain and higher, must
+ * have valid proof of work: the hash chain fixes the headers below. Bounding
+ * the check by the assumevalid block, which each release moves up, keeps it
+ * short; it runs on all cores. -full-startup-verify checks every header.
+ */
+static bool VerifyStoredBlockIndex(const node::BlockManager& blockman, const std::vector<CBlockIndex*>& sorted_by_height, const CBlockIndex* best_header, const CChainParams& params, const util::SignalInterrupt& interrupt) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
+{
+    AssertLockHeld(cs_main);
+    if (!best_header) return true;
+    int anchor_height{-1};
+    for (const auto& [height, hash] : params.Checkpoints()) {
+        if (height > best_header->nHeight) break;
+        if (best_header->GetAncestor(height)->GetBlockHash() != hash) {
+            LogError("The block index does not agree with the checkpoint at height %d, %s", height, hash.ToString());
+            return false;
+        }
+        anchor_height = height;
+    }
+    const uint256& assume_valid{params.GetConsensus().defaultAssumeValid};
+    if (const CBlockIndex* pindex{assume_valid.IsNull() ? nullptr : blockman.LookupBlockIndex(assume_valid)};
+        pindex && pindex->nHeight > anchor_height && best_header->GetAncestor(pindex->nHeight) == pindex) {
+        anchor_height = pindex->nHeight;
+    }
+    if (gArgs.GetBoolArg("-full-startup-verify", false)) anchor_height = -1;
+
+    const auto first{std::ranges::upper_bound(sorted_by_height, anchor_height, {}, [](const CBlockIndex* pindex) { return pindex->nHeight; })};
+    const std::span<CBlockIndex* const> to_check{first, sorted_by_height.end()};
+    LogInfo("Checking the proof of work of %d block index entries above height %d", to_check.size(), anchor_height);
+    std::atomic<const CBlockIndex*> invalid{nullptr};
+    ForEachRangeParallel(to_check.size(), [&](size_t begin, size_t end) {
+        for (size_t i{begin}; i < end && !interrupt && !invalid; ++i) {
+            if (!CheckProofOfWork(to_check[i]->GetBlockPoWHash(), to_check[i]->nBits, params.GetConsensus())) invalid = to_check[i];
+        }
+    });
+    if (interrupt) return false;
+    if (const CBlockIndex* pindex{invalid}) {
+        LogError("CheckProofOfWork failed for block index entry %s", pindex->ToString());
+        return false;
+    }
+    return true;
+}
+
 bool ChainstateManager::LoadBlockIndex()
 {
     AssertLockHeld(cs_main);
@@ -5061,6 +5109,7 @@ bool ChainstateManager::LoadBlockIndex()
             if (pindex->IsValid(BLOCK_VALID_TREE) && (m_best_header == nullptr || CBlockIndexWorkComparator()(m_best_header, pindex)))
                 m_best_header = pindex;
         }
+        if (!VerifyStoredBlockIndex(m_blockman, vSortedByHeight, m_best_header, GetParams(), m_interrupt)) return false;
     }
     return true;
 }
