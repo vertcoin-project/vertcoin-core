@@ -25,6 +25,10 @@ public:
     static void Hash(const char* input, char* output);
     static bool VerifyDatFile();
     static void LoadInRam();
+    /** Takes ownership of data, allocated with malloc, as the datafile in RAM. */
+    static void SetDatFile(unsigned char* data, size_t size);
+    static void UnloadFromRam();
+    static bool IsInRam();
 private:
     static unsigned char *datFile;
     static size_t datFileSize;

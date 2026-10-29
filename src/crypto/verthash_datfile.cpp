@@ -1,5 +1,6 @@
 #include <crypto/verthash_datfile.h>
 #include <crypto/sha3.h>
+#include <crypto/verthash.h>
 #include <logging.h>
 #include <util/fs_helpers.h>
 #include <util/time.h>
@@ -286,23 +287,15 @@ static bool UnmapFile(uint8_t *data, size_t size)
 #endif
 }
 
-// Generates the datafile into file, either in memory and written out at once, or through
+// Generates the datafile into file, either in ram and written out at once, or through
 // a memory map of the file, so the OS can page it out on low-memory systems.
-static bool WriteDatFile(FILE *file, const fs::path& path, bool in_ram)
+static bool WriteDatFile(FILE *file, const fs::path& path, uint8_t *ram)
 {
     const size_t size = DatFileSize();
-    if (in_ram)
+    if (ram != nullptr)
     {
-        uint8_t *data = (uint8_t *)malloc(size);
-        if (data == nullptr)
-        {
-            LogError("Could not allocate %u bytes for the Verthash datafile\n", size);
-            return false;
-        }
-        GenerateGraph(data);
-        const bool written = fwrite(data, 1, size, file) == size;
-        free(data);
-        return written;
+        GenerateGraph(ram);
+        return fwrite(ram, 1, size, file) == size;
     }
 
     uint8_t *data = MapFile(file, path, size);
@@ -348,19 +341,35 @@ bool VerthashDatFile::CreateMiningDataFile(bool in_ram) {
         return false;
     }
 
+    // Generating in ram costs no extra memory, since the datafile is loaded into ram anyway.
+    uint8_t *ram = nullptr;
+    if (in_ram) {
+        ram = (uint8_t *)malloc(DatFileSize());
+        if (ram == nullptr) {
+            LogError("Could not allocate %u bytes for the Verthash datafile\n", DatFileSize());
+            return false;
+        }
+    }
+
     FILE *file = fsbridge::fopen(tmpFile, in_ram ? "wb" : "wb+");
     if (file == nullptr) {
         LogError("Could not create %s\n", fs::PathToString(tmpFile));
+        free(ram);
         return false;
     }
-    bool written = WriteDatFile(file, tmpFile, in_ram);
+    bool written = WriteDatFile(file, tmpFile, ram);
     written = FileCommit(file) && written;
     written = fclose(file) == 0 && written;
     if (!written || !RenameOver(tmpFile, targetFile)) {
         LogError("Could not write the Verthash datafile at %s\n", fs::PathToString(targetFile));
         std::error_code ec;
         fs::remove(tmpFile, ec);
+        free(ram);
         return false;
+    }
+    if (ram != nullptr) {
+        // Hand the data straight to Verthash rather than reading the file back.
+        Verthash::SetDatFile(ram, DatFileSize());
     }
 
     LogInfo("Finished Proof-of-Space datafile generation in %.1f s.\n", Ticks<SecondsDouble>(SteadyClock::now() - start));

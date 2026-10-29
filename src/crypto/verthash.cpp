@@ -59,7 +59,11 @@ void Verthash::LoadInRam() {
     if(!std::filesystem::exists(dataFile)) {
         throw std::runtime_error("Verthash datafile not found");
     }
+    UnloadFromRam();
     FILE* datfile = fsbridge::fopen(dataFile.c_str(),"rb");
+    if(datfile == nullptr) {
+        throw std::runtime_error("Verthash datafile could not be opened");
+    }
     fseek(datfile, 0, SEEK_END);
     datFileSize = ftell(datfile);
 
@@ -73,6 +77,24 @@ void Verthash::LoadInRam() {
     fclose(datfile);
 
     datFileInRam = true;
+}
+
+void Verthash::SetDatFile(unsigned char* data, size_t size) {
+    UnloadFromRam();
+    datFile = data;
+    datFileSize = size;
+    datFileInRam = true;
+}
+
+void Verthash::UnloadFromRam() {
+    free(datFile);
+    datFile = nullptr;
+    datFileSize = 0;
+    datFileInRam = false;
+}
+
+bool Verthash::IsInRam() {
+    return datFileInRam;
 }
 
 void Verthash::Hash(const char* input, char* output)
