@@ -418,6 +418,12 @@ BlockValidationState TestBlockValidity(
  *  the proof-of-work algorithm in force at height nHeight + 1 + i. */
 bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight);
 
+/** Compute GetNextWorkRequired() for consecutive headers, headers[0] building
+ *  on parent and headers[i] on headers[i - 1], splitting them across one
+ *  thread per core. Returns the nBits each header must have. parent is not
+ *  modified; it and its ancestors must already be in the block index. */
+std::vector<unsigned int> GetNextWorkRequiredParallel(CBlockIndex& parent, std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams);
+
 /** Check if a block has been mutated (with respect to its merkle root and witness commitments). */
 bool IsBlockMutated(const CBlock& block, bool check_witness_root);
 
@@ -977,13 +983,16 @@ private:
      * known to be part of a sufficiently high-work chain (anti-dos check).
      * pow_valid=true skips the proof-of-work check of CheckBlockHeader, for a
      * header whose proof of work the caller has already found valid.
+     * next_work_required, when set, is GetNextWorkRequired() for the header,
+     * already computed by the caller.
      */
     bool AcceptBlockHeader(
         const CBlockHeader& block,
         BlockValidationState& state,
         CBlockIndex** ppindex,
         bool min_pow_checked,
-        bool pow_valid = false) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
+        bool pow_valid = false,
+        std::optional<unsigned int> next_work_required = std::nullopt) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
     friend Chainstate;
 
     /** Most recent headers presync progress update, for rate-limiting. */

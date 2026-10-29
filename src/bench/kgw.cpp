@@ -8,6 +8,7 @@
 #include <pow.h>
 #include <test/util/setup_common.h>
 #include <util/chaintype.h>
+#include <validation.h>
 
 #include <vector>
 
@@ -39,3 +40,21 @@ static void KimotoGravityWellFullWindow(benchmark::Bench& bench)
 }
 
 BENCHMARK(KimotoGravityWellFullWindow);
+
+/** The difficulty of a full headers message of 2000 headers, on all cores. */
+static void KimotoGravityWellHeadersBatch(benchmark::Bench& bench)
+{
+    const auto testing_setup{MakeNoLogFileContext<const BasicTestingSetup>(ChainType::MAIN)};
+    const auto& params{Params().GetConsensus()};
+    std::vector<CBlockIndex> blocks = BuildSteadyChain(7'000);
+    std::vector<CBlockHeader> headers(2'000);
+    for (size_t i{0}; i < headers.size(); ++i) {
+        headers[i].nTime = blocks[5'000 + i].nTime;
+        headers[i].nBits = blocks[5'000 + i].nBits;
+    }
+    bench.unit("header").batch(headers.size()).run([&] {
+        ankerl::nanobench::doNotOptimizeAway(GetNextWorkRequiredParallel(blocks[4'999], headers, params));
+    });
+}
+
+BENCHMARK(KimotoGravityWellHeadersBatch);

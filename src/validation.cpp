@@ -4043,6 +4043,23 @@ void ChainstateManager::GenerateCoinbaseCommitment(CBlock& block, const CBlockIn
 }
 
 /**
+ * Split [0, count) into one range per core and call f(begin, end) for each,
+ * the first range on this thread, then wait for all of them.
+ */
+template <typename F>
+static void ForEachRangeParallel(size_t count, F f)
+{
+    const size_t num_threads{std::max(1U, std::thread::hardware_concurrency())};
+    const size_t chunk{(count + num_threads - 1) / num_threads};
+    std::vector<std::future<void>> results;
+    for (size_t begin{chunk}; begin < count; begin += chunk) {
+        results.push_back(std::async(std::launch::async, f, begin, std::min(begin + chunk, count)));
+    }
+    f(0, std::min(chunk, count));
+    for (auto& result : results) result.get();
+}
+
+/**
  * Check the proof of work of consecutive headers, headers[i] at height
  * nHeight + 1 + i, splitting them across one thread per core: Vertcoin's
  * proof-of-work functions cost up to a few milliseconds per header, and keep
@@ -4053,21 +4070,38 @@ void ChainstateManager::GenerateCoinbaseCommitment(CBlock& block, const CBlockIn
 static std::vector<uint8_t> CheckProofOfWorkParallel(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight)
 {
     std::vector<uint8_t> valid(headers.size(), 0);
-    const auto check_range{[&](size_t begin, size_t end) {
+    ForEachRangeParallel(headers.size(), [&](size_t begin, size_t end) {
         for (size_t i{begin}; i < end; ++i) {
             if (!CheckProofOfWork(headers[i].GetPoWHash(nHeight + 1 + static_cast<int>(i)), headers[i].nBits, consensusParams)) return;
             valid[i] = 1;
         }
-    }};
-    const size_t num_threads{std::max(1U, std::thread::hardware_concurrency())};
-    const size_t chunk{(headers.size() + num_threads - 1) / num_threads};
-    std::vector<std::future<void>> results;
-    for (size_t begin{chunk}; begin < headers.size(); begin += chunk) {
-        results.push_back(std::async(std::launch::async, check_range, begin, std::min(begin + chunk, headers.size())));
-    }
-    check_range(0, std::min(chunk, headers.size()));
-    for (auto& result : results) result.get();
+    });
     return valid;
+}
+
+std::vector<unsigned int> GetNextWorkRequiredParallel(CBlockIndex& parent, std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams)
+{
+    // Stand-ins for the block index entries the headers will get, chained
+    // onto parent. GetNextWorkRequired() reads only the height, time, bits
+    // and ancestors of the previous block, and none of those change once a
+    // block is in the block index, so the ancestors are read without
+    // cs_main, which the caller held when it looked parent up. The stand-ins
+    // have no skip pointers; GetAncestor() walks them through pprev.
+    std::deque<CBlockIndex> chain;
+    CBlockIndex* prev{&parent};
+    for (const CBlockHeader& header : headers) {
+        CBlockIndex& index{chain.emplace_back(header)};
+        index.nHeight = prev->nHeight + 1;
+        index.pprev = prev;
+        prev = &index;
+    }
+    std::vector<unsigned int> bits(headers.size());
+    ForEachRangeParallel(headers.size(), [&](size_t begin, size_t end) {
+        for (size_t i{begin}; i < end; ++i) {
+            bits[i] = GetNextWorkRequired(i == 0 ? &parent : &chain[i - 1], &headers[i], consensusParams);
+        }
+    });
+    return bits;
 }
 
 bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight)
@@ -4135,7 +4169,7 @@ static bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Par
  *  v0.12 and v0.15 (when no additional protection was in place) whereby an attacker could unboundedly
  *  grow our in-memory block index. See https://bitcoincore.org/en/2024/07/03/disclose-header-spam.
  */
-static bool ContextualCheckBlockHeader(const CBlockHeader& block, BlockValidationState& state, const ChainstateManager& chainman, const CBlockIndex* pindexPrev) EXCLUSIVE_LOCKS_REQUIRED(::cs_main)
+static bool ContextualCheckBlockHeader(const CBlockHeader& block, BlockValidationState& state, const ChainstateManager& chainman, const CBlockIndex* pindexPrev, std::optional<unsigned int> next_work_required = std::nullopt) EXCLUSIVE_LOCKS_REQUIRED(::cs_main)
 {
     AssertLockHeld(::cs_main);
     assert(pindexPrev != nullptr);
@@ -4143,7 +4177,8 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, BlockValidatio
 
     // Check proof of work
     const Consensus::Params& consensusParams = chainman.GetConsensus();
-    if (block.nBits != GetNextWorkRequired(pindexPrev, &block, consensusParams))
+    if (!next_work_required) next_work_required = GetNextWorkRequired(pindexPrev, &block, consensusParams);
+    if (block.nBits != *next_work_required)
         return state.Invalid(BlockValidationResult::BLOCK_INVALID_HEADER, "bad-diffbits", "incorrect proof of work");
 
     // Check timestamp against prev
@@ -4239,7 +4274,7 @@ static bool ContextualCheckBlock(const CBlock& block, BlockValidationState& stat
     return true;
 }
 
-bool ChainstateManager::AcceptBlockHeader(const CBlockHeader& block, BlockValidationState& state, CBlockIndex** ppindex, bool min_pow_checked, bool pow_valid)
+bool ChainstateManager::AcceptBlockHeader(const CBlockHeader& block, BlockValidationState& state, CBlockIndex** ppindex, bool min_pow_checked, bool pow_valid, std::optional<unsigned int> next_work_required)
 {
     AssertLockHeld(cs_main);
 
@@ -4277,7 +4312,7 @@ bool ChainstateManager::AcceptBlockHeader(const CBlockHeader& block, BlockValida
             LogDebug(BCLog::VALIDATION, "header %s has prev block invalid: %s\n", hash.ToString(), block.hashPrevBlock.ToString());
             return state.Invalid(BlockValidationResult::BLOCK_INVALID_PREV, "bad-prevblk");
         }
-        if (!ContextualCheckBlockHeader(block, state, *this, pindexPrev)) {
+        if (!ContextualCheckBlockHeader(block, state, *this, pindexPrev, next_work_required)) {
             LogDebug(BCLog::VALIDATION, "%s: Consensus::ContextualCheckBlockHeader: %s, %s\n", __func__, hash.ToString(), state.ToString());
             return false;
         }
@@ -4303,25 +4338,27 @@ bool ChainstateManager::ProcessNewBlockHeaders(std::span<const CBlockHeader> hea
     // headers the ones already in the block index come first, as a header can
     // only be added after its parent, so the new ones start at first_new and
     // their heights follow from its parent's. A header whose proof of work is
-    // not found valid here is checked again by AcceptBlockHeader().
+    // not found valid here is checked again by AcceptBlockHeader(). The
+    // difficulty each new header must have is computed on all cores here too,
+    // as Kimoto Gravity Well walks back up to 4032 blocks for every header.
     std::vector<uint8_t> pow_valid(headers.size(), 0);
+    std::vector<std::optional<unsigned int>> next_work_required(headers.size());
     {
         size_t first_new{0};
-        int parent_height{-1};
+        CBlockIndex* parent{nullptr};
         {
             LOCK(cs_main);
             while (first_new < headers.size() && m_blockman.LookupBlockIndex(headers[first_new].GetHash())) ++first_new;
-            if (first_new < headers.size()) {
-                const CBlockIndex* parent{m_blockman.LookupBlockIndex(headers[first_new].hashPrevBlock)};
-                if (parent) parent_height = parent->nHeight;
-            }
+            if (first_new < headers.size()) parent = m_blockman.LookupBlockIndex(headers[first_new].hashPrevBlock);
         }
         bool continuous{true};
         for (size_t i{first_new + 1}; i < headers.size() && continuous; ++i) {
             continuous = headers[i].hashPrevBlock == headers[i - 1].GetHash();
         }
-        if (parent_height >= 0 && continuous) {
-            std::ranges::copy(CheckProofOfWorkParallel(headers.subspan(first_new), GetConsensus(), parent_height), pow_valid.begin() + first_new);
+        if (parent && continuous) {
+            const auto new_headers{headers.subspan(first_new)};
+            std::ranges::copy(CheckProofOfWorkParallel(new_headers, GetConsensus(), parent->nHeight), pow_valid.begin() + first_new);
+            std::ranges::copy(GetNextWorkRequiredParallel(*parent, new_headers, GetConsensus()), next_work_required.begin() + first_new);
         }
     }
     {
@@ -4329,7 +4366,7 @@ bool ChainstateManager::ProcessNewBlockHeaders(std::span<const CBlockHeader> hea
         for (size_t i{0}; i < headers.size(); ++i) {
             const CBlockHeader& header{headers[i]};
             CBlockIndex *pindex = nullptr; // Use a temp pindex instead of ppindex to avoid a const_cast
-            bool accepted{AcceptBlockHeader(header, state, &pindex, min_pow_checked, pow_valid[i] != 0)};
+            bool accepted{AcceptBlockHeader(header, state, &pindex, min_pow_checked, pow_valid[i] != 0, next_work_required[i])};
             CheckBlockIndex();
 
             if (!accepted) {

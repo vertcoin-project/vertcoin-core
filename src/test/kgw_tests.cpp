@@ -9,11 +9,13 @@
 #include <pow.h>
 #include <test/util/setup_common.h>
 #include <util/chaintype.h>
+#include <validation.h>
 
 #include <boost/test/unit_test.hpp>
 
 #include <algorithm>
 #include <cmath>
+#include <utility>
 #include <vector>
 
 namespace {
@@ -167,6 +169,36 @@ BOOST_AUTO_TEST_CASE(kgw_matches_reference_mainnet)
     CheckAgainstReference(2'000'000, 1'000, 10, 100, params, m_rng);
     CheckAgainstReference(2'000'000, 6'000, 144, 5'000, params, m_rng);
     CheckAgainstReference(2'000'000, 300, 144, 0, params, m_rng);
+}
+
+BOOST_AUTO_TEST_CASE(kgw_parallel_matches_serial)
+{
+    const auto& params{Params().GetConsensus()};
+    // Bitcoin's retargeting walks back a whole interval, which a chain only
+    // has from genesis on, so the chain that switches to KGW at 26754 starts
+    // at genesis; the ones that cross the forks start 3000 blocks before.
+    for (const int start_height : {0, 1'080'000 - 3'000, VERTHASH_FORKBLOCK_MAINNET - 3'000}) {
+        for (const Spacing spacing : {Spacing::STEADY, Spacing::JITTER, Spacing::ERRATIC, Spacing::BURSTS}) {
+            std::vector<CBlockIndex> blocks(start_height == 0 ? 28'000 : 8'000);
+            BuildRandomChain(blocks, start_height, spacing, m_rng);
+            // Batches from a single header up to a full headers message.
+            std::vector<std::pair<size_t, size_t>> batches{{0, 2'000}, {1, 1}, {150, 37}, {2'999, 1 + m_rng.randrange(2'000)}, {5'900, 2'000}};
+            if (start_height == 0) batches.emplace_back(26'754 - 1'000, 2'000);
+            for (const auto& [parent, count] : batches) {
+                std::vector<CBlockHeader> headers(count);
+                for (size_t i{0}; i < count; ++i) {
+                    headers[i].nVersion = blocks[parent + 1 + i].nVersion;
+                    headers[i].nTime = blocks[parent + 1 + i].nTime;
+                    headers[i].nBits = blocks[parent + 1 + i].nBits;
+                }
+                const std::vector<unsigned int> bits{GetNextWorkRequiredParallel(blocks[parent], headers, params)};
+                BOOST_REQUIRE_EQUAL(bits.size(), count);
+                for (size_t i{0}; i < count; ++i) {
+                    BOOST_CHECK_EQUAL(bits[i], GetNextWorkRequired(&blocks[parent + i], &headers[i], params));
+                }
+            }
+        }
+    }
 }
 
 BOOST_FIXTURE_TEST_CASE(kgw_matches_reference_testnet, TestnetSetup)
