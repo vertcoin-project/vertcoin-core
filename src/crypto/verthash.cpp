@@ -108,7 +108,13 @@ bool Verthash::MapDatFile() {
     }
 #else
     void* view = mmap(nullptr, size, PROT_READ, MAP_SHARED, fileno(datfile), 0);
-    if(view == MAP_FAILED) view = nullptr;
+    if(view == MAP_FAILED) {
+        view = nullptr;
+    } else {
+        // Each hash reads 32 bytes at 4096 random offsets. Without this, every page fault also reads
+        // in the pages around it, which evicts the pages hashes need when the file doesn't fit in RAM.
+        posix_madvise(view, size, POSIX_MADV_RANDOM);
+    }
 #endif
     fclose(datfile);
     if(view == nullptr) {
