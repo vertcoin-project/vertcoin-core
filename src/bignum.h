@@ -370,6 +370,13 @@ public:
         return *this;
     }
 
+    /** Divide in place by n, rounding toward zero like operator/. */
+    CBigNum& DivideTruncate(unsigned long n)
+    {
+        mpz_tdiv_q_ui(bn, bn, n);
+        return *this;
+    }
+
     CBigNum& operator%=(const CBigNum& b)
     {
         *this = *this % b;

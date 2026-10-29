@@ -114,12 +114,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     int64_t                                PastRateTargetSeconds                = 0;
     double                                PastRateAdjustmentRatio                = double(1);
     CBigNum                                PastDifficultyAverage;
-    CBigNum                                PastDifficultyAveragePrev;
+    // Reused for every block of the window, so that the loop allocates nothing.
+    CBigNum                                BlockDifficulty;
     double                                EventHorizonDeviation;
     double                                EventHorizonDeviationFast;
     double                                EventHorizonDeviationSlow;
-    static CBigNum                          bnProofOfWorkLimit(params.powLimit);
-    static CBigNum                          bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
+    const CBigNum                           bnProofOfWorkLimit(params.powLimit);
+    const CBigNum                           bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || static_cast<uint64_t>(BlockLastSolved->nHeight) < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
@@ -130,9 +131,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
         if (i == 1) {
             PastDifficultyAverage.SetCompact(BlockReading->nBits);
         } else {
-            PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev;
+            // PastDifficultyAverage += (target - PastDifficultyAverage) / i,
+            // rounded toward zero, in place.
+            BlockDifficulty.SetCompact(BlockReading->nBits);
+            BlockDifficulty -= PastDifficultyAverage;
+            BlockDifficulty.DivideTruncate(i);
+            PastDifficultyAverage += BlockDifficulty;
         }
-        PastDifficultyAveragePrev = PastDifficultyAverage;
 
         PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
         PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
