@@ -1903,15 +1903,21 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
             return InitError(_("Could not create the Verthash datafile"));
         }
 
-        if(!fVerthashDiskOnly && !Verthash::IsInRam()) {
-            uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
-            Verthash::LoadInRam();
+        if(!Verthash::IsLoaded()) {
+            if(fVerthashDiskOnly) {
+                if(!Verthash::MapDatFile()) {
+                    LogWarning("Could not map the Verthash datafile, reading it from disk for every hash\n");
+                }
+            } else {
+                uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
+                Verthash::LoadInRam();
+            }
         }
 
         uiInterface.InitMessage(_("Verifying Verthash Datafile"));
         if(!Verthash::VerifyDatFile()) {
             if(cycle == 0) {
-                Verthash::UnloadFromRam();
+                Verthash::Unload();
                 VerthashDatFile::DeleteMiningDataFile();
             } else {
                 return InitError(_("Generated Verthash datafile mismatch"));
