@@ -171,6 +171,7 @@ target_link_libraries(test_bitcoin
   minisketch
   secp256k1
   Boost::headers
+  GMP::GMP
   $<TARGET_NAME_IF_EXISTS:USDT::headers>
 )
 
