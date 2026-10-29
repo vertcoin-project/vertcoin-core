@@ -5045,12 +5045,13 @@ void Chainstate::PopulateBlockIndexCandidates()
  * checked when they were accepted but which can since have been corrupted or
  * replaced. The best header chain must agree with every checkpoint it
  * reaches, and every header above the highest checkpoint it reaches, or above
- * the default assumevalid block if that is on the chain and higher, must
- * have valid proof of work: the hash chain fixes the headers below. Bounding
- * the check by the assumevalid block, which each release moves up, keeps it
- * short; it runs on all cores. -full-startup-verify checks every header.
+ * the assumevalid block (-assumevalid or the default) if that is on the chain
+ * and higher, must have valid proof of work: the hash chain fixes the headers
+ * below. Bounding the check by the assumevalid block keeps it short, and a
+ * node can keep it short between releases by setting -assumevalid to a recent
+ * block; it runs on all cores. -full-startup-verify checks every header.
  */
-static bool VerifyStoredBlockIndex(const node::BlockManager& blockman, const std::vector<CBlockIndex*>& sorted_by_height, const CBlockIndex* best_header, const CChainParams& params, const util::SignalInterrupt& interrupt) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
+static bool VerifyStoredBlockIndex(const node::BlockManager& blockman, const std::vector<CBlockIndex*>& sorted_by_height, const CBlockIndex* best_header, const CChainParams& params, const uint256& assume_valid, const util::SignalInterrupt& interrupt) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
 {
     AssertLockHeld(cs_main);
     if (!best_header) return true;
@@ -5063,7 +5064,6 @@ static bool VerifyStoredBlockIndex(const node::BlockManager& blockman, const std
         }
         anchor_height = height;
     }
-    const uint256& assume_valid{params.GetConsensus().defaultAssumeValid};
     if (const CBlockIndex* pindex{assume_valid.IsNull() ? nullptr : blockman.LookupBlockIndex(assume_valid)};
         pindex && pindex->nHeight > anchor_height && best_header->GetAncestor(pindex->nHeight) == pindex) {
         anchor_height = pindex->nHeight;
@@ -5109,7 +5109,7 @@ bool ChainstateManager::LoadBlockIndex()
             if (pindex->IsValid(BLOCK_VALID_TREE) && (m_best_header == nullptr || CBlockIndexWorkComparator()(m_best_header, pindex)))
                 m_best_header = pindex;
         }
-        if (!VerifyStoredBlockIndex(m_blockman, vSortedByHeight, m_best_header, GetParams(), m_interrupt)) return false;
+        if (!VerifyStoredBlockIndex(m_blockman, vSortedByHeight, m_best_header, GetParams(), AssumedValidBlock(), m_interrupt)) return false;
     }
     return true;
 }
