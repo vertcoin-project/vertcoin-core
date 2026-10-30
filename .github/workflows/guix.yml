@@ -134,7 +134,9 @@ jobs:
           SUBSTITUTE_URLS: https://bordeaux.guix.gnu.org https://ci.guix.gnu.org
         run: ./contrib/guix/guix-build
 
+      # Only releases are attested: each attestation is a permanent entry in Sigstore's public log
       - name: attest build provenance
+        if: startsWith(github.ref, 'refs/tags/')
         uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3
         with:
           subject-path: guix-build-*/output/${{ matrix.host }}/*
