@@ -64,7 +64,7 @@ Note that if the passphrase is lost, all the coins in the wallet will also be lo
 If the wallet is encrypted and the user tries any operation related to private keys, such as sending vertcoins, an error message will be displayed.
 
 ```
-$ vertcoin-cli -rpcwallet="wallet-01" sendtoaddress "tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx" 0.01
+$ vertcoin-cli -rpcwallet="wallet-01" sendtoaddress "tvtc1qw508d6qejxtdg4y5r3zarvary0c5xw7ktyx2us" 0.01
 error code: -13
 error message:
 Error: Please enter the wallet passphrase with walletpassphrase first.

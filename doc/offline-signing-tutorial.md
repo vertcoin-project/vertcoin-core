@@ -72,7 +72,7 @@ At this point, it's important to understand that both the `offline_wallet` and o
 ```sh
 [online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" getnewaddress
 
-tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
+svtc1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewaj4yw586
 ```
 
 2. Visit a faucet like https://signetfaucet.com and enter your address from the previous command to receive a small amount of signet coins to this address.
@@ -86,7 +86,7 @@ tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
   {
     "txid": "0f3953dfc3eb8e753cd1633151837c5b9953992914ff32b7de08c47f1f29c762",
     "vout": 1,
-    "address": "tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh",
+    "address": "svtc1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewaj4yw586",
     "label": "",
     "scriptPubKey": "00145f2804634d6df60dd080932e83c408b2975cbbb2",
     "amount": 0.01000000,
@@ -104,13 +104,13 @@ tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
 
 ### Create and Export an Unsigned PSBT
 
-1. Get a destination address for the transaction. In this tutorial we'll be sending funds to the address `tb1q9k5w0nhnhyeh78snpxh0t5t7c3lxdeg3erez32`, but if you don't need the coins for further testing you could send the coins back to the faucet.
+1. Get a destination address for the transaction. In this tutorial we'll be sending funds to the address `svtc1q9k5w0nhnhyeh78snpxh0t5t7c3lxdeg3ygqvj8`, but if you don't need the coins for further testing you could send the coins back to the faucet.
 
 2. Create a funded but unsigned PSBT to the destination address with the online `watch_only_wallet` by using `send [{"address":amount},...]` and export the unsigned PSBT to a file `funded_psbt.txt` for easy portability to the `offline_wallet` for signing:
 
 ```sh
 [online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" send \
-              '{"tb1q9k5w0nhnhyeh78snpxh0t5t7c3lxdeg3erez32": 0.009}' \
+              '{"svtc1q9k5w0nhnhyeh78snpxh0t5t7c3lxdeg3ygqvj8": 0.009}' \
               | jq -r '.psbt' \
               >> /path/to/funded_psbt.txt
 
