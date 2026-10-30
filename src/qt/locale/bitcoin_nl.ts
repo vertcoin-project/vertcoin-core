@@ -96,14 +96,14 @@
         <translation>Een fout is opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer nogmaals.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dit zijn uw Bitcoin adressen voor het ontvangen van betalingen. Gebruik de 'Nieuw ontvangst adres maken' knop in de ontvangst tab om een nieuwe adres te maken.
+        <translation>Dit zijn uw Vertcoin adressen voor het ontvangen van betalingen. Gebruik de 'Nieuw ontvangst adres maken' knop in de ontvangst tab om een nieuwe adres te maken.
 Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Bitcoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw bitcoins verzendt.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Vertcoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw vertcoins verzendt.</translation>
     </message>
 </context>
 <context>
@@ -168,8 +168,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Wijzigen van wachtwoordzin mislukt</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Onthoud dat het versleutelen van uw portemonnee uw bitcoins niet volledig kan beschermen tegen diefstal, bijvoorbeeld door malware die uw computer infecteert.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Onthoud dat het versleutelen van uw portemonnee uw vertcoins niet volledig kan beschermen tegen diefstal, bijvoorbeeld door malware die uw computer infecteert.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -228,8 +228,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Portemonnee openen mislukt</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW BITCOINS VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW VERTCOINS VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -285,7 +285,7 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>%1 achter</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -557,8 +557,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Portemonnee Openen</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Open een bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Open een vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -597,8 +597,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en bitcoin: URI's)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en vertcoin: URI's)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -633,8 +633,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>&amp;Toon</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Verstuur munten naar een Bitcoinadres</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Verstuur munten naar een Vertcoinadres</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -658,8 +658,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Toon informatie over Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Bitcoin commandoregelopties</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Vertcoin commandoregelopties</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -674,8 +674,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Onderteken &amp;bericht</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Bitcoinadressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Vertcoinadressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -698,8 +698,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation>Bijgewerkt</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Bitcoinadressen</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Vertcoinadressen</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1014,8 +1014,8 @@ Dit is ideaal voor alleen-lezen portommonees.</translation>
         <translation>Het opgegeven adres "%1" bestaat al in uw adresboek onder label "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Het opgegeven adres "%1" is een ongeldig Bitcoinadres.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Het opgegeven adres "%1" is een ongeldig Vertcoinadres.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1067,8 +1067,8 @@ Dit is ideaal voor alleen-lezen portommonees.</translation>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 zal een kopie van de blokketen van Bitcoin downloaden en opslaan.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 zal een kopie van de blokketen van Vertcoin downloaden en opslaan.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1260,8 +1260,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>%1 is momenteel aan het synchroniseren. Het zal headers en blocks downloaden van peers en deze valideren tot de top van de block chain bereikt is. </translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Poging om bitcoins te besteden die door "nog niet weergegeven" transacties worden beïnvloed, worden niet door het netwerk geaccepteerd.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Poging om vertcoins te besteden die door "nog niet weergegeven" transacties worden beïnvloed, worden niet door het netwerk geaccepteerd.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1292,8 +1292,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Vooruitgang per uur</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de portemonnee is daarom mogelijk niet correct. Deze informatie is correct zodra de synchronisatie met het Bitcoin-netwerk is voltooid, zoals onderaan beschreven.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de portemonnee is daarom mogelijk niet correct. Deze informatie is correct zodra de synchronisatie met het Vertcoin-netwerk is voltooid, zoals onderaan beschreven.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1315,8 +1315,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Open bitcoin-URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Open vertcoin-URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1420,8 +1420,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Sta inkomende verbindingen toe</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Automatisch openen van de Bitcoin client poort op de router. Dit werkt alleen als de router PCP of NAT-PMP ondersteunt en het is ingeschakeld. De externe poort kan willekeurig zijn.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Automatisch openen van de Vertcoin client poort op de router. Dit werkt alleen als de router PCP of NAT-PMP ondersteunt en het is ingeschakeld. De externe poort kan willekeurig zijn.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1461,12 +1461,12 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Bevestig reset opties</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Verbind met het Bitcoinnetwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Verbind met het Vertcoinnetwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Maak verbinding met het Bitcoin-netwerk via een aparte SOCKS5-proxy voor Tor Onion-services.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Maak verbinding met het Vertcoin-netwerk via een aparte SOCKS5-proxy voor Tor Onion-services.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1662,8 +1662,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Recente transacties</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Bitcoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Vertcoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1796,12 +1796,12 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' is niet een geldige URI. Gebruik 'bitcoin:' in plaats daarvan.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' is niet een geldige URI. Gebruik 'vertcoin:' in plaats daarvan.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Kan bitcoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Kan vertcoin niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1812,8 +1812,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Betalingsverzoek bestandsafhandeling</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Bitcoin adres of misvormde URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Vertcoin adres of misvormde URI parameters.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1912,8 +1912,8 @@ Het migratieproces maakt eerst een back-up van de wallet voordat de migratie pla
         <translation>Ingebed "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Voer een Bitcoinadres in (bijv. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Voer een Vertcoinadres in (bijv. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2335,8 +2335,8 @@ Voor meer informatie over het gebruik van deze console, type %6.
         <translation>Een optioneel bericht dat wordt toegevoegd aan het betalingsverzoek en dat aan de verzender getoond kan worden.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het Bitcoinnetwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het Vertcoinnetwerk.</translation>
     </message>
     <message>
         <source>Bech32m (BIP-350) is an upgrade to Bech32, wallet support is still limited.</source>
@@ -2823,16 +2823,16 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation>Waarschuwing: Schatting van de vergoeding is momenteel niet mogelijk.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Waarschuwing: Ongeldig Bitcoinadres</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Waarschuwing: Ongeldig Vertcoinadres</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Waarschuwing: Onbekend wisselgeldadres</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar bitcointransacties dan het netwerk kan verwerken.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar vertcointransacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -2846,8 +2846,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de bitcoin: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Bitcoinnetwerk.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de vertcoin: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Vertcoinnetwerk.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2882,16 +2882,16 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation>Trek de transactiekosten a&amp;f van het bedrag.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Het Bitcoinadres om betaling aan te versturen</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Het Vertcoinadres om betaling aan te versturen</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Het te sturen bedrag in de geselecteerde eenheid</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>De transactiekosten zal worden afgetrokken van het bedrag dat verstuurd wordt. De ontvangers zullen minder bitcoins ontvangen dan ingevoerd is in het hoeveelheidsveld. Als er meerdere ontvangers geselecteerd zijn, dan worden de transactiekosten gelijk verdeeld.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>De transactiekosten zal worden afgetrokken van het bedrag dat verstuurd wordt. De ontvangers zullen minder vertcoins ontvangen dan ingevoerd is in het hoeveelheidsveld. Als er meerdere ontvangers geselecteerd zijn, dan worden de transactiekosten gelijk verdeeld.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2992,8 +2992,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation>Onderteken &amp;bericht</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Bitcoinadres bezit</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Vertcoinadres bezit</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3004,12 +3004,12 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation>Handtekeningen – Onderteken een bericht / Verifiëer een handtekening</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Het Bitcoinadres waarmee het bericht ondertekend is</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Het Vertcoinadres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Het Bitcoinadres om bericht mee te ondertekenen</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Het Vertcoinadres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3036,8 +3036,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation>Verifiëer &amp;bericht</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Bitcoinadres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Vertcoinadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -3601,7 +3601,7 @@ Kan mislukte migratie niet opschonen</translation>
     </message>
     <message>
         <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation>%s verzoekt om te luisteren op poort %u. Deze poort wordt als "slecht" beschouwd en het is daarom onwaarschijnlijk dat Bitcoin Core peers er verbinding mee maken. Zie doc/p2p-bad-ports.md voor details en een volledige lijst.</translation>
+        <translation>%s verzoekt om te luisteren op poort %u. Deze poort wordt als "slecht" beschouwd en het is daarom onwaarschijnlijk dat Vertcoin Core peers er verbinding mee maken. Zie doc/p2p-bad-ports.md voor details en een volledige lijst.</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -3824,8 +3824,8 @@ Kan mislukte migratie niet opschonen</translation>
         <translation>Fout: het dumpbestand geeft een niet-ondersteund databaseformaat op (%s). Alleen dumps van SQLite-databases worden ondersteund.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Fout: Dumpbestandsversie wordt niet ondersteund. Deze versie bitcoinwallet ondersteunt alleen versie 1 dumpbestanden. Dumpbestand met versie %s gekregen</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Fout: Dumpbestandsversie wordt niet ondersteund. Deze versie vertcoinwallet ondersteunt alleen versie 1 dumpbestanden. Dumpbestand met versie %s gekregen</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

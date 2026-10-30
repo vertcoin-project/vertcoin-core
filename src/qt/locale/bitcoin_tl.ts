@@ -84,13 +84,13 @@
         <translation>May mali sa pagsubok na i-save ang listahan ng address  sa %1. Pakisubukan ulit.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ito ang mga address ng ♦Bitcoin♦ para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
+        <translation>Ito ang mga address ng ♦Vertcoin♦ para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ito ang mga address mong Bitcoin para pagpapadala ng bayad. Palagi i-check mo ang amount at tinatanggap na address bagong magsesend ka ng mga coin.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ito ang mga address mong Vertcoin para pagpapadala ng bayad. Palagi i-check mo ang amount at tinatanggap na address bagong magsesend ka ng mga coin.</translation>
     </message>
 </context>
 <context>
@@ -151,8 +151,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>♦Passphrase♦ na ♦Dialog♦</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Tandaan na ang pag-encrypt sa iyong pitaka ay hindi ganap na mapoprotektahan ang mga ♦bitcoin♦ sa pagnanakaw ng ♦malware♦ na makakahawa sa iyong kompyuter.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Tandaan na ang pag-encrypt sa iyong pitaka ay hindi ganap na mapoprotektahan ang mga ♦vertcoin♦ sa pagnanakaw ng ♦malware♦ na makakahawa sa iyong kompyuter.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -203,8 +203,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ang pag-unlock sa pitaka ay nabigo</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Babala: IKung i-encrypt mo ang iyong pitaka at mawawala ang ♦passphrase♦,  &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Babala: IKung i-encrypt mo ang iyong pitaka at mawawala ang ♦passphrase♦,  &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -260,7 +260,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 na kliyente</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -517,8 +517,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Buksan ang pitaka</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Buksan ang ♦bitcoin: URI♦</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Buksan ang ♦vertcoin: URI♦</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -549,12 +549,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ihinto ang aplikasyon</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Humiling ng mga bayad (gumagawa ng ♦QR codes♦ at ♦bitcoin: URIs♦)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Humiling ng mga bayad (gumagawa ng ♦QR codes♦ at ♦vertcoin: URIs♦)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Magpadala ng mga ♦coin♦ sa ♦address♦ ng Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Magpadala ng mga ♦coin♦ sa ♦address♦ ng Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -578,8 +578,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ipakita ang impormasyon tungkol sa Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Ipakita ang %1 tumulong sa mensahe na kumuha ng listahan ng posibleng ♦Bitcoin command-line♦ na mga pagpipilian</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Ipakita ang %1 tumulong sa mensahe na kumuha ng listahan ng posibleng ♦Vertcoin command-line♦ na mga pagpipilian</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -594,8 +594,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Pirmahan &amp;magmensahe...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Bitcoin♦ para patunayan na pagmamay-ari mo sila</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Vertcoin♦ para patunayan na pagmamay-ari mo sila</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -624,8 +624,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>napapapanahon</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦Bitcoin address♦</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦Vertcoin address♦</translation>
     </message>
     <message>
         <source>Wallet Name</source>
@@ -922,8 +922,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ang naipasok na ♦address♦ "%1" ay nasa aklat na ng ♦address♦ na may tatak "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ang naipasok na ♦address♦ "%1" ay hindi wasto na ♦Bitcoin address♦.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Ang naipasok na ♦address♦ "%1" ay hindi wasto na ♦Vertcoin address♦.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -984,8 +984,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Hindi bababa sa %1 ng ♦GB♦ na dato ay mailalagay sa ♦directory♦, at lalaki sa paglipas ng panahon.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>♦Bitcoin♦</translation>
+        <source>Vertcoin</source>
+        <translation>♦Vertcoin♦</translation>
     </message>
     <message>
         <source>Error</source>

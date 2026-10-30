@@ -82,13 +82,13 @@
         <translation>أنقر بزر الفأر الأيمن لتحرير العنوان أو الملصق</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>هذه هي عناوين بتكوين الخاصة بك لتلقي المدفوعات. استخدم الزر "إنشاء عنوان استلام جديد" في علامة تبويب الاستلام لإنشاء عناوين جديدة.
 التوقيع ممكن فقط مع عناوين من النوع "قديم".</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>هذه هي عناوين البيتكوين لإرسال المدفوعات. دائما تحقق من المبلغ وعنوان المستلم قبل الإرسال.</translation>
     </message>
 </context>
@@ -154,7 +154,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>مربع كلمة المرور</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>تذكر أن تشفير محفظتك لا يحمي البيتكوين الخاصة بك بشكل كامل من السرقة من قبل البرامج الخبيثةالتي تصيب حاسوبك</translation>
     </message>
     <message>
@@ -214,7 +214,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>فشل فتح المحفظة</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>إذا شفرت محفظتك وفقدت كلمة المرور، ستفقد كل ما تملك من البيتكوين.</translation>
     </message>
     <message>
@@ -252,7 +252,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>الزبون %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -516,7 +516,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>افتح المحفظة</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>افتح عملة بيتكوين: URI</translation>
     </message>
     <message>
@@ -556,7 +556,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>إغلاق التطبيق</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>أطلب دفعات (يولد كودات الرمز المربع وبيت كوين: العناوين المعطاة)</translation>
     </message>
     <message>
@@ -592,7 +592,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>‫ع&amp;رض‬</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>ارسل عملات الى عنوان بيتكوين</translation>
     </message>
     <message>
@@ -617,7 +617,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>اظهر المعلومات</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>بين اشارة المساعدة %1 للحصول على قائمة من خيارات اوامر البت كوين المحتملة </translation>
     </message>
     <message>
@@ -633,8 +633,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>علامة ورسالة...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>وقَع الرسائل بواسطة ال: Bitcoin الخاص بك لإثبات امتلاكك لهم</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>وقَع الرسائل بواسطة ال: Vertcoin الخاص بك لإثبات امتلاكك لهم</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -659,8 +659,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>محدث</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>تحقق من الرسائل للتأكد من أنَها وُقعت برسائل Bitcoin محدَدة</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>تحقق من الرسائل للتأكد من أنَها وُقعت برسائل Vertcoin محدَدة</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -949,7 +949,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>العنوان المدخل  "%1" موجود بالفعل في سجل العناوين تحت مسمى " "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>العنوان المدخل "%1" ليس عنوان بيت كوين صحيح.</translation>
     </message>
     <message>
@@ -998,7 +998,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>سيقوم %1 بتنزيل نسخة من سلسلة كتل بتكوين وتخزينها.</translation>
     </message>
     <message numerus="yes">
@@ -1031,7 +1031,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>سيتم تخزين %1 جيجابايت على الأقل من البيانات في هذا الدليل، وستنمو مع الوقت.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>بتكوين</translation>
     </message>
     <message>
@@ -1086,7 +1086,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>لن تقبل الشبكة محاولة إنفاق البتكوين المتأثرة بالمعاملات التي لم يتم عرضها بعد.</translation>
     </message>
     <message>
@@ -1122,14 +1122,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>تقدم يزيد بلساعة</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>قد لا تكون المعاملات الأخيرة مرئية بعد، وبالتالي قد يكون رصيد محفظتك غير صحيح. ستكون هذه المعلومات صحيحة بمجرد الانتهاء من محفظتك مع شبكة البيتكوين، كما هو مفصل أدناه.</translation>
     </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>افتح بتكوين URI</translation>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>السماح بالاتصالات الواردة.</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>افتح تلقائيًا منفذ عميل البتكوين على جهاز التوجيه. يعمل هذا فقط عندما يدعم جهاز التوجيه الخاص بك PCP أو NAT-PMP ويتم تمكينه. يمكن أن يكون المنفذ الخارجي عشوائيًا</translation>
     </message>
     <message>
@@ -1278,11 +1278,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>تأكيد استعادة الخيارات</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>الاتصال بشبكة البتكوين عبر وكيل SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>اتصل بشبكة بتكوين من خلال وكيل SOCKS5 منفصل لخدمات Tor onion.</translation>
     </message>
     <message>
@@ -1506,7 +1506,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>أحدث المعاملات</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>قد تكون المعلومات المعروضة قديمة. تتزامن محفظتك تلقائيًا مع شبكة البتكوين بعد إنشاء الاتصال، ولكن هذه العملية لم تكتمل بعد.</translation>
     </message>
     <message>
@@ -1657,8 +1657,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' هو ليس عنوان URL صالح. استعمل 'bitcoin:' بدلا من ذلك.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' هو ليس عنوان URL صالح. استعمل 'vertcoin:' بدلا من ذلك.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1669,7 +1669,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 ‬‫‫‫إذا كنت تتلقى هذا الخطأ ، يجب أن تطلب من المستلم تقديم عنوان URI متوافق مع BIP21.‬</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>لا يمكن تشغيل بتكوين: معالج النقر للدفع</translation>
     </message>
     <message>
@@ -1681,7 +1681,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>التعامل مع ملف طلب الدفع</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>لا يمكن تحليل العنوان (URI)! يمكن أن يحدث هذا بسبب عنوان بتكوين غير صالح أو معلمات عنوان (URI) غير صحيحة.</translation>
     </message>
     <message>
@@ -1832,7 +1832,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>‫موصل طابق‬</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>ادخل عنوان محفطة البتكوين (مثال %1)</translation>
     </message>
     <message>
@@ -2075,7 +2075,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تم تعطيل نشاط الشبكة</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>عناوين الشبكة التي تستخدمها عقدةالبتكوين الخاصة بك حاليًا للتواصل مع العقد الأخرى.</translation>
     </message>
     <message>
@@ -2214,7 +2214,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>رسالة اختيارية مرفقة بطلب الدفع ومن الممكن أن تعرض للمرسل.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>رسالة اختيارية لإرفاقها بطلب الدفع، والتي سيتم عرضها عند فتح الطلب. ملاحظة: لن يتم إرسال الرسالة مع الدفعة عبر شبكة البتكوين.</translation>
     </message>
     <message>
@@ -2555,7 +2555,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تحذير: تقدير الرسوم غير ممكن في الوقت الحالي.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>تحذير: عنوان بتكوين غير صالح</translation>
     </message>
     <message>
@@ -2563,7 +2563,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تحذير: عنوان الفكة غير معروف</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>عندما يكون هناك حجم معاملات أقل من الفراغ في الكتل، المعدنون وعقد الترحيل أيضا من الممكن أن يفرضوا الحد الأدنى للرسوم. دفع الحد الأدنى للرسوم قد يكون على ما يرام، لكن كن حذرا بأنه هذا الشيء قد يؤدي الى معاملة لن تتأكد أبدا بمجرد أن الطلب على معاملات البتكوين قد أصبح أكثر مما تتحمله الشبكة.</translation>
     </message>
     <message>
@@ -2586,7 +2586,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>&amp;وصف :</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
         <translation>الرسالة التي تم إرفاقها مع البتكوين: العنوان الذي سيتم تخزينه مع المعاملة للرجوع إليه. ملاحظة: لن يتم إرسال هذه الرسالة عبر شبكة البتكوين.</translation>
     </message>
     <message>
@@ -2622,7 +2622,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>طرح الرسوم من المبلغ</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>عنوان البت كوين المرسل اليه الدفع</translation>
     </message>
     <message>
@@ -2630,7 +2630,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>المبلغ للإرسال في الوحدة المحددة</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>سيتم خصم الرسوم من المبلغ الذي يتم إرساله. لذا سوف يتلقى المستلم مبلغ أقل من البتكوين المدخل في حقل المبلغ. في حالة تحديد عدة مستلمين، يتم تقسيم الرسوم بالتساوي.</translation>
     </message>
     <message>
@@ -2728,7 +2728,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>توقيع $الرسالة</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>وقع الرسالة لتثبت انك تمتلك عنوان البت كوين هذا</translation>
     </message>
     <message>
@@ -2740,11 +2740,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>التواقيع - التوقيع / التحقق من الرسالة</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>عنوان البتكوين الذي تم توقيع الرسالة به</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>عنوان البتكوين لتوقيع الرسالة به</translation>
     </message>
     <message>
@@ -2772,7 +2772,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تحقق &amp;الرسالة</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>تحقق من الرسالة للتأكد من توقيعها مع عنوان البتكوين المحدد</translation>
     </message>
     <message>

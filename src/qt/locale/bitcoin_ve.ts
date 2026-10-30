@@ -92,13 +92,13 @@
         <translation>Ho vha na vhukhakhi ha u lingedza u vhulunga mutevhe wa ḓiresi kha %1. Ndi khou humbela uri ni lingedze hafhu.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Hedzi ndi ḓiresi dzaṋu dza Bitcoin dza u ṱanganedza mbadelo. Shumisani butoni ya 'Sika ḓiresi ntswa ya u ṱanganedza' kha thebu ya u ṱanganedza u sika ḓiresi ntswa.U saina zwi konadzea fhedzi nga ḓiresi dza lushaka lwa 'legacy'.</translation>
+        <translation>Hedzi ndi ḓiresi dzaṋu dza Vertcoin dza u ṱanganedza mbadelo. Shumisani butoni ya 'Sika ḓiresi ntswa ya u ṱanganedza' kha thebu ya u ṱanganedza u sika ḓiresi ntswa.U saina zwi konadzea fhedzi nga ḓiresi dza lushaka lwa 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hedzi ndi ḓiresi dzaṋu dza Bitcoin dza u rumela mbadelo. Tshifhinga tshoṱhe ṱolani tshelede na ḓiresi ine na ḓo i ṱanganedza musi ni sa athu rumela tshelede ya tsimbi.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hedzi ndi ḓiresi dzaṋu dza Vertcoin dza u rumela mbadelo. Tshifhinga tshoṱhe ṱolani tshelede na ḓiresi ine na ḓo i ṱanganedza musi ni sa athu rumela tshelede ya tsimbi.</translation>
     </message>
 </context>
 <context>
@@ -171,8 +171,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tshanduko ya phasiphrase yo kundelwa</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Humbulani uri u ṅwalulula tshipatshi tshaṋu a zwi nga koni u tsireledza nga vhuḓalo bitcoins dzaṋu kha u tswiwa nga malware ine ya kavhila khomphyutha yaṋu.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Humbulani uri u ṅwalulula tshipatshi tshaṋu a zwi nga koni u tsireledza nga vhuḓalo vertcoins dzaṋu kha u tswiwa nga malware ine ya kavhila khomphyutha yaṋu.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -231,8 +231,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>U vula tshipatshi zwo kundelwa</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Tsevho: Arali na ṅwalulula tshipatshi tshaṋu nahone na xelelwa nga passphrase yaṋu, ni ḓo XELELA BITCOIN DZANU DZOṰHE!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Tsevho: Arali na ṅwalulula tshipatshi tshaṋu nahone na xelelwa nga passphrase yaṋu, ni ḓo XELELA VERTCOIN DZANU DZOṰHE!</translation>
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
@@ -281,7 +281,7 @@ Faela ya zwishumiswa %1 i nga vha yo tshinyala kana i sa shumi.</translation>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -431,12 +431,12 @@ Faela ya zwishumiswa %1 i nga vha yo tshinyala kana i sa shumi.</translation>
         <translation>Litshani khumbelo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Humbelani mbadelo (u bveledza khoudu dza QR na bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Humbelani mbadelo (u bveledza khoudu dza QR na vertcoin: URI)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Rumelani tshelede ya tsimbi kha ḓiresi ya Bitcoin .</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Rumelani tshelede ya tsimbi kha ḓiresi ya Vertcoin .</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -463,8 +463,8 @@ Faela ya zwishumiswa %1 i nga vha yo tshinyala kana i sa shumi.</translation>
         <translation>Saina &amp;mulaedza...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Saini milaedza nga ḓiresi dzaṋu dza Bitcoin u sumbedza uri ndi vhaṋe vhayo .</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Saini milaedza nga ḓiresi dzaṋu dza Vertcoin u sumbedza uri ndi vhaṋe vhayo .</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -480,8 +480,8 @@ U ṱanganya ṱhoho (%1%)...</translation>
         <translation>Bara ya zwishumiswa zwa thebu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Kha vha khwaṱhisedze milaedza u vhona uri yo sainiwa nga ḓiresi dzo bulwaho dza Bitcoin </translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Kha vha khwaṱhisedze milaedza u vhona uri yo sainiwa nga ḓiresi dzo bulwaho dza Vertcoin </translation>
     </message>
     <message>
         <source>Wallet:</source>

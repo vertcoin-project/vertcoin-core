@@ -96,14 +96,14 @@
         <translation>Houbo un erro tentando gardar a lista de enderezos en %1. Por favor proba de novo.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Estes son os teus enderezos de Bitcoin para recibir pagamentos. Emprega o botón 'Crear novo enderezo para recibir pagamentos' na solapa de recibir para crear novos enderezos.
+        <translation>Estes son os teus enderezos de Vertcoin para recibir pagamentos. Emprega o botón 'Crear novo enderezo para recibir pagamentos' na solapa de recibir para crear novos enderezos.
 Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes son os teus enderezos de Bitcoin para enviar pagamentos. Asegurate sempre de comprobar a cantidade e maila dirección antes de enviar moedas.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes son os teus enderezos de Vertcoin para enviar pagamentos. Asegurate sempre de comprobar a cantidade e maila dirección antes de enviar moedas.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Produciuse un erro no cambio de frase de contrasinal</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Recorda que encriptar a tua carteira non protexe completamente que os teus bitcoins poidan ser roubados por malware que afecte ó teu computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recorda que encriptar a tua carteira non protexe completamente que os teus vertcoins poidan ser roubados por malware que afecte ó teu computador.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Desbloqueo de carteira fallido</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Aviso: Si encriptas a túa carteira e perdes a túa frase contrasinal, &lt;b&gt;PERDERÁS TODOS OS TEUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Aviso: Si encriptas a túa carteira e perdes a túa frase contrasinal, &lt;b&gt;PERDERÁS TODOS OS TEUS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,7 +297,7 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>%1 cliente</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -507,8 +507,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Abrir carteira</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Abre una URI de Bitcoin</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Abre una URI de Vertcoin</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -543,12 +543,12 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Saír da aplicación</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicita pagamentos (xera un código QR e bitcoin : URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Solicita pagamentos (xera un código QR e vertcoin : URIs)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Envía moedas a un enderezo de Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Envía moedas a un enderezo de Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -567,8 +567,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Mostra información acerca de Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mostra a %1 mensaxe de axuda para obter unha lista cas posibles opcións de línea de comando de Bitcoin </translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Mostra a %1 mensaxe de axuda para obter unha lista cas posibles opcións de línea de comando de Vertcoin </translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -583,8 +583,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Asinar &amp;mensaxe…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Asina mensaxes cos teus enderezos de Bitcoin para probar que che pertencen</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Asina mensaxes cos teus enderezos de Vertcoin para probar que che pertencen</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -613,8 +613,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>Actualizado</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifica mensaxes para asegurar que foron asinados cos enderezos de Bitcoin especificados</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifica mensaxes para asegurar que foron asinados cos enderezos de Vertcoin especificados</translation>
     </message>
     <message>
         <source>Wallet Name</source>
@@ -857,8 +857,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation>O enderezo introducido "%1" xa existe na axenda de enderezos ca etiqueta "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>O enderezo introducido "%1" non é un enderezo de Bitcoin válido.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>O enderezo introducido "%1" non é un enderezo de Vertcoin válido.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>

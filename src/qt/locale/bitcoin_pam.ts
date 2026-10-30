@@ -66,8 +66,8 @@
         <translation>I-right click ban alilan ing address o libel</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Reni reng kekang Bitcoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Reni reng kekang Vertcoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
     </message>
 </context>
 <context>
@@ -152,8 +152,8 @@
         <translation>Memali ya ing pamag-unlock king wallet </translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG BITCOINS&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG VERTCOINS&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -163,7 +163,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -232,8 +232,8 @@
         <translation>Tuknangan ing aplikasyon</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Magpadalang barya king Bitcoin address</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Magpadalang barya king Vertcoin address</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -326,8 +326,8 @@
         <translation>Bayung address king pamagpadala</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ing pepalub yung address "%1" ali ya katanggap-tanggap a Bitcoin address.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Ing pepalub yung address "%1" ali ya katanggap-tanggap a Vertcoin address.</translation>
     </message>
     </context>
 <context>
@@ -450,8 +450,8 @@
         <translation>Reng me-minang balanse a epa meg-matured</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Bitcoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Vertcoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -765,8 +765,8 @@
         <translation>Pirman ing &amp;Mensayi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Pirman ing mensayi ban patune na keka ya ining Bitcoin address</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Pirman ing mensayi ban patune na keka ya ining Vertcoin address</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -793,8 +793,8 @@
         <translation>Beripikan ing &amp;Mensayi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Bitcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Vertcoin address</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>

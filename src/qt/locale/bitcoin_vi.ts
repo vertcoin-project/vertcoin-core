@@ -137,8 +137,8 @@
         <translation>Log Cụm Mật Khẩu</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Xin lưu ý rằng mật mã hóa ví của bạn không thể bảo vệ hoàn toàn bitcoin của bạn khỏi đánh cắp bởi các phẩn mềm gián điệp nhiễm vào máy tính của bạn.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Xin lưu ý rằng mật mã hóa ví của bạn không thể bảo vệ hoàn toàn vertcoin của bạn khỏi đánh cắp bởi các phẩn mềm gián điệp nhiễm vào máy tính của bạn.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -189,8 +189,8 @@
         <translation>Mở khóa ví thất bại</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -223,9 +223,9 @@
         <translation>%1 khách</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>%n đang hoạt động kết nối với mạng lưới Bitcoin</numerusform></translation>
+        <translation><numerusform>%n đang hoạt động kết nối với mạng lưới Vertcoin</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -406,8 +406,8 @@
         <translation>Mớ ví</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Mở một bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Mở một vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -438,8 +438,8 @@
         <translation>Đóng ứng dụng</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Yêu cầu thanh toán (tạo QR code và bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Yêu cầu thanh toán (tạo QR code và vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -460,8 +460,8 @@
         <translation>Khôi phục và di chuyển tập tin ví…</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Gửi coin đến một địa chỉ Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Gửi coin đến một địa chỉ Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -480,8 +480,8 @@
         <translation>Hiện thông tin về Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách Bitcoin command-line khả dụng</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách Vertcoin command-line khả dụng</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -492,8 +492,8 @@
         <translation>Hiển thị danh sách các địa chỉ và nhãn đã dùng để gửi</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Đăng ký lời nhắn với địa chỉ Bitcoin của bạn để chứng minh quyền sở hữu chúng</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Đăng ký lời nhắn với địa chỉ Vertcoin của bạn để chứng minh quyền sở hữu chúng</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -518,8 +518,8 @@
         <translation>Đã cập nhật</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ Bitcoin xác định</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ Vertcoin xác định</translation>
     </message>
     <message>
         <source>Wallet Name</source>
@@ -767,8 +767,8 @@
         <translation>Địa chỉ  nhập "%1" đã có trong sổ địa chỉ với nhãn "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Address đã nhập "%1" không valid Bitcoin address.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Address đã nhập "%1" không valid Vertcoin address.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -808,8 +808,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 sẽ download và lưu trữ một bản copy của Bitcoin block chain.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 sẽ download và lưu trữ một bản copy của Vertcoin block chain.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -888,8 +888,8 @@
         <translation>%1 đang được đồng bộ. Header và block sẽ được download từ các nốt lân cận và thẩm định tới khi đạt đỉnh của blockchain.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Cố gắng spend các bitcoins bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Cố gắng spend các vertcoins bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -916,15 +916,15 @@
         <translation>Tiến độ tăng mỗi giờ</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với bitcoin network, như chi tiết bên dưới.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với vertcoin network, như chi tiết bên dưới.</translation>
     </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Mở bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Mở vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1019,12 +1019,12 @@
         <translation>Confirm tùy chọn reset</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến Bitcoin network qua một SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến Vertcoin network qua một SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Kết nối với mạng Bitcoin thông qua proxy SOCKS5 riêng cho các dịch vụ Tor</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Kết nối với mạng Vertcoin thông qua proxy SOCKS5 riêng cho các dịch vụ Tor</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,8 +1135,8 @@
         <translation>Giao dịch gần đây</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với Bitcoin network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với Vertcoin network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1257,20 +1257,20 @@
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' không khả dụng URI. Dùng thay vì 'bitcoin:' .</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' không khả dụng URI. Dùng thay vì 'vertcoin:' .</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Không thể khởi tạo bitcoin: click-to-pay handler</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Không thể khởi tạo vertcoin: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
         <translation>Payment request file đang xử lý</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI không thể phân tích cú pháp! Đây có thể gây nên bởi invalid Bitcoin address hoặc URI không đúng định dạng tham số.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI không thể phân tích cú pháp! Đây có thể gây nên bởi invalid Vertcoin address hoặc URI không đúng định dạng tham số.</translation>
     </message>
     </context>
 <context>
@@ -1343,8 +1343,8 @@
         <translation>Số lượng</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Nhập một Bitcoin address (e.g. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Nhập một Vertcoin address (e.g. %1)</translation>
     </message>
     </context>
 <context>
@@ -1576,8 +1576,8 @@
         <translation>Một thông báo tùy chọn được đính kèm với yêu cầu thanh toán và có thể được hiển thị cho người gửi.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Một optional lời nhắn để đính kèm đến payment request, cái mà sẽ được hiển thị khi mà request đang mở. Lưu ý: Tin nhắn này sẽ không được gửi với payment over the Bitcoin network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Một optional lời nhắn để đính kèm đến payment request, cái mà sẽ được hiển thị khi mà request đang mở. Lưu ý: Tin nhắn này sẽ không được gửi với payment over the Vertcoin network.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1887,8 +1887,8 @@
         <translation>Warning: Không biết change address</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Khi có khối lượng giao dịch ít hơn chổ trống trong các khối, các nhà đào mỏ cũng như các nút chuyển tiếp có thể thực thi chỉ với một khoản phí tối thiểu. Chỉ trả khoản phí tối thiểu này là tốt, nhưng lưu ý rằng điều này có thể dẫn đến một giao dịch không bao giờ xác nhận một khi có nhu cầu giao dịch bitcoin nhiều hơn khả năng mạng có thể xử lý.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Khi có khối lượng giao dịch ít hơn chổ trống trong các khối, các nhà đào mỏ cũng như các nút chuyển tiếp có thể thực thi chỉ với một khoản phí tối thiểu. Chỉ trả khoản phí tối thiểu này là tốt, nhưng lưu ý rằng điều này có thể dẫn đến một giao dịch không bao giờ xác nhận một khi có nhu cầu giao dịch vertcoin nhiều hơn khả năng mạng có thể xử lý.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -1906,8 +1906,8 @@
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Một tin nhắn được đính kèm với số bitcoin: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua Bitcoin network.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Một tin nhắn được đính kèm với số vertcoin: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua Vertcoin network.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1934,16 +1934,16 @@
         <translation>S&amp;ubtract fee từ amount</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>The Bitcoin address để gửi the payment đến</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>The Vertcoin address để gửi the payment đến</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Lượng tiền để gửi trong mỗi đơn vị đã chọn</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít bitcoins hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít vertcoins hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2008,20 +2008,20 @@
         <translation>Reset tất cả verify khoảng trống nhắn</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Ký tin nhắn để chứng minh bạn sở hữu Bitcoin address này</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Ký tin nhắn để chứng minh bạn sở hữu Vertcoin address này</translation>
     </message>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
         <translation>Chữ ký - Sign / Verify a Message</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>The Bitcoin address tin nhắn đã ký với</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>The Vertcoin address tin nhắn đã ký với</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>The Bitcoin address để ký với tin nhắn</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>The Vertcoin address để ký với tin nhắn</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2036,8 +2036,8 @@
         <translation>Tin nhắn đã được ký để xác nhận</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verify tin nhắn để chắc rằng nó đã được ký với xác định Bitcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verify tin nhắn để chắc rằng nó đã được ký với xác định Vertcoin address</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>

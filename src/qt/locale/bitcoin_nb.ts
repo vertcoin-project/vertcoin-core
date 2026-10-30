@@ -96,13 +96,13 @@
         <translation>Fet oppstod en feil ved lagring av adresselisten til %1. Vennligst prøv igjen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dette er dine Bitcoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
+        <translation>Dette er dine Vertcoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Bitcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Vertcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
     </message>
 </context>
 <context>
@@ -175,8 +175,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Passordendring feilet</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Husk at å kryptere lommeboken ikke vil beskytte dine bitcoins fullstendig fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Husk at å kryptere lommeboken ikke vil beskytte dine vertcoins fullstendig fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -227,8 +227,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Opplåsing av lommeboken feilet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Dersom du krypterer lommeboken og mister passordfrasen vil du &lt;b&gt;MISTE ALLE DINE BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Advarsel: Dersom du krypterer lommeboken og mister passordfrasen vil du &lt;b&gt;MISTE ALLE DINE VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -284,7 +284,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1-klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -546,8 +546,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Åpne Lommebok</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Åpne en bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Åpne en vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -586,8 +586,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Avslutt program</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Be om betalinger (genererer QR-koder og bitcoin-URIer)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Be om betalinger (genererer QR-koder og vertcoin-URIer)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -605,8 +605,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Gjenopprett en lommebok fra en sikkerhetskopi</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Send mynter til en Bitcoin adresse</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Send mynter til en Vertcoin adresse</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -630,8 +630,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Vis informasjon om Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Vis %1-hjelpemeldingen for å få en liste over mulige Bitcoin-kommandolinjealternativer</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Vis %1-hjelpemeldingen for å få en liste over mulige Vertcoin-kommandolinjealternativer</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -646,8 +646,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Signer &amp;melding...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer meldingene med Bitcoin adresse for å bevise at diu eier dem</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Signer meldingene med Vertcoin adresse for å bevise at diu eier dem</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -670,8 +670,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Oppdatert</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Bitcoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Vertcoin adresse</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -969,8 +969,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Den oppgitte adressen ''%1'' er allerede i adresseboken med etiketten ''%2''.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Den angitte adressen "%1" er ikke en gyldig Bitcoin-adresse.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Den angitte adressen "%1" er ikke en gyldig Vertcoin-adresse.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1022,8 +1022,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 vil laste ned og lagre en kopi av Bitcoin blokkjeden.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 vil laste ned og lagre en kopi av Vertcoin blokkjeden.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1127,8 +1127,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 synkroniseres for øyeblikket. Den vil laste ned overskrifter og blokker fra jevnaldrende og validere dem til de når spissen av blokkjeden.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Forsøk på å bruke bitcoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Forsøk på å bruke vertcoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1159,8 +1159,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Fremgangen stiger hver time</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot bitcoin-nettverket er fullført, som anvist nedenfor.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot vertcoin-nettverket er fullført, som anvist nedenfor.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1182,8 +1182,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Åpne bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Åpne vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1288,7 +1288,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av bitcoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av vertcoins.</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1316,12 +1316,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Bekreft tilbakestilling av innstillinger</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Koble til Bitcoin-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Koble til Vertcoin-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Kobl til Bitcoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Kobl til Vertcoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1496,8 +1496,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Nylige transaksjoner</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Bitcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Vertcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1643,8 +1643,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin: //' er ikke en gyldig URI. Bruk 'bitcoin:' i stedet.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin: //' er ikke en gyldig URI. Bruk 'vertcoin:' i stedet.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1655,8 +1655,8 @@ Grunnet utbredte sikkerhetshull i BIP70 er det sterkt anbefalt å ignorere instr
 Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 kompatibel URI.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Kan ikke starte bitcoin: Klikk-og-betal håndterer</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Kan ikke starte vertcoin: Klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1667,8 +1667,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Håndtering av betalingsforespørselsfil</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig bitcoin-adresse eller feilformede URI-parametre.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig vertcoin-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1796,8 +1796,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Vil du tilbakestille innstillingene til utgangsverdiene, eller vil du avbryte uten å gjøre endringer?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Oppgi en Bitcoin-adresse (f.eks. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Oppgi en Vertcoin-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2289,8 +2289,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>En valgfri melding som er knyttet til betalingsforespørselen og kan vises til avsenderen.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Bitcoin-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Vertcoin-nettverket.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2646,7 +2646,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Send Bitcoins</translation>
+        <translation>Send Vertcoins</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -2702,16 +2702,16 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Advarsel: Gebyroverslag er ikke tilgjengelig for tiden.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Advarsel Ugyldig bitcoin-adresse</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Advarsel Ugyldig vertcoin-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Advarsel: Ukjent vekslingsadresse</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Når det er mindre transaksjonsvolum enn plass i blokkene, kan gruvearbeidere så vel som videresende noder håndheve et minimumsgebyr. Å betale bare denne minsteavgiften er helt greit, men vær klar over at dette kan resultere i en aldri bekreftende transaksjon når det er større etterspørsel etter bitcoin-transaksjoner enn nettverket kan behandle.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Når det er mindre transaksjonsvolum enn plass i blokkene, kan gruvearbeidere så vel som videresende noder håndheve et minimumsgebyr. Å betale bare denne minsteavgiften er helt greit, men vær klar over at dette kan resultere i en aldri bekreftende transaksjon når det er større etterspørsel etter vertcoin-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -2729,8 +2729,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>&amp;Merkelapp:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Bitcoin-nettverket.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>En melding som var tilknyttet vertcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Vertcoin-nettverket.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2765,16 +2765,16 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>T&amp;rekk fra gebyr fra beløp</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Bitcoin-adressen betalingen skal sendes til</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Vertcoin-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>beløpet som skal sendes inn den valgte enheten.</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre bitcoins enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre vertcoins enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2878,8 +2878,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Signer &amp;Melding</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Bitcoin-adressen</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Vertcoin-adressen</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2890,12 +2890,12 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Signaturer - Signer / Verifiser en Melding</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin-adressen meldingen ble signert med</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin-adressen meldingen ble signert med</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin-adressen meldingen skal signeres med</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2922,8 +2922,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation>Verifiser &amp;Melding</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Bitcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Vertcoin-adressen</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -2987,7 +2987,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererte bitcoins må modne %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert", og vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk innen noen sekunder av din.</translation>
+        <translation>Genererte vertcoins må modne %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert", og vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk innen noen sekunder av din.</translation>
     </message>
     <message>
         <source>Inputs</source>
@@ -3584,8 +3584,8 @@ Kunne ikke gjenopprette sikkerhetskopi av lommebok.</translation>
         <translation>Feil: Dumpfil identifiseringsoppføring stemmer ikke. Fikk "%s", forventet "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Feil: Dumpfil versjon er ikke støttet. Denne versjonen av bitcoin-lommebok støtter kun versjon 1 dumpfiler. Fikk dumpfil med versjon %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Feil: Dumpfil versjon er ikke støttet. Denne versjonen av vertcoin-lommebok støtter kun versjon 1 dumpfiler. Fikk dumpfil med versjon %s</translation>
     </message>
     <message>
         <source>Error: Got key that was not hex: %s</source>

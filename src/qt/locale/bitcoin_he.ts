@@ -96,13 +96,13 @@
         <translation>אירעה שגיאה בעת הניסיון לשמור את רשימת הכתובת אל %1. נא לנסות שוב.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>אלה כתובת הביטקוין שלך לקבלת תשלומים. ניתן להשתמש בכפתור „יצירת כתובת קבלה חדשה” בלשונית הקבלה ליצירת כתובות חדשות.
 חתימה אפשרית רק עבור כתובות מסוג „legacy”.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלה כתובות הביטקוין שלך לשליחת תשלומים. חשוב לבדוק את הסכום ואת הכתובת המקבלת לפני שליחת מטבעות.</translation>
     </message>
 </context>
@@ -176,7 +176,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>שינוי הסיסמה נכשל</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>זכור שהצפנת הארנק לא יכולה להגן עליך לגמרי מגניבת המטבעות שלך על ידי תוכנה זדונית שנמצאת על המחשב שלך.</translation>
     </message>
     <message>
@@ -236,7 +236,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>פתיחת הארנק נכשלה</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>אזהרה: הצפנת הארנק שלך ושיכחת הסיסמה &lt;b&gt;תגרום לאיבוד כל הביטקוינים שלך&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -293,7 +293,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>לקוח %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -572,7 +572,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>פתיחת ארנק</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>פתיחת ביטקוין: כתובת משאב</translation>
     </message>
     <message>
@@ -612,8 +612,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>יציאה מהיישום</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :bitcoin)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :vertcoin)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -648,7 +648,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ה&amp;צגה</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>שליחת מטבעות לכתובת ביטקוין</translation>
     </message>
     <message>
@@ -673,7 +673,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>הצגת מידע על Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>יש להציג את הודעת העזרה של %1 כדי להציג רשימה עם אפשרויות שורת פקודה לביטקוין</translation>
     </message>
     <message>
@@ -689,7 +689,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;חתימה על הודעה…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>חתום על הודעות עם כתובות הביטקוין שלך כדי להוכיח שהן בבעלותך</translation>
     </message>
     <message>
@@ -719,7 +719,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>עדכני</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת ביטקוין מסוימות</translation>
     </message>
     <message>
@@ -1042,7 +1042,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>הכתובת שסיפקת "%1" כבר נמצאת בפנקס הכתובות עם התווית "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>הכתובת שסיפקת "%1" אינה כתובת ביטקוין תקנית.</translation>
     </message>
     <message>
@@ -1095,7 +1095,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ג״ב</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 תוריד ותאחסן עותק של שרשרת הבלוקים של ביטקוין.</translation>
     </message>
     <message numerus="yes">
@@ -1128,7 +1128,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>לפחות %1 ג״ב של נתונים יאוחסנו בתיקייה זו, והם יגדלו עם הזמן.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>ביטקוין</translation>
     </message>
     <message>
@@ -1257,7 +1257,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 מסתנכנים כרגע.  תתבצע הורדת כותרות ובלוקים מעמיתים תוך אימותם עד הגעה לראש שרשרת הבלוקים .</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>הרשת תסרב לקבל הוצאת ביטקוינים במידה והם כבר נמצאים בהעברות אשר לא מוצגות עדיין.</translation>
     </message>
     <message>
@@ -1289,7 +1289,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>התקדמות לפי שעה</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>ייתכן שהעברות שבוצעו לאחרונה לא יופיעו עדיין, ולכן המאזן בארנק שלך יהיה שגוי. המידע הנכון יוצג במלואו כאשר הארנק שלך יסיים להסתנכרן עם רשת הביטקוין, כמפורט למטה.</translation>
     </message>
     <message>
@@ -1312,7 +1312,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>פתיחת כתובת משאב ביטקוין</translation>
     </message>
     <message>
@@ -1462,11 +1462,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>אישור איפוס האפשרויות</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>התחבר לרשת הביטקוין דרך פרוקסי SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>התחבר לרשת ביטקוין דרך פרוקסי נפרד SOCKS5 proxy לשרותי שכבות בצל (onion services).</translation>
     </message>
     <message>
@@ -1700,7 +1700,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>העברות אחרונות</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת הביטקוין לאחר יצירת החיבור, אך התהליך טרם הסתיים.</translation>
     </message>
     <message>
@@ -1855,12 +1855,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'//:bitcoin' אינה כתובת תקנית. נא להשתמש ב־"bitcoin:‎"‏ במקום.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'//:vertcoin' אינה כתובת תקנית. נא להשתמש ב־"vertcoin:‎"‏ במקום.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>לא ניתן להפעיל את המקשר bitcoin: click-to-pay</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>לא ניתן להפעיל את המקשר vertcoin: click-to-pay</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1871,7 +1871,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>טיפול בקובצי בקשות תשלום</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>לא ניתן לנתח את כתובת המשאב! מצב זה יכול לקרות עקב כתובת ביטקוין שגויה או פרמטרים שגויים בכתובת המשאב.</translation>
     </message>
     <message>
@@ -2049,7 +2049,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>מוטמע "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>נא לספק כתובת ביטקוין (למשל: %1)</translation>
     </message>
     <message>
@@ -2516,7 +2516,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>הודעה אוצפציונלית מצורפת לבקשת התשלום אשר ניתן להציגה לשולח.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>הודעת רשות לצירוף לבקשת התשלום שתוצג בעת פתיחת הבקשה. לתשומת לבך: ההודעה לא תישלח עם התשלום ברשת ביטקוין.</translation>
     </message>
     <message>
@@ -2948,7 +2948,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>אזהרה: שערוך העמלה לא אפשרי כעת.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>אזהרה: כתובת ביטקיון שגויה</translation>
     </message>
     <message>
@@ -2956,7 +2956,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>אזהרה: כתובת החלפה בלתי ידועה</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>כאשר יש פחות נפח עסקאות מאשר מקום בבלוק, כורים וכן צמתות מקשרות יכולות להכתיב עמלות מינימום. התשלום של עמלת מינימום הנו תקין, אך יש לקחת בחשבון שהדבר יכול לגרום לעסקה שלא תאושר ברגע שיש יותר ביקוש לעסקאות ביטקוין מאשר הרשת יכולה לעבד.</translation>
     </message>
     <message>
@@ -2979,7 +2979,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ת&amp;ווית:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
         <translation>הודעה שצורפה לביטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת הביטקוין.</translation>
     </message>
     <message>
@@ -3015,7 +3015,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ה&amp;חסרת העמלה מהסכום</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>כתובת הביטקוין של המוטב</translation>
     </message>
     <message>
@@ -3023,7 +3023,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>הסכום לשליחה במטבע הנבחר</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>העמלה תנוכה מהסכום שנשלח. הנמען יקבל פחות ביטקוינים ממה שסיפקת בשדה הסכום. אם נבחרו מספר נמענים, העמלה תחולק באופן שווה.</translation>
     </message>
     <message>
@@ -3132,7 +3132,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;חתימה על הודעה</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>ניתן לחתום על ההודעה כדי להוכיח שכתובת ביטקוין זו בבעלותך</translation>
     </message>
     <message>
@@ -3144,11 +3144,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>חתימות - חתימה או אימות של הודעה</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>כתובת הביטקוין שאיתה נחתמה ההודעה</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>כתובת הביטקוין איתה לחתום את ההודעה</translation>
     </message>
     <message>
@@ -3176,7 +3176,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;אימות הודעה</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>ניתן לאמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת הביטקוין הנתונה</translation>
     </message>
     <message>

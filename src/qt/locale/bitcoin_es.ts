@@ -96,14 +96,14 @@
         <translation>Hubo un error al intentar guardar la lista de direcciones a %1. Por favor, inténtelo de nuevo.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Estas son sus direcciones Bitcoin para la recepción de pagos. Use el botón 'Crear una nueva dirección para recepción' en la pestaña Recibir para crear nuevas direcciones.
+        <translation>Estas son sus direcciones Vertcoin para la recepción de pagos. Use el botón 'Crear una nueva dirección para recepción' en la pestaña Recibir para crear nuevas direcciones.
 Firmar solo es posible con correos del tipo Legacy.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Bitcoin para enviar pagos. Compruebe siempre la cantidad y la dirección de recibo antes de enviar monedas.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones Vertcoin para enviar pagos. Compruebe siempre la cantidad y la dirección de recibo antes de enviar monedas.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Firmar solo es posible con correos del tipo Legacy.</translation>
         <translation>Error al cambiar la frase de contraseña</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Recuerda que cifrar tu billetera no garantiza la protección de tus bitcoin si tu ordenador es infectado con malware.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recuerda que cifrar tu billetera no garantiza la protección de tus vertcoin si tu ordenador es infectado con malware.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Firmar solo es posible con correos del tipo Legacy.</translation>
         <translation>El desbloqueo de la billetera ha fallado</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde la contraseña, perderá ¡&lt;b&gt;TODOS SUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde la contraseña, perderá ¡&lt;b&gt;TODOS SUS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -289,9 +289,9 @@ Firmar solo es posible con correos del tipo Legacy.</translation>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>%n active connection to Bitcoin network.</numerusform><numerusform>%n active connections to Bitcoin network.</numerusform><numerusform>%n active connections to Bitcoin network.</numerusform></translation>
+        <translation><numerusform>%n active connection to Vertcoin network.</numerusform><numerusform>%n active connections to Vertcoin network.</numerusform><numerusform>%n active connections to Vertcoin network.</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -511,8 +511,8 @@ Firmar solo es posible con correos del tipo Legacy.</translation>
         <translation>&amp;Mostrar</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Enviar monedas a una dirección Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -840,8 +840,8 @@ El proceso de migración creará una copia de seguridad del monedero antes de mi
         <translation>&amp;URL de transacciones de terceros</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Abrir automáticamente el puerto del cliente de Bitcoin en el enrutador. Esto solo funciona cuando el enrutador es compatible con NAT-PMP y está activo. El puerto externo podría ser aleatorio.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Abrir automáticamente el puerto del cliente de Vertcoin en el enrutador. Esto solo funciona cuando el enrutador es compatible con NAT-PMP y está activo. El puerto externo podría ser aleatorio.</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
@@ -849,8 +849,8 @@ El proceso de migración creará una copia de seguridad del monedero antes de mi
         <translation>Compilado sin compatibilidad con firma externa (se requiere para la firma externa)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Conéctese a la red de Bitcoin a través de un proxy SOCKS5 separado para los servicios Tor ocultos.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Conéctese a la red de Vertcoin a través de un proxy SOCKS5 separado para los servicios Tor ocultos.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1328,8 +1328,8 @@ Si recibes este error, debes solicitar al comerciante que te proporcione un URI 
         <translation>Direcciones locales</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Direcciones de red que tu nodo de Bitcoin usa actualmente para comunicarse con otros nodos.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Direcciones de red que tu nodo de Vertcoin usa actualmente para comunicarse con otros nodos.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -1759,8 +1759,8 @@ Nota: Dado que la comisión se calcula por byte, una tasa de "100 satoshis por k
         <translation>La dirección ingresada no se refiere a una clave tipo legacy (P2PKH). La firma de mensajes para direcciones SegWit y de otros tipos que no sean P2PKH no es compatible con esta versión de %1. Comprueba la dirección e inténtalo de nuevo.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puedes firmar mensajes o acuerdos con tus direcciones tipo legacy (P2PKH) para demostrar que puedes recibir los bitcoins que se envíen a ellas. Ten cuidado de no firmar cosas confusas o al azar, ya que los ataques de phishing pueden tratar de engañarte para que les envíes la firma con tu identidad. Firma solo declaraciones totalmente detalladas con las que estés de acuerdo.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Puedes firmar mensajes o acuerdos con tus direcciones tipo legacy (P2PKH) para demostrar que puedes recibir los vertcoins que se envíen a ellas. Ten cuidado de no firmar cosas confusas o al azar, ya que los ataques de phishing pueden tratar de engañarte para que les envíes la firma con tu identidad. Firma solo declaraciones totalmente detalladas con las que estés de acuerdo.</translation>
     </message>
 </context>
 <context>
@@ -2159,8 +2159,8 @@ No se puede restaurar la copia de seguridad del monedero.</translation>
         <translation>Error: El archivo de volcado especifica un formato de base de datos no compatible (%s). Solo se admiten volcados de bases de datos SQLite.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Error: la versión del archivo volcado no es compatible. Esta versión del monedero de Bitcoin solo admite archivos de volcado de la versión 1. Se obtuvo un archivo de volcado con la versión %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Error: la versión del archivo volcado no es compatible. Esta versión del monedero de Vertcoin solo admite archivos de volcado de la versión 1. Se obtuvo un archivo de volcado con la versión %s.</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

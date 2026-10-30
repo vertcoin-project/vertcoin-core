@@ -79,12 +79,12 @@
         <translation>خطایی به هنگام ذخیره لیست آدرس در %1 رخ داده است. لطفا دوباره تلاش کنید.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>برای ایجاد آدرس های جدید، دکمه دریافت آدرس جدید را در برگه دریافت ایجاد کنید. امضا فقط با آدرس هایی از نوع "میراث" امکان پذیر است.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>اینها آدرس های بیت کوین شما برای ارسال پرداخت هستند.  همیشه قبل از ارسال سکه، مبلغ و آدرس دریافت کننده را بررسی کنید.</translation>
     </message>
 </context>
@@ -156,7 +156,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>دیالوگ رمزعبور</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>به یاد داشته باشید که رمزگذاری کیف پول شما نمی تواند به طور کامل از سرقت بیت کوین شما در اثر آلوده شدن رایانه به بدافزار محافظت کند.
  </translation>
     </message>
@@ -216,7 +216,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
  </translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>هشدار: اگر کیف پول خود را رمزگذاری کنید و عبارت خود را گام کنید ، این کار را انجام می دهید &lt;b&gt;تمام کویت های خود را از دست &lt;/b&gt;استفاده کنید!
 </translation>
     </message>
@@ -256,7 +256,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>کلاینت: %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -506,7 +506,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
  </translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>بارک کردن یک بیت‌کوین: URI</translation>
     </message>
     <message>
@@ -547,7 +547,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>از "درخواست نامه"/ application خارج شو</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>درخواست پرداخت (ساخت کد QR و بیت‌کوین: URIs)</translation>
     </message>
     <message>
@@ -561,7 +561,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>بازیابی کیف پول…</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>ارسال کوین به آدرس بیت کوین</translation>
     </message>
     <message>
@@ -599,7 +599,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ثبت &amp;پیام</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>پیام‌ها را با آدرس بیت‌کوین خود امضا کنید تا مالکیت آن‌ها را اثبات کنید</translation>
     </message>
     <message>
@@ -629,7 +629,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>به روز</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>پیام ها را تأیید کنید تا مطمئن شوید با آدرس های مشخص شده بیت کوین امضا شده اند
  </translation>
     </message>
@@ -920,7 +920,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>آدرس وارد شده "%1" در حال حاظر در دفترچه آدرس ها موجود است با برچسب "%2" .</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>آدرس وارد شده "%1" آدرس معتبر بیت کوین نیست.</translation>
     </message>
     <message>
@@ -995,7 +995,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>حداقل %1 گیگابایت اطلاعات در این شاخه ذخیره خواهد شد، که به مرور زمان افزایش خواهد یافت.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>بیت کوین</translation>
     </message>
     <message>
@@ -1097,7 +1097,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>سرعت افزایش پیشرفت بر ساعت</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>معاملات اخیر ممکن است هنوز قابل مشاهده نباشند ، بنابراین ممکن است موجودی کیف پول شما نادرست باشد. به محض اینکه همگام سازی کیف پول شما با شبکه بیت کوین به پایان رسید ، این اطلاعات درست خواهد بود ، همانطور که در زیر توضیح داده شده است.
  </translation>
     </message>
@@ -1194,7 +1194,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>اجازه ورود و اتصالات</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>باز کردن خودکار پورت کلاینت بیت‌کوین روی روتر. این ویژگی تنها زمانی کار می‌کند که روتر شما از PCP یا NAT-PMP پشتیبانی کند و این قابلیت فعال باشد. پورت خارجی ممکن است به‌صورت تصادفی انتخاب شود.</translation>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
   </translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>از طریق یک پروکسی SOCKS5 به شبکه بیت کوین متصل شوید.</translation>
     </message>
     <message>
@@ -1455,8 +1455,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>تراکنش های اخیر</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه Bitcoin همگام سازی می شود ، اما این روند هنوز کامل نشده است.
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه Vertcoin همگام سازی می شود ، اما این روند هنوز کامل نشده است.
  </translation>
     </message>
     <message>
@@ -1558,7 +1558,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>نمی توان درخواست پرداخت را پردازش کرد زیرا BIP70 پشتیبانی نمی شود. به دلیل نقص های امنیتی گسترده در BIP70، اکیداً توصیه می شود که هر دستورالعمل فروشنده برای تغییر کیف پول نادیده گرفته شود. اگر این خطا را دریافت می کنید، باید از فروشنده درخواست کنید که یک URI سازگار با BIP21 ارائه دهد.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>نمی توان بیت کوین را شروع کرد: کنترل کننده کلیک برای پرداخت
  </translation>
     </message>
@@ -1720,7 +1720,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تعبیه شده%1</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>آدرس بیت کوین را وارد کنید (به طور مثال %1)</translation>
     </message>
     <message>
@@ -1963,7 +1963,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>فعالیت شبکه غیر فعال شد</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>آدرس‌های شبکه ای که گره بیت کوین شما در حال حاضر از آنها برای ارتباط با گره های دیگر استفاده می کند.</translation>
     </message>
     <message>
@@ -2096,7 +2096,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
  </translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>یک پیام اختیاری برای پیوست به درخواست پرداخت ، که با باز شدن درخواست نمایش داده می شود. توجه: پیام با پرداخت از طریق شبکه بیت کوین ارسال نمی شود.
  </translation>
     </message>
@@ -2428,7 +2428,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>هشدار:تخمین کارمزد در حال حاضر امکان پذیر نیست.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>هشدار: آدرس بیت کوین نامعتبر</translation>
     </message>
     <message>
@@ -2480,8 +2480,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>پاک کردن این ورودی</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>آدرس Bitcoin برای ارسال پرداخت به
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>آدرس Vertcoin برای ارسال پرداخت به
  </translation>
     </message>
     <message>
@@ -2576,7 +2576,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>ثبت &amp;پیام</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>پیام را امضا کنید تا ثابت کنید این آدرس بیت‌کوین متعلق به شماست</translation>
     </message>
     <message>
@@ -2588,11 +2588,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>امضا - امضاء کردن / تأیید کنید یک پیام</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>نشانی بیت‌کوین که پیغام با آن امضاء شده</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>نشانی بیت‌کوین برای امضاء پیغام با آن</translation>
     </message>
     <message>
@@ -2621,8 +2621,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>تایید پیام</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>پیام را تأیید کنید تا مطمئن شوید با آدرس Bitcoin مشخص شده امضا شده است
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>پیام را تأیید کنید تا مطمئن شوید با آدرس Vertcoin مشخص شده امضا شده است
  </translation>
     </message>
     <message>
@@ -2631,7 +2631,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
  </translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>می‌توانید پیام‌ها/توافق‌نامه‌هایی را با آدرس‌های قدیمی خود (P2PKH) امضا کنید تا ثابت کنید که می‌توانید بیت‌کوین‌های ارسال شده برای آنها را دریافت کنید. مراقب باشید هیچ چیز مبهم یا تصادفی را امضا نکنید، زیرا حملات فیشینگ ممکن است سعی کنند شما را فریب دهند تا با هویت خود آنها را امضا کنید. فقط اظهارات کاملاً مفصلی را که قابل قبول هستند را امضا کنید.</translation>
     </message>
 </context>

@@ -92,14 +92,14 @@
         <translation>Kulikuwa na kosa jaribu kuokoa orodha ya anwani kwa %1. Tafadhali jaribu tena.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Hizi ndizo anwani zako za Bitcoin za kupokea malipo. Tumia kitufe cha 'Unda anwani mpya ya kupokea' kwenye kichupo cha kupokea ili kuunda anwani mpya.
+        <translation>Hizi ndizo anwani zako za Vertcoin za kupokea malipo. Tumia kitufe cha 'Unda anwani mpya ya kupokea' kwenye kichupo cha kupokea ili kuunda anwani mpya.
 Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hizi ndizo anwani zako za kutuma malipo ya sarafu ya Bitcoin. Hakikisha kila wakati kiwango na anwani ya kupokea kabla ya kutuma sarafu.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hizi ndizo anwani zako za kutuma malipo ya sarafu ya Vertcoin. Hakikisha kila wakati kiwango na anwani ya kupokea kabla ya kutuma sarafu.</translation>
     </message>
 </context>
 <context>
@@ -173,8 +173,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Mabadiliko ya nenosiri hayajafanikiwa</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Kumbuka kwamba usimbaji fiche wa mkoba wako hauwezi kulinda bitcoins zako zisiibiwe na programu hasidi kuambukiza kompyuta yako.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Kumbuka kwamba usimbaji fiche wa mkoba wako hauwezi kulinda vertcoins zako zisiibiwe na programu hasidi kuambukiza kompyuta yako.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -229,8 +229,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Wallet itasimbwa kwa njia fiche</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Ilani: Ikiwa utasimba pochi yako na ukapoteza nenosiri lako, &lt;b&gt; UTAPOTEZA BITCOIN ZAKO ZOTE &lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Ilani: Ikiwa utasimba pochi yako na ukapoteza nenosiri lako, &lt;b&gt; UTAPOTEZA VERTCOIN ZAKO ZOTE &lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -286,7 +286,7 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>%1 mteja</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -556,8 +556,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Fungua Pochi</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Fungua bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Fungua vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -596,8 +596,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Acha programu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Omba malipo (huzalisha nambari za QR na bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Omba malipo (huzalisha nambari za QR na vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -619,8 +619,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Jinsi &amp; jinsi</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Tuma sarafu kwa anwani ya Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Tuma sarafu kwa anwani ya Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -644,8 +644,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Onyesha habari kuhusu Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Onyesha %1 ujumbe wa usaidizi ili kupata orodha na chaguo zinazowezekana za mstari wa amri za Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Onyesha %1 ujumbe wa usaidizi ili kupata orodha na chaguo zinazowezekana za mstari wa amri za Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -660,8 +660,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Saini &amp;ujumbe...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Saini ujumbe na anwani zako za Bitcoin ili kuthibitisha umiliki wao.</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Saini ujumbe na anwani zako za Vertcoin ili kuthibitisha umiliki wao.</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -689,8 +689,8 @@ Kutia sahihi kunawezekana tu kwa anwani za aina ya 'urithi'.</translation>
         <translation>Imesasishwa</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Hakikisha ujumbe umethibitishwa kuwa ulisainiwa na anwani za Bitcoin zilizotajwa</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Hakikisha ujumbe umethibitishwa kuwa ulisainiwa na anwani za Vertcoin zilizotajwa</translation>
     </message>
     <message>
         <source>Wallet Data</source>

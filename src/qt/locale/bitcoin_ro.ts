@@ -96,14 +96,14 @@
         <translation>A apărut o eroare la salvarea listei de adrese la %1. Vă rugăm să încercaţi din nou.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Acestea sunt adresele Bitcoin pentru primirea plăților. Folosiți butonul " Creați o nouă adresă de primire" din fila de primire pentru a crea noi adrese.
+        <translation>Acestea sunt adresele Vertcoin pentru primirea plăților. Folosiți butonul " Creați o nouă adresă de primire" din fila de primire pentru a crea noi adrese.
 Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale Bitcoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale Vertcoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
 </context>
 <context>
@@ -177,8 +177,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Schimbarea frazei de acces a eșuat</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Reţineti: criptarea portofelului dvs. nu vă poate proteja în totalitate bitcoin-urile împotriva furtului de malware care vă infectează computerul.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Reţineti: criptarea portofelului dvs. nu vă poate proteja în totalitate vertcoin-urile împotriva furtului de malware care vă infectează computerul.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -237,8 +237,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Deblocarea portofelului a esuat.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Atenţie: Dacă va criptati portofelul si ulterior pierdeti parola, &lt;b&gt;VEŢI PIERDE TOTI BITCOINII&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Atenţie: Dacă va criptati portofelul si ulterior pierdeti parola, &lt;b&gt;VEŢI PIERDE TOTI VERTCOINII&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -294,7 +294,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Client %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -576,8 +576,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Deschide portofel</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Deschidere bitcoin: o adresa URI sau o cerere de plată</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Deschidere vertcoin: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -616,8 +616,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Închide aplicaţia</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi bitcoin-uri: URls)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Cereţi plăţi (generează coduri QR şi vertcoin-uri: URls)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -639,8 +639,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>A&amp;rata</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Trimite monede către o adresă Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Trimite monede către o adresă Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -664,8 +664,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Arată informaţii despre Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -680,8 +680,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Semnați și transmiteți un mesaj...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. Bitcoin pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. Vertcoin pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -710,8 +710,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Actualizat</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Bitcoin specificată</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Vertcoin specificată</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1008,8 +1008,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Adresa introdusa "%1" este deja in lista de adrese cu eticheta "%2"</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Adresa introdusă "%1" nu este o adresă Bitcoin validă.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Adresa introdusă "%1" nu este o adresă Vertcoin validă.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1061,8 +1061,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 va descarca si stoca o copie a blockchainului Bitcoin</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 va descarca si stoca o copie a blockchainului Vertcoin</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1195,8 +1195,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Incercarea de a cheltui bitcoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Incercarea de a cheltui vertcoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
     </message>
     <message>
         <source>Esc</source>
@@ -1227,8 +1227,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Cresterea progresului per ora</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Bitcoin, asa cum este detaliat mai jos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Vertcoin, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
         <source>Unknown…</source>
@@ -1242,8 +1242,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>DeschidețI Bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>DeschidețI Vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1340,7 +1340,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de bitcoin.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de vertcoin.</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1363,12 +1363,12 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Confirmă resetarea opţiunilor</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua Bitcoin printr-un proxy SOCKS.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua Vertcoin printr-un proxy SOCKS.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Conectați-vă la rețeaua Bitcoin printr-un proxy SOCKS5 separat pentru serviciile Tor onion.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Conectați-vă la rețeaua Vertcoin printr-un proxy SOCKS5 separat pentru serviciile Tor onion.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1471,7 +1471,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa bitcoin pe care aţi specificat-o nu este validă.</translation>
+        <translation>Adresa vertcoin pe care aţi specificat-o nu este validă.</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
@@ -1540,8 +1540,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Tranzacţii recente</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Bitcoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Vertcoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1647,12 +1647,12 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' nu este un URI valid. Folositi 'bitcoin:' in loc.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' nu este un URI valid. Folositi 'vertcoin:' in loc.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin nu poate porni: click-to-pay handler</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoin nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1663,8 +1663,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>Manipulare fişier cerere de plată</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă Bitcoin invalidă sau parametri URI deformaţi.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă Vertcoin invalidă sau parametri URI deformaţi.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1798,8 +1798,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation>„%1” încorporat</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Introduceţi o adresă Bitcoin (de exemplu %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Introduceţi o adresă Vertcoin (de exemplu %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2211,8 +2211,8 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>O etichetă opţională de asociat cu adresa de primire.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Vertcoin.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2632,8 +2632,8 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>Avertisment: Estimarea comisionului nu s-a putut efectua.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Atenţie: Adresa bitcoin nevalidă!</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Atenţie: Adresa vertcoin nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2659,8 +2659,8 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>&amp;Etichetă:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>un mesaj a fost ataşat la bitcoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>un mesaj a fost ataşat la vertcoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua vertcoin.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2695,16 +2695,16 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>S&amp;cade taxa din suma</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Adresa bitcoin către care se face plata</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Adresa vertcoin către care se face plata</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Cantitatea de trimis în unitatea selectată</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini bitcoin decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini vertcoin decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2808,8 +2808,8 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>Semnează &amp;mesaj</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Bitcoin</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Vertcoin</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2820,11 +2820,11 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>Semnaturi - Semnează/verifică un mesaj</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Introduceţi o adresă Bitcoin</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Introduceţi o adresă Vertcoin</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -2852,8 +2852,8 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
         <translation>Verifică &amp;mesaj</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Bitcoin specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Vertcoin specificată</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>

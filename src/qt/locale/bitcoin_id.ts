@@ -88,13 +88,13 @@
         <translation>Terjadi kesalahan saat mencoba menyimpan daftar alamat ke %1. Silakan coba lagi.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ini adalah alamat-alamat bitcoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di atas tab menerima untuk membuat alamat baru. Tanda tangan hanya bisa digunakan dengan tipe alamat 'Lama'</translation>
+        <translation>Ini adalah alamat-alamat vertcoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di atas tab menerima untuk membuat alamat baru. Tanda tangan hanya bisa digunakan dengan tipe alamat 'Lama'</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Berikut ialah alamat-alamat Vertcoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
 </context>
 <context>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Penggantian frasa sandi gagal</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi bitcoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi vertcoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -223,8 +223,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Membuka dompet gagal</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA VERTCOIN ANDA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -280,7 +280,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 klien</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /></translation>
     </message>
@@ -524,8 +524,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Buka Wallet</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Buka URI bitcoin:</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Buka URI vertcoin:</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -564,8 +564,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Keluar dari aplikasi</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Permintaan pembayaran (membuat kode QR dan vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -583,8 +583,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Pulihkan dompet dari file cadangan</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Kirim koin ke alamat Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Kirim koin ke alamat Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -608,8 +608,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tampilkan informasi mengenai Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bitcoin yang memungkinkan</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Vertcoin yang memungkinkan</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -624,8 +624,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tanda tangani dan kirim pessan...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Bitcoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Vertcoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -654,8 +654,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Terbaru</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Bitcoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Vertcoin tertentu</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -914,8 +914,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Alamat "%1" yang dimasukkan sudah ada di dalam buku alamat dengan label "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Bitcoin yang valid.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Vertcoin yang valid.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -967,8 +967,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan rantai blok Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 akan mengunduh dan menyimpan salinan rantai blok Vertcoin.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1129,8 +1129,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>%1 menyinkronkan. Program ini akan mengunduh header dan blok dari rekan dan memvalidasi sampai blok terbaru.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Usaha untuk menggunakan bitcoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Usaha untuk menggunakan vertcoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
         <source>Esc</source>
@@ -1165,8 +1165,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Peningkatan perkembangan per jam</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Bitcoin, seperti rincian berikut.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Vertcoin, seperti rincian berikut.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1188,8 +1188,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Buka URI bitcoin:</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Buka URI vertcoin:</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1313,12 +1313,12 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Memastikan reset pilihan</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Bitcoin melalui SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Hubungkan ke jaringan Vertcoin melalui SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Hubungkan kepada Bitcoin network menggunakan proxy SOCKS5 yang terpisah untuk servis Tor onion</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Hubungkan kepada Vertcoin network menggunakan proxy SOCKS5 yang terpisah untuk servis Tor onion</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1548,8 +1548,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Transaksi-transaksi terkini</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Bitcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Vertcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1686,12 +1686,12 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' bukanlah alamat URI yang valid. Silakan gunakan 'bitcoin:'.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' bukanlah alamat URI yang valid. Silakan gunakan 'vertcoin:'.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Tidak bisa memulai bitcoin: handler click-to-pay</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Tidak bisa memulai vertcoin: handler click-to-pay</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1702,8 +1702,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Pengelolaan file permintaan pembayaran</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI tidak bisa dimengerti! Hal ini bisa disebabkan karena alamat Bitcoin yang tidak sah atau parameter URI yang tidak tepat.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI tidak bisa dimengerti! Hal ini bisa disebabkan karena alamat Vertcoin yang tidak sah atau parameter URI yang tidak tepat.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1812,8 +1812,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Di embed "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Masukkan alamat Bitcoin (contoh %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Masukkan alamat Vertcoin (contoh %1)</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -1998,8 +1998,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Aktivitas jaringan nonaktif</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Alamat jaringan yang saat ini digunakan oleh node Bitcoin Anda untuk berkomunikasi dengan node lain.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Alamat jaringan yang saat ini digunakan oleh node Vertcoin Anda untuk berkomunikasi dengan node lain.</translation>
     </message>
     <message>
         <source>No</source>
@@ -2184,8 +2184,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Pesan opsional yang dilampirkan di permintaan pembayaran dan dapat ditampilkan ke pengirim.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Pesan opsional untuk dilampirkan ke permintaan pembayaran, yang akan ditampilkan ketika permintaan dibuka. Catatan: Pesan tidak akan dikirim dengan pembayaran melalui jaringan Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Pesan opsional untuk dilampirkan ke permintaan pembayaran, yang akan ditampilkan ketika permintaan dibuka. Catatan: Pesan tidak akan dikirim dengan pembayaran melalui jaringan Vertcoin.</translation>
     </message>
     <message>
         <source>Bech32m (BIP-350) is an upgrade to Bech32, wallet support is still limited.</source>
@@ -2569,16 +2569,16 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Peringatan: Perkiraan biaya saat ini tidak memungkinkan.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Peringatan: Alamat Bitcoin tidak valid</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Peringatan: Alamat Vertcoin tidak valid</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Peringatan: Alamat tidak dikenal</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Ketika volume transaksi lebih sedikit daripada ruang di blok, penambang serta simpul yang menyiarkanikan dapat memberlakukan biaya minimum. Anda boleh hanya membayar biaya minimum, tetapi perlu diketahui bahwa ini dapat menghasilkan transaksi yang tidak pernah dikonfirmasi setelah ada lebih banyak permintaan untuk transaksi bitcoin daripada yang dapat diproses jaringan.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Ketika volume transaksi lebih sedikit daripada ruang di blok, penambang serta simpul yang menyiarkanikan dapat memberlakukan biaya minimum. Anda boleh hanya membayar biaya minimum, tetapi perlu diketahui bahwa ini dapat menghasilkan transaksi yang tidak pernah dikonfirmasi setelah ada lebih banyak permintaan untuk transaksi vertcoin daripada yang dapat diproses jaringan.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -2592,8 +2592,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Pesan yang dilampirkan ke bitcoin: URI yang akan disimpan dengan transaksi untuk referensi Anda. Catatan: Pesan ini tidak akan dikirim melalui jaringan Bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Pesan yang dilampirkan ke vertcoin: URI yang akan disimpan dengan transaksi untuk referensi Anda. Catatan: Pesan ini tidak akan dikirim melalui jaringan Vertcoin.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2636,16 +2636,16 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Kurangi biaya dari jumlah</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Alamat Bitcoin untuk mengirim pembayaran</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Alamat Vertcoin untuk mengirim pembayaran</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Jumlah yang ingin dikirim dalam unit yang dipilih</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Biaya akan diambil dari jumlah yang dikirim. Penerima akan menerima bitcoin lebih sedikit daripada yang di masukkan di bidang jumlah. Jika ada beberapa penerima, biaya dibagi rata.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Biaya akan diambil dari jumlah yang dikirim. Penerima akan menerima vertcoin lebih sedikit daripada yang di masukkan di bidang jumlah. Jika ada beberapa penerima, biaya dibagi rata.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2746,8 +2746,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Tandakan &amp;Pesan</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Bitcoin ini</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Vertcoin ini</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2758,12 +2758,12 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Tanda Tangan / Verifikasi sebuah Pesan</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Alamat Bitcoin yang menandatangani pesan</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Alamat Vertcoin yang menandatangani pesan</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Alamat Bitcoin untuk menandatangani pesan</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Alamat Vertcoin untuk menandatangani pesan</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -2794,16 +2794,16 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation>Verifikasi &amp;Pesan</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifikasi pesan untuk memastikannya ditandatangani dengan alamat Bitcoin tersebut</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifikasi pesan untuk memastikannya ditandatangani dengan alamat Vertcoin tersebut</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Pembukaan kunci dompet dibatalkan.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Anda dapat menandatangani pesan/perjanjian dengan alamat (P2PKH) Anda untuk membuktikan bahwa Anda dapat menerima bitcoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani sesuatu yang tidak jelas atau acak, karena serangan phishing mungkin mencoba menipu Anda agar menyerahkan identitas Anda kepada mereka. Hanya tandatangani pernyataan lengkap yang Anda setujui.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Anda dapat menandatangani pesan/perjanjian dengan alamat (P2PKH) Anda untuk membuktikan bahwa Anda dapat menerima vertcoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani sesuatu yang tidak jelas atau acak, karena serangan phishing mungkin mencoba menipu Anda agar menyerahkan identitas Anda kepada mereka. Hanya tandatangani pernyataan lengkap yang Anda setujui.</translation>
     </message>
 </context>
 <context>

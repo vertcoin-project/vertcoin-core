@@ -96,12 +96,12 @@
         <translation>پتا فہرست محفوظ کرتے ہوئے %1 نقص کا سامنا ہوا۔ دوبارہ کوشش کریں۔</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ادائیگیوں کے لئے آپ کے بٹ کوائن ایڈریس ہیں۔ نئے پتے بنانے کے لئے وصول کنندہ ٹیب میں 'نیا وصول کنندہ پتہ بنائیں' بٹن کا استعمال کریں۔دستخط صرف 'میراثی' قسم کے پتے کے ساتھ ہی ممکن ہے۔</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>یہ آپ کے ادائیگی بھیجنے کے لئے بٹ کوائن ایڈریس ہیں.سکے بھیجنے سے پہلے ہمیشہ رقم اور وصول کنندہ پتہ چیک کریں۔</translation>
     </message>
 </context>
@@ -175,7 +175,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>پاس فریز کی تبدیلی ناکام ہوگئی</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>یاد رکھیں کہ آپ کے پرس کو خفیہ کرنا آپ کے بٹ کوائنز کو میلویئر/چور سے آپ کے کمپیوٹر میں انفیکشن لگانے کے ذریعہ چوری ہونے سے پوری طرح محفوظ نہیں رکھ سکتا ہے۔</translation>
     </message>
     <message>
@@ -235,7 +235,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>والیٹ انلاک ناکام ہوگیا</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>انتباہ: اگر آپ اپنا بٹوہ انکرپٹ کرتے ہیں اور اپنا پاس فریز کھو دیتے ہیں تو ، آپ اپنے تمام بٹکوئنز کھو دیں گے.</translation>
     </message>
     <message>
@@ -292,7 +292,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>'%1'کلائنٹ</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -566,7 +566,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>والیٹ کھولیں</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>بٹ کوائن کا یو۔آر۔آئی۔ کھولیں</translation>
     </message>
     <message>
@@ -602,7 +602,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>درخواست چھوڑ دیں</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>ادائیگی کی درخواست کریں: ( کوئیک رسپانس ( کیو۔آر ) کوڈ اور بٹ کوائن ( یونیورسل ادائیگیوں کا نظام) کے ذریعے سے</translation>
     </message>
     <message>
@@ -634,7 +634,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>والیٹ فائل کو بحال اور منتقل کریں…</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>بٹ کوائن ایڈریس پر سکے بھیجیں</translation>
     </message>
     <message>
@@ -659,7 +659,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Qt کے بارے میں معلومات دکھائیں</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>ممکنہ بٹ کوائن کمانڈ لائن اختیارات کے ساتھ فہرست حاصل کرنے کے لیے %1 مدد کا پیغام دکھائیں۔</translation>
     </message>
     <message>
@@ -675,7 +675,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>سائن اور پیغام…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>اپنے ویکیپیڈیا پتوں کے ساتھ پیغامات پر دستخط کریں تاکہ آپ ان کے مالک ہوں</translation>
     </message>
     <message>
@@ -705,7 +705,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>سب سے نیا</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>پیغامات کی توثیق کریں تاکہ یہ یقینی بن سکے کہ ان پر بٹ کوائن کے مخصوص پتوں پر دستخط ہوئے ہیں</translation>
     </message>
     <message>
@@ -1032,7 +1032,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>درج کردہ ایڈریس "%1" پہلے سے ہی ایڈریس بک میں لیبل "%2" کے ساتھ موجود ہے۔</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>درج کردہ ایڈریس "%1" ایک درست بٹ کوائن ایڈریس نہیں ہے۔</translation>
     </message>
     <message>
@@ -1085,7 +1085,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>جی بی</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 بٹ کوائن بلاک چین کی ایک کاپی ڈاؤن لوڈ اور اسٹور کرے گی۔</translation>
     </message>
     <message numerus="yes">
@@ -1110,7 +1110,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>اس ڈائریکٹری میں تقریباً %1 GB ڈیٹا اسٹور کیا جائے گا۔</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>بٹ کوائن</translation>
     </message>
     <message>
@@ -1213,7 +1213,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>ایسے بٹ کوائنز خرچ کرنے کی کوشش کرنا جو ابھی تک ظاہر نہ ہونے والے لین دین سے متاثر ہوں نیٹ ورک کے ذریعے قبول نہیں کیا جائے گا۔</translation>
     </message>
     <message>
@@ -1245,7 +1245,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>فی گھنٹہ پیش رفت میں اضافہ</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>ہو سکتا ہے حالیہ لین دین ابھی تک نظر نہ آئے، اور اس وجہ سے آپ کے والیٹ کا بیلنس غلط ہو سکتا ہے۔ یہ معلومات درست ہوں گی جب آپ کے والیٹ نے بٹ کوائن نیٹ ورک کے ساتھ مطابقت پذیری مکمل کر لی ہو، جیسا کہ ذیل میں تفصیل ہے۔</translation>
     </message>
     <message>
@@ -1260,7 +1260,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>بٹ کوائن URI کھولیں۔</translation>
     </message>
     <message>
@@ -1321,7 +1321,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>باہر سے رابطے قبول کری</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>"بٹ کوائن کلائنٹ پورٹ کو روٹر پر خودکار طور پر کھولیں۔ یہ صرف اس وقت کام کرتا ہے جب آپ کا روٹر PCP یا NAT-PMP کو سپورٹ کرتا ہو اور یہ فعال ہو۔ بیرونی پورٹ بے ترتیب ہو سکتا ہے۔</translation>
     </message>
     <message>
@@ -1358,12 +1358,12 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>اختیارات کو دوبارہ ترتیب دینے کی تصدیق کریں۔</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>بٹ کوائن نیٹ ورک سے SOCKS5 پراکسی کے ذریع
 ے رابطہ کریں"</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>ور آنین سروسز کے لیے الگ SOCKS5 پراکسی کے ذریعے بٹ کوائن نیٹ ورک سے رابطہ کریں</translation>
     </message>
     <message>
@@ -1565,7 +1565,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>حالیہ لین دین</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>ظاہر کی گئی معلومات پرانی ہو سکتی ہے۔ کنکشن قائم ہونے کے بعد آپ کا والیٹ خود بخود بٹ کوائن نیٹ ورک کے ساتھ ہم آہنگ ہوجاتا ہے، لیکن یہ عمل ابھی مکمل نہیں ہوا ہے۔</translation>
     </message>
     <message>
@@ -1714,7 +1714,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>ادائیگی کی درخواست پر کارروائی نہیں کی جا سکتی کیونکہ BIP70 تعاون یافتہ نہیں ہے۔ BIP70 میں سیکورٹی کی وسیع خامیوں کی وجہ سے یہ پرزور مشورہ دیا جاتا ہے کہ والیٹ کو تبدیل کرنے کے لیے کسی بھی تاجر کی ہدایات کو نظر انداز کر دیا جائے۔ اگر آپ کو یہ خرابی موصول ہو رہی ہے تو آپ کو مرچنٹ سے BIP21 مطابقت پذیر URI فراہم کرنے کی درخواست کرنی چاہیے۔</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>کوائن شروع نہیں کیا جا سکتا: کلک کرکے ادائیگی کرنے والا ہینڈلر۔</translation>
     </message>
     <message>
@@ -1726,7 +1726,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>ادائیگی کی درخواست فائل کا انتظام</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>URI کو پارس نہیں کیا جا سکتا! اس کی وجہ ایک غلط بٹ کوائن ایڈریس یا خراب URI پیرا میٹرز ہو سکتے ہیں۔</translation>
     </message>
     <message>
@@ -2201,7 +2201,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>ایک اختیاری پیغام جو ادائیگی کی درخواست کے ساتھ منسلک ہے اور بھیجنے والے کو دکھایا جا سکتا ہے۔</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>ادائیگی کی درخواست کے ساتھ منسلک کرنے کے لیے ایک اختیاری پیغام، جو درخواست کے کھلنے پر ظاہر ہوگا۔ نوٹ: پیغام بٹ کوائن نیٹ ورک پر ادائیگی کے ساتھ نہیں بھیجا جائے گا۔</translation>
     </message>
     <message>
@@ -2510,7 +2510,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>انتباہ: فیس کا تخمینہ فی الحال ممکن نہیں ہے۔</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>انتباہ: غلط بٹ کوائن ایڈریس</translation>
     </message>
     <message>
@@ -2557,7 +2557,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>اس اندراج کو ہٹا دیں۔</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>ادائیگی بھیجنے کے لیے بٹ کوائن کا پتہ</translation>
     </message>
     <message>
@@ -2565,7 +2565,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>منتخب یونٹ میں بھیجی جانے والی رقم</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>بھیجی جانے والی رقم سے فیس کاٹی جائے گی۔ وصول کنندہ کو اس سے کم بٹ کوائنز موصول ہوں گے جو آپ رقم کے خانے میں داخل کریں گے۔ اگر متعدد وصول کنندگان کو منتخب کیا جاتا ہے، تو فیس کو برابر تقسیم کیا جاتا ہے۔</translation>
     </message>
     <message>
@@ -2627,7 +2627,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>دستخط - ایک پیغام پر دستخط / تصدیق کریں۔</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>پیغام پر دستخط کرنے کے لیے بٹ کوائن کا پتہ</translation>
     </message>
     <message>

@@ -87,8 +87,8 @@
         <translation>เกิดข้อผิดพลาดขณะพยายามบันทึกรายการที่อยู่ไปยัง %1 โปรดลองอีกครั้ง</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>ที่อยู่ Bitcoin ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่รับก่อนที่จะส่งเหรียญ</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>ที่อยู่ Vertcoin ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่รับก่อนที่จะส่งเหรียญ</translation>
     </message>
 </context>
 <context>
@@ -234,7 +234,7 @@
         <translation>%1 ลูกค้า</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /></translation>
     </message>
@@ -499,8 +499,8 @@
         <translation>ออกจากแอปพลิเคชัน</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -522,8 +522,8 @@
         <translation>แสดง</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>ส่งเหรียญไปยังที่อยู่ Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>ส่งเหรียญไปยังที่อยู่ Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -547,24 +547,24 @@
         <translation>แสดงข้อมูลเกี่ยวกับ Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Bitcoin command-line</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Vertcoin command-line</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bitcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ vertcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bitcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง vertcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Sign &amp;message…</source>
         <translation>ป้าย &amp; ข้อความ…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Bitcoin เพื่อแสดงว่าท่านเป็นเจ้าของ bitcoin นี้จริง</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Vertcoin เพื่อแสดงว่าท่านเป็นเจ้าของ vertcoin นี้จริง</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -593,8 +593,8 @@
         <translation>ทันสมัย</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Bitcoin แล้ว</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Vertcoin แล้ว</translation>
     </message>
     <message>
         <source>Wallet Name</source>
@@ -1104,8 +1104,8 @@
         <translation>ตัวเลือกการกำหนดค่า</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>เชื่อมต่อกับ Bitcoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>เชื่อมต่อกับ Vertcoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1568,8 +1568,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>ที่อยู่ท้องถิ่น</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>ที่อยู่เครือข่ายที่โหนด Bitcoin ของคุณกำลังใช้ในการสื่อสารกับโหนดอื่นๆ</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>ที่อยู่เครือข่ายที่โหนด Vertcoin ของคุณกำลังใช้ในการสื่อสารกับโหนดอื่นๆ</translation>
     </message>
     <message>
         <source>Node window</source>

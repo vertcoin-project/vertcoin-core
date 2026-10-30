@@ -96,13 +96,13 @@
         <translation>Hiba történt a címlista %1 mentésekor.  Kérem próbálja újra.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ezek a Bitcoin címeid amelyeken fogadni tudsz Bitcoin utalásokat. Az "Új cím létrehozása" gombbal tudsz új címet létrehozni. Aláírni csak korábbi egyessel kezdődő címekkel lehet.</translation>
+        <translation>Ezek a Vertcoin címeid amelyeken fogadni tudsz Vertcoin utalásokat. Az "Új cím létrehozása" gombbal tudsz új címet létrehozni. Aláírni csak korábbi egyessel kezdődő címekkel lehet.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezek az Ön Bitcoin címei kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó fél címét mielőtt érméket küldene.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ezek az Ön Vertcoin címei kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó fél címét mielőtt érméket küldene.</translation>
     </message>
 </context>
 <context>
@@ -175,7 +175,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Jelmondat megváltoztatása sikertelen</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Ne feledd, hogy a tárca titkosítása nem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
@@ -235,8 +235,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>A tárca felnyitása nem sikerült</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Figyelem: Ha titkosítja a tárcáját és elveszíti a jelszavát, akkor &lt;b&gt;AZ ÖSSZES BITCOINJA ELVESZIK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Figyelem: Ha titkosítja a tárcáját és elveszíti a jelszavát, akkor &lt;b&gt;AZ ÖSSZES VERTCOINJA ELVESZIK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -296,9 +296,9 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 kliens</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>%n aktív kapcsolat a Bitcoin-hálózathoz.</numerusform><numerusform>%n aktív kapcsolat a Bitcoin-hálózathoz.</numerusform></translation>
+        <translation><numerusform>%n aktív kapcsolat a Vertcoin-hálózathoz.</numerusform><numerusform>%n aktív kapcsolat a Vertcoin-hálózathoz.</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -574,8 +574,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tárca megnyitása</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Bitcoin URI megnyitása</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Vertcoin URI megnyitása</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -614,8 +614,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Kilépés az alkalmazásból</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "bitcoin:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "vertcoin:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -650,8 +650,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;Mutat</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bitcoin küldése megadott címre</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Vertcoin küldése megadott címre</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -675,8 +675,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Információk a Qt-ról</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>A %1 súgó megjelenítése a Bitcoin lehetséges parancssori kapcsolóinak listájával</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>A %1 súgó megjelenítése a Vertcoin lehetséges parancssori kapcsolóinak listájával</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -691,8 +691,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Üzenet &amp;aláírása…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Bitcoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a Vertcoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -721,8 +721,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Naprakész</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Bitcoin-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Vertcoin-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1047,8 +1047,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>A megadott "%1" cím már szerepel a címjegyzékben "%2" néven.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Bitcoin-cím.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>A megadott "%1" cím nem egy érvényes Vertcoin-cím.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1100,8 +1100,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 fog letöltődni és a Bitcoin blokklánc egy másolatát fogja tárolni.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 fog letöltődni és a Vertcoin blokklánc egy másolatát fogja tárolni.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1290,8 +1290,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
         <translation>%1 szinkronizálás alatt. Fejléceket és blokkokat tölt le az ügyfelektől, majd érvényesíti, amíg el nem éri a blokklánc tetejét.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>A hálózat nem fogadja el azoknak a bitcoinoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>A hálózat nem fogadja el azoknak a vertcoinoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
     </message>
     <message>
         <source>Esc</source>
@@ -1326,8 +1326,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
         <translation>A folyamat előrehaladása óránként</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>A legutóbbi tranzakciók még lehet, hogy nem láthatók, és így előfordulhat, hogy a tárca egyenlege helytelen. A tárca azon nyomban az aktuális egyenleget fogja mutatni, amint befejezte a bitcoin hálózattal történő szinkronizációt, amely alább van részletezve.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>A legutóbbi tranzakciók még lehet, hogy nem láthatók, és így előfordulhat, hogy a tárca egyenlege helytelen. A tárca azon nyomban az aktuális egyenleget fogja mutatni, amint befejezte a vertcoin hálózattal történő szinkronizációt, amely alább van részletezve.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1349,8 +1349,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Nyisd meg a bitcoin címedet</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Nyisd meg a vertcoin címedet</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1450,8 +1450,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
         <translation>Bejövő kapcsolatok engedélyezése.</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>A Bitcoin kliens port automatikus megnyitása a routeren. Ez csak akkor működik, ha a router támogatja a PCP-t vagy NAT-PMP-t és engedélyezve is van. A külső port lehet véletlenszerűen választott.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>A Vertcoin kliens port automatikus megnyitása a routeren. Ez csak akkor működik, ha a router támogatja a PCP-t vagy NAT-PMP-t és engedélyezve is van. A külső port lehet véletlenszerűen választott.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1491,12 +1491,12 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
         <translation>Beállítások törlésének jóváhagyása.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Bitcoin hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Vertcoin hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Csatlakozás a Bitcoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Csatlakozás a Vertcoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1743,8 +1743,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
         <translation>A legutóbbi tranzakciók</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A kapcsolat létrehozatalát követően tárcája automatikusan szinkronba kerül a Bitcoin hálózattal, de ez a folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A kapcsolat létrehozatalát követően tárcája automatikusan szinkronba kerül a Vertcoin hálózattal, de ez a folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1902,8 +1902,8 @@ A migrálási folyamat a migrálás előtt biztonsági mentést készít a tárc
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' nem érvényes egységes erőforrás azonosító (URI). Használd helyette a 'bitcoin'-t.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' nem érvényes egységes erőforrás azonosító (URI). Használd helyette a 'vertcoin'-t.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1912,8 +1912,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>A fizetési kérelmet nem lehet feldolgozni, mert a BIP70 nem támogatott. A jól ismert biztonsági hiányosságok miatt a BIP70-re való váltásra történő felhívásokat hagyja figyelmen kívül. Amennyiben ezt az üzenetet látja kérjen egy új, BIP21 kompatibilis URI-t.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>A bitcoin nem tud elindulni: click-to-pay kezelő</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>A vertcoin nem tud elindulni: click-to-pay kezelő</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1924,8 +1924,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>Fizetés kérelmi fájl kezelése</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>Nem sikerült az URI elemzése! Ezt okozhatja érvénytelen Bitcoin cím, vagy rossz URI paraméterezés.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>Nem sikerült az URI elemzése! Ezt okozhatja érvénytelen Vertcoin cím, vagy rossz URI paraméterezés.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2077,8 +2077,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>Beágyazva "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Adjon meg egy Bitcoin-címet (pl.: %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Adjon meg egy Vertcoin-címet (pl.: %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2414,8 +2414,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>Hálózati tevékenység letiltva.</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Hálózati címek amelyeken keresztül jelenleg a Bitcoin csomópontja a többi csomóponttal kommunikál.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Hálózati címek amelyeken keresztül jelenleg a Vertcoin csomópontja a többi csomóponttal kommunikál.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2701,8 +2701,8 @@ Gépeljen %5 az elérhető parancsok áttekintéséhez. Több információért a
         <translation>Egy opcionális üzenet ami a fizetési kérelemhez van fűzve és valószínűleg meg lesz jelenítve a fizető oldalán.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a Bitcoin hálózaton keresztül.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a Vertcoin hálózaton keresztül.</translation>
     </message>
     <message>
         <source>Base58 (Legacy)</source>
@@ -3210,15 +3210,15 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>Figyelem: A hozzávetőleges díjszámítás jelenleg nem lehetséges.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Figyelmeztetés: Érvénytelen Bitcoin cím</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Figyelmeztetés: Érvénytelen Vertcoin cím</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Figyelmeztetés: Ismeretlen visszajáró cím</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>Ha kevesebb a tranzakció mint amennyi hely lenne egy blokkban, akkor a bányászok és a többi node megkövetelheti a minimum díjat. E minimum díjat fizetni elegendő lehet, de tudnod kell, hogy ez esetleg soha nem konfirmálódó tranzakciót eredményezhet ahogy a tranzakciók száma magasabb lesz mint a network által megengedett.</translation>
     </message>
     <message>
@@ -3241,8 +3241,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>Címke:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Egy üzenet a bitcoin: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a Bitcoin hálózaton keresztül.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Egy üzenet a vertcoin: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a Vertcoin hálózaton keresztül.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3277,16 +3277,16 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>&amp;Vonja le a díjat az összegből</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Erre a Bitcoin címre küldje az összeget</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Erre a Vertcoin címre küldje az összeget</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>A küldendő összeg a választott egységben.</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Az illeték le lesz vonva a küldött teljes összegből. A címzett kevesebb bitcoint fog megkapni, mint amennyit az összeg mezőben megadott. Amennyiben több címzett van kiválasztva, az illeték egyenlő mértékben lesz elosztva.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Az illeték le lesz vonva a küldött teljes összegből. A címzett kevesebb vertcoint fog megkapni, mint amennyit az összeg mezőben megadott. Amennyiben több címzett van kiválasztva, az illeték egyenlő mértékben lesz elosztva.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3398,7 +3398,7 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>Üzenet &amp;aláírása</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Üzenet</translation>
     </message>
     <message>
@@ -3410,12 +3410,12 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>Aláírások - üzenet aláírása/ellenőrzése</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin cím, amivel aláírta az üzenetet</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin cím, amivel aláírta az üzenetet</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin cím, amivel alá kívánja írni az üzenetet</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin cím, amivel alá kívánja írni az üzenetet</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3446,16 +3446,16 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation>Üzenet ellenőrzése</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt Bitcoin címmel van-e aláírva</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt Vertcoin címmel van-e aláírva</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Tárca megnyitása megszakítva</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Aláírhat üzeneteket/megállapodásokat a régí típusú (P2PKH) címeivel amivel bizonyítja, hogy fogadni és elkölteni is tudja az oda küldött bitcoint. Legyen óvatos és ne írjon alá semmilyen ködös vagy véletlenszerű üzenetet, mivel adathalászok megkísérelhetik rávenni a személyazonosságának átruházására. Csak olyan alaposan részletezett állításokat írjon alá amivel teljesen egyetért.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Aláírhat üzeneteket/megállapodásokat a régí típusú (P2PKH) címeivel amivel bizonyítja, hogy fogadni és elkölteni is tudja az oda küldött vertcoint. Legyen óvatos és ne írjon alá semmilyen ködös vagy véletlenszerű üzenetet, mivel adathalászok megkísérelhetik rávenni a személyazonosságának átruházására. Csak olyan alaposan részletezett állításokat írjon alá amivel teljesen egyetért.</translation>
     </message>
 </context>
 <context>
@@ -4325,8 +4325,8 @@ A tárca biztonsági mentésének visszaállítása sikertelen.</translation>
         <translation>Hiba: A dump fájl nem támogatott adatbázis-formátumot (%s) határoz meg. Csak az sqlite adatbázis-mentések támogatottak</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Hiba: A dump fájl verziója nem támogatott. A bitcoin-wallet ez a kiadása csak 1-es verziójú dump fájlokat támogat. A talált dump fájl verziója %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Hiba: A dump fájl verziója nem támogatott. A vertcoin-wallet ez a kiadása csak 1-es verziójú dump fájlokat támogat. A talált dump fájl verziója %s.</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

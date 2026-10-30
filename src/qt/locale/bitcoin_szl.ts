@@ -79,8 +79,8 @@
         <translation>Przitrefiōł sie feler w czasie spamiyntowaniŏ brify adres do %1. Proszã sprōbować zaś.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tukej sōm adresy Bitcoin na kere posyłŏsz płaty. Dycki wybaduj wielość i adresã ôdbiyrŏcza przed posłaniym mōnet.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tukej sōm adresy Vertcoin na kere posyłŏsz płaty. Dycki wybaduj wielość i adresã ôdbiyrŏcza przed posłaniym mōnet.</translation>
     </message>
 </context>
 <context>
@@ -173,8 +173,8 @@
         <translation>Ôdszperowanie portmanyja niy podarziło sie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Pozōr: jeźli zaszyfrujesz swōj portmanyj i stracisz hasło &lt;b&gt;STRACISZ WSZYJSKE SWOJE BITCOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Pozōr: jeźli zaszyfrujesz swōj portmanyj i stracisz hasło &lt;b&gt;STRACISZ WSZYJSKE SWOJE VERTCOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -203,7 +203,7 @@
         <translation>%1 klijynt</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -349,12 +349,12 @@
         <translation>Zawrzij aplikacyjõ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Żōndej płatu (gyneruje kod QR jak tyż URI bitcoin:)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Żōndej płatu (gyneruje kod QR jak tyż URI vertcoin:)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Poślij mōnety na adresã Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Poślij mōnety na adresã Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -373,7 +373,7 @@
         <translation>Pokŏż informacyje ô Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Pokŏż pōmoc %1 coby zobŏczyć wykŏz wszyjskich ôpcyji piski nakŏzań.</translation>
     </message>
     <message>
@@ -385,7 +385,7 @@
         <translation>Pokŏż wykŏz adres i etyket użytych do posyłaniŏ</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Podpisz wiadōmości swojōm adresōm coby dowiyść jejich posiadanie</translation>
     </message>
     <message>
@@ -407,8 +407,8 @@
         <translation>Terŏźny</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Zweryfikuj wiadōmość, coby wejzdrzeć sie, iże ôstała podpisanŏ podanōm adresōm Bitcoin.</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Zweryfikuj wiadōmość, coby wejzdrzeć sie, iże ôstała podpisanŏ podanōm adresōm Vertcoin.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -598,8 +598,8 @@
         <translation>Wkludzōnŏ adresa "%1" już je w ksiōnżce adres z ôpisym "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Wkludzōnŏ adresa "%1" niyma nŏleżnōm adresōm Bitcoin.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Wkludzōnŏ adresa "%1" niyma nŏleżnōm adresōm Vertcoin.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -643,8 +643,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 sebiere i spamiyntŏ kopijõ kety blokōw Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 sebiere i spamiyntŏ kopijõ kety blokōw Vertcoin.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -715,8 +715,8 @@
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Prōba wydaniŏ bitcoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Prōba wydaniŏ vertcoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -747,8 +747,8 @@
         <translation>Przirost postympu na godzinã</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym bitcoin, zgodnie z miyniōnym ôpisym.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym vertcoin, zgodnie z miyniōnym ôpisym.</translation>
     </message>
     </context>
 <context>
@@ -811,8 +811,8 @@
         <translation>Ôpcyje kōnfiguracyje</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Skupluj sie z necym Bitcoin bez SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Skupluj sie z necym Vertcoin bez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -914,8 +914,8 @@
         <translation>Czekajōnce:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym bitcoin zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym vertcoin zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -944,8 +944,8 @@
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' to niyma nŏleżne URI. Użyj 'bitcoin:'.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' to niyma nŏleżne URI. Użyj 'vertcoin:'.</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1030,8 +1030,8 @@
         <translation>Kwota</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Wkludź adresã Bitcoin (bp. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Wkludź adresã Vertcoin (bp. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -1177,8 +1177,8 @@
         <translation>&amp;Etyketa:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Ôpcyjōnalnŏ wiadōmość do prziwstōniŏ do żōndaniŏ płatu, kerŏ bydzie wyświytlanŏ, kej żōndanie ôstanie ôdewrzōne. Napōmniynie: wiadōmość ta niy ôstanie wysłanŏ z płatym w nec Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Ôpcyjōnalnŏ wiadōmość do prziwstōniŏ do żōndaniŏ płatu, kerŏ bydzie wyświytlanŏ, kej żōndanie ôstanie ôdewrzōne. Napōmniynie: wiadōmość ta niy ôstanie wysłanŏ z płatym w nec Vertcoin.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1338,8 +1338,8 @@
         <translation>Pozōr: Ôszacowanie ôpłŏcki za transakcyje je aktualnie niymożebne.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Pozōr: niynŏleżnŏ adresa Bitcoin</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Pozōr: niynŏleżnŏ adresa Vertcoin</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1361,16 +1361,16 @@
         <translation>&amp;Etyketa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI bitcoin:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu Bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI vertcoin:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu Vertcoin.</translation>
     </message>
     <message>
         <source>Message:</source>
         <translation>Wiadōmość:</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Adresa Bitcoin, na kerõ chcesz posłać płat</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Adresa Vertcoin, na kerõ chcesz posłać płat</translation>
     </message>
     <message>
         <source>Use available balance</source>

@@ -96,14 +96,14 @@
         <translation>Virhe tallentaessa osoitelistaa kohteeseen %1. Yritä uudelleen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Nämä ovat Bitcoin-osoitteesi maksujen vastaanottoa varten. Käytä painiketta "Luo uusi vastaanotto-osoite" vastaanottovälilehdessä luodaksesi uusia osoitteita.
+        <translation>Nämä ovat Vertcoin-osoitteesi maksujen vastaanottoa varten. Käytä painiketta "Luo uusi vastaanotto-osoite" vastaanottovälilehdessä luodaksesi uusia osoitteita.
 Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat Bitcoin-osoitteesi maksujen lähettämistä varten. Tarkista aina määrä ja vastaanotto-osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat Vertcoin-osoitteesi maksujen lähettämistä varten. Tarkista aina määrä ja vastaanotto-osoite ennen kolikoiden lähettämistä.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Salasanan vaihto epäonnistui</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Muista, että salaamalla lompakkosi et täysin pysty suojaamaan bitcoineja varkaudelta, jotka aiheutuvat koneellasi olevista haittaohjelmista.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Muista, että salaamalla lompakkosi et täysin pysty suojaamaan vertcoineja varkaudelta, jotka aiheutuvat koneellasi olevista haittaohjelmista.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Lompakon lukituksen avaaminen epäonnistui</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI BITCOINISI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI VERTCOINISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,7 +297,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>%1-asiakas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -575,8 +575,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Avaa lompakko</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Avaa bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Avaa vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -615,8 +615,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja bitcoin: URIt)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja vertcoin: URIt)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -647,8 +647,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>N&amp;äytä</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Lähetä kolikoita Bitcoin-osoitteeseen</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Lähetä kolikoita Vertcoin-osoitteeseen</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -672,8 +672,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Näytä tietoja Qt:ta</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista Bitcoinin komentorivivalinnoista</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista Vertcoinin komentorivivalinnoista</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -688,8 +688,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Allekirjoita &amp;viesti...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Bitcoin -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Allekirjoita viestisi omalla Vertcoin -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -718,8 +718,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Rahansiirtohistoria on ajan tasalla</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Bitcoin -osoitteella</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Vertcoin -osoitteella</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1041,8 +1041,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>Syötetty osoite "%1" on jo osoitekirjassa nimellä "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Antamasi osoite "%1" ei ole kelvollinen Bitcoin-osoite.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Antamasi osoite "%1" ei ole kelvollinen Vertcoin-osoite.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1094,8 +1094,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 lataa ja tallentaa kopion Bitcoinin lohkoketjusta.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 lataa ja tallentaa kopion Vertcoinin lohkoketjusta.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1268,8 +1268,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
         <translation>%1 synkronoidaan parhaillaan. Se lataa tunnisteet ja lohkot vertaisilta ja vahvistaa ne, kunnes ne saavuttavat lohkon ketjun kärjen.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Verkko ei tule hyväksymään sellaisten bitcoinien käyttämistä, jotka liittyvät vielä näkymättömissä oleviin siirtoihin.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Verkko ei tule hyväksymään sellaisten vertcoinien käyttämistä, jotka liittyvät vielä näkymättömissä oleviin siirtoihin.</translation>
     </message>
     <message>
         <source>Esc</source>
@@ -1304,8 +1304,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
         <translation>Edistymisen kasvu tunnissa</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Viimeiset tapahtumat eivät välttämättä vielä näy, joten lompakkosi saldo voi olla virheellinen. Tieto korjautuu, kunhan lompakkosi synkronointi bitcoin-verkon kanssa on päättynyt. Tiedot näkyvät alla.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Viimeiset tapahtumat eivät välttämättä vielä näy, joten lompakkosi saldo voi olla virheellinen. Tieto korjautuu, kunhan lompakkosi synkronointi vertcoin-verkon kanssa on päättynyt. Tiedot näkyvät alla.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1327,8 +1327,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Avaa bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Avaa vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1413,7 +1413,7 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona bitcoin-määrät näytetään</translation>
+        <translation>Yksikkö jona vertcoin-määrät näytetään</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1432,8 +1432,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
         <translation>Hyväksy sisääntulevia yhteyksiä</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Avaa reitittimen Bitcoin-asiakasohjelman portti automaattisesti. Tämä toimii vain, jos reitittimesi tukee PCP:tä tai NAT-PMP:tä ja se on otettu käyttöön. Ulkoinen portti voi olla satunnainen.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Avaa reitittimen Vertcoin-asiakasohjelman portti automaattisesti. Tämä toimii vain, jos reitittimesi tukee PCP:tä tai NAT-PMP:tä ja se on otettu käyttöön. Ulkoinen portti voi olla satunnainen.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1445,7 +1445,7 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti bitcoin-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti vertcoin-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1473,12 +1473,12 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
         <translation>Varmista asetusten palautus</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Bitcoin-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Vertcoin-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Yhdistä Bitcoin-verkkoon erillisen SOCKS5-välityspalvelimen kautta Torin onion-palveluja varten.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Yhdistä Vertcoin-verkkoon erillisen SOCKS5-välityspalvelimen kautta Torin onion-palveluja varten.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1729,8 +1729,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
         <translation>Viimeisimmät rahansiirrot</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Bitcoin-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Vertcoin-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1746,7 +1746,7 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Tililläsi tällä hetkellä olevien Bitcoinien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien Vertcoinien määrä</translation>
     </message>
 </context>
 <context>
@@ -1797,11 +1797,11 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
     </message>
     <message>
         <source>PSBT copied to clipboard.</source>
-        <translation>PSBT (osittain allekirjoitettu bitcoin-siirto) kopioitiin leikepöydälle.</translation>
+        <translation>PSBT (osittain allekirjoitettu vertcoin-siirto) kopioitiin leikepöydälle.</translation>
     </message>
     <message>
         <source>PSBT saved to disk.</source>
-        <translation>PSBT (osittain tallennettu bitcoin-siirto) tallennettiin levylle.</translation>
+        <translation>PSBT (osittain tallennettu vertcoin-siirto) tallennettiin levylle.</translation>
     </message>
     <message>
         <source>Partially Signed Transaction (Binary)</source>
@@ -1888,8 +1888,8 @@ Siirtoprosessi luo varmuuskopion lompakosta ennen siirtoa. Tämä varmuuskopioti
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' ei ole kelvollinen URI. Käytä 'bitcoin:' sen sijaan.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' ei ole kelvollinen URI. Käytä 'vertcoin:' sen sijaan.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1900,8 +1900,8 @@ BIP70:n laajalle levinneiden tietoturva-aukkojen vuoksi on erittäin suositeltav
 Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoinia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoinia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1912,8 +1912,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation>Maksupyynnön tiedoston käsittely</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URIa ei voitu jäsentää! Tämä voi johtua virheellisestä Bitcoin-osoitteesta tai väärin muotoilluista URI parametreista.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URIa ei voitu jäsentää! Tämä voi johtua virheellisestä Vertcoin-osoitteesta tai väärin muotoilluista URI parametreista.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2054,8 +2054,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation>upotettu "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Syötä Bitcoin-osoite (esim. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Syötä Vertcoin-osoite (esim. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2393,8 +2393,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation>Verkkoliikenne pysäytetty</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Verkko-osoitteet, joita Bitcoin-solmusi käyttää tällä hetkellä kommunikoidakseen muiden solmujen kanssa.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Verkko-osoitteet, joita Vertcoin-solmusi käyttää tällä hetkellä kommunikoidakseen muiden solmujen kanssa.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2666,8 +2666,8 @@ Lisätietoja konsolin käytöstä saat kirjoittamalla %6.
         <translation>Valinnainen viesti, joka on liitetty maksupyyntöön ja joka voidaan näyttää lähettäjälle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä Bitcoin-verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä Vertcoin-verkkoon.</translation>
     </message>
     <message>
         <source>Base58 (Legacy)</source>
@@ -3169,16 +3169,16 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>Varoitus: Kulujen arviointi ei ole juuri nyt mahdollista.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Varoitus: Virheellinen Bitcoin-osoite</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Varoitus: Virheellinen Vertcoin-osoite</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Varoitus: Tuntematon vaihtorahan osoite</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Mikäli lohkoissa ei ole tilaa kaikille siirtotapahtumille, voi louhijat sekä välittävät solmut pakottaa vähimmäispalkkion. Tämän vähimmäispalkkion maksaminen on täysin OK, mutta huomaa, että se saattaa johtaa siihen, ettei siirto vahvistu koskaan, jos bitcoin-siirtoja on enemmän kuin mitä verkko pystyy käsittelemään.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Mikäli lohkoissa ei ole tilaa kaikille siirtotapahtumille, voi louhijat sekä välittävät solmut pakottaa vähimmäispalkkion. Tämän vähimmäispalkkion maksaminen on täysin OK, mutta huomaa, että se saattaa johtaa siihen, ettei siirto vahvistu koskaan, jos vertcoin-siirtoja on enemmän kuin mitä verkko pystyy käsittelemään.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -3200,8 +3200,8 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>&amp;Nimi:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Viesti joka liitettiin bitcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Bitcoin-verkkoon.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Viesti joka liitettiin vertcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Vertcoin-verkkoon.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3236,16 +3236,16 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>V&amp;ähennä maksukulu määrästä</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Bitcoin-osoite johon maksu lähetetään</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Vertcoin-osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Lähetettävä summa valitussa yksikössä</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän bitcoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän vertcoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3353,8 +3353,8 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>Allekirjoita &amp;viesti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Bitcoin-osoitteen</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Vertcoin-osoitteen</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3365,12 +3365,12 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>Allekirjoitukset - Allekirjoita / Varmista viesti</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin-osoite jolla viesti on allekirjoitettu</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin-osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin-osoite jolla viesti allekirjoitetaan</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin-osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3397,16 +3397,16 @@ Huom: Koska maksu lasketaan per tavu, "100 satoshin per kB" maksunopeus 500 virt
         <translation>Varmista &amp;viesti...</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Bitcoin-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Vertcoin-osoitteella</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Lompakon avaaminen peruttiin.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Voit allekirjoittaa viestejä/sopimuksia vanhojen (P2PKH) osoitteidesi kanssa todistaaksesi, että voit vastaanottaa niihin lähetettyjä bitcoineja. Varo allekirjoittamasta mitään epämääräistä tai satunnaista, sillä phishing-hyökkäykset voivat yrittää huijata sinua allekirjoittamaan henkilöllisyytesi heille. Allekirjoita vain täysin yksityiskohtaiset lausunnot, joihin suostut.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Voit allekirjoittaa viestejä/sopimuksia vanhojen (P2PKH) osoitteidesi kanssa todistaaksesi, että voit vastaanottaa niihin lähetettyjä vertcoineja. Varo allekirjoittamasta mitään epämääräistä tai satunnaista, sillä phishing-hyökkäykset voivat yrittää huijata sinua allekirjoittamaan henkilöllisyytesi heille. Allekirjoita vain täysin yksityiskohtaiset lausunnot, joihin suostut.</translation>
     </message>
 </context>
 <context>
@@ -4134,8 +4134,8 @@ ilman, että käytetään mitään snapshot-tietoja. Ilmoita tästä tapauksesta
         <translation>Virhe: Dump-tiedoston tarkistussumma ei täsmää. Laskettu %s, odotettu %s</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Virhe: Dump-tiedoston versio ei ole tuettu. Tämä bitcoin-lompakon versio tukee vain version 1 dump-tiedostoja. Annetun dump-tiedoston versio %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Virhe: Dump-tiedoston versio ei ole tuettu. Tämä vertcoin-lompakon versio tukee vain version 1 dump-tiedostoja. Annetun dump-tiedoston versio %s</translation>
     </message>
     <message>
         <source>Error: Keypool ran out, please call keypoolrefill first</source>

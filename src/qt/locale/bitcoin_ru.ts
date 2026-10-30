@@ -83,13 +83,13 @@
         <translation>Произошла ошибка сохранения списка адресов в %1. Пожалуйста, повторите попытку.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Это ваши биткоин-адреса для получения платежей. Используйте кнопку «Создать новый адрес для получения» на вкладке Получить, чтобы создать новые адреса.
 Подписание возможно только с адресами типа "legacy".</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Это ваши биткоин-адреса для отправки платежей. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
     </message>
 </context>
@@ -159,7 +159,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Не удалось сменить пароль</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Помните, что шифрование кошелька не может полностью защитить ваши биткоины от кражи вредоносными программами, заражающими ваш компьютер.</translation>
     </message>
     <message>
@@ -219,7 +219,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Не удалось разблокировать кошелёк</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Предупреждение: если вы зашифруете кошелёк и потеряете парольную фразу, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОИНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -280,7 +280,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 клиент</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -558,8 +558,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Открыть кошелёк</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Открыть URI протокола bitcoin:</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Открыть URI протокола vertcoin:</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -598,8 +598,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Запросить платёж (генерирует QR-коды и URI протокола bitcoin:)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Запросить платёж (генерирует QR-коды и URI протокола vertcoin:)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -630,7 +630,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;Показать</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>Отправить средства на биткоин-адрес</translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Показать информацию о Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Показать помощь по %1, чтобы получить список доступных параметров командной строки</translation>
     </message>
     <message>
@@ -671,7 +671,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Подписать &amp;сообщение...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Подписывайте сообщения вашими биткоин-адресами, чтобы доказать, что вы ими владеете</translation>
     </message>
     <message>
@@ -701,7 +701,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Синхронизировано</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>Проверяйте сообщения, чтобы убедиться, что они подписаны конкретными биткоин-адресами</translation>
     </message>
     <message>
@@ -1012,7 +1012,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Введённый адрес "%1" уже существует в адресной книге с меткой "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>Введенный адрес "%1" не является действительным биткоин-адресом.</translation>
     </message>
     <message>
@@ -1065,7 +1065,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation> ГБ</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 скачает и сохранит копию цепочки блоков биткоина.</translation>
     </message>
     <message numerus="yes">
@@ -1098,7 +1098,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>В эту директорию будет сохранено не менее %1 ГБ данных, и со временем их объём будет увеличиваться.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>биткоин</translation>
     </message>
     <message>
@@ -1239,7 +1239,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>%1 в настоящий момент синхронизируется. Заголовки и блоки будут скачиваться с узлов сети и проверяться до тех пор, пока не будет достигнут конец цепочки блоков.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Попытка потратить средства, затронутые не видными пока транзакциями, будет отклонена сетью.</translation>
     </message>
     <message>
@@ -1275,7 +1275,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Прирост прогресса за час</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>Недавние транзакции могут быть пока не видны, и поэтому отображаемый баланс вашего кошелька может быть неверным. Информация станет верной после завершения синхронизации с сетью биткоина, прогресс которой вы можете видеть ниже.</translation>
     </message>
     <message>
@@ -1298,7 +1298,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>Открыть URI биткоина</translation>
     </message>
     <message>
@@ -1444,11 +1444,11 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Подтвердить сброс опций</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>Подключиться к сети биткоина через прокси SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>Подключаться к сети биткоина через отдельный прокси SOCKS5 для скрытых сервисов Tor.</translation>
     </message>
     <message>
@@ -1690,7 +1690,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Последние транзакции</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Показанная информация может быть устаревшей. Ваш кошелёк автоматически синхронизируется с сетью биткоина после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
@@ -1832,12 +1832,12 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>«bitcoin://» — это неверный URI. Используйте вместо него «bitcoin:».</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>«vertcoin://» — это неверный URI. Используйте вместо него «vertcoin:».</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Не удаётся запустить обработчик click-to-pay для протокола bitcoin:</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Не удаётся запустить обработчик click-to-pay для протокола vertcoin:</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1848,7 +1848,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Обработка файла с запросом платежа</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>Не удалось обработать URI! Это может быть вызвано тем, что биткоин-адрес неверен или параметры URI неправильно сформированы.</translation>
     </message>
     <message>
@@ -1986,7 +1986,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Встроенный "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>Введите биткоин-адрес (напр. %1)</translation>
     </message>
     <message>
@@ -2214,8 +2214,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Сетевая активность отключена</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Сетевые адреса, которые ваш Bitcoin-узел использует сейчас для связи с другими узлами.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Сетевые адреса, которые ваш Vertcoin-узел использует сейчас для связи с другими узлами.</translation>
     </message>
     <message>
         <source>No</source>
@@ -2378,7 +2378,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Необязательное сообщение, которое присоединяется к запросу платежа и может быть показано отправителю.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Внимание: это сообщение не будет отправлено вместе с платежом через сеть биткоина.</translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Предупреждение: оценка комиссии в данный момент невозможна.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>Предупреждение: неверный биткоин-адрес</translation>
     </message>
     <message>
@@ -2757,7 +2757,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Предупреждение: неизвестный адрес сдачи</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>Когда объём транзакций меньше, чем пространство в блоках, майнеры и ретранслирующие узлы могут устанавливать минимальную плату. Платить только эту минимальную комиссию вполне допустимо, но примите во внимание, что это может привести к тому, что ваша транзакция никогда не подтвердится, если транзакций окажется больше, чем может обработать сеть.</translation>
     </message>
     <message>
@@ -2780,7 +2780,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>&amp;Метка:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
         <translation>Сообщение, которое было прикреплено к URI и которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть биткоина.</translation>
     </message>
     <message>
@@ -2816,7 +2816,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>В&amp;ычесть комиссию с суммы</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>Биткоин-адрес, на который нужно отправить платёж</translation>
     </message>
     <message>
@@ -2824,7 +2824,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Сумма к отправке в выбранных единицах</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Комиссия будет вычтена из отправляемой суммы. Получателю придёт меньше биткоинов, чем вы ввели в поле «Сумма». Если выбрано несколько получателей, комиссия распределяется поровну.</translation>
     </message>
     <message>
@@ -2926,7 +2926,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Подписать &amp;сообщение</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Подписать сообщение, чтобы доказать владение биткоин-адресом</translation>
     </message>
     <message>
@@ -2938,11 +2938,11 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Подписи - подписать / проверить сообщение</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>Биткоин-адрес, которым было подписано сообщение</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>Биткоин-адрес, которым подписать сообщение</translation>
     </message>
     <message>
@@ -2974,7 +2974,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Проверить &amp;сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>Проверить сообщение, чтобы убедиться, что оно действительно подписано указанным биткоин-адресом</translation>
     </message>
     <message>
@@ -2982,7 +2982,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>Разблокирование кошелька было отменено.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Вы можете подписывать сообщения/соглашения своими устаревшими (P2PKH) адресами, чтобы доказать, что вы можете получать биткоины на них. Будьте осторожны и не подписывайте непонятные или случайные сообщения, так как мошенники могут таким образом пытаться присвоить вашу личность. Подписывайте только такие сообщения, с которыми вы согласны вплоть до мелочей.</translation>
     </message>
 </context>

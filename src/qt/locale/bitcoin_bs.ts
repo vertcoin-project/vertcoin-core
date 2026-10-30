@@ -84,13 +84,13 @@
         <translation>Došlo je do greške kod spašavanja liste adresa na %1. Molimo pokušajte ponovo.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ovo su vaše Bitcoin adrese za primanje uplata. Upotrijebite dugme 'Stvori novu adresu prijema' na kartici primanja da biste kreirali nove adrese. Potpisivanje je moguće samo s adresama tipa 'legacy'.</translation>
+        <translation>Ovo su vaše Vertcoin adrese za primanje uplata. Upotrijebite dugme 'Stvori novu adresu prijema' na kartici primanja da biste kreirali nove adrese. Potpisivanje je moguće samo s adresama tipa 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Bitcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše Vertcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
     </message>
 </context>
 <context>
@@ -151,8 +151,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dijalog Lozinke</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše bitcoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše vertcoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -203,7 +203,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Otključavanje novčanika nije uspjelo</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Upozorenje: Ako šifrirate novčanik i izgubite lozinku, &lt;b&gt;IZGUBIT ĆETE SVE SVOJE BITKOINE!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -260,7 +260,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 klijent</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -503,8 +503,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Otvorite Novčanik</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Otvorite bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Otvorite vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -539,12 +539,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Zatvori aplikaciju</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Zatražite uplate (generira QR kodove i bitcoin: URI-je)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Zatražite uplate (generira QR kodove i vertcoin: URI-je)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Pošaljite kovanice na Bitcoin adresu</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Pošaljite kovanice na Vertcoin adresu</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -563,8 +563,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Prikaži informacije o Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Pokažite %1 poruku za pomoć da biste dobili listu s mogućim opcijama Bitcoin naredbenog retka</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Pokažite %1 poruku za pomoć da biste dobili listu s mogućim opcijama Vertcoin naredbenog retka</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -579,8 +579,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Potpiši &amp;poruku…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim Bitcoin adresama da biste dokazali da ste njihov vlasnik</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Potpišite poruke sa svojim Vertcoin adresama da biste dokazali da ste njihov vlasnik</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -609,8 +609,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>U toku</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisane navedenim Bitcoin adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisane navedenim Vertcoin adresama</translation>
     </message>
     <message>
         <source>Wallet Name</source>
@@ -853,8 +853,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Unesena adresa "%1" već je u adresaru sa oznakom "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Unesena adresa "%1" nije važeća Bitcoin adresa.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Unesena adresa "%1" nije važeća Vertcoin adresa.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -902,8 +902,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 će preuzeti i pohraniti kopiju lanca Bitcoin blokova.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 će preuzeti i pohraniti kopiju lanca Vertcoin blokova.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -978,8 +978,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 se trenutno sinhronizira. Preuzet će zaglavlja i blokove sa vršnjaka i provjeriti ih dok ne dođu do vrha lanca blokova.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Pokušaj trošenja bitcoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Pokušaj trošenja vertcoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1010,15 +1010,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Povećanje napretka po satu</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s bitcoin mrežom, kao što je detaljno opisano u nastavku.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s vertcoin mrežom, kao što je detaljno opisano u nastavku.</translation>
     </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Otvorite bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Otvorite vertcoin URI</translation>
     </message>
     </context>
 <context>
@@ -1064,8 +1064,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Automatski pokreni %1 nakon prijave u sistem.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s Bitcoin mrežom putem SOCKS5 proxyja.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s Vertcoin mrežom putem SOCKS5 proxyja.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1151,8 +1151,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Nedavne transakcije</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Moguće je da su prikazane informacije zastarjele.Vaš novčanik se automatski sinhronizira sa Bitcoin mrežom nakon što je konekcija uspostavljena, ali proces nije još uvijek dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Moguće je da su prikazane informacije zastarjele.Vaš novčanik se automatski sinhronizira sa Vertcoin mrežom nakon što je konekcija uspostavljena, ali proces nije još uvijek dovršen.</translation>
     </message>
     </context>
 <context>

@@ -91,14 +91,14 @@
         <translation>Seoltaí á seoladh - %1</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Seo iad do sheoltaí Bitcoin chun glacadh le híocaíochtaí. Úsáid an cnaipe ‘Cruthaigh seoladh glactha nua’ sa cluaisín glactha chun seoltaí nua a chruthú.
+        <translation>Seo iad do sheoltaí Vertcoin chun glacadh le híocaíochtaí. Úsáid an cnaipe ‘Cruthaigh seoladh glactha nua’ sa cluaisín glactha chun seoltaí nua a chruthú.
 Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Seo iad do sheoltaí Bitcoin chun íocaíochtaí a sheoladh. Seiceáil i gcónaí an méid agus an seoladh glactha sula seoltar boinn.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Seo iad do sheoltaí Vertcoin chun íocaíochtaí a sheoladh. Seiceáil i gcónaí an méid agus an seoladh glactha sula seoltar boinn.</translation>
     </message>
 </context>
 <context>
@@ -171,8 +171,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Theip ar athrú pasfhocail</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Cuimhnigh nach dtugann chriptiú do sparán cosaint go hiomlán do do bitcoins ó bheith goidte ag bogearraí mailíseacha atá ag ionfhabhtú do ríomhaire.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Cuimhnigh nach dtugann chriptiú do sparán cosaint go hiomlán do do vertcoins ó bheith goidte ag bogearraí mailíseacha atá ag ionfhabhtú do ríomhaire.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -227,8 +227,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Theip ar dhíghlasáil sparán</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Rabhadh: Má chriptíonn tú do sparán agus má chailleann tú do pasfhrása, &lt;b&gt;caillfidh tú GACH CEANN DE DO BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Rabhadh: Má chriptíonn tú do sparán agus má chailleann tú do pasfhrása, &lt;b&gt;caillfidh tú GACH CEANN DE DO VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -288,9 +288,9 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>%1 cliaint</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>%n nasc gníomhach le líonra Bitcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Bitcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Bitcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Bitcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Bitcoin.</numerusform></translation>
+        <translation><numerusform>%n nasc gníomhach le líonra Vertcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Vertcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Vertcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Vertcoin.</numerusform><numerusform>%n naisc gníomhach le líonra Vertcoin.</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -582,8 +582,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Oscail Sparán</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Oscail bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Oscail vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -622,8 +622,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Scoir feidhm</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Iarr íocaíochtaí (gineann cóid QR agus bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Iarr íocaíochtaí (gineann cóid QR agus vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -662,8 +662,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Sábháil Easpórtáil Sparán Faire-Amháin</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Seol boinn chuig seoladh Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Seol boinn chuig seoladh Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -683,8 +683,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Taispeáin faisnéis faoi Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Taispeáin an %1 teachtaireacht chabhrach chun liosta a fháil de roghanna Bitcoin líne na n-orduithe féideartha</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Taispeáin an %1 teachtaireacht chabhrach chun liosta a fháil de roghanna Vertcoin líne na n-orduithe féideartha</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -699,8 +699,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Sínigh &amp;teachtaireacht…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sínigh teachtaireachtaí le do sheoltaí Bitcoin chun a chruthú gur leat iad</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Sínigh teachtaireachtaí le do sheoltaí Vertcoin chun a chruthú gur leat iad</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -733,8 +733,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation>Suas chun dáta</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Teachtaireachtaí a fhíorú lena chinntiú go raibh siad sínithe le seoltaí sainithe Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Teachtaireachtaí a fhíorú lena chinntiú go raibh siad sínithe le seoltaí sainithe Vertcoin</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1105,8 +1105,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>Íoslódáileafar %1 and stórálfaidh cóip de bhlocshlabhra Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>Íoslódáileafar %1 and stórálfaidh cóip de bhlocshlabhra Vertcoin.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1307,8 +1307,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
         <translation>Tá %1 ag sioncronú faoi láthair. Déanfaidh sé é a íoslódáil agus a fíorú ar ceanntásca agus bloic ó phiaraí go dtí barr an blocshlabhra.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Ní ghlacfaidh an líonra le hiarrachtí bitcoins a chaitheamh a mbaineann le hidirbhearta nach bhfuil ar taispeáint go fóill.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Ní ghlacfaidh an líonra le hiarrachtí vertcoins a chaitheamh a mbaineann le hidirbhearta nach bhfuil ar taispeáint go fóill.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1339,8 +1339,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
         <translation>Méadú dul chun cinn in aghaidh na huaire</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>B’fhéidir nach mbeidh idirbhearta dheireanacha le feiceáil fós, agus dá bhrí sin d’fhéadfadh go mbeadh iarmhéid do sparán mícheart. Beidh an faisnéis seo ceart nuair a bheidh do sparán críochnaithe ag sioncrónú leis an líonra bitcoin, mar atá luaite thíos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>B’fhéidir nach mbeidh idirbhearta dheireanacha le feiceáil fós, agus dá bhrí sin d’fhéadfadh go mbeadh iarmhéid do sparán mícheart. Beidh an faisnéis seo ceart nuair a bheidh do sparán críochnaithe ag sioncrónú leis an líonra vertcoin, mar atá luaite thíos.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1362,8 +1362,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Oscail URI bitcoin</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Oscail URI vertcoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1467,8 +1467,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
         <translation>Ceadai&amp;gh naisc isteach</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Oscail calafort cliant Bitcoin go huathoibríoch ar an ródaire. Ní oibríonn sé seo ach amháin nuair a thacaíonn do ródaire le PCP nó NAT-PMP agus go bhfuil sé cumasaithe. D'fhéadfadh an port seachtrach a bheith randamach.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Oscail calafort cliant Vertcoin go huathoibríoch ar an ródaire. Ní oibríonn sé seo ach amháin nuair a thacaíonn do ródaire le PCP nó NAT-PMP agus go bhfuil sé cumasaithe. D'fhéadfadh an port seachtrach a bheith randamach.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1508,12 +1508,12 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
         <translation>Deimhnigh athshocrú roghanna</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Ceangail leis an líonra Bitcoin trí sheachfhreastalaí SOCKS5.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Ceangail leis an líonra Vertcoin trí sheachfhreastalaí SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Ceangail le líonra Bitcoin trí seachfhreastalaí SOCKS5 ar leith do sheirbhísí Tor oinniún.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Ceangail le líonra Vertcoin trí seachfhreastalaí SOCKS5 ar leith do sheirbhísí Tor oinniún.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1764,8 +1764,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
         <translation>Idirbhearta le déanaí</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Féadfaidh an fhaisnéis a thaispeántar a bheith as dáta. Déanann do sparán sioncrónú go huathoibríoch leis an líonra Bitcoin tar éis nasc a bhunú, ach níl an próiseas seo críochnaithe fós.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Féadfaidh an fhaisnéis a thaispeántar a bheith as dáta. Déanann do sparán sioncrónú go huathoibríoch leis an líonra Vertcoin tar éis nasc a bhunú, ach níl an próiseas seo críochnaithe fós.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1923,8 +1923,8 @@ Cruthófar cúltaca den sparán le linn an phróisis imirce sula ndéantar an t-
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>Ní URI bailí é 'bitcoin://'. Úsáid 'bitcoin:' ina ionad.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>Ní URI bailí é 'vertcoin://'. Úsáid 'vertcoin:' ina ionad.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1935,8 +1935,8 @@ De bharr lochtanna slándála forleathan in BIP70, moltar go láidir neamhaird a
 Má tá an earráid seo á fáil agat ba cheart duit iarraidh ar an díoltóir URI atá comhoiriúnach le BIP21 a sholáthar.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Ní féidir bitcoin a thosú: láimhseálaí cliceáil-chun-íoc</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Ní féidir vertcoin a thosú: láimhseálaí cliceáil-chun-íoc</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1947,8 +1947,8 @@ Má tá an earráid seo á fáil agat ba cheart duit iarraidh ar an díoltóir U
         <translation>Iarratas ar íocaíocht láimhseáil comhad</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>Ní féidir URI a pharsáil! Is féidir le seoladh neamhbhailí Bitcoin nó paraiméadair URI drochfhoirmithe a bheith mar an chúis.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>Ní féidir URI a pharsáil! Is féidir le seoladh neamhbhailí Vertcoin nó paraiméadair URI drochfhoirmithe a bheith mar an chúis.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2096,8 +2096,8 @@ Má tá an earráid seo á fáil agat ba cheart duit iarraidh ar an díoltóir U
         <translation>Leabaithe "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Iontráil seoladh Bitcoin (m.sh.%1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Iontráil seoladh Vertcoin (m.sh.%1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2439,8 +2439,8 @@ Má tá an earráid seo á fáil agat ba cheart duit iarraidh ar an díoltóir U
         <translation>Gníomhaíocht líonra díchumasaithe</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Seoltaí líonra go bhfuil do nód Bitcoin úsáid faoi láthair chun cumarsáid a dhéanamh le nóid eile.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Seoltaí líonra go bhfuil do nód Vertcoin úsáid faoi láthair chun cumarsáid a dhéanamh le nóid eile.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2727,8 +2727,8 @@ Chun tuilleadh eolais a fháil faoin gconsól seo a úsáid, clóscríobh %6.
         <translation>Teachtaireacht roghnach atá ceangailte leis an iarratas ar íocaíocht agus a fhéadfar a thaispeáint don seoltóir.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Teachtaireacht roghnach le ceangal leis an iarratas íocaíocht, a thaispeánfar nuair a osclaítear an iarraidh. Nóta: Ní sheolfar an teachtaireacht leis an íocaíocht thar líonra Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Teachtaireacht roghnach le ceangal leis an iarratas íocaíocht, a thaispeánfar nuair a osclaítear an iarraidh. Nóta: Ní sheolfar an teachtaireacht leis an íocaíocht thar líonra Vertcoin.</translation>
     </message>
     <message>
         <source>Base58 (Legacy)</source>
@@ -3240,16 +3240,16 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>Rabhadh: Ní féidir meastachán táillí a dhéanamh faoi láthair.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Rabhadh: Seoladh neamhbhailí Bitcoin</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Rabhadh: Seoladh neamhbhailí Vertcoin</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Rabhadh: Seoladh sóinseáil anaithnid</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Nuair a bhíonn méid idirbhirt níos lú ná spás sna bloic, féadfaidh mianadóirí chomh maith le nóid athsheachadadh táille íosta a fhorfheidhmiú. Tá sé sách maith an táille íosta seo a íoc, ach bíodh a fhios agat go bhféadfadh idirbheart nach ndeimhnítear riamh a bheith mar thoradh air seo a nuair a bhíonn níos mó éilimh ar idirbhearta bitcoin ná mar is féidir leis an líonra a phróiseáil.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Nuair a bhíonn méid idirbhirt níos lú ná spás sna bloic, féadfaidh mianadóirí chomh maith le nóid athsheachadadh táille íosta a fhorfheidhmiú. Tá sé sách maith an táille íosta seo a íoc, ach bíodh a fhios agat go bhféadfadh idirbheart nach ndeimhnítear riamh a bheith mar thoradh air seo a nuair a bhíonn níos mó éilimh ar idirbhearta vertcoin ná mar is féidir leis an líonra a phróiseáil.</translation>
     </message>
     <message>
         <source>You can increase the fee later.</source>
@@ -3275,8 +3275,8 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>&amp;Lipéad</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Teachtaireacht a bhí ceangailte leis an bitcoin: URI a stórálfar leis an idirbheart le haghaidh do thagairt. Nóta: Ní sheolfar an teachtaireacht seo thar líonra Bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Teachtaireacht a bhí ceangailte leis an vertcoin: URI a stórálfar leis an idirbheart le haghaidh do thagairt. Nóta: Ní sheolfar an teachtaireacht seo thar líonra Vertcoin.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3311,16 +3311,16 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>&amp;Dealaigh táille ón suim</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Seoladh Bitcoin chun an íocaíocht a sheoladh chuig</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Seoladh Vertcoin chun an íocaíocht a sheoladh chuig</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>An méid atá le seoladh san aonad roghnaithe</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Bainfear an táille ón méid a sheolfar. Gheobhaidh an faighteoir níos lú bitcoins ná mar a iontrálann tú sa réimse méid. Má roghnaítear faighteoirí iolracha, roinntear an táille go cothrom.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Bainfear an táille ón méid a sheolfar. Gheobhaidh an faighteoir níos lú vertcoins ná mar a iontrálann tú sa réimse méid. Má roghnaítear faighteoirí iolracha, roinntear an táille go cothrom.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3432,8 +3432,8 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>Sínigh &amp;Teachtaireacht</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Sínigh an teachtaireacht chun a chruthú gur leat an seoladh Bitcoin seo</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Sínigh an teachtaireacht chun a chruthú gur leat an seoladh Vertcoin seo</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3444,12 +3444,12 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>Sínithe - Sínigh / Dearbhaigh Teachtaireacht</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>An seoladh Bitcoin a síníodh an teachtaireacht leis</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>An seoladh Vertcoin a síníodh an teachtaireacht leis</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>An seoladh Bitcoin chun an teachtaireacht a shíniú le</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>An seoladh Vertcoin chun an teachtaireacht a shíniú le</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3480,16 +3480,16 @@ Nóta: Ós rud é go ríomhtar an táille ar bhonn in aghaidh an bheart, ní tha
         <translation>Fíoraigh &amp;Teachtaireacht</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Fíoraigh an teachtaireacht lena chinntiú go raibh sí sínithe leis an seoladh Bitcoin sainithe </translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Fíoraigh an teachtaireacht lena chinntiú go raibh sí sínithe leis an seoladh Vertcoin sainithe </translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Cuireadh díghlasáil sparán ar ceal.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Is féidir leat teachtaireachtaí/comhaontuithe a shíniú le do sheoltaí oidhreachta (P2PKH) lena chruthú gur féidir leat bitcoins a sheoltar chucu a fháil. Bí cúramach gan aon rud doiléir nó randamach a shíniú, mar seans go ndéanfaidh ionsaithe fioscaireachta iarracht tú a mhealladh chun d'aitheantas a shíniú leo. Ná sínigh ach ráitis mhionsonraithe a n-aontaíonn tú leo.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Is féidir leat teachtaireachtaí/comhaontuithe a shíniú le do sheoltaí oidhreachta (P2PKH) lena chruthú gur féidir leat vertcoins a sheoltar chucu a fháil. Bí cúramach gan aon rud doiléir nó randamach a shíniú, mar seans go ndéanfaidh ionsaithe fioscaireachta iarracht tú a mhealladh chun d'aitheantas a shíniú leo. Ná sínigh ach ráitis mhionsonraithe a n-aontaíonn tú leo.</translation>
     </message>
 </context>
 <context>
@@ -4373,8 +4373,8 @@ Ní féidir cúltaca an sparán a chur ar ais.</translation>
         <translation>Earráid: Sonraíonn an comhad dumpála formáid bunachar sonraí nach dtacaítear leis (%s). Ní thacaítear ach le dumpaí bunachar sonraí sqlite.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Earráid: Ní thacaítear leis an leagan Dumpfile. Ní thacaíonn an leagan seo de bitcoin-sparán ach le leagan 1 dumpfiles. Fuair ​​​​tú dumpfile le leagan %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Earráid: Ní thacaítear leis an leagan Dumpfile. Ní thacaíonn an leagan seo de vertcoin-sparán ach le leagan 1 dumpfiles. Fuair ​​​​tú dumpfile le leagan %s</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

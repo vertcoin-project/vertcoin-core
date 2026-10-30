@@ -92,13 +92,13 @@
         <translation>Sa i ai se mea sese i le taumafai e teu ai le lisi o 'address' i %1. Fa'amalie atu, taumafa'i mai fo'i.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>O nei o au tuatusi Bitcoin mo le talia o totogi. Fa'aaoga le fa'amau 'Fausia se tuatusi fou mo le talia' i le fa'amau talia e fa'atupu ai ni tuatusi fou. E mafai ona sainia na'o tuatusi o le ituaiga 'legacy'.</translation>
+        <translation>O nei o au tuatusi Vertcoin mo le talia o totogi. Fa'aaoga le fa'amau 'Fausia se tuatusi fou mo le talia' i le fa'amau talia e fa'atupu ai ni tuatusi fou. E mafai ona sainia na'o tuatusi o le ituaiga 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>O nei o au tuatusi Bitcoin mo le auina atu o totogi. Ia e siaki pea le aofa'i ma le tuatusi e talia ai tupe a'o le'i lafoina atu tupe.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>O nei o au tuatusi Vertcoin mo le auina atu o totogi. Ia e siaki pea le aofa'i ma le tuatusi e talia ai tupe a'o le'i lafoina atu tupe.</translation>
     </message>
 </context>
 <context>
@@ -171,8 +171,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Na failed le suia o le passphrase</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau bitcoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau vertcoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -231,8 +231,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Leiloa le fa'amaoniga o le taga</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Fa'amaoniga: Afai e te fa'amaonia lau 'aofa'i ma le leiloa o lau fa'amaoniga, o le a &lt;b&gt;Losi uma au Bitcoinsi&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Fa'amaoniga: Afai e te fa'amaonia lau 'aofa'i ma le leiloa o lau fa'amaoniga, o le a &lt;b&gt;Losi uma au Vertcoinsi&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -288,7 +288,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 tagata faʻatau</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /></translation>
     </message>
@@ -562,8 +562,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tatala le Uati</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Tuuina se bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Tuuina se vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -602,8 +602,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Taofi le talosaga</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Talosaga mo totogi (faʻatupuina ni QR code ma bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Talosaga mo totogi (faʻatupuina ni QR code ma vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -625,8 +625,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Fa'&amp;aali</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Fa'amaimau fa'amaoniga i se tuatusi Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Fa'amaimau fa'amaoniga i se tuatusi Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -650,8 +650,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Fa'aalia fa'amaoniga e uiga i le Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Fa'aalia le %1 fe'au fesoasoani e maua ai se lisi ma avanoa o pologa laina fa'atonu Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Fa'aalia le %1 fe'au fesoasoani e maua ai se lisi ma avanoa o pologa laina fa'atonu Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -666,8 +666,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Saini &amp; feʻau...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Saini feʻau i au tuatusi Bitcoin e fa'amaonia ai o oe e ona</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Saini feʻau i au tuatusi Vertcoin e fa'amaonia ai o oe e ona</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -690,8 +690,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>I le taimi nei</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Fa'amaonia manatu e fa'amaonia ai na'o le 'alelesi fa'amaonia i tuatusi Bitcoin fa'amaonia</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Fa'amaonia manatu e fa'amaonia ai na'o le 'alelesi fa'amaonia i tuatusi Vertcoin fa'amaonia</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1009,8 +1009,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>O le adiresi na ulufale mai "%1" o lo'o i le tusi adiresi ma le fa'amaoniga "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>O le "adresi" na tuʻufaʻatasia "%1" e le o se adresi Bitcoin talafeagai.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>O le "adresi" na tuʻufaʻatasia "%1" e le o se adresi Vertcoin talafeagai.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1058,8 +1058,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>O le %1 o le a tusia ma teuina se kopi o le Bitcoin block chain.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>O le %1 o le a tusia ma teuina se kopi o le Vertcoin block chain.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1224,8 +1224,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation>O lo'o fa'amaonia i le taimi nei %1. O le a uta o fa'amaoniga ma pa'u mai i tagata e fa'atau, ma fa'amaonia i latou se'ia o'o i le pito o le 'upega tetele o pa'u.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>O le taumafaiga e fa'aaoga bitcoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>O le taumafaiga e fa'aaoga vertcoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1256,8 +1256,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation>O le faaauauina o le tupu i le itula</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>E mafai e fefaʻatauaiga lata mai ona le mafai ona vaʻaia, ma o le mea lea, atonu e le tusa ai le tamaʻi palani o lau 'wallet'. O lenei fa'amaoniga o le a sa'o pe a mae'a ona fa'atufugaga lau 'wallet' ma le upega tafaʻilagi o le bitcoin, e pei o fa'amaoniga i lalo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>E mafai e fefaʻatauaiga lata mai ona le mafai ona vaʻaia, ma o le mea lea, atonu e le tusa ai le tamaʻi palani o lau 'wallet'. O lenei fa'amaoniga o le a sa'o pe a mae'a ona fa'atufugaga lau 'wallet' ma le upega tafaʻilagi o le vertcoin, e pei o fa'amaoniga i lalo.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1279,8 +1279,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Tatala le URI o le Bitcoin</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Tatala le URI o le Vertcoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1425,12 +1425,12 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation>Fa'amaonia le toe seti o filifiliga</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Sii i luga i le upega tafaʻilagi o Bitcoin i le ala o le SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Sii i luga i le upega tafaʻilagi o Vertcoin i le ala o le SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Sopọ i le netiweke Bitcoin i se faʻaogaina SOCKS5 ese mo auaunaga Tor onion.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Sopọ i le netiweke Vertcoin i se faʻaogaina SOCKS5 ese mo auaunaga Tor onion.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1664,8 +1664,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation>Fa'amaoniga talu ai</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>O faʻamatalaga o loʻo faʻaalia atonu e le o toe faʻafouina. E otometi lava ona faʻatulagaina lau ʻato tupe i le upega Bitcoin pe a maeʻa ona fesoʻotaʻi, ae e leʻi maeʻa lenei faiga.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>O faʻamatalaga o loʻo faʻaalia atonu e le o toe faʻafouina. E otometi lava ona faʻatulagaina lau ʻato tupe i le upega Vertcoin pe a maeʻa ona fesoʻotaʻi, ae e leʻi maeʻa lenei faiga.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>

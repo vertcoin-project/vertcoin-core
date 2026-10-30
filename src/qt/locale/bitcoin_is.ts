@@ -92,13 +92,13 @@
         <translation>Ekki tókst að vista færslugildalistann á %1. Reyndu aftur.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Þetta eru Bitcoin heimilisföngin þín til að taka á móti greiðslum. Notaðu hnappinn „Búa til nýtt móttökuheimilisfang“ á móttökuflipanum til að búa til ný heimilisföng. Undirskrift er aðeins möguleg með heimilisföngum af gerðinni „arfleifð“.</translation>
+        <translation>Þetta eru Vertcoin heimilisföngin þín til að taka á móti greiðslum. Notaðu hnappinn „Búa til nýtt móttökuheimilisfang“ á móttökuflipanum til að búa til ný heimilisföng. Undirskrift er aðeins möguleg með heimilisföngum af gerðinni „arfleifð“.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Þetta eru Bitcoin færslugildin sem senda greiðslur. Skoðið ævinlega vel upphæðina og færslugildin sem þiggja greiðslur áður en mynt er send.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Þetta eru Vertcoin færslugildin sem senda greiðslur. Skoðið ævinlega vel upphæðina og færslugildin sem þiggja greiðslur áður en mynt er send.</translation>
     </message>
 </context>
 <context>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Mistókst að breyta lykilorði</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Mundu að dulkóðun vesksins þíns getur ekki verndað bitcoins þína að fullu gegn því að vera stolið af spilliforritum sem sýkja tölvuna þína.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Mundu að dulkóðun vesksins þíns getur ekki verndað vertcoins þína að fullu gegn því að vera stolið af spilliforritum sem sýkja tölvuna þína.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -223,8 +223,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ekki tókst að opna veskið</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI BITCOIN MYNT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI VERTCOIN MYNT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -284,7 +284,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 biðlarar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -482,12 +482,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Hætta í forriti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Óska eftir greiðslum (býr til QR kóða og bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Óska eftir greiðslum (býr til QR kóða og vertcoin: URI)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Senda mynt í Bitcoin færslugildi</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Senda mynt í Vertcoin færslugildi</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -506,8 +506,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Sýna upplýsingar um Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti Bitcoin aðgerðir í skipanalínu</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti Vertcoin aðgerðir í skipanalínu</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -522,8 +522,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Skrifaðu undir &amp;skilaboð...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Kvitta undir skilaboð með Bitcoin færslugildunum þínum til að sanna að þú eigir þau</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Kvitta undir skilaboð með Vertcoin færslugildunum þínum til að sanna að þú eigir þau</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -552,8 +552,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Uppfært</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum Bitcoin færslugildum</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum Vertcoin færslugildum</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -697,8 +697,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Færslugildið sem tengt er þessari færslu. Þessu má einungis breyta þegar sent er.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Færslugildið sem slegið var inn "%1" er ekki leyfilegt Bitcoin færslugildi.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Færslugildið sem slegið var inn "%1" er ekki leyfilegt Vertcoin færslugildi.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -775,12 +775,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Samið án utanaðkomandi undirskriftarstuðnings (krafist fyrir utanaðkomandi undirskrift)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Tengstu Bitcoin netinu í gegnum SOCKS5 umboð.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Tengstu Vertcoin netinu í gegnum SOCKS5 umboð.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Tengstu Bitcoin netinu í gegnum sérstakt SOCKS5 umboð fyrir Tor laukþjónustu.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Tengstu Vertcoin netinu í gegnum sérstakt SOCKS5 umboð fyrir Tor laukþjónustu.</translation>
     </message>
     <message>
         <source>Error</source>

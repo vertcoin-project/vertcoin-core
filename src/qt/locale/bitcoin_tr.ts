@@ -35,7 +35,7 @@
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Bitcoinleri alacağınız adresi seçin</translation>
+        <translation>Vertcoinleri alacağınız adresi seçin</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -96,13 +96,13 @@
         <translation>Adres listesinin %1 konumuna kaydedilmesi sırasında bir hata meydana geldi. Lütfen tekrar deneyin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Bunlar ödeme almak için kullanacağınız Bitcoin adreslerinizdir. Yeni adres oluşturmak için ödeme alma sekmesindeki 'Yeni alıcı adresi oluşturun' kısmına tıklayın. İmzalama sadece 'miras' olarak dilimizde ifade edilen 'legacy' tipindeki adreslerle mümkündür.</translation>
+        <translation>Bunlar ödeme almak için kullanacağınız Vertcoin adreslerinizdir. Yeni adres oluşturmak için ödeme alma sekmesindeki 'Yeni alıcı adresi oluşturun' kısmına tıklayın. İmzalama sadece 'miras' olarak dilimizde ifade edilen 'legacy' tipindeki adreslerle mümkündür.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar Bitcoinleriniz için gönderici adreslerinizdir. Gönderim yapmadan önce her zaman tutarı ve alıcı adresini kontrol ediniz.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar Vertcoinleriniz için gönderici adreslerinizdir. Gönderim yapmadan önce her zaman tutarı ve alıcı adresini kontrol ediniz.</translation>
     </message>
 </context>
 <context>
@@ -175,8 +175,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Parola değişimi başarısız oldu</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Cüzdanınızı şifrelemenin bilgisayarınıza bulaşan kötü amaçlı yazılımlar tarafından bitcoinlerinizin çalınmasına karşı tamamen koruyamayacağını unutmayın.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Cüzdanınızı şifrelemenin bilgisayarınıza bulaşan kötü amaçlı yazılımlar tarafından vertcoinlerinizin çalınmasına karşı tamamen koruyamayacağını unutmayın.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -232,8 +232,8 @@ Cüzdan kilidini aç.</translation>
         <translation>Cüzdan kilidi açma başarız oldu</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Uyarı: Cüzdanınızı şifreler ve parolanızı unutursanız &lt;b&gt;TÜM BITCOINLERINIZI KAYBEDERSİNİZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Uyarı: Cüzdanınızı şifreler ve parolanızı unutursanız &lt;b&gt;TÜM VERTCOINLERINIZI KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -289,7 +289,7 @@ Cüzdan kilidini aç.</translation>
         <translation>%1 istemci</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -559,8 +559,8 @@ Cüzdan kilidini aç.</translation>
         <translation>Cüzdanı Aç</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Bitcoin’i aç.</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Vertcoin’i aç.</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -595,8 +595,8 @@ Cüzdan kilidini aç.</translation>
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Ödeme isteyin (QR kodları ve bitcoin: URI'ler üretir)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Ödeme isteyin (QR kodları ve vertcoin: URI'ler üretir)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -618,8 +618,8 @@ Cüzdan kilidini aç.</translation>
         <translation>G&amp;öster</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bir Bitcoin adresine Bitcoin yolla</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Bir Vertcoin adresine Vertcoin yolla</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -650,8 +650,8 @@ Cüzdan kilidini aç.</translation>
         <translation>&amp;Mesajı imzala...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Bitcoin adreslerine sahip olduğunuzu kanıtlamak için mesajlarınızı imzalayın</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Vertcoin adreslerine sahip olduğunuzu kanıtlamak için mesajlarınızı imzalayın</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -680,8 +680,8 @@ Cüzdan kilidini aç.</translation>
         <translation>Güncel</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Belirtilen Bitcoin adresleriyle imzalandıklarından emin olmak için mesajları doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Belirtilen Vertcoin adresleriyle imzalandıklarından emin olmak için mesajları doğrulayın</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -978,8 +978,8 @@ Cüzdan kilidini aç.</translation>
         <translation>Bu adres listesi girişiyle ilişkili adres. Bu sadece adreslerin gönderilmesi için değiştirilebilir</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Girilen "%1" adresi geçerli bir Bitcoin adresi değildir.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Girilen "%1" adresi geçerli bir Vertcoin adresi değildir.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1023,8 +1023,8 @@ Cüzdan kilidini aç.</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1  Bitcoin blok zincirinin bir kopyasını indirecek ve depolayacak.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1  Vertcoin blok zincirinin bir kopyasını indirecek ve depolayacak.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1177,8 +1177,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Henüz görüntülenmeyen işlemlerden etkilenen bitcoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Henüz görüntülenmeyen işlemlerden etkilenen vertcoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1205,8 +1205,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Saat başı ilerleme artışı</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız bitcoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız vertcoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1224,8 +1224,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Bitcoin URI aç</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Vertcoin URI aç</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1325,8 +1325,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Gelen bağlantılara izin ver</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Yönlendiricideki Bitcoin istemcisini otomatik olarak aç. Bu özellik yalnızca yönlendiriciniz PCP veya NAT-PMP desteğine sahipse ve aktif edilmişse çalışır. Harici port rastgele olabilir.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Yönlendiricideki Vertcoin istemcisini otomatik olarak aç. Bu özellik yalnızca yönlendiriciniz PCP veya NAT-PMP desteğine sahipse ve aktif edilmişse çalışır. Harici port rastgele olabilir.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1338,7 +1338,7 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Bitcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Vertcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1361,12 +1361,12 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Seçenekleri sıfırlamayı onayla</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Bitcoin ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Vertcoin ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Tor Onion hizmetleri için ayrı bir SOCKS5 proxy aracılığıyla Bitcoin ağına bağlanın. </translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Tor Onion hizmetleri için ayrı bir SOCKS5 proxy aracılığıyla Vertcoin ağına bağlanın. </translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1589,8 +1589,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Yakın zamandaki işlemler</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Bitcoin ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Vertcoin ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1735,12 +1735,12 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' geçerli bir URI değil. Onun yerine 'bitcoin:' kullanın.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' geçerli bir URI değil. Onun yerine 'vertcoin:' kullanın.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1751,8 +1751,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Ödeme talebi dosyası yönetimi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Bitcoin adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Vertcoin adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1894,8 +1894,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Yerleştir "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Bir bitcoin adresi giriniz (örneğin %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Bir vertcoin adresi giriniz (örneğin %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2179,8 +2179,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Ağ etkinliği devre dışı bırakıldı</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Bitcoin düğümünüzün diğer düğümlerle iletişim için kullandığı internet adresleri.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Vertcoin düğümünüzün diğer düğümlerle iletişim için kullandığı internet adresleri.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2380,8 +2380,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Yeni alım adresi ile ilişkili, seçiminize dayalı etiket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Bitcoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Vertcoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2618,7 +2618,7 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bitcoin gönderimini onaylayın</translation>
+        <translation>Vertcoin gönderimini onaylayın</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -2735,7 +2735,7 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Bitcoini Gönder</translation>
+        <translation>Vertcoini Gönder</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -2784,8 +2784,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Uyarı: Ücret tahmini şu anda mümkün değildir.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Uyarı: geçersiz Bitcoin adresi</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Uyarı: geçersiz Vertcoin adresi</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2811,8 +2811,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>&amp;Etiket:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Referans için bitcoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Bitcoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Referans için vertcoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Vertcoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2847,12 +2847,12 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>Ücreti tutardan düş</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Ödemenin yollanacağı Bitcoin adresi</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Ödemenin yollanacağı Vertcoin adresi</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az bitcoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az vertcoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2960,8 +2960,8 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>&amp;İletiyi imzala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Bu Bitcoin adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Bu Vertcoin adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2972,12 +2972,12 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>İmzalar - Giri‭s / Mesaji Onayla</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>İletinin imzalanmasında kullanılan Bitcoin adresi</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>İletinin imzalanmasında kullanılan Vertcoin adresi</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>İletinin imzalanmasında kullanılacak Bitcoin adresi</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>İletinin imzalanmasında kullanılacak Vertcoin adresi</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3004,16 +3004,16 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
         <translation>&amp;Mesajı Denetle</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Belirtilen Bitcoin adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Belirtilen Vertcoin adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Cüzdan kilidinin açılması iptal edildi.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Eski (P2PKH) adreslerinizle mesajları/anlaşmaları imzalayarak bu adreslere gönderilen Bitcoin'leri alabileceğinizi unutmayın. Belirsiz veya rastgele şeyleri imzalamaktan kaçının, çünkü kimlik bilgilerinizi çalmak isteyen oltalama saldırıları sizi kandırmaya çalışabilir. Sadece tamamen ayrıntılı ve onayladığınız beyanları imzalayın.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Eski (P2PKH) adreslerinizle mesajları/anlaşmaları imzalayarak bu adreslere gönderilen Vertcoin'leri alabileceğinizi unutmayın. Belirsiz veya rastgele şeyleri imzalamaktan kaçının, çünkü kimlik bilgilerinizi çalmak isteyen oltalama saldırıları sizi kandırmaya çalışabilir. Sadece tamamen ayrıntılı ve onayladığınız beyanları imzalayın.</translation>
     </message>
 </context>
 <context>
@@ -3087,7 +3087,7 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan bitcoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan vertcoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Inputs</source>
@@ -3501,7 +3501,7 @@ Taşıma işlemi, taşıma işleminden önce cüzdanın bir yedeğini oluşturac
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Bitcoini Gönder</translation>
+        <translation>Vertcoini Gönder</translation>
     </message>
     <message>
         <source>Signer error</source>
@@ -3964,7 +3964,7 @@ Cüzdan yedeği geri yüklenemiyor.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation>İşlemdeki bitcoin tutarı ücreti ödemek için çok düşük</translation>
+        <translation>İşlemdeki vertcoin tutarı ücreti ödemek için çok düşük</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3984,7 +3984,7 @@ Cüzdan yedeği geri yüklenemiyor.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - bitcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - vertcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
         <source>This is experimental software.</source>

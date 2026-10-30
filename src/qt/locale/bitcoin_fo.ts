@@ -96,14 +96,14 @@
         <translation>Villa undir goymslu av adressuskrá í %1. Vinaliga royn aftur.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Hetta eru tínar Bitcoin adressur at móttakað við. Vel 'Framleið nýggja inngjaldsadressu', undir Móttak-skiljiblaðnum fyri at útroknað nýggjar adressur.
+        <translation>Hetta eru tínar Vertcoin adressur at móttakað við. Vel 'Framleið nýggja inngjaldsadressu', undir Móttak-skiljiblaðnum fyri at útroknað nýggjar adressur.
 Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hetta eru goymdar Bitcoin adressur at senda til. Kanna altíð upphæddina og útgjaldsadressuna áðrenn hvørja flyting.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hetta eru goymdar Vertcoin adressur at senda til. Kanna altíð upphæddina og útgjaldsadressuna áðrenn hvørja flyting.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Miseydnaðist at broyta loyniorð</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Hav í huga at tað at brongla tína mappu ikki er ein fullfíggjað verja ímóti stuldri av tínum bitcoins av illbúnaði á tíni teldu.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Hav í huga at tað at brongla tína mappu ikki er ein fullfíggjað verja ímóti stuldri av tínum vertcoins av illbúnaði á tíni teldu.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Mappu upplating miseydnaðist</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Gev gætur: Bronglar tú mappuna og gloymur loyniorðið &lt;b&gt;MISSUR TÚ ALLAR TÍNAR BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Gev gætur: Bronglar tú mappuna og gloymur loyniorðið &lt;b&gt;MISSUR TÚ ALLAR TÍNAR VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,9 +297,9 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>%1 viðskiftari</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>%n virkið samband til Bitcoin netið.</numerusform><numerusform>%n virkin sambond til Bitcoin netið.</numerusform></translation>
+        <translation><numerusform>%n virkið samband til Vertcoin netið.</numerusform><numerusform>%n virkin sambond til Vertcoin netið.</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -591,8 +591,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Innles mappu</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Innles eitt bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Innles eitt vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -631,8 +631,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Sløkk forrit</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Umbið gjald (framleiður QR kotu og bitcoin: URI'ir)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Umbið gjald (framleiður QR kotu og vertcoin: URI'ir)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -671,8 +671,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Goym eygleiðingarmappuúttak</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Send myntir til eina Bitcoin adressu</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Send myntir til eina Vertcoin adressu</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -696,8 +696,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Vís kunning um Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Vís %1 hjálpartekstin fyri ein lista við Bitcoin stýriboð-linju møgulleikum</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Vís %1 hjálpartekstin fyri ein lista við Vertcoin stýriboð-linju møgulleikum</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -712,8 +712,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>&amp;Undirrita boð…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Undirrita boðini við tíni Bitcoin-adressu fyri at prógva at tey eru tíni</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Undirrita boðini við tíni Vertcoin-adressu fyri at prógva at tey eru tíni</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -746,8 +746,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Samstillaður</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Sannroyn boð til tess at tryggja at tey vóru undirritaði av ásettu Bitcoin adressuni</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Sannroyn boð til tess at tryggja at tey vóru undirritaði av ásettu Vertcoin adressuni</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1073,8 +1073,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>Inntøppaða adressan "%1" er longu í adressubókini við spjaldrinum "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Inntøppaða adressan "%1" er ikki ein gildig Bitcoin adressa.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Inntøppaða adressan "%1" er ikki ein gildig Vertcoin adressa.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1126,8 +1126,8 @@ Undirritan, av boðum, er einans møgulig fyri 'legacy' (eldri) adressusløg.</t
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 tekur niður og goymir eitt avrit av Bitcoin blokkketuni.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 tekur niður og goymir eitt avrit av Vertcoin blokkketuni.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1329,8 +1329,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
         <translation>%1 samstillar í løtuni. Tað tekur niður og váttar blokkhøvd og blokkar, frá javningum; fram til endan á blokkketuni.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Netið góðtekur ikki nýtslu av bitcoins, ið hesin knúturin ikki enn hevur kunnleika til og harvið ikki vera vístar.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Netið góðtekur ikki nýtslu av vertcoins, ið hesin knúturin ikki enn hevur kunnleika til og harvið ikki vera vístar.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1361,8 +1361,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
         <translation>Framgongd um tíman</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Nýggjari flytingar eru enn ókendar, og tí kann vísta saldan, á mappuni, vera óeftirfarandi. Kunningin gerst tíðarhóskandi tá tín knútur er samstillaður við bitcoin netið; nágreina niðanfyri.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Nýggjari flytingar eru enn ókendar, og tí kann vísta saldan, á mappuni, vera óeftirfarandi. Kunningin gerst tíðarhóskandi tá tín knútur er samstillaður við vertcoin netið; nágreina niðanfyri.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1384,8 +1384,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Innles bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Innles vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1493,8 +1493,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
         <translation>Loyv &amp;inngangandi sambondum</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Sjálvvirkin upplating av Bitcoin viðskiftara portrið á beinaranum. Hetta virkar bert um tín beinari hevur PCP ella NAT-PMP virkisføri. Ytra portrið kann vera tilvildarligt.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Sjálvvirkin upplating av Vertcoin viðskiftara portrið á beinaranum. Hetta virkar bert um tín beinari hevur PCP ella NAT-PMP virkisføri. Ytra portrið kann vera tilvildarligt.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1534,12 +1534,12 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
         <translation>Vátta endursetan av stillingum</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Sambind við Bitcoin netið umvegis ein SOCKS5 proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Sambind við Vertcoin netið umvegis ein SOCKS5 proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Sambind við Bitcoin netið umvegis ein serstakan SOCKS5 proxy, til at røkka Tor-onion-tænastum.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Sambind við Vertcoin netið umvegis ein serstakan SOCKS5 proxy, til at røkka Tor-onion-tænastum.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1786,8 +1786,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
         <translation>Seinastu flytingar</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Vísta kunningin kann vera ótíðarhóskandi. Tín knútur samstillar við Bitcoin netið, sjálvvirkandi, eftir at samband er fingið við tað; men tann tilgongdin er ikki liðug enn.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Vísta kunningin kann vera ótíðarhóskandi. Tín knútur samstillar við Vertcoin netið, sjálvvirkandi, eftir at samband er fingið við tað; men tann tilgongdin er ikki liðug enn.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1945,8 +1945,8 @@ Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>"bitcoin://" er ikki eitt gildigt URI. Brúka ístaðin 'bitcoin:'.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>"vertcoin://" er ikki eitt gildigt URI. Brúka ístaðin 'vertcoin:'.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1957,8 +1957,8 @@ Vegnað væl kend trygdarhol í BIP70, er harðliga frámælt at fylgja boðum, 
 Fært tú hesi feilboð, skalt tú biðja seljaran, ella tann vinnurekandi, útflýggja tær eitt BIP21-sínamillumvirki URI.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bar ikki til at byrja bitcoin: click-to-pay handfaran</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Bar ikki til at byrja vertcoin: click-to-pay handfaran</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1969,8 +1969,8 @@ Fært tú hesi feilboð, skalt tú biðja seljaran, ella tann vinnurekandi, útf
         <translation>Fílu-gjaldsumbøn handfaring</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>Bar ikki til at tulkað URI! Tað kann standast av ógildigari Bitcoin adressu ella avskeplaðum URI ávirkjum.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>Bar ikki til at tulkað URI! Tað kann standast av ógildigari Vertcoin adressu ella avskeplaðum URI ávirkjum.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2109,8 +2109,8 @@ Fært tú hesi feilboð, skalt tú biðja seljaran, ella tann vinnurekandi, útf
         <translation>Viðfest "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Inntøppa eina Bitcoin adressu (t.d. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Inntøppa eina Vertcoin adressu (t.d. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2446,8 +2446,8 @@ Fært tú hesi feilboð, skalt tú biðja seljaran, ella tann vinnurekandi, útf
         <translation>Net-virksemi óvirkt</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Tín Bitcoin knútur brúkar fylgjandi net-atsetur at samskifta við aðrar knútar.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Tín Vertcoin knútur brúkar fylgjandi net-atsetur at samskifta við aðrar knútar.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2730,8 +2730,8 @@ Fyri meira upplýsingar um nýtslu av hesi stýristøð, skriva og send %6.
         <translation>Eini valfríð boð ið verða knýtt í gjaldsumbønina og kunnu verða víst fyri sendaranum.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Eini valfríð boð at festa í gjaldsumbønina, ið kunnu verða víst, tá umbønin verður latin upp. Hav í huga: Boðini verða ikki send, við gjaldinum, umvegis Bitcoin netið.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Eini valfríð boð at festa í gjaldsumbønina, ið kunnu verða víst, tá umbønin verður latin upp. Hav í huga: Boðini verða ikki send, við gjaldinum, umvegis Vertcoin netið.</translation>
     </message>
     <message>
         <source>Base58 (Legacy)</source>
@@ -3014,7 +3014,7 @@ Fyri meira upplýsingar um nýtslu av hesi stýristøð, skriva og send %6.
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Vátta bitcoin flyting</translation>
+        <translation>Vátta vertcoin flyting</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -3245,16 +3245,16 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>Gev gætur: Meting um avgjald er ikki møgulig í løtuni</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Ávaring: Ógildig Bitcoin adressa</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Ávaring: Ógildig Vertcoin adressa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Ávaring: Ókend adressa til vekslipening</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Tá nøgdin av flytingum er minni enn pláss er fyri teimum, í blokkunum, kunnu blokk-útvinnarar og framsendandi knútar hava lágmark fyri flytingaravgjald. Tað er í lagið at gjalda hesa minstu upphædd sum flytingaravgjald, men hav í huga at tað kann elva til at flytingin ongantíð verður váttað, tá eftirspurningurin, eftir bitcoin flytingum, er stórri enn netið kann útinna.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Tá nøgdin av flytingum er minni enn pláss er fyri teimum, í blokkunum, kunnu blokk-útvinnarar og framsendandi knútar hava lágmark fyri flytingaravgjald. Tað er í lagið at gjalda hesa minstu upphædd sum flytingaravgjald, men hav í huga at tað kann elva til at flytingin ongantíð verður váttað, tá eftirspurningurin, eftir vertcoin flytingum, er stórri enn netið kann útinna.</translation>
     </message>
     <message>
         <source>You can increase the fee later.</source>
@@ -3280,8 +3280,8 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>&amp;Spjaldur:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Eini boð, ið vóru partur at bitcoin: URI'inum, ið verða goymd saman við flytingini, og sum tú kann brúka sum tilvísing. Hav í huga: Boðini verða ikki send, við gjaldinum, umvegis Bitcoin netið.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Eini boð, ið vóru partur at vertcoin: URI'inum, ið verða goymd saman við flytingini, og sum tú kann brúka sum tilvísing. Hav í huga: Boðini verða ikki send, við gjaldinum, umvegis Vertcoin netið.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3324,16 +3324,16 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>&amp;Draga avgjald frá upphædd</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Bitcoin adressan at rinda til</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Vertcoin adressan at rinda til</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Upphædd at flyta, í valdu eindini</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Avgjaldið verður drigi frá sendu upphæddini. Móttakarin móttekur færri bitcoins enn tú ásetur í upphædd teiginum. Um fleiri móttakaraadressur eru ásettar verður avgjaldið javnt býtt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Avgjaldið verður drigi frá sendu upphæddini. Móttakarin móttekur færri vertcoins enn tú ásetur í upphædd teiginum. Um fleiri móttakaraadressur eru ásettar verður avgjaldið javnt býtt.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3449,8 +3449,8 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>&amp;Undirrita boð</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Undirskriva boðini fyri at prógva at Bitcoin-adressan er tín</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Undirskriva boðini fyri at prógva at Vertcoin-adressan er tín</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3461,12 +3461,12 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>Undirskriftir - Undirrita / Vátta eini boð</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin-adressan ið undirskrivaði boðini</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin-adressan ið undirskrivaði boðini</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin adressan at undirskriva boðini við</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin adressan at undirskriva boðini við</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3497,16 +3497,16 @@ Gev gætur: Av tí at avgjaldið verður roknað fyri hvørt být, fer ein avgja
         <translation>Vátta &amp;boð</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Vátta at boðini vóru undirritað av ásettu Bitcoin adressuni</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Vátta at boðini vóru undirritað av ásettu Vertcoin adressuni</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Mappu-upplating var avbrotin.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Tú kann undirrita boð/sáttmálar við tínum legacy/eldru (P2PKH) adressum, fyri at prógva at tú kann móttaka bitcoins, sendar til tær. Ver ansin so tú ikki skrivar undir nakað ógreitt ella tilvildarligt, tí fysking-álop kunnu royna at snýta teg til at latað tín samleika til tey. Undirrita bert nágreiniligar útsagnir sum tú tekur undir við.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Tú kann undirrita boð/sáttmálar við tínum legacy/eldru (P2PKH) adressum, fyri at prógva at tú kann móttaka vertcoins, sendar til tær. Ver ansin so tú ikki skrivar undir nakað ógreitt ella tilvildarligt, tí fysking-álop kunnu royna at snýta teg til at latað tín samleika til tey. Undirrita bert nágreiniligar útsagnir sum tú tekur undir við.</translation>
     </message>
 </context>
 <context>
@@ -4394,8 +4394,8 @@ Bar ikki til at endurinnlesa mapputrygdaravrit.</translation>
         <translation>Villa: Ókent dátugrunsforsnið (%s) í dumsfílu. Forritið hevur einans virkisføri til sqlite dátugrunnar</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Villa: Hendan útgávan av bitcoin-mappuni kann bert innlesa útgávu 1 dumsufílur. Læs útgávu %s dumsufílu</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Villa: Hendan útgávan av vertcoin-mappuni kann bert innlesa útgávu 1 dumsufílur. Læs útgávu %s dumsufílu</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

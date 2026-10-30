@@ -92,13 +92,13 @@
         <translation>የአድራሻ ዝርዝሩን ወደ %1 ለማስቀመጥ ሲሞከር ስህተት አጋጥሟል:: እባክዎ መልሰው ይሞክሩ::</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>እነኚህ የቢትኮይን አድራሻዎች የክፍያ መቀበያ አድራሻዎችዎ ናችው። "ተቀበል" በሚለው መደብ ውስጥ ያለውን "አዲስ የመቀበያ አድራሻ ይፍጠሩ" የሚለውን አዝራር ይጠቀሙ።
 መፈረም የሚቻለው "ሌጋሲ" በሚል ምድብ ስር በተመደቡ አድራሻዎች ብቻ ነው።</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>እነኚ የቢትኮይን ክፍያ የመላኪያ አድራሻዎችዎ ናቸው:: ገንዘብ/ኮይኖች ከመላክዎ በፊት መጠኑን እና የመቀበያ አድራሻውን ሁልጊዜ ያረጋግጡ::</translation>
     </message>
 </context>
@@ -204,7 +204,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ቦርሳ መክፈት አልተሳካም</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>ማስጠንቀቂያ: የቢትኮይን ቦርሳዎን አመስጥረው የይለፍ-ሐረግዎን ካጡት&lt;b&gt;ቢትኮይኖቾን በሙሉ ያጣሉ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -245,7 +245,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -372,7 +372,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ስለ Qt መረጃ አሳይ</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>በእርሶ የተያዙ መሆኑን ለማረጋገጥ በBitcoin አድራሻዎችዎ መልዕክቶችን ይፈርሙ</translation>
     </message>
     <message>
@@ -489,7 +489,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>ቢትኮይን</translation>
     </message>
     <message>
@@ -679,8 +679,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>የአካባቢ አድራሻዎች</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>የእርስዎ Bitcoin ኖድ ከሌሎች ኖዶች ጋር ለመገናኘት በአሁኑ ጊዜ እየተጠቀመበት ያለው የአውታረ መረብ አድራሻ።</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>የእርስዎ Vertcoin ኖድ ከሌሎች ኖዶች ጋር ለመገናኘት በአሁኑ ጊዜ እየተጠቀመበት ያለው የአውታረ መረብ አድራሻ።</translation>
     </message>
     <message>
         <source>Node window - [%1]</source>
@@ -790,7 +790,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>የገባው አድራሻ የቅርስ (P2PKH) ቁልፍን አያመለክትም። ለሴግዊት እና ሌሎች P2PKH ላልሆኑ የአድራሻ አይነቶች የመልዕክት መፈረም በዚህ የ%1 ስሪት ውስጥ አይደገፍም። እባክዎ አድራሻውን ያረጋግጡ እና እንደገና ይሞክሩ።</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>ወደ እነርሱ የተላኩ ቢትኮይን መቀበል እንደሚችሉ ለማረጋገጥ ከርስዎ (P2PKH) አድራሻዎች ጋር መልዕክቶችን/ስምምነቶችን መፈረም ይችላሉ። የማስገር ጥቃቶች እርስዎን ማንነትዎን በእነሱ ላይ እንዲፈርሙ ሊያታልሉዎት ስለሚችሉ ግልጽ ያልሆነ ወይም በዘፈቀደ ላለመፈረም ይጠንቀቁ። የተስማሙባቸውን ሙሉ ዝርዝር መግለጫዎች ብቻ ይፈርሙ።</translation>
     </message>
 </context>

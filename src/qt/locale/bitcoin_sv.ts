@@ -89,13 +89,13 @@
 Försök igen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Detta är dina Bitcoinadresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i mottagsfliken för att skapa nya adresser. Signering är bara tillgänglig för adresser av typen 'legacy'</translation>
+        <translation>Detta är dina Vertcoinadresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i mottagsfliken för att skapa nya adresser. Signering är bara tillgänglig för adresser av typen 'legacy'</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Bitcoin-adresser för att skicka betalningar. Kontrollera alltid belopp och mottagaradress innan du skickar bitcoin.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina Vertcoin-adresser för att skicka betalningar. Kontrollera alltid belopp och mottagaradress innan du skickar vertcoin.</translation>
     </message>
 </context>
 <context>
@@ -168,8 +168,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Misslyckades att ändra lösenfras</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina bitcoins om skadlig kod infekterat din dator.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina vertcoins om skadlig kod infekterat din dator.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -228,8 +228,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Misslyckades låsa upp plånboken</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>VARNING: Om du krypterar din plånbok och glömmer din lösenfras, &lt;b&gt;FÖRLORAR DU ALLA DINA BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>VARNING: Om du krypterar din plånbok och glömmer din lösenfras, &lt;b&gt;FÖRLORAR DU ALLA DINA VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -289,7 +289,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1-klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -559,8 +559,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Öppna plånbok</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Öppna en bitcoin:-URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Öppna en vertcoin:-URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -599,8 +599,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Avsluta programmet</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Begär betalningar (skapar QR-koder och bitcoin: -URIer)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Begär betalningar (skapar QR-koder och vertcoin: -URIer)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -622,8 +622,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>V&amp;isa</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Skicka bitcoin till en Bitcoin-adress</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Skicka vertcoin till en Vertcoin-adress</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -647,8 +647,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Visa information om Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Visa %1 hjälpmeddelande för att få en lista med möjliga Bitcoin kommandoradsalternativ.</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Visa %1 hjälpmeddelande för att få en lista med möjliga Vertcoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -663,8 +663,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Signera &amp;meddelandet...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med dina Bitcoin-adresser för att bevisa att du äger dem</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med dina Vertcoin-adresser för att bevisa att du äger dem</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -693,8 +693,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Uppdaterad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de signerades med angivna Bitcoin-adresser</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de signerades med angivna Vertcoin-adresser</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1012,8 +1012,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Den angivna adressen "%1" finns redan i adressboken med etikett "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Den angivna adressen "%1" är inte en giltig Bitcoin-adress.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Den angivna adressen "%1" är inte en giltig Vertcoin-adress.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1061,8 +1061,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 kommer att ladda ner och lagra en kopia av Bitcoins blockkedja.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 kommer att ladda ner och lagra en kopia av Vertcoins blockkedja.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1213,8 +1213,8 @@ Om den här plånboken innehåller lösbara</translation>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Att försöka spendera bitcoin som påverkas av transaktioner som ännu inte visas kommer inte accepteras av nätverket.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Att försöka spendera vertcoin som påverkas av transaktioner som ännu inte visas kommer inte accepteras av nätverket.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1245,8 +1245,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Förloppsökning per timme</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserats med Bitcoin-nätverket enligt informationen nedan.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserats med Vertcoin-nätverket enligt informationen nedan.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1268,8 +1268,8 @@ Om den här plånboken innehåller lösbara</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Öppna bitcoin-URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Öppna vertcoin-URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1398,12 +1398,12 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Bekräfta att alternativen ska återställs</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Anslut till Bitcoin-nätverket genom en SOCKS5-proxy.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Anslut till Vertcoin-nätverket genom en SOCKS5-proxy.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Anslut till Bitcoin-nätverket genom en separat SOCKS5-proxy för onion-tjänster genom Tor.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Anslut till Vertcoin-nätverket genom en separat SOCKS5-proxy för onion-tjänster genom Tor.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1611,8 +1611,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Nyligen genomförda transaktioner</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Bitcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Vertcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1741,12 +1741,12 @@ Om den här plånboken innehåller lösbara</translation>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' är inte en accepterad URI. Använd 'bitcoin:' istället.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' är inte en accepterad URI. Använd 'vertcoin:' istället.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Kan inte starta bitcoin: klicka-och-betala hanteraren</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Kan inte starta vertcoin: klicka-och-betala hanteraren</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1757,8 +1757,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Hantering av betalningsbegäransfil</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI kan inte parsas! Detta kan orsakas av en ogiltig Bitcoin-adress eller felaktiga URI-parametrar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI kan inte parsas! Detta kan orsakas av en ogiltig Vertcoin-adress eller felaktiga URI-parametrar.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1880,8 +1880,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Inbäddad "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Ange en Bitcoin-adress (t.ex. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Ange en Vertcoin-adress (t.ex. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2297,8 +2297,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>En valfri etikett att associera med den nya mottagaradressen.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Ett valfritt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. Obs: Meddelandet kommer inte att sändas med betalningen över Bitcoin-nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Ett valfritt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. Obs: Meddelandet kommer inte att sändas med betalningen över Vertcoin-nätverket.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2718,16 +2718,16 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Varning: Avgiftsuppskattning är för närvarande inte möjlig.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Varning: Ogiltig Bitcoin-adress</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Varning: Ogiltig Vertcoin-adress</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Varning: Okänd växeladress</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>När transaktionsvolymen är mindre än utrymmet i blocken kan både brytardatorer och relänoder kräva en minimiavgift. Det är okej att bara betala denna minimiavgift, men du ska vara medveten om att det kan leda till att en transaktion aldrig bekräftas så fort efterfrågan på bitcointransaktioner är större än vad nätverket kan hantera.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>När transaktionsvolymen är mindre än utrymmet i blocken kan både brytardatorer och relänoder kräva en minimiavgift. Det är okej att bara betala denna minimiavgift, men du ska vara medveten om att det kan leda till att en transaktion aldrig bekräftas så fort efterfrågan på vertcointransaktioner är större än vad nätverket kan hantera.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -2745,8 +2745,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>&amp;Etikett:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Ett meddelande som bifogades bitcoin: -URIn och som sparas med transaktionen som referens. Obs: Meddelandet sänds inte över Bitcoin-nätverket.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Ett meddelande som bifogades vertcoin: -URIn och som sparas med transaktionen som referens. Obs: Meddelandet sänds inte över Vertcoin-nätverket.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -2781,16 +2781,16 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>S&amp;ubtrahera avgiften från beloppet</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Bitcoin-adress att sända betalning till</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Vertcoin-adress att sända betalning till</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Beloppett att skicka i vald enhet</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att ta emot mindre bitcoin än du angivit i beloppsfältet. Om flera mottagare väljs kommer avgiften att fördelas jämt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att ta emot mindre vertcoin än du angivit i beloppsfältet. Om flera mottagare väljs kommer avgiften att fördelas jämt.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2898,8 +2898,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Signera &amp;meddelande</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna Bitcoin-adress</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Vertcoin-adress</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2910,12 +2910,12 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Signaturer - Signera / Verifiera ett meddelande</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin-adress som meddelandet signerades med</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin-adress som meddelandet signerades med</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin-adress att signera meddelandet med</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin-adress att signera meddelandet med</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2942,8 +2942,8 @@ Om den här plånboken innehåller lösbara</translation>
         <translation>Verifiera &amp;meddelande</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att det signerades med angiven Bitcoin-adress</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att det signerades med angiven Vertcoin-adress</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -3448,7 +3448,7 @@ Gå till Fil &gt; Öppna plånbok för att läsa in en plånbok.
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Skicka Bitcoins</translation>
+        <translation>Skicka Vertcoins</translation>
     </message>
     <message>
         <source>Signer error</source>
@@ -3611,7 +3611,7 @@ Gå till Fil &gt; Öppna plånbok för att läsa in en plånbok.
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med bitcoins</translation>
+        <translation>Otillräckligt med vertcoins</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
