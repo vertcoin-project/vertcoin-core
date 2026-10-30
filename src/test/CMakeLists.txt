@@ -58,6 +58,7 @@ add_executable(test_bitcoin
   interfaces_tests.cpp
   key_io_tests.cpp
   key_tests.cpp
+  kgw_tests.cpp
   logging_tests.cpp
   mempool_tests.cpp
   mempool_fee_estimator_tests.cpp
@@ -170,6 +171,7 @@ target_link_libraries(test_bitcoin
   minisketch
   secp256k1
   Boost::headers
+  GMP::GMP
   $<TARGET_NAME_IF_EXISTS:USDT::headers>
 )
 

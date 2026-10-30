@@ -5,6 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <cmath>
+#include <vector>
 
 #include <pow.h>
 
@@ -100,6 +101,32 @@ unsigned int GetNextWorkRequired_Bitcoin(const CBlockIndex* pindexLast, const CB
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
+namespace {
+/** The Kimoto Gravity Well event horizon for a window of mass blocks. */
+struct EventHorizon {
+    double fast;
+    double slow;
+};
+
+EventHorizon ComputeEventHorizon(uint64_t mass)
+{
+    const double deviation{1 + (0.7084 * std::pow((double(mass)/double(144)), -1.228))};
+    return {deviation, 1 / deviation};
+}
+
+/** The event horizon for every window Vertcoin uses, so that the walk does
+ *  not call std::pow for each block. */
+const std::vector<EventHorizon>& EventHorizonTable()
+{
+    static const std::vector<EventHorizon> table{[] {
+        std::vector<EventHorizon> horizons;
+        for (uint64_t mass{0}; mass <= 4032; ++mass) horizons.push_back(ComputeEventHorizon(mass));
+        return horizons;
+    }()};
+    return table;
+}
+} // namespace
+
 unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
                                const CBlockHeader *pblock,
                                uint64_t TargetBlocksSpacingSeconds,
@@ -114,12 +141,12 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
     int64_t                                PastRateTargetSeconds                = 0;
     double                                PastRateAdjustmentRatio                = double(1);
     CBigNum                                PastDifficultyAverage;
-    CBigNum                                PastDifficultyAveragePrev;
-    double                                EventHorizonDeviation;
-    double                                EventHorizonDeviationFast;
-    double                                EventHorizonDeviationSlow;
-    static CBigNum                          bnProofOfWorkLimit(params.powLimit);
-    static CBigNum                          bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
+    // Reused for every block of the window, so that the loop allocates nothing.
+    CBigNum                                BlockDifficulty;
+    const CBigNum                           bnProofOfWorkLimit(params.powLimit);
+    const CBigNum                           bnPreVerthashProofOfWorkLimit(params.preVerthashPowLimit);
+    const std::vector<EventHorizon>&        EventHorizons = EventHorizonTable();
+    const bool                              fMainnet = Params().GetChainType() == ChainType::MAIN;
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || static_cast<uint64_t>(BlockLastSolved->nHeight) < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
@@ -130,9 +157,13 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
         if (i == 1) {
             PastDifficultyAverage.SetCompact(BlockReading->nBits);
         } else {
-            PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev;
+            // PastDifficultyAverage += (target - PastDifficultyAverage) / i,
+            // rounded toward zero, in place.
+            BlockDifficulty.SetCompact(BlockReading->nBits);
+            BlockDifficulty -= PastDifficultyAverage;
+            BlockDifficulty.DivideTruncate(i);
+            PastDifficultyAverage += BlockDifficulty;
         }
-        PastDifficultyAveragePrev = PastDifficultyAverage;
 
         PastRateActualSeconds                        = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
         PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
@@ -141,15 +172,12 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast,
         if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
             PastRateAdjustmentRatio                        = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
         }
-        EventHorizonDeviation                        = 1 + (0.7084 * std::pow((double(PastBlocksMass)/double(144)), -1.228));
-        EventHorizonDeviationFast                = EventHorizonDeviation;
-        EventHorizonDeviationSlow                = 1 / EventHorizonDeviation;
-
         if (PastBlocksMass >= PastBlocksMin) {
-                if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
+                const EventHorizon Horizon = PastBlocksMass < EventHorizons.size() ? EventHorizons[PastBlocksMass] : ComputeEventHorizon(PastBlocksMass);
+                if ((PastRateAdjustmentRatio <= Horizon.slow) || (PastRateAdjustmentRatio >= Horizon.fast)) { assert(BlockReading); break; }
         }
         if (BlockReading->pprev == NULL ||
-            (Params().GetChainType() == ChainType::MAIN && (BlockReading->nHeight == 1080000 || BlockReading->nHeight == VERTHASH_FORKBLOCK_MAINNET))) // Don't calculate past fork block on mainnet
+            (fMainnet && (BlockReading->nHeight == 1080000 || BlockReading->nHeight == VERTHASH_FORKBLOCK_MAINNET))) // Don't calculate past fork block on mainnet
         {
                 assert(BlockReading);
                 break;

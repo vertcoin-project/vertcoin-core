@@ -16,6 +16,7 @@
 #include <vector>
 
 #include <gmp.h>
+#include <uint256.h>
 #include <util/strencodings.h>
 
 /** Errors thrown by the bignum class */
@@ -366,6 +367,13 @@ public:
     CBigNum& operator/=(const CBigNum& b)
     {
         *this = *this / b;
+        return *this;
+    }
+
+    /** Divide in place by n, rounding toward zero like operator/. */
+    CBigNum& DivideTruncate(unsigned long n)
+    {
+        mpz_tdiv_q_ui(bn, bn, n);
         return *this;
     }
 
