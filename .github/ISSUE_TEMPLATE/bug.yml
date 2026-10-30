@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## This issue tracker is only for technical issues related to Bitcoin Core.
+        ## This issue tracker is only for technical issues related to Vertcoin Core.
 
         * General bitcoin questions and/or support requests should use Bitcoin StackExchange at https://bitcoin.stackexchange.com.
         * For reporting security issues, please read instructions at https://bitcoincore.org/en/contact/.
@@ -58,7 +58,7 @@ body:
       required: false
   - type: dropdown
     attributes:
-      label: How did you obtain Bitcoin Core
+      label: How did you obtain Vertcoin Core
       multiple: false
       options:
         - Compiled from source
@@ -70,8 +70,8 @@ body:
   - type: input
     id: core-version
     attributes:
-      label: What version of Bitcoin Core are you using?
-      description: Run `bitcoind --version` or in Bitcoin-QT use `Help > About Bitcoin Core`
+      label: What version of Vertcoin Core are you using?
+      description: Run `vertcoind --version` or in Vertcoin-Qt use `Help > About Vertcoin Core`
       placeholder: e.g. v24.0.1 or master@e1bf547
     validations:
       required: true

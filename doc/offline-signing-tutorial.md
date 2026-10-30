@@ -1,6 +1,6 @@
 # Offline Signing Tutorial
 
-This tutorial will describe how to use two instances of Bitcoin Core, one online and one offline, to greatly increase security by not having private keys reside on a networked device.
+This tutorial will describe how to use two instances of Vertcoin Core, one online and one offline, to greatly increase security by not having private keys reside on a networked device.
 
 Maintaining an air-gap between private keys and any network connections drastically reduces the opportunity for those keys to be exfiltrated from the user.
 
@@ -10,7 +10,7 @@ This workflow uses [Partially Signed Bitcoin Transactions](/doc/psbt.md) (PSBTs)
 > While this tutorial demonstrates the process using `signet` network, you should omit the `-signet` flag in the provided commands when working with `mainnet`.
 
 ## Overview
-In this tutorial we have two hosts, both running Bitcoin v32.0
+In this tutorial we have two hosts, both running Vertcoin Core v32.0
 
 * `offline` host which is disconnected from all networks (internet, Tor, wifi, bluetooth etc.) and does not have, or need, a copy of the blockchain.
 * `online` host which is a regular online node with a synced blockchain.
@@ -25,7 +25,7 @@ We are going to first create an `offline_wallet` on the offline host. We will th
 1. On the offline machine create a wallet named `offline_wallet` secured by a wallet `passphrase`. This wallet will contain private keys and must remain unconnected to any networks at all times.
 
 ```sh
-[offline]$ ./build/bin/bitcoin-cli -signet -named createwallet \
+[offline]$ ./build/bin/vertcoin-cli -signet -named createwallet \
                 wallet_name="offline_wallet" \
                 passphrase="** enter passphrase **"
 
@@ -34,14 +34,14 @@ We are going to first create an `offline_wallet` on the offline host. We will th
 }
 ```
 
-`bitcoin rpc` can also be substituted for `bitcoin-cli`.
+`vertcoin rpc` can also be substituted for `vertcoin-cli`.
 
 > [!NOTE]
 > The use of a passphrase is crucial to encrypt the wallet.dat file. This encryption ensures that even if an unauthorized individual gains access to the offline host, they won't be able to access the wallet's contents. Further details about securing your wallet can be found in  [Managing the Wallet](/doc/managing-wallets.md#12-encrypting-the-wallet)
 
 2. Export the wallet in a watch-only format to a .dat file named `watch_only_wallet.dat`.
 ```sh
-[offline]$ ./build/bin/bitcoin-cli -signet -rpcwallet="offline_wallet" -named exportwatchonlywallet \
+[offline]$ ./build/bin/vertcoin-cli -signet -rpcwallet="offline_wallet" -named exportwatchonlywallet \
              destination=/path/to/watch_only_wallet.dat
 ```
 
@@ -54,7 +54,7 @@ On the online machine import the watch-only wallet. This wallet will have the pr
 The `watch_only_wallet` wallet will be used to track and validate incoming transactions, create unsigned PSBTs when spending coins, and broadcast signed and finalized PSBTs.
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -named restorewallet \
+[online]$ ./build/bin/vertcoin-cli -signet -named restorewallet \
               wallet_name="watch_only_wallet" \
               backup_file=/path/to/watch_only_wallet.dat
 
@@ -70,7 +70,7 @@ At this point, it's important to understand that both the `offline_wallet` and o
 1. Generate an address to receive coins. You can use _either_ the `offline_wallet` or the online `watch_only_wallet` to generate this address, as they will produce the same addresses. For the sake of this guide, we'll use the online `watch_only_wallet` to generate the address.
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -rpcwallet="watch_only_wallet" getnewaddress
+[online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" getnewaddress
 
 tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
 ```
@@ -80,7 +80,7 @@ tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
 3. Confirm that coins were received using the online `watch_only_wallet`. Note that the transaction may take a few moments before being received on your local node, depending on its connectivity. Just re-run the command periodically until the transaction is received.
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -rpcwallet="watch_only_wallet" listunspent
+[online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" listunspent
 
 [
   {
@@ -109,7 +109,7 @@ tb1qtu5qgc6ddhmqm5yqjvhg83qgk2t4ewajg0h6yh
 2. Create a funded but unsigned PSBT to the destination address with the online `watch_only_wallet` by using `send [{"address":amount},...]` and export the unsigned PSBT to a file `funded_psbt.txt` for easy portability to the `offline_wallet` for signing:
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -rpcwallet="watch_only_wallet" send \
+[online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" send \
               '{"tb1q9k5w0nhnhyeh78snpxh0t5t7c3lxdeg3erez32": 0.009}' \
               | jq -r '.psbt' \
               >> /path/to/funded_psbt.txt
@@ -124,13 +124,13 @@ cHNidP8BAHECAAAAAWLHKR9/xAjetzL/FCmZU5lbfINRMWPRPHWO68PfUzkPAQAAAAD9////AoA4AQAA
 Decode and analyze the unsigned PSBT on the `offline_wallet` using the `funded_psbt.txt` file:
 
 ```sh
-[offline]$ ./build/bin/bitcoin-cli -signet decodepsbt $(cat /path/to/funded_psbt.txt)
+[offline]$ ./build/bin/vertcoin-cli -signet decodepsbt $(cat /path/to/funded_psbt.txt)
 
 {
     ...
 }
 
-[offline]$ ./build/bin/bitcoin-cli -signet analyzepsbt $(cat /path/to/funded_psbt.txt)
+[offline]$ ./build/bin/vertcoin-cli -signet analyzepsbt $(cat /path/to/funded_psbt.txt)
 
 {
   "inputs": [
@@ -161,13 +161,13 @@ Notice that the analysis of the PSBT shows that "signatures" are missing and sho
 Use the walletpassphrase command to unlock the `offline_wallet` with the passphrase. You should specify the passphrase and a timeout (in seconds) for how long you want the wallet to remain unlocked.
 
 ```sh
-[offline]$ ./build/bin/bitcoin-cli -signet -rpcwallet="offline_wallet" walletpassphrase "** enter passphrase **" 60
+[offline]$ ./build/bin/vertcoin-cli -signet -rpcwallet="offline_wallet" walletpassphrase "** enter passphrase **" 60
 ```
 
 2. Process, sign and finalize the PSBT on the `offline_wallet` using the `walletprocesspsbt` command, saving the output to a file `final_psbt.txt`.
 
  ```sh
-[offline]$ ./build/bin/bitcoin-cli -signet -rpcwallet="offline_wallet" walletprocesspsbt \
+[offline]$ ./build/bin/vertcoin-cli -signet -rpcwallet="offline_wallet" walletprocesspsbt \
                 $(cat /path/to/funded_psbt.txt) \
                 | jq -r .hex \
                 >> /path/to/final_psbt.txt
@@ -177,7 +177,7 @@ Use the walletpassphrase command to unlock the `offline_wallet` with the passphr
 Broadcast the funded, signed and finalized PSBT `final_psbt.txt` using `sendrawtransaction` with an online node:
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet sendrawtransaction $(cat /path/to/final_psbt.txt)
+[online]$ ./build/bin/vertcoin-cli -signet sendrawtransaction $(cat /path/to/final_psbt.txt)
 
 c2430a0e46df472b04b0ca887bbcd5c4abf7b2ce2eb71de981444a80e2b96d52
 ```
@@ -187,7 +187,7 @@ c2430a0e46df472b04b0ca887bbcd5c4abf7b2ce2eb71de981444a80e2b96d52
 Confirm the updated balance of the offline wallet using the `watch_only_wallet`.
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -rpcwallet="watch_only_wallet" getbalances
+[online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" getbalances
 
 {
   "mine": {
@@ -206,7 +206,7 @@ Confirm the updated balance of the offline wallet using the `watch_only_wallet`.
 You can also show transactions related to the wallet using `listtransactions`
 
 ```sh
-[online]$ ./build/bin/bitcoin-cli -signet -rpcwallet="watch_only_wallet" listtransactions
+[online]$ ./build/bin/vertcoin-cli -signet -rpcwallet="watch_only_wallet" listtransactions
 
 [
     ...

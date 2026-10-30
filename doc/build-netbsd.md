@@ -1,8 +1,8 @@
 # NetBSD Build Guide
 
-Bitcoin Core is supported on all [supported NetBSD releases](https://www.netbsd.org/releases/).
+Vertcoin Core is supported on all [supported NetBSD releases](https://www.netbsd.org/releases/).
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on the latest release.
+This guide describes how to build vertcoind, command-line utilities, and GUI on the latest release.
 
 ## Preparation
 
@@ -21,7 +21,7 @@ SQLite is required for the wallet:
 pkgin install sqlite3
 ```
 
-To build Bitcoin Core without the wallet, use `-DENABLE_WALLET=OFF`.
+To build Vertcoin Core without the wallet, use `-DENABLE_WALLET=OFF`.
 
 Cap'n Proto is needed for IPC functionality (see [multiprocess.md](multiprocess.md)):
 
@@ -33,12 +33,12 @@ Compile with `-DENABLE_IPC=OFF` if you do not need IPC functionality.
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
-### 2. Clone Bitcoin Repo
+### 2. Clone Vertcoin Repo
 
-Clone the Bitcoin Core repository to a directory. All build scripts and commands will run from this directory.
+Clone the Vertcoin Core repository to a directory. All build scripts and commands will run from this directory.
 
 ```bash
-git clone https://github.com/bitcoin/bitcoin.git
+git clone https://github.com/vertcoin-project/vertcoin-core.git
 ```
 
 ### 3. Install Optional Dependencies
@@ -46,7 +46,7 @@ git clone https://github.com/bitcoin/bitcoin.git
 #### GUI Dependencies
 ###### Qt6
 
-Bitcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
+Vertcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
 the necessary parts of Qt, the libqrencode and pass `-DBUILD_GUI=ON`. Skip if you don't intend to use the GUI.
 
 ```bash
@@ -66,7 +66,7 @@ Otherwise, if you don't need QR encoding support, use the `-DWITH_QRENCODE=OFF` 
 #### Notifications
 ###### ZeroMQ
 
-Bitcoin Core can provide notifications via ZeroMQ. To compile ZMQ support, install the following dependency and pass `-DWITH_ZMQ=ON` when configuring.
+Vertcoin Core can provide notifications via ZeroMQ. To compile ZMQ support, install the following dependency and pass `-DWITH_ZMQ=ON` when configuring.
 ```bash
 pkgin install zeromq pkgconf
 ```
@@ -87,11 +87,11 @@ echo "CHECK_OSABI=no" >> /etc/pkg_install.conf
 pkgin install lsof
 ```
 
-## Building Bitcoin Core
+## Building Vertcoin Core
 
 ### 1. Configuration
 
-There are many ways to configure Bitcoin Core. Here is an example that
+There are many ways to configure Vertcoin Core. Here is an example that
 explicitly disables the wallet and GUI:
 
 ```bash

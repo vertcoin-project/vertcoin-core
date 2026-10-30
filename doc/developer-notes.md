@@ -325,8 +325,8 @@ If the code is behaving strangely, take a look in the `debug.log` file in the da
 error and debugging messages are written there.
 
 Debug logging can be enabled on startup with the `-debug` and `-loglevel`
-configuration options and toggled while bitcoind is running with the `logging`
-RPC.  For instance, launching bitcoind with `-debug` or `-debug=1` will turn on
+configuration options and toggled while vertcoind is running with the `logging`
+RPC.  For instance, launching vertcoind with `-debug` or `-debug=1` will turn on
 all log categories and `-loglevel=trace` will turn on all log severity levels.
 
 The Qt code routes `qDebug()` output to `debug.log` under category "qt": run with `-debug=qt`
@@ -360,9 +360,9 @@ The `-DCMAKE_BUILD_TYPE=Debug` build option adds `-DDEBUG_LOCKCONTENTION` to the
 compiler flags. You may also enable it manually by building with `-DDEBUG_LOCKCONTENTION`
 added to your CPPFLAGS, i.e. `-DAPPEND_CPPFLAGS="-DDEBUG_LOCKCONTENTION"`.
 
-You can then use the `-debug=lock` configuration option at bitcoind startup or
-`bitcoin-cli logging '["lock"]'` at runtime to turn on lock contention logging.
-It can be toggled off again with `bitcoin-cli logging [] '["lock"]'`.
+You can then use the `-debug=lock` configuration option at vertcoind startup or
+`vertcoin-cli logging '["lock"]'` at runtime to turn on lock contention logging.
+It can be toggled off again with `vertcoin-cli logging [] '["lock"]'`.
 
 ### Assertions and Checks
 
@@ -468,7 +468,7 @@ Generating the coverage report:
 ```shell
 llvm-cov show \
     --object=build/bin/test_bitcoin \
-    --object=build/bin/bitcoind \
+    --object=build/bin/vertcoind \
     -Xdemangler=llvm-cxxfilt \
     --instr-profile=build/coverage.profdata \
     --ignore-filename-regex="src/crc32c/|src/leveldb/|src/minisketch/|src/secp256k1/|src/test/" \
@@ -581,13 +581,13 @@ Make sure you [understand the security
 trade-offs](https://lwn.net/Articles/420403/) of setting these kernel
 parameters.
 
-To profile a running bitcoind process for 60 seconds, you could use an
+To profile a running vertcoind process for 60 seconds, you could use an
 invocation of `perf record` like this:
 
 ```sh
 $ perf record \
     -g --call-graph dwarf --per-thread -F 140 \
-    -p `pgrep bitcoind` -- sleep 60
+    -p `pgrep vertcoind` -- sleep 60
 ```
 
 You could then analyze the results by running:
@@ -610,7 +610,7 @@ in-tree. Example use:
 $ valgrind --suppressions=test/sanitizer_suppressions/valgrind.supp build/bin/test_bitcoin
 $ valgrind --suppressions=test/sanitizer_suppressions/valgrind.supp --leak-check=full \
       --show-leak-kinds=all build/bin/test_bitcoin --log_level=test_suite
-$ valgrind -v --leak-check=full build/bin/bitcoind -printtoconsole
+$ valgrind -v --leak-check=full build/bin/vertcoind -printtoconsole
 $ ./build/test/functional/test_runner.py --valgrind
 ```
 
@@ -720,7 +720,7 @@ and its `cs_KeyStore` lock for example).
 
 ## Threads
 
-- [Main thread (`bitcoind`)](https://doxygen.bitcoincore.org/bitcoind_8cpp.html#main)
+- [Main thread (`vertcoind`)](https://doxygen.bitcoincore.org/bitcoind_8cpp.html#main)
   : Started from `main()` in `bitcoind.cpp`. Responsible for starting up and
   shutting down the application.
 
@@ -760,7 +760,7 @@ and its `cs_KeyStore` lock for example).
     : Universal plug-and-play startup/shutdown.
 
   - [ThreadSocketHandler (`b-net`)](https://doxygen.bitcoincore.org/class_c_connman.html#net)
-    : Sends/Receives data from peers on port 8333.
+    : Sends/Receives data from peers on port 5889.
 
   - [ThreadOpenAddedConnections (`b-addcon`)](https://doxygen.bitcoincore.org/class_c_connman.html#addcon)
     : Opens network connections to added nodes.
@@ -1210,7 +1210,7 @@ In addition to reviewing the upstream changes in `env_posix.cc`, you can use `ls
 check this. For example, on Linux this command will show open `.ldb` file counts:
 
 ```bash
-$ lsof -p $(pidof bitcoind) |\
+$ lsof -p $(pidof vertcoind) |\
     awk 'BEGIN { fd=0; mem=0; } /ldb$/ { if ($4 == "mem") mem++; else fd++ } END { printf "mem = %s, fd = %s\n", mem, fd}'
 mem = 119, fd = 0
 ```
@@ -1347,7 +1347,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 - Try not to overload methods on argument type. E.g. don't make `getblock(true)` and `getblock("hash")`
   do different things.
 
-  - *Rationale*: This is impossible to use with `bitcoin-cli`, and can be surprising to users.
+  - *Rationale*: This is impossible to use with `vertcoin-cli`, and can be surprising to users.
 
   - *Exception*: Some RPC calls can take both an `int` and `bool`, most notably when a bool was switched
     to a multi-value, or due to other historical reasons. **Always** have false map to 0 and
@@ -1361,7 +1361,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 
 - Add every non-string RPC argument `(method, idx, name)` to the table `vRPCConvertParams` in `rpc/client.cpp`.
 
-  - *Rationale*: `bitcoin-cli` and the GUI debug console use this table to determine how to
+  - *Rationale*: `vertcoin-cli` and the GUI debug console use this table to determine how to
     convert a plaintext command line to JSON. If the types don't match, the method can be unusable
     from there.
 
@@ -1432,7 +1432,7 @@ downstream users and applications time to migrate.
 - The RPC help text must mention the deprecation and the `-deprecatedrpc=<feature>` flag
   that re-enables it. For example:
   ```
-  "\nDeprecated in v25.0, use the `newfoo` RPC instead. Start bitcoind with"
+  "\nDeprecated in v25.0, use the `newfoo` RPC instead. Start vertcoind with"
   " `-deprecatedrpc=foo` to continue using this RPC.\n"
   ```
 

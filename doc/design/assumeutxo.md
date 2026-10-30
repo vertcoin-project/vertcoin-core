@@ -39,7 +39,7 @@ data.
 
 `ChainstateManager` manages a single Chainstate object, for which
 `m_from_snapshot_blockhash` is `std::nullopt`. This chainstate is (maybe obviously)
-considered active. This is the "traditional" mode of operation for bitcoind.
+considered active. This is the "traditional" mode of operation for vertcoind.
 
 |    |    |
 | ---------- | ----------- |

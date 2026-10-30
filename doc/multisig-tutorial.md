@@ -1,15 +1,15 @@
 # 1. Multisig Tutorial
 
-Currently, it is possible to create a multisig wallet using Bitcoin Core only.
+Currently, it is possible to create a multisig wallet using Vertcoin Core only.
 
 Although there is already a brief explanation about the multisig in the [Descriptors documentation](/doc/descriptors.md#multisig), this tutorial proposes to use the signet (instead of regtest), bringing the reader closer to a real environment and explaining some functions in more detail.
 
 This tutorial uses [jq](https://github.com/stedolan/jq) JSON processor to process the results from RPC and stores the relevant values in bash variables. This makes the tutorial reproducible and easier to follow step by step.
 
-Before starting this tutorial, start the bitcoin node on the signet network.
+Before starting this tutorial, start the vertcoin node on the signet network.
 
 ```bash
-./build/bin/bitcoin node -signet -daemon
+./build/bin/vertcoin node -signet -daemon
 ```
 
 This tutorial also uses the default PKH derivation path to get the xpubs and does not conform to [BIP 45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki) or [BIP 87](https://github.com/bitcoin/bips/blob/master/bip-0087.mediawiki).
@@ -54,7 +54,7 @@ As previously mentioned, this step extracts the `m/44'/1'/0'` account instead of
 
 Define the multisig descriptors.
 
-All RPCs in Bitcoin Core will include the checksum in their output.
+All RPCs in Vertcoin Core will include the checksum in their output.
 
 ```bash
 desc="wsh(sortedmulti(2,${xpubs["xpub_1"]}/<0;1>/*,${xpubs["xpub_2"]}/<0;1>/*,${xpubs["xpub_3"]}/<0;1>/*))"
@@ -73,7 +73,7 @@ There are other fields that can be added to the descriptors:
 * `active`: Sets the descriptor to be the active one for the corresponding output type (`wsh`, in this case).
 * `timestamp`: Sets the time from which to start rescanning the blockchain for the descriptor, in UNIX epoch time.
 
-Documentation for these and other parameters can be found by typing `./build/bin/bitcoin rpc -signet help importdescriptors`.
+Documentation for these and other parameters can be found by typing `./build/bin/vertcoin rpc -signet help importdescriptors`.
 
 `multisig_desc` concatenates the descriptor in a JSON array and then it will be used to create the multisig wallet.
 
@@ -115,7 +115,7 @@ Coins received by the wallet must have at least 1 confirmation before they can b
 ```bash
 receiving_address=$(./build/bin/bitcoin rpc -signet -rpcwallet="multisig_wallet_01" getnewaddress)
 
-./contrib/signet/getcoins.py -c ./build/bin/bitcoin-cli -a $receiving_address
+./contrib/signet/getcoins.py -c ./build/bin/vertcoin-cli -a $receiving_address
 ```
 
 To copy the receiving address onto the clipboard, use the following command. This can be useful when getting coins via the signet faucet mentioned above.
@@ -134,11 +134,11 @@ The `getbalances` RPC may be used to check the balance. Coins with `trusted` sta
 
 Unlike singlesig wallets, multisig wallets cannot create and sign transactions directly because they require the signatures of the co-signers. Instead they create a Partially Signed Bitcoin Transaction (PSBT).
 
-PSBT is a data format that allows wallets and other tools to exchange information about a Bitcoin transaction and the signatures necessary to complete it. [[source](https://bitcoinops.org/en/topics/psbt/)]
+PSBT is a data format that allows wallets and other tools to exchange information about a Vertcoin transaction and the signatures necessary to complete it. [[source](https://bitcoinops.org/en/topics/psbt/)]
 
 The current PSBT version (v0) is defined in [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki).
 
-For simplicity, the destination address is taken from the `participant_1` wallet in the code above, but it can be any valid bitcoin address.
+For simplicity, the destination address is taken from the `participant_1` wallet in the code above, but it can be any valid vertcoin address.
 
 The `walletcreatefundedpsbt` RPC is used to create and fund a transaction in the PSBT format. It is the first step in creating the PSBT.
 

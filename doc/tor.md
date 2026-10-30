@@ -1,12 +1,12 @@
 # TOR SUPPORT IN BITCOIN
 
-It is possible to run Bitcoin Core as a Tor onion service, and connect to such services.
+It is possible to run Vertcoin Core as a Tor onion service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150.
 ## Compatibility
 
-- Starting with version 22.0, Bitcoin Core only supports Tor version 3 hidden
-  services (Tor v3). Tor v2 addresses are ignored by Bitcoin Core and neither
+- Starting with version 22.0, Vertcoin Core only supports Tor version 3 hidden
+  services (Tor v3). Tor v2 addresses are ignored by Vertcoin Core and neither
   relayed nor stored.
 
 - Tor removed v2 support beginning with version 0.4.6.
@@ -16,9 +16,9 @@ The following directions assume you have a Tor proxy running on port 9050. Many 
   ([#34031](https://github.com/bitcoin/bitcoin/pull/34031)).
   The `-debug=tor` logging category is unaffected.
 
-## How to see information about your Tor configuration via Bitcoin Core
+## How to see information about your Tor configuration via Vertcoin Core
 
-There are several ways to see your local onion address in Bitcoin Core:
+There are several ways to see your local onion address in Vertcoin Core:
 - in the "Local addresses" output of CLI `-netinfo`
 - in the "localaddresses" output of RPC `getnetworkinfo`
 - in the debug log (grep for "AddLocal"; the Tor address ends in `.onion`)
@@ -30,13 +30,13 @@ CLI `-addrinfo` returns the number of addresses known to your node per
 network. This can be useful to see how many onion peers your node knows,
 e.g. for `-onlynet=onion`.
 
-You can use the `getnodeaddresses` RPC to fetch a number of onion peers known to your node; run `bitcoin-cli help getnodeaddresses` for details.
+You can use the `getnodeaddresses` RPC to fetch a number of onion peers known to your node; run `vertcoin-cli help getnodeaddresses` for details.
 
-`bitcoin rpc` can also be substituted for `bitcoin-cli`.
+`vertcoin rpc` can also be substituted for `vertcoin-cli`.
 
-## 1. Run Bitcoin Core behind a Tor proxy
+## 1. Run Vertcoin Core behind a Tor proxy
 
-The first step is running Bitcoin Core behind a Tor proxy. This will already anonymize all
+The first step is running Vertcoin Core behind a Tor proxy. This will already anonymize all
 outgoing connections, but more is possible.
 
     -proxy=ip[:port]
@@ -89,24 +89,24 @@ with the prefix `unix:` (e.g. `-onion=unix:/home/me/torsocket`).
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-    bitcoind -proxy=127.0.0.1:9050
+    vertcoind -proxy=127.0.0.1:9050
 
-`bitcoin node` or `bitcoin gui` can also be substituted for `bitcoind`.
+`vertcoin node` or `vertcoin gui` can also be substituted for `vertcoind`.
 
-## 2. Automatically create a Bitcoin Core onion service
+## 2. Automatically create a Vertcoin Core onion service
 
-Bitcoin Core makes use of Tor's control socket API to create and destroy
+Vertcoin Core makes use of Tor's control socket API to create and destroy
 ephemeral onion services programmatically. This means that if Tor is running and
-proper authentication has been configured, Bitcoin Core automatically creates an
+proper authentication has been configured, Vertcoin Core automatically creates an
 onion service to listen on. The goal is to increase the number of available
 onion nodes.
 
-This feature is enabled by default if Bitcoin Core is listening (`-listen`) and
+This feature is enabled by default if Vertcoin Core is listening (`-listen`) and
 it requires a Tor connection to work. It can be explicitly disabled with
 `-listenonion=0`. If it is not disabled, it can be configured using the
 `-torcontrol` and `-torpassword` settings.
 
-To see verbose Tor information in the bitcoind debug log, pass `-debug=tor`.
+To see verbose Tor information in the vertcoind debug log, pass `-debug=tor`.
 
 ### Control Port
 
@@ -128,20 +128,20 @@ Debian and Ubuntu, or just restart the computer).
 ### Authentication
 
 Connecting to Tor's control socket API requires one of two authentication
-methods to be configured: cookie authentication or bitcoind's `-torpassword`
+methods to be configured: cookie authentication or vertcoind's `-torpassword`
 configuration option.
 
 #### Cookie authentication
 
-For cookie authentication, the user running bitcoind must have read access to
+For cookie authentication, the user running vertcoind must have read access to
 the `CookieAuthFile` specified in the Tor configuration. In some cases this is
 preconfigured and the creation of an onion service is automatic. Don't forget to
-use the `-debug=tor` bitcoind configuration option to enable Tor debug logging.
+use the `-debug=tor` vertcoind configuration option to enable Tor debug logging.
 
 If a permissions problem is seen in the debug log, e.g. `tor: Authentication
 cookie /run/tor/control.authcookie could not be opened (check permissions)`, it
 can be resolved by adding both the user running Tor and the user running
-bitcoind to the same Tor group and setting permissions appropriately.
+vertcoind to the same Tor group and setting permissions appropriately.
 
 On Debian-derived systems, the Tor group will likely be `debian-tor` and one way
 to verify could be to list the groups and grep for a "tor" group name:
@@ -158,14 +158,14 @@ TORGROUP=$(stat -c '%G' /run/tor/control.authcookie)
 ```
 
 Once you have determined the `${TORGROUP}` and selected the `${USER}` that will
-run bitcoind, run this as root:
+run vertcoind, run this as root:
 
 ```
 usermod -a -G ${TORGROUP} ${USER}
 ```
 
 Then restart the computer (or log out) and log in as the `${USER}` that will run
-bitcoind.
+vertcoind.
 
 #### `torpassword` authentication
 
@@ -179,26 +179,26 @@ Manual](https://2019.www.torproject.org/docs/tor-manual.html.en) for more
 details).
 
 
-## 3. Manually create a Bitcoin Core onion service
+## 3. Manually create a Vertcoin Core onion service
 
 You can also manually configure your node to be reachable from the Tor network.
 Add these lines to your `/etc/tor/torrc` (or equivalent config file):
 
-    HiddenServiceDir /var/lib/tor/bitcoin-service/
-    HiddenServicePort 8333 127.0.0.1:8334
+    HiddenServiceDir /var/lib/tor/vertcoin-service/
+    HiddenServicePort 5889 127.0.0.1:5890
     # If `tor --list-modules` shows "pow: yes", then enable PoW protection.
     # It is available in tor-0.4.8.1-alpha and newer when configured with
     # `./configure --enable-gpl`.
     HiddenServicePoWDefensesEnabled 1
 
 The directory can be different of course, but virtual port numbers should be equal to
-your bitcoind's P2P listen port (8333 by default), and target addresses and ports
-should be equal to binding address and port for inbound Tor connections (127.0.0.1:8334 by default).
+your vertcoind's P2P listen port (5889 by default), and target addresses and ports
+should be equal to binding address and port for inbound Tor connections (127.0.0.1:5890 by default).
 
-    -externalip=X   You can tell bitcoin about its publicly reachable addresses using
+    -externalip=X   You can tell vertcoin about its publicly reachable addresses using
                     this option, and this can be an onion address. Given the above
                     configuration, you can find your onion address in
-                    /var/lib/tor/bitcoin-service/hostname. For connections
+                    /var/lib/tor/vertcoin-service/hostname. For connections
                     coming from unroutable addresses (such as 127.0.0.1, where the
                     Tor proxy typically runs), onion addresses are given
                     preference for your node to advertise itself with.
@@ -220,35 +220,35 @@ should be equal to binding address and port for inbound Tor connections (127.0.0
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-    bitcoind -proxy=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -listen
+    vertcoind -proxy=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -listen
 
 (obviously, replace the .onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-    bitcoind ... -bind=127.0.0.1:8334=onion
+    vertcoind ... -bind=127.0.0.1:5890=onion
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-    bitcoind ... -discover
+    vertcoind ... -discover
 
-and open port 8333 on your firewall (or use port mapping, i.e., `-natpmp`).
+and open port 5889 on your firewall (or use port mapping, i.e., `-natpmp`).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-    bitcoind -onion=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -discover
+    vertcoind -onion=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -discover
 
 ## 4. Privacy recommendations
 
-- Do not add anything but Bitcoin Core ports to the onion service created in section 3.
+- Do not add anything but Vertcoin Core ports to the onion service created in section 3.
   If you run a web service too, create a new onion service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Onion
   services created automatically (as in section 2) always have only one port
   open.
 - Operating a node that listens on multiple networks (e.g. IPv4 and Tor) can help
-  strengthen the Bitcoin network, as nodes in this configuration (i.e. bridge nodes) increase
+  strengthen the Vertcoin network, as nodes in this configuration (i.e. bridge nodes) increase
   the cost and complexity of launching eclipse and partition attacks. However, under certain
   conditions, an adversary that can connect to your node on multiple networks may be
   able to correlate those identities by observing shared runtime characteristics. It
