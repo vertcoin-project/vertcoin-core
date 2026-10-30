@@ -1,4 +1,4 @@
-packages:=
+packages:=gmp
 
 boost_packages = boost
 
