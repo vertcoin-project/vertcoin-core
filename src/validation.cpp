@@ -12,6 +12,7 @@
 #include <chain.h>
 #include <checkqueue.h>
 #include <clientversion.h>
+#include <common/args.h>
 #include <consensus/amount.h>
 #include <consensus/consensus.h>
 #include <consensus/merkle.h>
@@ -3850,6 +3851,16 @@ static bool CheckBlockHeader(const CBlockHeader& block, BlockValidationState& st
     int nHeight = 0;
     if (pindexPrev) {
         nHeight = pindexPrev->nHeight + 1;
+    }
+    // Vertcoin: a header already in the block index with valid header checks
+    // had its proof of work checked when it was accepted, and the block hash
+    // covers every field of the header, so a block with that hash is not
+    // hashed again; Verthash costs milliseconds a block.
+    if (fCheckPOW && g_chainman && !gArgs.GetBoolArg("-full-pow-verify", false)) {
+        const uint256 hash{block.GetHash()};
+        LOCK(::cs_main);
+        const CBlockIndex* pindex{g_chainman->m_blockman.LookupBlockIndex(hash)};
+        if (pindex && pindex->IsValid(BLOCK_VALID_TREE)) fCheckPOW = false;
     }
     // Check proof of work matches claimed amount
     if (fCheckPOW && !CheckProofOfWork(block.GetPoWHash(nHeight), block.nBits, consensusParams))

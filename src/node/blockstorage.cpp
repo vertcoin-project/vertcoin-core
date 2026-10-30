@@ -1075,8 +1075,12 @@ bool BlockManager::ReadBlock(CBlock& block, const FlatFilePos& pos, const int nH
 
     const auto block_hash{block.GetHash()};
 
-    // Check the header
-    if (!CheckProofOfWork(block.GetPoWHash(nHeight), block.nBits, GetConsensus())) {
+    // Check the header. Vertcoin: a caller that expects a block hash reads a
+    // block from the block index, whose proof of work was checked when its
+    // header was accepted, and the hash covers every field of the header, so
+    // matching it below proves the same; Verthash costs milliseconds a block.
+    if ((!expected_hash || gArgs.GetBoolArg("-full-pow-verify", false)) &&
+        !CheckProofOfWork(block.GetPoWHash(nHeight), block.nBits, GetConsensus())) {
         LogError("Errors in block header at %s, %d while reading block", pos.ToString(), nHeight);
         return false;
     }
