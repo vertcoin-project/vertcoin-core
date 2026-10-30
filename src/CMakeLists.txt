@@ -84,6 +84,7 @@ target_link_libraries(bitcoin_consensus
     core_interface
     bitcoin_crypto
     secp256k1
+    bitcoin_common
 )
 
 if(WITH_ZMQ)
@@ -116,6 +117,8 @@ add_library(bitcoin_common STATIC EXCLUDE_FROM_ALL
   common/url.cpp
   compressor.cpp
   core_io.cpp
+  crypto/verthash.cpp
+  crypto/verthash_datfile.cpp
   deploymentinfo.cpp
   external_signer.cpp
   init/common.cpp

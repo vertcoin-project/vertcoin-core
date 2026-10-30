@@ -10,15 +10,26 @@ add_library(bitcoin_crypto STATIC EXCLUDE_FROM_ALL
   hkdf_sha256_32.cpp
   hmac_sha256.cpp
   hmac_sha512.cpp
+  Lyra2RE/Lyra2RE.c
+  Lyra2RE/Lyra2.c
+  Lyra2RE/Sponge.c
+  Lyra2RE/blake.c
+  Lyra2RE/groestl.c
+  Lyra2RE/keccak.c
+  Lyra2RE/skein.c
+  Lyra2RE/cubehash.c
+  Lyra2RE/bmw.c
   muhash.cpp
   poly1305.cpp
   ripemd160.cpp
+  scrypt.cpp
   sha1.cpp
   sha256.cpp
   sha256_sse4.cpp
   sha3.cpp
   sha512.cpp
   siphash.cpp
+  tiny_sha3/sha3.c
   ../support/cleanse.cpp
   $<$<NOT:$<STREQUAL:${CMAKE_SYSTEM_NAME},Generic>>:../support/lockedpool.cpp>
 )

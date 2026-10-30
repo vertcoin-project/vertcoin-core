@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-present The Bitcoin Core developers
+// Copyright (c) 2014-2023 The Vertcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,6 +22,8 @@
 #include <compat/compat.h>
 #include <consensus/params.h>
 #include <crypto/hex_base.h>
+#include <crypto/verthash.h>
+#include <crypto/verthash_datfile.h>
 #include <dbwrapper.h>
 #include <httprpc.h>
 #include <httpserver.h>
@@ -172,6 +175,8 @@ static constexpr bool DEFAULT_PROXYRANDOMIZE{true};
 static constexpr bool DEFAULT_REST_ENABLE{false};
 static constexpr bool DEFAULT_I2P_ACCEPT_INCOMING{true};
 static constexpr bool DEFAULT_STOPAFTERBLOCKIMPORT{false};
+
+ChainstateManager* g_chainman = nullptr;
 
 #ifdef WIN32
 // Win32 LevelDB doesn't use filedescriptors, and the ones used for
@@ -543,6 +548,8 @@ void SetupServerArgs(ArgsManager& argsman, bool can_listen_ipc)
             "(default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, >=%u = automatically prune block files to stay under the specified target size in MiB)", MIN_DISK_SPACE_FOR_BLOCK_FILES / 1_MiB), ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
     argsman.AddArg("-reindex", "If enabled, wipe chain state and block index, and rebuild them from blk*.dat files on disk. Also wipe and rebuild other optional indexes that are active. If an assumeutxo snapshot was loaded, its chainstate will be wiped as well. The snapshot can then be reloaded via RPC.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
     argsman.AddArg("-reindex-chainstate", "If enabled, wipe chain state, and rebuild it from blk*.dat files on disk. If an assumeutxo snapshot was loaded, its chainstate will be wiped as well. The snapshot can then be reloaded via RPC.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
+    argsman.AddArg("-verthash-diskonly", "Don't load Verthash's datafile into RAM. Will slow down validation significantly, but might be needed on low-memory systems.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
+    argsman.AddArg("-full-startup-verify", "Check the complete chain of work on startup from the Genesis block", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
     argsman.AddArg("-settings=<file>", strprintf("Specify path to dynamic settings data file. Can be disabled with -nosettings. File is written at runtime and not meant to be edited by users (use %s instead for custom settings). Relative paths will be prefixed by datadir location. (default: %s)", BITCOIN_CONF_FILENAME, BITCOIN_SETTINGS_FILENAME), ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
 #if HAVE_SYSTEM
     argsman.AddArg("-startupnotify=<cmd>", "Execute command on startup.", ArgsManager::ALLOW_ANY, OptionsCategory::OPTIONS);
@@ -1427,6 +1434,7 @@ static ChainstateLoadResult InitAndLoadChainstate(
     Assert(!node.chainman); // Was reset above
     try {
         node.chainman = std::make_unique<ChainstateManager>(*Assert(node.shutdown_signal), chainman_opts, blockman_opts);
+        g_chainman = node.chainman.get();
     } catch (dbwrapper_error& e) {
         LogError("%s", e.what());
         return {ChainstateLoadStatus::FAILURE, _("Error opening block database")};
@@ -1881,6 +1889,32 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
         validation_signals.RegisterValidationInterface(g_zmq_notification_interface.get());
     }
 #endif
+
+    // ********************************************************* Step 6b: generate verthash file and verify if it's valid
+
+    int cycle = 0;
+    while(cycle <= 1) {
+        uiInterface.InitMessage(_("Creating Verthash Datafile - may take several minutes"));
+        VerthashDatFile::CreateMiningDataFile();
+
+        bool fVerthashDiskOnly = args.GetBoolArg("-verthash-diskonly", false);
+        if(!fVerthashDiskOnly) {
+            uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
+            Verthash::LoadInRam();
+        }
+
+        uiInterface.InitMessage(_("Verifying Verthash Datafile"));
+        if(!Verthash::VerifyDatFile()) {
+            if(cycle == 0) {
+                VerthashDatFile::DeleteMiningDataFile();
+            } else {
+                return InitError(_("Generated Verthash datafile mismatch"));
+            }
+        } else {
+            break;
+        }
+        cycle++;
+    }
 
     // ********************************************************* Step 7: load block chain
 
