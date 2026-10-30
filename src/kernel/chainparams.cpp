@@ -118,7 +118,7 @@ public:
         consensus.BIP66Height = 691488;
         consensus.CSVHeight = 691488;
         consensus.SegwitHeight = 713664;
-        consensus.MinBIP9WarningHeight = 715680; // segwit activation height + miner confirmation window
+        consensus.MinBIP9WarningHeight = 1626912; // taproot activation height + miner confirmation window
         consensus.powLimit = uint256{"0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80"};
         // Value for previous forks
         consensus.preVerthashPowLimit = uint256{"00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"};

@@ -96,11 +96,17 @@ TRACEPOINT_SEMAPHORE(net, inbound_message);
 TRACEPOINT_SEMAPHORE(net, misbehaving_connection);
 
 /** Headers download timeout.
- *  Timeout = base + per_header * (expected number of headers) */
+ *  Timeout = base + per_header * (expected number of headers)
+ *  Vertcoin: a low-work headers sync processes every header twice, and each
+ *  pass checks proof of work with functions that cost up to a few
+ *  milliseconds per header, so allow 5ms per header instead of 1ms. */
 static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_BASE = 15min;
-static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 1ms;
+static constexpr auto HEADERS_DOWNLOAD_TIMEOUT_PER_HEADER = 5ms;
 /** How long to wait for a peer to respond to a getheaders request */
 static constexpr auto HEADERS_RESPONSE_TIME{2min};
+/** Vertcoin: do not start a headers sync with another peer on a block
+ *  announcement while this many low-work headers syncs are in progress. */
+static constexpr size_t MAX_CONCURRENT_HEADERS_SYNCS{2};
 /** Protect at least this many outbound peers from disconnection due to slow/
  * behind headers chain.
  */
@@ -2867,14 +2873,16 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
     // height of the parent of headers[0].
     int nHeight{0};
     bool have_height{false};
+    bool check_pow{true};
     {
         LOCK(peer.m_headers_sync_mutex);
         if (peer.m_headers_sync) {
-            // Both heights are those of the last header received in the sync,
-            // which is the parent of the next batch only if the batch continues
-            // the sync. Upstream may send a syncing peer an extra getheaders from
-            // m_best_header when a block is announced; that reply is not a
-            // continuation, so for it fall through to the parent lookup below.
+            // The presync height is that of the last header received in the
+            // sync, which is the parent of the next batch only if the batch
+            // continues the sync. Upstream may send a syncing peer an extra
+            // getheaders from m_best_header when a block is announced; that
+            // reply is not a continuation, so for it fall through to the parent
+            // lookup below.
             const auto state{peer.m_headers_sync->GetState()};
             if (state == HeadersSyncState::State::PRESYNC &&
                 headers[0].hashPrevBlock == peer.m_headers_sync->GetPresyncLastHash()) {
@@ -2882,12 +2890,16 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
                 have_height = true;
             } else if (state == HeadersSyncState::State::REDOWNLOAD &&
                        headers[0].hashPrevBlock == peer.m_headers_sync->GetRedownloadLastHash()) {
-                nHeight = peer.m_headers_sync->GetRedownloadHeight();
-                have_height = true;
+                // Headers of the redownload phase are only buffered (up to
+                // redownload_buffer_size) until they are passed to
+                // AcceptBlockHeader(), which checks the proof of work of every
+                // header it does not already have. Checking it here as well
+                // would double the cost of the phase.
+                check_pow = false;
             }
         }
     }
-    if (!have_height) {
+    if (check_pow && !have_height) {
         // Not in headers sync, sync is FINAL, or the batch does not continue
         // the sync: use the height of the parent block, if we know it.
         LOCK(cs_main);
@@ -2905,7 +2917,7 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
     }
 
     // Do these headers have proof-of-work matching what's claimed?
-    if (have_height && !HasValidProofOfWork(headers, m_chainparams.GetConsensus(), nHeight)) {
+    if (check_pow && have_height && !HasValidProofOfWork(headers, m_chainparams.GetConsensus(), nHeight)) {
         Misbehaving(peer, "header with invalid proof of work");
         return false;
     }
@@ -3338,7 +3350,12 @@ void PeerManagerImpl::ProcessHeadersMessage(CNode& pfrom, Peer& peer,
     // If headers connect, assume that this is in response to any outstanding getheaders
     // request we may have sent, and clear out the time of our last request. Non-connecting
     // headers cannot be a response to a getheaders request.
-    peer.m_last_getheaders_timestamp = {};
+    // If a headers sync is still in progress, IsContinuationOfLowWorkHeadersSync()
+    // has already done this and sent the next getheaders request, which is
+    // still outstanding; clearing its time would let a block announcement
+    // send another getheaders whose response does not continue the sync and
+    // so aborts it.
+    if (!have_headers_sync) peer.m_last_getheaders_timestamp = {};
 
     // If the headers we received are already in memory and an ancestor of
     // m_best_header or our tip, skip anti-DoS checks. These headers will not
@@ -4463,7 +4480,14 @@ void PeerManagerImpl::ProcessMessage(Peer& peer, CNode& pfrom, const std::string
             // our initial peer is unresponsive (but less bandwidth than we'd
             // use if we turned on sync with all peers).
             CNodeState& state{*Assert(State(pfrom.GetId()))};
-            if (state.fSyncStarted || (!peer.m_inv_triggered_getheaders_before_sync && *best_block != m_last_block_inv_triggering_headers_sync)) {
+            // Vertcoin: every low-work headers sync checks the proof of work of
+            // the whole chain on the message handling thread, and with 2.5
+            // minute blocks one is started with a new peer every few minutes,
+            // so they slow each other down until none finishes in time. Only
+            // start another one while fewer than MAX_CONCURRENT_HEADERS_SYNCS
+            // are in progress.
+            const bool may_start_headers_sync{WITH_LOCK(m_headers_presync_mutex, return m_headers_presync_stats.size()) < MAX_CONCURRENT_HEADERS_SYNCS};
+            if (state.fSyncStarted || (may_start_headers_sync && !peer.m_inv_triggered_getheaders_before_sync && *best_block != m_last_block_inv_triggering_headers_sync)) {
                 if (MaybeSendGetHeaders(pfrom, GetLocator(m_chainman.m_best_header), peer)) {
                     LogDebug(BCLog::NET, "getheaders (%d) %s to peer=%d\n",
                             m_chainman.m_best_header->nHeight, best_block->ToString(),
@@ -5549,6 +5573,17 @@ void PeerManagerImpl::ConsiderEviction(CNode& pto, Peer& peer, std::chrono::seco
     CNodeState &state = *State(pto.GetId());
 
     if (!state.m_chain_sync.m_protect && pto.IsOutboundOrBlockRelayConn() && state.fSyncStarted) {
+        // Headers received during a low-work headers sync do not update
+        // pindexBestKnownBlock until the sync reaches its redownload phase,
+        // and with Vertcoin's proof-of-work functions the presync phase alone
+        // can take longer than CHAIN_SYNC_TIMEOUT. Do not start the timeout
+        // until the peer's headers sync has ended.
+        if (WITH_LOCK(peer.m_headers_sync_mutex, return peer.m_headers_sync != nullptr)) {
+            state.m_chain_sync.m_timeout = 0s;
+            state.m_chain_sync.m_work_header = nullptr;
+            state.m_chain_sync.m_sent_getheaders = false;
+            return;
+        }
         // This is an outbound peer subject to disconnection if they don't
         // announce a block with as much work as the current tip within
         // CHAIN_SYNC_TIMEOUT + HEADERS_RESPONSE_TIME seconds (note: if

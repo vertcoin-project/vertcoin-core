@@ -1,0 +1,171 @@
+# Copyright (c) 2026-present The Vertcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or https://opensource.org/license/mit.
+
+# Reproducible release builds with contrib/guix/guix-build, one job per host.
+# Based on https://github.com/feather-wallet/feather/blob/master/.github/workflows/guix.yml
+name: Guix
+on:
+  push:
+    tags:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GUIX_ARCHIVE: guix-binary-1.5.0.x86_64-linux.tar.xz
+  GUIX_ARCHIVE_SHA256: aa41025489c5061543e9c48873eaa829b900b2da75d40f9648913622f5f47817
+  GUIX_INSTALL_SCRIPT: https://codeberg.org/guix/guix/raw/tag/v1.5.0/etc/guix-install.sh
+  # Same SDK as ci/test/00_setup_env_mac_cross.sh
+  SDK_URL: https://bitcoincore.org/depends-sources/sdks
+  OSX_SDK_BASENAME: Xcode-26.1.1-17B100-extracted-SDK-with-libcxx-headers
+  OSX_SDK_SHA256: 9600fa93644df674ee916b5e2c8a6ba8dacf631996a65dc922d003b98b5ea3b1
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  cache-sources:
+    name: 'cache depends sources'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: depends sources cache
+        id: cache
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: depends/sources
+          key: depends-sources-${{ hashFiles('depends/packages/*') }}
+
+      # curl does not retry a reset connection, so retry the whole download; files
+      # already fetched and checked are kept between attempts
+      - name: download depends sources
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          for attempt in 1 2 3; do
+            make -C depends download && exit 0
+            echo "depends download attempt ${attempt} failed"
+            sleep 30
+          done
+          exit 1
+
+  build:
+    name: ${{ matrix.host }}
+    runs-on: ubuntu-24.04
+    needs: [cache-sources]
+    timeout-minutes: 360
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    strategy:
+      fail-fast: false
+      matrix:
+        host:
+          - x86_64-linux-gnu
+          - arm-linux-gnueabihf
+          - aarch64-linux-gnu
+          - riscv64-linux-gnu
+          - powerpc64-linux-gnu
+          - x86_64-w64-mingw32
+          - x86_64-apple-darwin
+          - arm64-apple-darwin
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # A guix build of one host needs more space than a fresh runner has free
+      - name: free disk space
+        run: sudo rm -rf /usr/local /usr/share/dotnet /opt/ghc /opt/hostedtoolcache
+
+      - name: depends sources cache
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: depends/sources
+          key: depends-sources-${{ hashFiles('depends/packages/*') }}
+
+      - name: macOS SDK
+        if: contains(matrix.host, 'apple-darwin')
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/SDKs"
+          curl --location --fail --retry 5 "${SDK_URL}/${OSX_SDK_BASENAME}.tar" -o "$RUNNER_TEMP/${OSX_SDK_BASENAME}.tar"
+          echo "${OSX_SDK_SHA256}  $RUNNER_TEMP/${OSX_SDK_BASENAME}.tar" | sha256sum -c -
+          tar -C "$RUNNER_TEMP/SDKs" -xf "$RUNNER_TEMP/${OSX_SDK_BASENAME}.tar"
+          echo "SDK_PATH=$RUNNER_TEMP/SDKs" >> "$GITHUB_ENV"
+
+      - name: apparmor workaround
+        # https://bugs.launchpad.net/ubuntu/+source/guix/+bug/2064115
+        run: |
+          sudo tee /etc/apparmor.d/guix << EOF
+          abi <abi/3.0>,
+          include <tunables/global>
+          profile guix /gnu/store/{*-guix-command,*/bin/guix-daemon,*/bin/guix,*/bin/guile} flags=(unconfined) {
+            userns,
+            include if exists <local/guix>
+          }
+          EOF
+          sudo /etc/init.d/apparmor reload
+          sudo aa-enforce guix || true
+          sudo apt-get purge -y apparmor
+
+      # The binary tarball is checked against its known hash before anything from it runs
+      - name: install guix
+        run: |
+          set -euo pipefail
+          wget --tries=5 --waitretry=10 --no-verbose "https://ftp.gnu.org/gnu/guix/${GUIX_ARCHIVE}" -O "/tmp/${GUIX_ARCHIVE}"
+          echo "${GUIX_ARCHIVE_SHA256}  /tmp/${GUIX_ARCHIVE}" | sha256sum -c -
+          curl -fsSL "${GUIX_INSTALL_SCRIPT}" -o /tmp/guix-install.sh
+          chmod +x /tmp/guix-install.sh
+          { yes "" 2>/dev/null || true; } | sudo env GUIX_BINARY_FILE_NAME="/tmp/${GUIX_ARCHIVE}" /tmp/guix-install.sh
+          guix --version
+
+      - name: build
+        env:
+          HOSTS: ${{ matrix.host }}
+          SUBSTITUTE_URLS: https://bordeaux.guix.gnu.org https://ci.guix.gnu.org
+        run: ./contrib/guix/guix-build
+
+      - name: attest build provenance
+        uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3
+        with:
+          subject-path: guix-build-*/output/${{ matrix.host }}/*
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: ${{ matrix.host }}
+          path: guix-build-*/output/${{ matrix.host }}/*
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: failure()
+        with:
+          name: ${{ matrix.host }}-logs
+          path: guix-build-*/logs/${{ matrix.host }}/*
+          if-no-files-found: ignore
+
+  hashes:
+    name: 'print hashes'
+    runs-on: ubuntu-24.04
+    needs: [build]
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          path: output
+          merge-multiple: true
+
+      - name: print hashes
+        run: |
+          {
+            echo '```'
+            (cd output && find . -type f -print0 | env LC_ALL=C sort -z | xargs -r0 sha256sum)
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
