@@ -124,8 +124,6 @@ bool BlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, s
     AssertLockHeld(::cs_main);
     std::unique_ptr<CDBIterator> pcursor(NewIterator());
 
-    const bool full_chain_verification{gArgs.GetBoolArg("-full-startup-verify", false)};
-
     pcursor->Seek(std::make_pair(DB_BLOCK_INDEX, uint256()));
 
     // Load m_block_index
@@ -149,14 +147,6 @@ bool BlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, s
                 pindexNew->nNonce         = diskindex.nNonce;
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
-
-                if (full_chain_verification) {
-                    if (pindexNew->nHeight % 10000 == 0) LogInfo("Checking PoW for block %i\n", pindexNew->nHeight);
-                    if (!CheckProofOfWork(pindexNew->GetBlockPoWHash(), pindexNew->nBits, consensusParams)) {
-                        LogError("%s: CheckProofOfWork failed: %s\n", __func__, pindexNew->ToString());
-                        return false;
-                    }
-                }
 
                 pcursor->Next();
             } else {

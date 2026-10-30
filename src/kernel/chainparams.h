@@ -16,6 +16,7 @@
 
 #include <cstddef>
 #include <cstdint>
+#include <map>
 #include <memory>
 #include <optional>
 #include <string>
@@ -127,6 +128,11 @@ public:
 
     const ChainTxData& TxData() const { return chainTxData; }
 
+    /** Vertcoin: block hashes the stored block index must agree with at
+     *  startup, by height. Upstream removed checkpoints; these are used only
+     *  for that check, not to accept or reject blocks. */
+    const std::map<int, uint256>& Checkpoints() const { return m_checkpoints; }
+
     /**
      * VersionBitsParameters holds activation parameters
      */
@@ -197,6 +203,7 @@ protected:
     bool m_is_mockable_chain;
     std::vector<AssumeutxoData> m_assumeutxo_data;
     ChainTxData chainTxData;
+    std::map<int, uint256> m_checkpoints;
     HeadersSyncParams m_headers_sync_params;
 
     void ApplyDeploymentOptions(const DeploymentOptions& opts);
