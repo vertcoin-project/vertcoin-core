@@ -23,6 +23,11 @@ std::string CopyrightHolders(const std::string& strPrefix, const std::string& st
     return strCopyrightHolders;
 }
 
+std::string CopyrightHolders(const std::string& strPrefix)
+{
+    return CopyrightHolders(strPrefix, strPrefix);
+}
+
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/vertcoin-project/vertcoin-core>";

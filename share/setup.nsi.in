@@ -64,7 +64,7 @@ VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
 VIAddVersionKey FileVersion "@CLIENT_VERSION_STRING@"
 VIAddVersionKey FileDescription "Installer for @CLIENT_NAME@"
-VIAddVersionKey LegalCopyright "Copyright (C) 2014-@COPYRIGHT_YEAR@ @COPYRIGHT_HOLDERS_FINAL@"
+VIAddVersionKey LegalCopyright "Copyright (C) 2009-@COPYRIGHT_YEAR@ @COPYRIGHT_HOLDERS_FINAL@"
 InstallDirRegKey HKCU "${REGKEY}" Path
 ShowUninstDetails show
 
