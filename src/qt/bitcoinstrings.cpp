@@ -75,7 +75,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile checksum does not match. Comp
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile format record is incorrect. Got \"%s\", expected \"format\"."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile identifier record is incorrect. Got \"%s\", expected \"%s\"."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Duplicate descriptors created during migration. Your wallet may be corrupted."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Export destination '%s' already exists"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Export destination cannot be empty"),

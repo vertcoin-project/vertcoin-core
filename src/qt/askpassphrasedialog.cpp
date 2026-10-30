@@ -103,7 +103,7 @@ void AskPassphraseDialog::accept()
         }
         QMessageBox msgBoxConfirm(QMessageBox::Question,
                                   tr("Confirm wallet encryption"),
-                                  tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR BITCOINS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+                                  tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR VERTCOINS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
                                   QMessageBox::Cancel | QMessageBox::Yes, this);
         msgBoxConfirm.button(QMessageBox::Yes)->setText(tr("Continue"));
         msgBoxConfirm.button(QMessageBox::Cancel)->setText(tr("Back"));
@@ -114,7 +114,7 @@ void AskPassphraseDialog::accept()
             if(newpass1 == newpass2)
             {
                 QString encryption_reminder = tr("Remember that encrypting your wallet cannot fully protect "
-                "your bitcoins from being stolen by malware infecting your computer.");
+                "your vertcoins from being stolen by malware infecting your computer.");
                 if (m_passphrase_out) {
                     m_passphrase_out->assign(newpass1);
                     QMessageBox msgBoxWarning(QMessageBox::Warning,
