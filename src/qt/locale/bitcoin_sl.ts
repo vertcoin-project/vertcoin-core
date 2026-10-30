@@ -92,14 +92,14 @@
         <translation>Napaka pri shranjevanju seznama naslovov v %1. Prosim poskusite znova.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>To so vaši bitcoin-naslovi, ki jih uporabljate za prejemanje plačil. Za tvorbo novega naslova uporabite gumb "Ustvari nov prejemni naslov" v zavihku Prejmi.
+        <translation>To so vaši vertcoin-naslovi, ki jih uporabljate za prejemanje plačil. Za tvorbo novega naslova uporabite gumb "Ustvari nov prejemni naslov" v zavihku Prejmi.
 Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To so vaši bitcoin-naslovi za pošiljanje. Pred pošiljanjem vedno preverite količino in prejemnikov naslov.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To so vaši vertcoin-naslovi za pošiljanje. Pred pošiljanjem vedno preverite količino in prejemnikov naslov.</translation>
     </message>
 </context>
 <context>
@@ -172,8 +172,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Sprememba gesla je spodletela.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Pomnite, da šifriranje denarnice ne more preprečiti kraje bitcoinov preko morebitnih virusov na vašem računalniku.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Pomnite, da šifriranje denarnice ne more preprečiti kraje vertcoinov preko morebitnih virusov na vašem računalniku.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -232,8 +232,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Denarnice ni bilo mogoče odkleniti</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Opozorilo: V primeru izgube gesla šifrirane denarnice boste &lt;b&gt;IZGUBILI VSE SVOJE BITCOINE&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Opozorilo: V primeru izgube gesla šifrirane denarnice boste &lt;b&gt;IZGUBILI VSE SVOJE VERTCOINE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -293,7 +293,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>%1 odjemalec</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -567,8 +567,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Odpri denarnico</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Odpri URI tipa bitcoin:</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Odpri URI tipa vertcoin:</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -607,8 +607,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Izhod iz programa</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Zahtevajte plačilo (ustvarite zahtevek s kodo QR in URI tipa bitcoin)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Zahtevajte plačilo (ustvarite zahtevek s kodo QR in URI tipa vertcoin)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -630,8 +630,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>&amp;Prikaži</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Izvedite plačilo na bitcoin-naslov</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Izvedite plačilo na vertcoin-naslov</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -655,7 +655,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Oglejte si informacije o Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Pokaži %1 sporočilo za pomoč s seznamom vseh možnosti v ukazni vrstici</translation>
     </message>
     <message>
@@ -671,8 +671,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>&amp;Podpiši sporočilo...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Podpišite poljubno sporočilo z enim svojih bitcoin-naslovov, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Podpišite poljubno sporočilo z enim svojih vertcoin-naslovov, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -701,8 +701,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Ažurno</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Preverite, če je bilo prejeto sporočilo podpisano z določenim bitcoin-naslovom.</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Preverite, če je bilo prejeto sporočilo podpisano z določenim vertcoin-naslovom.</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1020,8 +1020,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Vnešeni naslov "%1" je že v imeniku z oznako "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Vnešeni naslov "%1" ni veljaven bitcoin-naslov.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Vnešeni naslov "%1" ni veljaven vertcoin-naslov.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1069,7 +1069,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 bo prenesel in shranil kopijo verige blokov.</translation>
     </message>
     <message numerus="yes">
@@ -1215,8 +1215,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>%1 se trenutno sinhronizira. Od soležnikov bodo preneseni in preverjeni zaglavja in bloki do vrha verige.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Poskusa pošiljanja bitcoinov, na katere vplivajo še ne prikazane transakcije, omrežje ne bo sprejelo.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Poskusa pošiljanja vertcoinov, na katere vplivajo še ne prikazane transakcije, omrežje ne bo sprejelo.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1247,8 +1247,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Napredek na uro</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Zadnje transakcije morda še niso vidne, zato je prikazano stanje v denarnici lahko napačno. Pravilni podatki bodo prikazani, ko bo vaša denarnica končala s sinhronizacijo z bitcoin omrežjem; glejte podrobnosti spodaj.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Zadnje transakcije morda še niso vidne, zato je prikazano stanje v denarnici lahko napačno. Pravilni podatki bodo prikazani, ko bo vaša denarnica končala s sinhronizacijo z vertcoin omrežjem; glejte podrobnosti spodaj.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1270,8 +1270,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Odpri bitcoin-URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Odpri vertcoin-URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1379,8 +1379,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Dovoli &amp;dohodne povezave</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Samodejno odpiranje vrat (port) za bitcoin-odjemalec na usmerjevalniku. To deluje le, če usmerjevalnik podpira PCP ali NAT-PMP in je ta funkcija na usmerjevalniku vklopljena. Zunanja številka vrat je lahko naključna.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Samodejno odpiranje vrat (port) za vertcoin-odjemalec na usmerjevalniku. To deluje le, če usmerjevalnik podpira PCP ali NAT-PMP in je ta funkcija na usmerjevalniku vklopljena. Zunanja številka vrat je lahko naključna.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1420,12 +1420,12 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Potrditev ponastavitve</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Poveži se v omrežje Bitcoin preko posredniškega strežnika SOCKS5.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Poveži se v omrežje Vertcoin preko posredniškega strežnika SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Poveži se v omrežje Bitcoin prek ločenega posredniškega strežnika SOCKS5 za storitve onion (Tor).</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Poveži se v omrežje Vertcoin prek ločenega posredniškega strežnika SOCKS5 za storitve onion (Tor).</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1668,8 +1668,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation>Zadnje transakcije</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatki so morda zastareli. Program ob vzpostavitvi povezave samodejno sinhronizira denarnico z omrežjem Bitcoin, a trenutno ta proces še ni zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatki so morda zastareli. Program ob vzpostavitvi povezave samodejno sinhronizira denarnico z omrežjem Vertcoin, a trenutno ta proces še ni zaključen.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1823,8 +1823,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' ni veljaven URI. Uporabite raje 'bitcoin:' .</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' ni veljaven URI. Uporabite raje 'vertcoin:' .</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1835,8 +1835,8 @@ Zaradi široko razširjenih varnostih hib v BIP70 vam toplo priporočamo, da mor
 Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Ni mogoče zagnati rokovalca plačilnih povezav tipa bitcoin:.</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Ni mogoče zagnati rokovalca plačilnih povezav tipa vertcoin:.</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1847,8 +1847,8 @@ Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</transl
         <translation>Rokovanje z datoteko z zahtevkom za plačilo</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI je neprepoznaven! Možno je, da je bitcoin-naslov neveljaven ali pa so parametri URI-ja napačno oblikovani.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URI je neprepoznaven! Možno je, da je vertcoin-naslov neveljaven ali pa so parametri URI-ja napačno oblikovani.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1989,8 +1989,8 @@ Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</transl
         <translation>Želite ponastaviti nastavitve na privzete vrednosti ali prekiniti urejanje brez sprememb?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Vnesite bitcoin-naslov (npr. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Vnesite vertcoin-naslov (npr. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2313,7 +2313,7 @@ Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</transl
         <translation>Omrežna aktivnost onemogočena.</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>Omrežni naslovi, ki jih vaše vozlišče trenutno uporablja za komunikacijo z drugimi vozlišči.</translation>
     </message>
     <message>
@@ -2569,8 +2569,8 @@ Za več informacij glede uporabe konzole uporabite ukaz %6.
         <translation>Neobvezna oznaka, ki se shrani v zahtevek za plačilo in se lahko prikaže plačniku.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo.prek omrežja Bitcoin tega sporočila ne bo vsebovalo.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo.prek omrežja Vertcoin tega sporočila ne bo vsebovalo.</translation>
     </message>
     <message>
         <source>Base58 (Legacy)</source>
@@ -3074,16 +3074,16 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>Opozorilo: ocena provizije trenutno ni mogoča.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Opozorilo: Neveljaven bitcoin-naslov</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Opozorilo: Neveljaven vertcoin-naslov</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Opozorilo: Neznan naslov za vračilo drobiža</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Kadar je v blokih manj prostora, kot je zahtev po transakcijah, lahko rudarji in posredovalna vozlišča zahtevajo minimalno provizijo. Plačilo le te minimalne provizije je čisto v redu, vendar se zavedajte, da lahko to povzroči, da se transakcija nikoli ne potrdi, če bo povpraševanje po bitcoin transakcijah večje, kot ga omrežje lahko obdela.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Kadar je v blokih manj prostora, kot je zahtev po transakcijah, lahko rudarji in posredovalna vozlišča zahtevajo minimalno provizijo. Plačilo le te minimalne provizije je čisto v redu, vendar se zavedajte, da lahko to povzroči, da se transakcija nikoli ne potrdi, če bo povpraševanje po vertcoin transakcijah večje, kot ga omrežje lahko obdela.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -3105,8 +3105,8 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>&amp;Oznaka:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Sporočilo, ki je bilo pripeto na URI tipa bitcoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Sporočilo, ki je bilo pripeto na URI tipa vertcoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Vertcoin.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3141,15 +3141,15 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>O&amp;dštej provizijo od zneska</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Bitcoin-naslov, na katerega bo plačilo poslano</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Vertcoin-naslov, na katerega bo plačilo poslano</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Znesek za pošiljanje v izbrani enoti</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Znesek plačila bo zmanjšan za znesek provizije. Prejemnik bo prejel manjše število kovancev, kot je bil vnešeni znesek. Če je prejemnikov več, bo provizija med njih enakomerno porazdeljena.</translation>
     </message>
     <message>
@@ -3258,7 +3258,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>Podpiši &amp;sporočilo</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Podpišite sporočilo, da dokažete lastništvo zgornjega naslova.</translation>
     </message>
     <message>
@@ -3270,12 +3270,12 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>Podpiši / preveri sporočilo</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin-naslov, s katerim je bilo sporočilo podpisano</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin-naslov, s katerim je bilo sporočilo podpisano</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin-naslov, s katerim podpisujete sporočilo</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin-naslov, s katerim podpisujete sporočilo</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3302,8 +3302,8 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation>Preveri &amp;sporočilo</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Preverite, ali je bilo sporočilo v resnici podpisano z navedenim bitcoin-naslovom.</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Preverite, ali je bilo sporočilo v resnici podpisano z navedenim vertcoin-naslovom.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -4037,8 +4037,8 @@ Obnovitev varnostne kopije denarnice ni bila mogoča.</translation>
         <translation>Napaka: identifikator zapisa v izvozni (dump) datoteki je napačen. Vsebuje "%s", pričakovano "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Napaka: verzija izvozne (dump) datoteke ni podprta. Ta verzija ukaza bitcoin-wallet podpira le izvozne datoteke verzije 1, ta datoteka pa ima verzijo %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Napaka: verzija izvozne (dump) datoteke ni podprta. Ta verzija ukaza vertcoin-wallet podpira le izvozne datoteke verzije 1, ta datoteka pa ima verzijo %s.</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

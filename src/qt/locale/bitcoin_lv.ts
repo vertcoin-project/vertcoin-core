@@ -35,11 +35,11 @@
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt bitcoins</translation>
+        <translation>Izvēlies adresi ar kuru saņemt vertcoins</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt bitcoins</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt vertcoins</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -79,8 +79,8 @@
         <translation>Mēģinot saglabāt adrešu sarakstu %1 radās kļūda. Mēģiniet vēlreiz.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Šīs ir jūsu Bitcoin adreses, kuras izmantojamas maksājumu veikšanai. Vienmēr pārbaudiet summu un saņēmēja adresi pirms monētu nosūtīšanas.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Šīs ir jūsu Vertcoin adreses, kuras izmantojamas maksājumu veikšanai. Vienmēr pārbaudiet summu un saņēmēja adresi pirms monētu nosūtīšanas.</translation>
     </message>
 </context>
 <context>
@@ -177,7 +177,7 @@
         <translation>Maciņa atslēgšana neizdevās</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Brīdinājums: Šifrējot Jūsu maciņu, gadījumā ja aizmirsīsiet savu paroli, Jūs NEATGRIEZENISKI ZAUDĒSIET VISUS SAVUS "BITKOINUS"!</translation>
     </message>
     <message>
@@ -200,7 +200,7 @@
         <translation>%1 klients</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -325,8 +325,8 @@
         <translation>Aizvērt programmu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -334,8 +334,8 @@
         <translation>Atjaunot maku</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Nosūtīt bitkoinus uz Bitcoin adresi</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Nosūtīt bitkoinus uz Vertcoin adresi</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -354,8 +354,8 @@
         <translation>Parādīt informāciju par Qt</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Bitcoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Vertcoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -374,8 +374,8 @@
         <translation>Sinhronizēts</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Bitcoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Vertcoin adresēm</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -690,7 +690,7 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt bitcoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt vertcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>Error</source>
@@ -754,7 +754,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Bitcoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Vertcoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>default</source>
@@ -788,8 +788,8 @@
         <translation>Nesenās transakcijas</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Bitcoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Vertcoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1136,7 +1136,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Bitcoin Kontroles Funkcijas</translation>
+        <translation>Vertcoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -1268,8 +1268,8 @@
         <translation>Parakstīt &amp;Ziņojumu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Bitcoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Vertcoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Signature</source>

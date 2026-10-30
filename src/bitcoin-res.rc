@@ -15,13 +15,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        CLIENT_NAME " project"
-            VALUE "FileDescription",    "bitcoin (Bitcoin wrapper executable that can call other executables)"
+            VALUE "FileDescription",    "vertcoin (Vertcoin wrapper executable that can call other executables)"
             VALUE "FileVersion",        CLIENT_VERSION_STRING
-            VALUE "InternalName",       "bitcoin"
+            VALUE "InternalName",       "vertcoin"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "bitcoin.exe"
-            VALUE "ProductName",        "bitcoin"
+            VALUE "OriginalFilename",   "vertcoin.exe"
+            VALUE "ProductName",        "vertcoin"
             VALUE "ProductVersion",     CLIENT_VERSION_STRING
         END
     END

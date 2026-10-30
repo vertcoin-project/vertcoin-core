@@ -96,14 +96,14 @@
         <translation>Kien hemm żball meta pruvajt issalva l-lista tal-indirizzi f'%1. Jekk jogħġbok erġa pprova.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dawn huma l-indirizzi Bitcoin tiegħek biex tirċievi ħlasijiet. Uża l-buttuna 'Oħloq indirizz riċevitur ġdid' fit-tab tar-riċeviment biex toħloq indirizzi ġodda.
+        <translation>Dawn huma l-indirizzi Vertcoin tiegħek biex tirċievi ħlasijiet. Uża l-buttuna 'Oħloq indirizz riċevitur ġdid' fit-tab tar-riċeviment biex toħloq indirizzi ġodda.
 L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dawn huma l-indirizzi tal-Bitcoin tiegħek biex tibgħat il-ħlasijiet. Dejjem iċċekkja l-ammont u l-indirizz li tirċievi qabel ma tibgħat muniti.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dawn huma l-indirizzi tal-Vertcoin tiegħek biex tibgħat il-ħlasijiet. Dejjem iċċekkja l-ammont u l-indirizz li tirċievi qabel ma tibgħat muniti.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Il-bidla fil-passphrase falliet</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Ftakar li l-kriptaġġ tal-kartiera tiegħek ma jistax jipproteġi bis-sħiħ il-bitcoins tiegħek milli jinsterqu minn malware li jinfetta l-kompjuter tiegħek.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Ftakar li l-kriptaġġ tal-kartiera tiegħek ma jistax jipproteġi bis-sħiħ il-vertcoins tiegħek milli jinsterqu minn malware li jinfetta l-kompjuter tiegħek.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Il-ftuħ tal-kartiera falla</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Twissija: Jekk tikkodifika l-kartiera tiegħek u titlef il-passphrase tiegħek, int se &lt;b&gt;TILEF IL-BITCOINS KOLLHA TIEGĦEK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Twissija: Jekk tikkodifika l-kartiera tiegħek u titlef il-passphrase tiegħek, int se &lt;b&gt;TILEF IL-VERTCOINS KOLLHA TIEGĦEK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -293,7 +293,7 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>%1klijent</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -563,8 +563,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Iftaħ Kartiera</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Iftaħ bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Iftaħ vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -603,8 +603,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Nieqaf applikazzjoni</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Itlob ħlasijiet (jiġġenera kodiċijiet QR u bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Itlob ħlasijiet (jiġġenera kodiċijiet QR u vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -626,8 +626,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Uri</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Ibgħat muniti f'indirizz Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Ibgħat muniti f'indirizz Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -651,8 +651,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Uri informazzjoni dwar Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Uri %1l-messaġġ ta 'għajnuna biex tikseb lista b'għażliet possibbli tal-linja tal-kmand Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Uri %1l-messaġġ ta 'għajnuna biex tikseb lista b'għażliet possibbli tal-linja tal-kmand Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -667,8 +667,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Iffirma &amp;messaġġ...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Iffirma messaġġi bl-indirizzi Bitcoin tiegħek biex tipprova li inti stess</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Iffirma messaġġi bl-indirizzi Vertcoin tiegħek biex tipprova li inti stess</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -693,8 +693,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>Aġġornat</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Ivverifika l-messaġġi biex tiżgura li ġew iffirmati b'indirizzi Bitcoin speċifikati</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Ivverifika l-messaġġi biex tiżgura li ġew iffirmati b'indirizzi Vertcoin speċifikati</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1004,8 +1004,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
         <translation>L-indiriżż li ktibt "%1" diġa qiegħed fil-ktieb tal-indirizzi bit-tikketta "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L-indirizz li ktibt "%1" mhuwiex indirizz validu tal-Bitcoin.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>L-indirizz li ktibt "%1" mhuwiex indirizz validu tal-Vertcoin.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1202,8 +1202,8 @@ L-iffirmar huwa possibbli biss b'indirizzi tat-tip 'legacy'.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Iftaħ URI tal-bitcoin</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Iftaħ URI tal-vertcoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>

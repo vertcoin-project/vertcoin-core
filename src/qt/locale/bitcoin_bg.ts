@@ -88,12 +88,12 @@
         <translation>Получи се грешка при запазването на листа с адреси към %1. Моля опитайте пак.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>създавам</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Тези са вашите Биткойн адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
 </context>
@@ -167,7 +167,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Неуспешна промяна на фраза за достъп</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Не забравяйте, че криптирането на вашия портфейл не може напълно да защити вашите биткойни от кражба от зловреден софтуер, заразяващ компютъра ви.</translation>
     </message>
     <message>
@@ -219,7 +219,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Отключването не бе успешно</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -280,7 +280,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 клиент</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -505,7 +505,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
-        <translation>Заредете PSBT (частично подписана Bitcoin трансакция) от &amp;клипборд...</translation>
+        <translation>Заредете PSBT (частично подписана Vertcoin трансакция) от &amp;клипборд...</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction</source>
@@ -562,8 +562,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Отворете портфейл</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Отвори bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Отвори vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -602,7 +602,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Излез от приложението</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
     </message>
     <message>
@@ -625,7 +625,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;Покажи</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -650,7 +650,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Покажи информация отностно Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Биткойн команди</translation>
     </message>
     <message>
@@ -666,7 +666,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Подпиши &amp;съобщение…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Пишете съобщения със своя Биткойн адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
@@ -696,7 +696,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Актуално</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Биткойн адреси.</translation>
     </message>
     <message>
@@ -1015,7 +1015,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Въведеният адрес "%1" вече е в адресната книга с етикет "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -1068,7 +1068,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ГБ</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 ще свали и съхрани копие на биткойн блокчейна.</translation>
     </message>
     <message numerus="yes">
@@ -1101,7 +1101,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Най малко %1 GB данни ще бъдат запаметени в тази директория, и ще нарастват през времето.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -1214,7 +1214,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 в момента синхронизира. Той ще изтегля заглавия и блокове от рояка и ще ги утвърди, докато достигне върха на секторната верига.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Опитът да се изразходват биткойни, които са засегнати от все още показаните трансакции, няма да бъдат приети от мрежата.</translation>
     </message>
     <message>
@@ -1250,8 +1250,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Увеличаване на напредъка на час</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Последните трансакции все още не могат да се виждат и следователно балансът на портфейла ви може да бъде неправилен. Тази информация ще бъде правилна, след като портфейлът ви приключи синхронизирането с Bitcoin мрежата, както е подробно описано по-долу.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Последните трансакции все още не могат да се виждат и следователно балансът на портфейла ви може да бъде неправилен. Тази информация ще бъде правилна, след като портфейлът ви приключи синхронизирането с Vertcoin мрежата, както е подробно описано по-долу.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1273,8 +1273,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Отвори bitcoin URI </translation>
+        <source>Open vertcoin URI</source>
+        <translation>Отвори vertcoin URI </translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1411,7 +1411,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Потвърдете опциите за нулиране</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>Свързване с Биткойн мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
@@ -1605,7 +1605,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Последни транзакции</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1683,7 +1683,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>Биткойн не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
@@ -1838,7 +1838,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Искате ли да възстановите настройките към първичните им стойности или да напуснете без да правите промени ?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>Въведете Биткойн адрес (например: %1)</translation>
     </message>
     <message>
@@ -2373,7 +2373,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Такса</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>Внимание: Невалиден Биткойн адрес</translation>
     </message>
     <message>
@@ -2502,7 +2502,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Подпиши &amp;съобщение</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -2530,7 +2530,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Потвърди &amp;съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>

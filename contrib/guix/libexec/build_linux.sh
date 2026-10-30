@@ -64,10 +64,10 @@ mkdir -p "$DISTSRC"
           -DREDUCE_EXPORTS=ON \
           -DWITH_CCACHE=OFF
 
-    # Build Bitcoin Core
+    # Build Vertcoin Core
     cmake --build build -j "$JOBS"
 
-    # Install built Bitcoin Core
+    # Install built Vertcoin Core
     cmake --install build
 )
 

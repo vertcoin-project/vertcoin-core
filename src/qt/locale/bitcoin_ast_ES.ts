@@ -92,14 +92,14 @@
         <translation>Hubo un error intentando guardar la llista de direcciones en %1. Por favor, intenta de nuevo. </translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Estes son les tuyes direcciones de Bitcoin pa recibir pagos. Usa el botón 'Crear nueva dirección de recibimientu' na solapa de recibir pa crear nueves direcciones.
+        <translation>Estes son les tuyes direcciones de Vertcoin pa recibir pagos. Usa el botón 'Crear nueva dirección de recibimientu' na solapa de recibir pa crear nueves direcciones.
 La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes son les tuyes direcciones de Bitcoin pa mandar pagos. Siempre revisa la cantidá y la dirección de recibimientu antes de mandar los coins.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes son les tuyes direcciones de Vertcoin pa mandar pagos. Siempre revisa la cantidá y la dirección de recibimientu antes de mandar los coins.</translation>
     </message>
 </context>
 <context>
@@ -172,8 +172,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Falló el cambiu de la frase de seguridá</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Recuerda que cifrar la tua cartera nun puede protexer completamente los tuyos bitcoins de ser robados por malware que infecte tu ordenador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recuerda que cifrar la tua cartera nun puede protexer completamente los tuyos vertcoins de ser robados por malware que infecte tu ordenador.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -232,8 +232,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Falló el desbloqueo de la cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifras la tua cartera y pierdes la frase de seguridá, ¡perderás &lt;b&gt;TOOS LOS TUYOS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Advertencia: Si cifras la tua cartera y pierdes la frase de seguridá, ¡perderás &lt;b&gt;TOOS LOS TUYOS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -293,7 +293,7 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Cliente %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -531,8 +531,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Abrir cartera</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Abrir un bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Abrir un vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -563,8 +563,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Zarrar l'aplicación</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicitar pagamientos (xenera códigos QR y bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Solicitar pagamientos (xenera códigos QR y vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -586,8 +586,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>&amp;Amosar</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección de Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Enviar monedas a una dirección de Vertcoin</translation>
     </message>
     <message>
         <source>Show Peers tab</source>
@@ -607,8 +607,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Amosar información sobre Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Amosar el mensaxe d’ayuda de %1 pa ver una llista de les posibles opciones de la llinia de comandos de Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Amosar el mensaxe d’ayuda de %1 pa ver una llista de les posibles opciones de la llinia de comandos de Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -623,8 +623,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Firmar &amp;mensaje…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con les tuyas direcciones de Bitcoin pa probar que les tienes</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con les tuyas direcciones de Vertcoin pa probar que les tienes</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -647,8 +647,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation>Actualizáu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificar los mensajes pa asegurar que fueron firmados con les direcciones de Bitcoin especificaes</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verificar los mensajes pa asegurar que fueron firmados con les direcciones de Vertcoin especificaes</translation>
     </message>
     <message>
         <source>Wallet Data</source>

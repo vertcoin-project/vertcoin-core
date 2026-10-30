@@ -96,12 +96,12 @@
         <translation>ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು %1 ಗೆ ಉಳಿಸಲು ಪ್ರಯತ್ನಿಸುವಾಗ ದೋಷ ಕಂಡುಬಂದಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ನೀವು ಪಡೆಯಲು ಬಯಸುವ ಪಾವತಿಗಳನ್ನು ಸೇರಿಸಲು ನಿಮ್ಮ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳು ಇವು. ಹೊಸ ವಿಳಾಸಗಳನ್ನು ರಚಿಸಲು ಪಡೆಯುವ ಉಪಕರಣವಾಗಿ 'ಪಡೆಯುವ' ಟ್ಯಾಬ್ ನಲ್ಲಿರುವ 'ಹೊಸ ಪಾವತಿಯನ್ನು ರಚಿಸಿ' ಬಟನ್ ಅನ್ನು ಬಳಸಿ. ಸಹಿ ಮಾಡುವುದು ಕೇವಲ 'ಲೆಗೆಸಿ' ವಿಳಾಸಗಳ ವರ್ಗಕ್ಕೆ ಸೇರಿದ ವಿಳಾಸಗಳೊಂದಿಗೆ ಮಾತ್ರ ಸಾಧ್ಯ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ಕಾಣಿಕೆಗಳು ಕಳುಹಿಸಲು ನೀವು ಬಳಸಬಹುದಿರುವ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳು ಇವು. ನಾಣ್ಯದ ಹಣವನ್ನು ಕಳುಹಿಸುವ ಮುಂದೆ ಹಣದ ಮೊತ್ತವನ್ನು ಮತ್ತು ಪ್ರಾಪ್ತಿ ವಿಳಾಸವನ್ನು ಯಾವಾಗಲೂ ಪರಿಶೀಲಿಸಿ.</translation>
     </message>
 </context>
@@ -167,7 +167,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ಪಾಸ್‌ಫ್ರೇಸ್ ಬದಲಾವಣೆ ವಿಫಲವಾಗಿದೆ</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>ನಿಮ್ಮ ವಾಲೆಟ್ ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡುವುದರಿಂದ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಸೋಕಿದ ಮಲ್ವೇರ್ ನೋಂದಣಿಗೆ ಬಲಗೊಳಿಸುವ ಕಾದಂಬರಿಗೆ ನಿಮ್ಮ ಬಿಟ್‌ಕಾಯಿನ್ ಪೂರ್ತಿಯಾಗಿ ಸುರಕ್ಷಿತವಾಗುವುದಿಲ್ಲವೆಂದು ನೆನಪಿಡಿ.</translation>
     </message>
     <message>
@@ -227,7 +227,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ವಾಲೆಟ್ ಅನ್‌ಲಾಕ್ ವಿಫಲವಾಗಿದೆ</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>ನೀವು ನಿಮ್ಮ ವ್ಯಾಲೆಟ್ ಅನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಿದರೆ ಮತ್ತು ನಿಮ್ಮ ಪಾಸ್‌ಫ್ರೇಸ್ ಅನ್ನು ಕಳೆದುಕೊಂಡರೆ&lt;b&gt;, ನಿಮ್ಮ ಎಲ್ಲಾ &lt;/b&gt;ಬಿಟ್‌ಕಾಯಿನ್‌ಗಳನ್ನು ನೀವು ಕಳೆದುಕೊಳ್ಳುತ್ತೀರಿ 
  !</translation>
     </message>
@@ -281,7 +281,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -435,11 +435,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ಅಪ್ಲಿಕೇಶನ್ ತ್ಯಜಿಸಿ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>ಪಾವತಿಗಳನ್ನು ವಿನಂತಿಸಿ (QR ಕೋಡ್‌ಗಳು ಮತ್ತು ಬಿಟ್‌ಕಾಯಿನ್‌ಗಳನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ: URI ಗಳು)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಕ್ಕೆ ನಾಣ್ಯಗಳನ್ನು ಕಳುಹಿಸಿ</translation>
     </message>
     <message>
@@ -463,7 +463,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ಸಹಿ &amp;ಸಂದೇಶ...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>ನೀವು ಅವುಗಳನ್ನು ಹೊಂದಿದ್ದೀರಿ ಎಂದು ಸಾಬೀತುಪಡಿಸಲು ನಿಮ್ಮ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳೊಂದಿಗೆ ಸಂದೇಶಗಳಿಗೆ ಸಹಿ ಮಾಡಿ</translation>
     </message>
     <message>
@@ -479,7 +479,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ಟ್ಯಾಬ್‌ಗಳ ಟೂಲ್‌ಬಾರ್</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳೊಂದಿಗೆ ಸಹಿ ಮಾಡಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಸಂದೇಶಗಳನ್ನು ಪರಿಶೀಲಿಸಿ</translation>
     </message>
     <message>

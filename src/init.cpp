@@ -192,7 +192,7 @@ static constexpr int MIN_CORE_FDS = MIN_LEVELDB_FDS + NUM_FDS_MESSAGE_CAPTURE;
 /**
  * The PID file facilities.
  */
-static const char* BITCOIN_PID_FILENAME = "bitcoind.pid";
+static const char* BITCOIN_PID_FILENAME = "vertcoind.pid";
 /**
  * True if this process has created a PID file.
  * Used to determine whether we should remove the PID file on shutdown.
@@ -1529,9 +1529,9 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
     // Warn about relative -datadir path.
     if (args.IsArgSet("-datadir") && !args.GetPathArg("-datadir").is_absolute()) {
         LogWarning("Relative datadir option '%s' specified, which will be interpreted relative to the "
-                   "current working directory '%s'. This is fragile, because if bitcoin is started in the future "
+                   "current working directory '%s'. This is fragile, because if vertcoin is started in the future "
                    "from a different location, it will be unable to locate the current data files. There could "
-                   "also be data loss if bitcoin is started while in a temporary directory.",
+                   "also be data loss if vertcoin is started while in a temporary directory.",
                    args.GetArg("-datadir", ""), fs::PathToString(fs::current_path()));
     }
 

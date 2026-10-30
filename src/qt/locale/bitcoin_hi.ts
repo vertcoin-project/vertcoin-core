@@ -56,7 +56,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -290,7 +290,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OptionsDialog</name>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>राउटर पर बिटकॉइन क्लाइंट पोर्ट को स्वचालित रूप से खोलता है। यह केवल तभी काम करता है जब आपका राउटर PCP या NAT-PMP का समर्थन करता है और यह सक्षम है। बाहरी पोर्ट यादृच्छिक हो सकता है।</translation>
     </message>
     <message>
@@ -509,7 +509,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>स्थानीय पते</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>नेटवर्क पते जो आपका बिटकॉइन नोड वर्तमान में अन्य नोड्स के साथ संचार करने के लिए उपयोग कर रहा है।</translation>
     </message>
     <message>
@@ -800,7 +800,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>दर्ज किया गया पता किसी लीगेसी (P2PKH) कुंजी को संदर्भित नहीं करता है। SegWit और अन्य गैर-P2PKH पता प्रकारों के लिए संदेश हस्ताक्षर %1 के इस संस्करण में समर्थित नहीं है | कृपया पते की जांच करें और पुनः प्रयास करें।</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>आप अपने विरासत (P2PKH) पतों के साथ संदेश/समझौते पर हस्ताक्षर करके यह साबित कर सकते हैं कि आप उन्हें भेजे गए बिटकॉइन प्राप्त कर सकते हैं। सावधान रहें कि किसी भी अस्पष्ट या यादृच्छिक चीज़ पर हस्ताक्षर न करें, क्योंकि फ़िशिंग हमले आपको धोखा देकर अपनी पहचान उन्हें सौंपने की कोशिश कर सकते हैं। केवल पूरी तरह से विस्तृत कथनों पर हस्ताक्षर करें जिनसे आप सहमत हैं।</translation>
     </message>
 </context>

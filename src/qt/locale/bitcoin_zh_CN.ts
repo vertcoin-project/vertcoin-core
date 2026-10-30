@@ -92,13 +92,13 @@
         <translation>尝试保存地址列表到 %1 时发生错误。请再试一次。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>这是您用来收款的比特币地址。使用“接收”标签页中的“创建新收款地址”按钮来创建新的收款地址。
 只有“传统（legacy）”类型的地址支持签名。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>您可以给这些比特币地址付款。在付款之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
 </context>
@@ -172,7 +172,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>修改密码失败</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>请注意，当您的计算机感染恶意软件时，加密钱包并不能完全规避您的比特币被偷窃的可能。</translation>
     </message>
     <message>
@@ -232,7 +232,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>钱包解锁失败</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>警告: 如果把钱包加密后又忘记密码，你就会从此&lt;b&gt;失去其中所有的比特币了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -293,7 +293,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 客户端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /></translation>
     </message>
@@ -571,7 +571,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>打开钱包</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>打开bitcoin:开头的URI</translation>
     </message>
     <message>
@@ -611,8 +611,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>请求支付 (生成二维码和 bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>请求支付 (生成二维码和 vertcoin: URI)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -643,7 +643,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>显示(&amp;H)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>向一个比特币地址发币</translation>
     </message>
     <message>
@@ -668,7 +668,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>显示 Qt 相关信息</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>显示 %1 帮助信息，获取可用命令行选项列表</translation>
     </message>
     <message>
@@ -684,7 +684,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>签名消息(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>用比特币地址关联的私钥为消息签名，以证明您拥有这个比特币地址</translation>
     </message>
     <message>
@@ -714,7 +714,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>已是最新</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>校验消息，确保该消息是由指定的比特币地址所有者签名的</translation>
     </message>
     <message>
@@ -1033,7 +1033,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>输入的地址“%1”已经存在于地址簿中，标签为“%2”。</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>输入的地址 %1 并不是有效的比特币地址。</translation>
     </message>
     <message>
@@ -1082,7 +1082,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 将会下载并存储比特币区块链。</translation>
     </message>
     <message numerus="yes">
@@ -1115,7 +1115,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>此目录中至少会保存 %1 GB 的数据，并且大小还会随着时间增长。</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>比特币</translation>
     </message>
     <message>
@@ -1247,7 +1247,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>%1目前正在同步中。它会从其他节点下载区块头和区块数据并进行验证，直到抵达区块链尖端。</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>尝试使用受未可见交易影响的余额将不被网络接受。</translation>
     </message>
     <message>
@@ -1279,7 +1279,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>每小时进度增加</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>近期交易可能尚未显示，因此当前余额可能不准确。以上信息将在与比特币网络完全同步后更正。详情如下</translation>
     </message>
     <message>
@@ -1302,7 +1302,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>打开比特币URI</translation>
     </message>
     <message>
@@ -1411,7 +1411,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>允许传入连接(&amp;G)</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>自动在路由器上打开比特币客户端端口。仅当您的路由器支持PCP或NAT-PMP并且已启用时才有效。外部端口可能是随机的。</translation>
     </message>
     <message>
@@ -1452,11 +1452,11 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>确认恢复默认设置</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>通过 SOCKS5 代理连接比特币网络。</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>连接比特币网络时专门为Tor onion服务使用另一个 SOCKS5 代理。</translation>
     </message>
     <message>
@@ -1704,7 +1704,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>最近交易</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>现在显示的消息可能是过期的。在连接上比特币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成。</translation>
     </message>
     <message>
@@ -1863,8 +1863,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>‘bitcoin://’不是合法的URI。请改用'bitcoin:'。</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>‘vertcoin://’不是合法的URI。请改用'vertcoin:'。</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1875,8 +1875,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
 如果您看到了这个错误，您应该要求商家提供兼容BIP21的URI。</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>无法启动 vertcoin: 协议的“一键支付”处理程序</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1887,7 +1887,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>支付请求文件处理</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>无法解析 URI 地址！可能是因为比特币地址无效，或是 URI 参数格式错误。</translation>
     </message>
     <message>
@@ -2048,7 +2048,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>嵌入的 "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>请输入一个比特币地址 (例如 %1)</translation>
     </message>
     <message>
@@ -2380,7 +2380,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation>网络活动已禁用</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>您的比特币节点正在使用网络地址与其他节点联系。</translation>
     </message>
     <message>
@@ -2659,7 +2659,7 @@ For more information on using this console, type %6.
         <translation>一条附加到付款请求中的可选消息，可以显示给付款方。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>可在支付请求上备注一条信息，在打开支付请求时可以看到。注意:该消息不是通过比特币网络传送。</translation>
     </message>
     <message>
@@ -3168,7 +3168,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>警告: 目前无法进行手续费估计。</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>警告: 比特币地址无效</translation>
     </message>
     <message>
@@ -3176,7 +3176,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>警告:未知的找零地址</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>当交易量小于可用区块空间时，矿工和中继节点可能会执行最低手续费率限制。按照这个最低费率来支付手续费也是可以的，但请注意，一旦交易需求超出比特币网络能处理的限度，你的交易可能永远也无法确认。</translation>
     </message>
     <message>
@@ -3199,8 +3199,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>标签(&amp;L):</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>bitcoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>vertcoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3235,7 +3235,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>从金额中减去交易费(&amp;U)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>付款目的地址</translation>
     </message>
     <message>
@@ -3243,7 +3243,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>用被选单位表示的待发送金额</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>交易费将从发送金额中扣除。接收人收到的比特币将会比您在金额框中输入的更少。如果选中了多个收件人，交易费平分。</translation>
     </message>
     <message>
@@ -3356,7 +3356,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>签名消息(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>签名消息，以证明这个地址属于您</translation>
     </message>
     <message>
@@ -3368,11 +3368,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>签名 - 为消息签名/验证签名消息</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>用来签名消息的地址</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>用来对消息签名的地址</translation>
     </message>
     <message>
@@ -3400,7 +3400,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>验证消息签名(&amp;M)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>验证消息，确保消息是由指定的比特币地址签名过的。</translation>
     </message>
     <message>
@@ -3408,7 +3408,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>已取消解锁钱包。</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>您可以与您的 (P2PKH)格式 地址签署消息 / 协议，以证明您可以接收发送给它们的比特币。钓鱼攻击可能试图欺骗您签署您的身份，所以请仔细分辨，不要签署任何含混不清的协议。只签署你完全认同并理解的协议 / 消息。</translation>
     </message>
 </context>
@@ -4235,8 +4235,8 @@ Unable to restore backup of wallet.</source>
         <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>错误: 转储文件版本不被支持。这个版本的 bitcoin-wallet 只支持版本为 1 的转储文件。得到的转储文件版本却是%s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>错误: 转储文件版本不被支持。这个版本的 vertcoin-wallet 只支持版本为 1 的转储文件。得到的转储文件版本却是%s</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

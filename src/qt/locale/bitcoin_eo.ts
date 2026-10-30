@@ -88,12 +88,12 @@
         <translation>Okazis eraron dum konservo de adreslisto al %1. Bonvolu provi denove.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Jen viaj bitmonaj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Jen viaj Bitmon-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
 </context>
@@ -203,7 +203,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Malŝloso de la monujo fiaskis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Atentu! Se vi ĉifras vian monujon kaj perdas la pasfrazon, vi &lt;b&gt;PERDOS LA TUTON DE VIA BITMONO&lt;b&gt;!</translation>
     </message>
     <message>
@@ -240,7 +240,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>mankas %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -402,11 +402,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Eliri la aplikaĵon</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso bitcoin:)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso vertcoin:)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>Sendi monon al Bitmon-adreso</translation>
     </message>
     <message>
@@ -434,7 +434,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Vidigi la liston de uzitaj sendaj adresoj kaj etikedoj</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Subskribi mesaĝojn per via Bitmon-adresoj por pravigi, ke vi estas la posedanto</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ĝisdata</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Bitmon-adresoj</translation>
     </message>
     <message>
@@ -692,7 +692,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>La adreso ligita al tiu ĉi adreslistero. Eblas modifi tion nur por sendaj adresoj.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>La adreso enigita "%1" ne estas valida Bitmon-adreso.</translation>
     </message>
     <message>
@@ -758,7 +758,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>Bitmono</translation>
     </message>
     <message>
@@ -820,7 +820,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>Malfermi na la URI de bitmono</translation>
     </message>
     <message>
@@ -1000,7 +1000,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Lastaj transakcioj</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la bitmona reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
     </message>
     <message>
@@ -1050,7 +1050,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>Ne eblas lanĉi la ilon 'klaki-por-pagi'</translation>
     </message>
     <message>
@@ -1544,7 +1544,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Krompago</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>Averto: Nevalida Bitmon-adreso</translation>
     </message>
     <message>
@@ -1672,7 +1672,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Subskribi &amp;Mesaĝon</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Bitmon-adreso</translation>
     </message>
     <message>
@@ -1700,7 +1700,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Kontroli &amp;Mesaĝon</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Bitmon-adreso</translation>
     </message>
     <message>

@@ -105,7 +105,7 @@ static RPCMethod sendrawtransaction()
             {"hexstring", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "The hex string of the raw transaction"},
             {"maxfeerate", RPCArg::Type::AMOUNT, RPCArg::Default{FormatMoney(DEFAULT_MAX_RAW_TX_FEE_RATE.GetFeePerK())},
              "Reject transactions whose fee rate is higher than the specified value, expressed in " + CURRENCY_UNIT +
-                 "/kvB.\nFee rates larger than 1BTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
+                 "/kvB.\nFee rates larger than 1VTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
             {"maxburnamount", RPCArg::Type::AMOUNT, RPCArg::Default{FormatMoney(DEFAULT_MAX_BURN_AMOUNT)},
              "Reject transactions with provably unspendable outputs (e.g. 'datacarrier' outputs that use the OP_RETURN opcode) greater than the specified value, expressed in " + CURRENCY_UNIT + ".\n"
              "If burning funds through unspendable outputs is desired, increase this value.\n"
@@ -217,7 +217,7 @@ static RPCMethod getprivatebroadcastinfo()
             const NodeContext& node{EnsureAnyNodeContext(request.context)};
             const PeerManager& peerman{EnsurePeerman(node)};
             if (!peerman.GetInfo().private_broadcast) {
-                throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Private broadcast is not enabled. Ensure you're running Bitcoin Core with -privatebroadcast=1.");
+                throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Private broadcast is not enabled. Ensure you're running Vertcoin Core with -privatebroadcast=1.");
             }
 
             const auto txs{peerman.GetPrivateBroadcastInfo()};
@@ -286,7 +286,7 @@ static RPCMethod abortprivatebroadcast()
             const NodeContext& node{EnsureAnyNodeContext(request.context)};
             PeerManager& peerman{EnsurePeerman(node)};
             if (!peerman.GetInfo().private_broadcast) {
-                throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Private broadcast is not enabled. Ensure you're running Bitcoin Core with -privatebroadcast=1.");
+                throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Private broadcast is not enabled. Ensure you're running Vertcoin Core with -privatebroadcast=1.");
             }
 
             const uint256 id{ParseHashV(self.Arg<UniValue>("id"), "id")};
@@ -329,7 +329,7 @@ static RPCMethod testmempoolaccept()
             },
             {"maxfeerate", RPCArg::Type::AMOUNT, RPCArg::Default{FormatMoney(DEFAULT_MAX_RAW_TX_FEE_RATE.GetFeePerK())},
              "Reject transactions whose fee rate is higher than the specified value, expressed in " + CURRENCY_UNIT +
-                 "/kvB.\nFee rates larger than 1BTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
+                 "/kvB.\nFee rates larger than 1VTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
         },
         RPCResult{
             RPCResult::Type::ARR, "", "The result of the mempool acceptance test for each raw transaction in the input array.\n"
@@ -1393,7 +1393,7 @@ static RPCMethod submitpackage()
             },
             {"maxfeerate", RPCArg::Type::AMOUNT, RPCArg::Default{FormatMoney(DEFAULT_MAX_RAW_TX_FEE_RATE.GetFeePerK())},
              "Reject transactions whose fee rate is higher than the specified value, expressed in " + CURRENCY_UNIT +
-                 "/kvB.\nFee rates larger than 1BTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
+                 "/kvB.\nFee rates larger than 1VTC/kvB are rejected.\nSet to 0 to accept any fee rate."},
             {"maxburnamount", RPCArg::Type::AMOUNT, RPCArg::Default{FormatMoney(DEFAULT_MAX_BURN_AMOUNT)},
              "Reject transactions with provably unspendable outputs (e.g. 'datacarrier' outputs that use the OP_RETURN opcode) greater than the specified value, expressed in " + CURRENCY_UNIT + ".\n"
              "If burning funds through unspendable outputs is desired, increase this value.\n"

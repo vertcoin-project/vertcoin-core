@@ -92,8 +92,8 @@
         <translation>Мекенжай тізімін %1 дегенге сақтағанда, қате пайда болды. Қайталап көріңіз. </translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Бұл сіздің төлем жіберетін Bitcoin мекенжайларыңыз. Тиын жібермес бұрын, әрқашан сома мен алушы мекенжайын тексеріңіз.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Бұл сіздің төлем жіберетін Vertcoin мекенжайларыңыз. Тиын жібермес бұрын, әрқашан сома мен алушы мекенжайын тексеріңіз.</translation>
     </message>
 </context>
 <context>
@@ -166,7 +166,7 @@
         <translation>Парольді ауыстыру іске аспады</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Шифрлау биткоиніңізді компьютер жұқтырған зиянды БЖ-дан толығымен қорғай алмайтынын есіңізде сақтаңыз.</translation>
     </message>
     <message>
@@ -218,7 +218,7 @@
         <translation>Әмиян бұғатсызданбады</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Ескерту: әмияныңызды шифрлап, құпиясөйлеміңізден айырылып қалсаңыз, &lt;b&gt;БАРЛЫҚ БИТКОИНІҢІЗДЕН ДЕ АЙЫРЫЛАСЫЗ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>%1 клиент</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -502,7 +502,7 @@
         <translation>Қосымшадан шығу</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>Төлем талап ету (QR  кодтары мен биткоин құрады: URI)</translation>
     </message>
     <message>
@@ -520,8 +520,8 @@
         <translation>&amp;Көрсету</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bitcoin мекенжайына тиын жіберу</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Vertcoin мекенжайына тиын жіберу</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -548,8 +548,8 @@
         <translation>Хатқа &amp;қол қою…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Хатқа Bitcoin мекенжайларыныңызды қосып, олар сізге тиесілі екенін дәлелдейді</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Хатқа Vertcoin мекенжайларыныңызды қосып, олар сізге тиесілі екенін дәлелдейді</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -574,8 +574,8 @@
         <translation>Жаңартылған</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Хат тексеріп, берілген Bitcoin мекенжайлары қосылғанына көз жеткізеді</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Хат тексеріп, берілген Vertcoin мекенжайлары қосылғанына көз жеткізеді</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -757,8 +757,8 @@
         <translation> ГБ</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 Bitcoin блокчейнінің көшірмесін жүктеп сақтайды.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 Vertcoin блокчейнінің көшірмесін жүктеп сақтайды.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -778,7 +778,7 @@
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -865,7 +865,7 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>Биткоин URI ашу</translation>
     </message>
     </context>

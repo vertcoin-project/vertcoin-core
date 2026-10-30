@@ -96,13 +96,13 @@
         <translation>%1 으로 주소 리스트를 저장하는 동안 오류가 발생했습니다. 다시 시도해 주십시오.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>비트코인을 받는 계좌 주소입니다. 신규 주소를 만들려면 수신 탭의 '새 수신 주소를 생성하기' 버튼을 사용하십시오.
 서명은 '레거시' 타입의 주소만 가능합니다.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>비트코인을 보내는 계좌 주소입니다. 코인을 보내기 전에 금액과 받는 주소를 항상 확인하십시오.</translation>
     </message>
 </context>
@@ -176,7 +176,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>암호 변경에 실패하였습니다.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>지갑을 암호화 해도 컴퓨터에 바이러스가 있을시 안전하지 않다는 것을 참고하세요.</translation>
     </message>
     <message>
@@ -236,7 +236,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>지갑 잠금해제 실패</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>경고: 만약 암호화 된 지갑의 비밀번호를 잃어버릴 경우, &lt;b&gt;모든 비트코인들을 잃어버릴 수 있습니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -297,7 +297,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 클라이언트</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation><numerusform>비트코인 네트워크에 활성 연결이 %n개 있습니다.</numerusform></translation>
     </message>
@@ -579,8 +579,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>지갑 열기</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>bitcoin 열기: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>vertcoin 열기: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -619,8 +619,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>어플리케이션 종료</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>지불 요청하기 (QR 코드와 bitcoin을 생성합니다: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>지불 요청하기 (QR 코드와 vertcoin을 생성합니다: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -655,7 +655,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>보기(&amp;H)</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>코인을 비트코인 주소로 전송합니다.</translation>
     </message>
     <message>
@@ -680,7 +680,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Qt 정보를 표시합니다</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>사용할 수 있는 비트코인 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
     </message>
     <message>
@@ -696,7 +696,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>메시지 서명(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>지갑 주소가 본인 소유인지 증명하기 위해 메시지를 서명합니다.</translation>
     </message>
     <message>
@@ -726,7 +726,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>최신 정보</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>해당 비트코인 주소로 서명되었는지 확인하기 위해 메시지를 검증합니다.</translation>
     </message>
     <message>
@@ -1048,7 +1048,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>입력된 주소 "%1"은 라벨 "%2"로 이미 주소록에 있습니다.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>입력한 "%1" 주소는 올바른 비트코인 주소가 아닙니다.</translation>
     </message>
     <message>
@@ -1101,7 +1101,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1은 비트코인 블록체인의 사본을 다운로드하여 저장합니다.</translation>
     </message>
     <message numerus="yes">
@@ -1134,7 +1134,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>최소 %1 GB의 데이터가 이 디렉토리에 저장되며 시간이 지남에 따라 증가할 것입니다.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>비트코인</translation>
     </message>
     <message>
@@ -1293,7 +1293,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>%1가 현재 동기화 중입니다. 이것은 피어에서 헤더와 블록을 다운로드하고 블록 체인의 끝에 도달 할 때까지 유효성을 검사합니다.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>아직 표시되지 않은 거래의 영향을 받는 비트코인을 사용하려고 하는 것은 네트워크에서 허가되지 않습니다.</translation>
     </message>
     <message>
@@ -1325,7 +1325,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>시간당 진행 증가율</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>최근 거래는 아직 보이지 않을 수 있습니다. 따라서 당신의 지갑의 잔액이 틀릴 수도 있습니다. 이 정보는 당신의 지갑이 비트코인 네트워크와 완전한 동기화를 완료하면, 아래의 설명과 같이 정확해집니다.</translation>
     </message>
     <message>
@@ -1348,7 +1348,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>비트코인 URI 열기</translation>
     </message>
     <message>
@@ -1458,7 +1458,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>연결 요청을 허용 (&amp;G)</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation>비트코인 클라이언트 포트를 라우터에서 자동으로 열기. 이 기능은 라우터가 PCP(Port Control Protocol) 또는 NAT-PMP(NAT Port Mapping Protocol) 를 지원하고 해당 기능이 활성화되어 있을 때만 작동합니다. 외부 포트는 임의(random)로 지정될 수 있습니다.</translation>
     </message>
     <message>
@@ -1494,12 +1494,12 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>옵션 초기화를 확실화하기</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 프록시를 통해 비트코인 네트워크에 연결합니다.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Bitcoin 네트워크에 연결합니다.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Vertcoin 네트워크에 연결합니다.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1747,7 +1747,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>최근 거래들</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>표시된 정보가 오래된 것 같습니다. 당신의 지갑은 비트코인 네트워크에 연결된 뒤 자동으로 동기화 하지만, 아직 과정이 끝나지 않았습니다.</translation>
     </message>
     <message>
@@ -1906,8 +1906,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://"은 잘못된 URI입니다. 'vertcoin:'을 사용하십시오.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1918,7 +1918,7 @@ BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지�
 이 오류가 발생하면 판매자에게 BIP21 호환 URI를 제공하도록 요청해야 합니다.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>비트코인을 시작할 수 없습니다: 지급을 위한 클릭 핸들러</translation>
     </message>
     <message>
@@ -1930,7 +1930,7 @@ BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지�
         <translation>지불 요청 파일 처리중</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>URI의 파싱에 문제가 발생했습니다. 잘못된 비트코인 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
@@ -2100,7 +2100,7 @@ BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지�
         <translation>%1 포함됨</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>비트코인 주소를 입력하세요 (예: %1)</translation>
     </message>
     <message>
@@ -2425,7 +2425,7 @@ BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지�
         <translation>네트워크 활동이 정지되었습니다.</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
         <translation>당신의 비트코인 노드가 현재 다른 노드들과 통신하기 위해 사용 중인 네트워크 주소입니다.</translation>
     </message>
     <message>
@@ -2713,7 +2713,7 @@ For more information on using this console, type %6.
         <translation>지불 요청에 첨부되고 발신자에게 표시 될 수있는 선택적 메시지입니다.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
         <translation>지불 요청에 첨부되는 선택가능한 메시지 입니다. 이 메세지는 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -3219,7 +3219,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>경고: 지금은 수수료 예측이 불가능합니다.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>경고: 잘못된 비트코인 주소입니다</translation>
     </message>
     <message>
@@ -3227,7 +3227,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>경고: 알려지지 않은 주소 변경입니다</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>거래량이 블록에 남은 공간보다 적은 경우, 채굴자나 중계 노드들이 최소 수수료를 허용할 수 있습니다. 최소 수수료만 지불하는건 괜찮지만, 네트워크가 처리할 수 있는 용량을 넘는 비트코인 거래가 있을 경우에는 이 거래가 승인이 안될 수 있다는 점을 유의하세요.</translation>
     </message>
     <message>
@@ -3250,8 +3250,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>라벨(&amp;L):</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>bitcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>vertcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3286,7 +3286,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>송금액에서 수수료 공제(&amp;U)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>이 비트코인 주소로 송금됩니다</translation>
     </message>
     <message>
@@ -3294,7 +3294,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>선택한 단위로 보낼 수량</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>수수료가 송금되는 금액에서 공제됩니다. 수령자는 금액 필드에서 입력한 금액보다 적은 금액을 전송받게 됩니다. 받는 사람이 여러 명인 경우 수수료는 균등하게 나누어집니다.</translation>
     </message>
     <message>
@@ -3407,7 +3407,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>메시지 서명(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Vertcoin address</source>
         <translation>당신이 이 비트코인 주소를 소유한다는 증명을 위해 메시지를 서명합니다</translation>
     </message>
     <message>
@@ -3419,11 +3419,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>서명 - 싸인 / 메시지 검증</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Vertcoin address the message was signed with</source>
         <translation>메세지의 서명에 사용된 비트코인 주소</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Vertcoin address to sign the message with</source>
         <translation>메세지를 서명할 비트코인 주소</translation>
     </message>
     <message>
@@ -3455,7 +3455,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>메시지 검증(&amp;M)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
         <translation>입력된 비트코인 주소로 메시지가 서명되었는지 검증합니다</translation>
     </message>
     <message>
@@ -3463,7 +3463,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>지갑 잠금 해제를 취소했습니다.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>레거시(P2PKH) 주소를 사용하여 메시지 혹은 동의서에 서명하면 해당 주소로 비트코인을 받을 수 있다는 사실을 증명할 수 있습니다. 다만, 모호하거나 무작위적인 내용에는 피싱 공격자가 사용자의 신원을 넘겨받도록 속이려 할 수 있기 때문에 서명을 하는것에 주의하세요. 반드시 당신이 동의하는 완전한 문구에만 서명하세요.</translation>
     </message>
 </context>
@@ -4328,7 +4328,7 @@ Unable to restore backup of wallet.</source>
         <translation>오류: 덤프파일은 지원되지 않는 데이터베이스 형식(%s)지정하고 있습니다. 오직 SQLite 데이터베이스 덤프만 지원됩니다.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <translation>오류 : 덤프파일 버젼이 지원되지 않습니다. 이 비트코인 지갑 버젼은 오직 버젼1의 덤프파일을 지원합니다. %s버젼의 덤프파일을 얻었습니다.</translation>
     </message>
     <message>

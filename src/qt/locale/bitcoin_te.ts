@@ -84,13 +84,13 @@
         <translation>చిరునామా పట్టికను %1 లోనికి ప్రోదుపరుచుటలో లోపము. మరుల ప్రయత్నించి చుడండి.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>చెల్లింపులను స్వీకరించడానికి ఇవి మీ బిట్‌కాయిన్ చిరునామాలు. కొత్త చిరునామాలను సృష్టించడానికి స్వీకరించే ట్యాబ్‌లోని 'కొత్త స్వీకరించే చిరునామాను సృష్టించు' బటన్‌ను ఉపయోగించండి. 
 'లెగసీ' రకం చిరునామాలతో మాత్రమే సంతకం చేయడం సాధ్యమవుతుంది.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ఇవి మీరు పంపే చెల్లింపుల బిట్‌కాయిన్ చిరునామాలు. నాణేలు పంపే ముందు ప్రతిసారి అందుకునే చిరునామా మరియు చెల్లింపు మొత్తం సరిచూసుకోండి.</translation>
     </message>
 </context>
@@ -152,7 +152,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>సంకేతపదము డైలాగ్</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>మీ వాలెట్‌ను గుప్తీకరించడం వల్ల మీ కంప్యూటర్‌కు హాని కలిగించే మాల్వేర్ దొంగిలించకుండా మీ బిట్‌కాయిన్‌లను పూర్తిగా రక్షించలేమని గుర్తుంచుకోండి.</translation>
     </message>
     <message>
@@ -200,7 +200,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>వాలెట్ అన్‌లాక్ విఫలమైంది</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>హెచ్చరిక: మీ జోలెని సంకేతపరిచి మీ సంకేతపదము కోల్పోతే, &lt;b&gt;మీ బిట్‌కాయిన్లు అన్నీ కోల్పోతారు&lt;/b&gt;</translation>
     </message>
     <message>
@@ -257,7 +257,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 క్లయింట్</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -523,7 +523,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>వాలెట్ తెరవండి</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>బిట్‌కాయిన్‌ను తెరవండి: URI</translation>
     </message>
     <message>
@@ -563,7 +563,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>అప్లికేషన్ నిష్క్రమణ </translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>చెల్లింపులను అభ్యర్థించండి (QR కోడ్‌లు మరియు బిట్‌కాయిన్‌లను ఉత్పత్తి చేస్తుంది: URIలు)</translation>
     </message>
     <message>
@@ -586,7 +586,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>&amp;చూపించు</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>బిట్‌కాయిన్ చిరునామాకు నాణేలను పంపండి</translation>
     </message>
     <message>
@@ -611,7 +611,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Qt గురించి సమాచారాన్ని చూపించు</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>%1 సాధ్యమయ్యే బిట్‌కాయిన్ కమాండ్-లైన్ ఎంపికలతో జాబితాను పొందడానికి సహాయ సందేశాన్ని చూపండి</translation>
     </message>
     <message>
@@ -627,7 +627,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>సంతకం &amp;సందేశం...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>మీ బిట్‌కాయిన్ చిరునామాలు మీ స్వంతమని నిరూపించుకోవడానికి వాటితో సందేశాలను సంతకం చేయండి</translation>
     </message>
     <message>
@@ -657,7 +657,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>తాజాగా ఉంది</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>సందేశాలు పేర్కొన్న బిట్‌కాయిన్ చిరునామాలతో సంతకం చేసినట్లు నిర్ధారించుకోవడానికి వాటిని ధృవీకరించండి</translation>
     </message>
     <message>
@@ -956,7 +956,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>నమోదు చేసిన చిరునామా "%1" ఇప్పటికే చిరునామా పుస్తకంలో "%2" లేబుల్‌తో ఉంది.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>నమోదు చేసిన చిరునామా "%1" చెల్లుబాటు అయ్యే బిట్‌కాయిన్ చిరునామా కాదు.</translation>
     </message>
     <message>
@@ -1009,7 +1009,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 బిట్‌కాయిన్ బ్లాక్ చైన్ కాపీని డౌన్‌లోడ్ చేసి నిల్వ చేస్తుంది.</translation>
     </message>
     <message numerus="yes">
@@ -1042,7 +1042,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ఈ డైరెక్టరీలో కనీసం %1 GB డేటా నిల్వ చేయబడుతుంది మరియు ఇది కాలక్రమేణా పెరుగుతుంది.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>బిట్కోయిన్</translation>
     </message>
     <message>
@@ -1154,7 +1154,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>బిట్‌కాయిన్ URIని తెరవండి</translation>
     </message>
     <message>
@@ -1300,11 +1300,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ఎంపికల రీసెట్‌ని నిర్ధారించండి</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 ప్రాక్సీ ద్వారా బిట్‌కాయిన్ నెట్‌వర్క్‌కు కనెక్ట్ చేయండి.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>Tor onion సేవల కోసం ప్రత్యేక SOCKS5 ప్రాక్సీ ద్వారా బిట్‌కాయిన్ నెట్‌వర్క్‌కు కనెక్ట్ చేయండి.</translation>
     </message>
     <message>
@@ -1506,7 +1506,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ఇటీవలి లావాదేవీలు</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>ప్రదర్శించబడిన సమాచారం పాతది కావచ్చు. కనెక్షన్ స్థాపించబడిన తర్వాత మీ వాలెట్ స్వయంచాలకంగా బిట్‌కాయిన్ నెట్‌వర్క్‌తో సమకాలీకరించబడుతుంది, కానీ ఈ ప్రక్రియ ఇంకా పూర్తి కాలేదు.</translation>
     </message>
     <message>
@@ -1653,11 +1653,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' చెల్లుబాటు అయ్యే URI కాదు. బదులుగా 'bitcoin:' ఉపయోగించండి.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' చెల్లుబాటు అయ్యే URI కాదు. బదులుగా 'vertcoin:' ఉపయోగించండి.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>బిట్‌కాయిన్‌ను ప్రారంభించడం సాధ్యం కాదు: క్లిక్-టు-పే హ్యాండ్లర్</translation>
     </message>
     <message>
@@ -1669,7 +1669,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>చెల్లింపు అభ్యర్థన ఫైల్ నిర్వహణ</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>URI అన్వయించబడదు! ఇది చెల్లని బిట్‌కాయిన్ చిరునామా లేదా తప్పుగా రూపొందించబడిన URI పారామీటర్‌ల వల్ల సంభవించవచ్చు.</translation>
     </message>
     <message>
@@ -1799,7 +1799,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>మీరు సెట్టింగ్‌లను డిఫాల్ట్ విలువలకు రీసెట్ చేయాలనుకుంటున్నారా లేదా మార్పులు చేయకుండానే నిలిపివేయాలనుకుంటున్నారా?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>బిట్‌కాయిన్ చిరునామాను నమోదు చేయండి (ఉదా. %1)</translation>
     </message>
     <message>

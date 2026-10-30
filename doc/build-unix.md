@@ -1,6 +1,6 @@
 # UNIX BUILD NOTES
 
-Some notes on how to build Bitcoin Core in Unix.
+Some notes on how to build Vertcoin Core in Unix.
 
 (For BSD specific instructions, see `build-*bsd.md` in this directory.)
 
@@ -22,7 +22,7 @@ distributions](#dependencies).
 ## Memory Requirements
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Bitcoin Core. On systems with less, gcc can be
+memory available when compiling Vertcoin Core. On systems with less, gcc can be
 tuned to conserve memory with additional `CMAKE_CXX_FLAGS`:
 
 
@@ -57,7 +57,7 @@ For Debian "oldstable", or earlier Ubuntu LTS releases, you may need to pick a
 later compiler version, according to the [dependencies](/doc/dependencies.md)
 documentation.
 
-To build Bitcoin Core without the wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
+To build Vertcoin Core without the wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
 and use `-DENABLE_WALLET=OFF` to build without the wallet and skip the SQLite dependency.
 
 Cap'n Proto is needed for IPC functionality (see [multiprocess.md](multiprocess.md)).
@@ -70,7 +70,7 @@ development package and must be enabled via `-DWITH_USDT=ON`.
 
 GUI dependencies:
 
-Bitcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
+Vertcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
 the necessary parts of Qt, the libqrencode and pass `-DBUILD_GUI=ON`. Skip if you don't intend to use the GUI.
 
 Additionally, install the Qt Wayland platform plugin for modern desktop environments.
@@ -80,7 +80,7 @@ Otherwise, if you don't need QR encoding support, use the `-DWITH_QRENCODE=OFF` 
 
 ### Disable-wallet mode
 
-When the intention is to only run a P2P node, without a wallet, Bitcoin Core can
+When the intention is to only run a P2P node, without a wallet, Vertcoin Core can
 be compiled in disable-wallet mode with:
 
     cmake -B build -DENABLE_WALLET=OFF

@@ -92,13 +92,13 @@
         <translation>%1 ലേക്ക് വിലാസ ലിസ്റ്റ് സംരക്ഷിക്കാൻ ശ്രമിക്കുന്നതിൽ ഒരു പിശകുണ്ടായിരുന്നു. വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ഇവയാണ് പണം  സ്വീകരിയ്ക്കുന്നതിനായുള്ള താങ്കളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങൾ. പുതിയ വിലാസങ്ങൾ കൂട്ടിച്ചേർക്കുന്നതിനായി ' പുതിയ വിലാസം സൃഷ്ടിയ്ക്കുക ' എന്ന ബട്ടൺ അമർത്തുക.
 'ലെഗസി' തരത്തിന്റെ വിലാസങ്ങളിൽ മാത്രമേ സൈൻ ചെയ്യാൻ കഴിയൂ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>പേയ്മെന്റുകൾ അയയ്ക്കുന്നതിനുള്ള നിങ്ങളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങളാണ് ഇവ. നാണയങ്ങൾ അയയ്ക്കുന്നതിനുമുമ്പ് എല്ലായ്പ്പോഴും തുകയും സ്വീകരിക്കുന്ന വിലാസവും പരിശോധിക്കുക.</translation>
     </message>
 </context>
@@ -172,7 +172,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>പാസ്‌ഫ്രെയ്‌സ് മാറ്റം പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>നിങ്ങളുടെ വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യുന്നതിലൂടെ നിങ്ങളുടെ കമ്പ്യൂട്ടറിനെ ബാധിക്കുന്ന ക്ഷുദ്രവെയർ‌ മോഷ്ടിക്കുന്നതിൽ‌ നിന്നും നിങ്ങളുടെ ബിറ്റ്കോയിനുകളെ പൂർണ്ണമായി സംരക്ഷിക്കാൻ‌ കഴിയില്ല.</translation>
     </message>
     <message>
@@ -232,7 +232,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>വാലറ്റ് അൺലോക്ക് പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>മുന്നറിയിപ്പ്: നിങ്ങളുടെ വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്ത് പാസ്ഫ്രെയ്സ് നഷ്ടപ്പെടുകയാണെങ്കിൽ, നിങ്ങളുടെ എല്ലാ ബിറ്റ്കൊയിനുകളും നഷ്ടപ്പെടും!</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 ക്ലയന്റ്</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -525,7 +525,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>വാലറ്റ് തുറക്കുക </translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>ഒരു ബിറ്റ്കോയിൻ തുറക്കുക: URI</translation>
     </message>
     <message>
@@ -557,7 +557,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>അപ്ലിക്കേഷൻ ഉപേക്ഷിക്കുക</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>പേയ്‌മെന്റുകൾ അഭ്യർത്ഥിക്കുക (QR കോഡുകളും ബിറ്റ്കോയിനും സൃഷ്ടിക്കുന്നു: URI- കൾ)</translation>
     </message>
     <message>
@@ -571,7 +571,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ഒരു ബാക്കപ്പ് ഫയലിൽ നിന്ന് ഒരു വാലറ്റ് പുനഃസ്ഥാപിക്കുക</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>ഒരു ബിറ്റ്കോയിൻ വിലാസത്തിലേക്ക് നാണയങ്ങൾ അയയ്ക്കുക</translation>
     </message>
     <message>
@@ -591,7 +591,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Qt സംബന്ധിച്ച വിവരങ്ങൾ കാണിക്കുക</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>സാധ്യമായ ബിറ്റ്കോയിൻ കമാൻഡ്-ലൈൻ ഓപ്ഷനുകളുള്ള ഒരു ലിസ്റ്റ് ലഭിക്കുന്നതിന് %1 സഹായ സന്ദേശം കാണിക്കുക</translation>
     </message>
     <message>
@@ -607,7 +607,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ഒപ്പിടുക, സന്ദേശം നൽകുക</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>നിങ്ങളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങൾ സ്വന്തമാണെന്ന് തെളിയിക്കാൻ സന്ദേശങ്ങൾ ഒപ്പിടുക</translation>
     </message>
     <message>
@@ -633,7 +633,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>കാലികമാണ്</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>നിർദ്ദിഷ്ട ബിറ്റ്കോയിൻ വിലാസങ്ങളിൽ സന്ദേശങ്ങൾ ഒപ്പിട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കാൻ സ്ഥിരീകരിക്കുക</translation>
     </message>
     <message>
@@ -920,7 +920,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>ബിറ്റ്കോയിൻ</translation>
     </message>
     <message>
@@ -1067,8 +1067,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' എന്നത് ശരിയായ ഒരു URI അല്ല .പകരം 'bitcoin:' ഉപയോഗിക്കൂ </translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' എന്നത് ശരിയായ ഒരു URI അല്ല .പകരം 'vertcoin:' ഉപയോഗിക്കൂ </translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1079,7 +1079,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>പേയ്‌മെന്റ് അഭ്യർത്ഥന ഫയൽ കൈകാര്യം ചെയ്യൽ</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>യു‌ആർ‌ഐ പാഴ്‌സുചെയ്യാൻ‌ കഴിയില്ല! അസാധുവായ ബിറ്റ്കോയിൻ വിലാസം അല്ലെങ്കിൽ കേടായ യു‌ആർ‌ഐ പാരാമീറ്ററുകൾ കാരണം ഇത് സംഭവിക്കാം.</translation>
     </message>
     <message>
@@ -1185,7 +1185,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ഡിഫോൾട്ട് മൂല്യങ്ങളിലേക്ക് ക്രമീകരണം പുനഃസജ്ജമാക്കണോ അതോ മാറ്റങ്ങൾ വരുത്താതെ തന്നെ നിർത്തലാക്കണോ?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>ഒരു ബിറ്റ്കോയിൻ വിലാസം നൽകുക(e.g. %1)</translation>
     </message>
     <message>
@@ -1380,7 +1380,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>മുൻപ്‌ ഉപയോഗിച്ച അഡ്രസ് തെരഞ്ഞെടുക്കുക</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Vertcoin address to send the payment to</source>
         <translation>പേയ്മെന്റ് അയക്കേണ്ട ബിറ്കോയിൻ അഡ്രസ് </translation>
     </message>
     </context>

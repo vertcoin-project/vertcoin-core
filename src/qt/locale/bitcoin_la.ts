@@ -54,7 +54,7 @@
         <translation>Exporta data in hac tabella in plicam</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
 </context>
@@ -156,7 +156,7 @@
         <translation>Cassidile reserare abortum est.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -178,7 +178,7 @@
         <translation>%1 post</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -271,8 +271,8 @@
         <translation>Exi applicatione</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Mitte nummos ad inscriptionem Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Mitte nummos ad inscriptionem Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -287,8 +287,8 @@
         <translation>Monstra informationem de Qt</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Bitcoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Vertcoin ut demonstres te eas possidere</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -303,8 +303,8 @@
         <translation>Recentissimo</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Vertcoin</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -392,8 +392,8 @@
         <translation>Nova inscriptio mittendi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Inscriptio inserta "%1" non valida inscriptio Bitcoin est.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Inscriptio inserta "%1" non valida inscriptio Vertcoin est.</translation>
     </message>
     </context>
 <context>
@@ -496,8 +496,8 @@
         <translation>&amp;Fenestra</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Automatice aperi portum clientis Bitcoin in itineratore. Hoc solum operatur cum itinerator tuus PCP vel NAT-PMP sustinet et id activum est. Portus externus fortuitus esse potest.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Automatice aperi portum clientis Vertcoin in itineratore. Hoc solum operatur cum itinerator tuus PCP vel NAT-PMP sustinet et id activum est. Portus externus fortuitus esse potest.</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -573,8 +573,8 @@
         <translation>Fossum pendendum quod nondum maturum est</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Bitcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Vertcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     </context>
 <context>
@@ -595,8 +595,8 @@
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoin incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -943,8 +943,8 @@
         <translation>Signa &amp;Nuntium</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Bitcoin a te possessa esse</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Vertcoin a te possessa esse</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -971,16 +971,16 @@
         <translation>Verifica &amp;Nuntium</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Bitcoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Vertcoin</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Cassidilis reserare cancellatum est.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Epistulas/pacta cum inscriptionibus tuis vetustis (P2PKH) signare potes ut probes te bitcoins ad eos missis accipere posse. Cave ne quid vagum aut fortuitum subscribas, quia impetus hamatis te fallere conari possunt ut identitatem tuam eis tradas. Solum declarationes plene et accurate scriptas, quibus consentis, signa.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Epistulas/pacta cum inscriptionibus tuis vetustis (P2PKH) signare potes ut probes te vertcoins ad eos missis accipere posse. Cave ne quid vagum aut fortuitum subscribas, quia impetus hamatis te fallere conari possunt ut identitatem tuam eis tradas. Solum declarationes plene et accurate scriptas, quibus consentis, signa.</translation>
     </message>
 </context>
 <context>

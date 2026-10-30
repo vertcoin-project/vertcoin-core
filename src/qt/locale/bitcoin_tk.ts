@@ -84,13 +84,13 @@
         <translation>Salgylar sanawyny %1 içine bellemäge çalşylanda ýalňyşlyk ýüze çykdy. Täzeden synap görüň.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tölegleri kabul etmek üçin siziň Bitkoin salgylaryňyz şulardyr. Täze salgylary döretmek üçin kabul etmek bölüminde "Täze kabul ediji salgyny döret" düwmesini ulan.
 Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Tölegleri ibermek üçin siziň Bitkoin salgylaryňyz şulardyr. Teňňeleri ibermezden ozal hemişe möçberi we kabul edýän salgyny barlaň.</translation>
     </message>
 </context>
@@ -160,7 +160,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Parol sözlemini üýtgedip bolmady</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Gapjygyňy şifrlemek kompýuteriňe zyýanly programma ýokuşmak arkaly bitkoinleriň ogurlanmagyndan doly gorap bilmejekdigini ýatdan çykarma.</translation>
     </message>
     <message>
@@ -220,7 +220,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Gapjygyň gulpuny açyp bolmady</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
         <translation>Duýduryş: Eger gapjygyňy şifrleseň we parol sözlemiňi ýitirseň, sen &lt;b&gt;ÄHLI BITKOINLERIŇI ÝITIRERSIŇ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -277,7 +277,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>%1 müşderi</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -543,7 +543,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Gapjygy aç</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a vertcoin: URI</source>
         <translation>Bitkoin aç: URI</translation>
     </message>
     <message>
@@ -583,7 +583,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Programmadan çyk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
         <translation>Tölegleri sora (QR kodlary we bitkoin: URIleri döredýär)</translation>
     </message>
     <message>
@@ -606,7 +606,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>G&amp;örkez</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Vertcoin address</source>
         <translation>Bitkoin salgysyna teňňeleri iber</translation>
     </message>
     <message>
@@ -631,7 +631,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Qt barada maglumat görkez</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
         <translation>Mümkin bolan Bitkoin buýruk setiri opsiýalarynyň sanawyny görmek üçin %1 goldaw habaryny görkez</translation>
     </message>
     <message>
@@ -647,7 +647,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>&amp;Habara gol çek…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
         <translation>Bitkoin salgylarynyň eýesidigini subut etmek üçin habarlara öz Bitkoin salgylaryň bilen gol çek</translation>
     </message>
     <message>
@@ -677,7 +677,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Döwrebap</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
         <translation>Habarlaryň görkezilen Bitkoin salgylary bilen gol çekilendigini kepillendirmek üçin habarlary tassykla</translation>
     </message>
     <message>
@@ -988,7 +988,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Ýazylan %1 salgysy salgylar kitabynda %2 belligi astynda eýýäm bar.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
         <translation>Ýazylan salgy %1 ýaly Bitkoin salgysy ýok.</translation>
     </message>
     <message>
@@ -1041,7 +1041,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1 Bitkoin blok zynjyrynyň nusgasyny ýükläp alar we göçürer.</translation>
     </message>
     <message numerus="yes">
@@ -1074,7 +1074,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Bu sanawda azyndan %1 GB maglumat saklanar we ol wagtyň geçmegi bilen köpeler.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>Bitkoin</translation>
     </message>
     <message>
@@ -1163,7 +1163,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>%1häzir sinhronlaşdyrylýar. Ol düwünlerden baş atlary we bloklary ýükläp alar we blok zynjyrynyň ujuna ýetýänçä olary  barlar.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Entek görkezilmedik geleşikleriň täsirine düşen bitkoinleri sarp etmek synanyşygy ulgam tarapyndan kabul edilmez.</translation>
     </message>
     <message>
@@ -1195,7 +1195,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Progressiň sagatlaýyn ulalmagy</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
         <translation>Soňky geleşikler entek görünmän biler, şonuň üçin gapjygyňyzdaky galyndy nädogry bolup biler. Bu maglumat aşakda beýan edilişi ýaly gapjygyňyz bitkoin tory bilen utgaşmagy tamamlanda dogry bolar.</translation>
     </message>
     <message>
@@ -1218,7 +1218,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open vertcoin URI</source>
         <translation>Bitkoin URI aç</translation>
     </message>
     <message>
@@ -1356,11 +1356,11 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Opsiýalary başdaka geçirmekligi tassykla</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 proksi arkaly Bitkoin toruna baglan.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>Tor onion hyzmatlary üçin aýratyn SOCKS5 proksi arkaly Bitkoin toruna baglan.</translation>
     </message>
     <message>
@@ -1599,7 +1599,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation>Soňky amallar</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Görkezilýän maglumat könelen bolup biler. birikme ýerine ýetirilenden soň siziň gapjygyňyz awtomatiki usulda Bitkoin tory bilen sinhronlaşar, ýöne bu iş entäk gutarmady.</translation>
     </message>
     <message>
@@ -1750,8 +1750,8 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' dogry URI däl. Onuň ýerine 'bitcoin:' ulanyň.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' dogry URI däl. Onuň ýerine 'vertcoin:' ulanyň.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1762,7 +1762,7 @@ BIP70-däki howpsuzlygyň giňden ýaýran gowşak taraplary sebäpli, täjirler
 Size bu ýalňyşlyk gelýän bolsa, siz täjirden BIP21-e gabat gelýän URI-ni üpjün etmegini talap etmeli.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
         <translation>Bitkoini başlap bolanok: click-to-pay işleýjisi</translation>
     </message>
     <message>
@@ -1774,7 +1774,7 @@ Size bu ýalňyşlyk gelýän bolsa, siz täjirden BIP21-e gabat gelýän URI-ni
         <translation>Töleg talaby faýllarynyň işlenmegi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
         <translation>URI-ni işläp bolmady! Munuň sebäbi nädogry Bitkoin salgysy ýa-da ýalňyş emele getirilen URI parametrleri bolup biler.</translation>
     </message>
     <message>
@@ -1907,7 +1907,7 @@ Size bu ýalňyşlyk gelýän bolsa, siz täjirden BIP21-e gabat gelýän URI-ni
         <translation>Sazlamalary deslapky ýagdaýyna getirmek isleýäňmi ýa-da hiçhili üýtgeşme girizmezden ýatyrmak?</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
         <translation>(Bitkoin salgysyny giriziň (meselem, %1)</translation>
     </message>
     <message>

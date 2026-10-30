@@ -83,7 +83,7 @@
         <translation>хаягуудииг Илгээж байна - %1</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Эдгээр Биткойн хаягууд нь илгээх хаягууд. Хүлээн авах хаяг болон тоо хэмжээг илгээхээсээ өмнө сайн нягталж үзэж байна уу</translation>
     </message>
 </context>
@@ -175,7 +175,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -446,7 +446,7 @@
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Vertcoin</source>
         <translation>Биткойн</translation>
     </message>
     <message>
@@ -783,7 +783,7 @@
         <translation>Тѳлѳх хэмжээ 0.-оос их байх ёстой</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Vertcoin address</source>
         <translation>Анхаар:Буруу Биткойны хаяг байна</translation>
     </message>
     <message>

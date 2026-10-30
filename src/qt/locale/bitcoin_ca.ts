@@ -96,14 +96,14 @@
         <translation>S'ha produït un error en desar la llista d'adreces a %1. Torneu-ho a provar.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Aquestes son les teves adreces de Bitcoin per rebre pagaments. Utilitza el botó "Crear nova adreça de recepció" de la pestanya de recepció per crear una nova adreça.
+        <translation>Aquestes son les teves adreces de Vertcoin per rebre pagaments. Utilitza el botó "Crear nova adreça de recepció" de la pestanya de recepció per crear una nova adreça.
 Només és possible firmar amb adreces del tipus "legacy".</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les vostres adreces de Bitcoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les vostres adreces de Vertcoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Ha fallat el canvi de frase de pas</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Recorda que tot i xifrant la teva cartera, els teus bitcoins no estan completament protegits de robatori a través de programari maliciós que estigui infectant el teu ordinador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recorda que tot i xifrant la teva cartera, els teus vertcoins no estan completament protegits de robatori a través de programari maliciós que estigui infectant el teu ordinador.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>El desbloqueig de la cartera ha fallat</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,7 +297,7 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Client de %1</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -567,8 +567,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Obre la cartera</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Obrir un bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Obrir un vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -607,8 +607,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Surt de l'aplicació</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Sol·licita pagaments (genera codis QR i bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Sol·licita pagaments (genera codis QR i vertcoin: URI)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -630,8 +630,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>&amp;Mostra</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Envia monedes a una adreça Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Envia monedes a una adreça Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -655,8 +655,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Mostra informació sobre Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Vertcoin</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -671,8 +671,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Signa el &amp;missatge</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Bitcoin per provar que les poseeixes</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seva adreça de Vertcoin per provar que les poseeixes</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -701,8 +701,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Actualitzat</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Bitcoin específica.</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Vertcoin específica.</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1017,8 +1017,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation>L'adreça introduïda "%1" ja existeix al directori d'adreces amb l'etiqueta "%2".</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Bitcoin vàlida.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de Vertcoin vàlida.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1066,8 +1066,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs Vertcoin.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1228,8 +1228,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
         <translation>%1 sincronitzant ara mateix. Es descarregaran capçaleres i blocs d'altres peers i es validaran fins a obtenir la punta de la cadena de blocs. </translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Els intents de gastar bitcoins que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Els intents de gastar vertcoins que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1260,8 +1260,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
         <translation>Augment de progrés per hora</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa bitcoin, tal com es detalla més avall.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa vertcoin, tal com es detalla més avall.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1283,8 +1283,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Obre Bitcoin URI</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Obre Vertcoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1388,8 +1388,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
         <translation>Permet connexions entrants</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Obriu automàticament el port del client Bitcoin a l'encaminador. Només funciona quan el vostre encaminador admet PCP o NAT-PMP i està habilitat. El port extern podria ser aleatori.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Obriu automàticament el port del client Vertcoin a l'encaminador. Només funciona quan el vostre encaminador admet PCP o NAT-PMP i està habilitat. El port extern podria ser aleatori.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1429,12 +1429,12 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
         <translation>Confirmeu el reestabliment de les opcions</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Bitcoin a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Connecta a la xarxa Vertcoin a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Connecteu-vos a la xarxa Bitcoin mitjançant un servidor intermediari SOCKS5 separat per als serveis de ceba Tor.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Connecteu-vos a la xarxa Vertcoin mitjançant un servidor intermediari SOCKS5 separat per als serveis de ceba Tor.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1469,7 +1469,7 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
     </message>
     <message>
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation>Camí complet a %1 script compatible amb Bitcoin Core (per exemple, C:\Downloads\hwi.exe o /Users/you/Downloads/hwi.py). Aneu amb compte: el programari maliciós pot robar-vos les monedes!</translation>
+        <translation>Camí complet a %1 script compatible amb Vertcoin Core (per exemple, C:\Downloads\hwi.exe o /Users/you/Downloads/hwi.py). Aneu amb compte: el programari maliciós pot robar-vos les monedes!</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1665,8 +1665,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
         <translation>Transaccions recents</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al dia. El vostra cartera se sincronitza automàticament amb la xarxa Bitcoin un cop s'ha establert connexió, però aquest proces encara no ha finalitzat.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al dia. El vostra cartera se sincronitza automàticament amb la xarxa Vertcoin un cop s'ha establert connexió, però aquest proces encara no ha finalitzat.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1816,8 +1816,8 @@ El procés de migració crearà una còpia de seguretat de la cartera abans de m
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' no és una URI vàlida. Usi 'bitcoin:' en lloc seu.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' no és una URI vàlida. Usi 'vertcoin:' en lloc seu.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1828,8 +1828,8 @@ A causa dels defectes generalitzats de seguretat del BIP70, es recomana que s'ig
 Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un URI compatible amb BIP21.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>No es pot iniciar bitcoin: controlador click-to-pay</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>No es pot iniciar vertcoin: controlador click-to-pay</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1840,8 +1840,8 @@ Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un U
         <translation>Gestió de fitxers de les sol·licituds de pagament</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Bitcoin no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Vertcoin no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1981,8 +1981,8 @@ Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un U
         <translation>"%1" incrustat</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Bitcoin (p. ex. %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Introduïu una adreça de Vertcoin (p. ex. %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2284,8 +2284,8 @@ Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un U
         <translation>Activitat de xarxa inhabilitada</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Adreces de xarxa que el vostre node Bitcoin està fent servir actualment per a comunicar-se amb altres nodes.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Adreces de xarxa que el vostre node Vertcoin està fent servir actualment per a comunicar-se amb altres nodes.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2540,8 +2540,8 @@ Per a obtenir més informació sobre com utilitzar aquesta consola, escriviu %6.
         <translation>Un missatge opcional adjunt a la sol·licitud de pagament i que es pot mostrar al remitent.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Vertcoin.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -3011,16 +3011,16 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>Advertència: l'estimació de tarifes no és possible actualment.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Avís: adreça Bitcoin no vàlida</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Avís: adreça Vertcoin no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Avís: adreça de canvi desconeguda</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Quan no hi ha prou espai en els blocs per encabir totes les transaccions, els miners i així mateix els nodes de trànsit poden exigir una taxa mínima. És acceptable pagar únicament la taxa mínima, però tingueu present que pot resultar que la vostra transacció no sigui mai confirmada mentre hi hagi més demanda de transaccions bitcoin de les que la xarxa pot processar.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Quan no hi ha prou espai en els blocs per encabir totes les transaccions, els miners i així mateix els nodes de trànsit poden exigir una taxa mínima. És acceptable pagar únicament la taxa mínima, però tingueu present que pot resultar que la vostra transacció no sigui mai confirmada mentre hi hagi més demanda de transaccions vertcoin de les que la xarxa pot processar.</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -3038,8 +3038,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>&amp;Etiqueta:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Un missatge que s'ha adjuntat al bitcoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Bitcoin.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Un missatge que s'ha adjuntat al vertcoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Vertcoin.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3078,16 +3078,16 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>S&amp;ubstreu la comissió de l'import</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>L'adreça Bitcoin on enviar el pagament</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>L'adreça Vertcoin on enviar el pagament</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>L’import a enviar a la unitat seleccionada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys bitcoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys vertcoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3203,8 +3203,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>Signa el &amp;missatge</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Bitcoin</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Vertcoin</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3215,12 +3215,12 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>Signatures - Signa o verifica un missatge</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>L'adreça Bitcoin amb què va ser signat el missatge</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>L'adreça Vertcoin amb què va ser signat el missatge</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>L'adreça Bitcoin amb què signar el missatge</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>L'adreça Vertcoin amb què signar el missatge</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3247,8 +3247,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>Verifica el &amp;missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiqueu el missatge per assegurar-se que ha estat signat amb una adreça Bitcoin específica</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Verifiqueu el missatge per assegurar-se que ha estat signat amb una adreça Vertcoin específica</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -3939,8 +3939,8 @@ Ves a Arxiu &gt; Obrir Cartera per a carregar cartera.
         <translation>Error: el registre de l'identificador del fitxer de bolcat és incorrecte. S'ha obtingut «%s», s'esperava «%s».</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Error: la versió del fitxer de bolcat no és compatible. Aquesta versió de bitcoin-wallet només admet fitxers de bolcat de la versió 1. S'ha obtingut un fitxer de bolcat amb la versió %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Error: la versió del fitxer de bolcat no és compatible. Aquesta versió de vertcoin-wallet només admet fitxers de bolcat de la versió 1. S'ha obtingut un fitxer de bolcat amb la versió %s</translation>
     </message>
     <message>
         <source>Error: Got key that was not hex: %s</source>

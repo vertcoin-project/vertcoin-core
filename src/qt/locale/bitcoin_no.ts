@@ -93,13 +93,13 @@
         <translation>Det oppstod en feil under forsøk på å lagre adresselisten til %1. Vennligst prøv igjen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
+        <translation>Dette er Vertcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Bitcoin adresser for å sende betalinger.Alltid sjekk mengden og mottaker adressen før du sender mynter.  </translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Vertcoin adresser for å sende betalinger.Alltid sjekk mengden og mottaker adressen før du sender mynter.  </translation>
     </message>
 </context>
 <context>
@@ -172,8 +172,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Endring av passord mislyktes</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Husk at kryptering av lommeboken din ikke fullt ut kan beskytte bitcoinene dine mot å bli stjålet av skadelig programvare som infiserer datamaskinen din.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Husk at kryptering av lommeboken din ikke fullt ut kan beskytte vertcoinene dine mot å bli stjålet av skadelig programvare som infiserer datamaskinen din.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -232,8 +232,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Låsing av lommebok mislyktes</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer lommeboken din og mister passordet, vil du 1 MISTE ALLE BITCOINENE DINE 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer lommeboken din og mister passordet, vil du 1 MISTE ALLE VERTCOINENE DINE 1 !</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -293,7 +293,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -563,8 +563,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Åpne Lommebok</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Åpne en bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Åpne en vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -603,8 +603,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Avslutt programmet</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Be om betalinger (genererer QR-koder og bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Be om betalinger (genererer QR-koder og vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -626,8 +626,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>V&amp;is</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Send mynter til en Bitcoin-adresse</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Send mynter til en Vertcoin-adresse</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -651,8 +651,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Vis informasjon om Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Vis %1 hjelpetekst for å få en liste over mulige Bitcoin kommandolinjealternativer</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Vis %1 hjelpetekst for å få en liste over mulige Vertcoin kommandolinjealternativer</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -667,8 +667,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Signer &amp;melding…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer meldinger med Bitcoin-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Signer meldinger med Vertcoin-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -691,8 +691,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Oppdatert</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiser meldinger for å sikre at de ble signert med de spesifiserte Bitcoin-adressene</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Verifiser meldinger for å sikre at de ble signert med de spesifiserte Vertcoin-adressene</translation>
     </message>
     <message>
         <source>Wallet Data</source>

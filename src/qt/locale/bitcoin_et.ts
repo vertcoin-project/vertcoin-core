@@ -84,13 +84,13 @@
         <translation>Tõrge aadressi nimekirja salvestamisel %1. Palun proovi uuesti.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Need on sinu Bitcoin aadressid makse vastuvõtuks.Kasuta ‘Loo uus vastuvõttu aadress’ nuppu vastuvõtmise vahekaardis, et luua uus aadress. Allkirjastamine on võimalik ainult 'pärand' tüüpi aadressidega.</translation>
+        <translation>Need on sinu Vertcoin aadressid makse vastuvõtuks.Kasuta ‘Loo uus vastuvõttu aadress’ nuppu vastuvõtmise vahekaardis, et luua uus aadress. Allkirjastamine on võimalik ainult 'pärand' tüüpi aadressidega.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Bitcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Vertcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
 </context>
 <context>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Parooli muutmine ei õnnestunud</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Pea meeles, et rahakoti krüpteerimine ei välista bitcoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Pea meeles, et rahakoti krüpteerimine ei välista vertcoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -215,8 +215,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Rahakoti lahtilukustamine ebaõnnestus</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA BITCOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA VERTCOINID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -260,7 +260,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -453,8 +453,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Välju rakendusest</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja bitcoini: URId)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja vertcoini: URId)</translation>
     </message>
     <message>
         <source>Restore Wallet…</source>
@@ -467,8 +467,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Taasta rahakoti varukoopiafailist</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Saada münte Bitcoini aadressile</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Saada münte Vertcoini aadressile</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -491,8 +491,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Allkirjuta &amp;sõnum...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Bitcoini aadressiga</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Vertcoini aadressiga</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -517,8 +517,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Ajakohane</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Bitcoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Vertcoini aadressiga</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -670,8 +670,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Uus saatev aadress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Bitcoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Vertcoin aadress.</translation>
     </message>
     </context>
 <context>
@@ -881,8 +881,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Hiljutised transaktsioonid</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitcoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Vertcoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -911,8 +911,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1357,8 +1357,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Tehingutasu</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Hoiatus: Ebakorrektne Bitcoin aadress</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Hoiatus: Ebakorrektne Vertcoin aadress</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -1482,8 +1482,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Allkirjasta &amp;Sõnum</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Allkirjasta sõnum Bitcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Allkirjasta sõnum Vertcoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -1494,12 +1494,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Signatuurid - Allkirjasta / Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Bitcoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Vertcoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Bitcoin aadress millega sõnum allkirjastada</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Vertcoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1518,8 +1518,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Kinnita &amp;Sõnum</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Bitcoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Vertcoini aadressiga.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>

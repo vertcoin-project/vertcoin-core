@@ -1,12 +1,12 @@
 # Dependencies
 
-These are the dependencies used by Bitcoin Core.
+These are the dependencies used by Vertcoin Core.
 You can find installation instructions in the `/doc/build-*.md` file for your platform, or self-compile
 them using [depends](/depends/README.md).
 
 ## Compiler
 
-Bitcoin Core requires one of the following compilers.
+Vertcoin Core requires one of the following compilers.
 
 | Toolchain | Minimum required |
 | --- | --- |

@@ -96,13 +96,13 @@
         <translation>トランザクション履歴を %1 へ保存する際にエラーが発生しました。再試行してください。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>これらは支払いを受け取るための、あなたの Bitcoin アドレスです。新しいアドレスを作成するには受取タブ内の「新しい受取用アドレスを作成」ボタンを使用します。</translation>
+        <translation>これらは支払いを受け取るための、あなたの Vertcoin アドレスです。新しいアドレスを作成するには受取タブ内の「新しい受取用アドレスを作成」ボタンを使用します。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは、あなたが知っている送信先の Bitcoin アドレスです。コインを送る前に必ず、金額と受取用アドレスを確認してください。</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは、あなたが知っている送信先の Vertcoin アドレスです。コインを送る前に必ず、金額と受取用アドレスを確認してください。</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>パスフレーズの変更に失敗しました</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>ウォレットを暗号化しても、コンピュータに感染したマルウェアなどによる Bitcoin の盗難を完全に防ぐことはできないことにご注意ください。</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>ウォレットを暗号化しても、コンピュータに感染したマルウェアなどによる Vertcoin の盗難を完全に防ぐことはできないことにご注意ください。</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ウォレットのアンロックに失敗</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>警告: ウォレットの暗号化後にパスフレーズを忘れてしまった場合、&lt;b&gt;あなたの Bitcoin はすべて失われます&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>警告: ウォレットの暗号化後にパスフレーズを忘れてしまった場合、&lt;b&gt;あなたの Vertcoin はすべて失われます&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,9 +297,9 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1 クライアント</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
-        <translation><numerusform>Bitcoin Networkへの接続数: %n</numerusform></translation>
+        <translation><numerusform>Vertcoin Networkへの接続数: %n</numerusform></translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -591,8 +591,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ウォレットを開く</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>bitcoin: URIを開く</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>vertcoin: URIを開く</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -631,8 +631,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>アプリケーションを終了する</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>支払いをリクエストする（QRコードと bitcoin:で始まるURIを生成する）</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>支払いをリクエストする（QRコードと vertcoin:で始まるURIを生成する）</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -671,8 +671,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>監視専用ウォレットエクスポートを保存</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bitcoin アドレスにコインを送る</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Vertcoin アドレスにコインを送る</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -696,8 +696,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Qt の情報を表示する</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>%1 のヘルプ メッセージを表示し、使用可能な Bitcoin のコマンドラインオプション一覧を見る。</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>%1 のヘルプ メッセージを表示し、使用可能な Vertcoin のコマンドラインオプション一覧を見る。</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -712,8 +712,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>メッセージを署名…(&amp;m)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Bitcoin アドレスでメッセージに署名することで、そのアドレスの所有権を証明する</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Vertcoin アドレスでメッセージに署名することで、そのアドレスの所有権を証明する</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -746,8 +746,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>ブロックは最新</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>メッセージを検証して、指定された Bitcoin アドレスで署名されたことを確認する</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>メッセージを検証して、指定された Vertcoin アドレスで署名されたことを確認する</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1073,8 +1073,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>入力されたアドレス "%1" は既にラベル "%2" としてアドレス帳に存在します｡</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>入力されたアドレス "%1" は無効な Bitcoin アドレスです。</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>入力されたアドレス "%1" は無効な Vertcoin アドレスです。</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1122,8 +1122,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 は Bitcoin ブロックチェーンのコピーをダウンロードし保存します。</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1 は Vertcoin ブロックチェーンのコピーをダウンロードし保存します。</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1324,8 +1324,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>%1は現在同期中です。ブロックチェーンの先端に到達するまで、ピアからヘッダーとブロックをダウンロードし検証します。</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>まだ表示されていない取引が関係する Bitcoin の使用を試みた場合、ネットワークから認証を受けられません。</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>まだ表示されていない取引が関係する Vertcoin の使用を試みた場合、ネットワークから認証を受けられません。</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1356,8 +1356,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>一時間毎の進捗増加</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>最近の取引がまだ表示されていない可能性があります。そのため、ウォレットの残高が正しく表示されていないかもしれません。この情報は、ウォレットが Bitcoin ネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>最近の取引がまだ表示されていない可能性があります。そのため、ウォレットの残高が正しく表示されていないかもしれません。この情報は、ウォレットが Vertcoin ネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1379,8 +1379,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>bitcoin URIを開く</translation>
+        <source>Open vertcoin URI</source>
+        <translation>vertcoin URIを開く</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1484,8 +1484,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>外部からの接続を許可する(&amp;G)</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>自動的にルーター上の Bitcoin クライアントのポートを開放します。これは、あなたのルーターが PCP または NAT-PMP をサポートし、有効になっている場合にのみ機能します。外部ポートはランダムで構いません。</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>自動的にルーター上の Vertcoin クライアントのポートを開放します。これは、あなたのルーターが PCP または NAT-PMP をサポートし、有効になっている場合にのみ機能します。外部ポートはランダムで構いません。</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1525,11 +1525,11 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>設定リセットの確認</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 プロキシ経由で Bitcoin ネットワークに接続する。</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 プロキシ経由で Vertcoin ネットワークに接続する。</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>Tor onion service用の別のSOCKS5プロキシを介してBitcoinネットワークに接続します。</translation>
     </message>
     <message>
@@ -1781,8 +1781,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>最近の取引</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示されている情報は古い可能性があります。ウォレットは接続確立後に Bitcoin ネットワークと自動的に同期しますが、同期処理はまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示されている情報は古い可能性があります。ウォレットは接続確立後に Vertcoin ネットワークと自動的に同期しますが、同期処理はまだ完了していません。</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1940,8 +1940,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' は正しいURIではありません｡ 'bitcoin:'を使用してください｡</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' は正しいURIではありません｡ 'vertcoin:'を使用してください｡</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1952,8 +1952,8 @@ BIP70には広範なセキュリティー上の問題があるので、ウォレ
 このエラーが発生した場合、事業者に対してBIP21に対応したURIを要求してください。</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin を起動できません: click-to-pay handler</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Vertcoin を起動できません: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1964,8 +1964,8 @@ BIP70には広範なセキュリティー上の問題があるので、ウォレ
         <translation>支払いリクエストファイルの処理</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URIを解析できませんでした！ Bitcoin アドレスが無効であるか、URIパラメーターが不正な形式である可能性があります。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URIを解析できませんでした！ Vertcoin アドレスが無効であるか、URIパラメーターが不正な形式である可能性があります。</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2125,8 +2125,8 @@ BIP70には広範なセキュリティー上の問題があるので、ウォレ
         <translation>埋込み "%1"</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Bitcoin アドレスを入力してください (例: %1)</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Vertcoin アドレスを入力してください (例: %1)</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2454,8 +2454,8 @@ BIP70には広範なセキュリティー上の問題があるので、ウォレ
         <translation>ネットワーク活動が無効になりました</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Bitcoinノードが現在他のノード通信するために使用しているネットワークアドレス</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Vertcoinノードが現在他のノード通信するために使用しているネットワークアドレス</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2742,8 +2742,8 @@ For more information on using this console, type %6.
         <translation>支払いリクエストに任意で添付できるメッセージで、送り主に表示されます。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>支払いリクエストに添付するメッセージ（任意）。支払リクエスト開始時に表示されます。注意: メッセージは Bitcoin ネットワーク上へ送信されません。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>支払いリクエストに添付するメッセージ（任意）。支払リクエスト開始時に表示されます。注意: メッセージは Vertcoin ネットワーク上へ送信されません。</translation>
     </message>
     <message>
         <source>Bech32m (BIP-350) is an upgrade to Bech32, wallet support is still limited.</source>
@@ -3253,15 +3253,15 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>警告: 手数料推定機能は現在利用できません。</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>警告: 無効な Bitcoin アドレス</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>警告: 無効な Vertcoin アドレス</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>警告：正体不明のお釣りアドレスです</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
         <translation>ブロック内の空きよりトランザクション流量が少ない場合、マイナーや中継ノードは最低限の手数料でも処理することがあります。この最低限の手数料だけを支払っても問題ありませんが、一度トランザクションの需要がネットワークの処理能力を超えてしまった場合には、トランザクションが永久に承認されなくなってしまう可能性があることにご注意ください。</translation>
     </message>
     <message>
@@ -3288,8 +3288,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>ラベル(&amp;L):</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>bitcoin: URIに添付されていたメッセージです。これは参照用として取引とともに保存されます。注意: メッセージは Bitcoin ネットワーク上へ送信されません。</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>vertcoin: URIに添付されていたメッセージです。これは参照用として取引とともに保存されます。注意: メッセージは Vertcoin ネットワーク上へ送信されません。</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3324,16 +3324,16 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>送金額から手数料を差し引く(&amp;U)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>支払い先 Bitcoin アドレス</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>支払い先 Vertcoin アドレス</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>送金する金額の単位を選択</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手数料は送金する金額から差し引かれます。送金先には金額欄で指定した額よりも少ない Bitcoin が送られます。送金先が複数ある場合は、手数料は均等に分けられます。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>手数料は送金する金額から差し引かれます。送金先には金額欄で指定した額よりも少ない Vertcoin が送られます。送金先が複数ある場合は、手数料は均等に分けられます。</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3445,8 +3445,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>メッセージを署名(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>メッセージに署名してこの Bitcoin アドレスを所有していることを証明</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>メッセージに署名してこの Vertcoin アドレスを所有していることを証明</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3457,12 +3457,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>署名 - メッセージの署名・検証</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>メッセージの署名に使われた Bitcoin アドレス</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>メッセージの署名に使われた Vertcoin アドレス</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>メッセージの署名に使用する Bitcoin アドレス</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>メッセージの署名に使用する Vertcoin アドレス</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3493,15 +3493,15 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation>メッセージを検証(&amp;M)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>メッセージを検証して指定された Bitcoin アドレスで署名されたことを確認</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>メッセージを検証して指定された Vertcoin アドレスで署名されたことを確認</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>ウォレットのアンロックはキャンセルされました。</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>あなたの所有しているレガシー（P2PKH）アドレスによりメッセージや合意書に署名をすることで、それらアドレスに対して送られたビットコインを受け取ることができることを証明できます。フィッシング攻撃により不正にあなたの識別情報を署名させられてしまうことを防ぐために、不明確なものやランダムなものに対して署名しないよう注意してください。あなたが同意した、よく詳細の記された文言にのみ署名するようにしてください。</translation>
     </message>
 </context>
@@ -4389,8 +4389,8 @@ Unable to restore backup of wallet.</source>
         <translation>エラー: ダンプファイルはサポートされていないデータベース形式(%s)を指定しています。SQLiteデータベースのダンプのみがサポートされています。</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>エラー: ダンプファイルのバージョンがサポート外です。このバージョンの Bitcoin ウォレットは、バージョン 1 のダンプファイルのみをサポートします。バージョン%sのダンプファイルでした。</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>エラー: ダンプファイルのバージョンがサポート外です。このバージョンの Vertcoin ウォレットは、バージョン 1 のダンプファイルのみをサポートします。バージョン%sのダンプファイルでした。</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>

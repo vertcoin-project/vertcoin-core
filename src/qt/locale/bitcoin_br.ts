@@ -83,14 +83,14 @@
         <translation>Adresoù kas - %1</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ho adresoù Bitcoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <translation>Ho adresoù Vertcoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ho adresoù Bitcoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ho adresoù Vertcoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
     </message>
 </context>
 <context>
@@ -127,8 +127,8 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
         <translation>Doug-moneiz da sifrañ</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Diwall: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Diwall: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
@@ -145,7 +145,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -272,8 +272,8 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
         <translation>&amp;Diskouel</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Kas gwenneien d'un adres Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Kas gwenneien d'un adres Vertcoin</translation>
     </message>
     <message>
         <source>Show information about %1</source>

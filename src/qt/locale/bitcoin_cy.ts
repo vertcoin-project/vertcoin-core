@@ -92,13 +92,13 @@
         <translation>Roedd camgymeriad yn trïo safio'r rhestr gyfeiriadau i'r %1. Triwch eto os gwelwch yn dda.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dyma'ch cyfeiriadau Bitcoin ar gyfer derbyn taliadau. Defnyddiwch y botwm 'Creu cyfeiriad derbyn newydd' yn y tab derbyn i greu cyfeiriadau newydd. Dim ond gyda chyfeiriadau o'r math 'etifeddol' y mae llofnodi yn bosibl.</translation>
+        <translation>Dyma'ch cyfeiriadau Vertcoin ar gyfer derbyn taliadau. Defnyddiwch y botwm 'Creu cyfeiriad derbyn newydd' yn y tab derbyn i greu cyfeiriadau newydd. Dim ond gyda chyfeiriadau o'r math 'etifeddol' y mae llofnodi yn bosibl.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Rhain ydi eich cyfeiriadau Bitcoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Rhain ydi eich cyfeiriadau Vertcoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
     </message>
 </context>
 <context>
@@ -167,8 +167,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Method newid geiriau pas wedi methu</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Cofiwch nad yw cryptio eich waled yn gallu amddiffyn eich bitcoiniodd yn llawn rhag cael eu dwyn gan feddalwedd ymosodol sy'n heintio eich cyfrifiadur.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Cofiwch nad yw cryptio eich waled yn gallu amddiffyn eich vertcoiniodd yn llawn rhag cael eu dwyn gan feddalwedd ymosodol sy'n heintio eich cyfrifiadur.</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -227,8 +227,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dadgloi waled wedi methu</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Rhybudd: Os ydych yn amgryptio'r waled ag yn colli'r cyfrinair, byddwch yn &lt;b&gt; COLLI EICH BITCOINS I GYD &lt;b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Rhybudd: Os ydych yn amgryptio'r waled ag yn colli'r cyfrinair, byddwch yn &lt;b&gt; COLLI EICH VERTCOINS I GYD &lt;b&gt; !</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -288,7 +288,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>%1cwsmer</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /><numerusform /><numerusform /></translation>
     </message>
@@ -556,8 +556,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Agor Waled</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Agor bitcoin: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Agor vertcoin: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -596,8 +596,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Gadael rhaglen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Gofyn taliadau (creu côd QR a bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Gofyn taliadau (creu côd QR a vertcoin: URIs)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -619,8 +619,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dangos</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Anfon arian i gyfeiriad Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Anfon arian i gyfeiriad Vertcoin</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -644,8 +644,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dangos gwybodaeth am Qt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Dangos y%1neges gymorth i gael rhestr gyda'r opsiynau llinell-gorchymyn Bitcoin posibl</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Dangos y%1neges gymorth i gael rhestr gyda'r opsiynau llinell-gorchymyn Vertcoin posibl</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -660,8 +660,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Llofnodi &amp;neges…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Bitcoin i brofi mae chi sy'n berchen arnynt</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Vertcoin i brofi mae chi sy'n berchen arnynt</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -690,8 +690,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Cyfamserol</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Bitcoin penodol</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Vertcoin penodol</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -977,8 +977,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Y cyfeiriad sy'n gysylltiedig â'r cofnod rhestr cyfeiriadau hwn. Dim ond ar gyfer anfon cyfeiriadau y gellir addasu hwn.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Y cyfeiriad a roddwyd "%1Nid yw " yn gyfeiriad Bitcoin dilys.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Y cyfeiriad a roddwyd "%1Nid yw " yn gyfeiriad Vertcoin dilys.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1018,8 +1018,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1yn lawrlwytho ac yn storio copi o'r gadwyn bloc Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
+        <translation>%1yn lawrlwytho ac yn storio copi o'r gadwyn bloc Vertcoin.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>
@@ -1193,8 +1193,8 @@ Bydd y broses fudo yn creu copi wrth gefn o'r waled cyn mudo. Bydd y ffeil wrth 
         <translation>Wedi'i lunio heb gefnogaeth arwyddo allanol (sy'n ofynnol ar gyfer llofnodi allanol)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Cysylltu â rhwydwaith Bitcoin trwy brocsï SOCKS5.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Cysylltu â rhwydwaith Vertcoin trwy brocsï SOCKS5.</translation>
     </message>
     <message>
         <source>Continue</source>

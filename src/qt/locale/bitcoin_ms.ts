@@ -85,8 +85,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Terdapat ralat semasa cubaan menyimpan senarai alamat kepada %1. Sila cuba lagi.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ini adalah alamat Bitcoin anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ini adalah alamat Vertcoin anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
     </message>
 </context>
 <context>
@@ -191,8 +191,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Pembukaan kunci dompet gagal</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Amaran: Jika anda enkripkan dompet anda dan hilangkan frasa laluan, anda akan &lt;b&gt;ANDA AKAN HILANGKAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Amaran: Jika anda enkripkan dompet anda dan hilangkan frasa laluan, anda akan &lt;b&gt;ANDA AKAN HILANGKAN SEMUA VERTCOIN ANDA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -216,7 +216,7 @@ Alihkan fail data ke dalam tab semasa</translation>
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /></translation>
     </message>
@@ -339,8 +339,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Berhenti aplikasi</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Request payments (generates QR codes and bitcoin: URIs)
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Request payments (generates QR codes and vertcoin: URIs)
 </translation>
     </message>
     <message>
@@ -359,8 +359,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Pulihkan dompet dari fail sandaran.</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Menghantar koin kepada alamat Bitcoin</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Menghantar koin kepada alamat Vertcoin</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -380,8 +380,8 @@ Alihkan fail data ke dalam tab semasa</translation>
 </translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>sahkan mesej bersama alamat bitcoin anda untuk menunjukkan alamat ini anda punya</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>sahkan mesej bersama alamat vertcoin anda untuk menunjukkan alamat ini anda punya</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -393,8 +393,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Terkini</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat Bitcoin yang ditentukan</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat Vertcoin yang ditentukan</translation>
     </message>
     <message>
         <source>Wallet:</source>

@@ -224,7 +224,7 @@ static RPCMethod loadwallet()
     return RPCMethod{
         "loadwallet",
         "Loads a wallet from a wallet file or directory."
-                "\nNote that all wallet command-line options used when starting bitcoind will be"
+                "\nNote that all wallet command-line options used when starting vertcoind will be"
                 "\napplied to the new wallet.\n",
                 {
                     {"filename", RPCArg::Type::STR, RPCArg::Optional::NO, "The path to the directory of the wallet to be loaded, either absolute or relative to the \"wallets\" directory. The \"wallets\" directory is set by the -walletdir option and defaults to the \"wallets\" folder within the data directory."},

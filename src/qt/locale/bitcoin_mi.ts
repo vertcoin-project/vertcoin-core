@@ -81,14 +81,14 @@ Right-click to edit address or label</translation>
         <translation>I whakapā atu i te hapa i te whakaputa i te rārangi wāhitau ki %1. Whakamātau anō, koa.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Ko ēnei ngā whakamāoritanga mō ō whakaaetanga Bitcoin hei whiwhi utu. Whakamahi i te pātene 'Waihanga whakaaronga hōu' i te pae whiwhi ki te whakapūmau i ngā whakaaronga hōu.
+        <translation>Ko ēnei ngā whakamāoritanga mō ō whakaaetanga Vertcoin hei whiwhi utu. Whakamahi i te pātene 'Waihanga whakaaronga hōu' i te pae whiwhi ki te whakapūmau i ngā whakaaronga hōu.
 Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te momo 'tawhito'.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ko ēnei ngā whakamāoritanga mō ō whakamahi Bitcoin hei tuku moni. Tirohia i te moni me te wāhi whiwhi i mua i te tuku i ngā moni.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ko ēnei ngā whakamāoritanga mō ō whakamahi Vertcoin hei tuku moni. Tirohia i te moni me te wāhi whiwhi i mua i te tuku i ngā moni.</translation>
     </message>
 </context>
 <context>
@@ -149,7 +149,7 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
         <translation>Kua whakapau kē te whakarerekē i te kupu whakapākehā.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
         <translation>Mahara kia whakakorehia te whakakino i ō wharepukapuka kia whakararuraru i ō wharepūkoro.</translation>
     </message>
     <message>
@@ -205,8 +205,8 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
         <translation>Kati te whakakore i te whakatuwhera o te whareparakau</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Whakatūpato: Ki te whakakino i tō pēke moni me te ngaro i tō kupuhipa, ka &lt;b&gt;NGARO KATOA ŌU PĪNIHA BITCOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Whakatūpato: Ki te whakakino i tō pēke moni me te ngaro i tō kupuhipa, ka &lt;b&gt;NGARO KATOA ŌU PĪNIHA VERTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -258,7 +258,7 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
 <context>
     <name>BitcoinGUI</name>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>

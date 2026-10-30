@@ -96,7 +96,7 @@ RPCMethod removeprunedfunds()
 {
     return RPCMethod{
         "removeprunedfunds",
-        "(DEPRECATED) This feature will be removed in the next major release. Start bitcoind with the `-deprecatedrpc=removeprunedfunds` option in order to use this.\n"
+        "(DEPRECATED) This feature will be removed in the next major release. Start vertcoind with the `-deprecatedrpc=removeprunedfunds` option in order to use this.\n"
         "Deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will affect wallet balances.\n",
                 {
                     {"txid", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "The hex-encoded id of the transaction you are deleting"},
@@ -113,7 +113,7 @@ RPCMethod removeprunedfunds()
     if (!pwallet) return UniValue::VNULL;
 
     if (!pwallet->chain().rpcEnableDeprecated("removeprunedfunds")) {
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "DEPRECATION WARNING: This feature will be removed in the next major release. Start bitcoind with the `-deprecatedrpc=removeprunedfunds` option in order to use this.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "DEPRECATION WARNING: This feature will be removed in the next major release. Start vertcoind with the `-deprecatedrpc=removeprunedfunds` option in order to use this.");
     }
 
     LOCK(pwallet->cs_wallet);
@@ -451,7 +451,7 @@ RPCMethod importdescriptors()
                             GetImportTimestamp(request, now), scanned_time - TIMESTAMP_WINDOW - 1, TIMESTAMP_WINDOW)};
                     if (pwallet->chain().havePruned()) {
                         error_msg += strprintf(" This error could be caused by pruning or data corruption "
-                                "(see bitcoind log for details) and could be dealt with by downloading and "
+                                "(see vertcoind log for details) and could be dealt with by downloading and "
                                 "rescanning the relevant blocks (see -reindex option and rescanblockchain RPC).");
                     } else if (pwallet->chain().hasAssumedValidChain()) {
                         error_msg += strprintf(" This error is likely caused by an in-progress assumeutxo "

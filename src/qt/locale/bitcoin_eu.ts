@@ -96,14 +96,14 @@
         <translation>Akats bat egon da helbide lista %1-ean gordetzen sahiatzean. Mesedez, saiatu berriro.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Vertcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Hauek dira ordainketak jasotzeko zure Bitcoin helbideak. Helbide berriak sortzeko, erabili 'Jasotzeko helbide berria sortu' botoia "jasotzea" fitxan.
+        <translation>Hauek dira ordainketak jasotzeko zure Vertcoin helbideak. Helbide berriak sortzeko, erabili 'Jasotzeko helbide berria sortu' botoia "jasotzea" fitxan.
 Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hauek dira zuk dirua jaso dezaketen Bitcoin helbideak. Egiaztatu beti diru-kopurua eta dirua jasoko duen helbidea zuzen egon daitezen, txanponak bidali baino lehen.</translation>
+        <source>These are your Vertcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hauek dira zuk dirua jaso dezaketen Vertcoin helbideak. Egiaztatu beti diru-kopurua eta dirua jasoko duen helbidea zuzen egon daitezen, txanponak bidali baino lehen.</translation>
     </message>
 </context>
 <context>
@@ -176,8 +176,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Pasahitzaren aldaketa huts egin du</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Gogoan izan diruzorroaren enkripzioak ezin dituela zure bitcoinak zure ordenagailuan izan dezakezun malware batengandik lapurtuak izatetik guztiz babestu .</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your vertcoins from being stolen by malware infecting your computer.</source>
+        <translation>Gogoan izan diruzorroaren enkripzioak ezin dituela zure vertcoinak zure ordenagailuan izan dezakezun malware batengandik lapurtuak izatetik guztiz babestu .</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
@@ -236,8 +236,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Zorroaren desblokeoak huts egin du</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Abisua: Diruzorroa enkriptatzen baduzu eta zure pasahitza galtzen baduzu, &lt;b&gt;BITCOIN GUZTIAK GALDUKO DITUZU&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VERTCOINS&lt;/b&gt;!</source>
+        <translation>Abisua: Diruzorroa enkriptatzen baduzu eta zure pasahitza galtzen baduzu, &lt;b&gt;VERTCOIN GUZTIAK GALDUKO DITUZU&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -297,7 +297,7 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>%1 bezeroa</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Vertcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished"><numerusform /><numerusform /></translation>
     </message>
@@ -591,8 +591,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Diruzorroa zabaldu</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation>Ireki bitcoin bat: URI</translation>
+        <source>Open a vertcoin: URI</source>
+        <translation>Ireki vertcoin bat: URI</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -631,8 +631,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Aplikaziotik irten</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Ordainketak eskatu (QR kodeak eta bitcoin: URIak sortzen ditu)</translation>
+        <source>Request payments (generates QR codes and vertcoin: URIs)</source>
+        <translation>Ordainketak eskatu (QR kodeak eta vertcoin: URIak sortzen ditu)</translation>
     </message>
     <message>
         <source>Restore Wallet</source>
@@ -671,8 +671,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Gorde watch-only zorroaren esportazioa</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bidali txanponak Bitcoin helbide batera</translation>
+        <source>Send coins to a Vertcoin address</source>
+        <translation>Bidali txanponak Vertcoin helbide batera</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -696,8 +696,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Erakutsi Qt-ren buruzko informazioa</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Erakutsi %1(r)en laguntza-mezua Bitcoin-en komando-lerroko aukera posibleen zerrenda lortzeko.</translation>
+        <source>Show the %1 help message to get a list with possible Vertcoin command-line options</source>
+        <translation>Erakutsi %1(r)en laguntza-mezua Vertcoin-en komando-lerroko aukera posibleen zerrenda lortzeko.</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -712,8 +712,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>sinatu &amp;mezua</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sinatu mezuak Bitcoinen helbideekin, jabetza frogatzeko.</translation>
+        <source>Sign messages with your Vertcoin addresses to prove you own them</source>
+        <translation>Sinatu mezuak Vertcoinen helbideekin, jabetza frogatzeko.</translation>
     </message>
     <message>
         <source>Synchronizing with network…</source>
@@ -746,8 +746,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Eguneratua</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Egiaztatu mesua Bitcoin helbide espezifikoarekin erregistratu direla ziurtatzeko</translation>
+        <source>Verify messages to ensure they were signed with specified Vertcoin addresses</source>
+        <translation>Egiaztatu mesua Vertcoin helbide espezifikoarekin erregistratu direla ziurtatzeko</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -1073,8 +1073,8 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>Sartutako "%1" helbidea dagoeneko dago helbide-liburuan "%2" etiketa duela.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Sartutako "%1" helbidea ez da baliozko Bitcoin helbide bat.</translation>
+        <source>The entered address "%1" is not a valid Vertcoin address.</source>
+        <translation>Sartutako "%1" helbidea ez da baliozko Vertcoin helbide bat.</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1126,7 +1126,7 @@ Sinatzea soilik posible da 'legacy' motako helbideekin.</translation>
         <translation>GB</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Vertcoin block chain.</source>
         <translation>%1Bitcoin bloke-katearen kopia bat deskargatu eta gordeko du.</translation>
     </message>
     <message numerus="yes">
@@ -1328,8 +1328,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
         <translation>%1orain sinkronizatzen ari da. Kideen buruak eta blokeak deskargatuko ditu, eta balioztatuko ditu bloke-katearen punturik gorenera iritsi arte.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Oraindik bistaratugabe dauden transakzioek eragindako bitcoin-ak gastatzen saiatzea ez du sareak onartuko.</translation>
+        <source>Attempting to spend vertcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Oraindik bistaratugabe dauden transakzioek eragindako vertcoin-ak gastatzen saiatzea ez du sareak onartuko.</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -1360,8 +1360,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
         <translation>Aurrerapenaren igoera orduko</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Azken transakzioak baliteke oraindik ikusgai ez egotea, eta, hortaz, zure zorroaren saldoa ez da zuzena izan daiteke. Informazio hau eguneratua egongo da zure zorroa Bitcoin sarearekin sinkronizatzea amaitzen duenean, behean zehazten den bezala.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the vertcoin network, as detailed below.</source>
+        <translation>Azken transakzioak baliteke oraindik ikusgai ez egotea, eta, hortaz, zure zorroaren saldoa ez da zuzena izan daiteke. Informazio hau eguneratua egongo da zure zorroa Vertcoin sarearekin sinkronizatzea amaitzen duenean, behean zehazten den bezala.</translation>
     </message>
     <message>
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
@@ -1383,8 +1383,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation>Ireki bitcoin URIa</translation>
+        <source>Open vertcoin URI</source>
+        <translation>Ireki vertcoin URIa</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1496,8 +1496,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
         <translation>Sarbide konexioak baimendu</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>Bitcoin bezeroaren portua automatikoki ireki router-ean. Honek bakarrik funtzionatzen du zure router-ak PCP edo NAT-PMP onartzen badu eta gaituta badago. Kanpoko portua ausazkoa izan daiteke.</translation>
+        <source>Automatically open the Vertcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>Vertcoin bezeroaren portua automatikoki ireki router-ean. Honek bakarrik funtzionatzen du zure router-ak PCP edo NAT-PMP onartzen badu eta gaituta badago. Kanpoko portua ausazkoa izan daiteke.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
@@ -1537,12 +1537,12 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
         <translation>Berretsi aukeren berrezarpena</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Bitcoin sarearekin konektatu SOCKS5 proxy baten bidez.</translation>
+        <source>Connect to the Vertcoin network through a SOCKS5 proxy.</source>
+        <translation>Vertcoin sarearekin konektatu SOCKS5 proxy baten bidez.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>Bitcoin sarearekin konektatu Tor onion zerbitzuetarako bereizitako SOCKS5 proxy baten bidez.</translation>
+        <source>Connect to the Vertcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Vertcoin sarearekin konektatu Tor onion zerbitzuetarako bereizitako SOCKS5 proxy baten bidez.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -1793,8 +1793,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
         <translation>Transakzio berriak</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Erakutsitako informazioa zaharkituta egon daiteke. Zure zorroak automatikoki sinkronizatzen du Bitcoin sarearekin konexioa ezarri ondoren, baina prozesu hori oraindik ez da amaitu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vertcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Erakutsitako informazioa zaharkituta egon daiteke. Zure zorroak automatikoki sinkronizatzen du Vertcoin sarearekin konexioa ezarri ondoren, baina prozesu hori oraindik ez da amaitu.</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1952,8 +1952,8 @@ Migrazio-prozesuak zorroaren segurtasun-kopia bat sortuko du migratu aurretik. S
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' ez da URI balioduna. Erabili 'bitcoin:' horren ordez.</translation>
+        <source>'vertcoin://' is not a valid URI. Use 'vertcoin:' instead.</source>
+        <translation>'vertcoin://' ez da URI balioduna. Erabili 'vertcoin:' horren ordez.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1964,8 +1964,8 @@ BIP70en segurtasun-gabezia zabalengatik, irmoki gomendatzen da merkatariek diru-
 Errore hau jasotzen baduzu, merkatariei BIP21-arekin bateragarria den URI bat emateko eskatu beharko zenieke</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Ezin da Bitcoin abiarazi: klik-ordaintzeko kudeatzailea.</translation>
+        <source>Cannot start vertcoin: click-to-pay handler</source>
+        <translation>Ezin da Vertcoin abiarazi: klik-ordaintzeko kudeatzailea.</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1976,8 +1976,8 @@ Errore hau jasotzen baduzu, merkatariei BIP21-arekin bateragarria den URI bat em
         <translation>Ordainketa eskaera fitxategiaren kudeaketa.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URIa ezin da analizatu! Hau Bitcoin helbide baliogabe batek edo gaizki osatutako URI parametroek eragin dezakete.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Vertcoin address or malformed URI parameters.</source>
+        <translation>URIa ezin da analizatu! Hau Vertcoin helbide baliogabe batek edo gaizki osatutako URI parametroek eragin dezakete.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2121,8 +2121,8 @@ Errore hau jasotzen baduzu, merkatariei BIP21-arekin bateragarria den URI bat em
         <translation>"%1" barneratua</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Sartu Bitcoin helbide bat (adibidez:%1 )</translation>
+        <source>Enter a Vertcoin address (e.g. %1)</source>
+        <translation>Sartu Vertcoin helbide bat (adibidez:%1 )</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2456,8 +2456,8 @@ Errore hau jasotzen baduzu, merkatariei BIP21-arekin bateragarria den URI bat em
         <translation>Sareko jarduera desgaituta</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation>Zure Bitcoin nodoak beste nodoekin komunikatzeko une honetan erabiltzen dituen sare-helbideak.</translation>
+        <source>Network addresses that your Vertcoin node is currently using to communicate with other nodes.</source>
+        <translation>Zure Vertcoin nodoak beste nodoekin komunikatzeko une honetan erabiltzen dituen sare-helbideak.</translation>
     </message>
     <message>
         <source>Never</source>
@@ -2744,8 +2744,8 @@ Kontsola hau erabiltzeko informazio gehiago nahi izanez gero, idatzi .
         <translation>Ordainketa-eskaerari erantsitako mezu aukerakoa, eta igorleari bistara dakiokeena.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Ordainketa eskaerari erants dakiokeen mezu aukerakoa, eskaera irekitzen denean bistaratuko dena. Oharra: mezua ez da Bitcoin sarean zehar bidaliko ordainketarekin batera.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vertcoin network.</source>
+        <translation>Ordainketa eskaerari erants dakiokeen mezu aukerakoa, eskaera irekitzen denean bistaratuko dena. Oharra: mezua ez da Vertcoin sarean zehar bidaliko ordainketarekin batera.</translation>
     </message>
     <message>
         <source>Bech32m (BIP-350) is an upgrade to Bech32, wallet support is still limited.</source>
@@ -3256,16 +3256,16 @@ Oharra: Komisioa byte bakoitzeko kalkulatzen denez, "100 satoshi kvB bakoitzeko"
         <translation>Abisua: Une honetan ezinezkoa da komisioaren estimazioa egitea.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Abisua: Bitcoin helbide baliogabea</translation>
+        <source>Warning: Invalid Vertcoin address</source>
+        <translation>Abisua: Vertcoin helbide baliogabea</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Abisua: Itzulkinaren helbide ezezaguna</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Transakzio-bolumena bloketan dagoen espazioa baino txikiagoa denean, meatzaileek zein nodo errepikatzaileek gutxieneko komisio bat ezar dezakete. Komisio horretara mugatzea egokia izan daiteke, baina kontuan izan: Bitcoin transakzioen eskaera sarearen gaitasuna baino handiagoa denean, gutxieneko komisioa duten transakzioak inoiz ez baieztatzeko arriskua dago.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for vertcoin transactions than the network can process.</source>
+        <translation>Transakzio-bolumena bloketan dagoen espazioa baino txikiagoa denean, meatzaileek zein nodo errepikatzaileek gutxieneko komisio bat ezar dezakete. Komisio horretara mugatzea egokia izan daiteke, baina kontuan izan: Vertcoin transakzioen eskaera sarearen gaitasuna baino handiagoa denean, gutxieneko komisioa duten transakzioak inoiz ez baieztatzeko arriskua dago.</translation>
     </message>
     <message>
         <source>You can increase the fee later.</source>
@@ -3292,8 +3292,8 @@ Geroago komisioa handitu dezakezu.</translation>
         <translation>&amp;Etiketa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Bitcoin: URIari erantsitako mezua, transakzioarekin batera gordeko dena zure kontsultarako. Oharra: Mezu hau ez da Bitcoin sarean zehar bidaliko.</translation>
+        <source>A message that was attached to the vertcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vertcoin network.</source>
+        <translation>Vertcoin: URIari erantsitako mezua, transakzioarekin batera gordeko dena zure kontsultarako. Oharra: Mezu hau ez da Vertcoin sarean zehar bidaliko.</translation>
     </message>
     <message>
         <source>A&amp;mount:</source>
@@ -3328,16 +3328,16 @@ Geroago komisioa handitu dezakezu.</translation>
         <translation>Kendu komisioa zenbatekotik</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Ordaina bidaltzeko Bitcoin helbidea</translation>
+        <source>The Vertcoin address to send the payment to</source>
+        <translation>Ordaina bidaltzeko Vertcoin helbidea</translation>
     </message>
     <message>
         <source>The amount to send in the selected unit</source>
         <translation>Hautatutako unitatean bidali beharreko zenbatekoa</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Komisioa bidaltzen ari zaren zenbatekotik kenduko da. Hartzaileak zenbateko eremuan sartzen duzun baino bitcoin gutxiago jasoko ditu. Hartzaile bat baino gehiago hautatzen badira, komisioa berdin banatuko da.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less vertcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Komisioa bidaltzen ari zaren zenbatekotik kenduko da. Hartzaileak zenbateko eremuan sartzen duzun baino vertcoin gutxiago jasoko ditu. Hartzaile bat baino gehiago hautatzen badira, komisioa berdin banatuko da.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3449,8 +3449,8 @@ Geroago komisioa handitu dezakezu.</translation>
         <translation>Sinatu &amp;Mezua</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Sinatu mezua Bitcoin helbide horren jabe zarela frogatzeko</translation>
+        <source>Sign the message to prove you own this Vertcoin address</source>
+        <translation>Sinatu mezua Vertcoin helbide horren jabe zarela frogatzeko</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3461,12 +3461,12 @@ Geroago komisioa handitu dezakezu.</translation>
         <translation>Sinadurak - Mezu bat Sinatu / Egiaztatu</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation>Mezua sinatzeko erabili zen Bitcoin helbidea</translation>
+        <source>The Vertcoin address the message was signed with</source>
+        <translation>Mezua sinatzeko erabili zen Vertcoin helbidea</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation>Mezua sinatzeko erabiliko den Bitcoin helbidea</translation>
+        <source>The Vertcoin address to sign the message with</source>
+        <translation>Mezua sinatzeko erabiliko den Vertcoin helbidea</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -3497,16 +3497,16 @@ Geroago komisioa handitu dezakezu.</translation>
         <translation>&amp;Egiaztatu Mezua</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Egiaztatu mezua, zehaztutako Bitcoin helbidearekin sinatua izan zela bermatzeko</translation>
+        <source>Verify the message to ensure it was signed with the specified Vertcoin address</source>
+        <translation>Egiaztatu mezua, zehaztutako Vertcoin helbidearekin sinatua izan zela bermatzeko</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Zorroaren desblokeoa bertan behera utzi da.</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Mezuak edo akordioak sinatu ditzakezu zure jatorrizko (P2PKH) helbideekin, helbide horietara bidalitako bitcoinak jasotzeko gaitasuna duzula frogatzeko. Kontuz ibili mezu lauso edo ausazkoak sinatzean, phishing erasoei esker zure identitatea lapurtu nahi dizuten iruzurrezko eskaerak izan baitaitezke. Sinatu soilik xehetasun osoak dituzten eta ados zauden adierazpenak.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive vertcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Mezuak edo akordioak sinatu ditzakezu zure jatorrizko (P2PKH) helbideekin, helbide horietara bidalitako vertcoinak jasotzeko gaitasuna duzula frogatzeko. Kontuz ibili mezu lauso edo ausazkoak sinatzean, phishing erasoei esker zure identitatea lapurtu nahi dizuten iruzurrezko eskaerak izan baitaitezke. Sinatu soilik xehetasun osoak dituzten eta ados zauden adierazpenak.</translation>
     </message>
 </context>
 <context>
@@ -4385,8 +4385,8 @@ Errorea: %sezin izan da tx gehitu watch-only zorrora</translation>
         <translation>Errorea: Dumpfile-k onartzen ez den datu-base formatua (%s) zehazten du. SQLite datu-base dump-ak baino ez dira onartzen</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Errorea: Dump fitxategiaren bertsioa ez da onartzen. Bitcoin-wallet honen bertsio honek soilik 1. bertsioko dump fitxategiak onartzen ditu. Jasotako dump fitxategiak %s bertsioa du.</translation>
+        <source>Error: Dumpfile version is not supported. This version of vertcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>Errorea: Dump fitxategiaren bertsioa ez da onartzen. Vertcoin-wallet honen bertsio honek soilik 1. bertsioko dump fitxategiak onartzen ditu. Jasotako dump fitxategiak %s bertsioa du.</translation>
     </message>
     <message>
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>
