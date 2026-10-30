@@ -34,6 +34,10 @@ add_library(bitcoin_crypto STATIC EXCLUDE_FROM_ALL
   $<$<NOT:$<STREQUAL:${CMAKE_SYSTEM_NAME},Generic>>:../support/lockedpool.cpp>
 )
 
+# The sph hash code type-puns through the sph_*_aligned helpers; GCC 15 at -O2
+# miscompiles bmw.c under strict aliasing, breaking Lyra2REv2/v3.
+set_source_files_properties(Lyra2RE/Lyra2RE.c Lyra2RE/Lyra2.c Lyra2RE/Sponge.c Lyra2RE/blake.c Lyra2RE/groestl.c Lyra2RE/keccak.c Lyra2RE/skein.c Lyra2RE/cubehash.c Lyra2RE/bmw.c PROPERTIES COMPILE_OPTIONS "-fno-strict-aliasing")
+
 target_link_libraries(bitcoin_crypto
   PRIVATE
     core_interface

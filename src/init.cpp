@@ -428,6 +428,7 @@ void Shutdown(NodeContext& node)
     }
     node.fee_estimator_man.reset();
     node.mempool.reset();
+    g_chainman = nullptr;
     node.chainman.reset();
     node.validation_signals.reset();
     node.scheduler.reset();
@@ -1387,6 +1388,7 @@ static ChainstateLoadResult InitAndLoadChainstate(
     // This function may be called twice, so any dirty state must be reset.
     node.notifications->setChainstateLoaded(false); // Drop state, such as a cached tip block
     node.mempool.reset();
+    g_chainman = nullptr;
     node.chainman.reset(); // Drop state, such as an initialized m_block_tree_db
 
     const CChainParams& chainparams = Params();

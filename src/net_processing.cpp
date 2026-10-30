@@ -2870,20 +2870,26 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
     {
         LOCK(peer.m_headers_sync_mutex);
         if (peer.m_headers_sync) {
-            // Both values are the height of the last header received, i.e. the
-            // parent of the next batch.
-            if (peer.m_headers_sync->GetState() == HeadersSyncState::State::PRESYNC) {
+            // Both heights are those of the last header received in the sync,
+            // which is the parent of the next batch only if the batch continues
+            // the sync. Upstream may send a syncing peer an extra getheaders from
+            // m_best_header when a block is announced; that reply is not a
+            // continuation, so for it fall through to the parent lookup below.
+            const auto state{peer.m_headers_sync->GetState()};
+            if (state == HeadersSyncState::State::PRESYNC &&
+                headers[0].hashPrevBlock == peer.m_headers_sync->GetPresyncLastHash()) {
                 nHeight = peer.m_headers_sync->GetPresyncHeight();
                 have_height = true;
-            } else if (peer.m_headers_sync->GetState() == HeadersSyncState::State::REDOWNLOAD) {
+            } else if (state == HeadersSyncState::State::REDOWNLOAD &&
+                       headers[0].hashPrevBlock == peer.m_headers_sync->GetRedownloadLastHash()) {
                 nHeight = peer.m_headers_sync->GetRedownloadHeight();
                 have_height = true;
             }
         }
     }
     if (!have_height) {
-        // Not in headers sync (or sync is FINAL): use the height of the
-        // parent block, if we know it.
+        // Not in headers sync, sync is FINAL, or the batch does not continue
+        // the sync: use the height of the parent block, if we know it.
         LOCK(cs_main);
         const CBlockIndex* pindexPrev{m_chainman.m_blockman.LookupBlockIndex(headers[0].hashPrevBlock)};
         if (pindexPrev) {
@@ -2891,8 +2897,11 @@ bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, 
             have_height = true;
         }
         // If the parent is unknown, the height cannot be determined and the
-        // proof-of-work check is skipped here. The headers are still fully
-        // validated (including proof of work) in AcceptBlockHeader.
+        // proof-of-work check is skipped here. Headers whose parent is unknown
+        // cannot be accepted or start a headers sync; a sync in progress
+        // rejects any batch that does not continue its last header, and
+        // headers that later connect are PoW-checked in AcceptBlockHeader via
+        // CheckBlockHeader.
     }
 
     // Do these headers have proof-of-work matching what's claimed?
@@ -4632,6 +4641,7 @@ void PeerManagerImpl::ProcessMessage(Peer& peer, CNode& pfrom, const std::string
 
             if (pindex->nHeight >= m_chainman.ActiveChain().Height() - MAX_BLOCKTXN_DEPTH) {
                 block_pos = pindex->GetBlockPos();
+                block_height = pindex->nHeight;
             }
         }
 
