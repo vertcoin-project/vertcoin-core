@@ -18,7 +18,7 @@ RPCMethod signmessage()
         "Sign a message with the private key of an address" +
           HELP_REQUIRING_PASSPHRASE,
         {
-            {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The bitcoin address to use for the private key."},
+            {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The vertcoin address to use for the private key."},
             {"message", RPCArg::Type::STR, RPCArg::Optional::NO, "The message to create a signature of."},
         },
         RPCResult{

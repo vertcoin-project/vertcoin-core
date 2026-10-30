@@ -23,7 +23,7 @@ static RPCMethod verifymessage()
     return RPCMethod{"verifymessage",
         "Verify a signed message.",
         {
-            {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The bitcoin address to use for the signature."},
+            {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The vertcoin address to use for the signature."},
             {"signature", RPCArg::Type::STR, RPCArg::Optional::NO, "The signature provided by the signer in base 64 encoding (see signmessage)."},
             {"message", RPCArg::Type::STR, RPCArg::Optional::NO, "The message that was signed."},
         },

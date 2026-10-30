@@ -536,7 +536,7 @@ static RPCResult OpenRPCDocResult()
             {RPCResult::Type::OBJ, "info", "Metadata about this JSON-RPC interface.",
                 {
                     {RPCResult::Type::STR, "title", "API title."},
-                    {RPCResult::Type::STR, "version", "Bitcoin Core version string."},
+                    {RPCResult::Type::STR, "version", "Vertcoin Core version string."},
                     {RPCResult::Type::STR, "description", "API description."},
                 }},
             {RPCResult::Type::ARR, "methods", "Documented RPC methods.",
@@ -560,7 +560,7 @@ static RPCResult OpenRPCDocResult()
                             {
                                 {RPCResult::Type::STR, "name", "Result name."},
                                 {RPCResult::Type::ANY, "schema", "JSON Schema for the result. Numeric schemas may include "
-                                    "\"x-bitcoin-unit\" property: \"amount\" which denotes a Bitcoin amount in BTC."},
+                                    "\"x-bitcoin-unit\" property: \"amount\" which denotes a Vertcoin amount in VTC."},
                             }},
                         {RPCResult::Type::STR, "x-bitcoin-category", "RPC category."},
                     }}}},
