@@ -1,4 +1,4 @@
-# bash programmable completion for bitcoin(1) wrapper
+# bash programmable completion for vertcoin(1) wrapper
 # Copyright (c) 2026-present The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -30,7 +30,7 @@ _bitcoin() {
     local cur prev words cword
     local bitcoin subcmd offset
 
-    # save and use original argument to invoke bitcoin for help
+    # save and use original argument to invoke vertcoin for help
     # it might not be in $PATH
     bitcoin="$1"
 
@@ -50,15 +50,15 @@ _bitcoin() {
 
     case "$subcmd" in
         gui|node)
-            _bitcoin_wrap bitcoind "$offset"
+            _bitcoin_wrap vertcoind "$offset"
             return 0
             ;;
         rpc)
-            _bitcoin_wrap bitcoin-cli "$offset"
+            _bitcoin_wrap vertcoin-cli "$offset"
             return 0
             ;;
         tx)
-            _bitcoin_wrap bitcoin-tx "$offset"
+            _bitcoin_wrap vertcoin-tx "$offset"
             return 0
             ;;
     esac
@@ -89,7 +89,7 @@ _bitcoin() {
     esac
 
 } &&
-complete -F _bitcoin bitcoin
+complete -F _bitcoin vertcoin
 
 # Local variables:
 # mode: shell-script

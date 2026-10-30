@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 #
-#  bitcoind The bitcoin core server.
+#  vertcoind The vertcoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: bitcoind
-# processname: bitcoind
+# description: vertcoind
+# processname: vertcoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
+# you can override defaults in /etc/sysconfig/vertcoind, see below
+if [ -f /etc/sysconfig/vertcoind ]; then
+        . /etc/sysconfig/vertcoind
 fi
 
 RETVAL=0
 
-prog=bitcoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
+prog=vertcoind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/vertcoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/vertcoind}
 
-# bitcoind defaults to /usr/bin/bitcoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/bitcoind}
+# vertcoind defaults to /usr/bin/vertcoind, override with BITCOIND_BIN
+vertcoind=${BITCOIND_BIN-/usr/bin/vertcoind}
 
-# bitcoind opts default to -disablewallet, override with BITCOIND_OPTS
+# vertcoind opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon $DAEMONOPTS $vertcoind $bitcoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

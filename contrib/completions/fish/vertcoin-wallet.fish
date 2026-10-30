@@ -1,5 +1,5 @@
 # Disable files from being included in completions by default
-complete --command bitcoin-wallet --no-files
+complete --command vertcoin-wallet --no-files
 
 # Extract options
 function __fish_bitcoin_wallet_get_options
@@ -19,17 +19,17 @@ end
 
 # Add options
 complete \
-    --command bitcoin-wallet \
+    --command vertcoin-wallet \
     --condition "not __fish_seen_subcommand_from (__fish_bitcoin_wallet_get_commands)" \
     --arguments "(__fish_bitcoin_wallet_get_options)"
 
 # Add commands
 complete \
-    --command bitcoin-wallet \
+    --command vertcoin-wallet \
     --condition "not __fish_seen_subcommand_from (__fish_bitcoin_wallet_get_commands)" \
     --arguments "(__fish_bitcoin_wallet_get_commands)"
 
 # Add file completions for load and set commands
-complete --command bitcoin-wallet \
+complete --command vertcoin-wallet \
     --condition "string match -r -- '(dumpfile|datadir)*=' (commandline -pt)" \
     --force-files
