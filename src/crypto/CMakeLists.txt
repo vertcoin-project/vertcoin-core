@@ -36,7 +36,11 @@ add_library(bitcoin_crypto STATIC EXCLUDE_FROM_ALL
 
 # The sph hash code type-puns through the sph_*_aligned helpers; GCC 15 at -O2
 # miscompiles bmw.c under strict aliasing, breaking Lyra2REv2/v3.
-set_source_files_properties(Lyra2RE/Lyra2RE.c Lyra2RE/Lyra2.c Lyra2RE/Sponge.c Lyra2RE/blake.c Lyra2RE/groestl.c Lyra2RE/keccak.c Lyra2RE/skein.c Lyra2RE/cubehash.c Lyra2RE/bmw.c PROPERTIES COMPILE_OPTIONS "-fno-strict-aliasing")
+# These are vendored third-party sources, so their warnings (tabs, -Wundef,
+# -Wsign-compare) are suppressed with -w, as upstream does for its vendored code.
+set_source_files_properties(Lyra2RE/Lyra2RE.c Lyra2RE/Lyra2.c Lyra2RE/Sponge.c Lyra2RE/blake.c Lyra2RE/groestl.c Lyra2RE/keccak.c Lyra2RE/skein.c Lyra2RE/cubehash.c Lyra2RE/bmw.c tiny_sha3/sha3.c PROPERTIES COMPILE_OPTIONS "$<$<NOT:$<C_COMPILER_ID:MSVC>>:-fno-strict-aliasing;-w>")
+# Vendored scrypt code (VLA, tabs, -Wclass-memaccess): suppress its warnings.
+set_source_files_properties(scrypt.cpp PROPERTIES COMPILE_OPTIONS "$<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-w>")
 
 target_link_libraries(bitcoin_crypto
   PRIVATE

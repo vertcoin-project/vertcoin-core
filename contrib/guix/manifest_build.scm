@@ -4,9 +4,11 @@
              (gnu packages commencement)
              ((gnu packages compression) #:select (gzip))
              (gnu packages cross-base)
+             ((gnu packages gawk) #:select (gawk))
              (gnu packages gcc)
              ((gnu packages linux) #:select (linux-libre-headers-6.1))
              (gnu packages llvm)
+             ((gnu packages m4) #:select (m4))
              (gnu packages mingw)
              ((gnu packages version-control) #:select (git-minimal))
              (guix build-system trivial)
@@ -272,6 +274,9 @@ chain for " target " development."))
         ;; Build tools
         cmake-minimal
         gnu-make
+        ;; GMP's configure, config.status and assembly generation need m4 and awk
+        m4
+        gawk
         ;; Git
         git-minimal)
   (let ((target (getenv "HOST")))

@@ -3840,8 +3840,11 @@ void ChainstateManager::ReceivedBlockTransactions(const CBlock& block, CBlockInd
 
 static bool CheckBlockHeader(const CBlockHeader& block, BlockValidationState& state, const Consensus::Params& consensusParams, bool fCheckPOW = true)
 {
-    // Get prev block index
-    CBlockIndex* pindexPrev = g_chainman->m_blockman.LookupBlockIndex(block.hashPrevBlock);
+    // Get prev block index to find the height, which selects the PoW algorithm.
+    // cs_main is recursive, so taking it here is safe whether or not the caller
+    // already holds it. g_chainman is null when no ChainstateManager has been set
+    // up by init.cpp (for example in unit tests); height 0 is used then.
+    const CBlockIndex* pindexPrev{g_chainman ? WITH_LOCK(::cs_main, return g_chainman->m_blockman.LookupBlockIndex(block.hashPrevBlock)) : nullptr};
     int nHeight = 0;
     if (pindexPrev) {
         nHeight = pindexPrev->nHeight + 1;

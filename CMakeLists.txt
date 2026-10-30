@@ -199,6 +199,12 @@ if(BUILD_FOR_FUZZING)
   )
 endif()
 
+# Vertcoin's proof-of-work code reads process-wide state (Params(), gArgs, g_chainman and the
+# loaded Verthash datafile), which the bitcoinkernel library is designed not to have.
+if(BUILD_KERNEL_LIB OR BUILD_UTIL_CHAINSTATE)
+  message(FATAL_ERROR "BUILD_KERNEL_LIB and BUILD_UTIL_CHAINSTATE are not supported by Vertcoin Core.")
+endif()
+
 #=============================
 # Check and set PIC/PIE
 #=============================
@@ -491,8 +497,11 @@ else()
   try_append_cxx_flags("-Wduplicated-branches" TARGET warn_interface SKIP_LINK)
   try_append_cxx_flags("-Wduplicated-cond" TARGET warn_interface SKIP_LINK)
   try_append_cxx_flags("-Wlogical-op" TARGET warn_interface SKIP_LINK)
-  try_append_cxx_flags("-Woverloaded-virtual" TARGET warn_interface SKIP_LINK)
-  try_append_cxx_flags("-Wsuggest-override" TARGET warn_interface SKIP_LINK)
+  # These are C++-only; keep them off the vendored C sources.
+  try_append_cxx_flags("-Woverloaded-virtual" VAR cxx_only_warn_flags SKIP_LINK)
+  try_append_cxx_flags("-Wsuggest-override" VAR cxx_only_warn_flags SKIP_LINK)
+  separate_arguments(cxx_only_warn_flags)
+  target_compile_options(warn_interface INTERFACE "$<$<COMPILE_LANGUAGE:CXX>:${cxx_only_warn_flags}>")
   try_append_cxx_flags("-Wimplicit-fallthrough" TARGET warn_interface SKIP_LINK)
   try_append_cxx_flags("-Wunreachable-code" TARGET warn_interface SKIP_LINK)
   try_append_cxx_flags("-Wdocumentation" TARGET warn_interface SKIP_LINK)

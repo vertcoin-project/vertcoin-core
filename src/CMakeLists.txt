@@ -161,6 +161,9 @@ target_link_libraries(bitcoin_common
     GMP::GMP
 )
 
+# Vertcoin's Verthash source is carried verbatim from 23.x, so its warnings are suppressed rather than reformatting it.
+set_source_files_properties(crypto/verthash.cpp PROPERTIES COMPILE_OPTIONS "$<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-w>")
+
 include(InstallBinaryComponent)
 
 if(ENABLE_WALLET)
