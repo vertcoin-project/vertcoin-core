@@ -4037,10 +4037,12 @@ void ChainstateManager::GenerateCoinbaseCommitment(CBlock& block, const CBlockIn
     UpdateUncommittedBlockStructures(block, pindexPrev);
 }
 
-bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams)
+bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight)
 {
+    // nHeight is the parent of headers[0], so the first header is checked at nHeight + 1.
+    int height{nHeight};
     return std::ranges::all_of(headers,
-                               [&](const auto& header) { return CheckProofOfWork(header.GetHash(), header.nBits, consensusParams); });
+                               [&](const auto& header) { return CheckProofOfWork(header.GetPoWHash(++height), header.nBits, consensusParams); });
 }
 
 bool IsBlockMutated(const CBlock& block, bool check_witness_root)

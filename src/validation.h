@@ -413,8 +413,10 @@ BlockValidationState TestBlockValidity(
     bool check_pow,
     bool check_merkle_root) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
 
-/** Check that the proof of work on each blockheader matches the value in nBits */
-bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams);
+/** Check that the proof of work on each blockheader matches the value in nBits.
+ *  nHeight is the height of the parent of headers[0]; header i is checked with
+ *  the proof-of-work algorithm in force at height nHeight + 1 + i. */
+bool HasValidProofOfWork(std::span<const CBlockHeader> headers, const Consensus::Params& consensusParams, int nHeight);
 
 /** Check if a block has been mutated (with respect to its merkle root and witness commitments). */
 bool IsBlockMutated(const CBlock& block, bool check_witness_root);

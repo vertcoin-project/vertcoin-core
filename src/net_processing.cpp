@@ -2862,8 +2862,41 @@ void PeerManagerImpl::SendBlockTransactions(CNode& pfrom, Peer& peer, const CBlo
 
 bool PeerManagerImpl::CheckHeadersPoW(const std::vector<CBlockHeader>& headers, Peer& peer)
 {
+    // Vertcoin changes proof-of-work algorithm by height, so the height of
+    // each header is needed to select the hash function. nHeight is the
+    // height of the parent of headers[0].
+    int nHeight{0};
+    bool have_height{false};
+    {
+        LOCK(peer.m_headers_sync_mutex);
+        if (peer.m_headers_sync) {
+            // Both values are the height of the last header received, i.e. the
+            // parent of the next batch.
+            if (peer.m_headers_sync->GetState() == HeadersSyncState::State::PRESYNC) {
+                nHeight = peer.m_headers_sync->GetPresyncHeight();
+                have_height = true;
+            } else if (peer.m_headers_sync->GetState() == HeadersSyncState::State::REDOWNLOAD) {
+                nHeight = peer.m_headers_sync->GetRedownloadHeight();
+                have_height = true;
+            }
+        }
+    }
+    if (!have_height) {
+        // Not in headers sync (or sync is FINAL): use the height of the
+        // parent block, if we know it.
+        LOCK(cs_main);
+        const CBlockIndex* pindexPrev{m_chainman.m_blockman.LookupBlockIndex(headers[0].hashPrevBlock)};
+        if (pindexPrev) {
+            nHeight = pindexPrev->nHeight;
+            have_height = true;
+        }
+        // If the parent is unknown, the height cannot be determined and the
+        // proof-of-work check is skipped here. The headers are still fully
+        // validated (including proof of work) in AcceptBlockHeader.
+    }
+
     // Do these headers have proof-of-work matching what's claimed?
-    if (!HasValidProofOfWork(headers, m_chainparams.GetConsensus())) {
+    if (have_height && !HasValidProofOfWork(headers, m_chainparams.GetConsensus(), nHeight)) {
         Misbehaving(peer, "header with invalid proof of work");
         return false;
     }
