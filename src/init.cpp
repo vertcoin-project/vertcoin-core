@@ -1895,20 +1895,29 @@ bool AppInitMain(NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip_info)
 
     // ********************************************************* Step 6b: generate verthash file and verify if it's valid
 
+    const bool fVerthashDiskOnly = args.GetBoolArg("-verthash-diskonly", false);
     int cycle = 0;
     while(cycle <= 1) {
         uiInterface.InitMessage(_("Creating Verthash Datafile - may take several minutes"));
-        VerthashDatFile::CreateMiningDataFile();
+        if(!VerthashDatFile::CreateMiningDataFile(/*in_ram=*/!fVerthashDiskOnly)) {
+            return InitError(_("Could not create the Verthash datafile"));
+        }
 
-        bool fVerthashDiskOnly = args.GetBoolArg("-verthash-diskonly", false);
-        if(!fVerthashDiskOnly) {
-            uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
-            Verthash::LoadInRam();
+        if(!Verthash::IsLoaded()) {
+            if(fVerthashDiskOnly) {
+                if(!Verthash::MapDatFile()) {
+                    LogWarning("Could not map the Verthash datafile, reading it from disk for every hash\n");
+                }
+            } else {
+                uiInterface.InitMessage(_("Loading Verthash Datafile into RAM"));
+                Verthash::LoadInRam();
+            }
         }
 
         uiInterface.InitMessage(_("Verifying Verthash Datafile"));
         if(!Verthash::VerifyDatFile()) {
             if(cycle == 0) {
+                Verthash::Unload();
                 VerthashDatFile::DeleteMiningDataFile();
             } else {
                 return InitError(_("Generated Verthash datafile mismatch"));

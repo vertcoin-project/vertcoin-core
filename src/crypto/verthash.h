@@ -25,10 +25,21 @@ public:
     static void Hash(const char* input, char* output);
     static bool VerifyDatFile();
     static void LoadInRam();
+    /** Maps the datafile read-only instead of loading it, so the OS can page it out.
+     *  Returns false if it couldn't be mapped; Hash then reads the file instead. */
+    static bool MapDatFile();
+    /** Takes ownership of data, allocated with malloc, as the datafile in RAM. */
+    static void SetDatFile(unsigned char* data, size_t size);
+    /** Frees or unmaps the datafile. */
+    static void Unload();
+    /** Whether the datafile is in memory, loaded into RAM or mapped. */
+    static bool IsLoaded();
 private:
     static unsigned char *datFile;
     static size_t datFileSize;
+    // datFile holds the whole datafile, in RAM or mapped.
     static bool datFileInRam;
+    static bool datFileMapped;
 };
 
 #endif // VERTCOIN_CRYPTO_VERTHASH_H

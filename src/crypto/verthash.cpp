@@ -6,6 +6,14 @@
 #include <ctime>
 #include <iomanip>
 #include <sstream>
+#include <system_error>
+
+#ifdef WIN32
+#include <io.h>
+#include <windows.h>
+#else
+#include <sys/mman.h>
+#endif
 
 #define HEADER_SIZE 80
 #define HASH_OUT_SIZE 32
@@ -19,6 +27,7 @@
 unsigned char *Verthash::datFile;
 size_t Verthash::datFileSize;
 bool Verthash::datFileInRam;
+bool Verthash::datFileMapped;
 const uint256 verthashDatFileHash = uint256{"48aa21d7afededb63976d48a8ff8ec29d5b02563af4a1110b056cd43e83155a5"};
 inline uint32_t fnv1a(const uint32_t a, const uint32_t b) {
     return (a ^ b) * 0x1000193;
@@ -59,7 +68,11 @@ void Verthash::LoadInRam() {
     if(!std::filesystem::exists(dataFile)) {
         throw std::runtime_error("Verthash datafile not found");
     }
+    Unload();
     FILE* datfile = fsbridge::fopen(dataFile.c_str(),"rb");
+    if(datfile == nullptr) {
+        throw std::runtime_error("Verthash datafile could not be opened");
+    }
     fseek(datfile, 0, SEEK_END);
     datFileSize = ftell(datfile);
 
@@ -73,6 +86,72 @@ void Verthash::LoadInRam() {
     fclose(datfile);
 
     datFileInRam = true;
+}
+
+bool Verthash::MapDatFile() {
+    const fs::path dataFile{gArgs.GetDataDirNet() / "verthash.dat"};
+    Unload();
+    std::error_code ec;
+    const uintmax_t size = fs::file_size(dataFile, ec);
+    FILE* datfile = fsbridge::fopen(dataFile, "rb");
+    if(ec || size == 0 || datfile == nullptr) {
+        if(datfile != nullptr) fclose(datfile);
+        return false;
+    }
+#ifdef WIN32
+    void* view = nullptr;
+    HANDLE mapping = CreateFileMappingW((HANDLE)_get_osfhandle(_fileno(datfile)), nullptr, PAGE_READONLY, 0, 0, nullptr);
+    if(mapping != nullptr) {
+        view = MapViewOfFile(mapping, FILE_MAP_READ, 0, 0, 0);
+        // The view keeps the mapping and the file open.
+        CloseHandle(mapping);
+    }
+#else
+    void* view = mmap(nullptr, size, PROT_READ, MAP_SHARED, fileno(datfile), 0);
+    if(view == MAP_FAILED) {
+        view = nullptr;
+    } else {
+        // Each hash reads 32 bytes at 4096 random offsets. Without this, every page fault also reads
+        // in the pages around it, which evicts the pages hashes need when the file doesn't fit in RAM.
+        posix_madvise(view, size, POSIX_MADV_RANDOM);
+    }
+#endif
+    fclose(datfile);
+    if(view == nullptr) {
+        return false;
+    }
+    datFile = (unsigned char*)view;
+    datFileSize = size;
+    datFileInRam = true;
+    datFileMapped = true;
+    return true;
+}
+
+void Verthash::SetDatFile(unsigned char* data, size_t size) {
+    Unload();
+    datFile = data;
+    datFileSize = size;
+    datFileInRam = true;
+}
+
+void Verthash::Unload() {
+    if(datFileMapped) {
+#ifdef WIN32
+        UnmapViewOfFile(datFile);
+#else
+        munmap(datFile, datFileSize);
+#endif
+    } else {
+        free(datFile);
+    }
+    datFile = nullptr;
+    datFileSize = 0;
+    datFileInRam = false;
+    datFileMapped = false;
+}
+
+bool Verthash::IsLoaded() {
+    return datFileInRam;
 }
 
 void Verthash::Hash(const char* input, char* output)

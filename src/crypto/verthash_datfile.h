@@ -18,7 +18,10 @@
 class VerthashDatFile
 {
 public:
-    static void CreateMiningDataFile();
+    /** Generates verthash.dat in the network's datadir if it doesn't exist yet, in memory
+     *  (in_ram) or through a memory map of the file. With in_ram, the generated data is
+     *  handed to Verthash, which then needs no LoadInRam. Returns false if it couldn't be written. */
+    static bool CreateMiningDataFile(bool in_ram);
     static void DeleteMiningDataFile();
 private:
     static RecursiveMutex cs_Datfile;
