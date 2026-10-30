@@ -255,36 +255,36 @@ endif()
 
 add_subdirectory(locale)
 
-add_executable(bitcoin-qt WIN32
+add_executable(vertcoin-qt WIN32
   main.cpp
   res/bitcoin-qt-res.rc
   ../init/bitcoin-qt.cpp
 )
 
-add_windows_application_manifest(bitcoin-qt)
+add_windows_application_manifest(vertcoin-qt)
 
-target_link_libraries(bitcoin-qt
+target_link_libraries(vertcoin-qt
   core_interface
   bitcoinqt
   bitcoin_node
 )
 
-import_plugins(bitcoin-qt)
-install_binary_component(bitcoin-qt HAS_MANPAGE)
+import_plugins(vertcoin-qt)
+install_binary_component(vertcoin-qt HAS_MANPAGE)
 
 if(ENABLE_IPC)
-  add_executable(bitcoin-gui WIN32
+  add_executable(vertcoin-gui WIN32
     main.cpp
     ../init/bitcoin-gui.cpp
   )
-  target_link_libraries(bitcoin-gui
+  target_link_libraries(vertcoin-gui
     core_interface
     bitcoinqt
     bitcoin_node
     bitcoin_ipc
   )
-  import_plugins(bitcoin-gui)
-  install_binary_component(bitcoin-gui INTERNAL)
+  import_plugins(vertcoin-gui)
+  install_binary_component(vertcoin-gui INTERNAL)
 endif()
 
 if(BUILD_GUI_TESTS)

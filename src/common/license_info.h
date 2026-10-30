@@ -7,7 +7,8 @@
 
 #include <string>
 
-std::string CopyrightHolders(const std::string& strPrefix);
+/** Vertcoin Core copyright line after strPrefix, then the Bitcoin Core one after strPrefixBitcoin */
+std::string CopyrightHolders(const std::string& strPrefix, const std::string& strPrefixBitcoin);
 
 /** Returns licensing information (for -version) */
 std::string LicenseInfo();

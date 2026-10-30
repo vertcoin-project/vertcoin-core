@@ -170,20 +170,20 @@ if(ENABLE_WALLET)
   add_subdirectory(wallet)
 
   if(BUILD_WALLET_TOOL)
-    add_executable(bitcoin-wallet
+    add_executable(vertcoin-wallet
       bitcoin-wallet.cpp
       bitcoin-wallet-res.rc
       init/bitcoin-wallet.cpp
       wallet/wallettool.cpp
     )
-    add_windows_application_manifest(bitcoin-wallet)
-    target_link_libraries(bitcoin-wallet
+    add_windows_application_manifest(vertcoin-wallet)
+    target_link_libraries(vertcoin-wallet
       core_interface
       bitcoin_wallet
       bitcoin_common
       bitcoin_util
     )
-    install_binary_component(bitcoin-wallet HAS_MANPAGE)
+    install_binary_component(vertcoin-wallet HAS_MANPAGE)
   endif()
 endif()
 
@@ -312,42 +312,42 @@ endif()
 
 # Bitcoin wrapper executable that can call other executables.
 if(BUILD_BITCOIN_BIN)
-  add_executable(bitcoin
+  add_executable(vertcoin
     bitcoin.cpp
     bitcoin-res.rc
   )
-  add_windows_application_manifest(bitcoin)
-  target_link_libraries(bitcoin core_interface bitcoin_common bitcoin_util)
-  install_binary_component(bitcoin HAS_MANPAGE)
+  add_windows_application_manifest(vertcoin)
+  target_link_libraries(vertcoin core_interface bitcoin_common bitcoin_util)
+  install_binary_component(vertcoin HAS_MANPAGE)
 endif()
 
 # Bitcoin Core bitcoind.
 if(BUILD_DAEMON)
-  add_executable(bitcoind
+  add_executable(vertcoind
     bitcoind.cpp
     bitcoind-res.rc
     init/bitcoind.cpp
   )
-  add_windows_application_manifest(bitcoind)
-  target_link_libraries(bitcoind
+  add_windows_application_manifest(vertcoind)
+  target_link_libraries(vertcoind
     core_interface
     bitcoin_node
     $<TARGET_NAME_IF_EXISTS:bitcoin_wallet>
   )
-  install_binary_component(bitcoind HAS_MANPAGE)
+  install_binary_component(vertcoind HAS_MANPAGE)
 endif()
 if(ENABLE_IPC AND BUILD_DAEMON)
-  add_executable(bitcoin-node
+  add_executable(vertcoin-node
     bitcoind.cpp
     init/bitcoin-node.cpp
   )
-  target_link_libraries(bitcoin-node
+  target_link_libraries(vertcoin-node
     core_interface
     bitcoin_node
     bitcoin_ipc
     $<TARGET_NAME_IF_EXISTS:bitcoin_wallet>
   )
-  install_binary_component(bitcoin-node INTERNAL)
+  install_binary_component(vertcoin-node INTERNAL)
 endif()
 
 
@@ -364,52 +364,52 @@ target_link_libraries(bitcoin_cli
 
 # Bitcoin Core RPC client
 if(BUILD_CLI)
-  add_executable(bitcoin-cli
+  add_executable(vertcoin-cli
     bitcoin-cli.cpp
     bitcoin-cli-res.rc
     init/basic.cpp
   )
-  add_windows_application_manifest(bitcoin-cli)
-  target_link_libraries(bitcoin-cli
+  add_windows_application_manifest(vertcoin-cli)
+  target_link_libraries(vertcoin-cli
     core_interface
     bitcoin_cli
     bitcoin_common
     bitcoin_ipc
     bitcoin_util
   )
-  install_binary_component(bitcoin-cli HAS_MANPAGE)
+  install_binary_component(vertcoin-cli HAS_MANPAGE)
 endif()
 
 
 if(BUILD_TX)
-  add_executable(bitcoin-tx
+  add_executable(vertcoin-tx
     bitcoin-tx.cpp
     bitcoin-tx-res.rc
   )
-  add_windows_application_manifest(bitcoin-tx)
-  target_link_libraries(bitcoin-tx
+  add_windows_application_manifest(vertcoin-tx)
+  target_link_libraries(vertcoin-tx
     core_interface
     bitcoin_common
     bitcoin_util
     univalue
   )
-  install_binary_component(bitcoin-tx HAS_MANPAGE)
+  install_binary_component(vertcoin-tx HAS_MANPAGE)
 endif()
 
 
 if(BUILD_UTIL)
-  add_executable(bitcoin-util
+  add_executable(vertcoin-util
     bitcoin-util.cpp
     bitcoin-util-res.rc
   )
-  add_windows_application_manifest(bitcoin-util)
-  target_link_libraries(bitcoin-util
+  add_windows_application_manifest(vertcoin-util)
+  target_link_libraries(vertcoin-util
     core_interface
     bitcoin_common
     bitcoin_util
     univalue
   )
-  install_binary_component(bitcoin-util HAS_MANPAGE)
+  install_binary_component(vertcoin-util HAS_MANPAGE)
 endif()
 
 

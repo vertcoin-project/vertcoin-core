@@ -64,12 +64,12 @@ mkdir -p "$DISTSRC"
           -DWITH_CCACHE=OFF \
           -Werror=dev
 
-    # Build Bitcoin Core
-    cmake --build build -j "$JOBS" --target bitcoin-gui bitcoin-qt
+    # Build Vertcoin Core
+    cmake --build build -j "$JOBS" --target vertcoin-gui vertcoin-qt
 
-    # Install built Bitcoin Core
-    cmake --install build --component bitcoin-gui
-    cmake --install build --component bitcoin-qt
+    # Install built Vertcoin Core
+    cmake --install build --component vertcoin-gui
+    cmake --install build --component vertcoin-qt
 )  # $DISTSRC
 
 # shellcheck source=package.sh
