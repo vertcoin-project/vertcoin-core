@@ -84,6 +84,13 @@ Files: src/qt/res/fonts/RobotoMono-Bold.ttf
 License: Apache-2.0
 Comment: Site: https://fonts.google.com/specimen/Roboto+Mono
 
+Files: src/crypto/verthash_datfile.cpp
+Copyright: 2026, Albert Kwon
+           2020-2026, Vertcoin Core Developers
+License: Expat
+Comment: The datafile's graph is ported from pos/graph.go in Spacemint,
+         https://github.com/kwonalbert/spacemint
+
 
 License: Expat
  Permission is hereby granted, free of charge, to any person obtaining a

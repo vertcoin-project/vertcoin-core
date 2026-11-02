@@ -1,3 +1,11 @@
+// Copyright (c) 2026 Albert Kwon
+// Copyright (c) 2020-present The Vertcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+// The datafile's graph is ported from pos/graph.go in Albert Kwon's Spacemint,
+// https://github.com/kwonalbert/spacemint
+
 #include <crypto/verthash_datfile.h>
 #include <crypto/sha3.h>
 #include <crypto/verthash.h>
